@@ -1,5 +1,5 @@
 # Control
-# 2019-11-16 18:54:21Z
+# 2019-11-16 21:26:00Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -8,18 +8,18 @@ dont_use_io iocell 1 1
 # IO_3@[IOP=(1)][IoId=(3)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 3
 set_io "LeftEyebrow1(0)" iocell 2 0
-set_io "LeftEyebrow2(0)" iocell 2 1
-set_io "RightEyebrow1(0)" iocell 2 2
-set_io "RightEyebrow2(0)" iocell 2 3
-set_io "LeftEyeballTop(0)" iocell 0 7
-set_io "LeftEyeballBottom(0)" iocell 0 6
-set_io "RightEyeballTop(0)" iocell 1 7
-set_io "RightEyeballBottom(0)" iocell 1 6
-set_io "EyelidTilt(0)" iocell 1 4
+set_io "LeftEyebrow2(0)" iocell 2 3
+set_io "RightEyebrow1(0)" iocell 2 4
+set_io "RightEyebrow2(0)" iocell 2 5
+set_io "LeftEyeballTop(0)" iocell 12 7
+set_io "LeftEyeballBottom(0)" iocell 12 6
+set_io "RightEyeballTop(0)" iocell 2 6
+set_io "RightEyeballBottom(0)" iocell 2 7
+set_io "EyelidTilt(0)" iocell 12 5
 set_io "EyelidClose(0)" iocell 1 2
-set_io "LipLeft(0)" iocell 0 3
-set_io "LipRight(0)" iocell 0 4
-set_io "NeckLeft(0)" iocell 0 1
-set_io "NeckRight(0)" iocell 0 2
-set_io "BaseRotation(0)" iocell 0 0
-set_io "Jaw(0)" iocell 0 5
+set_io "LipLeft(0)" iocell 12 4
+set_io "LipRight(0)" iocell 12 3
+set_io "NeckLeft(0)" iocell 12 1
+set_io "NeckRight(0)" iocell 12 0
+set_io "BaseRotation(0)" iocell 1 4
+set_io "Jaw(0)" iocell 12 2

@@ -1,6 +1,6 @@
 // ======================================================================
 // Control.v generated from TopDesign.cysch
-// 11/16/2019 at 11:54
+// 11/16/2019 at 14:25
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -1076,7 +1076,7 @@ module top ;
 		#(.id("a3f6011d-cd69-4015-9f21-9d9ea2eea335"),
 		  .source_clock_id(""),
 		  .divisor(0),
-		  .period("1000000000"),
+		  .period("250000000"),
 		  .is_direct(0),
 		  .is_digital(1))
 		Clock_1
