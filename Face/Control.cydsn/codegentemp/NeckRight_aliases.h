@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Rotation.h  
+* File Name: NeckRight.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_Rotation_ALIASES_H) /* Pins Rotation_ALIASES_H */
-#define CY_PINS_Rotation_ALIASES_H
+#if !defined(CY_PINS_NeckRight_ALIASES_H) /* Pins NeckRight_ALIASES_H */
+#define CY_PINS_NeckRight_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define Rotation_0			(Rotation__0__PC)
-#define Rotation_0_INTR	((uint16)((uint16)0x0001u << Rotation__0__SHIFT))
+#define NeckRight_0			(NeckRight__0__PC)
+#define NeckRight_0_INTR	((uint16)((uint16)0x0001u << NeckRight__0__SHIFT))
 
-#define Rotation_INTR_ALL	 ((uint16)(Rotation_0_INTR))
+#define NeckRight_INTR_ALL	 ((uint16)(NeckRight_0_INTR))
 
-#endif /* End Pins Rotation_ALIASES_H */
+#endif /* End Pins NeckRight_ALIASES_H */
 
 
 /* [] END OF FILE */

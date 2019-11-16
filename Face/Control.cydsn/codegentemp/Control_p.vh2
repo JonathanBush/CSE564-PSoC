@@ -1,5 +1,5 @@
 -- Project:   Control
--- Generated: 11/16/2019 11:01:54
+-- Generated: 11/16/2019 11:42:01
 -- PSoC Creator  4.2
 
 ENTITY Control IS
@@ -16,9 +16,9 @@ ENTITY Control IS
         EyelidClose(0)_PAD : OUT std_ulogic;
         TopLip(0)_PAD : OUT std_ulogic;
         Jaw(0)_PAD : OUT std_ulogic;
-        Left(0)_PAD : OUT std_ulogic;
-        Right(0)_PAD : OUT std_ulogic;
-        Rotation(0)_PAD : OUT std_ulogic;
+        NeckLeft(0)_PAD : OUT std_ulogic;
+        NeckRight(0)_PAD : OUT std_ulogic;
+        BaseRotation(0)_PAD : OUT std_ulogic;
         Pin_2(0)_PAD : OUT std_ulogic);
     ATTRIBUTE voltage_VDDABUF OF __DEFAULT__ : ENTITY IS 5e0;
     ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 5e0;
@@ -31,6 +31,7 @@ ENTITY Control IS
 END Control;
 
 ARCHITECTURE __DEFAULT__ OF Control IS
+    SIGNAL BaseRotation(0)__PA : bit;
     SIGNAL ClockBlock_100k : bit;
     SIGNAL ClockBlock_1k : bit;
     SIGNAL ClockBlock_32k : bit;
@@ -46,11 +47,12 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     SIGNAL EyelidClose(0)__PA : bit;
     SIGNAL EyelidTilt(0)__PA : bit;
     SIGNAL Jaw(0)__PA : bit;
-    SIGNAL Left(0)__PA : bit;
     SIGNAL LeftEyeballBottom(0)__PA : bit;
     SIGNAL LeftEyeballTop(0)__PA : bit;
     SIGNAL LeftEyebrow1(0)__PA : bit;
     SIGNAL LeftEyebrow2(0)__PA : bit;
+    SIGNAL NeckLeft(0)__PA : bit;
+    SIGNAL NeckRight(0)__PA : bit;
     SIGNAL Net_124 : bit;
     ATTRIBUTE udbclken_assigned OF Net_124 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_124 : SIGNAL IS true;
@@ -100,12 +102,10 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     SIGNAL Net_88 : bit;
     SIGNAL Net_89 : bit;
     SIGNAL Pin_2(0)__PA : bit;
-    SIGNAL Right(0)__PA : bit;
     SIGNAL RightEyeballBottom(0)__PA : bit;
     SIGNAL RightEyeballTop(0)__PA : bit;
     SIGNAL RightEyebrow1(0)__PA : bit;
     SIGNAL RightEyebrow2(0)__PA : bit;
-    SIGNAL Rotation(0)__PA : bit;
     SIGNAL TopLip(0)__PA : bit;
     SIGNAL \Base:PWMUDB:cmp1_less\ : bit;
     SIGNAL \Base:PWMUDB:cmp2_less\ : bit;
@@ -1894,7 +1894,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    Left:logicalport
+    NeckLeft:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -1965,20 +1965,20 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    Left(0):iocell
+    NeckLeft(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "Left",
+            logicalport => "NeckLeft",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
-            pa_out => Left(0)__PA,
+            pa_out => NeckLeft(0)__PA,
             oe => open,
             pin_input => Net_306,
-            pad_out => Left(0)_PAD,
-            pad_in => Left(0)_PAD,
+            pad_out => NeckLeft(0)_PAD,
+            pad_in => NeckLeft(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',
@@ -1986,7 +1986,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    Right:logicalport
+    NeckRight:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -2057,20 +2057,20 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    Right(0):iocell
+    NeckRight(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "Right",
+            logicalport => "NeckRight",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
-            pa_out => Right(0)__PA,
+            pa_out => NeckRight(0)__PA,
             oe => open,
             pin_input => Net_307,
-            pad_out => Right(0)_PAD,
-            pad_in => Right(0)_PAD,
+            pad_out => NeckRight(0)_PAD,
+            pad_in => NeckRight(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',
@@ -2078,7 +2078,7 @@ BEGIN
             out_clock_en => '1',
             out_reset => '0');
 
-    Rotation:logicalport
+    BaseRotation:logicalport
         GENERIC MAP(
             drive_mode => "110",
             ibuf_enabled => "1",
@@ -2149,20 +2149,20 @@ BEGIN
             out_clock_en => open,
             out_reset => open);
 
-    Rotation(0):iocell
+    BaseRotation(0):iocell
         GENERIC MAP(
             in_sync_mode => 0,
             out_sync_mode => 0,
             oe_sync_mode => 0,
-            logicalport => "Rotation",
+            logicalport => "BaseRotation",
             logicalport_pin_id => 0,
             io_capabilities => "0000000000000000000000000000000000000000000000000000000000000101")
         PORT MAP(
-            pa_out => Rotation(0)__PA,
+            pa_out => BaseRotation(0)__PA,
             oe => open,
             pin_input => Net_861,
-            pad_out => Rotation(0)_PAD,
-            pad_in => Rotation(0)_PAD,
+            pad_out => BaseRotation(0)_PAD,
+            pad_in => BaseRotation(0)_PAD,
             in_clock => open,
             in_clock_en => '1',
             in_reset => '0',

@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Left.h  
+* File Name: NeckLeft.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_Left_ALIASES_H) /* Pins Left_ALIASES_H */
-#define CY_PINS_Left_ALIASES_H
+#if !defined(CY_PINS_NeckLeft_ALIASES_H) /* Pins NeckLeft_ALIASES_H */
+#define CY_PINS_NeckLeft_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define Left_0			(Left__0__PC)
-#define Left_0_INTR	((uint16)((uint16)0x0001u << Left__0__SHIFT))
+#define NeckLeft_0			(NeckLeft__0__PC)
+#define NeckLeft_0_INTR	((uint16)((uint16)0x0001u << NeckLeft__0__SHIFT))
 
-#define Left_INTR_ALL	 ((uint16)(Left_0_INTR))
+#define NeckLeft_INTR_ALL	 ((uint16)(NeckLeft_0_INTR))
 
-#endif /* End Pins Left_ALIASES_H */
+#endif /* End Pins NeckLeft_ALIASES_H */
 
 
 /* [] END OF FILE */

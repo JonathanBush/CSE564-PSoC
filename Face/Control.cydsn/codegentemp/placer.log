@@ -6,7 +6,7 @@
 
 #Build Date:         Dec  5 2017 15:35:27
 
-#File Generated:     Nov 16 2019 11:01:55
+#File Generated:     Nov 16 2019 11:42:01
 
 #Purpose:            
 
@@ -122,7 +122,7 @@ Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 0.7 (sec)
+D2088: Phase 7, elapsed time : 1.1 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	8
@@ -227,7 +227,7 @@ Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 1.2 (sec)
+D2088: Phase 7, elapsed time : 1.6 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	8
@@ -281,5 +281,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 3.5 sec.
+I2076: Total run-time: 5.0 sec.
 

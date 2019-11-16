@@ -1,6 +1,6 @@
 // ======================================================================
 // Control.v generated from TopDesign.cysch
-// 11/16/2019 at 11:01
+// 11/16/2019 at 11:41
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -2157,11 +2157,11 @@ module top ;
 		 (.clock_out(Net_304));
 
 
-	wire [0:0] tmpOE__Left_net;
-	wire [0:0] tmpFB_0__Left_net;
-	wire [0:0] tmpIO_0__Left_net;
-	wire [0:0] tmpINTERRUPT_0__Left_net;
-	electrical [0:0] tmpSIOVREF__Left_net;
+	wire [0:0] tmpOE__NeckLeft_net;
+	wire [0:0] tmpFB_0__NeckLeft_net;
+	wire [0:0] tmpIO_0__NeckLeft_net;
+	wire [0:0] tmpINTERRUPT_0__NeckLeft_net;
+	electrical [0:0] tmpSIOVREF__NeckLeft_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("5719ffab-82bb-4002-96b5-efe0acaa213f"),
@@ -2216,13 +2216,13 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		Left
-		 (.oe(tmpOE__Left_net),
+		NeckLeft
+		 (.oe(tmpOE__NeckLeft_net),
 		  .y({Net_306}),
-		  .fb({tmpFB_0__Left_net[0:0]}),
-		  .io({tmpIO_0__Left_net[0:0]}),
-		  .siovref(tmpSIOVREF__Left_net),
-		  .interrupt({tmpINTERRUPT_0__Left_net[0:0]}),
+		  .fb({tmpFB_0__NeckLeft_net[0:0]}),
+		  .io({tmpIO_0__NeckLeft_net[0:0]}),
+		  .siovref(tmpSIOVREF__NeckLeft_net),
+		  .interrupt({tmpINTERRUPT_0__NeckLeft_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -2230,13 +2230,13 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__Left_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__NeckLeft_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-	wire [0:0] tmpOE__Right_net;
-	wire [0:0] tmpFB_0__Right_net;
-	wire [0:0] tmpIO_0__Right_net;
-	wire [0:0] tmpINTERRUPT_0__Right_net;
-	electrical [0:0] tmpSIOVREF__Right_net;
+	wire [0:0] tmpOE__NeckRight_net;
+	wire [0:0] tmpFB_0__NeckRight_net;
+	wire [0:0] tmpIO_0__NeckRight_net;
+	wire [0:0] tmpINTERRUPT_0__NeckRight_net;
+	electrical [0:0] tmpSIOVREF__NeckRight_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("3192f2ed-5421-4339-87f1-890fd6c37204"),
@@ -2291,13 +2291,13 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		Right
-		 (.oe(tmpOE__Right_net),
+		NeckRight
+		 (.oe(tmpOE__NeckRight_net),
 		  .y({Net_307}),
-		  .fb({tmpFB_0__Right_net[0:0]}),
-		  .io({tmpIO_0__Right_net[0:0]}),
-		  .siovref(tmpSIOVREF__Right_net),
-		  .interrupt({tmpINTERRUPT_0__Right_net[0:0]}),
+		  .fb({tmpFB_0__NeckRight_net[0:0]}),
+		  .io({tmpIO_0__NeckRight_net[0:0]}),
+		  .siovref(tmpSIOVREF__NeckRight_net),
+		  .interrupt({tmpINTERRUPT_0__NeckRight_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -2305,7 +2305,7 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__Right_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__NeckRight_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
     PWM_v3_30_7 Base (
         .reset(1'b0),
@@ -2336,11 +2336,11 @@ module top ;
 		 (.clock_out(Net_859));
 
 
-	wire [0:0] tmpOE__Rotation_net;
-	wire [0:0] tmpFB_0__Rotation_net;
-	wire [0:0] tmpIO_0__Rotation_net;
-	wire [0:0] tmpINTERRUPT_0__Rotation_net;
-	electrical [0:0] tmpSIOVREF__Rotation_net;
+	wire [0:0] tmpOE__BaseRotation_net;
+	wire [0:0] tmpFB_0__BaseRotation_net;
+	wire [0:0] tmpIO_0__BaseRotation_net;
+	wire [0:0] tmpINTERRUPT_0__BaseRotation_net;
+	electrical [0:0] tmpSIOVREF__BaseRotation_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("8e03b85c-a9de-4038-a602-b92d1fb1a3c7"),
@@ -2395,13 +2395,13 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		Rotation
-		 (.oe(tmpOE__Rotation_net),
+		BaseRotation
+		 (.oe(tmpOE__BaseRotation_net),
 		  .y({Net_861}),
-		  .fb({tmpFB_0__Rotation_net[0:0]}),
-		  .io({tmpIO_0__Rotation_net[0:0]}),
-		  .siovref(tmpSIOVREF__Rotation_net),
-		  .interrupt({tmpINTERRUPT_0__Rotation_net[0:0]}),
+		  .fb({tmpFB_0__BaseRotation_net[0:0]}),
+		  .io({tmpIO_0__BaseRotation_net[0:0]}),
+		  .siovref(tmpSIOVREF__BaseRotation_net),
+		  .interrupt({tmpINTERRUPT_0__BaseRotation_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -2409,7 +2409,7 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__Rotation_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__BaseRotation_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
 	wire [0:0] tmpOE__Pin_2_net;
 	wire [0:0] tmpFB_0__Pin_2_net;

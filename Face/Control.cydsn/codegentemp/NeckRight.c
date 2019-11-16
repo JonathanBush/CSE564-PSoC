@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Left.c  
+* File Name: NeckRight.c  
 * Version 2.20
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "Left.h"
+#include "NeckRight.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 Left__PORT == 15 && ((Left__MASK & 0xC0) != 0))
+	 NeckRight__PORT == 15 && ((NeckRight__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: Left_Write
+* Function Name: NeckRight_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -52,17 +52,17 @@
 *  this function.
 *
 * \funcusage
-*  \snippet Left_SUT.c usage_Left_Write
+*  \snippet NeckRight_SUT.c usage_NeckRight_Write
 *******************************************************************************/
-void Left_Write(uint8 value)
+void NeckRight_Write(uint8 value)
 {
-    uint8 staticBits = (Left_DR & (uint8)(~Left_MASK));
-    Left_DR = staticBits | ((uint8)(value << Left_SHIFT) & Left_MASK);
+    uint8 staticBits = (NeckRight_DR & (uint8)(~NeckRight_MASK));
+    NeckRight_DR = staticBits | ((uint8)(value << NeckRight_SHIFT) & NeckRight_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: Left_SetDriveMode
+* Function Name: NeckRight_SetDriveMode
 ****************************************************************************//**
 *
 * \brief Sets the drive mode for each of the Pins component's pins.
@@ -85,16 +85,16 @@ void Left_Write(uint8 value)
 *  APIs (primary method) or disable interrupts around this function.
 *
 * \funcusage
-*  \snippet Left_SUT.c usage_Left_SetDriveMode
+*  \snippet NeckRight_SUT.c usage_NeckRight_SetDriveMode
 *******************************************************************************/
-void Left_SetDriveMode(uint8 mode)
+void NeckRight_SetDriveMode(uint8 mode)
 {
-	CyPins_SetPinDriveMode(Left_0, mode);
+	CyPins_SetPinDriveMode(NeckRight_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: Left_Read
+* Function Name: NeckRight_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -108,16 +108,16 @@ void Left_SetDriveMode(uint8 mode)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet Left_SUT.c usage_Left_Read  
+*  \snippet NeckRight_SUT.c usage_NeckRight_Read  
 *******************************************************************************/
-uint8 Left_Read(void)
+uint8 NeckRight_Read(void)
 {
-    return (Left_PS & Left_MASK) >> Left_SHIFT;
+    return (NeckRight_PS & NeckRight_MASK) >> NeckRight_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: Left_ReadDataReg
+* Function Name: NeckRight_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -126,8 +126,8 @@ uint8 Left_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred Left_Read() API because the 
-* Left_ReadDataReg() reads the data register instead of the status 
+* preferred NeckRight_Read() API because the 
+* NeckRight_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -136,19 +136,19 @@ uint8 Left_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet Left_SUT.c usage_Left_ReadDataReg 
+*  \snippet NeckRight_SUT.c usage_NeckRight_ReadDataReg 
 *******************************************************************************/
-uint8 Left_ReadDataReg(void)
+uint8 NeckRight_ReadDataReg(void)
 {
-    return (Left_DR & Left_MASK) >> Left_SHIFT;
+    return (NeckRight_DR & NeckRight_MASK) >> NeckRight_SHIFT;
 }
 
 
 /* If interrupt is connected for this Pins component */ 
-#if defined(Left_INTSTAT) 
+#if defined(NeckRight_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: Left_SetInterruptMode
+    * Function Name: NeckRight_SetInterruptMode
     ****************************************************************************//**
     *
     * \brief Configures the interrupt mode for each of the Pins component's
@@ -161,12 +161,12 @@ uint8 Left_ReadDataReg(void)
     * \param position
     *  The pin position as listed in the Pins component. You may OR these to be 
     *  able to configure the interrupt mode of multiple pins within a Pins 
-    *  component. Or you may use Left_INTR_ALL to configure the
+    *  component. Or you may use NeckRight_INTR_ALL to configure the
     *  interrupt mode of all the pins in the Pins component.       
-    *  - Left_0_INTR       (First pin in the list)
-    *  - Left_1_INTR       (Second pin in the list)
+    *  - NeckRight_0_INTR       (First pin in the list)
+    *  - NeckRight_1_INTR       (Second pin in the list)
     *  - ...
-    *  - Left_INTR_ALL     (All pins in Pins component)
+    *  - NeckRight_INTR_ALL     (All pins in Pins component)
     *
     * \param mode
     *  Interrupt mode for the selected pins. Valid options are documented in
@@ -182,19 +182,19 @@ uint8 Left_ReadDataReg(void)
     *  port.
     *
     * \funcusage
-    *  \snippet Left_SUT.c usage_Left_SetInterruptMode
+    *  \snippet NeckRight_SUT.c usage_NeckRight_SetInterruptMode
     *******************************************************************************/
-    void Left_SetInterruptMode(uint16 position, uint16 mode)
+    void NeckRight_SetInterruptMode(uint16 position, uint16 mode)
     {
-		if((position & Left_0_INTR) != 0u) 
+		if((position & NeckRight_0_INTR) != 0u) 
 		{ 
-			 Left_0_INTTYPE_REG = (uint8)mode; 
+			 NeckRight_0_INTTYPE_REG = (uint8)mode; 
 		}
     }
     
     
     /*******************************************************************************
-    * Function Name: Left_ClearInterrupt
+    * Function Name: NeckRight_ClearInterrupt
     ****************************************************************************//**
     *
     * \brief Clears any active interrupts attached with the component and returns 
@@ -211,11 +211,11 @@ uint8 Left_ReadDataReg(void)
     *  those associated with the Pins component.
     *
     * \funcusage
-    *  \snippet Left_SUT.c usage_Left_ClearInterrupt
+    *  \snippet NeckRight_SUT.c usage_NeckRight_ClearInterrupt
     *******************************************************************************/
-    uint8 Left_ClearInterrupt(void)
+    uint8 NeckRight_ClearInterrupt(void)
     {
-        return (Left_INTSTAT & Left_MASK) >> Left_SHIFT;
+        return (NeckRight_INTSTAT & NeckRight_MASK) >> NeckRight_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

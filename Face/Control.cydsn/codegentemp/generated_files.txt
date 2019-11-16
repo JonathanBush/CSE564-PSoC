@@ -89,20 +89,20 @@
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Neck_PM.c" value="SOURCE_C;CortexM3;;;;Neck" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Clock_7.c" value="SOURCE_C;CortexM3;;;;Clock_7" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Clock_7.h" value="HEADER;;;;;Clock_7" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Left_aliases.h" value="HEADER;;;;;Left" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Left.c" value="SOURCE_C;CortexM3;;;;Left" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Left.h" value="HEADER;;;;;Left" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Right_aliases.h" value="HEADER;;;;;Right" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Right.c" value="SOURCE_C;CortexM3;;;;Right" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Right.h" value="HEADER;;;;;Right" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\NeckLeft_aliases.h" value="HEADER;;;;;NeckLeft" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\NeckLeft.c" value="SOURCE_C;CortexM3;;;;NeckLeft" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\NeckLeft.h" value="HEADER;;;;;NeckLeft" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\NeckRight_aliases.h" value="HEADER;;;;;NeckRight" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\NeckRight.c" value="SOURCE_C;CortexM3;;;;NeckRight" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\NeckRight.h" value="HEADER;;;;;NeckRight" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Base.c" value="SOURCE_C;CortexM3;;;;Base" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Base.h" value="HEADER;;;;;Base" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Base_PM.c" value="SOURCE_C;CortexM3;;;;Base" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Clock_8.c" value="SOURCE_C;CortexM3;;;;Clock_8" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Clock_8.h" value="HEADER;;;;;Clock_8" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Rotation_aliases.h" value="HEADER;;;;;Rotation" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Rotation.c" value="SOURCE_C;CortexM3;;;;Rotation" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Rotation.h" value="HEADER;;;;;Rotation" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\BaseRotation_aliases.h" value="HEADER;;;;;BaseRotation" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\BaseRotation.c" value="SOURCE_C;CortexM3;;;;BaseRotation" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\BaseRotation.h" value="HEADER;;;;;BaseRotation" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Pin_2_aliases.h" value="HEADER;;;;;Pin_2" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Pin_2.c" value="SOURCE_C;CortexM3;;;;Pin_2" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Pin_2.h" value="HEADER;;;;;Pin_2" />

@@ -2,7 +2,7 @@
 --	Conversion of Control.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sat Nov 16 11:01:51 2019
+--	Sat Nov 16 11:41:58 2019
 --
 
 USE cypress.cypress.all;
@@ -3049,16 +3049,16 @@ SIGNAL Net_848 : bit;
 SIGNAL \Neck:Net_113\ : bit;
 SIGNAL \Neck:Net_107\ : bit;
 SIGNAL \Neck:Net_114\ : bit;
-SIGNAL tmpOE__Left_net_0 : bit;
-SIGNAL tmpFB_0__Left_net_0 : bit;
-SIGNAL tmpIO_0__Left_net_0 : bit;
-TERMINAL tmpSIOVREF__Left_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__Left_net_0 : bit;
-SIGNAL tmpOE__Right_net_0 : bit;
-SIGNAL tmpFB_0__Right_net_0 : bit;
-SIGNAL tmpIO_0__Right_net_0 : bit;
-TERMINAL tmpSIOVREF__Right_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__Right_net_0 : bit;
+SIGNAL tmpOE__NeckLeft_net_0 : bit;
+SIGNAL tmpFB_0__NeckLeft_net_0 : bit;
+SIGNAL tmpIO_0__NeckLeft_net_0 : bit;
+TERMINAL tmpSIOVREF__NeckLeft_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__NeckLeft_net_0 : bit;
+SIGNAL tmpOE__NeckRight_net_0 : bit;
+SIGNAL tmpFB_0__NeckRight_net_0 : bit;
+SIGNAL tmpIO_0__NeckRight_net_0 : bit;
+TERMINAL tmpSIOVREF__NeckRight_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__NeckRight_net_0 : bit;
 SIGNAL \Base:PWMUDB:km_run\ : bit;
 SIGNAL \Base:PWMUDB:min_kill_reg\ : bit;
 SIGNAL Net_859 : bit;
@@ -3484,11 +3484,11 @@ SIGNAL Net_874 : bit;
 SIGNAL \Base:Net_113\ : bit;
 SIGNAL \Base:Net_107\ : bit;
 SIGNAL \Base:Net_114\ : bit;
-SIGNAL tmpOE__Rotation_net_0 : bit;
-SIGNAL tmpFB_0__Rotation_net_0 : bit;
-SIGNAL tmpIO_0__Rotation_net_0 : bit;
-TERMINAL tmpSIOVREF__Rotation_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__Rotation_net_0 : bit;
+SIGNAL tmpOE__BaseRotation_net_0 : bit;
+SIGNAL tmpFB_0__BaseRotation_net_0 : bit;
+SIGNAL tmpIO_0__BaseRotation_net_0 : bit;
+TERMINAL tmpSIOVREF__BaseRotation_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__BaseRotation_net_0 : bit;
 SIGNAL tmpOE__Pin_2_net_0 : bit;
 SIGNAL tmpFB_0__Pin_2_net_0 : bit;
 SIGNAL tmpIO_0__Pin_2_net_0 : bit;
@@ -6133,7 +6133,7 @@ Clock_7:cy_clock_v1_0
 		is_digital=>'1')
 	PORT MAP(clock_out=>Net_304,
 		dig_domain_out=>open);
-Left:cy_psoc3_pins_v1_10
+NeckLeft:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"5719ffab-82bb-4002-96b5-efe0acaa213f",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -6191,10 +6191,10 @@ Left:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>Net_306,
-		fb=>(tmpFB_0__Left_net_0),
+		fb=>(tmpFB_0__NeckLeft_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__Left_net_0),
-		siovref=>(tmpSIOVREF__Left_net_0),
+		io=>(tmpIO_0__NeckLeft_net_0),
+		siovref=>(tmpSIOVREF__NeckLeft_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -6202,8 +6202,8 @@ Left:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__Left_net_0);
-Right:cy_psoc3_pins_v1_10
+		interrupt=>tmpINTERRUPT_0__NeckLeft_net_0);
+NeckRight:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"3192f2ed-5421-4339-87f1-890fd6c37204",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -6261,10 +6261,10 @@ Right:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>Net_307,
-		fb=>(tmpFB_0__Right_net_0),
+		fb=>(tmpFB_0__NeckRight_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__Right_net_0),
-		siovref=>(tmpSIOVREF__Right_net_0),
+		io=>(tmpIO_0__NeckRight_net_0),
+		siovref=>(tmpSIOVREF__NeckRight_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -6272,7 +6272,7 @@ Right:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__Right_net_0);
+		interrupt=>tmpINTERRUPT_0__NeckRight_net_0);
 \Base:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
 	PORT MAP(clock_in=>Net_859,
@@ -6488,7 +6488,7 @@ Clock_8:cy_clock_v1_0
 		is_digital=>'1')
 	PORT MAP(clock_out=>Net_859,
 		dig_domain_out=>open);
-Rotation:cy_psoc3_pins_v1_10
+BaseRotation:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"8e03b85c-a9de-4038-a602-b92d1fb1a3c7",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -6546,10 +6546,10 @@ Rotation:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>Net_861,
-		fb=>(tmpFB_0__Rotation_net_0),
+		fb=>(tmpFB_0__BaseRotation_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__Rotation_net_0),
-		siovref=>(tmpSIOVREF__Rotation_net_0),
+		io=>(tmpIO_0__BaseRotation_net_0),
+		siovref=>(tmpSIOVREF__BaseRotation_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -6557,7 +6557,7 @@ Rotation:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__Rotation_net_0);
+		interrupt=>tmpINTERRUPT_0__BaseRotation_net_0);
 Pin_2:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"77320ccc-0277-47ad-bc06-174c5a798bc0",
 		drive_mode=>"110",

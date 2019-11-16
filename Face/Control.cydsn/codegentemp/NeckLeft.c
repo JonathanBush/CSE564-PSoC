@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Rotation.c  
+* File Name: NeckLeft.c  
 * Version 2.20
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "Rotation.h"
+#include "NeckLeft.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 Rotation__PORT == 15 && ((Rotation__MASK & 0xC0) != 0))
+	 NeckLeft__PORT == 15 && ((NeckLeft__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: Rotation_Write
+* Function Name: NeckLeft_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -52,17 +52,17 @@
 *  this function.
 *
 * \funcusage
-*  \snippet Rotation_SUT.c usage_Rotation_Write
+*  \snippet NeckLeft_SUT.c usage_NeckLeft_Write
 *******************************************************************************/
-void Rotation_Write(uint8 value)
+void NeckLeft_Write(uint8 value)
 {
-    uint8 staticBits = (Rotation_DR & (uint8)(~Rotation_MASK));
-    Rotation_DR = staticBits | ((uint8)(value << Rotation_SHIFT) & Rotation_MASK);
+    uint8 staticBits = (NeckLeft_DR & (uint8)(~NeckLeft_MASK));
+    NeckLeft_DR = staticBits | ((uint8)(value << NeckLeft_SHIFT) & NeckLeft_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: Rotation_SetDriveMode
+* Function Name: NeckLeft_SetDriveMode
 ****************************************************************************//**
 *
 * \brief Sets the drive mode for each of the Pins component's pins.
@@ -85,16 +85,16 @@ void Rotation_Write(uint8 value)
 *  APIs (primary method) or disable interrupts around this function.
 *
 * \funcusage
-*  \snippet Rotation_SUT.c usage_Rotation_SetDriveMode
+*  \snippet NeckLeft_SUT.c usage_NeckLeft_SetDriveMode
 *******************************************************************************/
-void Rotation_SetDriveMode(uint8 mode)
+void NeckLeft_SetDriveMode(uint8 mode)
 {
-	CyPins_SetPinDriveMode(Rotation_0, mode);
+	CyPins_SetPinDriveMode(NeckLeft_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: Rotation_Read
+* Function Name: NeckLeft_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -108,16 +108,16 @@ void Rotation_SetDriveMode(uint8 mode)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet Rotation_SUT.c usage_Rotation_Read  
+*  \snippet NeckLeft_SUT.c usage_NeckLeft_Read  
 *******************************************************************************/
-uint8 Rotation_Read(void)
+uint8 NeckLeft_Read(void)
 {
-    return (Rotation_PS & Rotation_MASK) >> Rotation_SHIFT;
+    return (NeckLeft_PS & NeckLeft_MASK) >> NeckLeft_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: Rotation_ReadDataReg
+* Function Name: NeckLeft_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -126,8 +126,8 @@ uint8 Rotation_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred Rotation_Read() API because the 
-* Rotation_ReadDataReg() reads the data register instead of the status 
+* preferred NeckLeft_Read() API because the 
+* NeckLeft_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -136,19 +136,19 @@ uint8 Rotation_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet Rotation_SUT.c usage_Rotation_ReadDataReg 
+*  \snippet NeckLeft_SUT.c usage_NeckLeft_ReadDataReg 
 *******************************************************************************/
-uint8 Rotation_ReadDataReg(void)
+uint8 NeckLeft_ReadDataReg(void)
 {
-    return (Rotation_DR & Rotation_MASK) >> Rotation_SHIFT;
+    return (NeckLeft_DR & NeckLeft_MASK) >> NeckLeft_SHIFT;
 }
 
 
 /* If interrupt is connected for this Pins component */ 
-#if defined(Rotation_INTSTAT) 
+#if defined(NeckLeft_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: Rotation_SetInterruptMode
+    * Function Name: NeckLeft_SetInterruptMode
     ****************************************************************************//**
     *
     * \brief Configures the interrupt mode for each of the Pins component's
@@ -161,12 +161,12 @@ uint8 Rotation_ReadDataReg(void)
     * \param position
     *  The pin position as listed in the Pins component. You may OR these to be 
     *  able to configure the interrupt mode of multiple pins within a Pins 
-    *  component. Or you may use Rotation_INTR_ALL to configure the
+    *  component. Or you may use NeckLeft_INTR_ALL to configure the
     *  interrupt mode of all the pins in the Pins component.       
-    *  - Rotation_0_INTR       (First pin in the list)
-    *  - Rotation_1_INTR       (Second pin in the list)
+    *  - NeckLeft_0_INTR       (First pin in the list)
+    *  - NeckLeft_1_INTR       (Second pin in the list)
     *  - ...
-    *  - Rotation_INTR_ALL     (All pins in Pins component)
+    *  - NeckLeft_INTR_ALL     (All pins in Pins component)
     *
     * \param mode
     *  Interrupt mode for the selected pins. Valid options are documented in
@@ -182,19 +182,19 @@ uint8 Rotation_ReadDataReg(void)
     *  port.
     *
     * \funcusage
-    *  \snippet Rotation_SUT.c usage_Rotation_SetInterruptMode
+    *  \snippet NeckLeft_SUT.c usage_NeckLeft_SetInterruptMode
     *******************************************************************************/
-    void Rotation_SetInterruptMode(uint16 position, uint16 mode)
+    void NeckLeft_SetInterruptMode(uint16 position, uint16 mode)
     {
-		if((position & Rotation_0_INTR) != 0u) 
+		if((position & NeckLeft_0_INTR) != 0u) 
 		{ 
-			 Rotation_0_INTTYPE_REG = (uint8)mode; 
+			 NeckLeft_0_INTTYPE_REG = (uint8)mode; 
 		}
     }
     
     
     /*******************************************************************************
-    * Function Name: Rotation_ClearInterrupt
+    * Function Name: NeckLeft_ClearInterrupt
     ****************************************************************************//**
     *
     * \brief Clears any active interrupts attached with the component and returns 
@@ -211,11 +211,11 @@ uint8 Rotation_ReadDataReg(void)
     *  those associated with the Pins component.
     *
     * \funcusage
-    *  \snippet Rotation_SUT.c usage_Rotation_ClearInterrupt
+    *  \snippet NeckLeft_SUT.c usage_NeckLeft_ClearInterrupt
     *******************************************************************************/
-    uint8 Rotation_ClearInterrupt(void)
+    uint8 NeckLeft_ClearInterrupt(void)
     {
-        return (Rotation_INTSTAT & Rotation_MASK) >> Rotation_SHIFT;
+        return (NeckLeft_INTSTAT & NeckLeft_MASK) >> NeckLeft_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 
