@@ -10,6 +10,9 @@
  * ========================================
 */
 #include "project.h"
+#define MOTOR_CENTER 2000
+#define MOTOR_LOW 1000
+#define MOTOR_HIGH 3000
 
 void set_servo_angle(void (*compare_func)(uint16), uint8 angle);
 
@@ -26,10 +29,12 @@ int main(void)
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
+    LeftEyebrow_Start();
     for(;;)
     {
-        
-        /* Place your application code here. */
+        set_servo_angle(LeftEyebrow_WriteCompare1, 0);
+        CyDelay(1000);
+        set_servo_angle(LeftEyebrow_WriteCompare1, 90);
     }
 }
 
