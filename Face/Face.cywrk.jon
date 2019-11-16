@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Face\Control\Source Files\main.c">
 <ExpandedNodeIds>
 <v>Face</v>
 <v>Face\Control</v>
@@ -163,45 +163,6 @@
 <VisibleNodeIds>
 <v>Face</v>
 <v>Face\Control</v>
-<v>Face\Control\CortexM3</v>
-<v>Face\Control\CortexM3\ARM_GCC_541</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Base.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Base_PM.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\BaseRotation.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_2.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_3.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_4.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_5.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_6.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_7.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Clock_8.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\EyelidClose.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Eyelids.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Eyelids_PM.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\EyelidTilt.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Jaw.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\LeftEyeball.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\LeftEyeball_PM.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\LeftEyeballBottom.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\LeftEyeballTop.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\LeftEyebrow.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\LeftEyebrow_PM.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\LeftEyebrow1.lst</v>
-<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\LeftEyebrow2.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>

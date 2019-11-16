@@ -11,6 +11,15 @@
 */
 #include "project.h"
 
+void set_servo_angle(void (*compare_func)(uint16), uint8 angle);
+
+void set_servo_angle(void (*compare_func)(uint16), uint8 angle) {
+    uint16 compare = angle;
+    (*compare_func)(compare);
+}
+
+
+
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
@@ -19,6 +28,7 @@ int main(void)
 
     for(;;)
     {
+        
         /* Place your application code here. */
     }
 }
