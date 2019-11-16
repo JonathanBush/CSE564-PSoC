@@ -1,116 +1,116 @@
 dont_use_io iocell 1 0
 dont_use_io iocell 1 1
 dont_use_io iocell 1 3
-set_location "Net_127" macrocell 0 2 0 3
+set_location "Net_127" macrocell 1 3 0 3
 set_location "\LeftEyebrow:PWMUDB:status_0\" macrocell 1 0 1 1
-set_location "\RightEyeball:PWMUDB:sP16:pwmdp:u1\" datapathcell 0 2 2 
+set_location "\RightEyeball:PWMUDB:sP16:pwmdp:u1\" datapathcell 1 3 2 
 set_location "\LeftEyebrow:PWMUDB:sP16:pwmdp:u0\" datapathcell 0 0 2 
-set_location "Net_61" macrocell 0 1 0 2
-set_location "Net_126" macrocell 0 2 0 2
-set_location "Net_861" macrocell 2 1 0 2
-set_location "\Mouth:PWMUDB:status_1\" macrocell 1 3 1 3
-set_location "\Mouth:PWMUDB:genblk8:stsreg\" statusicell 1 3 4 
-set_location "\Base:PWMUDB:status_0\" macrocell 2 1 1 1
-set_location "\RightEyeball:PWMUDB:runmode_enable\" macrocell 0 2 0 0
-set_location "\Neck:PWMUDB:genblk8:stsreg\" statusicell 3 3 4 
+set_location "Net_61" macrocell 0 2 0 2
+set_location "Net_126" macrocell 1 3 0 2
+set_location "Net_861" macrocell 3 0 0 2
+set_location "\Lips:PWMUDB:status_1\" macrocell 3 3 1 3
+set_location "\Lips:PWMUDB:genblk8:stsreg\" statusicell 3 3 4 
+set_location "\Base:PWMUDB:status_0\" macrocell 3 0 1 1
+set_location "\RightEyeball:PWMUDB:runmode_enable\" macrocell 1 3 0 0
+set_location "\Neck:PWMUDB:genblk8:stsreg\" statusicell 2 2 4 
 set_location "Net_47" macrocell 1 0 0 2
-set_location "\Eyelids:PWMUDB:sP16:pwmdp:u0\" datapathcell 2 0 2 
-set_location "\Neck:PWMUDB:status_2\" macrocell 3 3 0 1
-set_location "\Mouth:PWMUDB:status_0\" macrocell 1 3 1 1
-set_location "Net_175" macrocell 3 0 0 2
-set_location "\Eyelids:PWMUDB:prevCompare2\" macrocell 3 0 1 2
-set_location "\Base:PWMUDB:prevCompare1\" macrocell 2 1 1 0
-set_location "\RightEyebrow:PWMUDB:status_0\" macrocell 0 1 1 1
-set_location "Net_62" macrocell 0 1 0 3
-set_location "\RightEyeball:PWMUDB:status_0\" macrocell 0 2 1 1
-set_location "\Base:PWMUDB:sP16:pwmdp:u0\" datapathcell 3 1 2 
-set_location "\Eyelids:PWMUDB:sP16:pwmdp:u1\" datapathcell 3 0 2 
-set_location "\LeftEyeball:PWMUDB:sP16:pwmdp:u0\" datapathcell 3 2 2 
-set_location "\Mouth:PWMUDB:runmode_enable\" macrocell 1 3 0 0
-set_location "\LeftEyeball:PWMUDB:prevCompare2\" macrocell 2 2 1 2
-set_location "\Eyelids:PWMUDB:runmode_enable\" macrocell 3 0 0 0
-set_location "Net_176" macrocell 3 0 0 3
-set_location "\RightEyebrow:PWMUDB:genblk8:stsreg\" statusicell 0 1 4 
+set_location "\Eyelids:PWMUDB:sP16:pwmdp:u0\" datapathcell 1 1 2 
+set_location "\Neck:PWMUDB:status_2\" macrocell 2 2 0 1
+set_location "\Lips:PWMUDB:status_0\" macrocell 3 3 1 1
+set_location "Net_175" macrocell 0 1 0 2
+set_location "\Eyelids:PWMUDB:prevCompare2\" macrocell 0 1 1 2
+set_location "\Base:PWMUDB:prevCompare1\" macrocell 3 0 1 0
+set_location "\RightEyebrow:PWMUDB:status_0\" macrocell 0 2 1 1
+set_location "Net_62" macrocell 0 2 0 3
+set_location "\RightEyeball:PWMUDB:status_0\" macrocell 1 3 1 1
+set_location "\Base:PWMUDB:sP16:pwmdp:u0\" datapathcell 2 0 2 
+set_location "\Eyelids:PWMUDB:sP16:pwmdp:u1\" datapathcell 0 1 2 
+set_location "\LeftEyeball:PWMUDB:sP16:pwmdp:u0\" datapathcell 3 1 2 
+set_location "\Lips:PWMUDB:runmode_enable\" macrocell 3 3 0 0
+set_location "\LeftEyeball:PWMUDB:prevCompare2\" macrocell 2 1 1 2
+set_location "\Eyelids:PWMUDB:runmode_enable\" macrocell 0 1 0 0
+set_location "Net_176" macrocell 0 1 0 3
+set_location "\RightEyebrow:PWMUDB:genblk8:stsreg\" statusicell 0 2 4 
 set_location "Net_48" macrocell 1 0 0 3
-set_location "\Mouth:PWMUDB:prevCompare2\" macrocell 1 3 1 2
-set_location "\LeftEyeball:PWMUDB:status_2\" macrocell 2 2 0 1
-set_location "\Base:PWMUDB:status_2\" macrocell 2 1 0 1
-set_location "\RightEyeball:PWMUDB:status_2\" macrocell 0 2 0 1
+set_location "\Lips:PWMUDB:prevCompare2\" macrocell 3 3 1 2
+set_location "\LeftEyeball:PWMUDB:status_2\" macrocell 2 1 0 1
+set_location "\Base:PWMUDB:status_2\" macrocell 3 0 0 1
+set_location "\RightEyeball:PWMUDB:status_2\" macrocell 1 3 0 1
 set_location "\LeftEyebrow:PWMUDB:prevCompare1\" macrocell 1 0 1 0
-set_location "\RightEyebrow:PWMUDB:sP16:pwmdp:u1\" datapathcell 0 1 2 
-set_location "\RightEyebrow:PWMUDB:status_1\" macrocell 0 1 1 3
-set_location "\RightEyeball:PWMUDB:status_1\" macrocell 0 2 1 3
+set_location "\RightEyebrow:PWMUDB:sP16:pwmdp:u1\" datapathcell 0 2 2 
+set_location "\RightEyebrow:PWMUDB:status_1\" macrocell 0 2 1 3
+set_location "\RightEyeball:PWMUDB:status_1\" macrocell 1 3 1 3
 set_location "\LeftEyebrow:PWMUDB:sP16:pwmdp:u1\" datapathcell 1 0 2 
 set_location "\LeftEyebrow:PWMUDB:status_1\" macrocell 1 0 1 3
-set_location "\RightEyebrow:PWMUDB:sP16:pwmdp:u0\" datapathcell 1 1 2 
-set_location "\Eyelids:PWMUDB:genblk8:stsreg\" statusicell 3 0 4 
-set_location "\Neck:PWMUDB:status_1\" macrocell 3 3 1 3
-set_location "\RightEyebrow:PWMUDB:prevCompare1\" macrocell 0 1 1 0
-set_location "\RightEyeball:PWMUDB:genblk8:stsreg\" statusicell 0 2 4 
-set_location "\Base:PWMUDB:status_1\" macrocell 2 1 1 3
-set_location "\LeftEyeball:PWMUDB:runmode_enable\" macrocell 2 2 0 0
-set_location "Net_89" macrocell 2 2 0 3
-set_location "\Mouth:PWMUDB:status_2\" macrocell 1 3 0 1
+set_location "\RightEyebrow:PWMUDB:sP16:pwmdp:u0\" datapathcell 1 2 2 
+set_location "\Eyelids:PWMUDB:genblk8:stsreg\" statusicell 0 1 4 
+set_location "\Neck:PWMUDB:status_1\" macrocell 2 2 1 3
+set_location "\RightEyebrow:PWMUDB:prevCompare1\" macrocell 0 2 1 0
+set_location "\RightEyeball:PWMUDB:genblk8:stsreg\" statusicell 1 3 4 
+set_location "\Base:PWMUDB:status_1\" macrocell 3 0 1 3
+set_location "\LeftEyeball:PWMUDB:runmode_enable\" macrocell 2 1 0 0
+set_location "Net_89" macrocell 2 1 0 3
+set_location "\Lips:PWMUDB:status_2\" macrocell 3 3 0 1
 set_location "\LeftEyebrow:PWMUDB:status_2\" macrocell 1 0 0 1
-set_location "\Eyelids:PWMUDB:status_2\" macrocell 3 0 0 1
-set_location "Net_235" macrocell 1 3 0 2
-set_location "\Mouth:PWMUDB:prevCompare1\" macrocell 1 3 1 0
-set_location "Net_307" macrocell 3 3 0 3
-set_location "\LeftEyeball:PWMUDB:status_1\" macrocell 2 2 1 3
+set_location "\Eyelids:PWMUDB:status_2\" macrocell 0 1 0 1
+set_location "Net_235" macrocell 3 3 0 2
+set_location "\Lips:PWMUDB:prevCompare1\" macrocell 3 3 1 0
+set_location "Net_307" macrocell 2 2 0 3
+set_location "\LeftEyeball:PWMUDB:status_1\" macrocell 2 1 1 3
 set_location "\LeftEyebrow:PWMUDB:prevCompare2\" macrocell 1 0 1 2
-set_location "\RightEyeball:PWMUDB:sP16:pwmdp:u0\" datapathcell 1 2 2 
-set_location "Net_88" macrocell 2 2 0 2
-set_location "\LeftEyeball:PWMUDB:sP16:pwmdp:u1\" datapathcell 2 2 2 
-set_location "\Neck:PWMUDB:sP16:pwmdp:u0\" datapathcell 2 3 2 
-set_location "\RightEyeball:PWMUDB:prevCompare2\" macrocell 0 2 1 2
-set_location "\Neck:PWMUDB:prevCompare2\" macrocell 3 3 1 2
-set_location "\RightEyebrow:PWMUDB:prevCompare2\" macrocell 0 1 1 2
-set_location "\Neck:PWMUDB:status_0\" macrocell 3 3 1 1
-set_location "\Eyelids:PWMUDB:status_0\" macrocell 3 0 1 1
-set_location "Net_236" macrocell 1 3 0 3
-set_location "\LeftEyeball:PWMUDB:genblk8:stsreg\" statusicell 2 2 4 
+set_location "\RightEyeball:PWMUDB:sP16:pwmdp:u0\" datapathcell 0 3 2 
+set_location "Net_88" macrocell 2 1 0 2
+set_location "\LeftEyeball:PWMUDB:sP16:pwmdp:u1\" datapathcell 2 1 2 
+set_location "\Neck:PWMUDB:sP16:pwmdp:u0\" datapathcell 3 2 2 
+set_location "\RightEyeball:PWMUDB:prevCompare2\" macrocell 1 3 1 2
+set_location "\Neck:PWMUDB:prevCompare2\" macrocell 2 2 1 2
+set_location "\RightEyebrow:PWMUDB:prevCompare2\" macrocell 0 2 1 2
+set_location "\Neck:PWMUDB:status_0\" macrocell 2 2 1 1
+set_location "\Eyelids:PWMUDB:status_0\" macrocell 0 1 1 1
+set_location "Net_236" macrocell 3 3 0 3
+set_location "\LeftEyeball:PWMUDB:genblk8:stsreg\" statusicell 2 1 4 
 set_location "\LeftEyebrow:PWMUDB:runmode_enable\" macrocell 1 0 0 0
-set_location "\Base:PWMUDB:prevCompare2\" macrocell 2 1 1 2
-set_location "\Neck:PWMUDB:prevCompare1\" macrocell 3 3 1 0
-set_location "\Neck:PWMUDB:sP16:pwmdp:u1\" datapathcell 3 3 2 
-set_location "\RightEyebrow:PWMUDB:runmode_enable\" macrocell 0 1 0 0
-set_location "\Mouth:PWMUDB:sP16:pwmdp:u0\" datapathcell 0 3 2 
-set_location "\Base:PWMUDB:sP16:pwmdp:u1\" datapathcell 2 1 2 
-set_location "\LeftEyeball:PWMUDB:prevCompare1\" macrocell 2 2 1 0
-set_location "\RightEyebrow:PWMUDB:status_2\" macrocell 0 1 0 1
-set_location "\Base:PWMUDB:genblk8:stsreg\" statusicell 2 1 4 
-set_location "\RightEyeball:PWMUDB:prevCompare1\" macrocell 0 2 1 0
-set_location "\Mouth:PWMUDB:sP16:pwmdp:u1\" datapathcell 1 3 2 
-set_location "\Base:PWMUDB:runmode_enable\" macrocell 2 1 0 0
-set_location "\Neck:PWMUDB:runmode_enable\" macrocell 3 3 0 0
-set_location "\Eyelids:PWMUDB:status_1\" macrocell 3 0 1 3
-set_location "\Eyelids:PWMUDB:prevCompare1\" macrocell 3 0 1 0
-set_location "Net_306" macrocell 3 3 0 2
+set_location "\Base:PWMUDB:prevCompare2\" macrocell 3 0 1 2
+set_location "\Neck:PWMUDB:prevCompare1\" macrocell 2 2 1 0
+set_location "\Neck:PWMUDB:sP16:pwmdp:u1\" datapathcell 2 2 2 
+set_location "\RightEyebrow:PWMUDB:runmode_enable\" macrocell 0 2 0 0
+set_location "\Lips:PWMUDB:sP16:pwmdp:u0\" datapathcell 2 3 2 
+set_location "\Base:PWMUDB:sP16:pwmdp:u1\" datapathcell 3 0 2 
+set_location "\LeftEyeball:PWMUDB:prevCompare1\" macrocell 2 1 1 0
+set_location "\RightEyebrow:PWMUDB:status_2\" macrocell 0 2 0 1
+set_location "\Base:PWMUDB:genblk8:stsreg\" statusicell 3 0 4 
+set_location "\RightEyeball:PWMUDB:prevCompare1\" macrocell 1 3 1 0
+set_location "\Lips:PWMUDB:sP16:pwmdp:u1\" datapathcell 3 3 2 
+set_location "\Base:PWMUDB:runmode_enable\" macrocell 3 0 0 0
+set_location "\Neck:PWMUDB:runmode_enable\" macrocell 2 2 0 0
+set_location "\Eyelids:PWMUDB:status_1\" macrocell 0 1 1 3
+set_location "\Eyelids:PWMUDB:prevCompare1\" macrocell 0 1 1 0
+set_location "Net_306" macrocell 2 2 0 2
 set_location "\LeftEyebrow:PWMUDB:genblk8:stsreg\" statusicell 1 0 4 
-set_location "Net_862" macrocell 2 1 0 3
-set_location "\LeftEyeball:PWMUDB:status_0\" macrocell 2 2 1 1
-set_io "LeftEyeballBottom(0)" iocell 0 1
-set_io "EyelidTilt(0)" iocell 0 2
-set_io "NeckLeft(0)" iocell 0 4
-set_io "BaseRotation(0)" iocell 0 6
-set_io "Jaw(0)" iocell 1 2
-set_io "Pin_2(0)" iocell 0 7
-set_io "RightEyeballBottom(0)" iocell 1 5
-set_io "RightEyeballTop(0)" iocell 1 6
-set_location "\Eyelids:PWMUDB:genblk1:ctrlreg\" controlcell 3 0 6 
-set_io "TopLip(0)" iocell 1 4
-set_location "\LeftEyeball:PWMUDB:genblk1:ctrlreg\" controlcell 2 2 6 
-set_io "LeftEyebrow2(0)" iocell 1 7
+set_location "Net_862" macrocell 3 0 0 3
+set_location "\LeftEyeball:PWMUDB:status_0\" macrocell 2 1 1 1
+set_io "LeftEyeballBottom(0)" iocell 0 6
+set_io "EyelidTilt(0)" iocell 1 4
+set_io "NeckLeft(0)" iocell 0 1
+set_io "BaseRotation(0)" iocell 0 0
+set_io "Jaw(0)" iocell 0 5
+set_io "RightEyeballBottom(0)" iocell 1 6
+set_io "RightEyeballTop(0)" iocell 1 7
+set_location "\Eyelids:PWMUDB:genblk1:ctrlreg\" controlcell 0 1 6 
+set_location "\LeftEyeball:PWMUDB:genblk1:ctrlreg\" controlcell 2 1 6 
+set_io "LeftEyebrow2(0)" iocell 2 1
 set_location "ClockBlock" clockblockcell -1 -1 0
-set_location "\Neck:PWMUDB:genblk1:ctrlreg\" controlcell 3 3 6 
-set_location "\Mouth:PWMUDB:genblk1:ctrlreg\" controlcell 1 3 6 
-set_io "RightEyebrow1(0)" iocell 2 1
+set_location "\Neck:PWMUDB:genblk1:ctrlreg\" controlcell 2 2 6 
+set_location "\Lips:PWMUDB:genblk1:ctrlreg\" controlcell 3 3 6 
+set_io "RightEyebrow1(0)" iocell 2 2
 set_io "LeftEyebrow1(0)" iocell 2 0
-set_io "EyelidClose(0)" iocell 0 3
-set_location "\Base:PWMUDB:genblk1:ctrlreg\" controlcell 2 1 6 
-set_location "\RightEyeball:PWMUDB:genblk1:ctrlreg\" controlcell 0 2 6 
-set_location "\RightEyebrow:PWMUDB:genblk1:ctrlreg\" controlcell 0 1 6 
-set_io "NeckRight(0)" iocell 0 5
+set_io "EyelidClose(0)" iocell 1 2
+set_location "\Base:PWMUDB:genblk1:ctrlreg\" controlcell 3 0 6 
+set_io "LipRight(0)" iocell 0 4
+set_location "\RightEyeball:PWMUDB:genblk1:ctrlreg\" controlcell 1 3 6 
+set_location "\RightEyebrow:PWMUDB:genblk1:ctrlreg\" controlcell 0 2 6 
+set_io "NeckRight(0)" iocell 0 2
 set_location "\LeftEyebrow:PWMUDB:genblk1:ctrlreg\" controlcell 1 0 6 
-set_io "LeftEyeballTop(0)" iocell 0 0
-set_io "RightEyebrow2(0)" iocell 2 2
+set_io "LipLeft(0)" iocell 0 3
+set_io "LeftEyeballTop(0)" iocell 0 7
+set_io "RightEyebrow2(0)" iocell 2 3

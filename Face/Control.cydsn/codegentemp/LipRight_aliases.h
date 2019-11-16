@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: TopLip.h  
+* File Name: LipRight.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_TopLip_ALIASES_H) /* Pins TopLip_ALIASES_H */
-#define CY_PINS_TopLip_ALIASES_H
+#if !defined(CY_PINS_LipRight_ALIASES_H) /* Pins LipRight_ALIASES_H */
+#define CY_PINS_LipRight_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define TopLip_0			(TopLip__0__PC)
-#define TopLip_0_INTR	((uint16)((uint16)0x0001u << TopLip__0__SHIFT))
+#define LipRight_0			(LipRight__0__PC)
+#define LipRight_0_INTR	((uint16)((uint16)0x0001u << LipRight__0__SHIFT))
 
-#define TopLip_INTR_ALL	 ((uint16)(TopLip_0_INTR))
+#define LipRight_INTR_ALL	 ((uint16)(LipRight_0_INTR))
 
-#endif /* End Pins TopLip_ALIASES_H */
+#endif /* End Pins LipRight_ALIASES_H */
 
 
 /* [] END OF FILE */

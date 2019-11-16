@@ -73,17 +73,17 @@
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\EyelidClose_aliases.h" value="HEADER;;;;;EyelidClose" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\EyelidClose.c" value="SOURCE_C;CortexM3;;;;EyelidClose" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\EyelidClose.h" value="HEADER;;;;;EyelidClose" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Mouth.c" value="SOURCE_C;CortexM3;;;;Mouth" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Mouth.h" value="HEADER;;;;;Mouth" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Mouth_PM.c" value="SOURCE_C;CortexM3;;;;Mouth" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Lips.c" value="SOURCE_C;CortexM3;;;;Lips" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Lips.h" value="HEADER;;;;;Lips" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Lips_PM.c" value="SOURCE_C;CortexM3;;;;Lips" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Clock_6.c" value="SOURCE_C;CortexM3;;;;Clock_6" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Clock_6.h" value="HEADER;;;;;Clock_6" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\TopLip_aliases.h" value="HEADER;;;;;TopLip" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\TopLip.c" value="SOURCE_C;CortexM3;;;;TopLip" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\TopLip.h" value="HEADER;;;;;TopLip" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Jaw_aliases.h" value="HEADER;;;;;Jaw" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Jaw.c" value="SOURCE_C;CortexM3;;;;Jaw" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Jaw.h" value="HEADER;;;;;Jaw" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\LipLeft_aliases.h" value="HEADER;;;;;LipLeft" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\LipLeft.c" value="SOURCE_C;CortexM3;;;;LipLeft" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\LipLeft.h" value="HEADER;;;;;LipLeft" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\LipRight_aliases.h" value="HEADER;;;;;LipRight" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\LipRight.c" value="SOURCE_C;CortexM3;;;;LipRight" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\LipRight.h" value="HEADER;;;;;LipRight" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Neck.c" value="SOURCE_C;CortexM3;;;;Neck" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Neck.h" value="HEADER;;;;;Neck" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Neck_PM.c" value="SOURCE_C;CortexM3;;;;Neck" />
@@ -103,9 +103,9 @@
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\BaseRotation_aliases.h" value="HEADER;;;;;BaseRotation" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\BaseRotation.c" value="SOURCE_C;CortexM3;;;;BaseRotation" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\BaseRotation.h" value="HEADER;;;;;BaseRotation" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Pin_2_aliases.h" value="HEADER;;;;;Pin_2" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Pin_2.c" value="SOURCE_C;CortexM3;;;;Pin_2" />
-  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Pin_2.h" value="HEADER;;;;;Pin_2" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Jaw_aliases.h" value="HEADER;;;;;Jaw" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Jaw.c" value="SOURCE_C;CortexM3;;;;Jaw" />
+  <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Jaw.h" value="HEADER;;;;;Jaw" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\cm3gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Cm3RealView.scat" value="LINKER_SCRIPT;;;fdb8e1ae-f83a-46cf-9446-1d703716f38a;;cy_boot" />
   <file name="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Cm3Start.c" value="SOURCE_C;CortexM3;;;;cy_boot" />
