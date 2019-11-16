@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Pin_2.h  
+* File Name: LipRight.h  
 * Version 2.20
 *
 * Description:
@@ -15,8 +15,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_Pin_2_ALIASES_H) /* Pins Pin_2_ALIASES_H */
-#define CY_PINS_Pin_2_ALIASES_H
+#if !defined(CY_PINS_LipRight_ALIASES_H) /* Pins LipRight_ALIASES_H */
+#define CY_PINS_LipRight_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -25,12 +25,12 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define Pin_2_0			(Pin_2__0__PC)
-#define Pin_2_0_INTR	((uint16)((uint16)0x0001u << Pin_2__0__SHIFT))
+#define LipRight_0			(LipRight__0__PC)
+#define LipRight_0_INTR	((uint16)((uint16)0x0001u << LipRight__0__SHIFT))
 
-#define Pin_2_INTR_ALL	 ((uint16)(Pin_2_0_INTR))
+#define LipRight_INTR_ALL	 ((uint16)(LipRight_0_INTR))
 
-#endif /* End Pins Pin_2_ALIASES_H */
+#endif /* End Pins LipRight_ALIASES_H */
 
 
 /* [] END OF FILE */

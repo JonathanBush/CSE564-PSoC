@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: TopLip.c  
+* File Name: LipLeft.c  
 * Version 2.20
 *
 * Description:
@@ -15,15 +15,15 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "TopLip.h"
+#include "LipLeft.h"
 
 /* APIs are not generated for P15[7:6] on PSoC 5 */
 #if !(CY_PSOC5A &&\
-	 TopLip__PORT == 15 && ((TopLip__MASK & 0xC0) != 0))
+	 LipLeft__PORT == 15 && ((LipLeft__MASK & 0xC0) != 0))
 
 
 /*******************************************************************************
-* Function Name: TopLip_Write
+* Function Name: LipLeft_Write
 ****************************************************************************//**
 *
 * \brief Writes the value to the physical port (data output register), masking
@@ -52,17 +52,17 @@
 *  this function.
 *
 * \funcusage
-*  \snippet TopLip_SUT.c usage_TopLip_Write
+*  \snippet LipLeft_SUT.c usage_LipLeft_Write
 *******************************************************************************/
-void TopLip_Write(uint8 value)
+void LipLeft_Write(uint8 value)
 {
-    uint8 staticBits = (TopLip_DR & (uint8)(~TopLip_MASK));
-    TopLip_DR = staticBits | ((uint8)(value << TopLip_SHIFT) & TopLip_MASK);
+    uint8 staticBits = (LipLeft_DR & (uint8)(~LipLeft_MASK));
+    LipLeft_DR = staticBits | ((uint8)(value << LipLeft_SHIFT) & LipLeft_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: TopLip_SetDriveMode
+* Function Name: LipLeft_SetDriveMode
 ****************************************************************************//**
 *
 * \brief Sets the drive mode for each of the Pins component's pins.
@@ -85,16 +85,16 @@ void TopLip_Write(uint8 value)
 *  APIs (primary method) or disable interrupts around this function.
 *
 * \funcusage
-*  \snippet TopLip_SUT.c usage_TopLip_SetDriveMode
+*  \snippet LipLeft_SUT.c usage_LipLeft_SetDriveMode
 *******************************************************************************/
-void TopLip_SetDriveMode(uint8 mode)
+void LipLeft_SetDriveMode(uint8 mode)
 {
-	CyPins_SetPinDriveMode(TopLip_0, mode);
+	CyPins_SetPinDriveMode(LipLeft_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: TopLip_Read
+* Function Name: LipLeft_Read
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port (pin status register) and masks 
@@ -108,16 +108,16 @@ void TopLip_SetDriveMode(uint8 mode)
 *  The current value for the pins in the component as a right justified number.
 *
 * \funcusage
-*  \snippet TopLip_SUT.c usage_TopLip_Read  
+*  \snippet LipLeft_SUT.c usage_LipLeft_Read  
 *******************************************************************************/
-uint8 TopLip_Read(void)
+uint8 LipLeft_Read(void)
 {
-    return (TopLip_PS & TopLip_MASK) >> TopLip_SHIFT;
+    return (LipLeft_PS & LipLeft_MASK) >> LipLeft_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: TopLip_ReadDataReg
+* Function Name: LipLeft_ReadDataReg
 ****************************************************************************//**
 *
 * \brief Reads the associated physical port's data output register and masks 
@@ -126,8 +126,8 @@ uint8 TopLip_Read(void)
 *
 * The data output register controls the signal applied to the physical pin in 
 * conjunction with the drive mode parameter. This is not the same as the 
-* preferred TopLip_Read() API because the 
-* TopLip_ReadDataReg() reads the data register instead of the status 
+* preferred LipLeft_Read() API because the 
+* LipLeft_ReadDataReg() reads the data register instead of the status 
 * register. For output pins this is a useful function to determine the value 
 * just written to the pin.
 *
@@ -136,19 +136,19 @@ uint8 TopLip_Read(void)
 *  justified number for the component instance.
 *
 * \funcusage
-*  \snippet TopLip_SUT.c usage_TopLip_ReadDataReg 
+*  \snippet LipLeft_SUT.c usage_LipLeft_ReadDataReg 
 *******************************************************************************/
-uint8 TopLip_ReadDataReg(void)
+uint8 LipLeft_ReadDataReg(void)
 {
-    return (TopLip_DR & TopLip_MASK) >> TopLip_SHIFT;
+    return (LipLeft_DR & LipLeft_MASK) >> LipLeft_SHIFT;
 }
 
 
 /* If interrupt is connected for this Pins component */ 
-#if defined(TopLip_INTSTAT) 
+#if defined(LipLeft_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: TopLip_SetInterruptMode
+    * Function Name: LipLeft_SetInterruptMode
     ****************************************************************************//**
     *
     * \brief Configures the interrupt mode for each of the Pins component's
@@ -161,12 +161,12 @@ uint8 TopLip_ReadDataReg(void)
     * \param position
     *  The pin position as listed in the Pins component. You may OR these to be 
     *  able to configure the interrupt mode of multiple pins within a Pins 
-    *  component. Or you may use TopLip_INTR_ALL to configure the
+    *  component. Or you may use LipLeft_INTR_ALL to configure the
     *  interrupt mode of all the pins in the Pins component.       
-    *  - TopLip_0_INTR       (First pin in the list)
-    *  - TopLip_1_INTR       (Second pin in the list)
+    *  - LipLeft_0_INTR       (First pin in the list)
+    *  - LipLeft_1_INTR       (Second pin in the list)
     *  - ...
-    *  - TopLip_INTR_ALL     (All pins in Pins component)
+    *  - LipLeft_INTR_ALL     (All pins in Pins component)
     *
     * \param mode
     *  Interrupt mode for the selected pins. Valid options are documented in
@@ -182,19 +182,19 @@ uint8 TopLip_ReadDataReg(void)
     *  port.
     *
     * \funcusage
-    *  \snippet TopLip_SUT.c usage_TopLip_SetInterruptMode
+    *  \snippet LipLeft_SUT.c usage_LipLeft_SetInterruptMode
     *******************************************************************************/
-    void TopLip_SetInterruptMode(uint16 position, uint16 mode)
+    void LipLeft_SetInterruptMode(uint16 position, uint16 mode)
     {
-		if((position & TopLip_0_INTR) != 0u) 
+		if((position & LipLeft_0_INTR) != 0u) 
 		{ 
-			 TopLip_0_INTTYPE_REG = (uint8)mode; 
+			 LipLeft_0_INTTYPE_REG = (uint8)mode; 
 		}
     }
     
     
     /*******************************************************************************
-    * Function Name: TopLip_ClearInterrupt
+    * Function Name: LipLeft_ClearInterrupt
     ****************************************************************************//**
     *
     * \brief Clears any active interrupts attached with the component and returns 
@@ -211,11 +211,11 @@ uint8 TopLip_ReadDataReg(void)
     *  those associated with the Pins component.
     *
     * \funcusage
-    *  \snippet TopLip_SUT.c usage_TopLip_ClearInterrupt
+    *  \snippet LipLeft_SUT.c usage_LipLeft_ClearInterrupt
     *******************************************************************************/
-    uint8 TopLip_ClearInterrupt(void)
+    uint8 LipLeft_ClearInterrupt(void)
     {
-        return (TopLip_INTSTAT & TopLip_MASK) >> TopLip_SHIFT;
+        return (LipLeft_INTSTAT & LipLeft_MASK) >> LipLeft_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

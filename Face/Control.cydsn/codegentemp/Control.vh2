@@ -2,7 +2,7 @@
 --	Conversion of Control.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sat Nov 16 11:41:58 2019
+--	Sat Nov 16 11:54:19 2019
 --
 
 USE cypress.cypress.all;
@@ -2189,441 +2189,441 @@ SIGNAL tmpFB_0__EyelidClose_net_0 : bit;
 SIGNAL tmpIO_0__EyelidClose_net_0 : bit;
 TERMINAL tmpSIOVREF__EyelidClose_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__EyelidClose_net_0 : bit;
-SIGNAL \Mouth:PWMUDB:km_run\ : bit;
-SIGNAL \Mouth:PWMUDB:min_kill_reg\ : bit;
+SIGNAL \Lips:PWMUDB:km_run\ : bit;
+SIGNAL \Lips:PWMUDB:min_kill_reg\ : bit;
 SIGNAL Net_233 : bit;
-SIGNAL \Mouth:PWMUDB:ClockOutFromEnBlock\ : bit;
-SIGNAL \Mouth:PWMUDB:control_7\ : bit;
-SIGNAL \Mouth:PWMUDB:control_6\ : bit;
-SIGNAL \Mouth:PWMUDB:control_5\ : bit;
-SIGNAL \Mouth:PWMUDB:control_4\ : bit;
-SIGNAL \Mouth:PWMUDB:control_3\ : bit;
-SIGNAL \Mouth:PWMUDB:control_2\ : bit;
-SIGNAL \Mouth:PWMUDB:control_1\ : bit;
-SIGNAL \Mouth:PWMUDB:control_0\ : bit;
-SIGNAL \Mouth:PWMUDB:ctrl_enable\ : bit;
-SIGNAL \Mouth:PWMUDB:ctrl_cmpmode2_2\ : bit;
-SIGNAL \Mouth:PWMUDB:ctrl_cmpmode2_1\ : bit;
-SIGNAL \Mouth:PWMUDB:ctrl_cmpmode2_0\ : bit;
-SIGNAL \Mouth:PWMUDB:ctrl_cmpmode1_2\ : bit;
-SIGNAL \Mouth:PWMUDB:ctrl_cmpmode1_1\ : bit;
-SIGNAL \Mouth:PWMUDB:ctrl_cmpmode1_0\ : bit;
-SIGNAL \Mouth:PWMUDB:prevCapture\ : bit;
-SIGNAL \Mouth:PWMUDB:capt_rising\ : bit;
-SIGNAL \Mouth:PWMUDB:capt_falling\ : bit;
-SIGNAL \Mouth:PWMUDB:hwCapture\ : bit;
-SIGNAL \Mouth:PWMUDB:hwEnable\ : bit;
-SIGNAL \Mouth:PWMUDB:trig_last\ : bit;
-SIGNAL \Mouth:PWMUDB:trig_rise\ : bit;
-SIGNAL \Mouth:PWMUDB:trig_fall\ : bit;
-SIGNAL \Mouth:PWMUDB:trig_out\ : bit;
-SIGNAL \Mouth:PWMUDB:runmode_enable\ : bit;
-SIGNAL \Mouth:PWMUDB:runmode_enable\\R\ : bit;
-SIGNAL \Mouth:PWMUDB:runmode_enable\\S\ : bit;
-SIGNAL \Mouth:PWMUDB:final_enable\ : bit;
-SIGNAL \Mouth:PWMUDB:sc_kill_tmp\ : bit;
-SIGNAL \Mouth:PWMUDB:tc_i\ : bit;
-SIGNAL \Mouth:PWMUDB:ltch_kill_reg\ : bit;
-SIGNAL \Mouth:PWMUDB:ltch_kill_reg\\R\ : bit;
-SIGNAL \Mouth:PWMUDB:ltch_kill_reg\\S\ : bit;
-SIGNAL \Mouth:PWMUDB:min_kill_reg\\R\ : bit;
-SIGNAL \Mouth:PWMUDB:min_kill_reg\\S\ : bit;
-SIGNAL \Mouth:PWMUDB:sc_kill\ : bit;
-SIGNAL \Mouth:PWMUDB:min_kill\ : bit;
-SIGNAL \Mouth:PWMUDB:final_kill\ : bit;
-SIGNAL \Mouth:PWMUDB:km_tc\ : bit;
-SIGNAL \Mouth:PWMUDB:db_tc\ : bit;
-SIGNAL \Mouth:PWMUDB:dith_count_1\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_1\ : bit;
-SIGNAL \Mouth:PWMUDB:dith_count_0\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_0\ : bit;
-SIGNAL \Mouth:PWMUDB:dith_count_1\\R\ : bit;
-SIGNAL \Mouth:PWMUDB:dith_count_1\\S\ : bit;
-SIGNAL \Mouth:PWMUDB:dith_count_0\\R\ : bit;
-SIGNAL \Mouth:PWMUDB:dith_count_0\\S\ : bit;
-SIGNAL \Mouth:PWMUDB:dith_sel\ : bit;
-SIGNAL \Mouth:PWMUDB:reset\ : bit;
-SIGNAL \Mouth:PWMUDB:status_6\ : bit;
-SIGNAL \Mouth:PWMUDB:status_5\ : bit;
-SIGNAL \Mouth:PWMUDB:status_4\ : bit;
-SIGNAL \Mouth:PWMUDB:status_3\ : bit;
-SIGNAL \Mouth:PWMUDB:status_2\ : bit;
-SIGNAL \Mouth:PWMUDB:status_1\ : bit;
-SIGNAL \Mouth:PWMUDB:status_0\ : bit;
-SIGNAL \Mouth:Net_55\ : bit;
-SIGNAL \Mouth:PWMUDB:prevCompare1\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp1\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp1_status\ : bit;
-SIGNAL \Mouth:PWMUDB:prevCompare2\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp2\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp2_status\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp1_status_reg\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp2_status_reg\ : bit;
-SIGNAL \Mouth:PWMUDB:final_kill_reg\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp1_status_reg\\R\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp1_status_reg\\S\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp2_status_reg\\R\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp2_status_reg\\S\ : bit;
-SIGNAL \Mouth:PWMUDB:final_kill_reg\\R\ : bit;
-SIGNAL \Mouth:PWMUDB:final_kill_reg\\S\ : bit;
-SIGNAL \Mouth:PWMUDB:fifo_full\ : bit;
-SIGNAL \Mouth:PWMUDB:cs_addr_2\ : bit;
-SIGNAL \Mouth:PWMUDB:cs_addr_1\ : bit;
-SIGNAL \Mouth:PWMUDB:cs_addr_0\ : bit;
-SIGNAL \Mouth:PWMUDB:final_capture\ : bit;
-SIGNAL \Mouth:PWMUDB:nc2\ : bit;
-SIGNAL \Mouth:PWMUDB:nc3\ : bit;
-SIGNAL \Mouth:PWMUDB:nc1\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ff0_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ff0_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:nc4\ : bit;
-SIGNAL \Mouth:PWMUDB:nc5\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:z1_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:z1_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ff1_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ff1_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ov_msb_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ov_msb_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:co_msb_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:co_msb_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmsb_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:cmsb_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:so_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:so_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f0_bus_stat_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f0_bus_stat_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f0_blk_stat_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f0_blk_stat_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:nc6\ : bit;
-SIGNAL \Mouth:PWMUDB:nc7\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ce0_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ce0_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cl0_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:cl0_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:z0_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:z0_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ff0_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ff0_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ce1_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ce1_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cl1_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:cl1_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:z1_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:z1_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ff1_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ff1_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ov_msb_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ov_msb_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:co_msb_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:co_msb_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmsb_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:cmsb_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:so_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:so_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f0_bus_stat_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f0_bus_stat_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f0_blk_stat_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f0_blk_stat_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f1_bus_stat_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f1_bus_stat_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f1_blk_stat_reg_0\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f1_blk_stat_reg_0\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:carry\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:sh_right\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:sh_left\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:msb\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmp_eq_1\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmp_eq_0\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmp_lt_1\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmp_lt_0\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmp_zero_1\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmp_zero_0\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmp_ff_1\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmp_ff_0\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cap_1\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cap_0\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cfb\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp1_eq\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp1_less\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ff0_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ff0_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:cmp2_eq\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp2_less\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:z1_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:z1_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ff1_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ff1_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ov_msb_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ov_msb_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:co_msb_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:co_msb_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmsb_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:cmsb_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:so_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:so_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f0_bus_stat_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f0_bus_stat_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f0_blk_stat_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f0_blk_stat_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:fifo_nempty\ : bit;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ce0_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ce0_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cl0_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:cl0_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:z0_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:z0_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ff0_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ff0_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ce1_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ce1_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cl1_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:cl1_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:z1_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:z1_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ff1_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ff1_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:ov_msb_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:ov_msb_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:co_msb_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:co_msb_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:cmsb_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:cmsb_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:so_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:so_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f0_bus_stat_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f0_bus_stat_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f0_blk_stat_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f0_blk_stat_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f1_bus_stat_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f1_bus_stat_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:sP16:pwmdp:f1_blk_stat_reg_1\ : bit;
-ATTRIBUTE port_state_att of \Mouth:PWMUDB:sP16:pwmdp:f1_blk_stat_reg_1\:SIGNAL IS 2;
-SIGNAL \Mouth:PWMUDB:compare1\ : bit;
-SIGNAL \Mouth:PWMUDB:compare2\ : bit;
-SIGNAL \Mouth:PWMUDB:pwm_i_reg\ : bit;
-SIGNAL \Mouth:PWMUDB:pwm_i\ : bit;
-SIGNAL \Mouth:PWMUDB:pwm1_i_reg\ : bit;
-SIGNAL \Mouth:PWMUDB:pwm1_i\ : bit;
-SIGNAL \Mouth:PWMUDB:pwm2_i_reg\ : bit;
-SIGNAL \Mouth:PWMUDB:pwm2_i\ : bit;
-SIGNAL \Mouth:PWMUDB:tc_i_reg\ : bit;
-SIGNAL \Mouth:Net_101\ : bit;
-SIGNAL \Mouth:Net_96\ : bit;
+SIGNAL \Lips:PWMUDB:ClockOutFromEnBlock\ : bit;
+SIGNAL \Lips:PWMUDB:control_7\ : bit;
+SIGNAL \Lips:PWMUDB:control_6\ : bit;
+SIGNAL \Lips:PWMUDB:control_5\ : bit;
+SIGNAL \Lips:PWMUDB:control_4\ : bit;
+SIGNAL \Lips:PWMUDB:control_3\ : bit;
+SIGNAL \Lips:PWMUDB:control_2\ : bit;
+SIGNAL \Lips:PWMUDB:control_1\ : bit;
+SIGNAL \Lips:PWMUDB:control_0\ : bit;
+SIGNAL \Lips:PWMUDB:ctrl_enable\ : bit;
+SIGNAL \Lips:PWMUDB:ctrl_cmpmode2_2\ : bit;
+SIGNAL \Lips:PWMUDB:ctrl_cmpmode2_1\ : bit;
+SIGNAL \Lips:PWMUDB:ctrl_cmpmode2_0\ : bit;
+SIGNAL \Lips:PWMUDB:ctrl_cmpmode1_2\ : bit;
+SIGNAL \Lips:PWMUDB:ctrl_cmpmode1_1\ : bit;
+SIGNAL \Lips:PWMUDB:ctrl_cmpmode1_0\ : bit;
+SIGNAL \Lips:PWMUDB:prevCapture\ : bit;
+SIGNAL \Lips:PWMUDB:capt_rising\ : bit;
+SIGNAL \Lips:PWMUDB:capt_falling\ : bit;
+SIGNAL \Lips:PWMUDB:hwCapture\ : bit;
+SIGNAL \Lips:PWMUDB:hwEnable\ : bit;
+SIGNAL \Lips:PWMUDB:trig_last\ : bit;
+SIGNAL \Lips:PWMUDB:trig_rise\ : bit;
+SIGNAL \Lips:PWMUDB:trig_fall\ : bit;
+SIGNAL \Lips:PWMUDB:trig_out\ : bit;
+SIGNAL \Lips:PWMUDB:runmode_enable\ : bit;
+SIGNAL \Lips:PWMUDB:runmode_enable\\R\ : bit;
+SIGNAL \Lips:PWMUDB:runmode_enable\\S\ : bit;
+SIGNAL \Lips:PWMUDB:final_enable\ : bit;
+SIGNAL \Lips:PWMUDB:sc_kill_tmp\ : bit;
+SIGNAL \Lips:PWMUDB:tc_i\ : bit;
+SIGNAL \Lips:PWMUDB:ltch_kill_reg\ : bit;
+SIGNAL \Lips:PWMUDB:ltch_kill_reg\\R\ : bit;
+SIGNAL \Lips:PWMUDB:ltch_kill_reg\\S\ : bit;
+SIGNAL \Lips:PWMUDB:min_kill_reg\\R\ : bit;
+SIGNAL \Lips:PWMUDB:min_kill_reg\\S\ : bit;
+SIGNAL \Lips:PWMUDB:sc_kill\ : bit;
+SIGNAL \Lips:PWMUDB:min_kill\ : bit;
+SIGNAL \Lips:PWMUDB:final_kill\ : bit;
+SIGNAL \Lips:PWMUDB:km_tc\ : bit;
+SIGNAL \Lips:PWMUDB:db_tc\ : bit;
+SIGNAL \Lips:PWMUDB:dith_count_1\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_1\ : bit;
+SIGNAL \Lips:PWMUDB:dith_count_0\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_0\ : bit;
+SIGNAL \Lips:PWMUDB:dith_count_1\\R\ : bit;
+SIGNAL \Lips:PWMUDB:dith_count_1\\S\ : bit;
+SIGNAL \Lips:PWMUDB:dith_count_0\\R\ : bit;
+SIGNAL \Lips:PWMUDB:dith_count_0\\S\ : bit;
+SIGNAL \Lips:PWMUDB:dith_sel\ : bit;
+SIGNAL \Lips:PWMUDB:reset\ : bit;
+SIGNAL \Lips:PWMUDB:status_6\ : bit;
+SIGNAL \Lips:PWMUDB:status_5\ : bit;
+SIGNAL \Lips:PWMUDB:status_4\ : bit;
+SIGNAL \Lips:PWMUDB:status_3\ : bit;
+SIGNAL \Lips:PWMUDB:status_2\ : bit;
+SIGNAL \Lips:PWMUDB:status_1\ : bit;
+SIGNAL \Lips:PWMUDB:status_0\ : bit;
+SIGNAL \Lips:Net_55\ : bit;
+SIGNAL \Lips:PWMUDB:prevCompare1\ : bit;
+SIGNAL \Lips:PWMUDB:cmp1\ : bit;
+SIGNAL \Lips:PWMUDB:cmp1_status\ : bit;
+SIGNAL \Lips:PWMUDB:prevCompare2\ : bit;
+SIGNAL \Lips:PWMUDB:cmp2\ : bit;
+SIGNAL \Lips:PWMUDB:cmp2_status\ : bit;
+SIGNAL \Lips:PWMUDB:cmp1_status_reg\ : bit;
+SIGNAL \Lips:PWMUDB:cmp2_status_reg\ : bit;
+SIGNAL \Lips:PWMUDB:final_kill_reg\ : bit;
+SIGNAL \Lips:PWMUDB:cmp1_status_reg\\R\ : bit;
+SIGNAL \Lips:PWMUDB:cmp1_status_reg\\S\ : bit;
+SIGNAL \Lips:PWMUDB:cmp2_status_reg\\R\ : bit;
+SIGNAL \Lips:PWMUDB:cmp2_status_reg\\S\ : bit;
+SIGNAL \Lips:PWMUDB:final_kill_reg\\R\ : bit;
+SIGNAL \Lips:PWMUDB:final_kill_reg\\S\ : bit;
+SIGNAL \Lips:PWMUDB:fifo_full\ : bit;
+SIGNAL \Lips:PWMUDB:cs_addr_2\ : bit;
+SIGNAL \Lips:PWMUDB:cs_addr_1\ : bit;
+SIGNAL \Lips:PWMUDB:cs_addr_0\ : bit;
+SIGNAL \Lips:PWMUDB:final_capture\ : bit;
+SIGNAL \Lips:PWMUDB:nc2\ : bit;
+SIGNAL \Lips:PWMUDB:nc3\ : bit;
+SIGNAL \Lips:PWMUDB:nc1\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ff0_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ff0_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:nc4\ : bit;
+SIGNAL \Lips:PWMUDB:nc5\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:z1_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:z1_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ff1_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ff1_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ov_msb_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ov_msb_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:co_msb_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:co_msb_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmsb_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:cmsb_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:so_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:so_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f0_bus_stat_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f0_bus_stat_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f0_blk_stat_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f0_blk_stat_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:nc6\ : bit;
+SIGNAL \Lips:PWMUDB:nc7\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ce0_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ce0_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cl0_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:cl0_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:z0_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:z0_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ff0_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ff0_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ce1_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ce1_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cl1_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:cl1_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:z1_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:z1_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ff1_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ff1_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ov_msb_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ov_msb_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:co_msb_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:co_msb_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmsb_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:cmsb_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:so_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:so_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f0_bus_stat_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f0_bus_stat_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f0_blk_stat_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f0_blk_stat_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f1_bus_stat_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f1_bus_stat_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f1_blk_stat_reg_0\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f1_blk_stat_reg_0\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:carry\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:sh_right\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:sh_left\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:msb\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmp_eq_1\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmp_eq_0\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmp_lt_1\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmp_lt_0\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmp_zero_1\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmp_zero_0\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmp_ff_1\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmp_ff_0\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cap_1\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cap_0\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cfb\ : bit;
+SIGNAL \Lips:PWMUDB:cmp1_eq\ : bit;
+SIGNAL \Lips:PWMUDB:cmp1_less\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ff0_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ff0_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:cmp2_eq\ : bit;
+SIGNAL \Lips:PWMUDB:cmp2_less\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:z1_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:z1_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ff1_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ff1_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ov_msb_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ov_msb_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:co_msb_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:co_msb_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmsb_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:cmsb_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:so_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:so_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f0_bus_stat_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f0_bus_stat_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f0_blk_stat_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f0_blk_stat_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:fifo_nempty\ : bit;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ce0_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ce0_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cl0_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:cl0_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:z0_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:z0_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ff0_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ff0_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ce1_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ce1_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cl1_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:cl1_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:z1_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:z1_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ff1_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ff1_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:ov_msb_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:ov_msb_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:co_msb_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:co_msb_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:cmsb_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:cmsb_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:so_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:so_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f0_bus_stat_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f0_bus_stat_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f0_blk_stat_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f0_blk_stat_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f1_bus_stat_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f1_bus_stat_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:sP16:pwmdp:f1_blk_stat_reg_1\ : bit;
+ATTRIBUTE port_state_att of \Lips:PWMUDB:sP16:pwmdp:f1_blk_stat_reg_1\:SIGNAL IS 2;
+SIGNAL \Lips:PWMUDB:compare1\ : bit;
+SIGNAL \Lips:PWMUDB:compare2\ : bit;
+SIGNAL \Lips:PWMUDB:pwm_i_reg\ : bit;
+SIGNAL \Lips:PWMUDB:pwm_i\ : bit;
+SIGNAL \Lips:PWMUDB:pwm1_i_reg\ : bit;
+SIGNAL \Lips:PWMUDB:pwm1_i\ : bit;
+SIGNAL \Lips:PWMUDB:pwm2_i_reg\ : bit;
+SIGNAL \Lips:PWMUDB:pwm2_i\ : bit;
+SIGNAL \Lips:PWMUDB:tc_i_reg\ : bit;
+SIGNAL \Lips:Net_101\ : bit;
+SIGNAL \Lips:Net_96\ : bit;
 SIGNAL Net_235 : bit;
 SIGNAL Net_236 : bit;
-SIGNAL \Mouth:PWMUDB:pwm_temp\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_31\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_30\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_29\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_28\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_27\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_26\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_25\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_24\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_23\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_22\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_21\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_20\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_19\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_18\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_17\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_16\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_15\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_14\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_13\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_12\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_11\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_10\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_9\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_8\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_7\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_6\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_5\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_4\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_3\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_2\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_1\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:b_0\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_31\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_30\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_29\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_28\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_27\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_26\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_25\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_24\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_23\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_22\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_21\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_20\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_19\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_18\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_17\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_16\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_15\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_14\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_13\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_12\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_11\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_10\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_9\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_8\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_7\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_6\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_5\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_4\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_3\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_2\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_1\ : bit;
-SIGNAL \Mouth:PWMUDB:MODIN6_1\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:a_0\ : bit;
-SIGNAL \Mouth:PWMUDB:MODIN6_0\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_31\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_30\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_29\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_28\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_27\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_26\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_25\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_24\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_23\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_22\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_21\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_20\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_19\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_18\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_17\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_16\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_15\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_14\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_13\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_12\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_11\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_10\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_9\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_8\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_7\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_6\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_5\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_4\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_3\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_2\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_1\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:b_0\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_31\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_31\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_30\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_30\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_29\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_29\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_28\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_28\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_27\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_27\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_26\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_26\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_25\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_25\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_24\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_24\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_23\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_23\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_22\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_22\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_21\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_21\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_20\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_20\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_19\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_19\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_18\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_18\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_17\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_17\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_16\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_16\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_15\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_15\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_14\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_14\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_13\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_13\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_12\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_12\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_11\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_11\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_10\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_10\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_9\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_9\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_8\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_8\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_7\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_7\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_6\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_6\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_5\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_5\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_4\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_4\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_3\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_3\ : bit;
-SIGNAL \Mouth:PWMUDB:add_vi_vv_MODGEN_6_2\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_2\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_1\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:s_0\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_31\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_30\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_29\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_28\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_27\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_26\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_25\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_24\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:b_24\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_23\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_22\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_21\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_20\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_19\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_18\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_17\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_16\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:b_16\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_15\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_14\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_13\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_12\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_11\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_10\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_9\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_8\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:b_8\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_7\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_6\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_5\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_4\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_3\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_2\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
-SIGNAL \Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
+SIGNAL \Lips:PWMUDB:pwm_temp\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_31\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_30\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_29\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_28\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_27\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_26\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_25\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_24\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_23\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_22\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_21\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_20\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_19\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_18\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_17\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_16\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_15\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_14\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_13\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_12\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_11\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_10\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_9\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_8\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_7\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_6\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_5\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_4\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_3\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_2\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_1\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:b_0\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_31\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_30\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_29\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_28\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_27\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_26\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_25\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_24\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_23\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_22\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_21\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_20\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_19\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_18\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_17\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_16\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_15\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_14\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_13\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_12\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_11\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_10\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_9\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_8\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_7\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_6\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_5\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_4\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_3\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_2\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_1\ : bit;
+SIGNAL \Lips:PWMUDB:MODIN6_1\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:a_0\ : bit;
+SIGNAL \Lips:PWMUDB:MODIN6_0\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_31\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_30\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_29\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_28\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_27\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_26\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_25\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_24\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_23\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_22\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_21\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_20\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_19\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_18\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_17\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_16\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_15\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_14\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_13\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_12\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_11\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_10\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_9\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_8\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_7\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_6\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_5\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_4\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_3\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_2\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_1\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:b_0\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_31\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_31\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_30\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_30\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_29\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_29\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_28\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_28\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_27\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_27\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_26\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_26\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_25\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_25\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_24\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_24\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_23\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_23\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_22\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_22\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_21\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_21\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_20\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_20\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_19\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_19\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_18\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_18\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_17\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_17\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_16\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_16\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_15\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_15\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_14\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_14\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_13\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_13\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_12\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_12\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_11\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_11\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_10\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_10\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_9\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_9\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_8\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_8\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_7\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_7\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_6\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_6\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_5\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_5\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_4\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_4\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_3\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_3\ : bit;
+SIGNAL \Lips:PWMUDB:add_vi_vv_MODGEN_6_2\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_2\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_1\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:s_0\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_31\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_30\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_29\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_28\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_27\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_26\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_25\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_24\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:b_24\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_23\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_22\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_21\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_20\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_19\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_18\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_17\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_16\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:b_16\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_15\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_14\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_13\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_12\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_11\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_10\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_9\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_8\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:b_8\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_7\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_6\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_5\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_4\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_3\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_2\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_1\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_0\ : bit;
+SIGNAL \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:b_0\ : bit;
 SIGNAL Net_833 : bit;
 SIGNAL Net_827 : bit;
 SIGNAL Net_826 : bit;
-SIGNAL \Mouth:Net_113\ : bit;
-SIGNAL \Mouth:Net_107\ : bit;
-SIGNAL \Mouth:Net_114\ : bit;
-SIGNAL tmpOE__TopLip_net_0 : bit;
-SIGNAL tmpFB_0__TopLip_net_0 : bit;
-SIGNAL tmpIO_0__TopLip_net_0 : bit;
-TERMINAL tmpSIOVREF__TopLip_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__TopLip_net_0 : bit;
-SIGNAL tmpOE__Jaw_net_0 : bit;
-SIGNAL tmpFB_0__Jaw_net_0 : bit;
-SIGNAL tmpIO_0__Jaw_net_0 : bit;
-TERMINAL tmpSIOVREF__Jaw_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__Jaw_net_0 : bit;
+SIGNAL \Lips:Net_113\ : bit;
+SIGNAL \Lips:Net_107\ : bit;
+SIGNAL \Lips:Net_114\ : bit;
+SIGNAL tmpOE__LipLeft_net_0 : bit;
+SIGNAL tmpFB_0__LipLeft_net_0 : bit;
+SIGNAL tmpIO_0__LipLeft_net_0 : bit;
+TERMINAL tmpSIOVREF__LipLeft_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__LipLeft_net_0 : bit;
+SIGNAL tmpOE__LipRight_net_0 : bit;
+SIGNAL tmpFB_0__LipRight_net_0 : bit;
+SIGNAL tmpIO_0__LipRight_net_0 : bit;
+TERMINAL tmpSIOVREF__LipRight_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__LipRight_net_0 : bit;
 SIGNAL \Neck:PWMUDB:km_run\ : bit;
 SIGNAL \Neck:PWMUDB:min_kill_reg\ : bit;
 SIGNAL Net_304 : bit;
@@ -3489,11 +3489,11 @@ SIGNAL tmpFB_0__BaseRotation_net_0 : bit;
 SIGNAL tmpIO_0__BaseRotation_net_0 : bit;
 TERMINAL tmpSIOVREF__BaseRotation_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__BaseRotation_net_0 : bit;
-SIGNAL tmpOE__Pin_2_net_0 : bit;
-SIGNAL tmpFB_0__Pin_2_net_0 : bit;
-SIGNAL tmpIO_0__Pin_2_net_0 : bit;
-TERMINAL tmpSIOVREF__Pin_2_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__Pin_2_net_0 : bit;
+SIGNAL tmpOE__Jaw_net_0 : bit;
+SIGNAL tmpFB_0__Jaw_net_0 : bit;
+SIGNAL tmpIO_0__Jaw_net_0 : bit;
+TERMINAL tmpSIOVREF__Jaw_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__Jaw_net_0 : bit;
 SIGNAL \LeftEyebrow:PWMUDB:min_kill_reg\\D\ : bit;
 SIGNAL \LeftEyebrow:PWMUDB:prevCapture\\D\ : bit;
 SIGNAL \LeftEyebrow:PWMUDB:trig_last\\D\ : bit;
@@ -3579,23 +3579,23 @@ SIGNAL \Eyelids:PWMUDB:pwm_i_reg\\D\ : bit;
 SIGNAL \Eyelids:PWMUDB:pwm1_i_reg\\D\ : bit;
 SIGNAL \Eyelids:PWMUDB:pwm2_i_reg\\D\ : bit;
 SIGNAL \Eyelids:PWMUDB:tc_i_reg\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:min_kill_reg\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:prevCapture\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:trig_last\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:runmode_enable\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:sc_kill_tmp\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:ltch_kill_reg\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:dith_count_1\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:dith_count_0\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:prevCompare1\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:prevCompare2\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp1_status_reg\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:cmp2_status_reg\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:final_kill_reg\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:pwm_i_reg\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:pwm1_i_reg\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:pwm2_i_reg\\D\ : bit;
-SIGNAL \Mouth:PWMUDB:tc_i_reg\\D\ : bit;
+SIGNAL \Lips:PWMUDB:min_kill_reg\\D\ : bit;
+SIGNAL \Lips:PWMUDB:prevCapture\\D\ : bit;
+SIGNAL \Lips:PWMUDB:trig_last\\D\ : bit;
+SIGNAL \Lips:PWMUDB:runmode_enable\\D\ : bit;
+SIGNAL \Lips:PWMUDB:sc_kill_tmp\\D\ : bit;
+SIGNAL \Lips:PWMUDB:ltch_kill_reg\\D\ : bit;
+SIGNAL \Lips:PWMUDB:dith_count_1\\D\ : bit;
+SIGNAL \Lips:PWMUDB:dith_count_0\\D\ : bit;
+SIGNAL \Lips:PWMUDB:prevCompare1\\D\ : bit;
+SIGNAL \Lips:PWMUDB:prevCompare2\\D\ : bit;
+SIGNAL \Lips:PWMUDB:cmp1_status_reg\\D\ : bit;
+SIGNAL \Lips:PWMUDB:cmp2_status_reg\\D\ : bit;
+SIGNAL \Lips:PWMUDB:final_kill_reg\\D\ : bit;
+SIGNAL \Lips:PWMUDB:pwm_i_reg\\D\ : bit;
+SIGNAL \Lips:PWMUDB:pwm1_i_reg\\D\ : bit;
+SIGNAL \Lips:PWMUDB:pwm2_i_reg\\D\ : bit;
+SIGNAL \Lips:PWMUDB:tc_i_reg\\D\ : bit;
 SIGNAL \Neck:PWMUDB:min_kill_reg\\D\ : bit;
 SIGNAL \Neck:PWMUDB:prevCapture\\D\ : bit;
 SIGNAL \Neck:PWMUDB:trig_last\\D\ : bit;
@@ -3731,24 +3731,24 @@ zero <=  ('0') ;
 
 \Eyelids:PWMUDB:pwm2_i\ <= ((\Eyelids:PWMUDB:runmode_enable\ and \Eyelids:PWMUDB:cmp2_less\));
 
-\Mouth:PWMUDB:sc_kill_tmp\\D\ <= (not \Mouth:PWMUDB:tc_i\);
+\Lips:PWMUDB:sc_kill_tmp\\D\ <= (not \Lips:PWMUDB:tc_i\);
 
-\Mouth:PWMUDB:dith_count_1\\D\ <= ((not \Mouth:PWMUDB:dith_count_1\ and \Mouth:PWMUDB:tc_i\ and \Mouth:PWMUDB:dith_count_0\)
-	OR (not \Mouth:PWMUDB:dith_count_0\ and \Mouth:PWMUDB:dith_count_1\)
-	OR (not \Mouth:PWMUDB:tc_i\ and \Mouth:PWMUDB:dith_count_1\));
+\Lips:PWMUDB:dith_count_1\\D\ <= ((not \Lips:PWMUDB:dith_count_1\ and \Lips:PWMUDB:tc_i\ and \Lips:PWMUDB:dith_count_0\)
+	OR (not \Lips:PWMUDB:dith_count_0\ and \Lips:PWMUDB:dith_count_1\)
+	OR (not \Lips:PWMUDB:tc_i\ and \Lips:PWMUDB:dith_count_1\));
 
-\Mouth:PWMUDB:dith_count_0\\D\ <= ((not \Mouth:PWMUDB:dith_count_0\ and \Mouth:PWMUDB:tc_i\)
-	OR (not \Mouth:PWMUDB:tc_i\ and \Mouth:PWMUDB:dith_count_0\));
+\Lips:PWMUDB:dith_count_0\\D\ <= ((not \Lips:PWMUDB:dith_count_0\ and \Lips:PWMUDB:tc_i\)
+	OR (not \Lips:PWMUDB:tc_i\ and \Lips:PWMUDB:dith_count_0\));
 
-\Mouth:PWMUDB:cmp1_status\ <= ((not \Mouth:PWMUDB:prevCompare1\ and \Mouth:PWMUDB:cmp1_less\));
+\Lips:PWMUDB:cmp1_status\ <= ((not \Lips:PWMUDB:prevCompare1\ and \Lips:PWMUDB:cmp1_less\));
 
-\Mouth:PWMUDB:cmp2_status\ <= ((not \Mouth:PWMUDB:prevCompare2\ and \Mouth:PWMUDB:cmp2_less\));
+\Lips:PWMUDB:cmp2_status\ <= ((not \Lips:PWMUDB:prevCompare2\ and \Lips:PWMUDB:cmp2_less\));
 
-\Mouth:PWMUDB:status_2\ <= ((\Mouth:PWMUDB:runmode_enable\ and \Mouth:PWMUDB:tc_i\));
+\Lips:PWMUDB:status_2\ <= ((\Lips:PWMUDB:runmode_enable\ and \Lips:PWMUDB:tc_i\));
 
-\Mouth:PWMUDB:pwm1_i\ <= ((\Mouth:PWMUDB:runmode_enable\ and \Mouth:PWMUDB:cmp1_less\));
+\Lips:PWMUDB:pwm1_i\ <= ((\Lips:PWMUDB:runmode_enable\ and \Lips:PWMUDB:cmp1_less\));
 
-\Mouth:PWMUDB:pwm2_i\ <= ((\Mouth:PWMUDB:runmode_enable\ and \Mouth:PWMUDB:cmp2_less\));
+\Lips:PWMUDB:pwm2_i\ <= ((\Lips:PWMUDB:runmode_enable\ and \Lips:PWMUDB:cmp2_less\));
 
 \Neck:PWMUDB:sc_kill_tmp\\D\ <= (not \Neck:PWMUDB:tc_i\);
 
@@ -5563,31 +5563,31 @@ EyelidClose:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__EyelidClose_net_0);
-\Mouth:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
+\Lips:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
 	PORT MAP(clock_in=>Net_233,
 		enable=>one,
-		clock_out=>\Mouth:PWMUDB:ClockOutFromEnBlock\);
-\Mouth:PWMUDB:genblk1:ctrlreg\:cy_psoc3_control
+		clock_out=>\Lips:PWMUDB:ClockOutFromEnBlock\);
+\Lips:PWMUDB:genblk1:ctrlreg\:cy_psoc3_control
 	GENERIC MAP(cy_init_value=>"00000000",
 		cy_force_order=>'1',
 		cy_ctrl_mode_1=>"00000000",
 		cy_ctrl_mode_0=>"11111111",
 		cy_ext_reset=>'0')
 	PORT MAP(reset=>zero,
-		clock=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		control=>(\Mouth:PWMUDB:control_7\, \Mouth:PWMUDB:control_6\, \Mouth:PWMUDB:control_5\, \Mouth:PWMUDB:control_4\,
-			\Mouth:PWMUDB:control_3\, \Mouth:PWMUDB:control_2\, \Mouth:PWMUDB:control_1\, \Mouth:PWMUDB:control_0\));
-\Mouth:PWMUDB:genblk8:stsreg\:cy_psoc3_statusi
+		clock=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		control=>(\Lips:PWMUDB:control_7\, \Lips:PWMUDB:control_6\, \Lips:PWMUDB:control_5\, \Lips:PWMUDB:control_4\,
+			\Lips:PWMUDB:control_3\, \Lips:PWMUDB:control_2\, \Lips:PWMUDB:control_1\, \Lips:PWMUDB:control_0\));
+\Lips:PWMUDB:genblk8:stsreg\:cy_psoc3_statusi
 	GENERIC MAP(cy_force_order=>'1',
 		cy_md_select=>"0100111",
 		cy_int_mask=>"1111111")
 	PORT MAP(reset=>zero,
-		clock=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		status=>(zero, \Mouth:PWMUDB:status_5\, zero, \Mouth:PWMUDB:status_3\,
-			\Mouth:PWMUDB:status_2\, \Mouth:PWMUDB:status_1\, \Mouth:PWMUDB:status_0\),
-		interrupt=>\Mouth:Net_55\);
-\Mouth:PWMUDB:sP16:pwmdp:u0\:cy_psoc3_dp
+		clock=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		status=>(zero, \Lips:PWMUDB:status_5\, zero, \Lips:PWMUDB:status_3\,
+			\Lips:PWMUDB:status_2\, \Lips:PWMUDB:status_1\, \Lips:PWMUDB:status_0\),
+		interrupt=>\Lips:Net_55\);
+\Lips:PWMUDB:sP16:pwmdp:u0\:cy_psoc3_dp
 	GENERIC MAP(cy_dpconfig=>"0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000",
 		d0_init=>"00000000",
 		d1_init=>"00000000",
@@ -5610,20 +5610,20 @@ EyelidClose:cy_psoc3_pins_v1_10
 		f1_bus_sync=>'1',
 		f1_blk_sync=>'1')
 	PORT MAP(reset=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		cs_addr=>(\Mouth:PWMUDB:tc_i\, \Mouth:PWMUDB:runmode_enable\, zero),
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		cs_addr=>(\Lips:PWMUDB:tc_i\, \Lips:PWMUDB:runmode_enable\, zero),
 		route_si=>zero,
 		route_ci=>zero,
 		f0_load=>zero,
 		f1_load=>zero,
 		d0_load=>zero,
 		d1_load=>zero,
-		ce0=>\Mouth:PWMUDB:nc2\,
-		cl0=>\Mouth:PWMUDB:nc3\,
-		z0=>\Mouth:PWMUDB:nc1\,
+		ce0=>\Lips:PWMUDB:nc2\,
+		cl0=>\Lips:PWMUDB:nc3\,
+		z0=>\Lips:PWMUDB:nc1\,
 		ff0=>open,
-		ce1=>\Mouth:PWMUDB:nc4\,
-		cl1=>\Mouth:PWMUDB:nc5\,
+		ce1=>\Lips:PWMUDB:nc4\,
+		cl1=>\Lips:PWMUDB:nc5\,
 		z1=>open,
 		ff1=>open,
 		ov_msb=>open,
@@ -5632,8 +5632,8 @@ EyelidClose:cy_psoc3_pins_v1_10
 		so=>open,
 		f0_bus_stat=>open,
 		f0_blk_stat=>open,
-		f1_bus_stat=>\Mouth:PWMUDB:nc6\,
-		f1_blk_stat=>\Mouth:PWMUDB:nc7\,
+		f1_bus_stat=>\Lips:PWMUDB:nc6\,
+		f1_blk_stat=>\Lips:PWMUDB:nc7\,
 		ce0_reg=>open,
 		cl0_reg=>open,
 		z0_reg=>open,
@@ -5651,29 +5651,29 @@ EyelidClose:cy_psoc3_pins_v1_10
 		f1_bus_stat_reg=>open,
 		f1_blk_stat_reg=>open,
 		ci=>zero,
-		co=>\Mouth:PWMUDB:sP16:pwmdp:carry\,
+		co=>\Lips:PWMUDB:sP16:pwmdp:carry\,
 		sir=>zero,
 		sor=>open,
-		sil=>\Mouth:PWMUDB:sP16:pwmdp:sh_right\,
-		sol=>\Mouth:PWMUDB:sP16:pwmdp:sh_left\,
-		msbi=>\Mouth:PWMUDB:sP16:pwmdp:msb\,
+		sil=>\Lips:PWMUDB:sP16:pwmdp:sh_right\,
+		sol=>\Lips:PWMUDB:sP16:pwmdp:sh_left\,
+		msbi=>\Lips:PWMUDB:sP16:pwmdp:msb\,
 		msbo=>open,
 		cei=>(zero, zero),
-		ceo=>(\Mouth:PWMUDB:sP16:pwmdp:cmp_eq_1\, \Mouth:PWMUDB:sP16:pwmdp:cmp_eq_0\),
+		ceo=>(\Lips:PWMUDB:sP16:pwmdp:cmp_eq_1\, \Lips:PWMUDB:sP16:pwmdp:cmp_eq_0\),
 		cli=>(zero, zero),
-		clo=>(\Mouth:PWMUDB:sP16:pwmdp:cmp_lt_1\, \Mouth:PWMUDB:sP16:pwmdp:cmp_lt_0\),
+		clo=>(\Lips:PWMUDB:sP16:pwmdp:cmp_lt_1\, \Lips:PWMUDB:sP16:pwmdp:cmp_lt_0\),
 		zi=>(zero, zero),
-		zo=>(\Mouth:PWMUDB:sP16:pwmdp:cmp_zero_1\, \Mouth:PWMUDB:sP16:pwmdp:cmp_zero_0\),
+		zo=>(\Lips:PWMUDB:sP16:pwmdp:cmp_zero_1\, \Lips:PWMUDB:sP16:pwmdp:cmp_zero_0\),
 		fi=>(zero, zero),
-		fo=>(\Mouth:PWMUDB:sP16:pwmdp:cmp_ff_1\, \Mouth:PWMUDB:sP16:pwmdp:cmp_ff_0\),
+		fo=>(\Lips:PWMUDB:sP16:pwmdp:cmp_ff_1\, \Lips:PWMUDB:sP16:pwmdp:cmp_ff_0\),
 		capi=>(zero, zero),
-		capo=>(\Mouth:PWMUDB:sP16:pwmdp:cap_1\, \Mouth:PWMUDB:sP16:pwmdp:cap_0\),
+		capo=>(\Lips:PWMUDB:sP16:pwmdp:cap_1\, \Lips:PWMUDB:sP16:pwmdp:cap_0\),
 		cfbi=>zero,
-		cfbo=>\Mouth:PWMUDB:sP16:pwmdp:cfb\,
+		cfbo=>\Lips:PWMUDB:sP16:pwmdp:cfb\,
 		pi=>(zero, zero, zero, zero,
 			zero, zero, zero, zero),
 		po=>open);
-\Mouth:PWMUDB:sP16:pwmdp:u1\:cy_psoc3_dp
+\Lips:PWMUDB:sP16:pwmdp:u1\:cy_psoc3_dp
 	GENERIC MAP(cy_dpconfig=>"0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101011110000000000000100000011110000000000011000",
 		d0_init=>"00000000",
 		d1_init=>"00000000",
@@ -5696,20 +5696,20 @@ EyelidClose:cy_psoc3_pins_v1_10
 		f1_bus_sync=>'1',
 		f1_blk_sync=>'1')
 	PORT MAP(reset=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		cs_addr=>(\Mouth:PWMUDB:tc_i\, \Mouth:PWMUDB:runmode_enable\, zero),
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		cs_addr=>(\Lips:PWMUDB:tc_i\, \Lips:PWMUDB:runmode_enable\, zero),
 		route_si=>zero,
 		route_ci=>zero,
 		f0_load=>zero,
 		f1_load=>zero,
 		d0_load=>zero,
 		d1_load=>zero,
-		ce0=>\Mouth:PWMUDB:cmp1_eq\,
-		cl0=>\Mouth:PWMUDB:cmp1_less\,
-		z0=>\Mouth:PWMUDB:tc_i\,
+		ce0=>\Lips:PWMUDB:cmp1_eq\,
+		cl0=>\Lips:PWMUDB:cmp1_less\,
+		z0=>\Lips:PWMUDB:tc_i\,
 		ff0=>open,
-		ce1=>\Mouth:PWMUDB:cmp2_eq\,
-		cl1=>\Mouth:PWMUDB:cmp2_less\,
+		ce1=>\Lips:PWMUDB:cmp2_eq\,
+		cl1=>\Lips:PWMUDB:cmp2_less\,
 		z1=>open,
 		ff1=>open,
 		ov_msb=>open,
@@ -5718,8 +5718,8 @@ EyelidClose:cy_psoc3_pins_v1_10
 		so=>open,
 		f0_bus_stat=>open,
 		f0_blk_stat=>open,
-		f1_bus_stat=>\Mouth:PWMUDB:fifo_nempty\,
-		f1_blk_stat=>\Mouth:PWMUDB:status_3\,
+		f1_bus_stat=>\Lips:PWMUDB:fifo_nempty\,
+		f1_blk_stat=>\Lips:PWMUDB:status_3\,
 		ce0_reg=>open,
 		cl0_reg=>open,
 		z0_reg=>open,
@@ -5736,38 +5736,38 @@ EyelidClose:cy_psoc3_pins_v1_10
 		f0_blk_stat_reg=>open,
 		f1_bus_stat_reg=>open,
 		f1_blk_stat_reg=>open,
-		ci=>\Mouth:PWMUDB:sP16:pwmdp:carry\,
+		ci=>\Lips:PWMUDB:sP16:pwmdp:carry\,
 		co=>open,
-		sir=>\Mouth:PWMUDB:sP16:pwmdp:sh_left\,
-		sor=>\Mouth:PWMUDB:sP16:pwmdp:sh_right\,
+		sir=>\Lips:PWMUDB:sP16:pwmdp:sh_left\,
+		sor=>\Lips:PWMUDB:sP16:pwmdp:sh_right\,
 		sil=>zero,
 		sol=>open,
 		msbi=>zero,
-		msbo=>\Mouth:PWMUDB:sP16:pwmdp:msb\,
-		cei=>(\Mouth:PWMUDB:sP16:pwmdp:cmp_eq_1\, \Mouth:PWMUDB:sP16:pwmdp:cmp_eq_0\),
+		msbo=>\Lips:PWMUDB:sP16:pwmdp:msb\,
+		cei=>(\Lips:PWMUDB:sP16:pwmdp:cmp_eq_1\, \Lips:PWMUDB:sP16:pwmdp:cmp_eq_0\),
 		ceo=>open,
-		cli=>(\Mouth:PWMUDB:sP16:pwmdp:cmp_lt_1\, \Mouth:PWMUDB:sP16:pwmdp:cmp_lt_0\),
+		cli=>(\Lips:PWMUDB:sP16:pwmdp:cmp_lt_1\, \Lips:PWMUDB:sP16:pwmdp:cmp_lt_0\),
 		clo=>open,
-		zi=>(\Mouth:PWMUDB:sP16:pwmdp:cmp_zero_1\, \Mouth:PWMUDB:sP16:pwmdp:cmp_zero_0\),
+		zi=>(\Lips:PWMUDB:sP16:pwmdp:cmp_zero_1\, \Lips:PWMUDB:sP16:pwmdp:cmp_zero_0\),
 		zo=>open,
-		fi=>(\Mouth:PWMUDB:sP16:pwmdp:cmp_ff_1\, \Mouth:PWMUDB:sP16:pwmdp:cmp_ff_0\),
+		fi=>(\Lips:PWMUDB:sP16:pwmdp:cmp_ff_1\, \Lips:PWMUDB:sP16:pwmdp:cmp_ff_0\),
 		fo=>open,
-		capi=>(\Mouth:PWMUDB:sP16:pwmdp:cap_1\, \Mouth:PWMUDB:sP16:pwmdp:cap_0\),
+		capi=>(\Lips:PWMUDB:sP16:pwmdp:cap_1\, \Lips:PWMUDB:sP16:pwmdp:cap_0\),
 		capo=>open,
-		cfbi=>\Mouth:PWMUDB:sP16:pwmdp:cfb\,
+		cfbi=>\Lips:PWMUDB:sP16:pwmdp:cfb\,
 		cfbo=>open,
 		pi=>(zero, zero, zero, zero,
 			zero, zero, zero, zero),
 		po=>open);
-\Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:gs(24):g2:g3:ub\:cy_buf
+\Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:gs(24):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
-		y=>\Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_24\);
-\Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:gs(16):g2:g3:ub\:cy_buf
+		y=>\Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_24\);
+\Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:gs(16):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
-		y=>\Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_16\);
-\Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
+		y=>\Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_16\);
+\Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
-		y=>\Mouth:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_8\);
+		y=>\Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_8\);
 Clock_6:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
 		id=>"02dd5470-2d9d-411f-8f1e-75d960cc33db",
@@ -5778,7 +5778,7 @@ Clock_6:cy_clock_v1_0
 		is_digital=>'1')
 	PORT MAP(clock_out=>Net_233,
 		dig_domain_out=>open);
-TopLip:cy_psoc3_pins_v1_10
+LipLeft:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"0b3f2ac2-8cb9-48a0-b3e0-d42d22853b76",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -5836,10 +5836,10 @@ TopLip:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>Net_235,
-		fb=>(tmpFB_0__TopLip_net_0),
+		fb=>(tmpFB_0__LipLeft_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__TopLip_net_0),
-		siovref=>(tmpSIOVREF__TopLip_net_0),
+		io=>(tmpIO_0__LipLeft_net_0),
+		siovref=>(tmpSIOVREF__LipLeft_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -5847,8 +5847,8 @@ TopLip:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__TopLip_net_0);
-Jaw:cy_psoc3_pins_v1_10
+		interrupt=>tmpINTERRUPT_0__LipLeft_net_0);
+LipRight:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"c92e5cfe-8b6f-4345-a8bd-07659122c005",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -5906,10 +5906,10 @@ Jaw:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>Net_236,
-		fb=>(tmpFB_0__Jaw_net_0),
+		fb=>(tmpFB_0__LipRight_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__Jaw_net_0),
-		siovref=>(tmpSIOVREF__Jaw_net_0),
+		io=>(tmpIO_0__LipRight_net_0),
+		siovref=>(tmpSIOVREF__LipRight_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -5917,7 +5917,7 @@ Jaw:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__Jaw_net_0);
+		interrupt=>tmpINTERRUPT_0__LipRight_net_0);
 \Neck:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
 	PORT MAP(clock_in=>Net_304,
@@ -6558,7 +6558,7 @@ BaseRotation:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__BaseRotation_net_0);
-Pin_2:cy_psoc3_pins_v1_10
+Jaw:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"77320ccc-0277-47ad-bc06-174c5a798bc0",
 		drive_mode=>"110",
 		ibuf_enabled=>"1",
@@ -6616,10 +6616,10 @@ Pin_2:cy_psoc3_pins_v1_10
 		input_buffer_sel=>"00")
 	PORT MAP(oe=>(one),
 		y=>Net_862,
-		fb=>(tmpFB_0__Pin_2_net_0),
+		fb=>(tmpFB_0__Jaw_net_0),
 		analog=>(open),
-		io=>(tmpIO_0__Pin_2_net_0),
-		siovref=>(tmpSIOVREF__Pin_2_net_0),
+		io=>(tmpIO_0__Jaw_net_0),
+		siovref=>(tmpSIOVREF__Jaw_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -6627,7 +6627,7 @@ Pin_2:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__Pin_2_net_0);
+		interrupt=>tmpINTERRUPT_0__Jaw_net_0);
 \LeftEyebrow:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>one,
 		s=>zero,
@@ -7048,90 +7048,90 @@ Pin_2:cy_psoc3_pins_v1_10
 	PORT MAP(d=>\Eyelids:PWMUDB:status_2\,
 		clk=>\Eyelids:PWMUDB:ClockOutFromEnBlock\,
 		q=>\Eyelids:PWMUDB:tc_i_reg\);
-\Mouth:PWMUDB:min_kill_reg\:cy_dsrff
+\Lips:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>one,
 		s=>zero,
 		r=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:min_kill_reg\);
-\Mouth:PWMUDB:prevCapture\:cy_dff
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:min_kill_reg\);
+\Lips:PWMUDB:prevCapture\:cy_dff
 	PORT MAP(d=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:prevCapture\);
-\Mouth:PWMUDB:trig_last\:cy_dff
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:prevCapture\);
+\Lips:PWMUDB:trig_last\:cy_dff
 	PORT MAP(d=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:trig_last\);
-\Mouth:PWMUDB:runmode_enable\:cy_dsrff
-	PORT MAP(d=>\Mouth:PWMUDB:control_7\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:trig_last\);
+\Lips:PWMUDB:runmode_enable\:cy_dsrff
+	PORT MAP(d=>\Lips:PWMUDB:control_7\,
 		s=>zero,
 		r=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:runmode_enable\);
-\Mouth:PWMUDB:sc_kill_tmp\:cy_dff
-	PORT MAP(d=>\Mouth:PWMUDB:sc_kill_tmp\\D\,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:sc_kill_tmp\);
-\Mouth:PWMUDB:ltch_kill_reg\:cy_dsrff
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:runmode_enable\);
+\Lips:PWMUDB:sc_kill_tmp\:cy_dff
+	PORT MAP(d=>\Lips:PWMUDB:sc_kill_tmp\\D\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:sc_kill_tmp\);
+\Lips:PWMUDB:ltch_kill_reg\:cy_dsrff
 	PORT MAP(d=>one,
 		s=>zero,
 		r=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:ltch_kill_reg\);
-\Mouth:PWMUDB:dith_count_1\:cy_dsrff
-	PORT MAP(d=>\Mouth:PWMUDB:dith_count_1\\D\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:ltch_kill_reg\);
+\Lips:PWMUDB:dith_count_1\:cy_dsrff
+	PORT MAP(d=>\Lips:PWMUDB:dith_count_1\\D\,
 		s=>zero,
 		r=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:dith_count_1\);
-\Mouth:PWMUDB:dith_count_0\:cy_dsrff
-	PORT MAP(d=>\Mouth:PWMUDB:dith_count_0\\D\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:dith_count_1\);
+\Lips:PWMUDB:dith_count_0\:cy_dsrff
+	PORT MAP(d=>\Lips:PWMUDB:dith_count_0\\D\,
 		s=>zero,
 		r=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:dith_count_0\);
-\Mouth:PWMUDB:prevCompare1\:cy_dff
-	PORT MAP(d=>\Mouth:PWMUDB:cmp1_less\,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:prevCompare1\);
-\Mouth:PWMUDB:prevCompare2\:cy_dff
-	PORT MAP(d=>\Mouth:PWMUDB:cmp2_less\,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:prevCompare2\);
-\Mouth:PWMUDB:cmp1_status_reg\:cy_dsrff
-	PORT MAP(d=>\Mouth:PWMUDB:cmp1_status\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:dith_count_0\);
+\Lips:PWMUDB:prevCompare1\:cy_dff
+	PORT MAP(d=>\Lips:PWMUDB:cmp1_less\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:prevCompare1\);
+\Lips:PWMUDB:prevCompare2\:cy_dff
+	PORT MAP(d=>\Lips:PWMUDB:cmp2_less\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:prevCompare2\);
+\Lips:PWMUDB:cmp1_status_reg\:cy_dsrff
+	PORT MAP(d=>\Lips:PWMUDB:cmp1_status\,
 		s=>zero,
 		r=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:status_0\);
-\Mouth:PWMUDB:cmp2_status_reg\:cy_dsrff
-	PORT MAP(d=>\Mouth:PWMUDB:cmp2_status\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:status_0\);
+\Lips:PWMUDB:cmp2_status_reg\:cy_dsrff
+	PORT MAP(d=>\Lips:PWMUDB:cmp2_status\,
 		s=>zero,
 		r=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:status_1\);
-\Mouth:PWMUDB:final_kill_reg\:cy_dsrff
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:status_1\);
+\Lips:PWMUDB:final_kill_reg\:cy_dsrff
 	PORT MAP(d=>zero,
 		s=>zero,
 		r=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:status_5\);
-\Mouth:PWMUDB:pwm_i_reg\:cy_dff
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:status_5\);
+\Lips:PWMUDB:pwm_i_reg\:cy_dff
 	PORT MAP(d=>zero,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:pwm_i_reg\);
-\Mouth:PWMUDB:pwm1_i_reg\:cy_dff
-	PORT MAP(d=>\Mouth:PWMUDB:pwm1_i\,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:pwm_i_reg\);
+\Lips:PWMUDB:pwm1_i_reg\:cy_dff
+	PORT MAP(d=>\Lips:PWMUDB:pwm1_i\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
 		q=>Net_235);
-\Mouth:PWMUDB:pwm2_i_reg\:cy_dff
-	PORT MAP(d=>\Mouth:PWMUDB:pwm2_i\,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
+\Lips:PWMUDB:pwm2_i_reg\:cy_dff
+	PORT MAP(d=>\Lips:PWMUDB:pwm2_i\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
 		q=>Net_236);
-\Mouth:PWMUDB:tc_i_reg\:cy_dff
-	PORT MAP(d=>\Mouth:PWMUDB:status_2\,
-		clk=>\Mouth:PWMUDB:ClockOutFromEnBlock\,
-		q=>\Mouth:PWMUDB:tc_i_reg\);
+\Lips:PWMUDB:tc_i_reg\:cy_dff
+	PORT MAP(d=>\Lips:PWMUDB:status_2\,
+		clk=>\Lips:PWMUDB:ClockOutFromEnBlock\,
+		q=>\Lips:PWMUDB:tc_i_reg\);
 \Neck:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>one,
 		s=>zero,

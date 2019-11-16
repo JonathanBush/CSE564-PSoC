@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Mouth_PM.c
+* File Name: Lips_PM.c
 * Version 3.30
 *
 * Description:
@@ -15,13 +15,13 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#include "Mouth.h"
+#include "Lips.h"
 
-static Mouth_backupStruct Mouth_backup;
+static Lips_backupStruct Lips_backup;
 
 
 /*******************************************************************************
-* Function Name: Mouth_SaveConfig
+* Function Name: Lips_SaveConfig
 ********************************************************************************
 *
 * Summary:
@@ -34,41 +34,41 @@ static Mouth_backupStruct Mouth_backup;
 *  None
 *
 * Global variables:
-*  Mouth_backup:  Variables of this global structure are modified to
+*  Lips_backup:  Variables of this global structure are modified to
 *  store the values of non retention configuration registers when Sleep() API is
 *  called.
 *
 *******************************************************************************/
-void Mouth_SaveConfig(void) 
+void Lips_SaveConfig(void) 
 {
 
-    #if(!Mouth_UsingFixedFunction)
-        #if(!Mouth_PWMModeIsCenterAligned)
-            Mouth_backup.PWMPeriod = Mouth_ReadPeriod();
-        #endif /* (!Mouth_PWMModeIsCenterAligned) */
-        Mouth_backup.PWMUdb = Mouth_ReadCounter();
-        #if (Mouth_UseStatus)
-            Mouth_backup.InterruptMaskValue = Mouth_STATUS_MASK;
-        #endif /* (Mouth_UseStatus) */
+    #if(!Lips_UsingFixedFunction)
+        #if(!Lips_PWMModeIsCenterAligned)
+            Lips_backup.PWMPeriod = Lips_ReadPeriod();
+        #endif /* (!Lips_PWMModeIsCenterAligned) */
+        Lips_backup.PWMUdb = Lips_ReadCounter();
+        #if (Lips_UseStatus)
+            Lips_backup.InterruptMaskValue = Lips_STATUS_MASK;
+        #endif /* (Lips_UseStatus) */
 
-        #if(Mouth_DeadBandMode == Mouth__B_PWM__DBM_256_CLOCKS || \
-            Mouth_DeadBandMode == Mouth__B_PWM__DBM_2_4_CLOCKS)
-            Mouth_backup.PWMdeadBandValue = Mouth_ReadDeadTime();
+        #if(Lips_DeadBandMode == Lips__B_PWM__DBM_256_CLOCKS || \
+            Lips_DeadBandMode == Lips__B_PWM__DBM_2_4_CLOCKS)
+            Lips_backup.PWMdeadBandValue = Lips_ReadDeadTime();
         #endif /*  deadband count is either 2-4 clocks or 256 clocks */
 
-        #if(Mouth_KillModeMinTime)
-             Mouth_backup.PWMKillCounterPeriod = Mouth_ReadKillTime();
-        #endif /* (Mouth_KillModeMinTime) */
+        #if(Lips_KillModeMinTime)
+             Lips_backup.PWMKillCounterPeriod = Lips_ReadKillTime();
+        #endif /* (Lips_KillModeMinTime) */
 
-        #if(Mouth_UseControl)
-            Mouth_backup.PWMControlRegister = Mouth_ReadControlRegister();
-        #endif /* (Mouth_UseControl) */
-    #endif  /* (!Mouth_UsingFixedFunction) */
+        #if(Lips_UseControl)
+            Lips_backup.PWMControlRegister = Lips_ReadControlRegister();
+        #endif /* (Lips_UseControl) */
+    #endif  /* (!Lips_UsingFixedFunction) */
 }
 
 
 /*******************************************************************************
-* Function Name: Mouth_RestoreConfig
+* Function Name: Lips_RestoreConfig
 ********************************************************************************
 *
 * Summary:
@@ -81,41 +81,41 @@ void Mouth_SaveConfig(void)
 *  None
 *
 * Global variables:
-*  Mouth_backup:  Variables of this global structure are used to
+*  Lips_backup:  Variables of this global structure are used to
 *  restore the values of non retention registers on wakeup from sleep mode.
 *
 *******************************************************************************/
-void Mouth_RestoreConfig(void) 
+void Lips_RestoreConfig(void) 
 {
-        #if(!Mouth_UsingFixedFunction)
-            #if(!Mouth_PWMModeIsCenterAligned)
-                Mouth_WritePeriod(Mouth_backup.PWMPeriod);
-            #endif /* (!Mouth_PWMModeIsCenterAligned) */
+        #if(!Lips_UsingFixedFunction)
+            #if(!Lips_PWMModeIsCenterAligned)
+                Lips_WritePeriod(Lips_backup.PWMPeriod);
+            #endif /* (!Lips_PWMModeIsCenterAligned) */
 
-            Mouth_WriteCounter(Mouth_backup.PWMUdb);
+            Lips_WriteCounter(Lips_backup.PWMUdb);
 
-            #if (Mouth_UseStatus)
-                Mouth_STATUS_MASK = Mouth_backup.InterruptMaskValue;
-            #endif /* (Mouth_UseStatus) */
+            #if (Lips_UseStatus)
+                Lips_STATUS_MASK = Lips_backup.InterruptMaskValue;
+            #endif /* (Lips_UseStatus) */
 
-            #if(Mouth_DeadBandMode == Mouth__B_PWM__DBM_256_CLOCKS || \
-                Mouth_DeadBandMode == Mouth__B_PWM__DBM_2_4_CLOCKS)
-                Mouth_WriteDeadTime(Mouth_backup.PWMdeadBandValue);
+            #if(Lips_DeadBandMode == Lips__B_PWM__DBM_256_CLOCKS || \
+                Lips_DeadBandMode == Lips__B_PWM__DBM_2_4_CLOCKS)
+                Lips_WriteDeadTime(Lips_backup.PWMdeadBandValue);
             #endif /* deadband count is either 2-4 clocks or 256 clocks */
 
-            #if(Mouth_KillModeMinTime)
-                Mouth_WriteKillTime(Mouth_backup.PWMKillCounterPeriod);
-            #endif /* (Mouth_KillModeMinTime) */
+            #if(Lips_KillModeMinTime)
+                Lips_WriteKillTime(Lips_backup.PWMKillCounterPeriod);
+            #endif /* (Lips_KillModeMinTime) */
 
-            #if(Mouth_UseControl)
-                Mouth_WriteControlRegister(Mouth_backup.PWMControlRegister);
-            #endif /* (Mouth_UseControl) */
-        #endif  /* (!Mouth_UsingFixedFunction) */
+            #if(Lips_UseControl)
+                Lips_WriteControlRegister(Lips_backup.PWMControlRegister);
+            #endif /* (Lips_UseControl) */
+        #endif  /* (!Lips_UsingFixedFunction) */
     }
 
 
 /*******************************************************************************
-* Function Name: Mouth_Sleep
+* Function Name: Lips_Sleep
 ********************************************************************************
 *
 * Summary:
@@ -129,35 +129,35 @@ void Mouth_RestoreConfig(void)
 *  None
 *
 * Global variables:
-*  Mouth_backup.PWMEnableState:  Is modified depending on the enable
+*  Lips_backup.PWMEnableState:  Is modified depending on the enable
 *  state of the block before entering sleep mode.
 *
 *******************************************************************************/
-void Mouth_Sleep(void) 
+void Lips_Sleep(void) 
 {
-    #if(Mouth_UseControl)
-        if(Mouth_CTRL_ENABLE == (Mouth_CONTROL & Mouth_CTRL_ENABLE))
+    #if(Lips_UseControl)
+        if(Lips_CTRL_ENABLE == (Lips_CONTROL & Lips_CTRL_ENABLE))
         {
             /*Component is enabled */
-            Mouth_backup.PWMEnableState = 1u;
+            Lips_backup.PWMEnableState = 1u;
         }
         else
         {
             /* Component is disabled */
-            Mouth_backup.PWMEnableState = 0u;
+            Lips_backup.PWMEnableState = 0u;
         }
-    #endif /* (Mouth_UseControl) */
+    #endif /* (Lips_UseControl) */
 
     /* Stop component */
-    Mouth_Stop();
+    Lips_Stop();
 
     /* Save registers configuration */
-    Mouth_SaveConfig();
+    Lips_SaveConfig();
 }
 
 
 /*******************************************************************************
-* Function Name: Mouth_Wakeup
+* Function Name: Lips_Wakeup
 ********************************************************************************
 *
 * Summary:
@@ -171,19 +171,19 @@ void Mouth_Sleep(void)
 *  None
 *
 * Global variables:
-*  Mouth_backup.pwmEnable:  Is used to restore the enable state of
+*  Lips_backup.pwmEnable:  Is used to restore the enable state of
 *  block on wakeup from sleep mode.
 *
 *******************************************************************************/
-void Mouth_Wakeup(void) 
+void Lips_Wakeup(void) 
 {
      /* Restore registers values */
-    Mouth_RestoreConfig();
+    Lips_RestoreConfig();
 
-    if(Mouth_backup.PWMEnableState != 0u)
+    if(Lips_backup.PWMEnableState != 0u)
     {
         /* Enable component's operation */
-        Mouth_Enable();
+        Lips_Enable();
     } /* Do nothing if component's block was disabled before */
 
 }

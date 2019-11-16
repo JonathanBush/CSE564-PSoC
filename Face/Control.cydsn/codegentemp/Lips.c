@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: Mouth.c
+* File Name: Lips.c
 * Version 3.30
 *
 * Description:
@@ -21,19 +21,19 @@
 * the software package with which this file was provided.
 ********************************************************************************/
 
-#include "Mouth.h"
+#include "Lips.h"
 
 /* Error message for removed <resource> through optimization */
-#ifdef Mouth_PWMUDB_genblk1_ctrlreg__REMOVED
+#ifdef Lips_PWMUDB_genblk1_ctrlreg__REMOVED
     #error PWM_v3_30 detected with a constant 0 for the enable or \
          constant 1 for reset. This will prevent the component from operating.
-#endif /* Mouth_PWMUDB_genblk1_ctrlreg__REMOVED */
+#endif /* Lips_PWMUDB_genblk1_ctrlreg__REMOVED */
 
-uint8 Mouth_initVar = 0u;
+uint8 Lips_initVar = 0u;
 
 
 /*******************************************************************************
-* Function Name: Mouth_Start
+* Function Name: Lips_Start
 ********************************************************************************
 *
 * Summary:
@@ -48,31 +48,31 @@ uint8 Mouth_initVar = 0u;
 *  None
 *
 * Global variables:
-*  Mouth_initVar: Is modified when this function is called for the
+*  Lips_initVar: Is modified when this function is called for the
 *   first time. Is used to ensure that initialization happens only once.
 *
 *******************************************************************************/
-void Mouth_Start(void) 
+void Lips_Start(void) 
 {
     /* If not Initialized then initialize all required hardware and software */
-    if(Mouth_initVar == 0u)
+    if(Lips_initVar == 0u)
     {
-        Mouth_Init();
-        Mouth_initVar = 1u;
+        Lips_Init();
+        Lips_initVar = 1u;
     }
-    Mouth_Enable();
+    Lips_Enable();
 
 }
 
 
 /*******************************************************************************
-* Function Name: Mouth_Init
+* Function Name: Lips_Init
 ********************************************************************************
 *
 * Summary:
 *  Initialize component's parameters to the parameters set by user in the
 *  customizer of the component placed onto schematic. Usually called in
-*  Mouth_Start().
+*  Lips_Start().
 *
 * Parameters:
 *  None
@@ -81,106 +81,106 @@ void Mouth_Start(void)
 *  None
 *
 *******************************************************************************/
-void Mouth_Init(void) 
+void Lips_Init(void) 
 {
-    #if (Mouth_UsingFixedFunction || Mouth_UseControl)
+    #if (Lips_UsingFixedFunction || Lips_UseControl)
         uint8 ctrl;
-    #endif /* (Mouth_UsingFixedFunction || Mouth_UseControl) */
+    #endif /* (Lips_UsingFixedFunction || Lips_UseControl) */
 
-    #if(!Mouth_UsingFixedFunction)
-        #if(Mouth_UseStatus)
+    #if(!Lips_UsingFixedFunction)
+        #if(Lips_UseStatus)
             /* Interrupt State Backup for Critical Region*/
-            uint8 Mouth_interruptState;
-        #endif /* (Mouth_UseStatus) */
-    #endif /* (!Mouth_UsingFixedFunction) */
+            uint8 Lips_interruptState;
+        #endif /* (Lips_UseStatus) */
+    #endif /* (!Lips_UsingFixedFunction) */
 
-    #if (Mouth_UsingFixedFunction)
+    #if (Lips_UsingFixedFunction)
         /* You are allowed to write the compare value (FF only) */
-        Mouth_CONTROL |= Mouth_CFG0_MODE;
-        #if (Mouth_DeadBand2_4)
-            Mouth_CONTROL |= Mouth_CFG0_DB;
-        #endif /* (Mouth_DeadBand2_4) */
+        Lips_CONTROL |= Lips_CFG0_MODE;
+        #if (Lips_DeadBand2_4)
+            Lips_CONTROL |= Lips_CFG0_DB;
+        #endif /* (Lips_DeadBand2_4) */
 
-        ctrl = Mouth_CONTROL3 & ((uint8 )(~Mouth_CTRL_CMPMODE1_MASK));
-        Mouth_CONTROL3 = ctrl | Mouth_DEFAULT_COMPARE1_MODE;
+        ctrl = Lips_CONTROL3 & ((uint8 )(~Lips_CTRL_CMPMODE1_MASK));
+        Lips_CONTROL3 = ctrl | Lips_DEFAULT_COMPARE1_MODE;
 
          /* Clear and Set SYNCTC and SYNCCMP bits of RT1 register */
-        Mouth_RT1 &= ((uint8)(~Mouth_RT1_MASK));
-        Mouth_RT1 |= Mouth_SYNC;
+        Lips_RT1 &= ((uint8)(~Lips_RT1_MASK));
+        Lips_RT1 |= Lips_SYNC;
 
         /*Enable DSI Sync all all inputs of the PWM*/
-        Mouth_RT1 &= ((uint8)(~Mouth_SYNCDSI_MASK));
-        Mouth_RT1 |= Mouth_SYNCDSI_EN;
+        Lips_RT1 &= ((uint8)(~Lips_SYNCDSI_MASK));
+        Lips_RT1 |= Lips_SYNCDSI_EN;
 
-    #elif (Mouth_UseControl)
+    #elif (Lips_UseControl)
         /* Set the default compare mode defined in the parameter */
-        ctrl = Mouth_CONTROL & ((uint8)(~Mouth_CTRL_CMPMODE2_MASK)) &
-                ((uint8)(~Mouth_CTRL_CMPMODE1_MASK));
-        Mouth_CONTROL = ctrl | Mouth_DEFAULT_COMPARE2_MODE |
-                                   Mouth_DEFAULT_COMPARE1_MODE;
-    #endif /* (Mouth_UsingFixedFunction) */
+        ctrl = Lips_CONTROL & ((uint8)(~Lips_CTRL_CMPMODE2_MASK)) &
+                ((uint8)(~Lips_CTRL_CMPMODE1_MASK));
+        Lips_CONTROL = ctrl | Lips_DEFAULT_COMPARE2_MODE |
+                                   Lips_DEFAULT_COMPARE1_MODE;
+    #endif /* (Lips_UsingFixedFunction) */
 
-    #if (!Mouth_UsingFixedFunction)
-        #if (Mouth_Resolution == 8)
+    #if (!Lips_UsingFixedFunction)
+        #if (Lips_Resolution == 8)
             /* Set FIFO 0 to 1 byte register for period*/
-            Mouth_AUX_CONTROLDP0 |= (Mouth_AUX_CTRL_FIFO0_CLR);
-        #else /* (Mouth_Resolution == 16)*/
+            Lips_AUX_CONTROLDP0 |= (Lips_AUX_CTRL_FIFO0_CLR);
+        #else /* (Lips_Resolution == 16)*/
             /* Set FIFO 0 to 1 byte register for period */
-            Mouth_AUX_CONTROLDP0 |= (Mouth_AUX_CTRL_FIFO0_CLR);
-            Mouth_AUX_CONTROLDP1 |= (Mouth_AUX_CTRL_FIFO0_CLR);
-        #endif /* (Mouth_Resolution == 8) */
+            Lips_AUX_CONTROLDP0 |= (Lips_AUX_CTRL_FIFO0_CLR);
+            Lips_AUX_CONTROLDP1 |= (Lips_AUX_CTRL_FIFO0_CLR);
+        #endif /* (Lips_Resolution == 8) */
 
-        Mouth_WriteCounter(Mouth_INIT_PERIOD_VALUE);
-    #endif /* (!Mouth_UsingFixedFunction) */
+        Lips_WriteCounter(Lips_INIT_PERIOD_VALUE);
+    #endif /* (!Lips_UsingFixedFunction) */
 
-    Mouth_WritePeriod(Mouth_INIT_PERIOD_VALUE);
+    Lips_WritePeriod(Lips_INIT_PERIOD_VALUE);
 
-        #if (Mouth_UseOneCompareMode)
-            Mouth_WriteCompare(Mouth_INIT_COMPARE_VALUE1);
+        #if (Lips_UseOneCompareMode)
+            Lips_WriteCompare(Lips_INIT_COMPARE_VALUE1);
         #else
-            Mouth_WriteCompare1(Mouth_INIT_COMPARE_VALUE1);
-            Mouth_WriteCompare2(Mouth_INIT_COMPARE_VALUE2);
-        #endif /* (Mouth_UseOneCompareMode) */
+            Lips_WriteCompare1(Lips_INIT_COMPARE_VALUE1);
+            Lips_WriteCompare2(Lips_INIT_COMPARE_VALUE2);
+        #endif /* (Lips_UseOneCompareMode) */
 
-        #if (Mouth_KillModeMinTime)
-            Mouth_WriteKillTime(Mouth_MinimumKillTime);
-        #endif /* (Mouth_KillModeMinTime) */
+        #if (Lips_KillModeMinTime)
+            Lips_WriteKillTime(Lips_MinimumKillTime);
+        #endif /* (Lips_KillModeMinTime) */
 
-        #if (Mouth_DeadBandUsed)
-            Mouth_WriteDeadTime(Mouth_INIT_DEAD_TIME);
-        #endif /* (Mouth_DeadBandUsed) */
+        #if (Lips_DeadBandUsed)
+            Lips_WriteDeadTime(Lips_INIT_DEAD_TIME);
+        #endif /* (Lips_DeadBandUsed) */
 
-    #if (Mouth_UseStatus || Mouth_UsingFixedFunction)
-        Mouth_SetInterruptMode(Mouth_INIT_INTERRUPTS_MODE);
-    #endif /* (Mouth_UseStatus || Mouth_UsingFixedFunction) */
+    #if (Lips_UseStatus || Lips_UsingFixedFunction)
+        Lips_SetInterruptMode(Lips_INIT_INTERRUPTS_MODE);
+    #endif /* (Lips_UseStatus || Lips_UsingFixedFunction) */
 
-    #if (Mouth_UsingFixedFunction)
+    #if (Lips_UsingFixedFunction)
         /* Globally Enable the Fixed Function Block chosen */
-        Mouth_GLOBAL_ENABLE |= Mouth_BLOCK_EN_MASK;
+        Lips_GLOBAL_ENABLE |= Lips_BLOCK_EN_MASK;
         /* Set the Interrupt source to come from the status register */
-        Mouth_CONTROL2 |= Mouth_CTRL2_IRQ_SEL;
+        Lips_CONTROL2 |= Lips_CTRL2_IRQ_SEL;
     #else
-        #if(Mouth_UseStatus)
+        #if(Lips_UseStatus)
 
             /* CyEnterCriticalRegion and CyExitCriticalRegion are used to mark following region critical*/
             /* Enter Critical Region*/
-            Mouth_interruptState = CyEnterCriticalSection();
+            Lips_interruptState = CyEnterCriticalSection();
             /* Use the interrupt output of the status register for IRQ output */
-            Mouth_STATUS_AUX_CTRL |= Mouth_STATUS_ACTL_INT_EN_MASK;
+            Lips_STATUS_AUX_CTRL |= Lips_STATUS_ACTL_INT_EN_MASK;
 
              /* Exit Critical Region*/
-            CyExitCriticalSection(Mouth_interruptState);
+            CyExitCriticalSection(Lips_interruptState);
 
-            /* Clear the FIFO to enable the Mouth_STATUS_FIFOFULL
+            /* Clear the FIFO to enable the Lips_STATUS_FIFOFULL
                    bit to be set on FIFO full. */
-            Mouth_ClearFIFO();
-        #endif /* (Mouth_UseStatus) */
-    #endif /* (Mouth_UsingFixedFunction) */
+            Lips_ClearFIFO();
+        #endif /* (Lips_UseStatus) */
+    #endif /* (Lips_UsingFixedFunction) */
 }
 
 
 /*******************************************************************************
-* Function Name: Mouth_Enable
+* Function Name: Lips_Enable
 ********************************************************************************
 *
 * Summary:
@@ -196,23 +196,23 @@ void Mouth_Init(void)
 *  This works only if software enable mode is chosen
 *
 *******************************************************************************/
-void Mouth_Enable(void) 
+void Lips_Enable(void) 
 {
     /* Globally Enable the Fixed Function Block chosen */
-    #if (Mouth_UsingFixedFunction)
-        Mouth_GLOBAL_ENABLE |= Mouth_BLOCK_EN_MASK;
-        Mouth_GLOBAL_STBY_ENABLE |= Mouth_BLOCK_STBY_EN_MASK;
-    #endif /* (Mouth_UsingFixedFunction) */
+    #if (Lips_UsingFixedFunction)
+        Lips_GLOBAL_ENABLE |= Lips_BLOCK_EN_MASK;
+        Lips_GLOBAL_STBY_ENABLE |= Lips_BLOCK_STBY_EN_MASK;
+    #endif /* (Lips_UsingFixedFunction) */
 
     /* Enable the PWM from the control register  */
-    #if (Mouth_UseControl || Mouth_UsingFixedFunction)
-        Mouth_CONTROL |= Mouth_CTRL_ENABLE;
-    #endif /* (Mouth_UseControl || Mouth_UsingFixedFunction) */
+    #if (Lips_UseControl || Lips_UsingFixedFunction)
+        Lips_CONTROL |= Lips_CTRL_ENABLE;
+    #endif /* (Lips_UseControl || Lips_UsingFixedFunction) */
 }
 
 
 /*******************************************************************************
-* Function Name: Mouth_Stop
+* Function Name: Lips_Stop
 ********************************************************************************
 *
 * Summary:
@@ -230,25 +230,25 @@ void Mouth_Enable(void)
 *  has no effect on the operation of the PWM
 *
 *******************************************************************************/
-void Mouth_Stop(void) 
+void Lips_Stop(void) 
 {
-    #if (Mouth_UseControl || Mouth_UsingFixedFunction)
-        Mouth_CONTROL &= ((uint8)(~Mouth_CTRL_ENABLE));
-    #endif /* (Mouth_UseControl || Mouth_UsingFixedFunction) */
+    #if (Lips_UseControl || Lips_UsingFixedFunction)
+        Lips_CONTROL &= ((uint8)(~Lips_CTRL_ENABLE));
+    #endif /* (Lips_UseControl || Lips_UsingFixedFunction) */
 
     /* Globally disable the Fixed Function Block chosen */
-    #if (Mouth_UsingFixedFunction)
-        Mouth_GLOBAL_ENABLE &= ((uint8)(~Mouth_BLOCK_EN_MASK));
-        Mouth_GLOBAL_STBY_ENABLE &= ((uint8)(~Mouth_BLOCK_STBY_EN_MASK));
-    #endif /* (Mouth_UsingFixedFunction) */
+    #if (Lips_UsingFixedFunction)
+        Lips_GLOBAL_ENABLE &= ((uint8)(~Lips_BLOCK_EN_MASK));
+        Lips_GLOBAL_STBY_ENABLE &= ((uint8)(~Lips_BLOCK_STBY_EN_MASK));
+    #endif /* (Lips_UsingFixedFunction) */
 }
 
-#if (Mouth_UseOneCompareMode)
-    #if (Mouth_CompareMode1SW)
+#if (Lips_UseOneCompareMode)
+    #if (Lips_CompareMode1SW)
 
 
         /*******************************************************************************
-        * Function Name: Mouth_SetCompareMode
+        * Function Name: Lips_SetCompareMode
         ********************************************************************************
         *
         * Summary:
@@ -263,53 +263,53 @@ void Mouth_Stop(void)
         *  None
         *
         *******************************************************************************/
-        void Mouth_SetCompareMode(uint8 comparemode) 
+        void Lips_SetCompareMode(uint8 comparemode) 
         {
-            #if(Mouth_UsingFixedFunction)
+            #if(Lips_UsingFixedFunction)
 
-                #if(0 != Mouth_CTRL_CMPMODE1_SHIFT)
-                    uint8 comparemodemasked = ((uint8)((uint8)comparemode << Mouth_CTRL_CMPMODE1_SHIFT));
+                #if(0 != Lips_CTRL_CMPMODE1_SHIFT)
+                    uint8 comparemodemasked = ((uint8)((uint8)comparemode << Lips_CTRL_CMPMODE1_SHIFT));
                 #else
                     uint8 comparemodemasked = comparemode;
-                #endif /* (0 != Mouth_CTRL_CMPMODE1_SHIFT) */
+                #endif /* (0 != Lips_CTRL_CMPMODE1_SHIFT) */
 
-                Mouth_CONTROL3 &= ((uint8)(~Mouth_CTRL_CMPMODE1_MASK)); /*Clear Existing Data */
-                Mouth_CONTROL3 |= comparemodemasked;
+                Lips_CONTROL3 &= ((uint8)(~Lips_CTRL_CMPMODE1_MASK)); /*Clear Existing Data */
+                Lips_CONTROL3 |= comparemodemasked;
 
-            #elif (Mouth_UseControl)
+            #elif (Lips_UseControl)
 
-                #if(0 != Mouth_CTRL_CMPMODE1_SHIFT)
-                    uint8 comparemode1masked = ((uint8)((uint8)comparemode << Mouth_CTRL_CMPMODE1_SHIFT)) &
-                                                Mouth_CTRL_CMPMODE1_MASK;
+                #if(0 != Lips_CTRL_CMPMODE1_SHIFT)
+                    uint8 comparemode1masked = ((uint8)((uint8)comparemode << Lips_CTRL_CMPMODE1_SHIFT)) &
+                                                Lips_CTRL_CMPMODE1_MASK;
                 #else
-                    uint8 comparemode1masked = comparemode & Mouth_CTRL_CMPMODE1_MASK;
-                #endif /* (0 != Mouth_CTRL_CMPMODE1_SHIFT) */
+                    uint8 comparemode1masked = comparemode & Lips_CTRL_CMPMODE1_MASK;
+                #endif /* (0 != Lips_CTRL_CMPMODE1_SHIFT) */
 
-                #if(0 != Mouth_CTRL_CMPMODE2_SHIFT)
-                    uint8 comparemode2masked = ((uint8)((uint8)comparemode << Mouth_CTRL_CMPMODE2_SHIFT)) &
-                                               Mouth_CTRL_CMPMODE2_MASK;
+                #if(0 != Lips_CTRL_CMPMODE2_SHIFT)
+                    uint8 comparemode2masked = ((uint8)((uint8)comparemode << Lips_CTRL_CMPMODE2_SHIFT)) &
+                                               Lips_CTRL_CMPMODE2_MASK;
                 #else
-                    uint8 comparemode2masked = comparemode & Mouth_CTRL_CMPMODE2_MASK;
-                #endif /* (0 != Mouth_CTRL_CMPMODE2_SHIFT) */
+                    uint8 comparemode2masked = comparemode & Lips_CTRL_CMPMODE2_MASK;
+                #endif /* (0 != Lips_CTRL_CMPMODE2_SHIFT) */
 
                 /*Clear existing mode */
-                Mouth_CONTROL &= ((uint8)(~(Mouth_CTRL_CMPMODE1_MASK |
-                                            Mouth_CTRL_CMPMODE2_MASK)));
-                Mouth_CONTROL |= (comparemode1masked | comparemode2masked);
+                Lips_CONTROL &= ((uint8)(~(Lips_CTRL_CMPMODE1_MASK |
+                                            Lips_CTRL_CMPMODE2_MASK)));
+                Lips_CONTROL |= (comparemode1masked | comparemode2masked);
 
             #else
                 uint8 temp = comparemode;
-            #endif /* (Mouth_UsingFixedFunction) */
+            #endif /* (Lips_UsingFixedFunction) */
         }
-    #endif /* Mouth_CompareMode1SW */
+    #endif /* Lips_CompareMode1SW */
 
 #else /* UseOneCompareMode */
 
-    #if (Mouth_CompareMode1SW)
+    #if (Lips_CompareMode1SW)
 
 
         /*******************************************************************************
-        * Function Name: Mouth_SetCompareMode1
+        * Function Name: Lips_SetCompareMode1
         ********************************************************************************
         *
         * Summary:
@@ -323,27 +323,27 @@ void Mouth_Stop(void)
         *  None
         *
         *******************************************************************************/
-        void Mouth_SetCompareMode1(uint8 comparemode) 
+        void Lips_SetCompareMode1(uint8 comparemode) 
         {
-            #if(0 != Mouth_CTRL_CMPMODE1_SHIFT)
-                uint8 comparemodemasked = ((uint8)((uint8)comparemode << Mouth_CTRL_CMPMODE1_SHIFT)) &
-                                           Mouth_CTRL_CMPMODE1_MASK;
+            #if(0 != Lips_CTRL_CMPMODE1_SHIFT)
+                uint8 comparemodemasked = ((uint8)((uint8)comparemode << Lips_CTRL_CMPMODE1_SHIFT)) &
+                                           Lips_CTRL_CMPMODE1_MASK;
             #else
-                uint8 comparemodemasked = comparemode & Mouth_CTRL_CMPMODE1_MASK;
-            #endif /* (0 != Mouth_CTRL_CMPMODE1_SHIFT) */
+                uint8 comparemodemasked = comparemode & Lips_CTRL_CMPMODE1_MASK;
+            #endif /* (0 != Lips_CTRL_CMPMODE1_SHIFT) */
 
-            #if (Mouth_UseControl)
-                Mouth_CONTROL &= ((uint8)(~Mouth_CTRL_CMPMODE1_MASK)); /*Clear existing mode */
-                Mouth_CONTROL |= comparemodemasked;
-            #endif /* (Mouth_UseControl) */
+            #if (Lips_UseControl)
+                Lips_CONTROL &= ((uint8)(~Lips_CTRL_CMPMODE1_MASK)); /*Clear existing mode */
+                Lips_CONTROL |= comparemodemasked;
+            #endif /* (Lips_UseControl) */
         }
-    #endif /* Mouth_CompareMode1SW */
+    #endif /* Lips_CompareMode1SW */
 
-#if (Mouth_CompareMode2SW)
+#if (Lips_CompareMode2SW)
 
 
     /*******************************************************************************
-    * Function Name: Mouth_SetCompareMode2
+    * Function Name: Lips_SetCompareMode2
     ********************************************************************************
     *
     * Summary:
@@ -357,31 +357,31 @@ void Mouth_Stop(void)
     *  None
     *
     *******************************************************************************/
-    void Mouth_SetCompareMode2(uint8 comparemode) 
+    void Lips_SetCompareMode2(uint8 comparemode) 
     {
 
-        #if(0 != Mouth_CTRL_CMPMODE2_SHIFT)
-            uint8 comparemodemasked = ((uint8)((uint8)comparemode << Mouth_CTRL_CMPMODE2_SHIFT)) &
-                                                 Mouth_CTRL_CMPMODE2_MASK;
+        #if(0 != Lips_CTRL_CMPMODE2_SHIFT)
+            uint8 comparemodemasked = ((uint8)((uint8)comparemode << Lips_CTRL_CMPMODE2_SHIFT)) &
+                                                 Lips_CTRL_CMPMODE2_MASK;
         #else
-            uint8 comparemodemasked = comparemode & Mouth_CTRL_CMPMODE2_MASK;
-        #endif /* (0 != Mouth_CTRL_CMPMODE2_SHIFT) */
+            uint8 comparemodemasked = comparemode & Lips_CTRL_CMPMODE2_MASK;
+        #endif /* (0 != Lips_CTRL_CMPMODE2_SHIFT) */
 
-        #if (Mouth_UseControl)
-            Mouth_CONTROL &= ((uint8)(~Mouth_CTRL_CMPMODE2_MASK)); /*Clear existing mode */
-            Mouth_CONTROL |= comparemodemasked;
-        #endif /* (Mouth_UseControl) */
+        #if (Lips_UseControl)
+            Lips_CONTROL &= ((uint8)(~Lips_CTRL_CMPMODE2_MASK)); /*Clear existing mode */
+            Lips_CONTROL |= comparemodemasked;
+        #endif /* (Lips_UseControl) */
     }
-    #endif /*Mouth_CompareMode2SW */
+    #endif /*Lips_CompareMode2SW */
 
 #endif /* UseOneCompareMode */
 
 
-#if (!Mouth_UsingFixedFunction)
+#if (!Lips_UsingFixedFunction)
 
 
     /*******************************************************************************
-    * Function Name: Mouth_WriteCounter
+    * Function Name: Lips_WriteCounter
     ********************************************************************************
     *
     * Summary:
@@ -400,15 +400,15 @@ void Mouth_Stop(void)
     *  The PWM Period will be reloaded when a counter value will be a zero
     *
     *******************************************************************************/
-    void Mouth_WriteCounter(uint16 counter) \
+    void Lips_WriteCounter(uint16 counter) \
                                        
     {
-        CY_SET_REG16(Mouth_COUNTER_LSB_PTR, counter);
+        CY_SET_REG16(Lips_COUNTER_LSB_PTR, counter);
     }
 
 
     /*******************************************************************************
-    * Function Name: Mouth_ReadCounter
+    * Function Name: Lips_ReadCounter
     ********************************************************************************
     *
     * Summary:
@@ -422,22 +422,22 @@ void Mouth_Stop(void)
     *  The current value of the counter.
     *
     *******************************************************************************/
-    uint16 Mouth_ReadCounter(void) 
+    uint16 Lips_ReadCounter(void) 
     {
         /* Force capture by reading Accumulator */
         /* Must first do a software capture to be able to read the counter */
         /* It is up to the user code to make sure there isn't already captured data in the FIFO */
-          (void)CY_GET_REG8(Mouth_COUNTERCAP_LSB_PTR_8BIT);
+          (void)CY_GET_REG8(Lips_COUNTERCAP_LSB_PTR_8BIT);
 
         /* Read the data from the FIFO */
-        return (CY_GET_REG16(Mouth_CAPTURE_LSB_PTR));
+        return (CY_GET_REG16(Lips_CAPTURE_LSB_PTR));
     }
 
-    #if (Mouth_UseStatus)
+    #if (Lips_UseStatus)
 
 
         /*******************************************************************************
-        * Function Name: Mouth_ClearFIFO
+        * Function Name: Lips_ClearFIFO
         ********************************************************************************
         *
         * Summary:
@@ -450,21 +450,21 @@ void Mouth_Stop(void)
         *  None
         *
         *******************************************************************************/
-        void Mouth_ClearFIFO(void) 
+        void Lips_ClearFIFO(void) 
         {
-            while(0u != (Mouth_ReadStatusRegister() & Mouth_STATUS_FIFONEMPTY))
+            while(0u != (Lips_ReadStatusRegister() & Lips_STATUS_FIFONEMPTY))
             {
-                (void)Mouth_ReadCapture();
+                (void)Lips_ReadCapture();
             }
         }
 
-    #endif /* Mouth_UseStatus */
+    #endif /* Lips_UseStatus */
 
-#endif /* !Mouth_UsingFixedFunction */
+#endif /* !Lips_UsingFixedFunction */
 
 
 /*******************************************************************************
-* Function Name: Mouth_WritePeriod
+* Function Name: Lips_WritePeriod
 ********************************************************************************
 *
 * Summary:
@@ -479,20 +479,20 @@ void Mouth_Stop(void)
 *  None
 *
 *******************************************************************************/
-void Mouth_WritePeriod(uint16 period) 
+void Lips_WritePeriod(uint16 period) 
 {
-    #if(Mouth_UsingFixedFunction)
-        CY_SET_REG16(Mouth_PERIOD_LSB_PTR, (uint16)period);
+    #if(Lips_UsingFixedFunction)
+        CY_SET_REG16(Lips_PERIOD_LSB_PTR, (uint16)period);
     #else
-        CY_SET_REG16(Mouth_PERIOD_LSB_PTR, period);
-    #endif /* (Mouth_UsingFixedFunction) */
+        CY_SET_REG16(Lips_PERIOD_LSB_PTR, period);
+    #endif /* (Lips_UsingFixedFunction) */
 }
 
-#if (Mouth_UseOneCompareMode)
+#if (Lips_UseOneCompareMode)
 
 
     /*******************************************************************************
-    * Function Name: Mouth_WriteCompare
+    * Function Name: Lips_WriteCompare
     ********************************************************************************
     *
     * Summary:
@@ -513,22 +513,22 @@ void Mouth_WritePeriod(uint16 period)
     *  Dither Mode, Center Aligned Mode or One Output Mode
     *
     *******************************************************************************/
-    void Mouth_WriteCompare(uint16 compare) \
+    void Lips_WriteCompare(uint16 compare) \
                                        
     {
-        #if(Mouth_UsingFixedFunction)
-            CY_SET_REG16(Mouth_COMPARE1_LSB_PTR, (uint16)compare);
+        #if(Lips_UsingFixedFunction)
+            CY_SET_REG16(Lips_COMPARE1_LSB_PTR, (uint16)compare);
         #else
-            CY_SET_REG16(Mouth_COMPARE1_LSB_PTR, compare);
-        #endif /* (Mouth_UsingFixedFunction) */
+            CY_SET_REG16(Lips_COMPARE1_LSB_PTR, compare);
+        #endif /* (Lips_UsingFixedFunction) */
 
-        #if (Mouth_PWMMode == Mouth__B_PWM__DITHER)
-            #if(Mouth_UsingFixedFunction)
-                CY_SET_REG16(Mouth_COMPARE2_LSB_PTR, (uint16)(compare + 1u));
+        #if (Lips_PWMMode == Lips__B_PWM__DITHER)
+            #if(Lips_UsingFixedFunction)
+                CY_SET_REG16(Lips_COMPARE2_LSB_PTR, (uint16)(compare + 1u));
             #else
-                CY_SET_REG16(Mouth_COMPARE2_LSB_PTR, (compare + 1u));
-            #endif /* (Mouth_UsingFixedFunction) */
-        #endif /* (Mouth_PWMMode == Mouth__B_PWM__DITHER) */
+                CY_SET_REG16(Lips_COMPARE2_LSB_PTR, (compare + 1u));
+            #endif /* (Lips_UsingFixedFunction) */
+        #endif /* (Lips_PWMMode == Lips__B_PWM__DITHER) */
     }
 
 
@@ -536,7 +536,7 @@ void Mouth_WritePeriod(uint16 period)
 
 
     /*******************************************************************************
-    * Function Name: Mouth_WriteCompare1
+    * Function Name: Lips_WriteCompare1
     ********************************************************************************
     *
     * Summary:
@@ -552,19 +552,19 @@ void Mouth_WritePeriod(uint16 period)
     *  None
     *
     *******************************************************************************/
-    void Mouth_WriteCompare1(uint16 compare) \
+    void Lips_WriteCompare1(uint16 compare) \
                                         
     {
-        #if(Mouth_UsingFixedFunction)
-            CY_SET_REG16(Mouth_COMPARE1_LSB_PTR, (uint16)compare);
+        #if(Lips_UsingFixedFunction)
+            CY_SET_REG16(Lips_COMPARE1_LSB_PTR, (uint16)compare);
         #else
-            CY_SET_REG16(Mouth_COMPARE1_LSB_PTR, compare);
-        #endif /* (Mouth_UsingFixedFunction) */
+            CY_SET_REG16(Lips_COMPARE1_LSB_PTR, compare);
+        #endif /* (Lips_UsingFixedFunction) */
     }
 
 
     /*******************************************************************************
-    * Function Name: Mouth_WriteCompare2
+    * Function Name: Lips_WriteCompare2
     ********************************************************************************
     *
     * Summary:
@@ -581,22 +581,22 @@ void Mouth_WritePeriod(uint16 period)
     *  None
     *
     *******************************************************************************/
-    void Mouth_WriteCompare2(uint16 compare) \
+    void Lips_WriteCompare2(uint16 compare) \
                                         
     {
-        #if(Mouth_UsingFixedFunction)
-            CY_SET_REG16(Mouth_COMPARE2_LSB_PTR, compare);
+        #if(Lips_UsingFixedFunction)
+            CY_SET_REG16(Lips_COMPARE2_LSB_PTR, compare);
         #else
-            CY_SET_REG16(Mouth_COMPARE2_LSB_PTR, compare);
-        #endif /* (Mouth_UsingFixedFunction) */
+            CY_SET_REG16(Lips_COMPARE2_LSB_PTR, compare);
+        #endif /* (Lips_UsingFixedFunction) */
     }
 #endif /* UseOneCompareMode */
 
-#if (Mouth_DeadBandUsed)
+#if (Lips_DeadBandUsed)
 
 
     /*******************************************************************************
-    * Function Name: Mouth_WriteDeadTime
+    * Function Name: Lips_WriteDeadTime
     ********************************************************************************
     *
     * Summary:
@@ -609,30 +609,30 @@ void Mouth_WritePeriod(uint16 period)
     *  None
     *
     *******************************************************************************/
-    void Mouth_WriteDeadTime(uint8 deadtime) 
+    void Lips_WriteDeadTime(uint8 deadtime) 
     {
         /* If using the Dead Band 1-255 mode then just write the register */
-        #if(!Mouth_DeadBand2_4)
-            CY_SET_REG8(Mouth_DEADBAND_COUNT_PTR, deadtime);
+        #if(!Lips_DeadBand2_4)
+            CY_SET_REG8(Lips_DEADBAND_COUNT_PTR, deadtime);
         #else
             /* Otherwise the data has to be masked and offset */
             /* Clear existing data */
-            Mouth_DEADBAND_COUNT &= ((uint8)(~Mouth_DEADBAND_COUNT_MASK));
+            Lips_DEADBAND_COUNT &= ((uint8)(~Lips_DEADBAND_COUNT_MASK));
 
             /* Set new dead time */
-            #if(Mouth_DEADBAND_COUNT_SHIFT)
-                Mouth_DEADBAND_COUNT |= ((uint8)((uint8)deadtime << Mouth_DEADBAND_COUNT_SHIFT)) &
-                                                    Mouth_DEADBAND_COUNT_MASK;
+            #if(Lips_DEADBAND_COUNT_SHIFT)
+                Lips_DEADBAND_COUNT |= ((uint8)((uint8)deadtime << Lips_DEADBAND_COUNT_SHIFT)) &
+                                                    Lips_DEADBAND_COUNT_MASK;
             #else
-                Mouth_DEADBAND_COUNT |= deadtime & Mouth_DEADBAND_COUNT_MASK;
-            #endif /* (Mouth_DEADBAND_COUNT_SHIFT) */
+                Lips_DEADBAND_COUNT |= deadtime & Lips_DEADBAND_COUNT_MASK;
+            #endif /* (Lips_DEADBAND_COUNT_SHIFT) */
 
-        #endif /* (!Mouth_DeadBand2_4) */
+        #endif /* (!Lips_DeadBand2_4) */
     }
 
 
     /*******************************************************************************
-    * Function Name: Mouth_ReadDeadTime
+    * Function Name: Lips_ReadDeadTime
     ********************************************************************************
     *
     * Summary:
@@ -645,29 +645,29 @@ void Mouth_WritePeriod(uint16 period)
     *  Dead Band Counts
     *
     *******************************************************************************/
-    uint8 Mouth_ReadDeadTime(void) 
+    uint8 Lips_ReadDeadTime(void) 
     {
         /* If using the Dead Band 1-255 mode then just read the register */
-        #if(!Mouth_DeadBand2_4)
-            return (CY_GET_REG8(Mouth_DEADBAND_COUNT_PTR));
+        #if(!Lips_DeadBand2_4)
+            return (CY_GET_REG8(Lips_DEADBAND_COUNT_PTR));
         #else
 
             /* Otherwise the data has to be masked and offset */
-            #if(Mouth_DEADBAND_COUNT_SHIFT)
-                return ((uint8)(((uint8)(Mouth_DEADBAND_COUNT & Mouth_DEADBAND_COUNT_MASK)) >>
-                                                                           Mouth_DEADBAND_COUNT_SHIFT));
+            #if(Lips_DEADBAND_COUNT_SHIFT)
+                return ((uint8)(((uint8)(Lips_DEADBAND_COUNT & Lips_DEADBAND_COUNT_MASK)) >>
+                                                                           Lips_DEADBAND_COUNT_SHIFT));
             #else
-                return (Mouth_DEADBAND_COUNT & Mouth_DEADBAND_COUNT_MASK);
-            #endif /* (Mouth_DEADBAND_COUNT_SHIFT) */
-        #endif /* (!Mouth_DeadBand2_4) */
+                return (Lips_DEADBAND_COUNT & Lips_DEADBAND_COUNT_MASK);
+            #endif /* (Lips_DEADBAND_COUNT_SHIFT) */
+        #endif /* (!Lips_DeadBand2_4) */
     }
 #endif /* DeadBandUsed */
 
-#if (Mouth_UseStatus || Mouth_UsingFixedFunction)
+#if (Lips_UseStatus || Lips_UsingFixedFunction)
 
 
     /*******************************************************************************
-    * Function Name: Mouth_SetInterruptMode
+    * Function Name: Lips_SetInterruptMode
     ********************************************************************************
     *
     * Summary:
@@ -681,14 +681,14 @@ void Mouth_WritePeriod(uint16 period)
     *  None
     *
     *******************************************************************************/
-    void Mouth_SetInterruptMode(uint8 interruptMode) 
+    void Lips_SetInterruptMode(uint8 interruptMode) 
     {
-        CY_SET_REG8(Mouth_STATUS_MASK_PTR, interruptMode);
+        CY_SET_REG8(Lips_STATUS_MASK_PTR, interruptMode);
     }
 
 
     /*******************************************************************************
-    * Function Name: Mouth_ReadStatusRegister
+    * Function Name: Lips_ReadStatusRegister
     ********************************************************************************
     *
     * Summary:
@@ -708,19 +708,19 @@ void Mouth_WritePeriod(uint16 period)
     *  [0]   : Compare output 1
     *
     *******************************************************************************/
-    uint8 Mouth_ReadStatusRegister(void) 
+    uint8 Lips_ReadStatusRegister(void) 
     {
-        return (CY_GET_REG8(Mouth_STATUS_PTR));
+        return (CY_GET_REG8(Lips_STATUS_PTR));
     }
 
-#endif /* (Mouth_UseStatus || Mouth_UsingFixedFunction) */
+#endif /* (Lips_UseStatus || Lips_UsingFixedFunction) */
 
 
-#if (Mouth_UseControl)
+#if (Lips_UseControl)
 
 
     /*******************************************************************************
-    * Function Name: Mouth_ReadControlRegister
+    * Function Name: Lips_ReadControlRegister
     ********************************************************************************
     *
     * Summary:
@@ -734,17 +734,17 @@ void Mouth_WritePeriod(uint16 period)
     *  uint8 : Current control register value
     *
     *******************************************************************************/
-    uint8 Mouth_ReadControlRegister(void) 
+    uint8 Lips_ReadControlRegister(void) 
     {
         uint8 result;
 
-        result = CY_GET_REG8(Mouth_CONTROL_PTR);
+        result = CY_GET_REG8(Lips_CONTROL_PTR);
         return (result);
     }
 
 
     /*******************************************************************************
-    * Function Name: Mouth_WriteControlRegister
+    * Function Name: Lips_WriteControlRegister
     ********************************************************************************
     *
     * Summary:
@@ -762,19 +762,19 @@ void Mouth_WritePeriod(uint16 period)
     *  None
     *
     *******************************************************************************/
-    void Mouth_WriteControlRegister(uint8 control) 
+    void Lips_WriteControlRegister(uint8 control) 
     {
-        CY_SET_REG8(Mouth_CONTROL_PTR, control);
+        CY_SET_REG8(Lips_CONTROL_PTR, control);
     }
 
-#endif /* (Mouth_UseControl) */
+#endif /* (Lips_UseControl) */
 
 
-#if (!Mouth_UsingFixedFunction)
+#if (!Lips_UsingFixedFunction)
 
 
     /*******************************************************************************
-    * Function Name: Mouth_ReadCapture
+    * Function Name: Lips_ReadCapture
     ********************************************************************************
     *
     * Summary:
@@ -787,19 +787,19 @@ void Mouth_WritePeriod(uint16 period)
     *  uint8/uint16: The current capture value
     *
     *******************************************************************************/
-    uint16 Mouth_ReadCapture(void) 
+    uint16 Lips_ReadCapture(void) 
     {
-        return (CY_GET_REG16(Mouth_CAPTURE_LSB_PTR));
+        return (CY_GET_REG16(Lips_CAPTURE_LSB_PTR));
     }
 
-#endif /* (!Mouth_UsingFixedFunction) */
+#endif /* (!Lips_UsingFixedFunction) */
 
 
-#if (Mouth_UseOneCompareMode)
+#if (Lips_UseOneCompareMode)
 
 
     /*******************************************************************************
-    * Function Name: Mouth_ReadCompare
+    * Function Name: Lips_ReadCompare
     ********************************************************************************
     *
     * Summary:
@@ -813,20 +813,20 @@ void Mouth_WritePeriod(uint16 period)
     *  uint8/uint16: Current compare value
     *
     *******************************************************************************/
-    uint16 Mouth_ReadCompare(void) 
+    uint16 Lips_ReadCompare(void) 
     {
-        #if(Mouth_UsingFixedFunction)
-            return ((uint16)CY_GET_REG16(Mouth_COMPARE1_LSB_PTR));
+        #if(Lips_UsingFixedFunction)
+            return ((uint16)CY_GET_REG16(Lips_COMPARE1_LSB_PTR));
         #else
-            return (CY_GET_REG16(Mouth_COMPARE1_LSB_PTR));
-        #endif /* (Mouth_UsingFixedFunction) */
+            return (CY_GET_REG16(Lips_COMPARE1_LSB_PTR));
+        #endif /* (Lips_UsingFixedFunction) */
     }
 
 #else
 
 
     /*******************************************************************************
-    * Function Name: Mouth_ReadCompare1
+    * Function Name: Lips_ReadCompare1
     ********************************************************************************
     *
     * Summary:
@@ -839,14 +839,14 @@ void Mouth_WritePeriod(uint16 period)
     *  uint8/uint16: Current compare value.
     *
     *******************************************************************************/
-    uint16 Mouth_ReadCompare1(void) 
+    uint16 Lips_ReadCompare1(void) 
     {
-        return (CY_GET_REG16(Mouth_COMPARE1_LSB_PTR));
+        return (CY_GET_REG16(Lips_COMPARE1_LSB_PTR));
     }
 
 
     /*******************************************************************************
-    * Function Name: Mouth_ReadCompare2
+    * Function Name: Lips_ReadCompare2
     ********************************************************************************
     *
     * Summary:
@@ -859,16 +859,16 @@ void Mouth_WritePeriod(uint16 period)
     *  uint8/uint16: Current compare value.
     *
     *******************************************************************************/
-    uint16 Mouth_ReadCompare2(void) 
+    uint16 Lips_ReadCompare2(void) 
     {
-        return (CY_GET_REG16(Mouth_COMPARE2_LSB_PTR));
+        return (CY_GET_REG16(Lips_COMPARE2_LSB_PTR));
     }
 
-#endif /* (Mouth_UseOneCompareMode) */
+#endif /* (Lips_UseOneCompareMode) */
 
 
 /*******************************************************************************
-* Function Name: Mouth_ReadPeriod
+* Function Name: Lips_ReadPeriod
 ********************************************************************************
 *
 * Summary:
@@ -881,20 +881,20 @@ void Mouth_WritePeriod(uint16 period)
 *  uint8/16: Period value
 *
 *******************************************************************************/
-uint16 Mouth_ReadPeriod(void) 
+uint16 Lips_ReadPeriod(void) 
 {
-    #if(Mouth_UsingFixedFunction)
-        return ((uint16)CY_GET_REG16(Mouth_PERIOD_LSB_PTR));
+    #if(Lips_UsingFixedFunction)
+        return ((uint16)CY_GET_REG16(Lips_PERIOD_LSB_PTR));
     #else
-        return (CY_GET_REG16(Mouth_PERIOD_LSB_PTR));
-    #endif /* (Mouth_UsingFixedFunction) */
+        return (CY_GET_REG16(Lips_PERIOD_LSB_PTR));
+    #endif /* (Lips_UsingFixedFunction) */
 }
 
-#if ( Mouth_KillModeMinTime)
+#if ( Lips_KillModeMinTime)
 
 
     /*******************************************************************************
-    * Function Name: Mouth_WriteKillTime
+    * Function Name: Lips_WriteKillTime
     ********************************************************************************
     *
     * Summary:
@@ -908,14 +908,14 @@ uint16 Mouth_ReadPeriod(void)
     *  None
     *
     *******************************************************************************/
-    void Mouth_WriteKillTime(uint8 killtime) 
+    void Lips_WriteKillTime(uint8 killtime) 
     {
-        CY_SET_REG8(Mouth_KILLMODEMINTIME_PTR, killtime);
+        CY_SET_REG8(Lips_KILLMODEMINTIME_PTR, killtime);
     }
 
 
     /*******************************************************************************
-    * Function Name: Mouth_ReadKillTime
+    * Function Name: Lips_ReadKillTime
     ********************************************************************************
     *
     * Summary:
@@ -929,11 +929,11 @@ uint16 Mouth_ReadPeriod(void)
     *  uint8: The current Minimum Time kill counts
     *
     *******************************************************************************/
-    uint8 Mouth_ReadKillTime(void) 
+    uint8 Lips_ReadKillTime(void) 
     {
-        return (CY_GET_REG8(Mouth_KILLMODEMINTIME_PTR));
+        return (CY_GET_REG8(Lips_KILLMODEMINTIME_PTR));
     }
 
-#endif /* ( Mouth_KillModeMinTime) */
+#endif /* ( Lips_KillModeMinTime) */
 
 /* [] END OF FILE */
