@@ -10,9 +10,10 @@
  * ========================================
 */
 #include "project.h"
-#define MOTOR_CENTER 2000
-#define MOTOR_LOW 1000
-#define MOTOR_HIGH 3000
+
+#define MOTOR_LOW (280)
+#define MOTOR_HIGH (2200)
+#define MOTOR_CENTER ((MOTOR_HIGH + MOTOR_LOW) / 2)
 
 void set_servo_angle(void (*compare_func)(uint16), uint8 angle);
 
@@ -25,6 +26,8 @@ uint16 angle(uint8 angle_value) {
     return MOTOR_LOW + (angle_value *(MOTOR_HIGH - MOTOR_LOW)) / 180;
 }
 
+
+
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
@@ -36,10 +39,12 @@ int main(void)
     {
         //set_servo_angle(LeftEyebrow_WriteCompare1, 0);
         LeftEyebrow_WriteCompare1(MOTOR_LOW);
-        CyDelay(3000);
+        LeftEyebrow_WriteCompare2(MOTOR_LOW);
+        CyDelay(1000);
         //set_servo_angle(LeftEyebrow_WriteCompare1, 90);
-        LeftEyebrow_WriteCompare1(MOTOR_HIGH);
-        CyDelay(3000);
+        //LeftEyebrow_WriteCompare1(MOTOR_HIGH);
+        //LeftEyebrow_WriteCompare2(MOTOR_HIGH);
+        CyDelay(1000);
     }
 }
 

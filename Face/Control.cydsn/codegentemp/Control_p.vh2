@@ -1,5 +1,5 @@
 -- Project:   Control
--- Generated: 11/16/2019 14:26:00
+-- Generated: 11/19/2019 14:42:39
 -- PSoC Creator  4.2
 
 ENTITY Control IS
@@ -805,16 +805,16 @@ BEGIN
             clk_bus => ClockBlock_BUS_CLK_local,
             dsi_clkin_div => open,
             dsi_glb_div => open,
-            dclk_glb_0 => Net_31,
-            dclk_0 => Net_31_local,
-            dclk_glb_1 => Net_233,
-            dclk_1 => Net_233_local,
-            dclk_glb_2 => Net_86,
-            dclk_2 => Net_86_local,
-            dclk_glb_3 => Net_173,
-            dclk_3 => Net_173_local,
-            dclk_glb_4 => Net_304,
-            dclk_4 => Net_304_local,
+            dclk_glb_0 => Net_233,
+            dclk_0 => Net_233_local,
+            dclk_glb_1 => Net_86,
+            dclk_1 => Net_86_local,
+            dclk_glb_2 => Net_173,
+            dclk_2 => Net_173_local,
+            dclk_glb_3 => Net_304,
+            dclk_3 => Net_304_local,
+            dclk_glb_4 => Net_31,
+            dclk_4 => Net_31_local,
             dclk_glb_5 => Net_124,
             dclk_5 => Net_124_local,
             dclk_glb_6 => Net_59,

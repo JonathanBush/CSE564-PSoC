@@ -6,7 +6,7 @@
 
 #Build Date:         Dec  5 2017 15:35:27
 
-#File Generated:     Nov 16 2019 14:26:00
+#File Generated:     Nov 19 2019 14:42:40
 
 #Purpose:            
 
@@ -80,7 +80,7 @@ analysis after routing.
                      Clock Summary 
 ======================================================================
 Number of clocks: 13
-Clock: Clock_1              | Frequency:  59.7 MHz | Target:   4.0 MHz
+Clock: Clock_1              | Frequency:  59.7 MHz | Target:   1.0 MHz
 Clock: Clock_2              | Frequency:  59.7 MHz | Target:   1.0 MHz
 Clock: Clock_3              | Frequency:  59.7 MHz | Target:   1.0 MHz
 Clock: Clock_4              | Frequency:  59.7 MHz | Target:   1.0 MHz
@@ -105,7 +105,7 @@ Phase 7
                      Clock Summary 
 ======================================================================
 Number of clocks: 13
-Clock: Clock_1              | Frequency:  59.7 MHz | Target:   4.0 MHz
+Clock: Clock_1              | Frequency:  59.7 MHz | Target:   1.0 MHz
 Clock: Clock_2              | Frequency:  59.7 MHz | Target:   1.0 MHz
 Clock: Clock_3              | Frequency:  59.7 MHz | Target:   1.0 MHz
 Clock: Clock_4              | Frequency:  59.7 MHz | Target:   1.0 MHz
@@ -122,7 +122,7 @@ Clock: CyPLL_OUT            | Frequency: N/A       | Target:  24.0 MHz
 ======================================================================
                      End of Clock Summary
 ######################################################################
-D2088: Phase 7, elapsed time : 1.5 (sec)
+D2088: Phase 7, elapsed time : 0.9 (sec)
 
 Final Design Statistics
     Number of Combinational MCs 	:	8
@@ -153,7 +153,7 @@ analysis after routing.
                      Clock Summary 
 ======================================================================
 Number of clocks: 13
-Clock: Clock_1              | Frequency:  59.7 MHz | Target:   4.4 MHz
+Clock: Clock_1              | Frequency:  59.7 MHz | Target:   1.1 MHz
 Clock: Clock_2              | Frequency:  59.7 MHz | Target:   1.1 MHz
 Clock: Clock_3              | Frequency:  59.7 MHz | Target:   1.1 MHz
 Clock: Clock_4              | Frequency:  59.7 MHz | Target:   1.1 MHz
@@ -176,5 +176,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 3.5 sec.
+I2076: Total run-time: 2.2 sec.
 

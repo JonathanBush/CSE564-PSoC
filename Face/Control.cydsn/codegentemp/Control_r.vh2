@@ -1,5 +1,5 @@
 -- Project:   Control
--- Generated: 11/16/2019 14:26:05
+-- Generated: 11/19/2019 14:42:43
 -- PSoC Creator  4.2
 
 ENTITY Control IS
@@ -60,17 +60,17 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     ATTRIBUTE global_signal OF Net_124 : SIGNAL IS true;
     SIGNAL Net_124_local : bit;
     SIGNAL Net_126 : bit;
-    ATTRIBUTE placement_force OF Net_126 : SIGNAL IS "U(0,2,A)2";
+    ATTRIBUTE placement_force OF Net_126 : SIGNAL IS "U(1,3,A)2";
     SIGNAL Net_127 : bit;
-    ATTRIBUTE placement_force OF Net_127 : SIGNAL IS "U(0,2,A)3";
+    ATTRIBUTE placement_force OF Net_127 : SIGNAL IS "U(1,3,A)3";
     SIGNAL Net_173 : bit;
     ATTRIBUTE udbclken_assigned OF Net_173 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_173 : SIGNAL IS true;
     SIGNAL Net_173_local : bit;
     SIGNAL Net_175 : bit;
-    ATTRIBUTE placement_force OF Net_175 : SIGNAL IS "U(0,4,A)2";
+    ATTRIBUTE placement_force OF Net_175 : SIGNAL IS "U(0,1,A)2";
     SIGNAL Net_176 : bit;
-    ATTRIBUTE placement_force OF Net_176 : SIGNAL IS "U(0,4,A)3";
+    ATTRIBUTE placement_force OF Net_176 : SIGNAL IS "U(0,1,A)3";
     SIGNAL Net_233 : bit;
     ATTRIBUTE udbclken_assigned OF Net_233 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_233 : SIGNAL IS true;
@@ -92,17 +92,17 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     ATTRIBUTE global_signal OF Net_31 : SIGNAL IS true;
     SIGNAL Net_31_local : bit;
     SIGNAL Net_47 : bit;
-    ATTRIBUTE placement_force OF Net_47 : SIGNAL IS "U(1,3,A)2";
+    ATTRIBUTE placement_force OF Net_47 : SIGNAL IS "U(1,0,A)2";
     SIGNAL Net_48 : bit;
-    ATTRIBUTE placement_force OF Net_48 : SIGNAL IS "U(1,3,A)3";
+    ATTRIBUTE placement_force OF Net_48 : SIGNAL IS "U(1,0,A)3";
     SIGNAL Net_59 : bit;
     ATTRIBUTE udbclken_assigned OF Net_59 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_59 : SIGNAL IS true;
     SIGNAL Net_59_local : bit;
     SIGNAL Net_61 : bit;
-    ATTRIBUTE placement_force OF Net_61 : SIGNAL IS "U(0,1,A)2";
+    ATTRIBUTE placement_force OF Net_61 : SIGNAL IS "U(0,4,A)2";
     SIGNAL Net_62 : bit;
-    ATTRIBUTE placement_force OF Net_62 : SIGNAL IS "U(0,1,A)3";
+    ATTRIBUTE placement_force OF Net_62 : SIGNAL IS "U(0,4,A)3";
     SIGNAL Net_859 : bit;
     ATTRIBUTE udbclken_assigned OF Net_859 : SIGNAL IS "True";
     ATTRIBUTE global_signal OF Net_859 : SIGNAL IS true;
@@ -116,9 +116,9 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     ATTRIBUTE placement_force OF Net_862 : SIGNAL IS "U(2,1,A)3";
     SIGNAL Net_86_local : bit;
     SIGNAL Net_88 : bit;
-    ATTRIBUTE placement_force OF Net_88 : SIGNAL IS "U(1,0,A)2";
+    ATTRIBUTE placement_force OF Net_88 : SIGNAL IS "U(0,2,A)2";
     SIGNAL Net_89 : bit;
-    ATTRIBUTE placement_force OF Net_89 : SIGNAL IS "U(1,0,A)3";
+    ATTRIBUTE placement_force OF Net_89 : SIGNAL IS "U(0,2,A)3";
     SIGNAL RightEyeballBottom(0)__PA : bit;
     SIGNAL RightEyeballTop(0)__PA : bit;
     SIGNAL RightEyebrow1(0)__PA : bit;
@@ -158,18 +158,18 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     SIGNAL \Eyelids:PWMUDB:control_6\ : bit;
     SIGNAL \Eyelids:PWMUDB:control_7\ : bit;
     SIGNAL \Eyelids:PWMUDB:prevCompare1\ : bit;
-    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:prevCompare1\ : SIGNAL IS "U(0,4,B)0";
+    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:prevCompare1\ : SIGNAL IS "U(0,1,B)0";
     SIGNAL \Eyelids:PWMUDB:prevCompare2\ : bit;
-    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:prevCompare2\ : SIGNAL IS "U(0,4,B)2";
+    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:prevCompare2\ : SIGNAL IS "U(0,1,B)2";
     SIGNAL \Eyelids:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:runmode_enable\ : SIGNAL IS "U(0,4,A)0";
+    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:runmode_enable\ : SIGNAL IS "U(0,1,A)0";
     SIGNAL \Lips:PWMUDB:sP16:pwmdp:u0.ce0__sig\ : bit;
     SIGNAL \Eyelids:PWMUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:status_0\ : SIGNAL IS "U(0,4,B)1";
+    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:status_0\ : SIGNAL IS "U(0,1,B)1";
     SIGNAL \Eyelids:PWMUDB:status_1\ : bit;
-    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:status_1\ : SIGNAL IS "U(0,4,B)3";
+    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:status_1\ : SIGNAL IS "U(0,1,B)3";
     SIGNAL \Eyelids:PWMUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:status_2\ : SIGNAL IS "U(0,4,A)1";
+    ATTRIBUTE placement_force OF \Eyelids:PWMUDB:status_2\ : SIGNAL IS "U(0,1,A)1";
     SIGNAL \Eyelids:PWMUDB:status_3\ : bit;
     SIGNAL \Eyelids:PWMUDB:tc_i\ : bit;
     SIGNAL \LeftEyeball:PWMUDB:cmp1_less\ : bit;
@@ -183,18 +183,18 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     SIGNAL \LeftEyeball:PWMUDB:control_6\ : bit;
     SIGNAL \LeftEyeball:PWMUDB:control_7\ : bit;
     SIGNAL \LeftEyeball:PWMUDB:prevCompare1\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:prevCompare1\ : SIGNAL IS "U(1,0,B)0";
+    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:prevCompare1\ : SIGNAL IS "U(0,2,B)0";
     SIGNAL \LeftEyeball:PWMUDB:prevCompare2\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:prevCompare2\ : SIGNAL IS "U(1,0,B)2";
+    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:prevCompare2\ : SIGNAL IS "U(0,2,B)2";
     SIGNAL \LeftEyeball:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:runmode_enable\ : SIGNAL IS "U(1,0,A)0";
+    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:runmode_enable\ : SIGNAL IS "U(0,2,A)0";
     SIGNAL \RightEyeball:PWMUDB:sP16:pwmdp:u0.ce0__sig\ : bit;
     SIGNAL \LeftEyeball:PWMUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:status_0\ : SIGNAL IS "U(1,0,B)1";
+    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:status_0\ : SIGNAL IS "U(0,2,B)1";
     SIGNAL \LeftEyeball:PWMUDB:status_1\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:status_1\ : SIGNAL IS "U(1,0,B)3";
+    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:status_1\ : SIGNAL IS "U(0,2,B)3";
     SIGNAL \LeftEyeball:PWMUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:status_2\ : SIGNAL IS "U(1,0,A)1";
+    ATTRIBUTE placement_force OF \LeftEyeball:PWMUDB:status_2\ : SIGNAL IS "U(0,2,A)1";
     SIGNAL \LeftEyeball:PWMUDB:status_3\ : bit;
     SIGNAL \LeftEyeball:PWMUDB:tc_i\ : bit;
     SIGNAL \LeftEyebrow:PWMUDB:cmp1_less\ : bit;
@@ -208,18 +208,18 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     SIGNAL \LeftEyebrow:PWMUDB:control_6\ : bit;
     SIGNAL \LeftEyebrow:PWMUDB:control_7\ : bit;
     SIGNAL \LeftEyebrow:PWMUDB:prevCompare1\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:prevCompare1\ : SIGNAL IS "U(1,3,B)0";
+    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:prevCompare1\ : SIGNAL IS "U(1,0,B)0";
     SIGNAL \LeftEyebrow:PWMUDB:prevCompare2\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:prevCompare2\ : SIGNAL IS "U(1,3,B)2";
+    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:prevCompare2\ : SIGNAL IS "U(1,0,B)2";
     SIGNAL \LeftEyebrow:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:runmode_enable\ : SIGNAL IS "U(1,3,A)0";
+    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:runmode_enable\ : SIGNAL IS "U(1,0,A)0";
     SIGNAL \RightEyebrow:PWMUDB:sP16:pwmdp:u0.ce0__sig\ : bit;
     SIGNAL \LeftEyebrow:PWMUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:status_0\ : SIGNAL IS "U(1,3,B)1";
+    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:status_0\ : SIGNAL IS "U(1,0,B)1";
     SIGNAL \LeftEyebrow:PWMUDB:status_1\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:status_1\ : SIGNAL IS "U(1,3,B)3";
+    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:status_1\ : SIGNAL IS "U(1,0,B)3";
     SIGNAL \LeftEyebrow:PWMUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:status_2\ : SIGNAL IS "U(1,3,A)1";
+    ATTRIBUTE placement_force OF \LeftEyebrow:PWMUDB:status_2\ : SIGNAL IS "U(1,0,A)1";
     SIGNAL \LeftEyebrow:PWMUDB:status_3\ : bit;
     SIGNAL \LeftEyebrow:PWMUDB:tc_i\ : bit;
     SIGNAL \Lips:PWMUDB:cmp1_less\ : bit;
@@ -283,18 +283,18 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     SIGNAL \RightEyeball:PWMUDB:control_6\ : bit;
     SIGNAL \RightEyeball:PWMUDB:control_7\ : bit;
     SIGNAL \RightEyeball:PWMUDB:prevCompare1\ : bit;
-    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:prevCompare1\ : SIGNAL IS "U(0,2,B)0";
+    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:prevCompare1\ : SIGNAL IS "U(1,3,B)0";
     SIGNAL \RightEyeball:PWMUDB:prevCompare2\ : bit;
-    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:prevCompare2\ : SIGNAL IS "U(0,2,B)2";
+    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:prevCompare2\ : SIGNAL IS "U(1,3,B)2";
     SIGNAL \RightEyeball:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:runmode_enable\ : SIGNAL IS "U(0,2,A)0";
+    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:runmode_enable\ : SIGNAL IS "U(1,3,A)0";
     SIGNAL \Eyelids:PWMUDB:sP16:pwmdp:u0.ce0__sig\ : bit;
     SIGNAL \RightEyeball:PWMUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:status_0\ : SIGNAL IS "U(0,2,B)1";
+    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:status_0\ : SIGNAL IS "U(1,3,B)1";
     SIGNAL \RightEyeball:PWMUDB:status_1\ : bit;
-    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:status_1\ : SIGNAL IS "U(0,2,B)3";
+    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:status_1\ : SIGNAL IS "U(1,3,B)3";
     SIGNAL \RightEyeball:PWMUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:status_2\ : SIGNAL IS "U(0,2,A)1";
+    ATTRIBUTE placement_force OF \RightEyeball:PWMUDB:status_2\ : SIGNAL IS "U(1,3,A)1";
     SIGNAL \RightEyeball:PWMUDB:status_3\ : bit;
     SIGNAL \RightEyeball:PWMUDB:tc_i\ : bit;
     SIGNAL \RightEyebrow:PWMUDB:cmp1_less\ : bit;
@@ -308,18 +308,18 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     SIGNAL \RightEyebrow:PWMUDB:control_6\ : bit;
     SIGNAL \RightEyebrow:PWMUDB:control_7\ : bit;
     SIGNAL \RightEyebrow:PWMUDB:prevCompare1\ : bit;
-    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:prevCompare1\ : SIGNAL IS "U(0,1,B)0";
+    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:prevCompare1\ : SIGNAL IS "U(0,4,B)0";
     SIGNAL \RightEyebrow:PWMUDB:prevCompare2\ : bit;
-    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:prevCompare2\ : SIGNAL IS "U(0,1,B)2";
+    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:prevCompare2\ : SIGNAL IS "U(0,4,B)2";
     SIGNAL \RightEyebrow:PWMUDB:runmode_enable\ : bit;
-    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:runmode_enable\ : SIGNAL IS "U(0,1,A)0";
+    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:runmode_enable\ : SIGNAL IS "U(0,4,A)0";
     SIGNAL \LeftEyeball:PWMUDB:sP16:pwmdp:u0.ce0__sig\ : bit;
     SIGNAL \RightEyebrow:PWMUDB:status_0\ : bit;
-    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:status_0\ : SIGNAL IS "U(0,1,B)1";
+    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:status_0\ : SIGNAL IS "U(0,4,B)1";
     SIGNAL \RightEyebrow:PWMUDB:status_1\ : bit;
-    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:status_1\ : SIGNAL IS "U(0,1,B)3";
+    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:status_1\ : SIGNAL IS "U(0,4,B)3";
     SIGNAL \RightEyebrow:PWMUDB:status_2\ : bit;
-    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:status_2\ : SIGNAL IS "U(0,1,A)1";
+    ATTRIBUTE placement_force OF \RightEyebrow:PWMUDB:status_2\ : SIGNAL IS "U(0,4,A)1";
     SIGNAL \RightEyebrow:PWMUDB:status_3\ : bit;
     SIGNAL \RightEyebrow:PWMUDB:tc_i\ : bit;
     SIGNAL __ONE__ : bit;
@@ -461,15 +461,15 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     ATTRIBUTE lib_model OF Jaw(0) : LABEL IS "iocell16";
     ATTRIBUTE Location OF Jaw(0) : LABEL IS "P12[2]";
     ATTRIBUTE lib_model OF \LeftEyebrow:PWMUDB:status_2\ : LABEL IS "macrocell1";
-    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:status_2\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:status_2\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \RightEyebrow:PWMUDB:status_2\ : LABEL IS "macrocell2";
-    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:status_2\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:status_2\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \LeftEyeball:PWMUDB:status_2\ : LABEL IS "macrocell3";
-    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:status_2\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:status_2\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \RightEyeball:PWMUDB:status_2\ : LABEL IS "macrocell4";
-    ATTRIBUTE Location OF \RightEyeball:PWMUDB:status_2\ : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF \RightEyeball:PWMUDB:status_2\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \Eyelids:PWMUDB:status_2\ : LABEL IS "macrocell5";
-    ATTRIBUTE Location OF \Eyelids:PWMUDB:status_2\ : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF \Eyelids:PWMUDB:status_2\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Lips:PWMUDB:status_2\ : LABEL IS "macrocell6";
     ATTRIBUTE Location OF \Lips:PWMUDB:status_2\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \Neck:PWMUDB:status_2\ : LABEL IS "macrocell7";
@@ -477,45 +477,45 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     ATTRIBUTE lib_model OF \Base:PWMUDB:status_2\ : LABEL IS "macrocell8";
     ATTRIBUTE Location OF \Base:PWMUDB:status_2\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \LeftEyebrow:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell1";
-    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \LeftEyebrow:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell1";
-    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:genblk8:stsreg\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:genblk8:stsreg\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \LeftEyebrow:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "datapathcell1";
-    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(0,3)";
+    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(0,0)";
     ATTRIBUTE lib_model OF \LeftEyebrow:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "datapathcell2";
-    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \RightEyebrow:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell2";
-    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \RightEyebrow:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell2";
-    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:genblk8:stsreg\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:genblk8:stsreg\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \RightEyebrow:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "datapathcell3";
-    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(1,1)";
+    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(1,4)";
     ATTRIBUTE lib_model OF \RightEyebrow:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "datapathcell4";
-    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \LeftEyeball:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell3";
-    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \LeftEyeball:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell3";
-    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:genblk8:stsreg\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:genblk8:stsreg\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \LeftEyeball:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "datapathcell5";
-    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(0,0)";
+    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(1,2)";
     ATTRIBUTE lib_model OF \LeftEyeball:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "datapathcell6";
-    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \RightEyeball:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell4";
-    ATTRIBUTE Location OF \RightEyeball:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF \RightEyeball:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \RightEyeball:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell4";
-    ATTRIBUTE Location OF \RightEyeball:PWMUDB:genblk8:stsreg\ : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF \RightEyeball:PWMUDB:genblk8:stsreg\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \RightEyeball:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "datapathcell7";
-    ATTRIBUTE Location OF \RightEyeball:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(1,2)";
+    ATTRIBUTE Location OF \RightEyeball:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(0,3)";
     ATTRIBUTE lib_model OF \RightEyeball:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "datapathcell8";
-    ATTRIBUTE Location OF \RightEyeball:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF \RightEyeball:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \Eyelids:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell5";
-    ATTRIBUTE Location OF \Eyelids:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF \Eyelids:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Eyelids:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell5";
-    ATTRIBUTE Location OF \Eyelids:PWMUDB:genblk8:stsreg\ : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF \Eyelids:PWMUDB:genblk8:stsreg\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Eyelids:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "datapathcell9";
-    ATTRIBUTE Location OF \Eyelids:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(1,4)";
+    ATTRIBUTE Location OF \Eyelids:PWMUDB:sP16:pwmdp:u0\ : LABEL IS "U(1,1)";
     ATTRIBUTE lib_model OF \Eyelids:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "datapathcell10";
-    ATTRIBUTE Location OF \Eyelids:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF \Eyelids:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Lips:PWMUDB:genblk1:ctrlreg\ : LABEL IS "controlcell6";
     ATTRIBUTE Location OF \Lips:PWMUDB:genblk1:ctrlreg\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \Lips:PWMUDB:genblk8:stsreg\ : LABEL IS "statusicell6";
@@ -541,75 +541,75 @@ ARCHITECTURE __DEFAULT__ OF Control IS
     ATTRIBUTE lib_model OF \Base:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "datapathcell16";
     ATTRIBUTE Location OF \Base:PWMUDB:sP16:pwmdp:u1\ : LABEL IS "U(2,1)";
     ATTRIBUTE lib_model OF \LeftEyebrow:PWMUDB:runmode_enable\ : LABEL IS "macrocell9";
-    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:runmode_enable\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:runmode_enable\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \LeftEyebrow:PWMUDB:prevCompare1\ : LABEL IS "macrocell10";
-    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:prevCompare1\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:prevCompare1\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \LeftEyebrow:PWMUDB:prevCompare2\ : LABEL IS "macrocell11";
-    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:prevCompare2\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:prevCompare2\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \LeftEyebrow:PWMUDB:status_0\ : LABEL IS "macrocell12";
-    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:status_0\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:status_0\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \LeftEyebrow:PWMUDB:status_1\ : LABEL IS "macrocell13";
-    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:status_1\ : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF \LeftEyebrow:PWMUDB:status_1\ : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF Net_47 : LABEL IS "macrocell14";
-    ATTRIBUTE Location OF Net_47 : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF Net_47 : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF Net_48 : LABEL IS "macrocell15";
-    ATTRIBUTE Location OF Net_48 : LABEL IS "U(1,3)";
+    ATTRIBUTE Location OF Net_48 : LABEL IS "U(1,0)";
     ATTRIBUTE lib_model OF \RightEyebrow:PWMUDB:runmode_enable\ : LABEL IS "macrocell16";
-    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:runmode_enable\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:runmode_enable\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \RightEyebrow:PWMUDB:prevCompare1\ : LABEL IS "macrocell17";
-    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:prevCompare1\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:prevCompare1\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \RightEyebrow:PWMUDB:prevCompare2\ : LABEL IS "macrocell18";
-    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:prevCompare2\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:prevCompare2\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \RightEyebrow:PWMUDB:status_0\ : LABEL IS "macrocell19";
-    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:status_0\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:status_0\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \RightEyebrow:PWMUDB:status_1\ : LABEL IS "macrocell20";
-    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:status_1\ : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF \RightEyebrow:PWMUDB:status_1\ : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF Net_61 : LABEL IS "macrocell21";
-    ATTRIBUTE Location OF Net_61 : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF Net_61 : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF Net_62 : LABEL IS "macrocell22";
-    ATTRIBUTE Location OF Net_62 : LABEL IS "U(0,1)";
+    ATTRIBUTE Location OF Net_62 : LABEL IS "U(0,4)";
     ATTRIBUTE lib_model OF \LeftEyeball:PWMUDB:runmode_enable\ : LABEL IS "macrocell23";
-    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:runmode_enable\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:runmode_enable\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \LeftEyeball:PWMUDB:prevCompare1\ : LABEL IS "macrocell24";
-    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:prevCompare1\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:prevCompare1\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \LeftEyeball:PWMUDB:prevCompare2\ : LABEL IS "macrocell25";
-    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:prevCompare2\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:prevCompare2\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \LeftEyeball:PWMUDB:status_0\ : LABEL IS "macrocell26";
-    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:status_0\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:status_0\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \LeftEyeball:PWMUDB:status_1\ : LABEL IS "macrocell27";
-    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:status_1\ : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF \LeftEyeball:PWMUDB:status_1\ : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF Net_88 : LABEL IS "macrocell28";
-    ATTRIBUTE Location OF Net_88 : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF Net_88 : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF Net_89 : LABEL IS "macrocell29";
-    ATTRIBUTE Location OF Net_89 : LABEL IS "U(1,0)";
+    ATTRIBUTE Location OF Net_89 : LABEL IS "U(0,2)";
     ATTRIBUTE lib_model OF \RightEyeball:PWMUDB:runmode_enable\ : LABEL IS "macrocell30";
-    ATTRIBUTE Location OF \RightEyeball:PWMUDB:runmode_enable\ : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF \RightEyeball:PWMUDB:runmode_enable\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \RightEyeball:PWMUDB:prevCompare1\ : LABEL IS "macrocell31";
-    ATTRIBUTE Location OF \RightEyeball:PWMUDB:prevCompare1\ : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF \RightEyeball:PWMUDB:prevCompare1\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \RightEyeball:PWMUDB:prevCompare2\ : LABEL IS "macrocell32";
-    ATTRIBUTE Location OF \RightEyeball:PWMUDB:prevCompare2\ : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF \RightEyeball:PWMUDB:prevCompare2\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \RightEyeball:PWMUDB:status_0\ : LABEL IS "macrocell33";
-    ATTRIBUTE Location OF \RightEyeball:PWMUDB:status_0\ : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF \RightEyeball:PWMUDB:status_0\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \RightEyeball:PWMUDB:status_1\ : LABEL IS "macrocell34";
-    ATTRIBUTE Location OF \RightEyeball:PWMUDB:status_1\ : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF \RightEyeball:PWMUDB:status_1\ : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF Net_126 : LABEL IS "macrocell35";
-    ATTRIBUTE Location OF Net_126 : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF Net_126 : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF Net_127 : LABEL IS "macrocell36";
-    ATTRIBUTE Location OF Net_127 : LABEL IS "U(0,2)";
+    ATTRIBUTE Location OF Net_127 : LABEL IS "U(1,3)";
     ATTRIBUTE lib_model OF \Eyelids:PWMUDB:runmode_enable\ : LABEL IS "macrocell37";
-    ATTRIBUTE Location OF \Eyelids:PWMUDB:runmode_enable\ : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF \Eyelids:PWMUDB:runmode_enable\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Eyelids:PWMUDB:prevCompare1\ : LABEL IS "macrocell38";
-    ATTRIBUTE Location OF \Eyelids:PWMUDB:prevCompare1\ : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF \Eyelids:PWMUDB:prevCompare1\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Eyelids:PWMUDB:prevCompare2\ : LABEL IS "macrocell39";
-    ATTRIBUTE Location OF \Eyelids:PWMUDB:prevCompare2\ : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF \Eyelids:PWMUDB:prevCompare2\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Eyelids:PWMUDB:status_0\ : LABEL IS "macrocell40";
-    ATTRIBUTE Location OF \Eyelids:PWMUDB:status_0\ : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF \Eyelids:PWMUDB:status_0\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Eyelids:PWMUDB:status_1\ : LABEL IS "macrocell41";
-    ATTRIBUTE Location OF \Eyelids:PWMUDB:status_1\ : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF \Eyelids:PWMUDB:status_1\ : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF Net_175 : LABEL IS "macrocell42";
-    ATTRIBUTE Location OF Net_175 : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF Net_175 : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF Net_176 : LABEL IS "macrocell43";
-    ATTRIBUTE Location OF Net_176 : LABEL IS "U(0,4)";
+    ATTRIBUTE Location OF Net_176 : LABEL IS "U(0,1)";
     ATTRIBUTE lib_model OF \Lips:PWMUDB:runmode_enable\ : LABEL IS "macrocell44";
     ATTRIBUTE Location OF \Lips:PWMUDB:runmode_enable\ : LABEL IS "U(2,2)";
     ATTRIBUTE lib_model OF \Lips:PWMUDB:prevCompare1\ : LABEL IS "macrocell45";
@@ -947,16 +947,16 @@ BEGIN
             clk_bus => ClockBlock_BUS_CLK_local,
             dsi_clkin_div => open,
             dsi_glb_div => open,
-            dclk_glb_0 => Net_31,
-            dclk_0 => Net_31_local,
-            dclk_glb_1 => Net_233,
-            dclk_1 => Net_233_local,
-            dclk_glb_2 => Net_86,
-            dclk_2 => Net_86_local,
-            dclk_glb_3 => Net_173,
-            dclk_3 => Net_173_local,
-            dclk_glb_4 => Net_304,
-            dclk_4 => Net_304_local,
+            dclk_glb_0 => Net_233,
+            dclk_0 => Net_233_local,
+            dclk_glb_1 => Net_86,
+            dclk_1 => Net_86_local,
+            dclk_glb_2 => Net_173,
+            dclk_2 => Net_173_local,
+            dclk_glb_3 => Net_304,
+            dclk_3 => Net_304_local,
+            dclk_glb_4 => Net_31,
+            dclk_4 => Net_31_local,
             dclk_glb_5 => Net_124,
             dclk_5 => Net_124_local,
             dclk_glb_6 => Net_59,
