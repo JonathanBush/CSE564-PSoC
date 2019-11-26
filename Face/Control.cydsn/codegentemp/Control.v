@@ -1,6 +1,6 @@
 // ======================================================================
 // Control.v generated from TopDesign.cysch
-// 11/19/2019 at 14:42
+// 11/26/2019 at 15:39
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -930,10 +930,80 @@ module PWM_v3_30_7 (
 
 endmodule
 
+// Timer_v2_80(CaptureAlternatingFall=false, CaptureAlternatingRise=false, CaptureCount=2, CaptureCounterEnabled=false, CaptureInputEnabled=false, CaptureMode=0, CONTROL3=1, ControlRegRemoved=0, CtlModeReplacementString=SyncCtl, CyGetRegReplacementString=CY_GET_REG16, CySetRegReplacementString=CY_SET_REG16, DeviceFamily=PSoC5, EnableMode=0, FF16=true, FF8=false, FixedFunction=true, FixedFunctionUsed=1, HWCaptureCounterEnabled=false, InterruptOnCapture=false, InterruptOnFIFOFull=false, InterruptOnTC=true, IntOnCapture=0, IntOnFIFOFull=0, IntOnTC=1, NumberOfCaptures=1, param45=1, Period=4999, RegDefReplacementString=reg16, RegSizeReplacementString=uint16, Resolution=16, RstStatusReplacementString=rstSts, RunMode=0, SiliconRevision=0, SoftwareCaptureModeEnabled=false, SoftwareTriggerModeEnabled=false, TriggerInputEnabled=false, TriggerMode=0, UDB16=false, UDB24=false, UDB32=false, UDB8=false, UDBControlReg=false, UsesHWEnable=0, VerilogSectionReplacementString=sT16, CY_API_CALLBACK_HEADER_INCLUDE=#include "cyapicallbacks.h", CY_COMMENT=, CY_COMPONENT_NAME=Timer_v2_80, CY_CONFIG_TITLE=Timer, CY_CONST_CONFIG=true, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Timer, CY_INSTANCE_SHORT_NAME=Timer, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=80, CY_PDL_DRIVER_NAME=, CY_PDL_DRIVER_REQ_VERSION=, CY_PDL_DRIVER_SUBGROUP=, CY_PDL_DRIVER_VARIANT=, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  4.2, INSTANCE_NAME=Timer, )
+module Timer_v2_80_8 (
+    reset,
+    interrupt,
+    enable,
+    trigger,
+    capture,
+    capture_out,
+    tc,
+    clock);
+    input       reset;
+    output      interrupt;
+    input       enable;
+    input       trigger;
+    input       capture;
+    output      capture_out;
+    output      tc;
+    input       clock;
+
+    parameter CaptureCount = 2;
+    parameter CaptureCounterEnabled = 0;
+    parameter DeviceFamily = "PSoC5";
+    parameter InterruptOnCapture = 0;
+    parameter InterruptOnTC = 1;
+    parameter Resolution = 16;
+    parameter SiliconRevision = "0";
+
+          wire  Net_261;
+          wire  Net_260;
+          wire  Net_266;
+          wire  Net_102;
+          wire  Net_55;
+          wire  Net_57;
+          wire  Net_53;
+          wire  Net_51;
+
+    cy_psoc3_timer_v1_0 TimerHW (
+        .timer_reset(reset),
+        .capture(capture),
+        .enable(Net_266),
+        .kill(Net_260),
+        .clock(clock),
+        .tc(Net_51),
+        .compare(Net_261),
+        .interrupt(Net_57));
+
+    ZeroTerminal ZeroTerminal_1 (
+        .z(Net_260));
+
+	// VirtualMux_2 (cy_virtualmux_v1_0)
+	assign interrupt = Net_57;
+
+	// VirtualMux_3 (cy_virtualmux_v1_0)
+	assign tc = Net_51;
+
+    OneTerminal OneTerminal_1 (
+        .o(Net_102));
+
+	// VirtualMux_1 (cy_virtualmux_v1_0)
+	assign Net_266 = Net_102;
+
+
+
+endmodule
+
 // top
 module top ;
 
-          wire  Net_884;
+          wire  Net_926;
+          wire  Net_925;
+          wire  Net_924;
+          wire  Net_923;
+          wire  Net_922;
+          wire  Net_921;
           wire  Net_883;
           wire  Net_882;
           wire  Net_881;
@@ -947,7 +1017,6 @@ module top ;
           wire  Net_861;
           wire  Net_874;
           wire  Net_873;
-          wire  Net_384;
           wire  Net_857;
           wire  Net_856;
           wire  Net_855;
@@ -961,7 +1030,6 @@ module top ;
           wire  Net_306;
           wire  Net_848;
           wire  Net_847;
-          wire  Net_302;
           wire  Net_835;
           wire  Net_834;
           wire  Net_833;
@@ -975,7 +1043,6 @@ module top ;
           wire  Net_235;
           wire  Net_826;
           wire  Net_825;
-          wire  Net_231;
           wire  Net_802;
           wire  Net_801;
           wire  Net_800;
@@ -989,7 +1056,6 @@ module top ;
           wire  Net_175;
           wire  Net_793;
           wire  Net_792;
-          wire  Net_171;
           wire  Net_758;
           wire  Net_757;
           wire  Net_756;
@@ -1003,7 +1069,6 @@ module top ;
           wire  Net_126;
           wire  Net_749;
           wire  Net_748;
-          wire  Net_122;
           wire  Net_703;
           wire  Net_702;
           wire  Net_701;
@@ -1017,7 +1082,6 @@ module top ;
           wire  Net_88;
           wire  Net_694;
           wire  Net_693;
-          wire  Net_84;
           wire  Net_527;
           wire  Net_526;
           wire  Net_525;
@@ -1045,13 +1109,7 @@ module top ;
           wire  Net_47;
           wire  Net_46;
           wire  Net_45;
-          wire  Net_859;
-          wire  Net_304;
-          wire  Net_233;
-          wire  Net_173;
-          wire  Net_124;
-          wire  Net_86;
-          wire  Net_59;
+          wire  Net_12;
           wire  Net_31;
 
     PWM_v3_30_0 LeftEyebrow (
@@ -1235,7 +1293,7 @@ module top ;
 
     PWM_v3_30_1 RightEyebrow (
         .reset(1'b0),
-        .clock(Net_59),
+        .clock(Net_31),
         .tc(Net_518),
         .pwm1(Net_61),
         .pwm2(Net_62),
@@ -1249,18 +1307,6 @@ module top ;
         .ph1(Net_526),
         .ph2(Net_527));
     defparam RightEyebrow.Resolution = 16;
-
-
-	cy_clock_v1_0
-		#(.id("e6b7c75f-1e13-46c7-9eed-5ad98bab0336"),
-		  .source_clock_id(""),
-		  .divisor(0),
-		  .period("1000000000"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_2
-		 (.clock_out(Net_59));
-
 
 	wire [0:0] tmpOE__RightEyebrow1_net;
 	wire [0:0] tmpFB_0__RightEyebrow1_net;
@@ -1414,7 +1460,7 @@ module top ;
 
     PWM_v3_30_2 LeftEyeball (
         .reset(1'b0),
-        .clock(Net_86),
+        .clock(Net_31),
         .tc(Net_694),
         .pwm1(Net_88),
         .pwm2(Net_89),
@@ -1428,18 +1474,6 @@ module top ;
         .ph1(Net_702),
         .ph2(Net_703));
     defparam LeftEyeball.Resolution = 16;
-
-
-	cy_clock_v1_0
-		#(.id("224db4fb-2971-44f9-b114-8db9c24b0fc7"),
-		  .source_clock_id(""),
-		  .divisor(0),
-		  .period("1000000000"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_3
-		 (.clock_out(Net_86));
-
 
 	wire [0:0] tmpOE__LeftEyeballTop_net;
 	wire [0:0] tmpFB_0__LeftEyeballTop_net;
@@ -1593,7 +1627,7 @@ module top ;
 
     PWM_v3_30_3 RightEyeball (
         .reset(1'b0),
-        .clock(Net_124),
+        .clock(Net_31),
         .tc(Net_749),
         .pwm1(Net_126),
         .pwm2(Net_127),
@@ -1607,18 +1641,6 @@ module top ;
         .ph1(Net_757),
         .ph2(Net_758));
     defparam RightEyeball.Resolution = 16;
-
-
-	cy_clock_v1_0
-		#(.id("e18792e9-7860-48e7-b7a1-4c30396e8004"),
-		  .source_clock_id(""),
-		  .divisor(0),
-		  .period("1000000000"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_4
-		 (.clock_out(Net_124));
-
 
 	wire [0:0] tmpOE__RightEyeballTop_net;
 	wire [0:0] tmpFB_0__RightEyeballTop_net;
@@ -1772,7 +1794,7 @@ module top ;
 
     PWM_v3_30_4 Eyelids (
         .reset(1'b0),
-        .clock(Net_173),
+        .clock(Net_31),
         .tc(Net_793),
         .pwm1(Net_175),
         .pwm2(Net_176),
@@ -1786,18 +1808,6 @@ module top ;
         .ph1(Net_801),
         .ph2(Net_802));
     defparam Eyelids.Resolution = 16;
-
-
-	cy_clock_v1_0
-		#(.id("35dfd053-1c13-425e-a50f-5dd5906895bc"),
-		  .source_clock_id(""),
-		  .divisor(0),
-		  .period("1000000000"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_5
-		 (.clock_out(Net_173));
-
 
 	wire [0:0] tmpOE__EyelidTilt_net;
 	wire [0:0] tmpFB_0__EyelidTilt_net;
@@ -1951,7 +1961,7 @@ module top ;
 
     PWM_v3_30_5 Lips (
         .reset(1'b0),
-        .clock(Net_233),
+        .clock(Net_31),
         .tc(Net_826),
         .pwm1(Net_235),
         .pwm2(Net_236),
@@ -1965,18 +1975,6 @@ module top ;
         .ph1(Net_834),
         .ph2(Net_835));
     defparam Lips.Resolution = 16;
-
-
-	cy_clock_v1_0
-		#(.id("02dd5470-2d9d-411f-8f1e-75d960cc33db"),
-		  .source_clock_id(""),
-		  .divisor(0),
-		  .period("1000000000"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_6
-		 (.clock_out(Net_233));
-
 
 	wire [0:0] tmpOE__LipLeft_net;
 	wire [0:0] tmpFB_0__LipLeft_net;
@@ -2130,7 +2128,7 @@ module top ;
 
     PWM_v3_30_6 Neck (
         .reset(1'b0),
-        .clock(Net_304),
+        .clock(Net_31),
         .tc(Net_848),
         .pwm1(Net_306),
         .pwm2(Net_307),
@@ -2144,18 +2142,6 @@ module top ;
         .ph1(Net_856),
         .ph2(Net_857));
     defparam Neck.Resolution = 16;
-
-
-	cy_clock_v1_0
-		#(.id("a10f510a-5429-4c5f-9c63-61bc5e3285fd"),
-		  .source_clock_id(""),
-		  .divisor(0),
-		  .period("1000000000"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_7
-		 (.clock_out(Net_304));
-
 
 	wire [0:0] tmpOE__NeckLeft_net;
 	wire [0:0] tmpFB_0__NeckLeft_net;
@@ -2309,7 +2295,7 @@ module top ;
 
     PWM_v3_30_7 Base (
         .reset(1'b0),
-        .clock(Net_859),
+        .clock(Net_31),
         .tc(Net_874),
         .pwm1(Net_861),
         .pwm2(Net_862),
@@ -2323,18 +2309,6 @@ module top ;
         .ph1(Net_882),
         .ph2(Net_883));
     defparam Base.Resolution = 16;
-
-
-	cy_clock_v1_0
-		#(.id("f63c753f-d5f1-4821-bc6a-b2be1809cac3"),
-		  .source_clock_id(""),
-		  .divisor(0),
-		  .period("1000000000"),
-		  .is_direct(0),
-		  .is_digital(1))
-		Clock_8
-		 (.clock_out(Net_859));
-
 
 	wire [0:0] tmpOE__BaseRotation_net;
 	wire [0:0] tmpFB_0__BaseRotation_net;
@@ -2485,6 +2459,33 @@ module top ;
 		  .out_reset({1'b0}));
 
 	assign tmpOE__Jaw_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		timer_isr
+		 (.int_signal(Net_921));
+
+
+    ZeroTerminal ZeroTerminal_1 (
+        .z(Net_12));
+
+    Timer_v2_80_8 Timer (
+        .reset(Net_12),
+        .interrupt(Net_921),
+        .enable(1'b1),
+        .trigger(1'b1),
+        .capture(1'b0),
+        .capture_out(Net_925),
+        .tc(Net_926),
+        .clock(Net_31));
+    defparam Timer.CaptureCount = 2;
+    defparam Timer.CaptureCounterEnabled = 0;
+    defparam Timer.DeviceFamily = "PSoC5";
+    defparam Timer.InterruptOnCapture = 0;
+    defparam Timer.InterruptOnTC = 1;
+    defparam Timer.Resolution = 16;
+    defparam Timer.SiliconRevision = "0";
 
 
 

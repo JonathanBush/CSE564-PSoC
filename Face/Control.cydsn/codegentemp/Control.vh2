@@ -2,7 +2,7 @@
 --	Conversion of Control.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Nov 19 14:42:37 2019
+--	Tue Nov 26 15:39:24 2019
 --
 
 USE cypress.cypress.all;
@@ -451,7 +451,6 @@ TERMINAL tmpSIOVREF__LeftEyebrow2_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__LeftEyebrow2_net_0 : bit;
 SIGNAL \RightEyebrow:PWMUDB:km_run\ : bit;
 SIGNAL \RightEyebrow:PWMUDB:min_kill_reg\ : bit;
-SIGNAL Net_59 : bit;
 SIGNAL \RightEyebrow:PWMUDB:ClockOutFromEnBlock\ : bit;
 SIGNAL \RightEyebrow:PWMUDB:control_7\ : bit;
 SIGNAL \RightEyebrow:PWMUDB:control_6\ : bit;
@@ -886,7 +885,6 @@ TERMINAL tmpSIOVREF__RightEyebrow2_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__RightEyebrow2_net_0 : bit;
 SIGNAL \LeftEyeball:PWMUDB:km_run\ : bit;
 SIGNAL \LeftEyeball:PWMUDB:min_kill_reg\ : bit;
-SIGNAL Net_86 : bit;
 SIGNAL \LeftEyeball:PWMUDB:ClockOutFromEnBlock\ : bit;
 SIGNAL \LeftEyeball:PWMUDB:control_7\ : bit;
 SIGNAL \LeftEyeball:PWMUDB:control_6\ : bit;
@@ -1321,7 +1319,6 @@ TERMINAL tmpSIOVREF__LeftEyeballBottom_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__LeftEyeballBottom_net_0 : bit;
 SIGNAL \RightEyeball:PWMUDB:km_run\ : bit;
 SIGNAL \RightEyeball:PWMUDB:min_kill_reg\ : bit;
-SIGNAL Net_124 : bit;
 SIGNAL \RightEyeball:PWMUDB:ClockOutFromEnBlock\ : bit;
 SIGNAL \RightEyeball:PWMUDB:control_7\ : bit;
 SIGNAL \RightEyeball:PWMUDB:control_6\ : bit;
@@ -1756,7 +1753,6 @@ TERMINAL tmpSIOVREF__RightEyeballBottom_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__RightEyeballBottom_net_0 : bit;
 SIGNAL \Eyelids:PWMUDB:km_run\ : bit;
 SIGNAL \Eyelids:PWMUDB:min_kill_reg\ : bit;
-SIGNAL Net_173 : bit;
 SIGNAL \Eyelids:PWMUDB:ClockOutFromEnBlock\ : bit;
 SIGNAL \Eyelids:PWMUDB:control_7\ : bit;
 SIGNAL \Eyelids:PWMUDB:control_6\ : bit;
@@ -2191,7 +2187,6 @@ TERMINAL tmpSIOVREF__EyelidClose_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__EyelidClose_net_0 : bit;
 SIGNAL \Lips:PWMUDB:km_run\ : bit;
 SIGNAL \Lips:PWMUDB:min_kill_reg\ : bit;
-SIGNAL Net_233 : bit;
 SIGNAL \Lips:PWMUDB:ClockOutFromEnBlock\ : bit;
 SIGNAL \Lips:PWMUDB:control_7\ : bit;
 SIGNAL \Lips:PWMUDB:control_6\ : bit;
@@ -2626,7 +2621,6 @@ TERMINAL tmpSIOVREF__LipRight_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__LipRight_net_0 : bit;
 SIGNAL \Neck:PWMUDB:km_run\ : bit;
 SIGNAL \Neck:PWMUDB:min_kill_reg\ : bit;
-SIGNAL Net_304 : bit;
 SIGNAL \Neck:PWMUDB:ClockOutFromEnBlock\ : bit;
 SIGNAL \Neck:PWMUDB:control_7\ : bit;
 SIGNAL \Neck:PWMUDB:control_6\ : bit;
@@ -3061,7 +3055,6 @@ TERMINAL tmpSIOVREF__NeckRight_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__NeckRight_net_0 : bit;
 SIGNAL \Base:PWMUDB:km_run\ : bit;
 SIGNAL \Base:PWMUDB:min_kill_reg\ : bit;
-SIGNAL Net_859 : bit;
 SIGNAL \Base:PWMUDB:ClockOutFromEnBlock\ : bit;
 SIGNAL \Base:PWMUDB:control_7\ : bit;
 SIGNAL \Base:PWMUDB:control_6\ : bit;
@@ -3494,6 +3487,15 @@ SIGNAL tmpFB_0__Jaw_net_0 : bit;
 SIGNAL tmpIO_0__Jaw_net_0 : bit;
 TERMINAL tmpSIOVREF__Jaw_net_0 : bit;
 SIGNAL tmpINTERRUPT_0__Jaw_net_0 : bit;
+SIGNAL Net_921 : bit;
+SIGNAL Net_12 : bit;
+SIGNAL \Timer:Net_260\ : bit;
+SIGNAL \Timer:Net_266\ : bit;
+SIGNAL \Timer:Net_51\ : bit;
+SIGNAL \Timer:Net_261\ : bit;
+SIGNAL \Timer:Net_57\ : bit;
+SIGNAL Net_926 : bit;
+SIGNAL \Timer:Net_102\ : bit;
 SIGNAL \LeftEyebrow:PWMUDB:min_kill_reg\\D\ : bit;
 SIGNAL \LeftEyebrow:PWMUDB:prevCapture\\D\ : bit;
 SIGNAL \LeftEyebrow:PWMUDB:trig_last\\D\ : bit;
@@ -4145,7 +4147,7 @@ LeftEyebrow2:cy_psoc3_pins_v1_10
 		interrupt=>tmpINTERRUPT_0__LeftEyebrow2_net_0);
 \RightEyebrow:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_59,
+	PORT MAP(clock_in=>Net_31,
 		enable=>one,
 		clock_out=>\RightEyebrow:PWMUDB:ClockOutFromEnBlock\);
 \RightEyebrow:PWMUDB:genblk1:ctrlreg\:cy_psoc3_control
@@ -4348,16 +4350,6 @@ LeftEyebrow2:cy_psoc3_pins_v1_10
 \RightEyebrow:PWMUDB:MODULE_2:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
 		y=>\RightEyebrow:PWMUDB:MODULE_2:g2:a0:g1:z1:s0:g1:u0:c_8\);
-Clock_2:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"e6b7c75f-1e13-46c7-9eed-5ad98bab0336",
-		source_clock_id=>"",
-		divisor=>0,
-		period=>"1000000000",
-		is_direct=>'0',
-		is_digital=>'1')
-	PORT MAP(clock_out=>Net_59,
-		dig_domain_out=>open);
 RightEyebrow1:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"cdd01310-2c61-4561-87ae-36a755befc6d",
 		drive_mode=>"110",
@@ -4500,7 +4492,7 @@ RightEyebrow2:cy_psoc3_pins_v1_10
 		interrupt=>tmpINTERRUPT_0__RightEyebrow2_net_0);
 \LeftEyeball:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_86,
+	PORT MAP(clock_in=>Net_31,
 		enable=>one,
 		clock_out=>\LeftEyeball:PWMUDB:ClockOutFromEnBlock\);
 \LeftEyeball:PWMUDB:genblk1:ctrlreg\:cy_psoc3_control
@@ -4703,16 +4695,6 @@ RightEyebrow2:cy_psoc3_pins_v1_10
 \LeftEyeball:PWMUDB:MODULE_3:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
 		y=>\LeftEyeball:PWMUDB:MODULE_3:g2:a0:g1:z1:s0:g1:u0:c_8\);
-Clock_3:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"224db4fb-2971-44f9-b114-8db9c24b0fc7",
-		source_clock_id=>"",
-		divisor=>0,
-		period=>"1000000000",
-		is_direct=>'0',
-		is_digital=>'1')
-	PORT MAP(clock_out=>Net_86,
-		dig_domain_out=>open);
 LeftEyeballTop:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"56abeab3-e02d-4779-9bff-5ffca5495d4c",
 		drive_mode=>"110",
@@ -4855,7 +4837,7 @@ LeftEyeballBottom:cy_psoc3_pins_v1_10
 		interrupt=>tmpINTERRUPT_0__LeftEyeballBottom_net_0);
 \RightEyeball:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_124,
+	PORT MAP(clock_in=>Net_31,
 		enable=>one,
 		clock_out=>\RightEyeball:PWMUDB:ClockOutFromEnBlock\);
 \RightEyeball:PWMUDB:genblk1:ctrlreg\:cy_psoc3_control
@@ -5058,16 +5040,6 @@ LeftEyeballBottom:cy_psoc3_pins_v1_10
 \RightEyeball:PWMUDB:MODULE_4:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
 		y=>\RightEyeball:PWMUDB:MODULE_4:g2:a0:g1:z1:s0:g1:u0:c_8\);
-Clock_4:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"e18792e9-7860-48e7-b7a1-4c30396e8004",
-		source_clock_id=>"",
-		divisor=>0,
-		period=>"1000000000",
-		is_direct=>'0',
-		is_digital=>'1')
-	PORT MAP(clock_out=>Net_124,
-		dig_domain_out=>open);
 RightEyeballTop:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"7e517404-b7e4-4074-97c7-0db6ef4907bc",
 		drive_mode=>"110",
@@ -5210,7 +5182,7 @@ RightEyeballBottom:cy_psoc3_pins_v1_10
 		interrupt=>tmpINTERRUPT_0__RightEyeballBottom_net_0);
 \Eyelids:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_173,
+	PORT MAP(clock_in=>Net_31,
 		enable=>one,
 		clock_out=>\Eyelids:PWMUDB:ClockOutFromEnBlock\);
 \Eyelids:PWMUDB:genblk1:ctrlreg\:cy_psoc3_control
@@ -5413,16 +5385,6 @@ RightEyeballBottom:cy_psoc3_pins_v1_10
 \Eyelids:PWMUDB:MODULE_5:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
 		y=>\Eyelids:PWMUDB:MODULE_5:g2:a0:g1:z1:s0:g1:u0:c_8\);
-Clock_5:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"35dfd053-1c13-425e-a50f-5dd5906895bc",
-		source_clock_id=>"",
-		divisor=>0,
-		period=>"1000000000",
-		is_direct=>'0',
-		is_digital=>'1')
-	PORT MAP(clock_out=>Net_173,
-		dig_domain_out=>open);
 EyelidTilt:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"c1a22487-f93c-41c1-9b56-20c7d4d84652",
 		drive_mode=>"110",
@@ -5565,7 +5527,7 @@ EyelidClose:cy_psoc3_pins_v1_10
 		interrupt=>tmpINTERRUPT_0__EyelidClose_net_0);
 \Lips:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_233,
+	PORT MAP(clock_in=>Net_31,
 		enable=>one,
 		clock_out=>\Lips:PWMUDB:ClockOutFromEnBlock\);
 \Lips:PWMUDB:genblk1:ctrlreg\:cy_psoc3_control
@@ -5768,16 +5730,6 @@ EyelidClose:cy_psoc3_pins_v1_10
 \Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
 		y=>\Lips:PWMUDB:MODULE_6:g2:a0:g1:z1:s0:g1:u0:c_8\);
-Clock_6:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"02dd5470-2d9d-411f-8f1e-75d960cc33db",
-		source_clock_id=>"",
-		divisor=>0,
-		period=>"1000000000",
-		is_direct=>'0',
-		is_digital=>'1')
-	PORT MAP(clock_out=>Net_233,
-		dig_domain_out=>open);
 LipLeft:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"0b3f2ac2-8cb9-48a0-b3e0-d42d22853b76",
 		drive_mode=>"110",
@@ -5920,7 +5872,7 @@ LipRight:cy_psoc3_pins_v1_10
 		interrupt=>tmpINTERRUPT_0__LipRight_net_0);
 \Neck:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_304,
+	PORT MAP(clock_in=>Net_31,
 		enable=>one,
 		clock_out=>\Neck:PWMUDB:ClockOutFromEnBlock\);
 \Neck:PWMUDB:genblk1:ctrlreg\:cy_psoc3_control
@@ -6123,16 +6075,6 @@ LipRight:cy_psoc3_pins_v1_10
 \Neck:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
 		y=>\Neck:PWMUDB:MODULE_7:g2:a0:g1:z1:s0:g1:u0:c_8\);
-Clock_7:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"a10f510a-5429-4c5f-9c63-61bc5e3285fd",
-		source_clock_id=>"",
-		divisor=>0,
-		period=>"1000000000",
-		is_direct=>'0',
-		is_digital=>'1')
-	PORT MAP(clock_out=>Net_304,
-		dig_domain_out=>open);
 NeckLeft:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"5719ffab-82bb-4002-96b5-efe0acaa213f",
 		drive_mode=>"110",
@@ -6275,7 +6217,7 @@ NeckRight:cy_psoc3_pins_v1_10
 		interrupt=>tmpINTERRUPT_0__NeckRight_net_0);
 \Base:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
-	PORT MAP(clock_in=>Net_859,
+	PORT MAP(clock_in=>Net_31,
 		enable=>one,
 		clock_out=>\Base:PWMUDB:ClockOutFromEnBlock\);
 \Base:PWMUDB:genblk1:ctrlreg\:cy_psoc3_control
@@ -6478,16 +6420,6 @@ NeckRight:cy_psoc3_pins_v1_10
 \Base:PWMUDB:MODULE_8:g2:a0:g1:z1:s0:g1:u0:gs(8):g2:g3:ub\:cy_buf
 	PORT MAP(x=>zero,
 		y=>\Base:PWMUDB:MODULE_8:g2:a0:g1:z1:s0:g1:u0:c_8\);
-Clock_8:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"f63c753f-d5f1-4821-bc6a-b2be1809cac3",
-		source_clock_id=>"",
-		divisor=>0,
-		period=>"1000000000",
-		is_direct=>'0',
-		is_digital=>'1')
-	PORT MAP(clock_out=>Net_859,
-		dig_domain_out=>open);
 BaseRotation:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"8e03b85c-a9de-4038-a602-b92d1fb1a3c7",
 		drive_mode=>"110",
@@ -6628,6 +6560,20 @@ Jaw:cy_psoc3_pins_v1_10
 		out_clock_en=>one,
 		out_reset=>zero,
 		interrupt=>tmpINTERRUPT_0__Jaw_net_0);
+timer_isr:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10",
+		is_nmi=>'0')
+	PORT MAP(int_signal=>Net_921);
+\Timer:TimerHW\:cy_psoc3_timer_v1_0
+	GENERIC MAP(cy_registers=>"")
+	PORT MAP(clock=>Net_31,
+		kill=>zero,
+		enable=>one,
+		capture=>zero,
+		timer_reset=>zero,
+		tc=>\Timer:Net_51\,
+		compare=>\Timer:Net_261\,
+		interrupt=>Net_921);
 \LeftEyebrow:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>one,
 		s=>zero,

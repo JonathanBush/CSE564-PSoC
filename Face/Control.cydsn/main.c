@@ -10,23 +10,17 @@
  * ========================================
 */
 #include "project.h"
+#include "servocontrol.h"
 
-#define MOTOR_LOW (280)
-#define MOTOR_HIGH (2200)
-#define MOTOR_CENTER ((MOTOR_HIGH + MOTOR_LOW) / 2)
 
-void set_servo_angle(void (*compare_func)(uint16), uint8 angle);
+CY_ISR_PROTO(periodic_task);
 
-void set_servo_angle(void (*compare_func)(uint16), uint8 angle) {
-    uint16 compare = MOTOR_LOW + (angle *(MOTOR_HIGH - MOTOR_LOW)) * 180;
-    (*compare_func)(compare);
+
+/* called at 200 Hz */
+CY_ISR(periodic_task) {
+    Timer_ReadStatusRegister();
+    update_servos();
 }
-
-uint16 angle(uint8 angle_value) {
-    return MOTOR_LOW + (angle_value *(MOTOR_HIGH - MOTOR_LOW)) / 180;
-}
-
-
 
 int main(void)
 {
@@ -35,16 +29,45 @@ int main(void)
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
     LeftEyebrow_Start();
+    RightEyebrow_Start();
+    RightEyeball_Start();
+    //LeftEyeball_Start();
+    
+    Neck_Start();
+    
+    set_smooth_servo_angle(NECK_LEFT, 160);
+    set_smooth_servo_angle(NECK_RIGHT, 30);
+    set_smooth_servo_angle(LEFT_EYEBROW_RIGHT, 90);
+    
+    Timer_Start();
+    
+    timer_isr_StartEx(periodic_task);
     for(;;)
     {
         //set_servo_angle(LeftEyebrow_WriteCompare1, 0);
-        LeftEyebrow_WriteCompare1(MOTOR_LOW);
-        LeftEyebrow_WriteCompare2(MOTOR_LOW);
-        CyDelay(1000);
+        
+        //update_servos();
+//        LeftEyebrow_WriteCompare1(MOTOR_CENTER);
+//        LeftEyebrow_WriteCompare2(MOTOR_CENTER);
+//        RightEyebrow_WriteCompare1(MOTOR_CENTER);
+//        RightEyebrow_WriteCompare2(MOTOR_CENTER);
+//        
+//        RightEyeball_WriteCompare1(MOTOR_CENTER);
+//        RightEyeball_WriteCompare2(MOTOR_CENTER);
+//        LeftEyeball_WriteCompare1(MOTOR_CENTER);
+//        LeftEyeball_WriteCompare2(MOTOR_CENTER);
+//        
+//        Neck_WriteCompare1(MOTOR_CENTER);
+//        Neck_WriteCompare2(MOTOR_CENTER);
+        
         //set_servo_angle(LeftEyebrow_WriteCompare1, 90);
         //LeftEyebrow_WriteCompare1(MOTOR_HIGH);
         //LeftEyebrow_WriteCompare2(MOTOR_HIGH);
-        CyDelay(1000);
+        
+        //Neck_WriteCompare1(MOTOR_HIGH);
+        //Neck_WriteCompare2(MOTOR_HIGH);
+        
+        CyDelay(10);
     }
 }
 

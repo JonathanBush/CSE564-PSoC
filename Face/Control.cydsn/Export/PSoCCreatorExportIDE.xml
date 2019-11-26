@@ -37,8 +37,11 @@
       <Folder BuildType="STRICT" Path="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn">
         <Files Root="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
+          <File BuildType="BUILD" Toolchain="">servocontrol.c</File>
+          <File BuildType="BUILD" Toolchain="">neck.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
           <File BuildType="BUILD" Toolchain="">neck.h</File>
+          <File BuildType="BUILD" Toolchain="">servocontrol.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\Generated_Source\PSoC5">
@@ -73,8 +76,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_2.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_2.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow1_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow1.h</File>
@@ -84,8 +85,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LeftEyeball.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LeftEyeball.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LeftEyeball_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_3.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_3.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LeftEyeballTop_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LeftEyeballTop.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LeftEyeballTop.h</File>
@@ -95,8 +94,6 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyeball.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyeball.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyeball_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_4.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_4.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyeballTop_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyeballTop.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyeballTop.h</File>
@@ -106,29 +103,21 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Eyelids.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Eyelids.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Eyelids_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_5.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_5.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\EyelidTilt_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\EyelidTilt.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\EyelidTilt.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\EyelidClose_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\EyelidClose.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\EyelidClose.h</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_6.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_6.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Jaw_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Jaw.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Jaw.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Neck.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Neck.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Neck_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_7.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_7.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Base.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Base.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Base_PM.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_8.c</File>
-          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_8.h</File>
           <File BuildType="BUILD" Toolchain="ARM GCC Generic">Generated_Source\PSoC5\cm3gcc.ld</File>
           <File BuildType="BUILD" Toolchain="ARM MDK Generic">Generated_Source\PSoC5\Cm3RealView.scat</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Cm3Start.c</File>
@@ -180,6 +169,11 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LipRight_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LipRight.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\LipRight.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_isr.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\timer_isr.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_PM.c</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\Export\ARM_GCC_Generic">

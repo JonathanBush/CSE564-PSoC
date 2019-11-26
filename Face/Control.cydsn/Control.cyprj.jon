@@ -11,18 +11,207 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
+<file name=".\CortexM3\ARM_GCC_541\Debug\Neck.o">
+<dep name=".\Generated_Source\PSoC5\Base.h" />
+<dep name=".\Generated_Source\PSoC5\BaseRotation.h" />
+<dep name=".\Generated_Source\PSoC5\BaseRotation_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_1.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidClose.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidClose_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidTilt.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidTilt_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Eyelids.h" />
+<dep name=".\Generated_Source\PSoC5\Jaw.h" />
+<dep name=".\Generated_Source\PSoC5\Jaw_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeball.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballBottom.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballBottom_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballTop.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballTop_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow1.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow2.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LipLeft.h" />
+<dep name=".\Generated_Source\PSoC5\LipLeft_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LipRight.h" />
+<dep name=".\Generated_Source\PSoC5\LipRight_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Lips.h" />
+<dep name=".\Generated_Source\PSoC5\Neck.c" />
+<dep name=".\Generated_Source\PSoC5\NeckLeft.h" />
+<dep name=".\Generated_Source\PSoC5\NeckLeft_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\NeckRight.h" />
+<dep name=".\Generated_Source\PSoC5\NeckRight_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeball.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballBottom.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballBottom_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballTop.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballTop_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow1.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow2.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Timer.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\timer_isr.h" />
+<dep name=".\Neck.h" />
+<dep name=".\neck.c" />
+</file>
+<file name=".\Generated_Source\PSoC5\Base.h" />
+<file name=".\Generated_Source\PSoC5\BaseRotation.h" />
+<file name=".\Generated_Source\PSoC5\BaseRotation_aliases.h" />
+<file name=".\Generated_Source\PSoC5\Clock_1.h" />
+<file name=".\Generated_Source\PSoC5\CyDmac.h" />
+<file name=".\Generated_Source\PSoC5\CyFlash.h" />
+<file name=".\Generated_Source\PSoC5\CyLib.h" />
+<file name=".\Generated_Source\PSoC5\CySpc.h" />
+<file name=".\Generated_Source\PSoC5\EyelidClose.h" />
+<file name=".\Generated_Source\PSoC5\EyelidClose_aliases.h" />
+<file name=".\Generated_Source\PSoC5\EyelidTilt.h" />
+<file name=".\Generated_Source\PSoC5\EyelidTilt_aliases.h" />
+<file name=".\Generated_Source\PSoC5\Eyelids.h" />
+<file name=".\Generated_Source\PSoC5\Jaw.h" />
+<file name=".\Generated_Source\PSoC5\Jaw_aliases.h" />
+<file name=".\Generated_Source\PSoC5\LeftEyeball.h" />
+<file name=".\Generated_Source\PSoC5\LeftEyeballBottom.h" />
+<file name=".\Generated_Source\PSoC5\LeftEyeballBottom_aliases.h" />
+<file name=".\Generated_Source\PSoC5\LeftEyeballTop.h" />
+<file name=".\Generated_Source\PSoC5\LeftEyeballTop_aliases.h" />
+<file name=".\Generated_Source\PSoC5\LeftEyebrow.h" />
+<file name=".\Generated_Source\PSoC5\LeftEyebrow1.h" />
+<file name=".\Generated_Source\PSoC5\LeftEyebrow1_aliases.h" />
+<file name=".\Generated_Source\PSoC5\LeftEyebrow2.h" />
+<file name=".\Generated_Source\PSoC5\LeftEyebrow2_aliases.h" />
+<file name=".\Generated_Source\PSoC5\LipLeft.h" />
+<file name=".\Generated_Source\PSoC5\LipLeft_aliases.h" />
+<file name=".\Generated_Source\PSoC5\LipRight.h" />
+<file name=".\Generated_Source\PSoC5\LipRight_aliases.h" />
+<file name=".\Generated_Source\PSoC5\Lips.h" />
+<file name=".\Generated_Source\PSoC5\Neck.c" />
+<file name=".\Generated_Source\PSoC5\NeckLeft.h" />
+<file name=".\Generated_Source\PSoC5\NeckLeft_aliases.h" />
+<file name=".\Generated_Source\PSoC5\NeckRight.h" />
+<file name=".\Generated_Source\PSoC5\NeckRight_aliases.h" />
+<file name=".\Generated_Source\PSoC5\RightEyeball.h" />
+<file name=".\Generated_Source\PSoC5\RightEyeballBottom.h" />
+<file name=".\Generated_Source\PSoC5\RightEyeballBottom_aliases.h" />
+<file name=".\Generated_Source\PSoC5\RightEyeballTop.h" />
+<file name=".\Generated_Source\PSoC5\RightEyeballTop_aliases.h" />
+<file name=".\Generated_Source\PSoC5\RightEyebrow.h" />
+<file name=".\Generated_Source\PSoC5\RightEyebrow1.h" />
+<file name=".\Generated_Source\PSoC5\RightEyebrow1_aliases.h" />
+<file name=".\Generated_Source\PSoC5\RightEyebrow2.h" />
+<file name=".\Generated_Source\PSoC5\RightEyebrow2_aliases.h" />
+<file name=".\Generated_Source\PSoC5\Timer.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<file name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<file name=".\Generated_Source\PSoC5\core_cm3.h" />
+<file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<file name=".\Generated_Source\PSoC5\cyPm.h" />
+<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<file name=".\Generated_Source\PSoC5\cydevice.h" />
+<file name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<file name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<file name=".\Generated_Source\PSoC5\cyfitter.h" />
+<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<file name=".\Generated_Source\PSoC5\cypins.h" />
+<file name=".\Generated_Source\PSoC5\cytypes.h" />
+<file name=".\Generated_Source\PSoC5\project.h" />
+<file name=".\Generated_Source\PSoC5\timer_isr.h" />
+<file name=".\Neck.h" />
+<file name=".\neck.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Neck_PM.o">
+<dep name=".\Generated_Source\PSoC5\Base.h" />
+<dep name=".\Generated_Source\PSoC5\BaseRotation.h" />
+<dep name=".\Generated_Source\PSoC5\BaseRotation_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_1.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidClose.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidClose_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidTilt.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidTilt_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Eyelids.h" />
+<dep name=".\Generated_Source\PSoC5\Jaw.h" />
+<dep name=".\Generated_Source\PSoC5\Jaw_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeball.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballBottom.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballBottom_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballTop.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballTop_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow1.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow2.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LipLeft.h" />
+<dep name=".\Generated_Source\PSoC5\LipLeft_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LipRight.h" />
+<dep name=".\Generated_Source\PSoC5\LipRight_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Lips.h" />
+<dep name=".\Generated_Source\PSoC5\NeckLeft.h" />
+<dep name=".\Generated_Source\PSoC5\NeckLeft_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\NeckRight.h" />
+<dep name=".\Generated_Source\PSoC5\NeckRight_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Neck_PM.c" />
+<dep name=".\Generated_Source\PSoC5\RightEyeball.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballBottom.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballBottom_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballTop.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballTop_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow1.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow2.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Timer.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\timer_isr.h" />
+<dep name=".\Neck.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Neck_PM.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\main.o">
 <dep name=".\Generated_Source\PSoC5\Base.h" />
 <dep name=".\Generated_Source\PSoC5\BaseRotation.h" />
 <dep name=".\Generated_Source\PSoC5\BaseRotation_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\Clock_1.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_2.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_5.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_6.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_7.h" />
-<dep name=".\Generated_Source\PSoC5\Clock_8.h" />
 <dep name=".\Generated_Source\PSoC5\CyDmac.h" />
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -63,6 +252,7 @@
 <dep name=".\Generated_Source\PSoC5\RightEyebrow1_aliases.h" />
 <dep name=".\Generated_Source\PSoC5\RightEyebrow2.h" />
 <dep name=".\Generated_Source\PSoC5\RightEyebrow2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Timer.h" />
 <dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
 <dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
 <dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
@@ -78,78 +268,80 @@
 <dep name=".\Generated_Source\PSoC5\cypins.h" />
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 <dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\timer_isr.h" />
 <dep name=".\Neck.h" />
 <dep name=".\main.c" />
+<dep name=".\servocontrol.h" />
 </file>
-<file name=".\Generated_Source\PSoC5\Base.h" />
-<file name=".\Generated_Source\PSoC5\BaseRotation.h" />
-<file name=".\Generated_Source\PSoC5\BaseRotation_aliases.h" />
-<file name=".\Generated_Source\PSoC5\Clock_1.h" />
-<file name=".\Generated_Source\PSoC5\Clock_2.h" />
-<file name=".\Generated_Source\PSoC5\Clock_3.h" />
-<file name=".\Generated_Source\PSoC5\Clock_4.h" />
-<file name=".\Generated_Source\PSoC5\Clock_5.h" />
-<file name=".\Generated_Source\PSoC5\Clock_6.h" />
-<file name=".\Generated_Source\PSoC5\Clock_7.h" />
-<file name=".\Generated_Source\PSoC5\Clock_8.h" />
-<file name=".\Generated_Source\PSoC5\CyDmac.h" />
-<file name=".\Generated_Source\PSoC5\CyFlash.h" />
-<file name=".\Generated_Source\PSoC5\CyLib.h" />
-<file name=".\Generated_Source\PSoC5\CySpc.h" />
-<file name=".\Generated_Source\PSoC5\EyelidClose.h" />
-<file name=".\Generated_Source\PSoC5\EyelidClose_aliases.h" />
-<file name=".\Generated_Source\PSoC5\EyelidTilt.h" />
-<file name=".\Generated_Source\PSoC5\EyelidTilt_aliases.h" />
-<file name=".\Generated_Source\PSoC5\Eyelids.h" />
-<file name=".\Generated_Source\PSoC5\Jaw.h" />
-<file name=".\Generated_Source\PSoC5\Jaw_aliases.h" />
-<file name=".\Generated_Source\PSoC5\LeftEyeball.h" />
-<file name=".\Generated_Source\PSoC5\LeftEyeballBottom.h" />
-<file name=".\Generated_Source\PSoC5\LeftEyeballBottom_aliases.h" />
-<file name=".\Generated_Source\PSoC5\LeftEyeballTop.h" />
-<file name=".\Generated_Source\PSoC5\LeftEyeballTop_aliases.h" />
-<file name=".\Generated_Source\PSoC5\LeftEyebrow.h" />
-<file name=".\Generated_Source\PSoC5\LeftEyebrow1.h" />
-<file name=".\Generated_Source\PSoC5\LeftEyebrow1_aliases.h" />
-<file name=".\Generated_Source\PSoC5\LeftEyebrow2.h" />
-<file name=".\Generated_Source\PSoC5\LeftEyebrow2_aliases.h" />
-<file name=".\Generated_Source\PSoC5\LipLeft.h" />
-<file name=".\Generated_Source\PSoC5\LipLeft_aliases.h" />
-<file name=".\Generated_Source\PSoC5\LipRight.h" />
-<file name=".\Generated_Source\PSoC5\LipRight_aliases.h" />
-<file name=".\Generated_Source\PSoC5\Lips.h" />
-<file name=".\Generated_Source\PSoC5\NeckLeft.h" />
-<file name=".\Generated_Source\PSoC5\NeckLeft_aliases.h" />
-<file name=".\Generated_Source\PSoC5\NeckRight.h" />
-<file name=".\Generated_Source\PSoC5\NeckRight_aliases.h" />
-<file name=".\Generated_Source\PSoC5\RightEyeball.h" />
-<file name=".\Generated_Source\PSoC5\RightEyeballBottom.h" />
-<file name=".\Generated_Source\PSoC5\RightEyeballBottom_aliases.h" />
-<file name=".\Generated_Source\PSoC5\RightEyeballTop.h" />
-<file name=".\Generated_Source\PSoC5\RightEyeballTop_aliases.h" />
-<file name=".\Generated_Source\PSoC5\RightEyebrow.h" />
-<file name=".\Generated_Source\PSoC5\RightEyebrow1.h" />
-<file name=".\Generated_Source\PSoC5\RightEyebrow1_aliases.h" />
-<file name=".\Generated_Source\PSoC5\RightEyebrow2.h" />
-<file name=".\Generated_Source\PSoC5\RightEyebrow2_aliases.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
-<file name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
-<file name=".\Generated_Source\PSoC5\core_cm3.h" />
-<file name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
-<file name=".\Generated_Source\PSoC5\cyPm.h" />
-<file name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
-<file name=".\Generated_Source\PSoC5\cydevice.h" />
-<file name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<file name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
-<file name=".\Generated_Source\PSoC5\cyfitter.h" />
-<file name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
-<file name=".\Generated_Source\PSoC5\cypins.h" />
-<file name=".\Generated_Source\PSoC5\cytypes.h" />
-<file name=".\Generated_Source\PSoC5\project.h" />
-<file name=".\Neck.h" />
 <file name=".\main.c" />
-<file name=".\Generated_Source\PSoC5\Neck.h" />
+<file name=".\servocontrol.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\servocontrol.o">
+<dep name=".\Generated_Source\PSoC5\Base.h" />
+<dep name=".\Generated_Source\PSoC5\BaseRotation.h" />
+<dep name=".\Generated_Source\PSoC5\BaseRotation_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Clock_1.h" />
+<dep name=".\Generated_Source\PSoC5\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidClose.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidClose_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidTilt.h" />
+<dep name=".\Generated_Source\PSoC5\EyelidTilt_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Eyelids.h" />
+<dep name=".\Generated_Source\PSoC5\Jaw.h" />
+<dep name=".\Generated_Source\PSoC5\Jaw_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeball.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballBottom.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballBottom_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballTop.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyeballTop_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow1.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow2.h" />
+<dep name=".\Generated_Source\PSoC5\LeftEyebrow2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LipLeft.h" />
+<dep name=".\Generated_Source\PSoC5\LipLeft_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\LipRight.h" />
+<dep name=".\Generated_Source\PSoC5\LipRight_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Lips.h" />
+<dep name=".\Generated_Source\PSoC5\NeckLeft.h" />
+<dep name=".\Generated_Source\PSoC5\NeckLeft_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\NeckRight.h" />
+<dep name=".\Generated_Source\PSoC5\NeckRight_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeball.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballBottom.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballBottom_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballTop.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyeballTop_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow1.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow1_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow2.h" />
+<dep name=".\Generated_Source\PSoC5\RightEyebrow2_aliases.h" />
+<dep name=".\Generated_Source\PSoC5\Timer.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_armcc.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_compiler.h" />
+<dep name=".\Generated_Source\PSoC5\cmsis_gcc.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3.h" />
+<dep name=".\Generated_Source\PSoC5\core_cm3_psoc5.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cy_em_eeprom.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC5\cypins.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\project.h" />
+<dep name=".\Generated_Source\PSoC5\timer_isr.h" />
+<dep name=".\Neck.h" />
+<dep name=".\servocontrol.c" />
+<dep name=".\servocontrol.h" />
+</file>
+<file name=".\servocontrol.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Base.o">
 <dep name=".\Generated_Source\PSoC5\Base.c" />
 <dep name=".\Generated_Source\PSoC5\Base.h" />
@@ -196,69 +388,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Clock_1.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_2.o">
-<dep name=".\Generated_Source\PSoC5\Clock_2.c" />
-<dep name=".\Generated_Source\PSoC5\Clock_2.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Clock_2.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_3.o">
-<dep name=".\Generated_Source\PSoC5\Clock_3.c" />
-<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Clock_3.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_4.o">
-<dep name=".\Generated_Source\PSoC5\Clock_4.c" />
-<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Clock_4.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_5.o">
-<dep name=".\Generated_Source\PSoC5\Clock_5.c" />
-<dep name=".\Generated_Source\PSoC5\Clock_5.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Clock_5.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_6.o">
-<dep name=".\Generated_Source\PSoC5\Clock_6.c" />
-<dep name=".\Generated_Source\PSoC5\Clock_6.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Clock_6.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_7.o">
-<dep name=".\Generated_Source\PSoC5\Clock_7.c" />
-<dep name=".\Generated_Source\PSoC5\Clock_7.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Clock_7.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_8.o">
-<dep name=".\Generated_Source\PSoC5\Clock_8.c" />
-<dep name=".\Generated_Source\PSoC5\Clock_8.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Clock_8.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Cm3Start.o">
 <dep name=".\Generated_Source\PSoC5\Cm3Start.c" />
 <dep name=".\Generated_Source\PSoC5\CyDmac.h" />
@@ -527,19 +656,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\Lips_PM.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Neck.o">
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\Neck.c" />
-<dep name=".\Generated_Source\PSoC5\Neck.h" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Neck.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\NeckLeft.o">
 <dep name=".\Generated_Source\PSoC5\NeckLeft.c" />
 <dep name=".\Generated_Source\PSoC5\NeckLeft.h" />
@@ -562,19 +678,6 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\NeckRight.c" />
-<file name=".\CortexM3\ARM_GCC_541\Debug\Neck_PM.o">
-<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC5\CyLib.h" />
-<dep name=".\Generated_Source\PSoC5\CySpc.h" />
-<dep name=".\Generated_Source\PSoC5\Neck.h" />
-<dep name=".\Generated_Source\PSoC5\Neck_PM.c" />
-<dep name=".\Generated_Source\PSoC5\cyPm.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice.h" />
-<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC5\cytypes.h" />
-</file>
-<file name=".\Generated_Source\PSoC5\Neck_PM.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\RightEyeball.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -671,6 +774,32 @@
 <dep name=".\Generated_Source\PSoC5\cytypes.h" />
 </file>
 <file name=".\Generated_Source\PSoC5\RightEyebrow_PM.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Timer.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\Timer.c" />
+<dep name=".\Generated_Source\PSoC5\Timer.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Timer.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Timer_PM.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\Timer.h" />
+<dep name=".\Generated_Source\PSoC5\Timer_PM.c" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Timer_PM.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\cyPm.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -723,6 +852,20 @@
 <dep name=".\Generated_Source\PSoC5\cyutils.c" />
 </file>
 <file name=".\Generated_Source\PSoC5\cyutils.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\timer_isr.o">
+<dep name=".\Generated_Source\PSoC5\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC5\CyLib.h" />
+<dep name=".\Generated_Source\PSoC5\CySpc.h" />
+<dep name=".\Generated_Source\PSoC5\cyPm.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+<dep name=".\Generated_Source\PSoC5\timer_isr.c" />
+<dep name=".\Generated_Source\PSoC5\timer_isr.h" />
+<dep name=".\cyapicallbacks.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\timer_isr.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o">
 <dep name=".\Generated_Source\PSoC5\CyBootAsmGnu.s" />
 <dep name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
@@ -733,6 +876,77 @@
 <file name=".\Generated_Source\PSoC5\cydevicegnu.inc" />
 <file name=".\Generated_Source\PSoC5\cydevicegnu_trm.inc" />
 <file name=".\Generated_Source\PSoC5\cyfittergnu.inc" />
+<file name=".\Generated_Source\PSoC5\Clock_2.h" />
+<file name=".\Generated_Source\PSoC5\Clock_3.h" />
+<file name=".\Generated_Source\PSoC5\Clock_4.h" />
+<file name=".\Generated_Source\PSoC5\Clock_5.h" />
+<file name=".\Generated_Source\PSoC5\Clock_6.h" />
+<file name=".\Generated_Source\PSoC5\Clock_7.h" />
+<file name=".\Generated_Source\PSoC5\Clock_8.h" />
+<file name=".\Generated_Source\PSoC5\Neck.h" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_2.o">
+<dep name=".\Generated_Source\PSoC5\Clock_2.c" />
+<dep name=".\Generated_Source\PSoC5\Clock_2.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Clock_2.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_3.o">
+<dep name=".\Generated_Source\PSoC5\Clock_3.c" />
+<dep name=".\Generated_Source\PSoC5\Clock_3.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Clock_3.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_4.o">
+<dep name=".\Generated_Source\PSoC5\Clock_4.c" />
+<dep name=".\Generated_Source\PSoC5\Clock_4.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Clock_4.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_5.o">
+<dep name=".\Generated_Source\PSoC5\Clock_5.c" />
+<dep name=".\Generated_Source\PSoC5\Clock_5.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Clock_5.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_6.o">
+<dep name=".\Generated_Source\PSoC5\Clock_6.c" />
+<dep name=".\Generated_Source\PSoC5\Clock_6.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Clock_6.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_7.o">
+<dep name=".\Generated_Source\PSoC5\Clock_7.c" />
+<dep name=".\Generated_Source\PSoC5\Clock_7.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Clock_7.c" />
+<file name=".\CortexM3\ARM_GCC_541\Debug\Clock_8.o">
+<dep name=".\Generated_Source\PSoC5\Clock_8.c" />
+<dep name=".\Generated_Source\PSoC5\Clock_8.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice.h" />
+<dep name=".\Generated_Source\PSoC5\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC5\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC5\cytypes.h" />
+</file>
+<file name=".\Generated_Source\PSoC5\Clock_8.c" />
 <file name=".\CortexM3\ARM_GCC_541\Debug\Mouth.o">
 <dep name=".\Generated_Source\PSoC5\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC5\CyLib.h" />
@@ -835,6 +1049,8 @@
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
 <file name=".\CortexM3\ARM_GCC_541\Debug\Control.hex">
 <dep name=".\CortexM3\ARM_GCC_541\Debug\main.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\servocontrol.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\neck.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\cymetadata.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\LeftEyebrow.o" />
@@ -844,32 +1060,25 @@
 <dep name=".\CortexM3\ARM_GCC_541\Debug\LeftEyebrow2.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\RightEyebrow.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\RightEyebrow_PM.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\Clock_2.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\RightEyebrow1.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\RightEyebrow2.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\LeftEyeball.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\LeftEyeball_PM.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\Clock_3.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\LeftEyeballTop.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\LeftEyeballBottom.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\RightEyeball.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\RightEyeball_PM.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\Clock_4.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\RightEyeballTop.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\RightEyeballBottom.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Eyelids.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Eyelids_PM.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\Clock_5.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\EyelidTilt.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\EyelidClose.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\Clock_6.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Jaw.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Neck.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Neck_PM.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\Clock_7.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Base.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Base_PM.o" />
-<dep name=".\CortexM3\ARM_GCC_541\Debug\Clock_8.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Cm3Start.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\CyBootAsmGnu.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\CyDmac.o" />
@@ -886,6 +1095,9 @@
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Lips_PM.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\LipLeft.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\LipRight.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\timer_isr.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\Timer.o" />
+<dep name=".\CortexM3\ARM_GCC_541\Debug\Timer_PM.o" />
 <dep name=".\CortexM3\ARM_GCC_541\Debug\Control.a" />
 <dep name="${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Debug\CyComponentLibrary.a" />
 </file>
@@ -959,6 +1171,11 @@
 <name_val_pair name="Generated_Source\PSoC5\Lips_PM.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\LipLeft.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 <name_val_pair name="Generated_Source\PSoC5\LipRight.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\timer_isr.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\Timer.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="Generated_Source\PSoC5\Timer_PM.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="servocontrol.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
+<name_val_pair name="neck.c" v="-mcpu=cortex-m3 -mthumb -I. -IGenerated_Source\PSoC5 -Wa,-alh=${OutputDir}/${CompileFile}.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\jon\AppData\Local\Cypress Semiconductor\PSoC Creator\4.2&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\Control.cyprj -d CY8C5888LTI-LP097 -s C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE" />
@@ -971,8 +1188,45 @@
 </dataGuid>
 <dataGuid v="718b6b01-68ba-4a17-b632-d38dc61ebb3b">
 <CyGuid_718b6b01-68ba-4a17-b632-d38dc61ebb3b type_name="CyDesigner.Gde.Schematic.Symbolcatalog.CyComponentCatalogControl+CyCompCatalogData" version="1" tab="Cypress">
-<tree_states_tab_names />
-<tree_states />
+<tree_states_tab_names>
+<v>Cypress</v>
+<v>Off-Chip</v>
+</tree_states_tab_names>
+<tree_states>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog">
+<ExpandedNodeIds>
+<v>Cypress Component Catalog</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Cypress Component Catalog</v>
+<v>Cypress Component Catalog\Analog</v>
+<v>Cypress Component Catalog\CapSense</v>
+<v>Cypress Component Catalog\Communications</v>
+<v>Cypress Component Catalog\Digital</v>
+<v>Cypress Component Catalog\Display</v>
+<v>Cypress Component Catalog\Filters</v>
+<v>Cypress Component Catalog\Ports and Pins</v>
+<v>Cypress Component Catalog\Power Supervision</v>
+<v>Cypress Component Catalog\System</v>
+<v>Cypress Component Catalog\Thermal Management</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Off-Chip Component Catalog</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Off-Chip Component Catalog</v>
+<v>Off-Chip Component Catalog\Active</v>
+<v>Off-Chip Component Catalog\Diodes</v>
+<v>Off-Chip Component Catalog\Electro-Mechanical</v>
+<v>Off-Chip Component Catalog\Passive</v>
+<v>Off-Chip Component Catalog\Power</v>
+<v>Off-Chip Component Catalog\Sensors</v>
+<v>Off-Chip Component Catalog\Transistors</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</tree_states>
 </CyGuid_718b6b01-68ba-4a17-b632-d38dc61ebb3b>
 </dataGuid>
 <dataGuid v="925cc1e1-309e-4e08-b0a1-09a83c35b157">
@@ -1063,6 +1317,37 @@
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\PSoC5\API\aliases.h</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\PSoC5\API\pins.c</v>
 <v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_pins_v2_20\PSoC5\API\pins.h</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.cysym</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.primitive</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\cy_isr_v1_70.cystate</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\version.cypatch</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\Custom\custom.cs</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\PSoC5\API\intc.c</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_isr_v1_70\PSoC5\API\intc.h</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Timer_v2_80.cycdx</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Timer_v2_80.cysym</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Timer_v2_80.pdf</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Timer_v2_80.cystate</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\API\Timer.c</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\API\Timer.h</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\API\Timer_PM.c</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\cycustomizer.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\cyparameters.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Resources.Designer.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Utils\cyutils.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Utils\cyenums.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Utils\cyclock.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Utils\cyconstants.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Tabs\cytabbase.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Tabs\cytimercontrol.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Tabs\cytimercontrol.Designer.cs</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Resources.resx</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\Custom\Tabs\cytimercontrol.resx</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80\PSoC5\Timer_v2_80.cysch</v>
+<v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Timer_v2_80</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_psoc3_timer_v1_0\cy_psoc3_timer_v1_0.cyprimitive</v>
+<v>${CyRoot}\psoc\content\CyPrimitives\cyprimitives.cylib\cy_psoc3_timer_v1_0\cy_psoc3_timer_v1_0.cysym</v>
 <v>.\Control.cydwr</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_70\PSoC5\API\cm3gcc.ld</v>
 <v>${CyRoot}\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\cy_boot_v5_70\PSoC5\API\Cm3RealView.scat</v>
@@ -1251,6 +1536,11 @@
 <v>Generated_Source\PSoC5\LipRight_aliases.h</v>
 <v>Generated_Source\PSoC5\LipRight.c</v>
 <v>Generated_Source\PSoC5\LipRight.h</v>
+<v>Generated_Source\PSoC5\timer_isr.c</v>
+<v>Generated_Source\PSoC5\timer_isr.h</v>
+<v>Generated_Source\PSoC5\Timer.c</v>
+<v>Generated_Source\PSoC5\Timer.h</v>
+<v>Generated_Source\PSoC5\Timer_PM.c</v>
 </gen_list>
 <warp_dep>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\ieee\work\stdlogic.vif</v>
@@ -1260,7 +1550,7 @@
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\rtlpkg.vif</v>
 <v>C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif</v>
 </warp_dep>
-<deps_time v="132186733802696288" />
+<deps_time v="132192815797705247" />
 <top_block v="TopDesign" />
 <last_generation v="0" />
 <pdl_path v="" />
@@ -1270,9 +1560,14 @@
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
 <link_deps_times>
-<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="132186833131194500" />
+<name_val_pair name="c9323d49-d323-40b8-9b59-cc008d68a989@Debug@CortexM3" v="132192826028405647" />
 </link_deps_times>
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
+</dataGuid>
+<dataGuid v="504337dd-7d07-4bc7-9057-90e60cf6c469">
+<CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469 type_name="CyDesigner.Common.Debugger.CyBreakpointList" version="1">
+<debugger_breakpoint_list />
+</CyGuid_504337dd-7d07-4bc7-9057-90e60cf6c469>
 </dataGuid>
 </userData>
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
