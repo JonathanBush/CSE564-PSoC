@@ -38,10 +38,14 @@
         <Files Root="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn">
           <File BuildType="BUILD" Toolchain="">main.c</File>
           <File BuildType="BUILD" Toolchain="">servocontrol.c</File>
-          <File BuildType="BUILD" Toolchain="">neck.c</File>
+          <File BuildType="BUILD" Toolchain="">neckcontrol.c</File>
+          <File BuildType="BUILD" Toolchain="">mouthcontrol.c</File>
+          <File BuildType="BUILD" Toolchain="">eyecontrol.c</File>
           <File BuildType="BUILD" Toolchain="">cyapicallbacks.h</File>
-          <File BuildType="BUILD" Toolchain="">neck.h</File>
+          <File BuildType="BUILD" Toolchain="">neckcontrol.h</File>
           <File BuildType="BUILD" Toolchain="">servocontrol.h</File>
+          <File BuildType="BUILD" Toolchain="">mouthcontrol.h</File>
+          <File BuildType="BUILD" Toolchain="">eyecontrol.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\Generated_Source\PSoC5">

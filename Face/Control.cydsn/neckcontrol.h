@@ -15,8 +15,6 @@
 #ifndef NECK_H
 #define NECK_H
 
-#include "project.h"
-    
 typedef enum {
     NECK_ROTATE_LEFT,
     NECK_ROTATE_CENTER,

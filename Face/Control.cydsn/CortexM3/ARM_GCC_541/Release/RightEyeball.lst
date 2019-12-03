@@ -1,0 +1,3025 @@
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 4
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"RightEyeball.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.RightEyeball_Enable,"ax",%progbits
+  20              		.align	1
+  21              		.global	RightEyeball_Enable
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	RightEyeball_Enable, %function
+  25              	RightEyeball_Enable:
+  26              	.LFB2:
+  27              		.file 1 "Generated_Source\\PSoC5\\RightEyeball.c"
+   1:Generated_Source\PSoC5/RightEyeball.c **** /*******************************************************************************
+   2:Generated_Source\PSoC5/RightEyeball.c **** * File Name: RightEyeball.c
+   3:Generated_Source\PSoC5/RightEyeball.c **** * Version 3.30
+   4:Generated_Source\PSoC5/RightEyeball.c **** *
+   5:Generated_Source\PSoC5/RightEyeball.c **** * Description:
+   6:Generated_Source\PSoC5/RightEyeball.c **** *  The PWM User Module consist of an 8 or 16-bit counter with two 8 or 16-bit
+   7:Generated_Source\PSoC5/RightEyeball.c **** *  comparitors. Each instance of this user module is capable of generating
+   8:Generated_Source\PSoC5/RightEyeball.c **** *  two PWM outputs with the same period. The pulse width is selectable between
+   9:Generated_Source\PSoC5/RightEyeball.c **** *  1 and 255/65535. The period is selectable between 2 and 255/65536 clocks.
+  10:Generated_Source\PSoC5/RightEyeball.c **** *  The compare value output may be configured to be active when the present
+  11:Generated_Source\PSoC5/RightEyeball.c **** *  counter is less than or less than/equal to the compare value.
+  12:Generated_Source\PSoC5/RightEyeball.c **** *  A terminal count output is also provided. It generates a pulse one clock
+  13:Generated_Source\PSoC5/RightEyeball.c **** *  width wide when the counter is equal to zero.
+  14:Generated_Source\PSoC5/RightEyeball.c **** *
+  15:Generated_Source\PSoC5/RightEyeball.c **** * Note:
+  16:Generated_Source\PSoC5/RightEyeball.c **** *
+  17:Generated_Source\PSoC5/RightEyeball.c **** *******************************************************************************
+  18:Generated_Source\PSoC5/RightEyeball.c **** * Copyright 2008-2014, Cypress Semiconductor Corporation.  All rights reserved.
+  19:Generated_Source\PSoC5/RightEyeball.c **** * You may use this file only in accordance with the license, terms, conditions,
+  20:Generated_Source\PSoC5/RightEyeball.c **** * disclaimers, and limitations in the end user license agreement accompanying
+  21:Generated_Source\PSoC5/RightEyeball.c **** * the software package with which this file was provided.
+  22:Generated_Source\PSoC5/RightEyeball.c **** ********************************************************************************/
+  23:Generated_Source\PSoC5/RightEyeball.c **** 
+  24:Generated_Source\PSoC5/RightEyeball.c **** #include "RightEyeball.h"
+  25:Generated_Source\PSoC5/RightEyeball.c **** 
+  26:Generated_Source\PSoC5/RightEyeball.c **** /* Error message for removed <resource> through optimization */
+  27:Generated_Source\PSoC5/RightEyeball.c **** #ifdef RightEyeball_PWMUDB_genblk1_ctrlreg__REMOVED
+  28:Generated_Source\PSoC5/RightEyeball.c ****     #error PWM_v3_30 detected with a constant 0 for the enable or \
+  29:Generated_Source\PSoC5/RightEyeball.c ****          constant 1 for reset. This will prevent the component from operating.
+  30:Generated_Source\PSoC5/RightEyeball.c **** #endif /* RightEyeball_PWMUDB_genblk1_ctrlreg__REMOVED */
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 2
+
+
+  31:Generated_Source\PSoC5/RightEyeball.c **** 
+  32:Generated_Source\PSoC5/RightEyeball.c **** uint8 RightEyeball_initVar = 0u;
+  33:Generated_Source\PSoC5/RightEyeball.c **** 
+  34:Generated_Source\PSoC5/RightEyeball.c **** 
+  35:Generated_Source\PSoC5/RightEyeball.c **** /*******************************************************************************
+  36:Generated_Source\PSoC5/RightEyeball.c **** * Function Name: RightEyeball_Start
+  37:Generated_Source\PSoC5/RightEyeball.c **** ********************************************************************************
+  38:Generated_Source\PSoC5/RightEyeball.c **** *
+  39:Generated_Source\PSoC5/RightEyeball.c **** * Summary:
+  40:Generated_Source\PSoC5/RightEyeball.c **** *  The start function initializes the pwm with the default values, the
+  41:Generated_Source\PSoC5/RightEyeball.c **** *  enables the counter to begin counting.  It does not enable interrupts,
+  42:Generated_Source\PSoC5/RightEyeball.c **** *  the EnableInt command should be called if interrupt generation is required.
+  43:Generated_Source\PSoC5/RightEyeball.c **** *
+  44:Generated_Source\PSoC5/RightEyeball.c **** * Parameters:
+  45:Generated_Source\PSoC5/RightEyeball.c **** *  None
+  46:Generated_Source\PSoC5/RightEyeball.c **** *
+  47:Generated_Source\PSoC5/RightEyeball.c **** * Return:
+  48:Generated_Source\PSoC5/RightEyeball.c **** *  None
+  49:Generated_Source\PSoC5/RightEyeball.c **** *
+  50:Generated_Source\PSoC5/RightEyeball.c **** * Global variables:
+  51:Generated_Source\PSoC5/RightEyeball.c **** *  RightEyeball_initVar: Is modified when this function is called for the
+  52:Generated_Source\PSoC5/RightEyeball.c **** *   first time. Is used to ensure that initialization happens only once.
+  53:Generated_Source\PSoC5/RightEyeball.c **** *
+  54:Generated_Source\PSoC5/RightEyeball.c **** *******************************************************************************/
+  55:Generated_Source\PSoC5/RightEyeball.c **** void RightEyeball_Start(void) 
+  56:Generated_Source\PSoC5/RightEyeball.c **** {
+  57:Generated_Source\PSoC5/RightEyeball.c ****     /* If not Initialized then initialize all required hardware and software */
+  58:Generated_Source\PSoC5/RightEyeball.c ****     if(RightEyeball_initVar == 0u)
+  59:Generated_Source\PSoC5/RightEyeball.c ****     {
+  60:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_Init();
+  61:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_initVar = 1u;
+  62:Generated_Source\PSoC5/RightEyeball.c ****     }
+  63:Generated_Source\PSoC5/RightEyeball.c ****     RightEyeball_Enable();
+  64:Generated_Source\PSoC5/RightEyeball.c **** 
+  65:Generated_Source\PSoC5/RightEyeball.c **** }
+  66:Generated_Source\PSoC5/RightEyeball.c **** 
+  67:Generated_Source\PSoC5/RightEyeball.c **** 
+  68:Generated_Source\PSoC5/RightEyeball.c **** /*******************************************************************************
+  69:Generated_Source\PSoC5/RightEyeball.c **** * Function Name: RightEyeball_Init
+  70:Generated_Source\PSoC5/RightEyeball.c **** ********************************************************************************
+  71:Generated_Source\PSoC5/RightEyeball.c **** *
+  72:Generated_Source\PSoC5/RightEyeball.c **** * Summary:
+  73:Generated_Source\PSoC5/RightEyeball.c **** *  Initialize component's parameters to the parameters set by user in the
+  74:Generated_Source\PSoC5/RightEyeball.c **** *  customizer of the component placed onto schematic. Usually called in
+  75:Generated_Source\PSoC5/RightEyeball.c **** *  RightEyeball_Start().
+  76:Generated_Source\PSoC5/RightEyeball.c **** *
+  77:Generated_Source\PSoC5/RightEyeball.c **** * Parameters:
+  78:Generated_Source\PSoC5/RightEyeball.c **** *  None
+  79:Generated_Source\PSoC5/RightEyeball.c **** *
+  80:Generated_Source\PSoC5/RightEyeball.c **** * Return:
+  81:Generated_Source\PSoC5/RightEyeball.c **** *  None
+  82:Generated_Source\PSoC5/RightEyeball.c **** *
+  83:Generated_Source\PSoC5/RightEyeball.c **** *******************************************************************************/
+  84:Generated_Source\PSoC5/RightEyeball.c **** void RightEyeball_Init(void) 
+  85:Generated_Source\PSoC5/RightEyeball.c **** {
+  86:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UsingFixedFunction || RightEyeball_UseControl)
+  87:Generated_Source\PSoC5/RightEyeball.c ****         uint8 ctrl;
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 3
+
+
+  88:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UsingFixedFunction || RightEyeball_UseControl) */
+  89:Generated_Source\PSoC5/RightEyeball.c **** 
+  90:Generated_Source\PSoC5/RightEyeball.c ****     #if(!RightEyeball_UsingFixedFunction)
+  91:Generated_Source\PSoC5/RightEyeball.c ****         #if(RightEyeball_UseStatus)
+  92:Generated_Source\PSoC5/RightEyeball.c ****             /* Interrupt State Backup for Critical Region*/
+  93:Generated_Source\PSoC5/RightEyeball.c ****             uint8 RightEyeball_interruptState;
+  94:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UseStatus) */
+  95:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (!RightEyeball_UsingFixedFunction) */
+  96:Generated_Source\PSoC5/RightEyeball.c **** 
+  97:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UsingFixedFunction)
+  98:Generated_Source\PSoC5/RightEyeball.c ****         /* You are allowed to write the compare value (FF only) */
+  99:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_CONTROL |= RightEyeball_CFG0_MODE;
+ 100:Generated_Source\PSoC5/RightEyeball.c ****         #if (RightEyeball_DeadBand2_4)
+ 101:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_CONTROL |= RightEyeball_CFG0_DB;
+ 102:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_DeadBand2_4) */
+ 103:Generated_Source\PSoC5/RightEyeball.c **** 
+ 104:Generated_Source\PSoC5/RightEyeball.c ****         ctrl = RightEyeball_CONTROL3 & ((uint8 )(~RightEyeball_CTRL_CMPMODE1_MASK));
+ 105:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_CONTROL3 = ctrl | RightEyeball_DEFAULT_COMPARE1_MODE;
+ 106:Generated_Source\PSoC5/RightEyeball.c **** 
+ 107:Generated_Source\PSoC5/RightEyeball.c ****          /* Clear and Set SYNCTC and SYNCCMP bits of RT1 register */
+ 108:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_RT1 &= ((uint8)(~RightEyeball_RT1_MASK));
+ 109:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_RT1 |= RightEyeball_SYNC;
+ 110:Generated_Source\PSoC5/RightEyeball.c **** 
+ 111:Generated_Source\PSoC5/RightEyeball.c ****         /*Enable DSI Sync all all inputs of the PWM*/
+ 112:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_RT1 &= ((uint8)(~RightEyeball_SYNCDSI_MASK));
+ 113:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_RT1 |= RightEyeball_SYNCDSI_EN;
+ 114:Generated_Source\PSoC5/RightEyeball.c **** 
+ 115:Generated_Source\PSoC5/RightEyeball.c ****     #elif (RightEyeball_UseControl)
+ 116:Generated_Source\PSoC5/RightEyeball.c ****         /* Set the default compare mode defined in the parameter */
+ 117:Generated_Source\PSoC5/RightEyeball.c ****         ctrl = RightEyeball_CONTROL & ((uint8)(~RightEyeball_CTRL_CMPMODE2_MASK)) &
+ 118:Generated_Source\PSoC5/RightEyeball.c ****                 ((uint8)(~RightEyeball_CTRL_CMPMODE1_MASK));
+ 119:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_CONTROL = ctrl | RightEyeball_DEFAULT_COMPARE2_MODE |
+ 120:Generated_Source\PSoC5/RightEyeball.c ****                                    RightEyeball_DEFAULT_COMPARE1_MODE;
+ 121:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UsingFixedFunction) */
+ 122:Generated_Source\PSoC5/RightEyeball.c **** 
+ 123:Generated_Source\PSoC5/RightEyeball.c ****     #if (!RightEyeball_UsingFixedFunction)
+ 124:Generated_Source\PSoC5/RightEyeball.c ****         #if (RightEyeball_Resolution == 8)
+ 125:Generated_Source\PSoC5/RightEyeball.c ****             /* Set FIFO 0 to 1 byte register for period*/
+ 126:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_AUX_CONTROLDP0 |= (RightEyeball_AUX_CTRL_FIFO0_CLR);
+ 127:Generated_Source\PSoC5/RightEyeball.c ****         #else /* (RightEyeball_Resolution == 16)*/
+ 128:Generated_Source\PSoC5/RightEyeball.c ****             /* Set FIFO 0 to 1 byte register for period */
+ 129:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_AUX_CONTROLDP0 |= (RightEyeball_AUX_CTRL_FIFO0_CLR);
+ 130:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_AUX_CONTROLDP1 |= (RightEyeball_AUX_CTRL_FIFO0_CLR);
+ 131:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_Resolution == 8) */
+ 132:Generated_Source\PSoC5/RightEyeball.c **** 
+ 133:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_WriteCounter(RightEyeball_INIT_PERIOD_VALUE);
+ 134:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (!RightEyeball_UsingFixedFunction) */
+ 135:Generated_Source\PSoC5/RightEyeball.c **** 
+ 136:Generated_Source\PSoC5/RightEyeball.c ****     RightEyeball_WritePeriod(RightEyeball_INIT_PERIOD_VALUE);
+ 137:Generated_Source\PSoC5/RightEyeball.c **** 
+ 138:Generated_Source\PSoC5/RightEyeball.c ****         #if (RightEyeball_UseOneCompareMode)
+ 139:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_WriteCompare(RightEyeball_INIT_COMPARE_VALUE1);
+ 140:Generated_Source\PSoC5/RightEyeball.c ****         #else
+ 141:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_WriteCompare1(RightEyeball_INIT_COMPARE_VALUE1);
+ 142:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_WriteCompare2(RightEyeball_INIT_COMPARE_VALUE2);
+ 143:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UseOneCompareMode) */
+ 144:Generated_Source\PSoC5/RightEyeball.c **** 
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 4
+
+
+ 145:Generated_Source\PSoC5/RightEyeball.c ****         #if (RightEyeball_KillModeMinTime)
+ 146:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_WriteKillTime(RightEyeball_MinimumKillTime);
+ 147:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_KillModeMinTime) */
+ 148:Generated_Source\PSoC5/RightEyeball.c **** 
+ 149:Generated_Source\PSoC5/RightEyeball.c ****         #if (RightEyeball_DeadBandUsed)
+ 150:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_WriteDeadTime(RightEyeball_INIT_DEAD_TIME);
+ 151:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_DeadBandUsed) */
+ 152:Generated_Source\PSoC5/RightEyeball.c **** 
+ 153:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UseStatus || RightEyeball_UsingFixedFunction)
+ 154:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_SetInterruptMode(RightEyeball_INIT_INTERRUPTS_MODE);
+ 155:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UseStatus || RightEyeball_UsingFixedFunction) */
+ 156:Generated_Source\PSoC5/RightEyeball.c **** 
+ 157:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UsingFixedFunction)
+ 158:Generated_Source\PSoC5/RightEyeball.c ****         /* Globally Enable the Fixed Function Block chosen */
+ 159:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_GLOBAL_ENABLE |= RightEyeball_BLOCK_EN_MASK;
+ 160:Generated_Source\PSoC5/RightEyeball.c ****         /* Set the Interrupt source to come from the status register */
+ 161:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_CONTROL2 |= RightEyeball_CTRL2_IRQ_SEL;
+ 162:Generated_Source\PSoC5/RightEyeball.c ****     #else
+ 163:Generated_Source\PSoC5/RightEyeball.c ****         #if(RightEyeball_UseStatus)
+ 164:Generated_Source\PSoC5/RightEyeball.c **** 
+ 165:Generated_Source\PSoC5/RightEyeball.c ****             /* CyEnterCriticalRegion and CyExitCriticalRegion are used to mark following region cri
+ 166:Generated_Source\PSoC5/RightEyeball.c ****             /* Enter Critical Region*/
+ 167:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_interruptState = CyEnterCriticalSection();
+ 168:Generated_Source\PSoC5/RightEyeball.c ****             /* Use the interrupt output of the status register for IRQ output */
+ 169:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_STATUS_AUX_CTRL |= RightEyeball_STATUS_ACTL_INT_EN_MASK;
+ 170:Generated_Source\PSoC5/RightEyeball.c **** 
+ 171:Generated_Source\PSoC5/RightEyeball.c ****              /* Exit Critical Region*/
+ 172:Generated_Source\PSoC5/RightEyeball.c ****             CyExitCriticalSection(RightEyeball_interruptState);
+ 173:Generated_Source\PSoC5/RightEyeball.c **** 
+ 174:Generated_Source\PSoC5/RightEyeball.c ****             /* Clear the FIFO to enable the RightEyeball_STATUS_FIFOFULL
+ 175:Generated_Source\PSoC5/RightEyeball.c ****                    bit to be set on FIFO full. */
+ 176:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_ClearFIFO();
+ 177:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UseStatus) */
+ 178:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UsingFixedFunction) */
+ 179:Generated_Source\PSoC5/RightEyeball.c **** }
+ 180:Generated_Source\PSoC5/RightEyeball.c **** 
+ 181:Generated_Source\PSoC5/RightEyeball.c **** 
+ 182:Generated_Source\PSoC5/RightEyeball.c **** /*******************************************************************************
+ 183:Generated_Source\PSoC5/RightEyeball.c **** * Function Name: RightEyeball_Enable
+ 184:Generated_Source\PSoC5/RightEyeball.c **** ********************************************************************************
+ 185:Generated_Source\PSoC5/RightEyeball.c **** *
+ 186:Generated_Source\PSoC5/RightEyeball.c **** * Summary:
+ 187:Generated_Source\PSoC5/RightEyeball.c **** *  Enables the PWM block operation
+ 188:Generated_Source\PSoC5/RightEyeball.c **** *
+ 189:Generated_Source\PSoC5/RightEyeball.c **** * Parameters:
+ 190:Generated_Source\PSoC5/RightEyeball.c **** *  None
+ 191:Generated_Source\PSoC5/RightEyeball.c **** *
+ 192:Generated_Source\PSoC5/RightEyeball.c **** * Return:
+ 193:Generated_Source\PSoC5/RightEyeball.c **** *  None
+ 194:Generated_Source\PSoC5/RightEyeball.c **** *
+ 195:Generated_Source\PSoC5/RightEyeball.c **** * Side Effects:
+ 196:Generated_Source\PSoC5/RightEyeball.c **** *  This works only if software enable mode is chosen
+ 197:Generated_Source\PSoC5/RightEyeball.c **** *
+ 198:Generated_Source\PSoC5/RightEyeball.c **** *******************************************************************************/
+ 199:Generated_Source\PSoC5/RightEyeball.c **** void RightEyeball_Enable(void) 
+ 200:Generated_Source\PSoC5/RightEyeball.c **** {
+  28              		.loc 1 200 0
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 5
+
+
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+ 201:Generated_Source\PSoC5/RightEyeball.c ****     /* Globally Enable the Fixed Function Block chosen */
+ 202:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UsingFixedFunction)
+ 203:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_GLOBAL_ENABLE |= RightEyeball_BLOCK_EN_MASK;
+ 204:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_GLOBAL_STBY_ENABLE |= RightEyeball_BLOCK_STBY_EN_MASK;
+ 205:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UsingFixedFunction) */
+ 206:Generated_Source\PSoC5/RightEyeball.c **** 
+ 207:Generated_Source\PSoC5/RightEyeball.c ****     /* Enable the PWM from the control register  */
+ 208:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UseControl || RightEyeball_UsingFixedFunction)
+ 209:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_CONTROL |= RightEyeball_CTRL_ENABLE;
+  33              		.loc 1 209 0
+  34 0000 024A     		ldr	r2, .L2
+  35 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  36 0004 43F08003 		orr	r3, r3, #128
+  37 0008 1370     		strb	r3, [r2]
+  38 000a 7047     		bx	lr
+  39              	.L3:
+  40              		.align	2
+  41              	.L2:
+  42 000c 73640040 		.word	1073767539
+  43              		.cfi_endproc
+  44              	.LFE2:
+  45              		.size	RightEyeball_Enable, .-RightEyeball_Enable
+  46              		.section	.text.RightEyeball_Stop,"ax",%progbits
+  47              		.align	1
+  48              		.global	RightEyeball_Stop
+  49              		.thumb
+  50              		.thumb_func
+  51              		.type	RightEyeball_Stop, %function
+  52              	RightEyeball_Stop:
+  53              	.LFB3:
+ 210:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UseControl || RightEyeball_UsingFixedFunction) */
+ 211:Generated_Source\PSoC5/RightEyeball.c **** }
+ 212:Generated_Source\PSoC5/RightEyeball.c **** 
+ 213:Generated_Source\PSoC5/RightEyeball.c **** 
+ 214:Generated_Source\PSoC5/RightEyeball.c **** /*******************************************************************************
+ 215:Generated_Source\PSoC5/RightEyeball.c **** * Function Name: RightEyeball_Stop
+ 216:Generated_Source\PSoC5/RightEyeball.c **** ********************************************************************************
+ 217:Generated_Source\PSoC5/RightEyeball.c **** *
+ 218:Generated_Source\PSoC5/RightEyeball.c **** * Summary:
+ 219:Generated_Source\PSoC5/RightEyeball.c **** *  The stop function halts the PWM, but does not change any modes or disable
+ 220:Generated_Source\PSoC5/RightEyeball.c **** *  interrupts.
+ 221:Generated_Source\PSoC5/RightEyeball.c **** *
+ 222:Generated_Source\PSoC5/RightEyeball.c **** * Parameters:
+ 223:Generated_Source\PSoC5/RightEyeball.c **** *  None
+ 224:Generated_Source\PSoC5/RightEyeball.c **** *
+ 225:Generated_Source\PSoC5/RightEyeball.c **** * Return:
+ 226:Generated_Source\PSoC5/RightEyeball.c **** *  None
+ 227:Generated_Source\PSoC5/RightEyeball.c **** *
+ 228:Generated_Source\PSoC5/RightEyeball.c **** * Side Effects:
+ 229:Generated_Source\PSoC5/RightEyeball.c **** *  If the Enable mode is set to Hardware only then this function
+ 230:Generated_Source\PSoC5/RightEyeball.c **** *  has no effect on the operation of the PWM
+ 231:Generated_Source\PSoC5/RightEyeball.c **** *
+ 232:Generated_Source\PSoC5/RightEyeball.c **** *******************************************************************************/
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 6
+
+
+ 233:Generated_Source\PSoC5/RightEyeball.c **** void RightEyeball_Stop(void) 
+ 234:Generated_Source\PSoC5/RightEyeball.c **** {
+  54              		.loc 1 234 0
+  55              		.cfi_startproc
+  56              		@ args = 0, pretend = 0, frame = 0
+  57              		@ frame_needed = 0, uses_anonymous_args = 0
+  58              		@ link register save eliminated.
+ 235:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UseControl || RightEyeball_UsingFixedFunction)
+ 236:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_CONTROL &= ((uint8)(~RightEyeball_CTRL_ENABLE));
+  59              		.loc 1 236 0
+  60 0000 024A     		ldr	r2, .L5
+  61 0002 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+  62 0004 03F07F03 		and	r3, r3, #127
+  63 0008 1370     		strb	r3, [r2]
+  64 000a 7047     		bx	lr
+  65              	.L6:
+  66              		.align	2
+  67              	.L5:
+  68 000c 73640040 		.word	1073767539
+  69              		.cfi_endproc
+  70              	.LFE3:
+  71              		.size	RightEyeball_Stop, .-RightEyeball_Stop
+  72              		.section	.text.RightEyeball_WriteCounter,"ax",%progbits
+  73              		.align	1
+  74              		.global	RightEyeball_WriteCounter
+  75              		.thumb
+  76              		.thumb_func
+  77              		.type	RightEyeball_WriteCounter, %function
+  78              	RightEyeball_WriteCounter:
+  79              	.LFB4:
+ 237:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UseControl || RightEyeball_UsingFixedFunction) */
+ 238:Generated_Source\PSoC5/RightEyeball.c **** 
+ 239:Generated_Source\PSoC5/RightEyeball.c ****     /* Globally disable the Fixed Function Block chosen */
+ 240:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UsingFixedFunction)
+ 241:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_GLOBAL_ENABLE &= ((uint8)(~RightEyeball_BLOCK_EN_MASK));
+ 242:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_GLOBAL_STBY_ENABLE &= ((uint8)(~RightEyeball_BLOCK_STBY_EN_MASK));
+ 243:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UsingFixedFunction) */
+ 244:Generated_Source\PSoC5/RightEyeball.c **** }
+ 245:Generated_Source\PSoC5/RightEyeball.c **** 
+ 246:Generated_Source\PSoC5/RightEyeball.c **** #if (RightEyeball_UseOneCompareMode)
+ 247:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_CompareMode1SW)
+ 248:Generated_Source\PSoC5/RightEyeball.c **** 
+ 249:Generated_Source\PSoC5/RightEyeball.c **** 
+ 250:Generated_Source\PSoC5/RightEyeball.c ****         /*******************************************************************************
+ 251:Generated_Source\PSoC5/RightEyeball.c ****         * Function Name: RightEyeball_SetCompareMode
+ 252:Generated_Source\PSoC5/RightEyeball.c ****         ********************************************************************************
+ 253:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 254:Generated_Source\PSoC5/RightEyeball.c ****         * Summary:
+ 255:Generated_Source\PSoC5/RightEyeball.c ****         *  This function writes the Compare Mode for the pwm output when in Dither mode,
+ 256:Generated_Source\PSoC5/RightEyeball.c ****         *  Center Align Mode or One Output Mode.
+ 257:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 258:Generated_Source\PSoC5/RightEyeball.c ****         * Parameters:
+ 259:Generated_Source\PSoC5/RightEyeball.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
+ 260:Generated_Source\PSoC5/RightEyeball.c ****         *                defined in the H file as input arguments.
+ 261:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 262:Generated_Source\PSoC5/RightEyeball.c ****         * Return:
+ 263:Generated_Source\PSoC5/RightEyeball.c ****         *  None
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 7
+
+
+ 264:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 265:Generated_Source\PSoC5/RightEyeball.c ****         *******************************************************************************/
+ 266:Generated_Source\PSoC5/RightEyeball.c ****         void RightEyeball_SetCompareMode(uint8 comparemode) 
+ 267:Generated_Source\PSoC5/RightEyeball.c ****         {
+ 268:Generated_Source\PSoC5/RightEyeball.c ****             #if(RightEyeball_UsingFixedFunction)
+ 269:Generated_Source\PSoC5/RightEyeball.c **** 
+ 270:Generated_Source\PSoC5/RightEyeball.c ****                 #if(0 != RightEyeball_CTRL_CMPMODE1_SHIFT)
+ 271:Generated_Source\PSoC5/RightEyeball.c ****                     uint8 comparemodemasked = ((uint8)((uint8)comparemode << RightEyeball_CTRL_CMPM
+ 272:Generated_Source\PSoC5/RightEyeball.c ****                 #else
+ 273:Generated_Source\PSoC5/RightEyeball.c ****                     uint8 comparemodemasked = comparemode;
+ 274:Generated_Source\PSoC5/RightEyeball.c ****                 #endif /* (0 != RightEyeball_CTRL_CMPMODE1_SHIFT) */
+ 275:Generated_Source\PSoC5/RightEyeball.c **** 
+ 276:Generated_Source\PSoC5/RightEyeball.c ****                 RightEyeball_CONTROL3 &= ((uint8)(~RightEyeball_CTRL_CMPMODE1_MASK)); /*Clear Exist
+ 277:Generated_Source\PSoC5/RightEyeball.c ****                 RightEyeball_CONTROL3 |= comparemodemasked;
+ 278:Generated_Source\PSoC5/RightEyeball.c **** 
+ 279:Generated_Source\PSoC5/RightEyeball.c ****             #elif (RightEyeball_UseControl)
+ 280:Generated_Source\PSoC5/RightEyeball.c **** 
+ 281:Generated_Source\PSoC5/RightEyeball.c ****                 #if(0 != RightEyeball_CTRL_CMPMODE1_SHIFT)
+ 282:Generated_Source\PSoC5/RightEyeball.c ****                     uint8 comparemode1masked = ((uint8)((uint8)comparemode << RightEyeball_CTRL_CMP
+ 283:Generated_Source\PSoC5/RightEyeball.c ****                                                 RightEyeball_CTRL_CMPMODE1_MASK;
+ 284:Generated_Source\PSoC5/RightEyeball.c ****                 #else
+ 285:Generated_Source\PSoC5/RightEyeball.c ****                     uint8 comparemode1masked = comparemode & RightEyeball_CTRL_CMPMODE1_MASK;
+ 286:Generated_Source\PSoC5/RightEyeball.c ****                 #endif /* (0 != RightEyeball_CTRL_CMPMODE1_SHIFT) */
+ 287:Generated_Source\PSoC5/RightEyeball.c **** 
+ 288:Generated_Source\PSoC5/RightEyeball.c ****                 #if(0 != RightEyeball_CTRL_CMPMODE2_SHIFT)
+ 289:Generated_Source\PSoC5/RightEyeball.c ****                     uint8 comparemode2masked = ((uint8)((uint8)comparemode << RightEyeball_CTRL_CMP
+ 290:Generated_Source\PSoC5/RightEyeball.c ****                                                RightEyeball_CTRL_CMPMODE2_MASK;
+ 291:Generated_Source\PSoC5/RightEyeball.c ****                 #else
+ 292:Generated_Source\PSoC5/RightEyeball.c ****                     uint8 comparemode2masked = comparemode & RightEyeball_CTRL_CMPMODE2_MASK;
+ 293:Generated_Source\PSoC5/RightEyeball.c ****                 #endif /* (0 != RightEyeball_CTRL_CMPMODE2_SHIFT) */
+ 294:Generated_Source\PSoC5/RightEyeball.c **** 
+ 295:Generated_Source\PSoC5/RightEyeball.c ****                 /*Clear existing mode */
+ 296:Generated_Source\PSoC5/RightEyeball.c ****                 RightEyeball_CONTROL &= ((uint8)(~(RightEyeball_CTRL_CMPMODE1_MASK |
+ 297:Generated_Source\PSoC5/RightEyeball.c ****                                             RightEyeball_CTRL_CMPMODE2_MASK)));
+ 298:Generated_Source\PSoC5/RightEyeball.c ****                 RightEyeball_CONTROL |= (comparemode1masked | comparemode2masked);
+ 299:Generated_Source\PSoC5/RightEyeball.c **** 
+ 300:Generated_Source\PSoC5/RightEyeball.c ****             #else
+ 301:Generated_Source\PSoC5/RightEyeball.c ****                 uint8 temp = comparemode;
+ 302:Generated_Source\PSoC5/RightEyeball.c ****             #endif /* (RightEyeball_UsingFixedFunction) */
+ 303:Generated_Source\PSoC5/RightEyeball.c ****         }
+ 304:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* RightEyeball_CompareMode1SW */
+ 305:Generated_Source\PSoC5/RightEyeball.c **** 
+ 306:Generated_Source\PSoC5/RightEyeball.c **** #else /* UseOneCompareMode */
+ 307:Generated_Source\PSoC5/RightEyeball.c **** 
+ 308:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_CompareMode1SW)
+ 309:Generated_Source\PSoC5/RightEyeball.c **** 
+ 310:Generated_Source\PSoC5/RightEyeball.c **** 
+ 311:Generated_Source\PSoC5/RightEyeball.c ****         /*******************************************************************************
+ 312:Generated_Source\PSoC5/RightEyeball.c ****         * Function Name: RightEyeball_SetCompareMode1
+ 313:Generated_Source\PSoC5/RightEyeball.c ****         ********************************************************************************
+ 314:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 315:Generated_Source\PSoC5/RightEyeball.c ****         * Summary:
+ 316:Generated_Source\PSoC5/RightEyeball.c ****         *  This function writes the Compare Mode for the pwm or pwm1 output
+ 317:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 318:Generated_Source\PSoC5/RightEyeball.c ****         * Parameters:
+ 319:Generated_Source\PSoC5/RightEyeball.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
+ 320:Generated_Source\PSoC5/RightEyeball.c ****         *                defined in the H file as input arguments.
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 8
+
+
+ 321:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 322:Generated_Source\PSoC5/RightEyeball.c ****         * Return:
+ 323:Generated_Source\PSoC5/RightEyeball.c ****         *  None
+ 324:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 325:Generated_Source\PSoC5/RightEyeball.c ****         *******************************************************************************/
+ 326:Generated_Source\PSoC5/RightEyeball.c ****         void RightEyeball_SetCompareMode1(uint8 comparemode) 
+ 327:Generated_Source\PSoC5/RightEyeball.c ****         {
+ 328:Generated_Source\PSoC5/RightEyeball.c ****             #if(0 != RightEyeball_CTRL_CMPMODE1_SHIFT)
+ 329:Generated_Source\PSoC5/RightEyeball.c ****                 uint8 comparemodemasked = ((uint8)((uint8)comparemode << RightEyeball_CTRL_CMPMODE1
+ 330:Generated_Source\PSoC5/RightEyeball.c ****                                            RightEyeball_CTRL_CMPMODE1_MASK;
+ 331:Generated_Source\PSoC5/RightEyeball.c ****             #else
+ 332:Generated_Source\PSoC5/RightEyeball.c ****                 uint8 comparemodemasked = comparemode & RightEyeball_CTRL_CMPMODE1_MASK;
+ 333:Generated_Source\PSoC5/RightEyeball.c ****             #endif /* (0 != RightEyeball_CTRL_CMPMODE1_SHIFT) */
+ 334:Generated_Source\PSoC5/RightEyeball.c **** 
+ 335:Generated_Source\PSoC5/RightEyeball.c ****             #if (RightEyeball_UseControl)
+ 336:Generated_Source\PSoC5/RightEyeball.c ****                 RightEyeball_CONTROL &= ((uint8)(~RightEyeball_CTRL_CMPMODE1_MASK)); /*Clear existi
+ 337:Generated_Source\PSoC5/RightEyeball.c ****                 RightEyeball_CONTROL |= comparemodemasked;
+ 338:Generated_Source\PSoC5/RightEyeball.c ****             #endif /* (RightEyeball_UseControl) */
+ 339:Generated_Source\PSoC5/RightEyeball.c ****         }
+ 340:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* RightEyeball_CompareMode1SW */
+ 341:Generated_Source\PSoC5/RightEyeball.c **** 
+ 342:Generated_Source\PSoC5/RightEyeball.c **** #if (RightEyeball_CompareMode2SW)
+ 343:Generated_Source\PSoC5/RightEyeball.c **** 
+ 344:Generated_Source\PSoC5/RightEyeball.c **** 
+ 345:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 346:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_SetCompareMode2
+ 347:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 348:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 349:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 350:Generated_Source\PSoC5/RightEyeball.c ****     *  This function writes the Compare Mode for the pwm or pwm2 output
+ 351:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 352:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 353:Generated_Source\PSoC5/RightEyeball.c ****     *  comparemode:  The new compare mode for the PWM output. Use the compare types
+ 354:Generated_Source\PSoC5/RightEyeball.c ****     *                defined in the H file as input arguments.
+ 355:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 356:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 357:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 358:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 359:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 360:Generated_Source\PSoC5/RightEyeball.c ****     void RightEyeball_SetCompareMode2(uint8 comparemode) 
+ 361:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 362:Generated_Source\PSoC5/RightEyeball.c **** 
+ 363:Generated_Source\PSoC5/RightEyeball.c ****         #if(0 != RightEyeball_CTRL_CMPMODE2_SHIFT)
+ 364:Generated_Source\PSoC5/RightEyeball.c ****             uint8 comparemodemasked = ((uint8)((uint8)comparemode << RightEyeball_CTRL_CMPMODE2_SHI
+ 365:Generated_Source\PSoC5/RightEyeball.c ****                                                  RightEyeball_CTRL_CMPMODE2_MASK;
+ 366:Generated_Source\PSoC5/RightEyeball.c ****         #else
+ 367:Generated_Source\PSoC5/RightEyeball.c ****             uint8 comparemodemasked = comparemode & RightEyeball_CTRL_CMPMODE2_MASK;
+ 368:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (0 != RightEyeball_CTRL_CMPMODE2_SHIFT) */
+ 369:Generated_Source\PSoC5/RightEyeball.c **** 
+ 370:Generated_Source\PSoC5/RightEyeball.c ****         #if (RightEyeball_UseControl)
+ 371:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_CONTROL &= ((uint8)(~RightEyeball_CTRL_CMPMODE2_MASK)); /*Clear existing m
+ 372:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_CONTROL |= comparemodemasked;
+ 373:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UseControl) */
+ 374:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 375:Generated_Source\PSoC5/RightEyeball.c ****     #endif /*RightEyeball_CompareMode2SW */
+ 376:Generated_Source\PSoC5/RightEyeball.c **** 
+ 377:Generated_Source\PSoC5/RightEyeball.c **** #endif /* UseOneCompareMode */
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 9
+
+
+ 378:Generated_Source\PSoC5/RightEyeball.c **** 
+ 379:Generated_Source\PSoC5/RightEyeball.c **** 
+ 380:Generated_Source\PSoC5/RightEyeball.c **** #if (!RightEyeball_UsingFixedFunction)
+ 381:Generated_Source\PSoC5/RightEyeball.c **** 
+ 382:Generated_Source\PSoC5/RightEyeball.c **** 
+ 383:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 384:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_WriteCounter
+ 385:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 386:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 387:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 388:Generated_Source\PSoC5/RightEyeball.c ****     *  Writes a new counter value directly to the counter register. This will be
+ 389:Generated_Source\PSoC5/RightEyeball.c ****     *  implemented for that currently running period and only that period. This API
+ 390:Generated_Source\PSoC5/RightEyeball.c ****     *  is valid only for UDB implementation and not available for fixed function
+ 391:Generated_Source\PSoC5/RightEyeball.c ****     *  PWM implementation.
+ 392:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 393:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 394:Generated_Source\PSoC5/RightEyeball.c ****     *  counter:  The period new period counter value.
+ 395:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 396:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 397:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 398:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 399:Generated_Source\PSoC5/RightEyeball.c ****     * Side Effects:
+ 400:Generated_Source\PSoC5/RightEyeball.c ****     *  The PWM Period will be reloaded when a counter value will be a zero
+ 401:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 402:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 403:Generated_Source\PSoC5/RightEyeball.c ****     void RightEyeball_WriteCounter(uint16 counter) \
+ 404:Generated_Source\PSoC5/RightEyeball.c ****                                        
+ 405:Generated_Source\PSoC5/RightEyeball.c ****     {
+  80              		.loc 1 405 0
+  81              		.cfi_startproc
+  82              		@ args = 0, pretend = 0, frame = 0
+  83              		@ frame_needed = 0, uses_anonymous_args = 0
+  84              		@ link register save eliminated.
+  85              	.LVL0:
+ 406:Generated_Source\PSoC5/RightEyeball.c ****         CY_SET_REG16(RightEyeball_COUNTER_LSB_PTR, counter);
+  86              		.loc 1 406 0
+  87 0000 014B     		ldr	r3, .L8
+  88 0002 1880     		strh	r0, [r3]	@ movhi
+  89 0004 7047     		bx	lr
+  90              	.L9:
+  91 0006 00BF     		.align	2
+  92              	.L8:
+  93 0008 04680040 		.word	1073768452
+  94              		.cfi_endproc
+  95              	.LFE4:
+  96              		.size	RightEyeball_WriteCounter, .-RightEyeball_WriteCounter
+  97              		.section	.text.RightEyeball_ReadCounter,"ax",%progbits
+  98              		.align	1
+  99              		.global	RightEyeball_ReadCounter
+ 100              		.thumb
+ 101              		.thumb_func
+ 102              		.type	RightEyeball_ReadCounter, %function
+ 103              	RightEyeball_ReadCounter:
+ 104              	.LFB5:
+ 407:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 408:Generated_Source\PSoC5/RightEyeball.c **** 
+ 409:Generated_Source\PSoC5/RightEyeball.c **** 
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 10
+
+
+ 410:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 411:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_ReadCounter
+ 412:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 413:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 414:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 415:Generated_Source\PSoC5/RightEyeball.c ****     *  This function returns the current value of the counter.  It doesn't matter
+ 416:Generated_Source\PSoC5/RightEyeball.c ****     *  if the counter is enabled or running.
+ 417:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 418:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 419:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 420:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 421:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 422:Generated_Source\PSoC5/RightEyeball.c ****     *  The current value of the counter.
+ 423:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 424:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 425:Generated_Source\PSoC5/RightEyeball.c ****     uint16 RightEyeball_ReadCounter(void) 
+ 426:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 105              		.loc 1 426 0
+ 106              		.cfi_startproc
+ 107              		@ args = 0, pretend = 0, frame = 0
+ 108              		@ frame_needed = 0, uses_anonymous_args = 0
+ 109              		@ link register save eliminated.
+ 427:Generated_Source\PSoC5/RightEyeball.c ****         /* Force capture by reading Accumulator */
+ 428:Generated_Source\PSoC5/RightEyeball.c ****         /* Must first do a software capture to be able to read the counter */
+ 429:Generated_Source\PSoC5/RightEyeball.c ****         /* It is up to the user code to make sure there isn't already captured data in the FIFO */
+ 430:Generated_Source\PSoC5/RightEyeball.c ****           (void)CY_GET_REG8(RightEyeball_COUNTERCAP_LSB_PTR_8BIT);
+ 110              		.loc 1 430 0
+ 111 0000 024B     		ldr	r3, .L11
+ 112 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 431:Generated_Source\PSoC5/RightEyeball.c **** 
+ 432:Generated_Source\PSoC5/RightEyeball.c ****         /* Read the data from the FIFO */
+ 433:Generated_Source\PSoC5/RightEyeball.c ****         return (CY_GET_REG16(RightEyeball_CAPTURE_LSB_PTR));
+ 113              		.loc 1 433 0
+ 114 0004 024B     		ldr	r3, .L11+4
+ 115 0006 1888     		ldrh	r0, [r3]
+ 434:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 116              		.loc 1 434 0
+ 117 0008 80B2     		uxth	r0, r0
+ 118 000a 7047     		bx	lr
+ 119              	.L12:
+ 120              		.align	2
+ 121              	.L11:
+ 122 000c 12640040 		.word	1073767442
+ 123 0010 A4680040 		.word	1073768612
+ 124              		.cfi_endproc
+ 125              	.LFE5:
+ 126              		.size	RightEyeball_ReadCounter, .-RightEyeball_ReadCounter
+ 127              		.section	.text.RightEyeball_ClearFIFO,"ax",%progbits
+ 128              		.align	1
+ 129              		.global	RightEyeball_ClearFIFO
+ 130              		.thumb
+ 131              		.thumb_func
+ 132              		.type	RightEyeball_ClearFIFO, %function
+ 133              	RightEyeball_ClearFIFO:
+ 134              	.LFB6:
+ 435:Generated_Source\PSoC5/RightEyeball.c **** 
+ 436:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UseStatus)
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 11
+
+
+ 437:Generated_Source\PSoC5/RightEyeball.c **** 
+ 438:Generated_Source\PSoC5/RightEyeball.c **** 
+ 439:Generated_Source\PSoC5/RightEyeball.c ****         /*******************************************************************************
+ 440:Generated_Source\PSoC5/RightEyeball.c ****         * Function Name: RightEyeball_ClearFIFO
+ 441:Generated_Source\PSoC5/RightEyeball.c ****         ********************************************************************************
+ 442:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 443:Generated_Source\PSoC5/RightEyeball.c ****         * Summary:
+ 444:Generated_Source\PSoC5/RightEyeball.c ****         *  This function clears all capture data from the capture FIFO
+ 445:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 446:Generated_Source\PSoC5/RightEyeball.c ****         * Parameters:
+ 447:Generated_Source\PSoC5/RightEyeball.c ****         *  None
+ 448:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 449:Generated_Source\PSoC5/RightEyeball.c ****         * Return:
+ 450:Generated_Source\PSoC5/RightEyeball.c ****         *  None
+ 451:Generated_Source\PSoC5/RightEyeball.c ****         *
+ 452:Generated_Source\PSoC5/RightEyeball.c ****         *******************************************************************************/
+ 453:Generated_Source\PSoC5/RightEyeball.c ****         void RightEyeball_ClearFIFO(void) 
+ 454:Generated_Source\PSoC5/RightEyeball.c ****         {
+ 135              		.loc 1 454 0
+ 136              		.cfi_startproc
+ 137              		@ args = 0, pretend = 0, frame = 0
+ 138              		@ frame_needed = 0, uses_anonymous_args = 0
+ 139              		@ link register save eliminated.
+ 140              	.LBB16:
+ 141              	.LBB17:
+ 455:Generated_Source\PSoC5/RightEyeball.c ****             while(0u != (RightEyeball_ReadStatusRegister() & RightEyeball_STATUS_FIFONEMPTY))
+ 456:Generated_Source\PSoC5/RightEyeball.c ****             {
+ 457:Generated_Source\PSoC5/RightEyeball.c ****                 (void)RightEyeball_ReadCapture();
+ 458:Generated_Source\PSoC5/RightEyeball.c ****             }
+ 459:Generated_Source\PSoC5/RightEyeball.c ****         }
+ 460:Generated_Source\PSoC5/RightEyeball.c **** 
+ 461:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* RightEyeball_UseStatus */
+ 462:Generated_Source\PSoC5/RightEyeball.c **** 
+ 463:Generated_Source\PSoC5/RightEyeball.c **** #endif /* !RightEyeball_UsingFixedFunction */
+ 464:Generated_Source\PSoC5/RightEyeball.c **** 
+ 465:Generated_Source\PSoC5/RightEyeball.c **** 
+ 466:Generated_Source\PSoC5/RightEyeball.c **** /*******************************************************************************
+ 467:Generated_Source\PSoC5/RightEyeball.c **** * Function Name: RightEyeball_WritePeriod
+ 468:Generated_Source\PSoC5/RightEyeball.c **** ********************************************************************************
+ 469:Generated_Source\PSoC5/RightEyeball.c **** *
+ 470:Generated_Source\PSoC5/RightEyeball.c **** * Summary:
+ 471:Generated_Source\PSoC5/RightEyeball.c **** *  This function is used to change the period of the counter.  The new period
+ 472:Generated_Source\PSoC5/RightEyeball.c **** *  will be loaded the next time terminal count is detected.
+ 473:Generated_Source\PSoC5/RightEyeball.c **** *
+ 474:Generated_Source\PSoC5/RightEyeball.c **** * Parameters:
+ 475:Generated_Source\PSoC5/RightEyeball.c **** *  period:  Period value. May be between 1 and (2^Resolution)-1.  A value of 0
+ 476:Generated_Source\PSoC5/RightEyeball.c **** *           will result in the counter remaining at zero.
+ 477:Generated_Source\PSoC5/RightEyeball.c **** *
+ 478:Generated_Source\PSoC5/RightEyeball.c **** * Return:
+ 479:Generated_Source\PSoC5/RightEyeball.c **** *  None
+ 480:Generated_Source\PSoC5/RightEyeball.c **** *
+ 481:Generated_Source\PSoC5/RightEyeball.c **** *******************************************************************************/
+ 482:Generated_Source\PSoC5/RightEyeball.c **** void RightEyeball_WritePeriod(uint16 period) 
+ 483:Generated_Source\PSoC5/RightEyeball.c **** {
+ 484:Generated_Source\PSoC5/RightEyeball.c ****     #if(RightEyeball_UsingFixedFunction)
+ 485:Generated_Source\PSoC5/RightEyeball.c ****         CY_SET_REG16(RightEyeball_PERIOD_LSB_PTR, (uint16)period);
+ 486:Generated_Source\PSoC5/RightEyeball.c ****     #else
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 12
+
+
+ 487:Generated_Source\PSoC5/RightEyeball.c ****         CY_SET_REG16(RightEyeball_PERIOD_LSB_PTR, period);
+ 488:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UsingFixedFunction) */
+ 489:Generated_Source\PSoC5/RightEyeball.c **** }
+ 490:Generated_Source\PSoC5/RightEyeball.c **** 
+ 491:Generated_Source\PSoC5/RightEyeball.c **** #if (RightEyeball_UseOneCompareMode)
+ 492:Generated_Source\PSoC5/RightEyeball.c **** 
+ 493:Generated_Source\PSoC5/RightEyeball.c **** 
+ 494:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 495:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_WriteCompare
+ 496:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 497:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 498:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 499:Generated_Source\PSoC5/RightEyeball.c ****     *  This funtion is used to change the compare1 value when the PWM is in Dither
+ 500:Generated_Source\PSoC5/RightEyeball.c ****     *  mode. The compare output will reflect the new value on the next UDB clock.
+ 501:Generated_Source\PSoC5/RightEyeball.c ****     *  The compare output will be driven high when the present counter value is
+ 502:Generated_Source\PSoC5/RightEyeball.c ****     *  compared to the compare value based on the compare mode defined in
+ 503:Generated_Source\PSoC5/RightEyeball.c ****     *  Dither Mode.
+ 504:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 505:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 506:Generated_Source\PSoC5/RightEyeball.c ****     *  compare:  New compare value.
+ 507:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 508:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 509:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 510:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 511:Generated_Source\PSoC5/RightEyeball.c ****     * Side Effects:
+ 512:Generated_Source\PSoC5/RightEyeball.c ****     *  This function is only available if the PWM mode parameter is set to
+ 513:Generated_Source\PSoC5/RightEyeball.c ****     *  Dither Mode, Center Aligned Mode or One Output Mode
+ 514:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 515:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 516:Generated_Source\PSoC5/RightEyeball.c ****     void RightEyeball_WriteCompare(uint16 compare) \
+ 517:Generated_Source\PSoC5/RightEyeball.c ****                                        
+ 518:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 519:Generated_Source\PSoC5/RightEyeball.c ****         #if(RightEyeball_UsingFixedFunction)
+ 520:Generated_Source\PSoC5/RightEyeball.c ****             CY_SET_REG16(RightEyeball_COMPARE1_LSB_PTR, (uint16)compare);
+ 521:Generated_Source\PSoC5/RightEyeball.c ****         #else
+ 522:Generated_Source\PSoC5/RightEyeball.c ****             CY_SET_REG16(RightEyeball_COMPARE1_LSB_PTR, compare);
+ 523:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UsingFixedFunction) */
+ 524:Generated_Source\PSoC5/RightEyeball.c **** 
+ 525:Generated_Source\PSoC5/RightEyeball.c ****         #if (RightEyeball_PWMMode == RightEyeball__B_PWM__DITHER)
+ 526:Generated_Source\PSoC5/RightEyeball.c ****             #if(RightEyeball_UsingFixedFunction)
+ 527:Generated_Source\PSoC5/RightEyeball.c ****                 CY_SET_REG16(RightEyeball_COMPARE2_LSB_PTR, (uint16)(compare + 1u));
+ 528:Generated_Source\PSoC5/RightEyeball.c ****             #else
+ 529:Generated_Source\PSoC5/RightEyeball.c ****                 CY_SET_REG16(RightEyeball_COMPARE2_LSB_PTR, (compare + 1u));
+ 530:Generated_Source\PSoC5/RightEyeball.c ****             #endif /* (RightEyeball_UsingFixedFunction) */
+ 531:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_PWMMode == RightEyeball__B_PWM__DITHER) */
+ 532:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 533:Generated_Source\PSoC5/RightEyeball.c **** 
+ 534:Generated_Source\PSoC5/RightEyeball.c **** 
+ 535:Generated_Source\PSoC5/RightEyeball.c **** #else
+ 536:Generated_Source\PSoC5/RightEyeball.c **** 
+ 537:Generated_Source\PSoC5/RightEyeball.c **** 
+ 538:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 539:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_WriteCompare1
+ 540:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 541:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 542:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 543:Generated_Source\PSoC5/RightEyeball.c ****     *  This funtion is used to change the compare1 value.  The compare output will
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 13
+
+
+ 544:Generated_Source\PSoC5/RightEyeball.c ****     *  reflect the new value on the next UDB clock.  The compare output will be
+ 545:Generated_Source\PSoC5/RightEyeball.c ****     *  driven high when the present counter value is less than or less than or
+ 546:Generated_Source\PSoC5/RightEyeball.c ****     *  equal to the compare register, depending on the mode.
+ 547:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 548:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 549:Generated_Source\PSoC5/RightEyeball.c ****     *  compare:  New compare value.
+ 550:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 551:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 552:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 553:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 554:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 555:Generated_Source\PSoC5/RightEyeball.c ****     void RightEyeball_WriteCompare1(uint16 compare) \
+ 556:Generated_Source\PSoC5/RightEyeball.c ****                                         
+ 557:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 558:Generated_Source\PSoC5/RightEyeball.c ****         #if(RightEyeball_UsingFixedFunction)
+ 559:Generated_Source\PSoC5/RightEyeball.c ****             CY_SET_REG16(RightEyeball_COMPARE1_LSB_PTR, (uint16)compare);
+ 560:Generated_Source\PSoC5/RightEyeball.c ****         #else
+ 561:Generated_Source\PSoC5/RightEyeball.c ****             CY_SET_REG16(RightEyeball_COMPARE1_LSB_PTR, compare);
+ 562:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UsingFixedFunction) */
+ 563:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 564:Generated_Source\PSoC5/RightEyeball.c **** 
+ 565:Generated_Source\PSoC5/RightEyeball.c **** 
+ 566:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 567:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_WriteCompare2
+ 568:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 569:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 570:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 571:Generated_Source\PSoC5/RightEyeball.c ****     *  This funtion is used to change the compare value, for compare1 output.
+ 572:Generated_Source\PSoC5/RightEyeball.c ****     *  The compare output will reflect the new value on the next UDB clock.
+ 573:Generated_Source\PSoC5/RightEyeball.c ****     *  The compare output will be driven high when the present counter value is
+ 574:Generated_Source\PSoC5/RightEyeball.c ****     *  less than or less than or equal to the compare register, depending on the
+ 575:Generated_Source\PSoC5/RightEyeball.c ****     *  mode.
+ 576:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 577:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 578:Generated_Source\PSoC5/RightEyeball.c ****     *  compare:  New compare value.
+ 579:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 580:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 581:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 582:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 583:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 584:Generated_Source\PSoC5/RightEyeball.c ****     void RightEyeball_WriteCompare2(uint16 compare) \
+ 585:Generated_Source\PSoC5/RightEyeball.c ****                                         
+ 586:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 587:Generated_Source\PSoC5/RightEyeball.c ****         #if(RightEyeball_UsingFixedFunction)
+ 588:Generated_Source\PSoC5/RightEyeball.c ****             CY_SET_REG16(RightEyeball_COMPARE2_LSB_PTR, compare);
+ 589:Generated_Source\PSoC5/RightEyeball.c ****         #else
+ 590:Generated_Source\PSoC5/RightEyeball.c ****             CY_SET_REG16(RightEyeball_COMPARE2_LSB_PTR, compare);
+ 591:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UsingFixedFunction) */
+ 592:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 593:Generated_Source\PSoC5/RightEyeball.c **** #endif /* UseOneCompareMode */
+ 594:Generated_Source\PSoC5/RightEyeball.c **** 
+ 595:Generated_Source\PSoC5/RightEyeball.c **** #if (RightEyeball_DeadBandUsed)
+ 596:Generated_Source\PSoC5/RightEyeball.c **** 
+ 597:Generated_Source\PSoC5/RightEyeball.c **** 
+ 598:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 599:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_WriteDeadTime
+ 600:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 14
+
+
+ 601:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 602:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 603:Generated_Source\PSoC5/RightEyeball.c ****     *  This function writes the dead-band counts to the corresponding register
+ 604:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 605:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 606:Generated_Source\PSoC5/RightEyeball.c ****     *  deadtime:  Number of counts for dead time
+ 607:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 608:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 609:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 610:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 611:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 612:Generated_Source\PSoC5/RightEyeball.c ****     void RightEyeball_WriteDeadTime(uint8 deadtime) 
+ 613:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 614:Generated_Source\PSoC5/RightEyeball.c ****         /* If using the Dead Band 1-255 mode then just write the register */
+ 615:Generated_Source\PSoC5/RightEyeball.c ****         #if(!RightEyeball_DeadBand2_4)
+ 616:Generated_Source\PSoC5/RightEyeball.c ****             CY_SET_REG8(RightEyeball_DEADBAND_COUNT_PTR, deadtime);
+ 617:Generated_Source\PSoC5/RightEyeball.c ****         #else
+ 618:Generated_Source\PSoC5/RightEyeball.c ****             /* Otherwise the data has to be masked and offset */
+ 619:Generated_Source\PSoC5/RightEyeball.c ****             /* Clear existing data */
+ 620:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_DEADBAND_COUNT &= ((uint8)(~RightEyeball_DEADBAND_COUNT_MASK));
+ 621:Generated_Source\PSoC5/RightEyeball.c **** 
+ 622:Generated_Source\PSoC5/RightEyeball.c ****             /* Set new dead time */
+ 623:Generated_Source\PSoC5/RightEyeball.c ****             #if(RightEyeball_DEADBAND_COUNT_SHIFT)
+ 624:Generated_Source\PSoC5/RightEyeball.c ****                 RightEyeball_DEADBAND_COUNT |= ((uint8)((uint8)deadtime << RightEyeball_DEADBAND_CO
+ 625:Generated_Source\PSoC5/RightEyeball.c ****                                                     RightEyeball_DEADBAND_COUNT_MASK;
+ 626:Generated_Source\PSoC5/RightEyeball.c ****             #else
+ 627:Generated_Source\PSoC5/RightEyeball.c ****                 RightEyeball_DEADBAND_COUNT |= deadtime & RightEyeball_DEADBAND_COUNT_MASK;
+ 628:Generated_Source\PSoC5/RightEyeball.c ****             #endif /* (RightEyeball_DEADBAND_COUNT_SHIFT) */
+ 629:Generated_Source\PSoC5/RightEyeball.c **** 
+ 630:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (!RightEyeball_DeadBand2_4) */
+ 631:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 632:Generated_Source\PSoC5/RightEyeball.c **** 
+ 633:Generated_Source\PSoC5/RightEyeball.c **** 
+ 634:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 635:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_ReadDeadTime
+ 636:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 637:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 638:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 639:Generated_Source\PSoC5/RightEyeball.c ****     *  This function reads the dead-band counts from the corresponding register
+ 640:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 641:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 642:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 643:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 644:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 645:Generated_Source\PSoC5/RightEyeball.c ****     *  Dead Band Counts
+ 646:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 647:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 648:Generated_Source\PSoC5/RightEyeball.c ****     uint8 RightEyeball_ReadDeadTime(void) 
+ 649:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 650:Generated_Source\PSoC5/RightEyeball.c ****         /* If using the Dead Band 1-255 mode then just read the register */
+ 651:Generated_Source\PSoC5/RightEyeball.c ****         #if(!RightEyeball_DeadBand2_4)
+ 652:Generated_Source\PSoC5/RightEyeball.c ****             return (CY_GET_REG8(RightEyeball_DEADBAND_COUNT_PTR));
+ 653:Generated_Source\PSoC5/RightEyeball.c ****         #else
+ 654:Generated_Source\PSoC5/RightEyeball.c **** 
+ 655:Generated_Source\PSoC5/RightEyeball.c ****             /* Otherwise the data has to be masked and offset */
+ 656:Generated_Source\PSoC5/RightEyeball.c ****             #if(RightEyeball_DEADBAND_COUNT_SHIFT)
+ 657:Generated_Source\PSoC5/RightEyeball.c ****                 return ((uint8)(((uint8)(RightEyeball_DEADBAND_COUNT & RightEyeball_DEADBAND_COUNT_
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 15
+
+
+ 658:Generated_Source\PSoC5/RightEyeball.c ****                                                                            RightEyeball_DEADBAND_CO
+ 659:Generated_Source\PSoC5/RightEyeball.c ****             #else
+ 660:Generated_Source\PSoC5/RightEyeball.c ****                 return (RightEyeball_DEADBAND_COUNT & RightEyeball_DEADBAND_COUNT_MASK);
+ 661:Generated_Source\PSoC5/RightEyeball.c ****             #endif /* (RightEyeball_DEADBAND_COUNT_SHIFT) */
+ 662:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (!RightEyeball_DeadBand2_4) */
+ 663:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 664:Generated_Source\PSoC5/RightEyeball.c **** #endif /* DeadBandUsed */
+ 665:Generated_Source\PSoC5/RightEyeball.c **** 
+ 666:Generated_Source\PSoC5/RightEyeball.c **** #if (RightEyeball_UseStatus || RightEyeball_UsingFixedFunction)
+ 667:Generated_Source\PSoC5/RightEyeball.c **** 
+ 668:Generated_Source\PSoC5/RightEyeball.c **** 
+ 669:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 670:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_SetInterruptMode
+ 671:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 672:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 673:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 674:Generated_Source\PSoC5/RightEyeball.c ****     *  This function configures the interrupts mask control of theinterrupt
+ 675:Generated_Source\PSoC5/RightEyeball.c ****     *  source status register.
+ 676:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 677:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 678:Generated_Source\PSoC5/RightEyeball.c ****     *  uint8 interruptMode: Bit field containing the interrupt sources enabled
+ 679:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 680:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 681:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 682:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 683:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 684:Generated_Source\PSoC5/RightEyeball.c ****     void RightEyeball_SetInterruptMode(uint8 interruptMode) 
+ 685:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 686:Generated_Source\PSoC5/RightEyeball.c ****         CY_SET_REG8(RightEyeball_STATUS_MASK_PTR, interruptMode);
+ 687:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 688:Generated_Source\PSoC5/RightEyeball.c **** 
+ 689:Generated_Source\PSoC5/RightEyeball.c **** 
+ 690:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 691:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_ReadStatusRegister
+ 692:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 693:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 694:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 695:Generated_Source\PSoC5/RightEyeball.c ****     *  This function returns the current state of the status register.
+ 696:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 697:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 698:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 699:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 700:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 701:Generated_Source\PSoC5/RightEyeball.c ****     *  uint8 : Current status register value. The status register bits are:
+ 702:Generated_Source\PSoC5/RightEyeball.c ****     *  [7:6] : Unused(0)
+ 703:Generated_Source\PSoC5/RightEyeball.c ****     *  [5]   : Kill event output
+ 704:Generated_Source\PSoC5/RightEyeball.c ****     *  [4]   : FIFO not empty
+ 705:Generated_Source\PSoC5/RightEyeball.c ****     *  [3]   : FIFO full
+ 706:Generated_Source\PSoC5/RightEyeball.c ****     *  [2]   : Terminal count
+ 707:Generated_Source\PSoC5/RightEyeball.c ****     *  [1]   : Compare output 2
+ 708:Generated_Source\PSoC5/RightEyeball.c ****     *  [0]   : Compare output 1
+ 709:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 710:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 711:Generated_Source\PSoC5/RightEyeball.c ****     uint8 RightEyeball_ReadStatusRegister(void) 
+ 712:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 713:Generated_Source\PSoC5/RightEyeball.c ****         return (CY_GET_REG8(RightEyeball_STATUS_PTR));
+ 142              		.loc 1 713 0
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 16
+
+
+ 143 0000 034A     		ldr	r2, .L18
+ 144              	.LBE17:
+ 145              	.LBE16:
+ 146              	.LBB19:
+ 147              	.LBB20:
+ 714:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 715:Generated_Source\PSoC5/RightEyeball.c **** 
+ 716:Generated_Source\PSoC5/RightEyeball.c **** #endif /* (RightEyeball_UseStatus || RightEyeball_UsingFixedFunction) */
+ 717:Generated_Source\PSoC5/RightEyeball.c **** 
+ 718:Generated_Source\PSoC5/RightEyeball.c **** 
+ 719:Generated_Source\PSoC5/RightEyeball.c **** #if (RightEyeball_UseControl)
+ 720:Generated_Source\PSoC5/RightEyeball.c **** 
+ 721:Generated_Source\PSoC5/RightEyeball.c **** 
+ 722:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 723:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_ReadControlRegister
+ 724:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 725:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 726:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 727:Generated_Source\PSoC5/RightEyeball.c ****     *  Returns the current state of the control register. This API is available
+ 728:Generated_Source\PSoC5/RightEyeball.c ****     *  only if the control register is not removed.
+ 729:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 730:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 731:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 732:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 733:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 734:Generated_Source\PSoC5/RightEyeball.c ****     *  uint8 : Current control register value
+ 735:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 736:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 737:Generated_Source\PSoC5/RightEyeball.c ****     uint8 RightEyeball_ReadControlRegister(void) 
+ 738:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 739:Generated_Source\PSoC5/RightEyeball.c ****         uint8 result;
+ 740:Generated_Source\PSoC5/RightEyeball.c **** 
+ 741:Generated_Source\PSoC5/RightEyeball.c ****         result = CY_GET_REG8(RightEyeball_CONTROL_PTR);
+ 742:Generated_Source\PSoC5/RightEyeball.c ****         return (result);
+ 743:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 744:Generated_Source\PSoC5/RightEyeball.c **** 
+ 745:Generated_Source\PSoC5/RightEyeball.c **** 
+ 746:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 747:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_WriteControlRegister
+ 748:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 749:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 750:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 751:Generated_Source\PSoC5/RightEyeball.c ****     *  Sets the bit field of the control register. This API is available only if
+ 752:Generated_Source\PSoC5/RightEyeball.c ****     *  the control register is not removed.
+ 753:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 754:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 755:Generated_Source\PSoC5/RightEyeball.c ****     *  uint8 control: Control register bit field, The status register bits are:
+ 756:Generated_Source\PSoC5/RightEyeball.c ****     *  [7]   : PWM Enable
+ 757:Generated_Source\PSoC5/RightEyeball.c ****     *  [6]   : Reset
+ 758:Generated_Source\PSoC5/RightEyeball.c ****     *  [5:3] : Compare Mode2
+ 759:Generated_Source\PSoC5/RightEyeball.c ****     *  [2:0] : Compare Mode2
+ 760:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 761:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 762:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 763:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 764:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 765:Generated_Source\PSoC5/RightEyeball.c ****     void RightEyeball_WriteControlRegister(uint8 control) 
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 17
+
+
+ 766:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 767:Generated_Source\PSoC5/RightEyeball.c ****         CY_SET_REG8(RightEyeball_CONTROL_PTR, control);
+ 768:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 769:Generated_Source\PSoC5/RightEyeball.c **** 
+ 770:Generated_Source\PSoC5/RightEyeball.c **** #endif /* (RightEyeball_UseControl) */
+ 771:Generated_Source\PSoC5/RightEyeball.c **** 
+ 772:Generated_Source\PSoC5/RightEyeball.c **** 
+ 773:Generated_Source\PSoC5/RightEyeball.c **** #if (!RightEyeball_UsingFixedFunction)
+ 774:Generated_Source\PSoC5/RightEyeball.c **** 
+ 775:Generated_Source\PSoC5/RightEyeball.c **** 
+ 776:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 777:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_ReadCapture
+ 778:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 779:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 780:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 781:Generated_Source\PSoC5/RightEyeball.c ****     *  Reads the capture value from the capture FIFO.
+ 782:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 783:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 784:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 785:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 786:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 787:Generated_Source\PSoC5/RightEyeball.c ****     *  uint8/uint16: The current capture value
+ 788:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 789:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 790:Generated_Source\PSoC5/RightEyeball.c ****     uint16 RightEyeball_ReadCapture(void) 
+ 791:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 792:Generated_Source\PSoC5/RightEyeball.c ****         return (CY_GET_REG16(RightEyeball_CAPTURE_LSB_PTR));
+ 148              		.loc 1 792 0
+ 149 0002 0449     		ldr	r1, .L18+4
+ 150              	.L14:
+ 151              	.LBE20:
+ 152              	.LBE19:
+ 153              	.LBB22:
+ 154              	.LBB18:
+ 713:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 155              		.loc 1 713 0
+ 156 0004 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 157              	.LBE18:
+ 158              	.LBE22:
+ 455:Generated_Source\PSoC5/RightEyeball.c ****             while(0u != (RightEyeball_ReadStatusRegister() & RightEyeball_STATUS_FIFONEMPTY))
+ 159              		.loc 1 455 0
+ 160 0006 DB06     		lsls	r3, r3, #27
+ 161 0008 01D5     		bpl	.L17
+ 162              	.LBB23:
+ 163              	.LBB21:
+ 164              		.loc 1 792 0
+ 165 000a 0B88     		ldrh	r3, [r1]
+ 166 000c FAE7     		b	.L14
+ 167              	.L17:
+ 168              	.LBE21:
+ 169              	.LBE23:
+ 459:Generated_Source\PSoC5/RightEyeball.c **** 
+ 170              		.loc 1 459 0
+ 171 000e 7047     		bx	lr
+ 172              	.L19:
+ 173              		.align	2
+ 174              	.L18:
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 18
+
+
+ 175 0010 63640040 		.word	1073767523
+ 176 0014 A4680040 		.word	1073768612
+ 177              		.cfi_endproc
+ 178              	.LFE6:
+ 179              		.size	RightEyeball_ClearFIFO, .-RightEyeball_ClearFIFO
+ 180              		.section	.text.RightEyeball_Init,"ax",%progbits
+ 181              		.align	1
+ 182              		.global	RightEyeball_Init
+ 183              		.thumb
+ 184              		.thumb_func
+ 185              		.type	RightEyeball_Init, %function
+ 186              	RightEyeball_Init:
+ 187              	.LFB1:
+  85:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UsingFixedFunction || RightEyeball_UseControl)
+ 188              		.loc 1 85 0
+ 189              		.cfi_startproc
+ 190              		@ args = 0, pretend = 0, frame = 0
+ 191              		@ frame_needed = 0, uses_anonymous_args = 0
+ 192 0000 10B5     		push	{r4, lr}
+ 193              		.cfi_def_cfa_offset 8
+ 194              		.cfi_offset 4, -8
+ 195              		.cfi_offset 14, -4
+ 117:Generated_Source\PSoC5/RightEyeball.c ****                 ((uint8)(~RightEyeball_CTRL_CMPMODE1_MASK));
+ 196              		.loc 1 117 0
+ 197 0002 154A     		ldr	r2, .L21
+ 130:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_Resolution == 8) */
+ 198              		.loc 1 130 0
+ 199 0004 154C     		ldr	r4, .L21+4
+ 117:Generated_Source\PSoC5/RightEyeball.c ****                 ((uint8)(~RightEyeball_CTRL_CMPMODE1_MASK));
+ 200              		.loc 1 117 0
+ 201 0006 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 202              	.LVL1:
+ 119:Generated_Source\PSoC5/RightEyeball.c ****                                    RightEyeball_DEFAULT_COMPARE1_MODE;
+ 203              		.loc 1 119 0
+ 204 0008 03F0C003 		and	r3, r3, #192
+ 205              	.LVL2:
+ 206 000c 43F00903 		orr	r3, r3, #9
+ 207 0010 1370     		strb	r3, [r2]
+ 129:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_AUX_CONTROLDP1 |= (RightEyeball_AUX_CTRL_FIFO0_CLR);
+ 208              		.loc 1 129 0
+ 209 0012 D37F     		ldrb	r3, [r2, #31]	@ zero_extendqisi2
+ 210 0014 43F00103 		orr	r3, r3, #1
+ 211 0018 D377     		strb	r3, [r2, #31]
+ 130:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_Resolution == 8) */
+ 212              		.loc 1 130 0
+ 213 001a 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+ 214 001c 43F00103 		orr	r3, r3, #1
+ 215 0020 2370     		strb	r3, [r4]
+ 216              	.LVL3:
+ 217              	.LBB24:
+ 218              	.LBB25:
+ 406:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 219              		.loc 1 406 0
+ 220 0022 44F62063 		movw	r3, #20000
+ 221 0026 A2F89133 		strh	r3, [r2, #913]	@ movhi
+ 222              	.LVL4:
+ 223              	.LBE25:
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 19
+
+
+ 224              	.LBE24:
+ 225              	.LBB26:
+ 226              	.LBB27:
+ 487:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UsingFixedFunction) */
+ 227              		.loc 1 487 0
+ 228 002a A2F81134 		strh	r3, [r2, #1041]	@ movhi
+ 229              	.LVL5:
+ 230              	.LBE27:
+ 231              	.LBE26:
+ 232              	.LBB28:
+ 233              	.LBB29:
+ 561:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UsingFixedFunction) */
+ 234              		.loc 1 561 0
+ 235 002e 4FF4FA63 		mov	r3, #2000
+ 236 0032 A2F8D133 		strh	r3, [r2, #977]	@ movhi
+ 237              	.LVL6:
+ 238              	.LBE29:
+ 239              	.LBE28:
+ 240              	.LBB30:
+ 241              	.LBB31:
+ 590:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UsingFixedFunction) */
+ 242              		.loc 1 590 0
+ 243 0036 A2F8F133 		strh	r3, [r2, #1009]	@ movhi
+ 244              	.LVL7:
+ 245              	.LBE31:
+ 246              	.LBE30:
+ 247              	.LBB32:
+ 248              	.LBB33:
+ 686:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 249              		.loc 1 686 0
+ 250 003a 094B     		ldr	r3, .L21+8
+ 251 003c 0022     		movs	r2, #0
+ 252 003e 1A70     		strb	r2, [r3]
+ 253              	.LVL8:
+ 254              	.LBE33:
+ 255              	.LBE32:
+ 167:Generated_Source\PSoC5/RightEyeball.c ****             /* Use the interrupt output of the status register for IRQ output */
+ 256              		.loc 1 167 0
+ 257 0040 FFF7FEFF 		bl	CyEnterCriticalSection
+ 258              	.LVL9:
+ 169:Generated_Source\PSoC5/RightEyeball.c **** 
+ 259              		.loc 1 169 0
+ 260 0044 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+ 261 0046 43F01003 		orr	r3, r3, #16
+ 262 004a 2370     		strb	r3, [r4]
+ 172:Generated_Source\PSoC5/RightEyeball.c **** 
+ 263              		.loc 1 172 0
+ 264 004c FFF7FEFF 		bl	CyExitCriticalSection
+ 265              	.LVL10:
+ 179:Generated_Source\PSoC5/RightEyeball.c **** 
+ 266              		.loc 1 179 0
+ 267 0050 BDE81040 		pop	{r4, lr}
+ 268              		.cfi_restore 14
+ 269              		.cfi_restore 4
+ 270              		.cfi_def_cfa_offset 0
+ 176:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UseStatus) */
+ 271              		.loc 1 176 0
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 20
+
+
+ 272 0054 FFF7FEBF 		b	RightEyeball_ClearFIFO
+ 273              	.LVL11:
+ 274              	.L22:
+ 275              		.align	2
+ 276              	.L21:
+ 277 0058 73640040 		.word	1073767539
+ 278 005c 93640040 		.word	1073767571
+ 279 0060 83640040 		.word	1073767555
+ 280              		.cfi_endproc
+ 281              	.LFE1:
+ 282              		.size	RightEyeball_Init, .-RightEyeball_Init
+ 283              		.section	.text.RightEyeball_Start,"ax",%progbits
+ 284              		.align	1
+ 285              		.global	RightEyeball_Start
+ 286              		.thumb
+ 287              		.thumb_func
+ 288              		.type	RightEyeball_Start, %function
+ 289              	RightEyeball_Start:
+ 290              	.LFB0:
+  56:Generated_Source\PSoC5/RightEyeball.c ****     /* If not Initialized then initialize all required hardware and software */
+ 291              		.loc 1 56 0
+ 292              		.cfi_startproc
+ 293              		@ args = 0, pretend = 0, frame = 0
+ 294              		@ frame_needed = 0, uses_anonymous_args = 0
+ 295 0000 10B5     		push	{r4, lr}
+ 296              		.cfi_def_cfa_offset 8
+ 297              		.cfi_offset 4, -8
+ 298              		.cfi_offset 14, -4
+  58:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 299              		.loc 1 58 0
+ 300 0002 054C     		ldr	r4, .L25
+ 301 0004 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+ 302 0006 1BB9     		cbnz	r3, .L24
+  60:Generated_Source\PSoC5/RightEyeball.c ****         RightEyeball_initVar = 1u;
+ 303              		.loc 1 60 0
+ 304 0008 FFF7FEFF 		bl	RightEyeball_Init
+ 305              	.LVL12:
+  61:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 306              		.loc 1 61 0
+ 307 000c 0123     		movs	r3, #1
+ 308 000e 2370     		strb	r3, [r4]
+ 309              	.L24:
+  65:Generated_Source\PSoC5/RightEyeball.c **** 
+ 310              		.loc 1 65 0
+ 311 0010 BDE81040 		pop	{r4, lr}
+ 312              		.cfi_restore 14
+ 313              		.cfi_restore 4
+ 314              		.cfi_def_cfa_offset 0
+  63:Generated_Source\PSoC5/RightEyeball.c **** 
+ 315              		.loc 1 63 0
+ 316 0014 FFF7FEBF 		b	RightEyeball_Enable
+ 317              	.LVL13:
+ 318              	.L26:
+ 319              		.align	2
+ 320              	.L25:
+ 321 0018 00000000 		.word	.LANCHOR0
+ 322              		.cfi_endproc
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 21
+
+
+ 323              	.LFE0:
+ 324              		.size	RightEyeball_Start, .-RightEyeball_Start
+ 325              		.section	.text.RightEyeball_WritePeriod,"ax",%progbits
+ 326              		.align	1
+ 327              		.global	RightEyeball_WritePeriod
+ 328              		.thumb
+ 329              		.thumb_func
+ 330              		.type	RightEyeball_WritePeriod, %function
+ 331              	RightEyeball_WritePeriod:
+ 332              	.LFB7:
+ 483:Generated_Source\PSoC5/RightEyeball.c ****     #if(RightEyeball_UsingFixedFunction)
+ 333              		.loc 1 483 0
+ 334              		.cfi_startproc
+ 335              		@ args = 0, pretend = 0, frame = 0
+ 336              		@ frame_needed = 0, uses_anonymous_args = 0
+ 337              		@ link register save eliminated.
+ 338              	.LVL14:
+ 487:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UsingFixedFunction) */
+ 339              		.loc 1 487 0
+ 340 0000 014B     		ldr	r3, .L28
+ 341 0002 1880     		strh	r0, [r3]	@ movhi
+ 342 0004 7047     		bx	lr
+ 343              	.L29:
+ 344 0006 00BF     		.align	2
+ 345              	.L28:
+ 346 0008 84680040 		.word	1073768580
+ 347              		.cfi_endproc
+ 348              	.LFE7:
+ 349              		.size	RightEyeball_WritePeriod, .-RightEyeball_WritePeriod
+ 350              		.section	.text.RightEyeball_WriteCompare1,"ax",%progbits
+ 351              		.align	1
+ 352              		.global	RightEyeball_WriteCompare1
+ 353              		.thumb
+ 354              		.thumb_func
+ 355              		.type	RightEyeball_WriteCompare1, %function
+ 356              	RightEyeball_WriteCompare1:
+ 357              	.LFB8:
+ 557:Generated_Source\PSoC5/RightEyeball.c ****         #if(RightEyeball_UsingFixedFunction)
+ 358              		.loc 1 557 0
+ 359              		.cfi_startproc
+ 360              		@ args = 0, pretend = 0, frame = 0
+ 361              		@ frame_needed = 0, uses_anonymous_args = 0
+ 362              		@ link register save eliminated.
+ 363              	.LVL15:
+ 561:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UsingFixedFunction) */
+ 364              		.loc 1 561 0
+ 365 0000 014B     		ldr	r3, .L31
+ 366 0002 1880     		strh	r0, [r3]	@ movhi
+ 367 0004 7047     		bx	lr
+ 368              	.L32:
+ 369 0006 00BF     		.align	2
+ 370              	.L31:
+ 371 0008 44680040 		.word	1073768516
+ 372              		.cfi_endproc
+ 373              	.LFE8:
+ 374              		.size	RightEyeball_WriteCompare1, .-RightEyeball_WriteCompare1
+ 375              		.section	.text.RightEyeball_WriteCompare2,"ax",%progbits
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 22
+
+
+ 376              		.align	1
+ 377              		.global	RightEyeball_WriteCompare2
+ 378              		.thumb
+ 379              		.thumb_func
+ 380              		.type	RightEyeball_WriteCompare2, %function
+ 381              	RightEyeball_WriteCompare2:
+ 382              	.LFB9:
+ 586:Generated_Source\PSoC5/RightEyeball.c ****         #if(RightEyeball_UsingFixedFunction)
+ 383              		.loc 1 586 0
+ 384              		.cfi_startproc
+ 385              		@ args = 0, pretend = 0, frame = 0
+ 386              		@ frame_needed = 0, uses_anonymous_args = 0
+ 387              		@ link register save eliminated.
+ 388              	.LVL16:
+ 590:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UsingFixedFunction) */
+ 389              		.loc 1 590 0
+ 390 0000 014B     		ldr	r3, .L34
+ 391 0002 1880     		strh	r0, [r3]	@ movhi
+ 392 0004 7047     		bx	lr
+ 393              	.L35:
+ 394 0006 00BF     		.align	2
+ 395              	.L34:
+ 396 0008 64680040 		.word	1073768548
+ 397              		.cfi_endproc
+ 398              	.LFE9:
+ 399              		.size	RightEyeball_WriteCompare2, .-RightEyeball_WriteCompare2
+ 400              		.section	.text.RightEyeball_SetInterruptMode,"ax",%progbits
+ 401              		.align	1
+ 402              		.global	RightEyeball_SetInterruptMode
+ 403              		.thumb
+ 404              		.thumb_func
+ 405              		.type	RightEyeball_SetInterruptMode, %function
+ 406              	RightEyeball_SetInterruptMode:
+ 407              	.LFB10:
+ 685:Generated_Source\PSoC5/RightEyeball.c ****         CY_SET_REG8(RightEyeball_STATUS_MASK_PTR, interruptMode);
+ 408              		.loc 1 685 0
+ 409              		.cfi_startproc
+ 410              		@ args = 0, pretend = 0, frame = 0
+ 411              		@ frame_needed = 0, uses_anonymous_args = 0
+ 412              		@ link register save eliminated.
+ 413              	.LVL17:
+ 686:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 414              		.loc 1 686 0
+ 415 0000 014B     		ldr	r3, .L37
+ 416 0002 1870     		strb	r0, [r3]
+ 417 0004 7047     		bx	lr
+ 418              	.L38:
+ 419 0006 00BF     		.align	2
+ 420              	.L37:
+ 421 0008 83640040 		.word	1073767555
+ 422              		.cfi_endproc
+ 423              	.LFE10:
+ 424              		.size	RightEyeball_SetInterruptMode, .-RightEyeball_SetInterruptMode
+ 425              		.section	.text.RightEyeball_ReadStatusRegister,"ax",%progbits
+ 426              		.align	1
+ 427              		.global	RightEyeball_ReadStatusRegister
+ 428              		.thumb
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 23
+
+
+ 429              		.thumb_func
+ 430              		.type	RightEyeball_ReadStatusRegister, %function
+ 431              	RightEyeball_ReadStatusRegister:
+ 432              	.LFB11:
+ 712:Generated_Source\PSoC5/RightEyeball.c ****         return (CY_GET_REG8(RightEyeball_STATUS_PTR));
+ 433              		.loc 1 712 0
+ 434              		.cfi_startproc
+ 435              		@ args = 0, pretend = 0, frame = 0
+ 436              		@ frame_needed = 0, uses_anonymous_args = 0
+ 437              		@ link register save eliminated.
+ 713:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 438              		.loc 1 713 0
+ 439 0000 014B     		ldr	r3, .L40
+ 440 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 714:Generated_Source\PSoC5/RightEyeball.c **** 
+ 441              		.loc 1 714 0
+ 442 0004 7047     		bx	lr
+ 443              	.L41:
+ 444 0006 00BF     		.align	2
+ 445              	.L40:
+ 446 0008 63640040 		.word	1073767523
+ 447              		.cfi_endproc
+ 448              	.LFE11:
+ 449              		.size	RightEyeball_ReadStatusRegister, .-RightEyeball_ReadStatusRegister
+ 450              		.section	.text.RightEyeball_ReadControlRegister,"ax",%progbits
+ 451              		.align	1
+ 452              		.global	RightEyeball_ReadControlRegister
+ 453              		.thumb
+ 454              		.thumb_func
+ 455              		.type	RightEyeball_ReadControlRegister, %function
+ 456              	RightEyeball_ReadControlRegister:
+ 457              	.LFB12:
+ 738:Generated_Source\PSoC5/RightEyeball.c ****         uint8 result;
+ 458              		.loc 1 738 0
+ 459              		.cfi_startproc
+ 460              		@ args = 0, pretend = 0, frame = 0
+ 461              		@ frame_needed = 0, uses_anonymous_args = 0
+ 462              		@ link register save eliminated.
+ 741:Generated_Source\PSoC5/RightEyeball.c ****         return (result);
+ 463              		.loc 1 741 0
+ 464 0000 014B     		ldr	r3, .L43
+ 465 0002 1878     		ldrb	r0, [r3]	@ zero_extendqisi2
+ 466              	.LVL18:
+ 743:Generated_Source\PSoC5/RightEyeball.c **** 
+ 467              		.loc 1 743 0
+ 468 0004 7047     		bx	lr
+ 469              	.L44:
+ 470 0006 00BF     		.align	2
+ 471              	.L43:
+ 472 0008 73640040 		.word	1073767539
+ 473              		.cfi_endproc
+ 474              	.LFE12:
+ 475              		.size	RightEyeball_ReadControlRegister, .-RightEyeball_ReadControlRegister
+ 476              		.section	.text.RightEyeball_WriteControlRegister,"ax",%progbits
+ 477              		.align	1
+ 478              		.global	RightEyeball_WriteControlRegister
+ 479              		.thumb
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 24
+
+
+ 480              		.thumb_func
+ 481              		.type	RightEyeball_WriteControlRegister, %function
+ 482              	RightEyeball_WriteControlRegister:
+ 483              	.LFB13:
+ 766:Generated_Source\PSoC5/RightEyeball.c ****         CY_SET_REG8(RightEyeball_CONTROL_PTR, control);
+ 484              		.loc 1 766 0
+ 485              		.cfi_startproc
+ 486              		@ args = 0, pretend = 0, frame = 0
+ 487              		@ frame_needed = 0, uses_anonymous_args = 0
+ 488              		@ link register save eliminated.
+ 489              	.LVL19:
+ 767:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 490              		.loc 1 767 0
+ 491 0000 014B     		ldr	r3, .L46
+ 492 0002 1870     		strb	r0, [r3]
+ 493 0004 7047     		bx	lr
+ 494              	.L47:
+ 495 0006 00BF     		.align	2
+ 496              	.L46:
+ 497 0008 73640040 		.word	1073767539
+ 498              		.cfi_endproc
+ 499              	.LFE13:
+ 500              		.size	RightEyeball_WriteControlRegister, .-RightEyeball_WriteControlRegister
+ 501              		.section	.text.RightEyeball_ReadCapture,"ax",%progbits
+ 502              		.align	1
+ 503              		.global	RightEyeball_ReadCapture
+ 504              		.thumb
+ 505              		.thumb_func
+ 506              		.type	RightEyeball_ReadCapture, %function
+ 507              	RightEyeball_ReadCapture:
+ 508              	.LFB14:
+ 791:Generated_Source\PSoC5/RightEyeball.c ****         return (CY_GET_REG16(RightEyeball_CAPTURE_LSB_PTR));
+ 509              		.loc 1 791 0
+ 510              		.cfi_startproc
+ 511              		@ args = 0, pretend = 0, frame = 0
+ 512              		@ frame_needed = 0, uses_anonymous_args = 0
+ 513              		@ link register save eliminated.
+ 514              		.loc 1 792 0
+ 515 0000 014B     		ldr	r3, .L49
+ 516 0002 1888     		ldrh	r0, [r3]
+ 793:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 517              		.loc 1 793 0
+ 518 0004 80B2     		uxth	r0, r0
+ 519 0006 7047     		bx	lr
+ 520              	.L50:
+ 521              		.align	2
+ 522              	.L49:
+ 523 0008 A4680040 		.word	1073768612
+ 524              		.cfi_endproc
+ 525              	.LFE14:
+ 526              		.size	RightEyeball_ReadCapture, .-RightEyeball_ReadCapture
+ 527              		.section	.text.RightEyeball_ReadCompare1,"ax",%progbits
+ 528              		.align	1
+ 529              		.global	RightEyeball_ReadCompare1
+ 530              		.thumb
+ 531              		.thumb_func
+ 532              		.type	RightEyeball_ReadCompare1, %function
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 25
+
+
+ 533              	RightEyeball_ReadCompare1:
+ 534              	.LFB15:
+ 794:Generated_Source\PSoC5/RightEyeball.c **** 
+ 795:Generated_Source\PSoC5/RightEyeball.c **** #endif /* (!RightEyeball_UsingFixedFunction) */
+ 796:Generated_Source\PSoC5/RightEyeball.c **** 
+ 797:Generated_Source\PSoC5/RightEyeball.c **** 
+ 798:Generated_Source\PSoC5/RightEyeball.c **** #if (RightEyeball_UseOneCompareMode)
+ 799:Generated_Source\PSoC5/RightEyeball.c **** 
+ 800:Generated_Source\PSoC5/RightEyeball.c **** 
+ 801:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 802:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_ReadCompare
+ 803:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 804:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 805:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 806:Generated_Source\PSoC5/RightEyeball.c ****     *  Reads the compare value for the compare output when the PWM Mode parameter is
+ 807:Generated_Source\PSoC5/RightEyeball.c ****     *  set to Dither mode, Center Aligned mode, or One Output mode.
+ 808:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 809:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 810:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 811:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 812:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 813:Generated_Source\PSoC5/RightEyeball.c ****     *  uint8/uint16: Current compare value
+ 814:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 815:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 816:Generated_Source\PSoC5/RightEyeball.c ****     uint16 RightEyeball_ReadCompare(void) 
+ 817:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 818:Generated_Source\PSoC5/RightEyeball.c ****         #if(RightEyeball_UsingFixedFunction)
+ 819:Generated_Source\PSoC5/RightEyeball.c ****             return ((uint16)CY_GET_REG16(RightEyeball_COMPARE1_LSB_PTR));
+ 820:Generated_Source\PSoC5/RightEyeball.c ****         #else
+ 821:Generated_Source\PSoC5/RightEyeball.c ****             return (CY_GET_REG16(RightEyeball_COMPARE1_LSB_PTR));
+ 822:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UsingFixedFunction) */
+ 823:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 824:Generated_Source\PSoC5/RightEyeball.c **** 
+ 825:Generated_Source\PSoC5/RightEyeball.c **** #else
+ 826:Generated_Source\PSoC5/RightEyeball.c **** 
+ 827:Generated_Source\PSoC5/RightEyeball.c **** 
+ 828:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 829:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_ReadCompare1
+ 830:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 831:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 832:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 833:Generated_Source\PSoC5/RightEyeball.c ****     *  Reads the compare value for the compare1 output.
+ 834:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 835:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 836:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 837:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 838:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 839:Generated_Source\PSoC5/RightEyeball.c ****     *  uint8/uint16: Current compare value.
+ 840:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 841:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 842:Generated_Source\PSoC5/RightEyeball.c ****     uint16 RightEyeball_ReadCompare1(void) 
+ 843:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 535              		.loc 1 843 0
+ 536              		.cfi_startproc
+ 537              		@ args = 0, pretend = 0, frame = 0
+ 538              		@ frame_needed = 0, uses_anonymous_args = 0
+ 539              		@ link register save eliminated.
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 26
+
+
+ 844:Generated_Source\PSoC5/RightEyeball.c ****         return (CY_GET_REG16(RightEyeball_COMPARE1_LSB_PTR));
+ 540              		.loc 1 844 0
+ 541 0000 014B     		ldr	r3, .L52
+ 542 0002 1888     		ldrh	r0, [r3]
+ 845:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 543              		.loc 1 845 0
+ 544 0004 80B2     		uxth	r0, r0
+ 545 0006 7047     		bx	lr
+ 546              	.L53:
+ 547              		.align	2
+ 548              	.L52:
+ 549 0008 44680040 		.word	1073768516
+ 550              		.cfi_endproc
+ 551              	.LFE15:
+ 552              		.size	RightEyeball_ReadCompare1, .-RightEyeball_ReadCompare1
+ 553              		.section	.text.RightEyeball_ReadCompare2,"ax",%progbits
+ 554              		.align	1
+ 555              		.global	RightEyeball_ReadCompare2
+ 556              		.thumb
+ 557              		.thumb_func
+ 558              		.type	RightEyeball_ReadCompare2, %function
+ 559              	RightEyeball_ReadCompare2:
+ 560              	.LFB16:
+ 846:Generated_Source\PSoC5/RightEyeball.c **** 
+ 847:Generated_Source\PSoC5/RightEyeball.c **** 
+ 848:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
+ 849:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_ReadCompare2
+ 850:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
+ 851:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 852:Generated_Source\PSoC5/RightEyeball.c ****     * Summary:
+ 853:Generated_Source\PSoC5/RightEyeball.c ****     *  Reads the compare value for the compare2 output.
+ 854:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 855:Generated_Source\PSoC5/RightEyeball.c ****     * Parameters:
+ 856:Generated_Source\PSoC5/RightEyeball.c ****     *  None
+ 857:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 858:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
+ 859:Generated_Source\PSoC5/RightEyeball.c ****     *  uint8/uint16: Current compare value.
+ 860:Generated_Source\PSoC5/RightEyeball.c ****     *
+ 861:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
+ 862:Generated_Source\PSoC5/RightEyeball.c ****     uint16 RightEyeball_ReadCompare2(void) 
+ 863:Generated_Source\PSoC5/RightEyeball.c ****     {
+ 561              		.loc 1 863 0
+ 562              		.cfi_startproc
+ 563              		@ args = 0, pretend = 0, frame = 0
+ 564              		@ frame_needed = 0, uses_anonymous_args = 0
+ 565              		@ link register save eliminated.
+ 864:Generated_Source\PSoC5/RightEyeball.c ****         return (CY_GET_REG16(RightEyeball_COMPARE2_LSB_PTR));
+ 566              		.loc 1 864 0
+ 567 0000 014B     		ldr	r3, .L55
+ 568 0002 1888     		ldrh	r0, [r3]
+ 865:Generated_Source\PSoC5/RightEyeball.c ****     }
+ 569              		.loc 1 865 0
+ 570 0004 80B2     		uxth	r0, r0
+ 571 0006 7047     		bx	lr
+ 572              	.L56:
+ 573              		.align	2
+ 574              	.L55:
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 27
+
+
+ 575 0008 64680040 		.word	1073768548
+ 576              		.cfi_endproc
+ 577              	.LFE16:
+ 578              		.size	RightEyeball_ReadCompare2, .-RightEyeball_ReadCompare2
+ 579              		.section	.text.RightEyeball_ReadPeriod,"ax",%progbits
+ 580              		.align	1
+ 581              		.global	RightEyeball_ReadPeriod
+ 582              		.thumb
+ 583              		.thumb_func
+ 584              		.type	RightEyeball_ReadPeriod, %function
+ 585              	RightEyeball_ReadPeriod:
+ 586              	.LFB17:
+ 866:Generated_Source\PSoC5/RightEyeball.c **** 
+ 867:Generated_Source\PSoC5/RightEyeball.c **** #endif /* (RightEyeball_UseOneCompareMode) */
+ 868:Generated_Source\PSoC5/RightEyeball.c **** 
+ 869:Generated_Source\PSoC5/RightEyeball.c **** 
+ 870:Generated_Source\PSoC5/RightEyeball.c **** /*******************************************************************************
+ 871:Generated_Source\PSoC5/RightEyeball.c **** * Function Name: RightEyeball_ReadPeriod
+ 872:Generated_Source\PSoC5/RightEyeball.c **** ********************************************************************************
+ 873:Generated_Source\PSoC5/RightEyeball.c **** *
+ 874:Generated_Source\PSoC5/RightEyeball.c **** * Summary:
+ 875:Generated_Source\PSoC5/RightEyeball.c **** *  Reads the period value used by the PWM hardware.
+ 876:Generated_Source\PSoC5/RightEyeball.c **** *
+ 877:Generated_Source\PSoC5/RightEyeball.c **** * Parameters:
+ 878:Generated_Source\PSoC5/RightEyeball.c **** *  None
+ 879:Generated_Source\PSoC5/RightEyeball.c **** *
+ 880:Generated_Source\PSoC5/RightEyeball.c **** * Return:
+ 881:Generated_Source\PSoC5/RightEyeball.c **** *  uint8/16: Period value
+ 882:Generated_Source\PSoC5/RightEyeball.c **** *
+ 883:Generated_Source\PSoC5/RightEyeball.c **** *******************************************************************************/
+ 884:Generated_Source\PSoC5/RightEyeball.c **** uint16 RightEyeball_ReadPeriod(void) 
+ 885:Generated_Source\PSoC5/RightEyeball.c **** {
+ 587              		.loc 1 885 0
+ 588              		.cfi_startproc
+ 589              		@ args = 0, pretend = 0, frame = 0
+ 590              		@ frame_needed = 0, uses_anonymous_args = 0
+ 591              		@ link register save eliminated.
+ 886:Generated_Source\PSoC5/RightEyeball.c ****     #if(RightEyeball_UsingFixedFunction)
+ 887:Generated_Source\PSoC5/RightEyeball.c ****         return ((uint16)CY_GET_REG16(RightEyeball_PERIOD_LSB_PTR));
+ 888:Generated_Source\PSoC5/RightEyeball.c ****     #else
+ 889:Generated_Source\PSoC5/RightEyeball.c ****         return (CY_GET_REG16(RightEyeball_PERIOD_LSB_PTR));
+ 592              		.loc 1 889 0
+ 593 0000 014B     		ldr	r3, .L58
+ 594 0002 1888     		ldrh	r0, [r3]
+ 890:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UsingFixedFunction) */
+ 891:Generated_Source\PSoC5/RightEyeball.c **** }
+ 595              		.loc 1 891 0
+ 596 0004 80B2     		uxth	r0, r0
+ 597 0006 7047     		bx	lr
+ 598              	.L59:
+ 599              		.align	2
+ 600              	.L58:
+ 601 0008 84680040 		.word	1073768580
+ 602              		.cfi_endproc
+ 603              	.LFE17:
+ 604              		.size	RightEyeball_ReadPeriod, .-RightEyeball_ReadPeriod
+ 605              		.global	RightEyeball_initVar
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 28
+
+
+ 606              		.bss
+ 607              		.set	.LANCHOR0,. + 0
+ 608              		.type	RightEyeball_initVar, %object
+ 609              		.size	RightEyeball_initVar, 1
+ 610              	RightEyeball_initVar:
+ 611 0000 00       		.space	1
+ 612              		.text
+ 613              	.Letext0:
+ 614              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 615              		.file 3 "Generated_Source\\PSoC5\\CyLib.h"
+ 616              		.section	.debug_info,"",%progbits
+ 617              	.Ldebug_info0:
+ 618 0000 34040000 		.4byte	0x434
+ 619 0004 0400     		.2byte	0x4
+ 620 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 621 000a 04       		.byte	0x4
+ 622 000b 01       		.uleb128 0x1
+ 623 000c E8000000 		.4byte	.LASF44
+ 624 0010 0C       		.byte	0xc
+ 625 0011 62000000 		.4byte	.LASF45
+ 626 0015 79030000 		.4byte	.LASF46
+ 627 0019 30000000 		.4byte	.Ldebug_ranges0+0x30
+ 628 001d 00000000 		.4byte	0
+ 629 0021 00000000 		.4byte	.Ldebug_line0
+ 630 0025 02       		.uleb128 0x2
+ 631 0026 01       		.byte	0x1
+ 632 0027 06       		.byte	0x6
+ 633 0028 AD030000 		.4byte	.LASF0
+ 634 002c 02       		.uleb128 0x2
+ 635 002d 01       		.byte	0x1
+ 636 002e 08       		.byte	0x8
+ 637 002f C0000000 		.4byte	.LASF1
+ 638 0033 02       		.uleb128 0x2
+ 639 0034 02       		.byte	0x2
+ 640 0035 05       		.byte	0x5
+ 641 0036 BC010000 		.4byte	.LASF2
+ 642 003a 02       		.uleb128 0x2
+ 643 003b 02       		.byte	0x2
+ 644 003c 07       		.byte	0x7
+ 645 003d 33000000 		.4byte	.LASF3
+ 646 0041 02       		.uleb128 0x2
+ 647 0042 04       		.byte	0x4
+ 648 0043 05       		.byte	0x5
+ 649 0044 44030000 		.4byte	.LASF4
+ 650 0048 02       		.uleb128 0x2
+ 651 0049 04       		.byte	0x4
+ 652 004a 07       		.byte	0x7
+ 653 004b FD010000 		.4byte	.LASF5
+ 654 004f 02       		.uleb128 0x2
+ 655 0050 08       		.byte	0x8
+ 656 0051 05       		.byte	0x5
+ 657 0052 BA020000 		.4byte	.LASF6
+ 658 0056 02       		.uleb128 0x2
+ 659 0057 08       		.byte	0x8
+ 660 0058 07       		.byte	0x7
+ 661 0059 96000000 		.4byte	.LASF7
+ 662 005d 03       		.uleb128 0x3
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 29
+
+
+ 663 005e 04       		.byte	0x4
+ 664 005f 05       		.byte	0x5
+ 665 0060 696E7400 		.ascii	"int\000"
+ 666 0064 02       		.uleb128 0x2
+ 667 0065 04       		.byte	0x4
+ 668 0066 07       		.byte	0x7
+ 669 0067 0F020000 		.4byte	.LASF8
+ 670 006b 04       		.uleb128 0x4
+ 671 006c 3E030000 		.4byte	.LASF9
+ 672 0070 02       		.byte	0x2
+ 673 0071 E401     		.2byte	0x1e4
+ 674 0073 2C000000 		.4byte	0x2c
+ 675 0077 04       		.uleb128 0x4
+ 676 0078 DF010000 		.4byte	.LASF10
+ 677 007c 02       		.byte	0x2
+ 678 007d E501     		.2byte	0x1e5
+ 679 007f 3A000000 		.4byte	0x3a
+ 680 0083 02       		.uleb128 0x2
+ 681 0084 04       		.byte	0x4
+ 682 0085 04       		.byte	0x4
+ 683 0086 88000000 		.4byte	.LASF11
+ 684 008a 02       		.uleb128 0x2
+ 685 008b 08       		.byte	0x8
+ 686 008c 04       		.byte	0x4
+ 687 008d B5010000 		.4byte	.LASF12
+ 688 0091 02       		.uleb128 0x2
+ 689 0092 01       		.byte	0x1
+ 690 0093 08       		.byte	0x8
+ 691 0094 06000000 		.4byte	.LASF13
+ 692 0098 04       		.uleb128 0x4
+ 693 0099 E3000000 		.4byte	.LASF14
+ 694 009d 02       		.byte	0x2
+ 695 009e 8E02     		.2byte	0x28e
+ 696 00a0 A4000000 		.4byte	0xa4
+ 697 00a4 05       		.uleb128 0x5
+ 698 00a5 6B000000 		.4byte	0x6b
+ 699 00a9 04       		.uleb128 0x4
+ 700 00aa 00000000 		.4byte	.LASF15
+ 701 00ae 02       		.byte	0x2
+ 702 00af 8F02     		.2byte	0x28f
+ 703 00b1 B5000000 		.4byte	0xb5
+ 704 00b5 05       		.uleb128 0x5
+ 705 00b6 77000000 		.4byte	0x77
+ 706 00ba 02       		.uleb128 0x2
+ 707 00bb 08       		.byte	0x8
+ 708 00bc 04       		.byte	0x4
+ 709 00bd 6D030000 		.4byte	.LASF16
+ 710 00c1 02       		.uleb128 0x2
+ 711 00c2 04       		.byte	0x4
+ 712 00c3 07       		.byte	0x7
+ 713 00c4 B1020000 		.4byte	.LASF17
+ 714 00c8 06       		.uleb128 0x6
+ 715 00c9 C6010000 		.4byte	.LASF18
+ 716 00cd 01       		.byte	0x1
+ 717 00ce 1603     		.2byte	0x316
+ 718 00d0 77000000 		.4byte	0x77
+ 719 00d4 01       		.byte	0x1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 30
+
+
+ 720 00d5 06       		.uleb128 0x6
+ 721 00d6 4D030000 		.4byte	.LASF19
+ 722 00da 01       		.byte	0x1
+ 723 00db C702     		.2byte	0x2c7
+ 724 00dd 6B000000 		.4byte	0x6b
+ 725 00e1 01       		.byte	0x1
+ 726 00e2 07       		.uleb128 0x7
+ 727 00e3 8F010000 		.4byte	.LASF20
+ 728 00e7 01       		.byte	0x1
+ 729 00e8 AC02     		.2byte	0x2ac
+ 730 00ea 01       		.byte	0x1
+ 731 00eb FC000000 		.4byte	0xfc
+ 732 00ef 08       		.uleb128 0x8
+ 733 00f0 E3020000 		.4byte	.LASF22
+ 734 00f4 01       		.byte	0x1
+ 735 00f5 AC02     		.2byte	0x2ac
+ 736 00f7 6B000000 		.4byte	0x6b
+ 737 00fb 00       		.byte	0
+ 738 00fc 07       		.uleb128 0x7
+ 739 00fd C8020000 		.4byte	.LASF21
+ 740 0101 01       		.byte	0x1
+ 741 0102 4802     		.2byte	0x248
+ 742 0104 01       		.byte	0x1
+ 743 0105 16010000 		.4byte	0x116
+ 744 0109 08       		.uleb128 0x8
+ 745 010a B9030000 		.4byte	.LASF23
+ 746 010e 01       		.byte	0x1
+ 747 010f 4802     		.2byte	0x248
+ 748 0111 77000000 		.4byte	0x77
+ 749 0115 00       		.byte	0
+ 750 0116 07       		.uleb128 0x7
+ 751 0117 67020000 		.4byte	.LASF24
+ 752 011b 01       		.byte	0x1
+ 753 011c 2B02     		.2byte	0x22b
+ 754 011e 01       		.byte	0x1
+ 755 011f 30010000 		.4byte	0x130
+ 756 0123 08       		.uleb128 0x8
+ 757 0124 B9030000 		.4byte	.LASF23
+ 758 0128 01       		.byte	0x1
+ 759 0129 2B02     		.2byte	0x22b
+ 760 012b 77000000 		.4byte	0x77
+ 761 012f 00       		.byte	0
+ 762 0130 07       		.uleb128 0x7
+ 763 0131 76010000 		.4byte	.LASF25
+ 764 0135 01       		.byte	0x1
+ 765 0136 E201     		.2byte	0x1e2
+ 766 0138 01       		.byte	0x1
+ 767 0139 4A010000 		.4byte	0x14a
+ 768 013d 08       		.uleb128 0x8
+ 769 013e 2C000000 		.4byte	.LASF26
+ 770 0142 01       		.byte	0x1
+ 771 0143 E201     		.2byte	0x1e2
+ 772 0145 77000000 		.4byte	0x77
+ 773 0149 00       		.byte	0
+ 774 014a 07       		.uleb128 0x7
+ 775 014b 30020000 		.4byte	.LASF27
+ 776 014f 01       		.byte	0x1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 31
+
+
+ 777 0150 9301     		.2byte	0x193
+ 778 0152 01       		.byte	0x1
+ 779 0153 64010000 		.4byte	0x164
+ 780 0157 08       		.uleb128 0x8
+ 781 0158 8E000000 		.4byte	.LASF28
+ 782 015c 01       		.byte	0x1
+ 783 015d 9301     		.2byte	0x193
+ 784 015f 77000000 		.4byte	0x77
+ 785 0163 00       		.byte	0
+ 786 0164 09       		.uleb128 0x9
+ 787 0165 1C020000 		.4byte	.LASF29
+ 788 0169 01       		.byte	0x1
+ 789 016a C7       		.byte	0xc7
+ 790 016b 00000000 		.4byte	.LFB2
+ 791 016f 10000000 		.4byte	.LFE2-.LFB2
+ 792 0173 01       		.uleb128 0x1
+ 793 0174 9C       		.byte	0x9c
+ 794 0175 09       		.uleb128 0x9
+ 795 0176 FA030000 		.4byte	.LASF30
+ 796 017a 01       		.byte	0x1
+ 797 017b E9       		.byte	0xe9
+ 798 017c 00000000 		.4byte	.LFB3
+ 799 0180 10000000 		.4byte	.LFE3-.LFB3
+ 800 0184 01       		.uleb128 0x1
+ 801 0185 9C       		.byte	0x9c
+ 802 0186 0A       		.uleb128 0xa
+ 803 0187 4A010000 		.4byte	0x14a
+ 804 018b 00000000 		.4byte	.LFB4
+ 805 018f 0C000000 		.4byte	.LFE4-.LFB4
+ 806 0193 01       		.uleb128 0x1
+ 807 0194 9C       		.byte	0x9c
+ 808 0195 A1010000 		.4byte	0x1a1
+ 809 0199 0B       		.uleb128 0xb
+ 810 019a 57010000 		.4byte	0x157
+ 811 019e 01       		.uleb128 0x1
+ 812 019f 50       		.byte	0x50
+ 813 01a0 00       		.byte	0
+ 814 01a1 0C       		.uleb128 0xc
+ 815 01a2 25030000 		.4byte	.LASF38
+ 816 01a6 01       		.byte	0x1
+ 817 01a7 A901     		.2byte	0x1a9
+ 818 01a9 77000000 		.4byte	0x77
+ 819 01ad 00000000 		.4byte	.LFB5
+ 820 01b1 14000000 		.4byte	.LFE5-.LFB5
+ 821 01b5 01       		.uleb128 0x1
+ 822 01b6 9C       		.byte	0x9c
+ 823 01b7 0D       		.uleb128 0xd
+ 824 01b8 E3030000 		.4byte	.LASF31
+ 825 01bc 01       		.byte	0x1
+ 826 01bd C501     		.2byte	0x1c5
+ 827 01bf 00000000 		.4byte	.LFB6
+ 828 01c3 18000000 		.4byte	.LFE6-.LFB6
+ 829 01c7 01       		.uleb128 0x1
+ 830 01c8 9C       		.byte	0x9c
+ 831 01c9 EE010000 		.4byte	0x1ee
+ 832 01cd 0E       		.uleb128 0xe
+ 833 01ce D5000000 		.4byte	0xd5
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 32
+
+
+ 834 01d2 00000000 		.4byte	.LBB16
+ 835 01d6 00000000 		.4byte	.Ldebug_ranges0+0
+ 836 01da 01       		.byte	0x1
+ 837 01db C701     		.2byte	0x1c7
+ 838 01dd 0E       		.uleb128 0xe
+ 839 01de C8000000 		.4byte	0xc8
+ 840 01e2 02000000 		.4byte	.LBB19
+ 841 01e6 18000000 		.4byte	.Ldebug_ranges0+0x18
+ 842 01ea 01       		.byte	0x1
+ 843 01eb C901     		.2byte	0x1c9
+ 844 01ed 00       		.byte	0
+ 845 01ee 0F       		.uleb128 0xf
+ 846 01ef 82020000 		.4byte	.LASF32
+ 847 01f3 01       		.byte	0x1
+ 848 01f4 54       		.byte	0x54
+ 849 01f5 00000000 		.4byte	.LFB1
+ 850 01f9 64000000 		.4byte	.LFE1-.LFB1
+ 851 01fd 01       		.uleb128 0x1
+ 852 01fe 9C       		.byte	0x9c
+ 853 01ff CE020000 		.4byte	0x2ce
+ 854 0203 10       		.uleb128 0x10
+ 855 0204 AC020000 		.4byte	.LASF33
+ 856 0208 01       		.byte	0x1
+ 857 0209 57       		.byte	0x57
+ 858 020a 6B000000 		.4byte	0x6b
+ 859 020e 00000000 		.4byte	.LLST0
+ 860 0212 10       		.uleb128 0x10
+ 861 0213 46000000 		.4byte	.LASF34
+ 862 0217 01       		.byte	0x1
+ 863 0218 5D       		.byte	0x5d
+ 864 0219 6B000000 		.4byte	0x6b
+ 865 021d 18000000 		.4byte	.LLST1
+ 866 0221 11       		.uleb128 0x11
+ 867 0222 4A010000 		.4byte	0x14a
+ 868 0226 22000000 		.4byte	.LBB24
+ 869 022a 08000000 		.4byte	.LBE24-.LBB24
+ 870 022e 01       		.byte	0x1
+ 871 022f 85       		.byte	0x85
+ 872 0230 3E020000 		.4byte	0x23e
+ 873 0234 12       		.uleb128 0x12
+ 874 0235 57010000 		.4byte	0x157
+ 875 0239 2B000000 		.4byte	.LLST2
+ 876 023d 00       		.byte	0
+ 877 023e 11       		.uleb128 0x11
+ 878 023f 30010000 		.4byte	0x130
+ 879 0243 2A000000 		.4byte	.LBB26
+ 880 0247 04000000 		.4byte	.LBE26-.LBB26
+ 881 024b 01       		.byte	0x1
+ 882 024c 88       		.byte	0x88
+ 883 024d 5B020000 		.4byte	0x25b
+ 884 0251 12       		.uleb128 0x12
+ 885 0252 3D010000 		.4byte	0x13d
+ 886 0256 41000000 		.4byte	.LLST3
+ 887 025a 00       		.byte	0
+ 888 025b 11       		.uleb128 0x11
+ 889 025c 16010000 		.4byte	0x116
+ 890 0260 2E000000 		.4byte	.LBB28
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 33
+
+
+ 891 0264 08000000 		.4byte	.LBE28-.LBB28
+ 892 0268 01       		.byte	0x1
+ 893 0269 8D       		.byte	0x8d
+ 894 026a 78020000 		.4byte	0x278
+ 895 026e 12       		.uleb128 0x12
+ 896 026f 23010000 		.4byte	0x123
+ 897 0273 57000000 		.4byte	.LLST4
+ 898 0277 00       		.byte	0
+ 899 0278 11       		.uleb128 0x11
+ 900 0279 FC000000 		.4byte	0xfc
+ 901 027d 36000000 		.4byte	.LBB30
+ 902 0281 04000000 		.4byte	.LBE30-.LBB30
+ 903 0285 01       		.byte	0x1
+ 904 0286 8E       		.byte	0x8e
+ 905 0287 95020000 		.4byte	0x295
+ 906 028b 12       		.uleb128 0x12
+ 907 028c 09010000 		.4byte	0x109
+ 908 0290 6D000000 		.4byte	.LLST5
+ 909 0294 00       		.byte	0
+ 910 0295 11       		.uleb128 0x11
+ 911 0296 E2000000 		.4byte	0xe2
+ 912 029a 3A000000 		.4byte	.LBB32
+ 913 029e 06000000 		.4byte	.LBE32-.LBB32
+ 914 02a2 01       		.byte	0x1
+ 915 02a3 9A       		.byte	0x9a
+ 916 02a4 B2020000 		.4byte	0x2b2
+ 917 02a8 12       		.uleb128 0x12
+ 918 02a9 EF000000 		.4byte	0xef
+ 919 02ad 83000000 		.4byte	.LLST6
+ 920 02b1 00       		.byte	0
+ 921 02b2 13       		.uleb128 0x13
+ 922 02b3 44000000 		.4byte	.LVL9
+ 923 02b7 21040000 		.4byte	0x421
+ 924 02bb 13       		.uleb128 0x13
+ 925 02bc 50000000 		.4byte	.LVL10
+ 926 02c0 2C040000 		.4byte	0x42c
+ 927 02c4 14       		.uleb128 0x14
+ 928 02c5 58000000 		.4byte	.LVL11
+ 929 02c9 B7010000 		.4byte	0x1b7
+ 930 02cd 00       		.byte	0
+ 931 02ce 0F       		.uleb128 0xf
+ 932 02cf AD000000 		.4byte	.LASF35
+ 933 02d3 01       		.byte	0x1
+ 934 02d4 37       		.byte	0x37
+ 935 02d5 00000000 		.4byte	.LFB0
+ 936 02d9 1C000000 		.4byte	.LFE0-.LFB0
+ 937 02dd 01       		.uleb128 0x1
+ 938 02de 9C       		.byte	0x9c
+ 939 02df F6020000 		.4byte	0x2f6
+ 940 02e3 13       		.uleb128 0x13
+ 941 02e4 0C000000 		.4byte	.LVL12
+ 942 02e8 EE010000 		.4byte	0x1ee
+ 943 02ec 14       		.uleb128 0x14
+ 944 02ed 18000000 		.4byte	.LVL13
+ 945 02f1 64010000 		.4byte	0x164
+ 946 02f5 00       		.byte	0
+ 947 02f6 0A       		.uleb128 0xa
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 34
+
+
+ 948 02f7 30010000 		.4byte	0x130
+ 949 02fb 00000000 		.4byte	.LFB7
+ 950 02ff 0C000000 		.4byte	.LFE7-.LFB7
+ 951 0303 01       		.uleb128 0x1
+ 952 0304 9C       		.byte	0x9c
+ 953 0305 11030000 		.4byte	0x311
+ 954 0309 0B       		.uleb128 0xb
+ 955 030a 3D010000 		.4byte	0x13d
+ 956 030e 01       		.uleb128 0x1
+ 957 030f 50       		.byte	0x50
+ 958 0310 00       		.byte	0
+ 959 0311 0A       		.uleb128 0xa
+ 960 0312 16010000 		.4byte	0x116
+ 961 0316 00000000 		.4byte	.LFB8
+ 962 031a 0C000000 		.4byte	.LFE8-.LFB8
+ 963 031e 01       		.uleb128 0x1
+ 964 031f 9C       		.byte	0x9c
+ 965 0320 2C030000 		.4byte	0x32c
+ 966 0324 0B       		.uleb128 0xb
+ 967 0325 23010000 		.4byte	0x123
+ 968 0329 01       		.uleb128 0x1
+ 969 032a 50       		.byte	0x50
+ 970 032b 00       		.byte	0
+ 971 032c 0A       		.uleb128 0xa
+ 972 032d FC000000 		.4byte	0xfc
+ 973 0331 00000000 		.4byte	.LFB9
+ 974 0335 0C000000 		.4byte	.LFE9-.LFB9
+ 975 0339 01       		.uleb128 0x1
+ 976 033a 9C       		.byte	0x9c
+ 977 033b 47030000 		.4byte	0x347
+ 978 033f 0B       		.uleb128 0xb
+ 979 0340 09010000 		.4byte	0x109
+ 980 0344 01       		.uleb128 0x1
+ 981 0345 50       		.byte	0x50
+ 982 0346 00       		.byte	0
+ 983 0347 0A       		.uleb128 0xa
+ 984 0348 E2000000 		.4byte	0xe2
+ 985 034c 00000000 		.4byte	.LFB10
+ 986 0350 0C000000 		.4byte	.LFE10-.LFB10
+ 987 0354 01       		.uleb128 0x1
+ 988 0355 9C       		.byte	0x9c
+ 989 0356 62030000 		.4byte	0x362
+ 990 035a 0B       		.uleb128 0xb
+ 991 035b EF000000 		.4byte	0xef
+ 992 035f 01       		.uleb128 0x1
+ 993 0360 50       		.byte	0x50
+ 994 0361 00       		.byte	0
+ 995 0362 15       		.uleb128 0x15
+ 996 0363 D5000000 		.4byte	0xd5
+ 997 0367 00000000 		.4byte	.LFB11
+ 998 036b 0C000000 		.4byte	.LFE11-.LFB11
+ 999 036f 01       		.uleb128 0x1
+ 1000 0370 9C       		.byte	0x9c
+ 1001 0371 16       		.uleb128 0x16
+ 1002 0372 0B000000 		.4byte	.LASF47
+ 1003 0376 01       		.byte	0x1
+ 1004 0377 E102     		.2byte	0x2e1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 35
+
+
+ 1005 0379 6B000000 		.4byte	0x6b
+ 1006 037d 00000000 		.4byte	.LFB12
+ 1007 0381 0C000000 		.4byte	.LFE12-.LFB12
+ 1008 0385 01       		.uleb128 0x1
+ 1009 0386 9C       		.byte	0x9c
+ 1010 0387 9A030000 		.4byte	0x39a
+ 1011 038b 17       		.uleb128 0x17
+ 1012 038c 60020000 		.4byte	.LASF36
+ 1013 0390 01       		.byte	0x1
+ 1014 0391 E302     		.2byte	0x2e3
+ 1015 0393 6B000000 		.4byte	0x6b
+ 1016 0397 01       		.uleb128 0x1
+ 1017 0398 50       		.byte	0x50
+ 1018 0399 00       		.byte	0
+ 1019 039a 0D       		.uleb128 0xd
+ 1020 039b C1030000 		.4byte	.LASF37
+ 1021 039f 01       		.byte	0x1
+ 1022 03a0 FD02     		.2byte	0x2fd
+ 1023 03a2 00000000 		.4byte	.LFB13
+ 1024 03a6 0C000000 		.4byte	.LFE13-.LFB13
+ 1025 03aa 01       		.uleb128 0x1
+ 1026 03ab 9C       		.byte	0x9c
+ 1027 03ac BF030000 		.4byte	0x3bf
+ 1028 03b0 18       		.uleb128 0x18
+ 1029 03b1 AD010000 		.4byte	.LASF48
+ 1030 03b5 01       		.byte	0x1
+ 1031 03b6 FD02     		.2byte	0x2fd
+ 1032 03b8 6B000000 		.4byte	0x6b
+ 1033 03bc 01       		.uleb128 0x1
+ 1034 03bd 50       		.byte	0x50
+ 1035 03be 00       		.byte	0
+ 1036 03bf 15       		.uleb128 0x15
+ 1037 03c0 C8000000 		.4byte	0xc8
+ 1038 03c4 00000000 		.4byte	.LFB14
+ 1039 03c8 0C000000 		.4byte	.LFE14-.LFB14
+ 1040 03cc 01       		.uleb128 0x1
+ 1041 03cd 9C       		.byte	0x9c
+ 1042 03ce 0C       		.uleb128 0xc
+ 1043 03cf F1020000 		.4byte	.LASF39
+ 1044 03d3 01       		.byte	0x1
+ 1045 03d4 4A03     		.2byte	0x34a
+ 1046 03d6 77000000 		.4byte	0x77
+ 1047 03da 00000000 		.4byte	.LFB15
+ 1048 03de 0C000000 		.4byte	.LFE15-.LFB15
+ 1049 03e2 01       		.uleb128 0x1
+ 1050 03e3 9C       		.byte	0x9c
+ 1051 03e4 0C       		.uleb128 0xc
+ 1052 03e5 0B030000 		.4byte	.LASF40
+ 1053 03e9 01       		.byte	0x1
+ 1054 03ea 5E03     		.2byte	0x35e
+ 1055 03ec 77000000 		.4byte	0x77
+ 1056 03f0 00000000 		.4byte	.LFB16
+ 1057 03f4 0C000000 		.4byte	.LFE16-.LFB16
+ 1058 03f8 01       		.uleb128 0x1
+ 1059 03f9 9C       		.byte	0x9c
+ 1060 03fa 0C       		.uleb128 0xc
+ 1061 03fb 94020000 		.4byte	.LASF41
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 36
+
+
+ 1062 03ff 01       		.byte	0x1
+ 1063 0400 7403     		.2byte	0x374
+ 1064 0402 77000000 		.4byte	0x77
+ 1065 0406 00000000 		.4byte	.LFB17
+ 1066 040a 0C000000 		.4byte	.LFE17-.LFB17
+ 1067 040e 01       		.uleb128 0x1
+ 1068 040f 9C       		.byte	0x9c
+ 1069 0410 19       		.uleb128 0x19
+ 1070 0411 CE000000 		.4byte	.LASF49
+ 1071 0415 01       		.byte	0x1
+ 1072 0416 20       		.byte	0x20
+ 1073 0417 6B000000 		.4byte	0x6b
+ 1074 041b 05       		.uleb128 0x5
+ 1075 041c 03       		.byte	0x3
+ 1076 041d 00000000 		.4byte	RightEyeball_initVar
+ 1077 0421 1A       		.uleb128 0x1a
+ 1078 0422 E6010000 		.4byte	.LASF42
+ 1079 0426 E6010000 		.4byte	.LASF42
+ 1080 042a 03       		.byte	0x3
+ 1081 042b 7D       		.byte	0x7d
+ 1082 042c 1A       		.uleb128 0x1a
+ 1083 042d 4A020000 		.4byte	.LASF43
+ 1084 0431 4A020000 		.4byte	.LASF43
+ 1085 0435 03       		.byte	0x3
+ 1086 0436 7E       		.byte	0x7e
+ 1087 0437 00       		.byte	0
+ 1088              		.section	.debug_abbrev,"",%progbits
+ 1089              	.Ldebug_abbrev0:
+ 1090 0000 01       		.uleb128 0x1
+ 1091 0001 11       		.uleb128 0x11
+ 1092 0002 01       		.byte	0x1
+ 1093 0003 25       		.uleb128 0x25
+ 1094 0004 0E       		.uleb128 0xe
+ 1095 0005 13       		.uleb128 0x13
+ 1096 0006 0B       		.uleb128 0xb
+ 1097 0007 03       		.uleb128 0x3
+ 1098 0008 0E       		.uleb128 0xe
+ 1099 0009 1B       		.uleb128 0x1b
+ 1100 000a 0E       		.uleb128 0xe
+ 1101 000b 55       		.uleb128 0x55
+ 1102 000c 17       		.uleb128 0x17
+ 1103 000d 11       		.uleb128 0x11
+ 1104 000e 01       		.uleb128 0x1
+ 1105 000f 10       		.uleb128 0x10
+ 1106 0010 17       		.uleb128 0x17
+ 1107 0011 00       		.byte	0
+ 1108 0012 00       		.byte	0
+ 1109 0013 02       		.uleb128 0x2
+ 1110 0014 24       		.uleb128 0x24
+ 1111 0015 00       		.byte	0
+ 1112 0016 0B       		.uleb128 0xb
+ 1113 0017 0B       		.uleb128 0xb
+ 1114 0018 3E       		.uleb128 0x3e
+ 1115 0019 0B       		.uleb128 0xb
+ 1116 001a 03       		.uleb128 0x3
+ 1117 001b 0E       		.uleb128 0xe
+ 1118 001c 00       		.byte	0
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 37
+
+
+ 1119 001d 00       		.byte	0
+ 1120 001e 03       		.uleb128 0x3
+ 1121 001f 24       		.uleb128 0x24
+ 1122 0020 00       		.byte	0
+ 1123 0021 0B       		.uleb128 0xb
+ 1124 0022 0B       		.uleb128 0xb
+ 1125 0023 3E       		.uleb128 0x3e
+ 1126 0024 0B       		.uleb128 0xb
+ 1127 0025 03       		.uleb128 0x3
+ 1128 0026 08       		.uleb128 0x8
+ 1129 0027 00       		.byte	0
+ 1130 0028 00       		.byte	0
+ 1131 0029 04       		.uleb128 0x4
+ 1132 002a 16       		.uleb128 0x16
+ 1133 002b 00       		.byte	0
+ 1134 002c 03       		.uleb128 0x3
+ 1135 002d 0E       		.uleb128 0xe
+ 1136 002e 3A       		.uleb128 0x3a
+ 1137 002f 0B       		.uleb128 0xb
+ 1138 0030 3B       		.uleb128 0x3b
+ 1139 0031 05       		.uleb128 0x5
+ 1140 0032 49       		.uleb128 0x49
+ 1141 0033 13       		.uleb128 0x13
+ 1142 0034 00       		.byte	0
+ 1143 0035 00       		.byte	0
+ 1144 0036 05       		.uleb128 0x5
+ 1145 0037 35       		.uleb128 0x35
+ 1146 0038 00       		.byte	0
+ 1147 0039 49       		.uleb128 0x49
+ 1148 003a 13       		.uleb128 0x13
+ 1149 003b 00       		.byte	0
+ 1150 003c 00       		.byte	0
+ 1151 003d 06       		.uleb128 0x6
+ 1152 003e 2E       		.uleb128 0x2e
+ 1153 003f 00       		.byte	0
+ 1154 0040 3F       		.uleb128 0x3f
+ 1155 0041 19       		.uleb128 0x19
+ 1156 0042 03       		.uleb128 0x3
+ 1157 0043 0E       		.uleb128 0xe
+ 1158 0044 3A       		.uleb128 0x3a
+ 1159 0045 0B       		.uleb128 0xb
+ 1160 0046 3B       		.uleb128 0x3b
+ 1161 0047 05       		.uleb128 0x5
+ 1162 0048 27       		.uleb128 0x27
+ 1163 0049 19       		.uleb128 0x19
+ 1164 004a 49       		.uleb128 0x49
+ 1165 004b 13       		.uleb128 0x13
+ 1166 004c 20       		.uleb128 0x20
+ 1167 004d 0B       		.uleb128 0xb
+ 1168 004e 00       		.byte	0
+ 1169 004f 00       		.byte	0
+ 1170 0050 07       		.uleb128 0x7
+ 1171 0051 2E       		.uleb128 0x2e
+ 1172 0052 01       		.byte	0x1
+ 1173 0053 3F       		.uleb128 0x3f
+ 1174 0054 19       		.uleb128 0x19
+ 1175 0055 03       		.uleb128 0x3
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 38
+
+
+ 1176 0056 0E       		.uleb128 0xe
+ 1177 0057 3A       		.uleb128 0x3a
+ 1178 0058 0B       		.uleb128 0xb
+ 1179 0059 3B       		.uleb128 0x3b
+ 1180 005a 05       		.uleb128 0x5
+ 1181 005b 27       		.uleb128 0x27
+ 1182 005c 19       		.uleb128 0x19
+ 1183 005d 20       		.uleb128 0x20
+ 1184 005e 0B       		.uleb128 0xb
+ 1185 005f 01       		.uleb128 0x1
+ 1186 0060 13       		.uleb128 0x13
+ 1187 0061 00       		.byte	0
+ 1188 0062 00       		.byte	0
+ 1189 0063 08       		.uleb128 0x8
+ 1190 0064 05       		.uleb128 0x5
+ 1191 0065 00       		.byte	0
+ 1192 0066 03       		.uleb128 0x3
+ 1193 0067 0E       		.uleb128 0xe
+ 1194 0068 3A       		.uleb128 0x3a
+ 1195 0069 0B       		.uleb128 0xb
+ 1196 006a 3B       		.uleb128 0x3b
+ 1197 006b 05       		.uleb128 0x5
+ 1198 006c 49       		.uleb128 0x49
+ 1199 006d 13       		.uleb128 0x13
+ 1200 006e 00       		.byte	0
+ 1201 006f 00       		.byte	0
+ 1202 0070 09       		.uleb128 0x9
+ 1203 0071 2E       		.uleb128 0x2e
+ 1204 0072 00       		.byte	0
+ 1205 0073 3F       		.uleb128 0x3f
+ 1206 0074 19       		.uleb128 0x19
+ 1207 0075 03       		.uleb128 0x3
+ 1208 0076 0E       		.uleb128 0xe
+ 1209 0077 3A       		.uleb128 0x3a
+ 1210 0078 0B       		.uleb128 0xb
+ 1211 0079 3B       		.uleb128 0x3b
+ 1212 007a 0B       		.uleb128 0xb
+ 1213 007b 27       		.uleb128 0x27
+ 1214 007c 19       		.uleb128 0x19
+ 1215 007d 11       		.uleb128 0x11
+ 1216 007e 01       		.uleb128 0x1
+ 1217 007f 12       		.uleb128 0x12
+ 1218 0080 06       		.uleb128 0x6
+ 1219 0081 40       		.uleb128 0x40
+ 1220 0082 18       		.uleb128 0x18
+ 1221 0083 9742     		.uleb128 0x2117
+ 1222 0085 19       		.uleb128 0x19
+ 1223 0086 00       		.byte	0
+ 1224 0087 00       		.byte	0
+ 1225 0088 0A       		.uleb128 0xa
+ 1226 0089 2E       		.uleb128 0x2e
+ 1227 008a 01       		.byte	0x1
+ 1228 008b 31       		.uleb128 0x31
+ 1229 008c 13       		.uleb128 0x13
+ 1230 008d 11       		.uleb128 0x11
+ 1231 008e 01       		.uleb128 0x1
+ 1232 008f 12       		.uleb128 0x12
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 39
+
+
+ 1233 0090 06       		.uleb128 0x6
+ 1234 0091 40       		.uleb128 0x40
+ 1235 0092 18       		.uleb128 0x18
+ 1236 0093 9742     		.uleb128 0x2117
+ 1237 0095 19       		.uleb128 0x19
+ 1238 0096 01       		.uleb128 0x1
+ 1239 0097 13       		.uleb128 0x13
+ 1240 0098 00       		.byte	0
+ 1241 0099 00       		.byte	0
+ 1242 009a 0B       		.uleb128 0xb
+ 1243 009b 05       		.uleb128 0x5
+ 1244 009c 00       		.byte	0
+ 1245 009d 31       		.uleb128 0x31
+ 1246 009e 13       		.uleb128 0x13
+ 1247 009f 02       		.uleb128 0x2
+ 1248 00a0 18       		.uleb128 0x18
+ 1249 00a1 00       		.byte	0
+ 1250 00a2 00       		.byte	0
+ 1251 00a3 0C       		.uleb128 0xc
+ 1252 00a4 2E       		.uleb128 0x2e
+ 1253 00a5 00       		.byte	0
+ 1254 00a6 3F       		.uleb128 0x3f
+ 1255 00a7 19       		.uleb128 0x19
+ 1256 00a8 03       		.uleb128 0x3
+ 1257 00a9 0E       		.uleb128 0xe
+ 1258 00aa 3A       		.uleb128 0x3a
+ 1259 00ab 0B       		.uleb128 0xb
+ 1260 00ac 3B       		.uleb128 0x3b
+ 1261 00ad 05       		.uleb128 0x5
+ 1262 00ae 27       		.uleb128 0x27
+ 1263 00af 19       		.uleb128 0x19
+ 1264 00b0 49       		.uleb128 0x49
+ 1265 00b1 13       		.uleb128 0x13
+ 1266 00b2 11       		.uleb128 0x11
+ 1267 00b3 01       		.uleb128 0x1
+ 1268 00b4 12       		.uleb128 0x12
+ 1269 00b5 06       		.uleb128 0x6
+ 1270 00b6 40       		.uleb128 0x40
+ 1271 00b7 18       		.uleb128 0x18
+ 1272 00b8 9742     		.uleb128 0x2117
+ 1273 00ba 19       		.uleb128 0x19
+ 1274 00bb 00       		.byte	0
+ 1275 00bc 00       		.byte	0
+ 1276 00bd 0D       		.uleb128 0xd
+ 1277 00be 2E       		.uleb128 0x2e
+ 1278 00bf 01       		.byte	0x1
+ 1279 00c0 3F       		.uleb128 0x3f
+ 1280 00c1 19       		.uleb128 0x19
+ 1281 00c2 03       		.uleb128 0x3
+ 1282 00c3 0E       		.uleb128 0xe
+ 1283 00c4 3A       		.uleb128 0x3a
+ 1284 00c5 0B       		.uleb128 0xb
+ 1285 00c6 3B       		.uleb128 0x3b
+ 1286 00c7 05       		.uleb128 0x5
+ 1287 00c8 27       		.uleb128 0x27
+ 1288 00c9 19       		.uleb128 0x19
+ 1289 00ca 11       		.uleb128 0x11
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 40
+
+
+ 1290 00cb 01       		.uleb128 0x1
+ 1291 00cc 12       		.uleb128 0x12
+ 1292 00cd 06       		.uleb128 0x6
+ 1293 00ce 40       		.uleb128 0x40
+ 1294 00cf 18       		.uleb128 0x18
+ 1295 00d0 9742     		.uleb128 0x2117
+ 1296 00d2 19       		.uleb128 0x19
+ 1297 00d3 01       		.uleb128 0x1
+ 1298 00d4 13       		.uleb128 0x13
+ 1299 00d5 00       		.byte	0
+ 1300 00d6 00       		.byte	0
+ 1301 00d7 0E       		.uleb128 0xe
+ 1302 00d8 1D       		.uleb128 0x1d
+ 1303 00d9 00       		.byte	0
+ 1304 00da 31       		.uleb128 0x31
+ 1305 00db 13       		.uleb128 0x13
+ 1306 00dc 52       		.uleb128 0x52
+ 1307 00dd 01       		.uleb128 0x1
+ 1308 00de 55       		.uleb128 0x55
+ 1309 00df 17       		.uleb128 0x17
+ 1310 00e0 58       		.uleb128 0x58
+ 1311 00e1 0B       		.uleb128 0xb
+ 1312 00e2 59       		.uleb128 0x59
+ 1313 00e3 05       		.uleb128 0x5
+ 1314 00e4 00       		.byte	0
+ 1315 00e5 00       		.byte	0
+ 1316 00e6 0F       		.uleb128 0xf
+ 1317 00e7 2E       		.uleb128 0x2e
+ 1318 00e8 01       		.byte	0x1
+ 1319 00e9 3F       		.uleb128 0x3f
+ 1320 00ea 19       		.uleb128 0x19
+ 1321 00eb 03       		.uleb128 0x3
+ 1322 00ec 0E       		.uleb128 0xe
+ 1323 00ed 3A       		.uleb128 0x3a
+ 1324 00ee 0B       		.uleb128 0xb
+ 1325 00ef 3B       		.uleb128 0x3b
+ 1326 00f0 0B       		.uleb128 0xb
+ 1327 00f1 27       		.uleb128 0x27
+ 1328 00f2 19       		.uleb128 0x19
+ 1329 00f3 11       		.uleb128 0x11
+ 1330 00f4 01       		.uleb128 0x1
+ 1331 00f5 12       		.uleb128 0x12
+ 1332 00f6 06       		.uleb128 0x6
+ 1333 00f7 40       		.uleb128 0x40
+ 1334 00f8 18       		.uleb128 0x18
+ 1335 00f9 9742     		.uleb128 0x2117
+ 1336 00fb 19       		.uleb128 0x19
+ 1337 00fc 01       		.uleb128 0x1
+ 1338 00fd 13       		.uleb128 0x13
+ 1339 00fe 00       		.byte	0
+ 1340 00ff 00       		.byte	0
+ 1341 0100 10       		.uleb128 0x10
+ 1342 0101 34       		.uleb128 0x34
+ 1343 0102 00       		.byte	0
+ 1344 0103 03       		.uleb128 0x3
+ 1345 0104 0E       		.uleb128 0xe
+ 1346 0105 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 41
+
+
+ 1347 0106 0B       		.uleb128 0xb
+ 1348 0107 3B       		.uleb128 0x3b
+ 1349 0108 0B       		.uleb128 0xb
+ 1350 0109 49       		.uleb128 0x49
+ 1351 010a 13       		.uleb128 0x13
+ 1352 010b 02       		.uleb128 0x2
+ 1353 010c 17       		.uleb128 0x17
+ 1354 010d 00       		.byte	0
+ 1355 010e 00       		.byte	0
+ 1356 010f 11       		.uleb128 0x11
+ 1357 0110 1D       		.uleb128 0x1d
+ 1358 0111 01       		.byte	0x1
+ 1359 0112 31       		.uleb128 0x31
+ 1360 0113 13       		.uleb128 0x13
+ 1361 0114 11       		.uleb128 0x11
+ 1362 0115 01       		.uleb128 0x1
+ 1363 0116 12       		.uleb128 0x12
+ 1364 0117 06       		.uleb128 0x6
+ 1365 0118 58       		.uleb128 0x58
+ 1366 0119 0B       		.uleb128 0xb
+ 1367 011a 59       		.uleb128 0x59
+ 1368 011b 0B       		.uleb128 0xb
+ 1369 011c 01       		.uleb128 0x1
+ 1370 011d 13       		.uleb128 0x13
+ 1371 011e 00       		.byte	0
+ 1372 011f 00       		.byte	0
+ 1373 0120 12       		.uleb128 0x12
+ 1374 0121 05       		.uleb128 0x5
+ 1375 0122 00       		.byte	0
+ 1376 0123 31       		.uleb128 0x31
+ 1377 0124 13       		.uleb128 0x13
+ 1378 0125 02       		.uleb128 0x2
+ 1379 0126 17       		.uleb128 0x17
+ 1380 0127 00       		.byte	0
+ 1381 0128 00       		.byte	0
+ 1382 0129 13       		.uleb128 0x13
+ 1383 012a 898201   		.uleb128 0x4109
+ 1384 012d 00       		.byte	0
+ 1385 012e 11       		.uleb128 0x11
+ 1386 012f 01       		.uleb128 0x1
+ 1387 0130 31       		.uleb128 0x31
+ 1388 0131 13       		.uleb128 0x13
+ 1389 0132 00       		.byte	0
+ 1390 0133 00       		.byte	0
+ 1391 0134 14       		.uleb128 0x14
+ 1392 0135 898201   		.uleb128 0x4109
+ 1393 0138 00       		.byte	0
+ 1394 0139 11       		.uleb128 0x11
+ 1395 013a 01       		.uleb128 0x1
+ 1396 013b 9542     		.uleb128 0x2115
+ 1397 013d 19       		.uleb128 0x19
+ 1398 013e 31       		.uleb128 0x31
+ 1399 013f 13       		.uleb128 0x13
+ 1400 0140 00       		.byte	0
+ 1401 0141 00       		.byte	0
+ 1402 0142 15       		.uleb128 0x15
+ 1403 0143 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 42
+
+
+ 1404 0144 00       		.byte	0
+ 1405 0145 31       		.uleb128 0x31
+ 1406 0146 13       		.uleb128 0x13
+ 1407 0147 11       		.uleb128 0x11
+ 1408 0148 01       		.uleb128 0x1
+ 1409 0149 12       		.uleb128 0x12
+ 1410 014a 06       		.uleb128 0x6
+ 1411 014b 40       		.uleb128 0x40
+ 1412 014c 18       		.uleb128 0x18
+ 1413 014d 9742     		.uleb128 0x2117
+ 1414 014f 19       		.uleb128 0x19
+ 1415 0150 00       		.byte	0
+ 1416 0151 00       		.byte	0
+ 1417 0152 16       		.uleb128 0x16
+ 1418 0153 2E       		.uleb128 0x2e
+ 1419 0154 01       		.byte	0x1
+ 1420 0155 3F       		.uleb128 0x3f
+ 1421 0156 19       		.uleb128 0x19
+ 1422 0157 03       		.uleb128 0x3
+ 1423 0158 0E       		.uleb128 0xe
+ 1424 0159 3A       		.uleb128 0x3a
+ 1425 015a 0B       		.uleb128 0xb
+ 1426 015b 3B       		.uleb128 0x3b
+ 1427 015c 05       		.uleb128 0x5
+ 1428 015d 27       		.uleb128 0x27
+ 1429 015e 19       		.uleb128 0x19
+ 1430 015f 49       		.uleb128 0x49
+ 1431 0160 13       		.uleb128 0x13
+ 1432 0161 11       		.uleb128 0x11
+ 1433 0162 01       		.uleb128 0x1
+ 1434 0163 12       		.uleb128 0x12
+ 1435 0164 06       		.uleb128 0x6
+ 1436 0165 40       		.uleb128 0x40
+ 1437 0166 18       		.uleb128 0x18
+ 1438 0167 9742     		.uleb128 0x2117
+ 1439 0169 19       		.uleb128 0x19
+ 1440 016a 01       		.uleb128 0x1
+ 1441 016b 13       		.uleb128 0x13
+ 1442 016c 00       		.byte	0
+ 1443 016d 00       		.byte	0
+ 1444 016e 17       		.uleb128 0x17
+ 1445 016f 34       		.uleb128 0x34
+ 1446 0170 00       		.byte	0
+ 1447 0171 03       		.uleb128 0x3
+ 1448 0172 0E       		.uleb128 0xe
+ 1449 0173 3A       		.uleb128 0x3a
+ 1450 0174 0B       		.uleb128 0xb
+ 1451 0175 3B       		.uleb128 0x3b
+ 1452 0176 05       		.uleb128 0x5
+ 1453 0177 49       		.uleb128 0x49
+ 1454 0178 13       		.uleb128 0x13
+ 1455 0179 02       		.uleb128 0x2
+ 1456 017a 18       		.uleb128 0x18
+ 1457 017b 00       		.byte	0
+ 1458 017c 00       		.byte	0
+ 1459 017d 18       		.uleb128 0x18
+ 1460 017e 05       		.uleb128 0x5
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 43
+
+
+ 1461 017f 00       		.byte	0
+ 1462 0180 03       		.uleb128 0x3
+ 1463 0181 0E       		.uleb128 0xe
+ 1464 0182 3A       		.uleb128 0x3a
+ 1465 0183 0B       		.uleb128 0xb
+ 1466 0184 3B       		.uleb128 0x3b
+ 1467 0185 05       		.uleb128 0x5
+ 1468 0186 49       		.uleb128 0x49
+ 1469 0187 13       		.uleb128 0x13
+ 1470 0188 02       		.uleb128 0x2
+ 1471 0189 18       		.uleb128 0x18
+ 1472 018a 00       		.byte	0
+ 1473 018b 00       		.byte	0
+ 1474 018c 19       		.uleb128 0x19
+ 1475 018d 34       		.uleb128 0x34
+ 1476 018e 00       		.byte	0
+ 1477 018f 03       		.uleb128 0x3
+ 1478 0190 0E       		.uleb128 0xe
+ 1479 0191 3A       		.uleb128 0x3a
+ 1480 0192 0B       		.uleb128 0xb
+ 1481 0193 3B       		.uleb128 0x3b
+ 1482 0194 0B       		.uleb128 0xb
+ 1483 0195 49       		.uleb128 0x49
+ 1484 0196 13       		.uleb128 0x13
+ 1485 0197 3F       		.uleb128 0x3f
+ 1486 0198 19       		.uleb128 0x19
+ 1487 0199 02       		.uleb128 0x2
+ 1488 019a 18       		.uleb128 0x18
+ 1489 019b 00       		.byte	0
+ 1490 019c 00       		.byte	0
+ 1491 019d 1A       		.uleb128 0x1a
+ 1492 019e 2E       		.uleb128 0x2e
+ 1493 019f 00       		.byte	0
+ 1494 01a0 3F       		.uleb128 0x3f
+ 1495 01a1 19       		.uleb128 0x19
+ 1496 01a2 3C       		.uleb128 0x3c
+ 1497 01a3 19       		.uleb128 0x19
+ 1498 01a4 6E       		.uleb128 0x6e
+ 1499 01a5 0E       		.uleb128 0xe
+ 1500 01a6 03       		.uleb128 0x3
+ 1501 01a7 0E       		.uleb128 0xe
+ 1502 01a8 3A       		.uleb128 0x3a
+ 1503 01a9 0B       		.uleb128 0xb
+ 1504 01aa 3B       		.uleb128 0x3b
+ 1505 01ab 0B       		.uleb128 0xb
+ 1506 01ac 00       		.byte	0
+ 1507 01ad 00       		.byte	0
+ 1508 01ae 00       		.byte	0
+ 1509              		.section	.debug_loc,"",%progbits
+ 1510              	.Ldebug_loc0:
+ 1511              	.LLST0:
+ 1512 0000 08000000 		.4byte	.LVL1
+ 1513 0004 0C000000 		.4byte	.LVL2
+ 1514 0008 0600     		.2byte	0x6
+ 1515 000a 73       		.byte	0x73
+ 1516 000b 00       		.sleb128 0
+ 1517 000c 09       		.byte	0x9
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 44
+
+
+ 1518 000d C0       		.byte	0xc0
+ 1519 000e 1A       		.byte	0x1a
+ 1520 000f 9F       		.byte	0x9f
+ 1521 0010 00000000 		.4byte	0
+ 1522 0014 00000000 		.4byte	0
+ 1523              	.LLST1:
+ 1524 0018 44000000 		.4byte	.LVL9
+ 1525 001c 4F000000 		.4byte	.LVL10-1
+ 1526 0020 0100     		.2byte	0x1
+ 1527 0022 50       		.byte	0x50
+ 1528 0023 00000000 		.4byte	0
+ 1529 0027 00000000 		.4byte	0
+ 1530              	.LLST2:
+ 1531 002b 22000000 		.4byte	.LVL3
+ 1532 002f 2A000000 		.4byte	.LVL4
+ 1533 0033 0400     		.2byte	0x4
+ 1534 0035 0A       		.byte	0xa
+ 1535 0036 204E     		.2byte	0x4e20
+ 1536 0038 9F       		.byte	0x9f
+ 1537 0039 00000000 		.4byte	0
+ 1538 003d 00000000 		.4byte	0
+ 1539              	.LLST3:
+ 1540 0041 2A000000 		.4byte	.LVL4
+ 1541 0045 2E000000 		.4byte	.LVL5
+ 1542 0049 0400     		.2byte	0x4
+ 1543 004b 0A       		.byte	0xa
+ 1544 004c 204E     		.2byte	0x4e20
+ 1545 004e 9F       		.byte	0x9f
+ 1546 004f 00000000 		.4byte	0
+ 1547 0053 00000000 		.4byte	0
+ 1548              	.LLST4:
+ 1549 0057 2E000000 		.4byte	.LVL5
+ 1550 005b 36000000 		.4byte	.LVL6
+ 1551 005f 0400     		.2byte	0x4
+ 1552 0061 0A       		.byte	0xa
+ 1553 0062 D007     		.2byte	0x7d0
+ 1554 0064 9F       		.byte	0x9f
+ 1555 0065 00000000 		.4byte	0
+ 1556 0069 00000000 		.4byte	0
+ 1557              	.LLST5:
+ 1558 006d 36000000 		.4byte	.LVL6
+ 1559 0071 3A000000 		.4byte	.LVL7
+ 1560 0075 0400     		.2byte	0x4
+ 1561 0077 0A       		.byte	0xa
+ 1562 0078 D007     		.2byte	0x7d0
+ 1563 007a 9F       		.byte	0x9f
+ 1564 007b 00000000 		.4byte	0
+ 1565 007f 00000000 		.4byte	0
+ 1566              	.LLST6:
+ 1567 0083 3A000000 		.4byte	.LVL7
+ 1568 0087 40000000 		.4byte	.LVL8
+ 1569 008b 0200     		.2byte	0x2
+ 1570 008d 30       		.byte	0x30
+ 1571 008e 9F       		.byte	0x9f
+ 1572 008f 00000000 		.4byte	0
+ 1573 0093 00000000 		.4byte	0
+ 1574              		.section	.debug_aranges,"",%progbits
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 45
+
+
+ 1575 0000 A4000000 		.4byte	0xa4
+ 1576 0004 0200     		.2byte	0x2
+ 1577 0006 00000000 		.4byte	.Ldebug_info0
+ 1578 000a 04       		.byte	0x4
+ 1579 000b 00       		.byte	0
+ 1580 000c 0000     		.2byte	0
+ 1581 000e 0000     		.2byte	0
+ 1582 0010 00000000 		.4byte	.LFB2
+ 1583 0014 10000000 		.4byte	.LFE2-.LFB2
+ 1584 0018 00000000 		.4byte	.LFB3
+ 1585 001c 10000000 		.4byte	.LFE3-.LFB3
+ 1586 0020 00000000 		.4byte	.LFB4
+ 1587 0024 0C000000 		.4byte	.LFE4-.LFB4
+ 1588 0028 00000000 		.4byte	.LFB5
+ 1589 002c 14000000 		.4byte	.LFE5-.LFB5
+ 1590 0030 00000000 		.4byte	.LFB6
+ 1591 0034 18000000 		.4byte	.LFE6-.LFB6
+ 1592 0038 00000000 		.4byte	.LFB1
+ 1593 003c 64000000 		.4byte	.LFE1-.LFB1
+ 1594 0040 00000000 		.4byte	.LFB0
+ 1595 0044 1C000000 		.4byte	.LFE0-.LFB0
+ 1596 0048 00000000 		.4byte	.LFB7
+ 1597 004c 0C000000 		.4byte	.LFE7-.LFB7
+ 1598 0050 00000000 		.4byte	.LFB8
+ 1599 0054 0C000000 		.4byte	.LFE8-.LFB8
+ 1600 0058 00000000 		.4byte	.LFB9
+ 1601 005c 0C000000 		.4byte	.LFE9-.LFB9
+ 1602 0060 00000000 		.4byte	.LFB10
+ 1603 0064 0C000000 		.4byte	.LFE10-.LFB10
+ 1604 0068 00000000 		.4byte	.LFB11
+ 1605 006c 0C000000 		.4byte	.LFE11-.LFB11
+ 1606 0070 00000000 		.4byte	.LFB12
+ 1607 0074 0C000000 		.4byte	.LFE12-.LFB12
+ 1608 0078 00000000 		.4byte	.LFB13
+ 1609 007c 0C000000 		.4byte	.LFE13-.LFB13
+ 1610 0080 00000000 		.4byte	.LFB14
+ 1611 0084 0C000000 		.4byte	.LFE14-.LFB14
+ 1612 0088 00000000 		.4byte	.LFB15
+ 1613 008c 0C000000 		.4byte	.LFE15-.LFB15
+ 1614 0090 00000000 		.4byte	.LFB16
+ 1615 0094 0C000000 		.4byte	.LFE16-.LFB16
+ 1616 0098 00000000 		.4byte	.LFB17
+ 1617 009c 0C000000 		.4byte	.LFE17-.LFB17
+ 1618 00a0 00000000 		.4byte	0
+ 1619 00a4 00000000 		.4byte	0
+ 1620              		.section	.debug_ranges,"",%progbits
+ 1621              	.Ldebug_ranges0:
+ 1622 0000 00000000 		.4byte	.LBB16
+ 1623 0004 02000000 		.4byte	.LBE16
+ 1624 0008 04000000 		.4byte	.LBB22
+ 1625 000c 06000000 		.4byte	.LBE22
+ 1626 0010 00000000 		.4byte	0
+ 1627 0014 00000000 		.4byte	0
+ 1628 0018 02000000 		.4byte	.LBB19
+ 1629 001c 04000000 		.4byte	.LBE19
+ 1630 0020 0A000000 		.4byte	.LBB23
+ 1631 0024 0E000000 		.4byte	.LBE23
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 46
+
+
+ 1632 0028 00000000 		.4byte	0
+ 1633 002c 00000000 		.4byte	0
+ 1634 0030 00000000 		.4byte	.LFB2
+ 1635 0034 10000000 		.4byte	.LFE2
+ 1636 0038 00000000 		.4byte	.LFB3
+ 1637 003c 10000000 		.4byte	.LFE3
+ 1638 0040 00000000 		.4byte	.LFB4
+ 1639 0044 0C000000 		.4byte	.LFE4
+ 1640 0048 00000000 		.4byte	.LFB5
+ 1641 004c 14000000 		.4byte	.LFE5
+ 1642 0050 00000000 		.4byte	.LFB6
+ 1643 0054 18000000 		.4byte	.LFE6
+ 1644 0058 00000000 		.4byte	.LFB1
+ 1645 005c 64000000 		.4byte	.LFE1
+ 1646 0060 00000000 		.4byte	.LFB0
+ 1647 0064 1C000000 		.4byte	.LFE0
+ 1648 0068 00000000 		.4byte	.LFB7
+ 1649 006c 0C000000 		.4byte	.LFE7
+ 1650 0070 00000000 		.4byte	.LFB8
+ 1651 0074 0C000000 		.4byte	.LFE8
+ 1652 0078 00000000 		.4byte	.LFB9
+ 1653 007c 0C000000 		.4byte	.LFE9
+ 1654 0080 00000000 		.4byte	.LFB10
+ 1655 0084 0C000000 		.4byte	.LFE10
+ 1656 0088 00000000 		.4byte	.LFB11
+ 1657 008c 0C000000 		.4byte	.LFE11
+ 1658 0090 00000000 		.4byte	.LFB12
+ 1659 0094 0C000000 		.4byte	.LFE12
+ 1660 0098 00000000 		.4byte	.LFB13
+ 1661 009c 0C000000 		.4byte	.LFE13
+ 1662 00a0 00000000 		.4byte	.LFB14
+ 1663 00a4 0C000000 		.4byte	.LFE14
+ 1664 00a8 00000000 		.4byte	.LFB15
+ 1665 00ac 0C000000 		.4byte	.LFE15
+ 1666 00b0 00000000 		.4byte	.LFB16
+ 1667 00b4 0C000000 		.4byte	.LFE16
+ 1668 00b8 00000000 		.4byte	.LFB17
+ 1669 00bc 0C000000 		.4byte	.LFE17
+ 1670 00c0 00000000 		.4byte	0
+ 1671 00c4 00000000 		.4byte	0
+ 1672              		.section	.debug_line,"",%progbits
+ 1673              	.Ldebug_line0:
+ 1674 0000 D8010000 		.section	.debug_str,"MS",%progbits,1
+ 1674      02005400 
+ 1674      00000201 
+ 1674      FB0E0D00 
+ 1674      01010101 
+ 1675              	.LASF15:
+ 1676 0000 72656731 		.ascii	"reg16\000"
+ 1676      3600
+ 1677              	.LASF13:
+ 1678 0006 63686172 		.ascii	"char\000"
+ 1678      00
+ 1679              	.LASF47:
+ 1680 000b 52696768 		.ascii	"RightEyeball_ReadControlRegister\000"
+ 1680      74457965 
+ 1680      62616C6C 
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 47
+
+
+ 1680      5F526561 
+ 1680      64436F6E 
+ 1681              	.LASF26:
+ 1682 002c 70657269 		.ascii	"period\000"
+ 1682      6F6400
+ 1683              	.LASF3:
+ 1684 0033 73686F72 		.ascii	"short unsigned int\000"
+ 1684      7420756E 
+ 1684      7369676E 
+ 1684      65642069 
+ 1684      6E7400
+ 1685              	.LASF34:
+ 1686 0046 52696768 		.ascii	"RightEyeball_interruptState\000"
+ 1686      74457965 
+ 1686      62616C6C 
+ 1686      5F696E74 
+ 1686      65727275 
+ 1687              	.LASF45:
+ 1688 0062 47656E65 		.ascii	"Generated_Source\\PSoC5\\RightEyeball.c\000"
+ 1688      72617465 
+ 1688      645F536F 
+ 1688      75726365 
+ 1688      5C50536F 
+ 1689              	.LASF11:
+ 1690 0088 666C6F61 		.ascii	"float\000"
+ 1690      7400
+ 1691              	.LASF28:
+ 1692 008e 636F756E 		.ascii	"counter\000"
+ 1692      74657200 
+ 1693              	.LASF7:
+ 1694 0096 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1694      206C6F6E 
+ 1694      6720756E 
+ 1694      7369676E 
+ 1694      65642069 
+ 1695              	.LASF35:
+ 1696 00ad 52696768 		.ascii	"RightEyeball_Start\000"
+ 1696      74457965 
+ 1696      62616C6C 
+ 1696      5F537461 
+ 1696      727400
+ 1697              	.LASF1:
+ 1698 00c0 756E7369 		.ascii	"unsigned char\000"
+ 1698      676E6564 
+ 1698      20636861 
+ 1698      7200
+ 1699              	.LASF49:
+ 1700 00ce 52696768 		.ascii	"RightEyeball_initVar\000"
+ 1700      74457965 
+ 1700      62616C6C 
+ 1700      5F696E69 
+ 1700      74566172 
+ 1701              	.LASF14:
+ 1702 00e3 72656738 		.ascii	"reg8\000"
+ 1702      00
+ 1703              	.LASF44:
+ 1704 00e8 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 48
+
+
+ 1704      43313120 
+ 1704      352E342E 
+ 1704      31203230 
+ 1704      31363036 
+ 1705 011b 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1705      20726576 
+ 1705      6973696F 
+ 1705      6E203233 
+ 1705      37373135 
+ 1706 014e 73202D66 		.ascii	"s -ffunction-sections -ffat-lto-objects\000"
+ 1706      66756E63 
+ 1706      74696F6E 
+ 1706      2D736563 
+ 1706      74696F6E 
+ 1707              	.LASF25:
+ 1708 0176 52696768 		.ascii	"RightEyeball_WritePeriod\000"
+ 1708      74457965 
+ 1708      62616C6C 
+ 1708      5F577269 
+ 1708      74655065 
+ 1709              	.LASF20:
+ 1710 018f 52696768 		.ascii	"RightEyeball_SetInterruptMode\000"
+ 1710      74457965 
+ 1710      62616C6C 
+ 1710      5F536574 
+ 1710      496E7465 
+ 1711              	.LASF48:
+ 1712 01ad 636F6E74 		.ascii	"control\000"
+ 1712      726F6C00 
+ 1713              	.LASF12:
+ 1714 01b5 646F7562 		.ascii	"double\000"
+ 1714      6C6500
+ 1715              	.LASF2:
+ 1716 01bc 73686F72 		.ascii	"short int\000"
+ 1716      7420696E 
+ 1716      7400
+ 1717              	.LASF18:
+ 1718 01c6 52696768 		.ascii	"RightEyeball_ReadCapture\000"
+ 1718      74457965 
+ 1718      62616C6C 
+ 1718      5F526561 
+ 1718      64436170 
+ 1719              	.LASF10:
+ 1720 01df 75696E74 		.ascii	"uint16\000"
+ 1720      313600
+ 1721              	.LASF42:
+ 1722 01e6 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1722      74657243 
+ 1722      72697469 
+ 1722      63616C53 
+ 1722      65637469 
+ 1723              	.LASF5:
+ 1724 01fd 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1724      20756E73 
+ 1724      69676E65 
+ 1724      6420696E 
+ 1724      7400
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 49
+
+
+ 1725              	.LASF8:
+ 1726 020f 756E7369 		.ascii	"unsigned int\000"
+ 1726      676E6564 
+ 1726      20696E74 
+ 1726      00
+ 1727              	.LASF29:
+ 1728 021c 52696768 		.ascii	"RightEyeball_Enable\000"
+ 1728      74457965 
+ 1728      62616C6C 
+ 1728      5F456E61 
+ 1728      626C6500 
+ 1729              	.LASF27:
+ 1730 0230 52696768 		.ascii	"RightEyeball_WriteCounter\000"
+ 1730      74457965 
+ 1730      62616C6C 
+ 1730      5F577269 
+ 1730      7465436F 
+ 1731              	.LASF43:
+ 1732 024a 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1732      69744372 
+ 1732      69746963 
+ 1732      616C5365 
+ 1732      6374696F 
+ 1733              	.LASF36:
+ 1734 0260 72657375 		.ascii	"result\000"
+ 1734      6C7400
+ 1735              	.LASF24:
+ 1736 0267 52696768 		.ascii	"RightEyeball_WriteCompare1\000"
+ 1736      74457965 
+ 1736      62616C6C 
+ 1736      5F577269 
+ 1736      7465436F 
+ 1737              	.LASF32:
+ 1738 0282 52696768 		.ascii	"RightEyeball_Init\000"
+ 1738      74457965 
+ 1738      62616C6C 
+ 1738      5F496E69 
+ 1738      7400
+ 1739              	.LASF41:
+ 1740 0294 52696768 		.ascii	"RightEyeball_ReadPeriod\000"
+ 1740      74457965 
+ 1740      62616C6C 
+ 1740      5F526561 
+ 1740      64506572 
+ 1741              	.LASF33:
+ 1742 02ac 6374726C 		.ascii	"ctrl\000"
+ 1742      00
+ 1743              	.LASF17:
+ 1744 02b1 73697A65 		.ascii	"sizetype\000"
+ 1744      74797065 
+ 1744      00
+ 1745              	.LASF6:
+ 1746 02ba 6C6F6E67 		.ascii	"long long int\000"
+ 1746      206C6F6E 
+ 1746      6720696E 
+ 1746      7400
+ 1747              	.LASF21:
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 50
+
+
+ 1748 02c8 52696768 		.ascii	"RightEyeball_WriteCompare2\000"
+ 1748      74457965 
+ 1748      62616C6C 
+ 1748      5F577269 
+ 1748      7465436F 
+ 1749              	.LASF22:
+ 1750 02e3 696E7465 		.ascii	"interruptMode\000"
+ 1750      72727570 
+ 1750      744D6F64 
+ 1750      6500
+ 1751              	.LASF39:
+ 1752 02f1 52696768 		.ascii	"RightEyeball_ReadCompare1\000"
+ 1752      74457965 
+ 1752      62616C6C 
+ 1752      5F526561 
+ 1752      64436F6D 
+ 1753              	.LASF40:
+ 1754 030b 52696768 		.ascii	"RightEyeball_ReadCompare2\000"
+ 1754      74457965 
+ 1754      62616C6C 
+ 1754      5F526561 
+ 1754      64436F6D 
+ 1755              	.LASF38:
+ 1756 0325 52696768 		.ascii	"RightEyeball_ReadCounter\000"
+ 1756      74457965 
+ 1756      62616C6C 
+ 1756      5F526561 
+ 1756      64436F75 
+ 1757              	.LASF9:
+ 1758 033e 75696E74 		.ascii	"uint8\000"
+ 1758      3800
+ 1759              	.LASF4:
+ 1760 0344 6C6F6E67 		.ascii	"long int\000"
+ 1760      20696E74 
+ 1760      00
+ 1761              	.LASF19:
+ 1762 034d 52696768 		.ascii	"RightEyeball_ReadStatusRegister\000"
+ 1762      74457965 
+ 1762      62616C6C 
+ 1762      5F526561 
+ 1762      64537461 
+ 1763              	.LASF16:
+ 1764 036d 6C6F6E67 		.ascii	"long double\000"
+ 1764      20646F75 
+ 1764      626C6500 
+ 1765              	.LASF46:
+ 1766 0379 433A5C55 		.ascii	"C:\\Users\\jon\\Desktop\\CSE564-PSoC\\Face\\Control"
+ 1766      73657273 
+ 1766      5C6A6F6E 
+ 1766      5C446573 
+ 1766      6B746F70 
+ 1767 03a6 2E637964 		.ascii	".cydsn\000"
+ 1767      736E00
+ 1768              	.LASF0:
+ 1769 03ad 7369676E 		.ascii	"signed char\000"
+ 1769      65642063 
+ 1769      68617200 
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccWwmAMl.s 			page 51
+
+
+ 1770              	.LASF23:
+ 1771 03b9 636F6D70 		.ascii	"compare\000"
+ 1771      61726500 
+ 1772              	.LASF37:
+ 1773 03c1 52696768 		.ascii	"RightEyeball_WriteControlRegister\000"
+ 1773      74457965 
+ 1773      62616C6C 
+ 1773      5F577269 
+ 1773      7465436F 
+ 1774              	.LASF31:
+ 1775 03e3 52696768 		.ascii	"RightEyeball_ClearFIFO\000"
+ 1775      74457965 
+ 1775      62616C6C 
+ 1775      5F436C65 
+ 1775      61724649 
+ 1776              	.LASF30:
+ 1777 03fa 52696768 		.ascii	"RightEyeball_Stop\000"
+ 1777      74457965 
+ 1777      62616C6C 
+ 1777      5F53746F 
+ 1777      7000
+ 1778              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

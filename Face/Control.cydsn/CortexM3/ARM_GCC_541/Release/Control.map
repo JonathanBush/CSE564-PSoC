@@ -1,0 +1,1427 @@
+Archive member included to satisfy reference by file (symbol)
+
+.\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+                              .\CortexM3\ARM_GCC_541\Release\main.o (LeftEyebrow_Start)
+.\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+                              .\CortexM3\ARM_GCC_541\Release\main.o (RightEyebrow_Start)
+.\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+                              .\CortexM3\ARM_GCC_541\Release\servocontrol.o (LeftEyeball_WriteCompare1)
+.\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+                              .\CortexM3\ARM_GCC_541\Release\main.o (RightEyeball_Start)
+.\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+                              .\CortexM3\ARM_GCC_541\Release\servocontrol.o (Eyelids_WriteCompare1)
+.\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+                              .\CortexM3\ARM_GCC_541\Release\servocontrol.o (Base_WriteCompare1)
+.\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+                              .\CortexM3\ARM_GCC_541\Release\Cm3Start.o (CyHalt)
+.\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+                              .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o) (CyPmReadStatus)
+.\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+                              .\CortexM3\ARM_GCC_541\Release\servocontrol.o (Lips_WriteCompare1)
+.\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+                              .\CortexM3\ARM_GCC_541\Release\main.o (timer_isr_StartEx)
+.\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+                              .\CortexM3\ARM_GCC_541\Release\main.o (Timer_Start)
+.\CortexM3\ARM_GCC_541\Release\Control.a(CyBootAsmGnu.o)
+                              .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o (CyDelayCycles)
+.\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+                              .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o) (CyFlash_SetWaitCycles)
+.\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+                              .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o) (CySpcStart)
+c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM3\ARM_GCC_541\Release\Cm3Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+dieTemperature      0x2               .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .text          0x00000000       0x74 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\main.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\main.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\main.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .text.angle_to_compare
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\neck.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_WriteCounter
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_WritePeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_SetInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_ReadStatusRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_ReadCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_ReadCompare1
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_ReadCompare2
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text.Neck_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .text.SetAnalogRoutingPumps
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .data          0x00000000        0x4 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .text._exit    0x00000000        0xa .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .text._sbrk    0x00000000       0x2c .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_WriteCounter
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_WritePeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_SetInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_ReadStatusRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_ReadCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_ReadCompare1
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_ReadCompare2
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text.LeftEyebrow_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_WriteCounter
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_WritePeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_SetInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_ReadStatusRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_ReadCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_ReadCompare1
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_ReadCompare2
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text.RightEyebrow_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .bss           0x00000000        0x1 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_Enable
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_WriteCounter
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_ClearFIFO
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_Init
+                0x00000000       0x64 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_WritePeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_SetInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_ReadStatusRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_ReadCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_ReadCompare1
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_ReadCompare2
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text.LeftEyeball_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_WriteCounter
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_WritePeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_SetInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_ReadStatusRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_ReadCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_ReadCompare1
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_ReadCompare2
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text.RightEyeball_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .bss           0x00000000        0x1 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_Enable
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_WriteCounter
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_ClearFIFO
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_Init
+                0x00000000       0x64 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_WritePeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_SetInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_ReadStatusRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_ReadCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_ReadCompare1
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_ReadCompare2
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text.Eyelids_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .bss           0x00000000        0x1 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_Enable
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_WriteCounter
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_ClearFIFO
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_Init
+                0x00000000       0x64 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_WritePeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_SetInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_ReadStatusRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_ReadCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_ReadCompare1
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_ReadCompare2
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text.Base_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .bss           0x00000000       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIMO_SetTrimValue
+                0x00000000       0xb8 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyBusClk_Internal_SetDivider
+                0x00000000       0x44 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyPLL_OUT_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyPLL_OUT_SetPQ
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyPLL_OUT_SetSource
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIMO_Stop
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIMO_SetSource
+                0x00000000       0x40 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIMO_EnableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIMO_DisableDoubler
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIMO_SetFreq
+                0x00000000       0xcc .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyMasterClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyMasterClk_SetDivider
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyBusClk_SetDivider
+                0x00000000       0x70 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyUsbClk_SetSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyILO_Start1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyILO_Stop1K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyILO_Start100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyILO_Stop100K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyPLL_OUT_Start
+                0x00000000       0x74 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIMO_Start
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyILO_Enable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyILO_Disable33K
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyILO_SetSource
+                0x00000000       0x16 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyILO_SetPowerMode
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Stop
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_32KHZ_ReadStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_Start
+                0x00000000       0xa0 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_EnableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_DisableErrStatus
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_ReadStatus
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_EnableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_DisableFaultRecovery
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_SetStartup
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_SetFbVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_SetWdVoltage
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyHalt   0x00000000        0x4 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyDelayUs
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_32KHZ_SetPowerMode
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyXTAL_32KHZ_Start
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x40 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyWdtStart
+                0x00000000       0x40 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyWdtClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyVdStickyStatus
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyVdLvDigitEnable
+                0x00000000       0x84 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyVdLvAnalogEnable
+                0x00000000       0x80 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyVdLvDigitDisable
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyVdLvAnalogDisable
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyVdHvAnalogEnable
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyVdHvAnalogDisable
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyVdRealTimeStatus
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyFlushCache
+                0x00000000       0x44 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIntSetVector
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIntSetPriority
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x12 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickSetClockSource
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickGetClockSource
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text.CyGetUniqueId
+                0x00000000       0x70 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .bss           0x00000000       0x43 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmHibSlpSaveSet
+                0x00000000      0x1c4 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmHibSlpRestore
+                0x00000000       0xc0 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmSaveClocks
+                0x00000000      0x1e0 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmRestoreClocks
+                0x00000000      0x214 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmAltAct
+                0x00000000       0x60 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmSleep
+                0x00000000       0xe4 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmHibernateEx
+                0x00000000      0x290 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmHibernate
+                0x00000000        0x6 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmReadStatus
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmCtwSetInterval
+                0x00000000       0x50 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmOppsSet
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text.CyPmFtwSetInterval
+                0x00000000       0x50 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .rodata        0x00000000        0xe .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .bss           0x00000000        0x1 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_Enable
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_Stop
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_WriteCounter
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_ClearFIFO
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_Init
+                0x00000000       0x64 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_WritePeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_SetInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_ReadStatusRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_ReadCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_ReadCompare1
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_ReadCompare2
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text.Lips_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_Interrupt
+                0x00000000        0x2 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_Start
+                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_Stop
+                0x00000000       0x20 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_SetVector
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_GetVector
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_SetPriority
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_GetPriority
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_Enable
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_GetState
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_Disable
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_SetPending
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text.timer_isr_ClearPending
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .text.Timer_Stop
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .text.Timer_SetInterruptMode
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .text.Timer_SoftwareCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .text.Timer_ReadControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .text.Timer_WriteControlRegister
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .text.Timer_ReadPeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .text.Timer_WritePeriod
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .text.Timer_ReadCapture
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .text.Timer_WriteCounter
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .text.Timer_ReadCounter
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CyFlash_Start
+                0x00000000       0x50 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CyFlash_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CyFlash_EraseRow
+                0x00000000       0x70 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CyFlashGetSpcAlgorithm
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CySetTemp
+                0x00000000       0x5c .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CySetFlashEEBuffer
+                0x00000000       0x22 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CyWriteRowFull
+                0x00000000       0xcc .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CyWriteRowData
+                0x00000000        0xe .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CyFlash_SetWaitCycles
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CyEEPROM_Start
+                0x00000000       0x50 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CyEEPROM_Stop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CyEEPROM_ReadReserve
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text.CyEEPROM_ReadRelease
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ COMMON         0x00000000        0x2 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .bss           0x00000000        0x8 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcStart
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcStop
+                0x00000000       0x24 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcReadData
+                0x00000000       0x3c .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcLoadMultiByte
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcLoadRow
+                0x00000000       0x48 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcLoadRowFull
+                0x00000000       0x6c .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcWriteRow
+                0x00000000       0x40 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcEraseSector
+                0x00000000       0x38 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcEraseRow
+                0x00000000       0x40 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcGetTemp
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcLock
+                0x00000000       0x40 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcUnlock
+                0x00000000       0x34 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text.CySpcGetAlgorithm
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00040000         xr
+ram              0x1fff8000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+START GROUP
+LOAD .\CortexM3\ARM_GCC_541\Release\main.o
+LOAD .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+LOAD .\CortexM3\ARM_GCC_541\Release\neck.o
+LOAD .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+LOAD .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+LOAD .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+LOAD .\CortexM3\ARM_GCC_541\Release\Control.a
+LOAD C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CortexM3\ARM_GCC_541\Release\CyComponentLibrary.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000100                CY_FLASH_ROW_SIZE = 0x100
+                0x00000020                CY_ECC_ROW_SIZE = 0x20
+                0x00000000                CY_EE_IN_BTLDR = 0x0
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000800                CY_EE_SIZE = 0x800
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                [!provide]                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20008000                PROVIDE (__cy_stack, (ORIGIN (ram) + LENGTH (ram)))
+                [!provide]                PROVIDE (__cy_heap_end, (__cy_stack - 0x800))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x0001ff00                appl2_start = (appl1_start + ALIGN ((((LENGTH (rom) - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000000                ecc_offset = ((appl_start / CY_FLASH_ROW_SIZE) * CY_ECC_ROW_SIZE)
+                0x00000000                ee_offset = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?((CY_EE_SIZE / CY_APPL_MAX) * (CY_APPL_NUM - 0x1)):0x0
+                0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
+                [!provide]                PROVIDE (CY_ECC_OFFSET, ecc_offset)
+
+.text           0x00000000      0x900
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010       0x18 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.dma_init)
+                0x00000001                ASSERT ((((appl_start + .) <= 0x10000) || 0x1), DMA Init must be within the first 64k of flash)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x00000028       0x5c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .text.periodic_task
+                0x00000084        0xe .\CortexM3\ARM_GCC_541\Release\main.o
+                0x00000084                periodic_task
+ *fill*         0x00000092        0x2 
+ .text.startup.main
+                0x00000094       0x84 .\CortexM3\ARM_GCC_541\Release\main.o
+                0x00000094                main
+ .text.set_smooth_servo_angle
+                0x00000118       0x20 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+                0x00000118                set_smooth_servo_angle
+ .text.update_servos
+                0x00000138       0x4c .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+                0x00000138                update_servos
+ .text.Neck_Enable
+                0x00000184       0x10 .\CortexM3\ARM_GCC_541\Release\neck.o
+                0x00000184                Neck_Enable
+ .text.Neck_ClearFIFO
+                0x00000194       0x18 .\CortexM3\ARM_GCC_541\Release\neck.o
+                0x00000194                Neck_ClearFIFO
+ .text.Neck_Init
+                0x000001ac       0x64 .\CortexM3\ARM_GCC_541\Release\neck.o
+                0x000001ac                Neck_Init
+ .text.Neck_Start
+                0x00000210       0x1c .\CortexM3\ARM_GCC_541\Release\neck.o
+                0x00000210                Neck_Start
+ .text.Neck_WriteCompare1
+                0x0000022c        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+                0x0000022c                Neck_WriteCompare1
+ .text.Neck_WriteCompare2
+                0x00000238        0xc .\CortexM3\ARM_GCC_541\Release\neck.o
+                0x00000238                Neck_WriteCompare2
+ .text.cyfitter_cfg
+                0x00000244      0x1c0 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+                0x00000244                cyfitter_cfg
+ .text.IntDefaultHandler
+                0x00000404       0x10 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+                0x00000404                IntDefaultHandler
+ .text.Start_c  0x00000414       0x50 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+                0x00000414                Start_c
+ .text.startup.initialize_psoc
+                0x00000464       0x68 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+                0x00000464                initialize_psoc
+ .text.LeftEyebrow_Enable
+                0x000004cc       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+                0x000004cc                LeftEyebrow_Enable
+ .text.LeftEyebrow_ClearFIFO
+                0x000004dc       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+                0x000004dc                LeftEyebrow_ClearFIFO
+ .text.LeftEyebrow_Init
+                0x000004f4       0x64 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+                0x000004f4                LeftEyebrow_Init
+ .text.LeftEyebrow_Start
+                0x00000558       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+                0x00000558                LeftEyebrow_Start
+ .text.LeftEyebrow_WriteCompare1
+                0x00000574        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+                0x00000574                LeftEyebrow_WriteCompare1
+ .text.LeftEyebrow_WriteCompare2
+                0x00000580        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+                0x00000580                LeftEyebrow_WriteCompare2
+ .text.RightEyebrow_Enable
+                0x0000058c       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+                0x0000058c                RightEyebrow_Enable
+ .text.RightEyebrow_ClearFIFO
+                0x0000059c       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+                0x0000059c                RightEyebrow_ClearFIFO
+ .text.RightEyebrow_Init
+                0x000005b4       0x64 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+                0x000005b4                RightEyebrow_Init
+ .text.RightEyebrow_Start
+                0x00000618       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+                0x00000618                RightEyebrow_Start
+ .text.RightEyebrow_WriteCompare1
+                0x00000634        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+                0x00000634                RightEyebrow_WriteCompare1
+ .text.RightEyebrow_WriteCompare2
+                0x00000640        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+                0x00000640                RightEyebrow_WriteCompare2
+ .text.LeftEyeball_WriteCompare1
+                0x0000064c        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+                0x0000064c                LeftEyeball_WriteCompare1
+ .text.LeftEyeball_WriteCompare2
+                0x00000658        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+                0x00000658                LeftEyeball_WriteCompare2
+ .text.RightEyeball_Enable
+                0x00000664       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+                0x00000664                RightEyeball_Enable
+ .text.RightEyeball_ClearFIFO
+                0x00000674       0x18 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+                0x00000674                RightEyeball_ClearFIFO
+ .text.RightEyeball_Init
+                0x0000068c       0x64 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+                0x0000068c                RightEyeball_Init
+ .text.RightEyeball_Start
+                0x000006f0       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+                0x000006f0                RightEyeball_Start
+ .text.RightEyeball_WriteCompare1
+                0x0000070c        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+                0x0000070c                RightEyeball_WriteCompare1
+ .text.RightEyeball_WriteCompare2
+                0x00000718        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+                0x00000718                RightEyeball_WriteCompare2
+ .text.Eyelids_WriteCompare1
+                0x00000724        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+                0x00000724                Eyelids_WriteCompare1
+ .text.Eyelids_WriteCompare2
+                0x00000730        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+                0x00000730                Eyelids_WriteCompare2
+ .text.Base_WriteCompare1
+                0x0000073c        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+                0x0000073c                Base_WriteCompare1
+ .text.Base_WriteCompare2
+                0x00000748        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+                0x00000748                Base_WriteCompare2
+ .text.CyDelay  0x00000754       0x2c .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+                0x00000754                CyDelay
+ .text.Lips_WriteCompare1
+                0x00000780        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+                0x00000780                Lips_WriteCompare1
+ .text.Lips_WriteCompare2
+                0x0000078c        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+                0x0000078c                Lips_WriteCompare2
+ .text.timer_isr_StartEx
+                0x00000798       0x2c .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+                0x00000798                timer_isr_StartEx
+ .text.Timer_Init
+                0x000007c4       0x64 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+                0x000007c4                Timer_Init
+ .text.Timer_Enable
+                0x00000828       0x24 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+                0x00000828                Timer_Enable
+ .text.Timer_Start
+                0x0000084c       0x1c .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+                0x0000084c                Timer_Start
+ .text.Timer_ReadStatusRegister
+                0x00000868        0xc .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+                0x00000868                Timer_ReadStatusRegister
+ *fill*         0x00000874        0x4 
+ .text          0x00000878       0x20 .\CortexM3\ARM_GCC_541\Release\Control.a(CyBootAsmGnu.o)
+                0x00000878                CyDelayCycles
+                0x00000888                CyEnterCriticalSection
+                0x00000890                CyExitCriticalSection
+ .text.__errno  0x00000898        0xc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x00000898                __errno
+ .text.__libc_init_array
+                0x000008a4       0x4c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x000008a4                __libc_init_array
+ .text.memset   0x000008f0       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x000008f0                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000900        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000900        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000900        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00000900        0x0
+ .v4_bx         0x00000900        0x0 linker stubs
+
+.iplt           0x00000900        0x0
+ .iplt          0x00000900        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00000900        0x4
+ *(.eh_frame)
+ .eh_frame      0x00000900        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .eh_frame      0x00000900        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00000904                __exidx_end = .
+
+.rodata         0x00000904       0x6c
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00000904       0x36 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .rodata.str1.1
+                0x0000093a        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x0000093c                . = ALIGN (0x4)
+ *(.init)
+ .init          0x0000093c        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x0000093c                _init
+ .init          0x00000940        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00000948                . = ALIGN (0x4)
+                0x00000948                __preinit_array_start = .
+ *(.preinit_array)
+                0x00000948                __preinit_array_end = .
+                0x00000948                . = ALIGN (0x4)
+                0x00000948                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00000948        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .init_array    0x0000094c        0x4 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+                0x00000950                __init_array_end = .
+                0x00000950                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00000950        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00000950                _fini
+ .fini          0x00000954        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x0000095c                . = ALIGN (0x4)
+                0x0000095c                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x0000095c        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00000960                __fini_array_end = .
+                0x00000960                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x00000960                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x00000960                . = ALIGN (0x4)
+                0x00000960                __cy_regions = .
+                0x00000960        0x4 LONG 0x970 __cy_region_init_ram
+                0x00000964        0x4 LONG 0x1fff80c8 __cy_region_start_data
+                0x00000968        0x4 LONG 0x138 __cy_region_init_size_ram
+                0x0000096c        0x4 LONG 0x28 __cy_region_zero_size_ram
+                0x00000970                __cy_regions_end = .
+                0x00000970                . = ALIGN (0x8)
+                0x00000970                _etext = .
+
+.cy_checksum_exclude
+                0x00000970        0x0
+ *(.cy_checksum_exclude)
+
+.ramvectors     0x1fff8000       0xc0
+                0x1fff8000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x1fff8000       0xc0 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+                0x1fff8000                CyRamVectors
+
+.noinit         0x1fff80c0        0x1
+ *(.noinit)
+ .noinit        0x1fff80c0        0x1 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+                0x1fff80c0                CyResetStatus
+
+.data           0x1fff80c8      0x138 load address 0x00000970
+                0x1fff80c8                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x1fff80c8        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .jcr           0x1fff80c8        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x1fff80cc       0xc0 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+                0x1fff80cc                servo_map
+ .data          0x1fff818c       0x10 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+                0x1fff818c                cydelay_32k_ms
+                0x1fff8190                cydelay_freq_khz
+                0x1fff8194                cydelay_freq_mhz
+                0x1fff8198                cydelay_freq_hz
+ .data.impure_data
+                0x1fff819c       0x60 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x1fff81fc        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x1fff81fc                _impure_ptr
+                0x1fff8200                . = ALIGN (0x8)
+ *(.ram)
+                0x1fff8200                _edata = .
+
+.igot.plt       0x1fff8200        0x0 load address 0x00000aa8
+ .igot.plt      0x1fff8200        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.bss            0x1fff8200       0x28 load address 0x00000aa8
+                0x1fff8200                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x1fff8200       0x1c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .bss           0x1fff821c        0x1 .\CortexM3\ARM_GCC_541\Release\neck.o
+                0x1fff821c                Neck_initVar
+ .bss           0x1fff821d        0x1 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+                0x1fff821d                LeftEyebrow_initVar
+ .bss           0x1fff821e        0x1 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+                0x1fff821e                RightEyebrow_initVar
+ .bss           0x1fff821f        0x1 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+                0x1fff821f                RightEyeball_initVar
+ .bss           0x1fff8220        0x1 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+                0x1fff8220                Timer_initVar
+ *(COMMON)
+                0x1fff8228                . = ALIGN (0x8)
+ *fill*         0x1fff8221        0x7 
+ *(.ram.b)
+                0x1fff8228                _end = .
+                0x1fff8228                __end = .
+                0x1fff8228                PROVIDE (end, .)
+                0x1fff8228                PROVIDE (__bss_end__, .)
+                0x00000970                __cy_region_init_ram = LOADADDR (.data)
+                0x00000138                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x00000028                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x1fff8228       0x80 load address 0x00000aa8
+                0x1fff8228                . = _end
+                0x1fff82a8                . = (. + 0x80)
+ *fill*         0x1fff8228       0x80 
+                0x1fff82a8                __cy_heap_limit = .
+
+.stack          0x20007800      0x800
+                0x20007800                __cy_stack_limit = .
+                0x20008000                . = (. + 0x800)
+ *fill*         0x20007800      0x800 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+
+.cyloadermeta
+ *(.cyloadermeta)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyconfigecc    0x80000000      0x7c0
+ *(.cyconfigecc)
+ .cyconfigecc   0x80000000      0x7c0 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+                0x80000000                cy_meta_configecc
+
+.cycustnvl      0x90000000        0x4
+ *(.cycustnvl)
+ .cycustnvl     0x90000000        0x4 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+                0x90000000                cy_meta_custnvl
+
+.cywolatch      0x90100000        0x4
+ *(.cywolatch)
+ .cywolatch     0x90100000        0x4 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+                0x90100000                cy_meta_wonvl
+
+.cyeeprom       0x90200000        0x0
+ *(.cyeeprom)
+                0x00000001                ASSERT ((. <= ((0x90200000 + ee_offset) + ee_size)), .cyeeprom data will not fit in EEPROM)
+
+.cyflashprotect
+                0x90400000      0x100
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000      0x100 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+                0x90500000                cy_metadata
+
+.rel.dyn        0x00000aa8        0x0 load address 0x9050000c
+ .rel.iplt      0x00000aa8        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0xb58
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 .\CortexM3\ARM_GCC_541\Release\main.o
+ .debug_aranges
+                0x00000028       0x30 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .debug_aranges
+                0x00000058       0xa8 .\CortexM3\ARM_GCC_541\Release\neck.o
+ .debug_aranges
+                0x00000100       0x28 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .debug_aranges
+                0x00000128       0x18 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+ .debug_aranges
+                0x00000140       0x48 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .debug_aranges
+                0x00000188       0xa8 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .debug_aranges
+                0x00000230       0xa8 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .debug_aranges
+                0x000002d8       0xa8 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .debug_aranges
+                0x00000380       0xa8 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .debug_aranges
+                0x00000428       0xa8 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .debug_aranges
+                0x000004d0       0xa8 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .debug_aranges
+                0x00000578      0x298 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .debug_aranges
+                0x00000810       0x78 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .debug_aranges
+                0x00000888       0xa8 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .debug_aranges
+                0x00000930       0x80 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .debug_aranges
+                0x000009b0       0x88 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .debug_aranges
+                0x00000a38       0x20 .\CortexM3\ARM_GCC_541\Release\Control.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000a58       0x80 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .debug_aranges
+                0x00000ad8       0x80 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x60e7
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x35b .\CortexM3\ARM_GCC_541\Release\main.o
+ .debug_info    0x0000035b      0x267 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .debug_info    0x000005c2      0x438 .\CortexM3\ARM_GCC_541\Release\neck.o
+ .debug_info    0x000009fa      0x4a8 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .debug_info    0x00000ea2      0x139 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+ .debug_info    0x00000fdb      0x3b7 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .debug_info    0x00001392      0x438 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .debug_info    0x000017ca      0x438 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .debug_info    0x00001c02      0x438 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .debug_info    0x0000203a      0x438 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .debug_info    0x00002472      0x438 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .debug_info    0x000028aa      0x438 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .debug_info    0x00002ce2     0x1343 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .debug_info    0x00004025      0x97e .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .debug_info    0x000049a3      0x438 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .debug_info    0x00004ddb      0x385 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .debug_info    0x00005160      0x2f5 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .debug_info    0x00005455       0x82 .\CortexM3\ARM_GCC_541\Release\Control.a(CyBootAsmGnu.o)
+ .debug_info    0x000054d7      0x6c0 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .debug_info    0x00005b97      0x550 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+
+.debug_abbrev   0x00000000     0x2143
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xf7 .\CortexM3\ARM_GCC_541\Release\main.o
+ .debug_abbrev  0x000000f7      0x178 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .debug_abbrev  0x0000026f      0x1af .\CortexM3\ARM_GCC_541\Release\neck.o
+ .debug_abbrev  0x0000041e      0x20e .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .debug_abbrev  0x0000062c       0x77 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+ .debug_abbrev  0x000006a3      0x1f4 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .debug_abbrev  0x00000897      0x1af .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .debug_abbrev  0x00000a46      0x1af .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .debug_abbrev  0x00000bf5      0x1af .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .debug_abbrev  0x00000da4      0x1af .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .debug_abbrev  0x00000f53      0x1af .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .debug_abbrev  0x00001102      0x1af .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .debug_abbrev  0x000012b1      0x390 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .debug_abbrev  0x00001641      0x1d5 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .debug_abbrev  0x00001816      0x1af .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .debug_abbrev  0x000019c5      0x212 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .debug_abbrev  0x00001bd7      0x181 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .debug_abbrev  0x00001d58       0x14 .\CortexM3\ARM_GCC_541\Release\Control.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00001d6c      0x235 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .debug_abbrev  0x00001fa1      0x1a2 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+
+.debug_line     0x00000000     0x2acc
+ *(.debug_line)
+ .debug_line    0x00000000      0x226 .\CortexM3\ARM_GCC_541\Release\main.o
+ .debug_line    0x00000226      0x1c2 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .debug_line    0x000003e8      0x1d4 .\CortexM3\ARM_GCC_541\Release\neck.o
+ .debug_line    0x000005bc      0x19e .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .debug_line    0x0000075a      0x141 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+ .debug_line    0x0000089b      0x21f .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .debug_line    0x00000aba      0x1db .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .debug_line    0x00000c95      0x1dc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .debug_line    0x00000e71      0x1db .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .debug_line    0x0000104c      0x1dc .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .debug_line    0x00001228      0x1d7 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .debug_line    0x000013ff      0x1d4 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .debug_line    0x000015d3      0x7fc .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .debug_line    0x00001dcf      0x3be .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .debug_line    0x0000218d      0x1d4 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .debug_line    0x00002361      0x159 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .debug_line    0x000024ba      0x15c .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .debug_line    0x00002616       0x66 .\CortexM3\ARM_GCC_541\Release\Control.a(CyBootAsmGnu.o)
+ .debug_line    0x0000267c      0x204 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .debug_line    0x00002880      0x24c .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+
+.debug_frame    0x00000000     0x1a64
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x4c .\CortexM3\ARM_GCC_541\Release\main.o
+ .debug_frame   0x0000004c       0x50 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .debug_frame   0x0000009c      0x150 .\CortexM3\ARM_GCC_541\Release\neck.o
+ .debug_frame   0x000001ec       0x48 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .debug_frame   0x00000234       0xb8 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .debug_frame   0x000002ec      0x150 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .debug_frame   0x0000043c      0x150 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .debug_frame   0x0000058c      0x150 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .debug_frame   0x000006dc      0x150 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .debug_frame   0x0000082c      0x150 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .debug_frame   0x0000097c      0x150 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .debug_frame   0x00000acc      0x6f8 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .debug_frame   0x000011c4      0x1c8 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .debug_frame   0x0000138c      0x150 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .debug_frame   0x000014dc       0xe0 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .debug_frame   0x000015bc      0x100 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .debug_frame   0x000016bc      0x184 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .debug_frame   0x00001840      0x190 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .debug_frame   0x000019d0       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x000019f0       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00001a18       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00001a44       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x00000000     0x2583
+ *(.debug_str)
+ .debug_str     0x00000000      0x344 .\CortexM3\ARM_GCC_541\Release\main.o
+                                0x38c (size before relaxing)
+ .debug_str     0x00000344       0x85 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+                                0x321 (size before relaxing)
+ .debug_str     0x000003c9      0x1d7 .\CortexM3\ARM_GCC_541\Release\neck.o
+                                0x364 (size before relaxing)
+ .debug_str     0x000005a0      0x162 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+                                0x2fa (size before relaxing)
+ .debug_str     0x00000702       0x7f .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+                                0x1d6 (size before relaxing)
+ .debug_str     0x00000781      0x144 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+                                0x2fc (size before relaxing)
+ .debug_str     0x000008c5      0x1fa .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+                                0x3f7 (size before relaxing)
+ .debug_str     0x00000abf      0x20e .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+                                0x40c (size before relaxing)
+ .debug_str     0x00000ccd      0x20c .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+                                0x3f7 (size before relaxing)
+ .debug_str     0x00000ed9      0x20e .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+                                0x40c (size before relaxing)
+ .debug_str     0x000010e7      0x1b8 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+                                0x3a3 (size before relaxing)
+ .debug_str     0x0000129f      0x179 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+                                0x364 (size before relaxing)
+ .debug_str     0x00001418      0x802 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+                                0xa39 (size before relaxing)
+ .debug_str     0x00001c1a      0x365 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+                                0x71e (size before relaxing)
+ .debug_str     0x00001f7f      0x179 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+                                0x364 (size before relaxing)
+ .debug_str     0x000020f8      0x10c .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+                                0x2d0 (size before relaxing)
+ .debug_str     0x00002204      0x118 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+                                0x2e7 (size before relaxing)
+ .debug_str     0x0000231c      0x1bb .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+                                0x3ab (size before relaxing)
+ .debug_str     0x000024d7       0xac .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+                                0x32a (size before relaxing)
+
+.debug_loc      0x00000000     0x21de
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x77 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .debug_loc     0x00000077       0x97 .\CortexM3\ARM_GCC_541\Release\neck.o
+ .debug_loc     0x0000010e      0x287 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .debug_loc     0x00000395      0x1af .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .debug_loc     0x00000544       0x97 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .debug_loc     0x000005db       0x97 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .debug_loc     0x00000672       0x97 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .debug_loc     0x00000709       0x97 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .debug_loc     0x000007a0       0x97 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .debug_loc     0x00000837       0x97 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .debug_loc     0x000008ce      0xa20 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .debug_loc     0x000012ee      0x1d6 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .debug_loc     0x000014c4       0x97 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .debug_loc     0x0000155b       0xf3 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .debug_loc     0x0000164e       0x40 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .debug_loc     0x0000168e      0x4b7 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .debug_loc     0x00001b45      0x699 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0xce8
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x18 .\CortexM3\ARM_GCC_541\Release\main.o
+ .debug_ranges  0x00000018       0x20 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .debug_ranges  0x00000038       0xc8 .\CortexM3\ARM_GCC_541\Release\neck.o
+ .debug_ranges  0x00000100       0xc8 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .debug_ranges  0x000001c8       0x50 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .debug_ranges  0x00000218       0xc8 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .debug_ranges  0x000002e0       0xc8 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .debug_ranges  0x000003a8       0xc8 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .debug_ranges  0x00000470       0xc8 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .debug_ranges  0x00000538       0xc8 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .debug_ranges  0x00000600       0xc8 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .debug_ranges  0x000006c8      0x2b8 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .debug_ranges  0x00000980       0x90 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .debug_ranges  0x00000a10       0xc8 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .debug_ranges  0x00000ad8       0xa0 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .debug_ranges  0x00000b78       0x78 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .debug_ranges  0x00000bf0       0x88 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .debug_ranges  0x00000c78       0x70 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+
+.comment        0x00000000       0x6e
+ .comment       0x00000000       0x6e .\CortexM3\ARM_GCC_541\Release\main.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\neck.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x29
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+ .ARM.attributes
+                0x0000001d       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x33 .\CortexM3\ARM_GCC_541\Release\main.o
+ .ARM.attributes
+                0x00000098       0x33 .\CortexM3\ARM_GCC_541\Release\servocontrol.o
+ .ARM.attributes
+                0x000000cb       0x33 .\CortexM3\ARM_GCC_541\Release\neck.o
+ .ARM.attributes
+                0x000000fe       0x33 .\CortexM3\ARM_GCC_541\Release\cyfitter_cfg.o
+ .ARM.attributes
+                0x00000131       0x33 .\CortexM3\ARM_GCC_541\Release\cymetadata.o
+ .ARM.attributes
+                0x00000164       0x33 .\CortexM3\ARM_GCC_541\Release\Cm3Start.o
+ .ARM.attributes
+                0x00000197       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyebrow.o)
+ .ARM.attributes
+                0x000001ca       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyebrow.o)
+ .ARM.attributes
+                0x000001fd       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(LeftEyeball.o)
+ .ARM.attributes
+                0x00000230       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(RightEyeball.o)
+ .ARM.attributes
+                0x00000263       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(Eyelids.o)
+ .ARM.attributes
+                0x00000296       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(Base.o)
+ .ARM.attributes
+                0x000002c9       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(CyLib.o)
+ .ARM.attributes
+                0x000002fc       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(cyPm.o)
+ .ARM.attributes
+                0x0000032f       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(Lips.o)
+ .ARM.attributes
+                0x00000362       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(timer_isr.o)
+ .ARM.attributes
+                0x00000395       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(Timer.o)
+ .ARM.attributes
+                0x000003c8       0x21 .\CortexM3\ARM_GCC_541\Release\Control.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x000003e9       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(CyFlash.o)
+ .ARM.attributes
+                0x0000041c       0x33 .\CortexM3\ARM_GCC_541\Release\Control.a(CySpc.o)
+ .ARM.attributes
+                0x0000044f       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x0000047c       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x000004a9       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000004d6       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000503       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000530       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .ARM.attributes
+                0x0000055d       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\CortexM3\ARM_GCC_541\Release\Control.elf elf32-littlearm)

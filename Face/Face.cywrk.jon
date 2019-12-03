@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Face\Control\Source Files">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Face\Control\TopDesign">
 <ExpandedNodeIds>
 <v>Face</v>
 <v>Face\Control</v>
@@ -30,14 +30,19 @@
 <v>Face\Control\Control.cydwr\EEPROM</v>
 <v>Face\Control\Header Files</v>
 <v>Face\Control\Header Files\cyapicallbacks.h</v>
-<v>Face\Control\Header Files\neck.h</v>
+<v>Face\Control\Header Files\eyecontrol.h</v>
+<v>Face\Control\Header Files\mouthcontrol.h</v>
+<v>Face\Control\Header Files\neckcontrol.h</v>
 <v>Face\Control\Header Files\servocontrol.h</v>
 <v>Face\Control\Source Files</v>
+<v>Face\Control\Source Files\eyecontrol.c</v>
 <v>Face\Control\Source Files\main.c</v>
-<v>Face\Control\Source Files\neck.c</v>
+<v>Face\Control\Source Files\mouthcontrol.c</v>
+<v>Face\Control\Source Files\neckcontrol.c</v>
 <v>Face\Control\Source Files\servocontrol.c</v>
 <v>Face\Control\Generated_Source</v>
 <v>Face\Control\Generated_Source\PSoC5</v>
+<v>Face\Control\Generated_Source\PSoC5\Neck</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Face</v>
@@ -55,11 +60,15 @@
 <v>Face\Control\Control.cydwr\EEPROM</v>
 <v>Face\Control\Header Files</v>
 <v>Face\Control\Header Files\cyapicallbacks.h</v>
-<v>Face\Control\Header Files\neck.h</v>
+<v>Face\Control\Header Files\eyecontrol.h</v>
+<v>Face\Control\Header Files\mouthcontrol.h</v>
+<v>Face\Control\Header Files\neckcontrol.h</v>
 <v>Face\Control\Header Files\servocontrol.h</v>
 <v>Face\Control\Source Files</v>
+<v>Face\Control\Source Files\eyecontrol.c</v>
 <v>Face\Control\Source Files\main.c</v>
-<v>Face\Control\Source Files\neck.c</v>
+<v>Face\Control\Source Files\mouthcontrol.c</v>
+<v>Face\Control\Source Files\neckcontrol.c</v>
 <v>Face\Control\Source Files\servocontrol.c</v>
 <v>Face\Control\Generated_Source</v>
 <v>Face\Control\Generated_Source\PSoC5</v>
@@ -82,13 +91,8 @@
 <v>Face\Control\Generated_Source\PSoC5\LipRight</v>
 <v>Face\Control\Generated_Source\PSoC5\Lips</v>
 <v>Face\Control\Generated_Source\PSoC5\Neck</v>
-<v>Face\Control\Generated_Source\PSoC5\NeckLeft</v>
-<v>Face\Control\Generated_Source\PSoC5\NeckRight</v>
-<v>Face\Control\Generated_Source\PSoC5\RightEyeball</v>
-<v>Face\Control\Generated_Source\PSoC5\RightEyeballBottom</v>
-<v>Face\Control\Generated_Source\PSoC5\RightEyeballTop</v>
-<v>Face\Control\Generated_Source\PSoC5\RightEyebrow</v>
-<v>Face\Control\Generated_Source\PSoC5\RightEyebrow1</v>
+<v>Face\Control\Generated_Source\PSoC5\Neck\Neck.c</v>
+<v>Face\Control\Generated_Source\PSoC5\Neck\Neck.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -128,6 +132,7 @@
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\eyecontrol.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\EyelidClose.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Eyelids.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Eyelids_PM.lst</v>
@@ -146,8 +151,10 @@
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Lips.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Lips_PM.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\mouthcontrol.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Neck.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\Neck_PM.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\neckcontrol.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\NeckLeft.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\NeckRight.lst</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Listing Files\RightEyeball.lst</v>
@@ -165,6 +172,59 @@
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Control.elf</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Control.hex</v>
 <v>Face\Control\CortexM3\ARM_GCC_541\Debug\Control.map</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Base.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Base_PM.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\BaseRotation.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Clock_1.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Cm3Start.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\cy_em_eeprom.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\CyBootAsmGnu.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\CyDmac.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\cyfitter_cfg.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\CyFlash.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\CyLib.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\cymetadata.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\cyPm.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\CySpc.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\cyutils.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\EyelidClose.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Eyelids.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Eyelids_PM.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\EyelidTilt.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Jaw.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\LeftEyeball.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\LeftEyeball_PM.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\LeftEyeballBottom.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\LeftEyeballTop.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\LeftEyebrow.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\LeftEyebrow_PM.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\LeftEyebrow1.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\LeftEyebrow2.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\LipLeft.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\LipRight.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Lips.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Lips_PM.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\main.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Neck_PM.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\NeckLeft.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\NeckRight.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\RightEyeball.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\RightEyeball_PM.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\RightEyeballBottom.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\RightEyeballTop.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\RightEyebrow.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\RightEyebrow_PM.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\RightEyebrow1.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\RightEyebrow2.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\servocontrol.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Timer.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\timer_isr.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Listing Files\Timer_PM.lst</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Control.elf</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Control.hex</v>
+<v>Face\Control\CortexM3\ARM_GCC_541\Release\Control.map</v>
 <v>Face\Control\Control.gpdsc</v>
 <v>Face\Control\Control.rpt</v>
 <v>Face\Control\Control_timing.html</v>
@@ -231,7 +291,7 @@
   http://www.actiprosoftware.com
 
 --><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1316, 580" SelectedTabbedMdiWindow="a5497c16-6128-42ca-b47d-e4e2e39ce5a4"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="7c0b3ede-091c-4fae-a8e3-716cf86ef0e9" /><DocumentWindow Key="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\main.c" Guid="a5497c16-6128-42ca-b47d-e4e2e39ce5a4" /><DocumentWindow Key="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\neck.h" Guid="7cfe3def-ad43-4cef-80b8-96e9c162cb8f" /><DocumentWindow Key="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\Control.cydwr" Guid="35af6f91-93fc-477c-9ddd-b89d6681052d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
-<config v="" />
+<config v="Debug" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
 </CyXmlSerializer>
