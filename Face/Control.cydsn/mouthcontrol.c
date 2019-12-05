@@ -40,6 +40,10 @@ void lip_set(lip_position option) {
             set_smooth_servo_angle(LIP_LEFT, 80);
             set_smooth_servo_angle(LIP_RIGHT, 120);
             break;
+        case LIP_BOTH_DOWN:
+            set_smooth_servo_angle(LIP_RIGHT, 60);
+            set_smooth_servo_angle(LIP_LEFT, 120);
+            break;
         default:
             break;
     }

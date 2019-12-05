@@ -86,13 +86,6 @@
 <v>Face\Control\Generated_Source\PSoC5\LeftEyeballTop</v>
 <v>Face\Control\Generated_Source\PSoC5\LeftEyebrow</v>
 <v>Face\Control\Generated_Source\PSoC5\LeftEyebrow1</v>
-<v>Face\Control\Generated_Source\PSoC5\LeftEyebrow2</v>
-<v>Face\Control\Generated_Source\PSoC5\LipLeft</v>
-<v>Face\Control\Generated_Source\PSoC5\LipRight</v>
-<v>Face\Control\Generated_Source\PSoC5\Lips</v>
-<v>Face\Control\Generated_Source\PSoC5\Neck</v>
-<v>Face\Control\Generated_Source\PSoC5\Neck\Neck.c</v>
-<v>Face\Control\Generated_Source\PSoC5\Neck\Neck.h</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">

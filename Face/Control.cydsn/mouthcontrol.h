@@ -21,7 +21,8 @@ typedef enum {
 typedef enum {
     LIP_NORMAL,
     LIP_LEFT_SMIRK,
-    LIP_RIGHT_SMIRK
+    LIP_RIGHT_SMIRK,
+    LIP_BOTH_DOWN
 } lip_position;
 
 void mouth_set(mouth_position option);
