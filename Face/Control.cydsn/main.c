@@ -17,16 +17,24 @@
 #include "project.h"
 
 
-#define STEP_DELAY 1000000
+#define STEP_DELAY 1000
 
 
 CY_ISR_PROTO(periodic_task);
+CY_ISR_PROTO(button_press);
+
+volatile uint8 button_click = 0;
 
 
 /* called at 200 Hz */
 CY_ISR(periodic_task) {
     Timer_ReadStatusRegister();
     update_servos();
+}
+
+CY_ISR(button_press) {
+    button_click = 1;
+    button_isr_ClearPending();
 }
 
 /* facial expressions */
@@ -52,10 +60,10 @@ void neutral() {
 
 void sad() {
   neutral();
-  eyebrow_set(EYEBROW_BOTHRAISE);
+  eyebrow_set(EYEBROW_NORMAL);
   mouth_set(MOUTH_CLOSE);
   lip_set(LIP_FROWN);
-  eyelid_set(EYELID_CENTER);
+  eyelid_set(EYELID_CLOSED);
   eyeball_set(EYEBALL_CENTER);
   tilt_set(HEAD_TILT_FORWARD);
   rotate_set(NECK_ROTATE_CENTER);
@@ -73,6 +81,7 @@ void surprised() {
 }
 
 void anguish() {
+    neutral();
     tilt_set(HEAD_TILT_BACK);
     mouth_set(MOUTH_AGAPE);
     eyebrow_set(EYEBROW_BOTHRAISE);
@@ -82,24 +91,32 @@ void anguish() {
 }
 
 void confused() {
+    neutral();
     eyebrow_set(EYEBROW_LEFTRAISE);
     eyeball_set(EYEBALL_UP);
     lip_set(LIP_LEFT_SMIRK);
     rotate_set(NECK_ROTATE_LEFT);
     tilt_set(HEAD_TILT_RIGHT);
-    CyDelay(STEP_DELAY);
-           
+    blink(4);
+    eyelid_set(EYELID_UP);
 }
 
 void eyeroll() {
     // eyeroll
+    neutral();
     mouth_set(MOUTH_CLOSE);
-    eyebrow_set(EYEBROW_NORMAL);
-    tilt_set(HEAD_TILT_CENTER);
+    eyebrow_set(EYEBROW_BOTHRAISE);
+    tilt_set(HEAD_TILT_BACK);
     rotate_set(NECK_ROTATE_CENTER);
     eyeball_set(EYEBALL_UP);    
 }
 
+void button_wait() {
+    while (!button_click) {
+        CyDelay(10);
+    }
+    button_click = 0;
+}
 
 
 int main(void)
@@ -108,11 +125,13 @@ int main(void)
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     
+    
     neutral();
     
     Timer_Start();
     
     timer_isr_StartEx(periodic_task);
+    button_isr_StartEx(button_press);
     
     CyDelay(1000);
 
@@ -124,84 +143,21 @@ int main(void)
     Lips_Start();
     Base_Start();
     Neck_Start();
-    
-    
+    button_wait();
     for(;;)
     {
         confused();
-        CyDelay(STEP_DELAY);
+        button_wait();
         anguish();
-        CyDelay(STEP_DELAY);
-//        thanguish();
-//        CyDelay(STEP_DELAY);
-//        eyeball_set(EYEBALL_LEFT);
-//        CyDelay(STEP_DELAY);
-//        eyeball_set(EYEBALL_RIGHT);
-//        CyDelay(STEP_DELAY);
-//        eyeball_set(EYEBALL_UP);
-//        CyDelay(STEP_DELAY);
-//        eyeball_set(EYEBALL_DOWN);
-//        CyDelay(STEP_DELAY);
-        
-//        eyelid_set(EYELID_CENTER);
-//        CyDelay(STEP_DELAY);
-//        eyelid_set(EYELID_CLOSED);
-//        CyDelay(STEP_DELAY);
-//        eyelid_set(EYELID_UP);
-//        CyDelay(STEP_DELAY);
-//        eyelid_set(EYELID_DOWN);
-//        CyDelay(STEP_DELAY);
-        
-        
-//        neutral();
-//        CyDelay(STEP_DELAY);
-//        sad();
-//        CyDelay(STEP_DELAY);
-//        anguish();
-//        CyDelay(STEP_DELAY);
-        
-//        tilt_set(HEAD_TILT_BACK);
-//        CyDelay(STEP_DELAY);
-//        tilt_set(HEAD_TILT_CENTER);
-//        CyDelay(STEP_DELAY);
-//        tilt_set(HEAD_TILT_FORWARD);
-//        CyDelay(STEP_DELAY);
-//        tilt_set(HEAD_TILT_LEFT);
-//        CyDelay(STEP_DELAY);
-//        tilt_set(HEAD_TILT_RIGHT);
-//        CyDelay(STEP_DELAY);
-//        rotate_set(NECK_ROTATE_LEFT);
-//        CyDelay(STEP_DELAY);
-//        rotate_set(NECK_ROTATE_CENTER);
-//        CyDelay(STEP_DELAY);
-//        rotate_set(NECK_ROTATE_RIGHT);
-//        CyDelay(STEP_DELAY);
-//        mouth_set(MOUTH_CLOSE);
-//        CyDelay(STEP_DELAY);
-//        mouth_set(MOUTH_OPEN);
-        //CyDelay(STEP_DELAY);
-        
-        // confused
-
-//        CyDelay(STEP_DELAY);
-//        lip_set(LIP_NORMAL);
-//        CyDelay(STEP_DELAY);
-//        eyelid_set(EYELID_CLOSED);
-//        CyDelay(STEP_DELAY);
-//        eyelid_set(EYELID_CENTER);
-//        CyDelay(STEP_DELAY);
-//        eyelid_set(EYELID_DOWN);
-//        CyDelay(STEP_DELAY);
-//        eyeball_set(EYEBALL_CENTER);
-//        CyDelay(STEP_DELAY);
-//        eyebrow_set(EYEBROW_NORMAL);
-//        CyDelay(STEP_DELAY);
-//        eyebrow_set(EYEBROW_LEFTRAISE);
-//        CyDelay(STEP_DELAY);
-//        eyebrow_set(EYEBROW_RIGHTRAISE);
-//        CyDelay(STEP_DELAY);
-//        eyebrow_set(EYEBROW_BOTHRAISE);
-//        CyDelay(STEP_DELAY);
+        button_wait();
+        sad();
+        button_wait();
+        surprised();
+        button_wait();
+        eyeroll();
+        button_wait();
+        neutral();
+        button_wait();
 
     }
 }

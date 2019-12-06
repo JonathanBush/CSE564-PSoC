@@ -1,6 +1,6 @@
 // ======================================================================
 // Control.v generated from TopDesign.cysch
-// 12/03/2019 at 14:04
+// 12/06/2019 at 11:09
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -995,9 +995,29 @@ module Timer_v2_80_8 (
 
 endmodule
 
+// Component: Debouncer_v1_0
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Debouncer_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Debouncer_v1_0\Debouncer_v1_0.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Debouncer_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Debouncer_v1_0\Debouncer_v1_0.v"
+`endif
+
 // top
 module top ;
 
+          wire  Net_944;
+          wire  Net_938;
+          wire  Net_937;
+          wire  Net_936;
+          wire  Net_935;
+          wire  Net_934;
+          wire  Net_933;
           wire  Net_926;
           wire  Net_925;
           wire  Net_924;
@@ -2486,6 +2506,111 @@ module top ;
     defparam Timer.InterruptOnTC = 1;
     defparam Timer.Resolution = 16;
     defparam Timer.SiliconRevision = "0";
+
+	wire [0:0] tmpOE__Button_net;
+	wire [0:0] tmpIO_0__Button_net;
+	wire [0:0] tmpINTERRUPT_0__Button_net;
+	electrical [0:0] tmpSIOVREF__Button_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba"),
+		  .drive_mode(3'b010),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b1),
+		  .input_clk_en(0),
+		  .input_sync(1'b0),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b00),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b0),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("I"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .sio_hifreq(""),
+		  .sio_vohsel(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b00),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		Button
+		 (.oe(tmpOE__Button_net),
+		  .y({1'b0}),
+		  .fb({Net_933}),
+		  .io({tmpIO_0__Button_net[0:0]}),
+		  .siovref(tmpSIOVREF__Button_net),
+		  .interrupt({tmpINTERRUPT_0__Button_net[0:0]}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
+
+	assign tmpOE__Button_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+    Debouncer_v1_0 Debouncer_1 (
+        .d(Net_933),
+        .clock(Net_934),
+        .q(Net_935),
+        .neg(Net_936),
+        .either(Net_937),
+        .pos(Net_938));
+    defparam Debouncer_1.EitherEdgeDetect = 0;
+    defparam Debouncer_1.NegEdgeDetect = 1;
+    defparam Debouncer_1.PosEdgeDetect = 0;
+    defparam Debouncer_1.SignalWidth = 1;
+
+
+	cy_clock_v1_0
+		#(.id("2d040ebc-85ce-4863-8247-b2614fa9403d"),
+		  .source_clock_id(""),
+		  .divisor(0),
+		  .period("10000000000000"),
+		  .is_direct(0),
+		  .is_digital(1))
+		Clock_2
+		 (.clock_out(Net_934));
+
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b10))
+		button_isr
+		 (.int_signal(Net_936));
+
 
 
 

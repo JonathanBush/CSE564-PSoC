@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 2s.513ms
+Loading plugins phase: Elapsed time ==> 0s.625ms
 <CYPRESSTAG name="CyDsfit arguments...">
 cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\Control.cyprj -d CY8C5888LTI-LP097 -s C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\Generated_Source\PSoC5 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 24s.165ms
+Elaboration phase: Elapsed time ==> 3s.309ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.277ms
+HDL generation phase: Elapsed time ==> 0s.203ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\jon\D
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Tue Dec 03 14:04:30 2019
+Fri Dec 06 11:09:41 2019
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 Control.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Tue Dec 03 14:04:31 2019
+Fri Dec 06 11:09:41 2019
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\B_PWM_v3_30\B_PWM_v3_30.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v'
@@ -59,6 +59,8 @@ Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\wa
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Debouncer_v1_0\Debouncer_v1_0.v'
+Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.v'
 
 vpp:  No errors.
 
@@ -90,7 +92,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\jon\D
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Tue Dec 03 14:04:31 2019
+Fri Dec 06 11:09:41 2019
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -109,6 +111,7 @@ Linking 'C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Control
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Debouncer_v1_0\Debouncer_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
@@ -123,7 +126,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\jon\D
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Tue Dec 03 14:04:34 2019
+Fri Dec 06 11:09:44 2019
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -142,6 +145,7 @@ Linking 'C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\codegentemp\Control
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\OneTerminal\OneTerminal.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'.
+Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\Debouncer_v1_0\Debouncer_v1_0.v'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3pkg.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\common\stdlogic\cy_psoc3.vif'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\lib\lcpsoc3\stdlogic\mod_cnst.vif'.
@@ -1216,6 +1220,7 @@ Detecting unused logic.
 	\Base:Net_107\
 	\Base:Net_114\
 	Net_926
+	Net_935
 
     Synthesized names
 	\LeftEyebrow:PWMUDB:add_vi_vv_MODGEN_1_31\
@@ -1459,7 +1464,7 @@ Detecting unused logic.
 	\Base:PWMUDB:add_vi_vv_MODGEN_8_3\
 	\Base:PWMUDB:add_vi_vv_MODGEN_8_2\
 
-Deleted 1065 User equations/components.
+Deleted 1066 User equations/components.
 Deleted 240 Synthesized equations/components.
 
 ------------------------------------------------------
@@ -1860,6 +1865,7 @@ Aliasing tmpOE__Jaw_net_0 to one
 Aliasing Net_12 to zero
 Aliasing \Timer:Net_260\ to zero
 Aliasing \Timer:Net_102\ to one
+Aliasing tmpOE__Button_net_0 to one
 Aliasing \LeftEyebrow:PWMUDB:min_kill_reg\\D\ to one
 Aliasing \LeftEyebrow:PWMUDB:prevCapture\\D\ to zero
 Aliasing \LeftEyebrow:PWMUDB:trig_last\\D\ to zero
@@ -1900,6 +1906,8 @@ Aliasing \Base:PWMUDB:prevCapture\\D\ to zero
 Aliasing \Base:PWMUDB:trig_last\\D\ to zero
 Aliasing \Base:PWMUDB:ltch_kill_reg\\D\ to one
 Aliasing \Base:PWMUDB:tc_i_reg\\D\ to \Base:PWMUDB:status_2\
+Aliasing Net_938D to zero
+Aliasing Net_937D to zero
 Removing Lhs of wire \LeftEyebrow:PWMUDB:ctrl_enable\[16] = \LeftEyebrow:PWMUDB:control_7\[8]
 Removing Lhs of wire \LeftEyebrow:PWMUDB:hwCapture\[26] = zero[7]
 Removing Lhs of wire \LeftEyebrow:PWMUDB:hwEnable\[27] = \LeftEyebrow:PWMUDB:control_7\[8]
@@ -2457,105 +2465,110 @@ Removing Lhs of wire Net_12[3158] = zero[7]
 Removing Lhs of wire \Timer:Net_260\[3160] = zero[7]
 Removing Lhs of wire \Timer:Net_266\[3161] = one[4]
 Removing Lhs of wire \Timer:Net_102\[3166] = one[4]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:min_kill_reg\\D\[3167] = one[4]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:prevCapture\\D\[3168] = zero[7]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:trig_last\\D\[3169] = zero[7]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:ltch_kill_reg\\D\[3172] = one[4]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:prevCompare1\\D\[3175] = \LeftEyebrow:PWMUDB:cmp1\[68]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:prevCompare2\\D\[3176] = \LeftEyebrow:PWMUDB:cmp2\[71]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:cmp1_status_reg\\D\[3177] = \LeftEyebrow:PWMUDB:cmp1_status\[69]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:cmp2_status_reg\\D\[3178] = \LeftEyebrow:PWMUDB:cmp2_status\[72]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:pwm_i_reg\\D\[3180] = \LeftEyebrow:PWMUDB:pwm_i\[169]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:pwm1_i_reg\\D\[3181] = \LeftEyebrow:PWMUDB:pwm1_i\[171]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:pwm2_i_reg\\D\[3182] = \LeftEyebrow:PWMUDB:pwm2_i\[173]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:tc_i_reg\\D\[3183] = \LeftEyebrow:PWMUDB:status_2\[63]
-Removing Lhs of wire \RightEyebrow:PWMUDB:min_kill_reg\\D\[3184] = one[4]
-Removing Lhs of wire \RightEyebrow:PWMUDB:prevCapture\\D\[3185] = zero[7]
-Removing Lhs of wire \RightEyebrow:PWMUDB:trig_last\\D\[3186] = zero[7]
-Removing Lhs of wire \RightEyebrow:PWMUDB:ltch_kill_reg\\D\[3189] = one[4]
-Removing Lhs of wire \RightEyebrow:PWMUDB:prevCompare1\\D\[3192] = \RightEyebrow:PWMUDB:cmp1\[463]
-Removing Lhs of wire \RightEyebrow:PWMUDB:prevCompare2\\D\[3193] = \RightEyebrow:PWMUDB:cmp2\[466]
-Removing Lhs of wire \RightEyebrow:PWMUDB:cmp1_status_reg\\D\[3194] = \RightEyebrow:PWMUDB:cmp1_status\[464]
-Removing Lhs of wire \RightEyebrow:PWMUDB:cmp2_status_reg\\D\[3195] = \RightEyebrow:PWMUDB:cmp2_status\[467]
-Removing Lhs of wire \RightEyebrow:PWMUDB:pwm_i_reg\\D\[3197] = \RightEyebrow:PWMUDB:pwm_i\[564]
-Removing Lhs of wire \RightEyebrow:PWMUDB:pwm1_i_reg\\D\[3198] = \RightEyebrow:PWMUDB:pwm1_i\[566]
-Removing Lhs of wire \RightEyebrow:PWMUDB:pwm2_i_reg\\D\[3199] = \RightEyebrow:PWMUDB:pwm2_i\[568]
-Removing Lhs of wire \RightEyebrow:PWMUDB:tc_i_reg\\D\[3200] = \RightEyebrow:PWMUDB:status_2\[458]
-Removing Lhs of wire \LeftEyeball:PWMUDB:min_kill_reg\\D\[3201] = one[4]
-Removing Lhs of wire \LeftEyeball:PWMUDB:prevCapture\\D\[3202] = zero[7]
-Removing Lhs of wire \LeftEyeball:PWMUDB:trig_last\\D\[3203] = zero[7]
-Removing Lhs of wire \LeftEyeball:PWMUDB:ltch_kill_reg\\D\[3206] = one[4]
-Removing Lhs of wire \LeftEyeball:PWMUDB:prevCompare1\\D\[3209] = \LeftEyeball:PWMUDB:cmp1\[857]
-Removing Lhs of wire \LeftEyeball:PWMUDB:prevCompare2\\D\[3210] = \LeftEyeball:PWMUDB:cmp2\[860]
-Removing Lhs of wire \LeftEyeball:PWMUDB:cmp1_status_reg\\D\[3211] = \LeftEyeball:PWMUDB:cmp1_status\[858]
-Removing Lhs of wire \LeftEyeball:PWMUDB:cmp2_status_reg\\D\[3212] = \LeftEyeball:PWMUDB:cmp2_status\[861]
-Removing Lhs of wire \LeftEyeball:PWMUDB:pwm_i_reg\\D\[3214] = \LeftEyeball:PWMUDB:pwm_i\[958]
-Removing Lhs of wire \LeftEyeball:PWMUDB:pwm1_i_reg\\D\[3215] = \LeftEyeball:PWMUDB:pwm1_i\[960]
-Removing Lhs of wire \LeftEyeball:PWMUDB:pwm2_i_reg\\D\[3216] = \LeftEyeball:PWMUDB:pwm2_i\[962]
-Removing Lhs of wire \LeftEyeball:PWMUDB:tc_i_reg\\D\[3217] = \LeftEyeball:PWMUDB:status_2\[852]
-Removing Lhs of wire \RightEyeball:PWMUDB:min_kill_reg\\D\[3218] = one[4]
-Removing Lhs of wire \RightEyeball:PWMUDB:prevCapture\\D\[3219] = zero[7]
-Removing Lhs of wire \RightEyeball:PWMUDB:trig_last\\D\[3220] = zero[7]
-Removing Lhs of wire \RightEyeball:PWMUDB:ltch_kill_reg\\D\[3223] = one[4]
-Removing Lhs of wire \RightEyeball:PWMUDB:prevCompare1\\D\[3226] = \RightEyeball:PWMUDB:cmp1\[1251]
-Removing Lhs of wire \RightEyeball:PWMUDB:prevCompare2\\D\[3227] = \RightEyeball:PWMUDB:cmp2\[1254]
-Removing Lhs of wire \RightEyeball:PWMUDB:cmp1_status_reg\\D\[3228] = \RightEyeball:PWMUDB:cmp1_status\[1252]
-Removing Lhs of wire \RightEyeball:PWMUDB:cmp2_status_reg\\D\[3229] = \RightEyeball:PWMUDB:cmp2_status\[1255]
-Removing Lhs of wire \RightEyeball:PWMUDB:pwm_i_reg\\D\[3231] = \RightEyeball:PWMUDB:pwm_i\[1352]
-Removing Lhs of wire \RightEyeball:PWMUDB:pwm1_i_reg\\D\[3232] = \RightEyeball:PWMUDB:pwm1_i\[1354]
-Removing Lhs of wire \RightEyeball:PWMUDB:pwm2_i_reg\\D\[3233] = \RightEyeball:PWMUDB:pwm2_i\[1356]
-Removing Lhs of wire \RightEyeball:PWMUDB:tc_i_reg\\D\[3234] = \RightEyeball:PWMUDB:status_2\[1246]
-Removing Lhs of wire \Eyelids:PWMUDB:min_kill_reg\\D\[3235] = one[4]
-Removing Lhs of wire \Eyelids:PWMUDB:prevCapture\\D\[3236] = zero[7]
-Removing Lhs of wire \Eyelids:PWMUDB:trig_last\\D\[3237] = zero[7]
-Removing Lhs of wire \Eyelids:PWMUDB:ltch_kill_reg\\D\[3240] = one[4]
-Removing Lhs of wire \Eyelids:PWMUDB:prevCompare1\\D\[3243] = \Eyelids:PWMUDB:cmp1\[1645]
-Removing Lhs of wire \Eyelids:PWMUDB:prevCompare2\\D\[3244] = \Eyelids:PWMUDB:cmp2\[1648]
-Removing Lhs of wire \Eyelids:PWMUDB:cmp1_status_reg\\D\[3245] = \Eyelids:PWMUDB:cmp1_status\[1646]
-Removing Lhs of wire \Eyelids:PWMUDB:cmp2_status_reg\\D\[3246] = \Eyelids:PWMUDB:cmp2_status\[1649]
-Removing Lhs of wire \Eyelids:PWMUDB:pwm_i_reg\\D\[3248] = \Eyelids:PWMUDB:pwm_i\[1746]
-Removing Lhs of wire \Eyelids:PWMUDB:pwm1_i_reg\\D\[3249] = \Eyelids:PWMUDB:pwm1_i\[1748]
-Removing Lhs of wire \Eyelids:PWMUDB:pwm2_i_reg\\D\[3250] = \Eyelids:PWMUDB:pwm2_i\[1750]
-Removing Lhs of wire \Eyelids:PWMUDB:tc_i_reg\\D\[3251] = \Eyelids:PWMUDB:status_2\[1640]
-Removing Lhs of wire \Lips:PWMUDB:min_kill_reg\\D\[3252] = one[4]
-Removing Lhs of wire \Lips:PWMUDB:prevCapture\\D\[3253] = zero[7]
-Removing Lhs of wire \Lips:PWMUDB:trig_last\\D\[3254] = zero[7]
-Removing Lhs of wire \Lips:PWMUDB:ltch_kill_reg\\D\[3257] = one[4]
-Removing Lhs of wire \Lips:PWMUDB:prevCompare1\\D\[3260] = \Lips:PWMUDB:cmp1\[2039]
-Removing Lhs of wire \Lips:PWMUDB:prevCompare2\\D\[3261] = \Lips:PWMUDB:cmp2\[2042]
-Removing Lhs of wire \Lips:PWMUDB:cmp1_status_reg\\D\[3262] = \Lips:PWMUDB:cmp1_status\[2040]
-Removing Lhs of wire \Lips:PWMUDB:cmp2_status_reg\\D\[3263] = \Lips:PWMUDB:cmp2_status\[2043]
-Removing Lhs of wire \Lips:PWMUDB:pwm_i_reg\\D\[3265] = \Lips:PWMUDB:pwm_i\[2140]
-Removing Lhs of wire \Lips:PWMUDB:pwm1_i_reg\\D\[3266] = \Lips:PWMUDB:pwm1_i\[2142]
-Removing Lhs of wire \Lips:PWMUDB:pwm2_i_reg\\D\[3267] = \Lips:PWMUDB:pwm2_i\[2144]
-Removing Lhs of wire \Lips:PWMUDB:tc_i_reg\\D\[3268] = \Lips:PWMUDB:status_2\[2034]
-Removing Lhs of wire \Neck:PWMUDB:min_kill_reg\\D\[3269] = one[4]
-Removing Lhs of wire \Neck:PWMUDB:prevCapture\\D\[3270] = zero[7]
-Removing Lhs of wire \Neck:PWMUDB:trig_last\\D\[3271] = zero[7]
-Removing Lhs of wire \Neck:PWMUDB:ltch_kill_reg\\D\[3274] = one[4]
-Removing Lhs of wire \Neck:PWMUDB:prevCompare1\\D\[3277] = \Neck:PWMUDB:cmp1\[2433]
-Removing Lhs of wire \Neck:PWMUDB:prevCompare2\\D\[3278] = \Neck:PWMUDB:cmp2\[2436]
-Removing Lhs of wire \Neck:PWMUDB:cmp1_status_reg\\D\[3279] = \Neck:PWMUDB:cmp1_status\[2434]
-Removing Lhs of wire \Neck:PWMUDB:cmp2_status_reg\\D\[3280] = \Neck:PWMUDB:cmp2_status\[2437]
-Removing Lhs of wire \Neck:PWMUDB:pwm_i_reg\\D\[3282] = \Neck:PWMUDB:pwm_i\[2534]
-Removing Lhs of wire \Neck:PWMUDB:pwm1_i_reg\\D\[3283] = \Neck:PWMUDB:pwm1_i\[2536]
-Removing Lhs of wire \Neck:PWMUDB:pwm2_i_reg\\D\[3284] = \Neck:PWMUDB:pwm2_i\[2538]
-Removing Lhs of wire \Neck:PWMUDB:tc_i_reg\\D\[3285] = \Neck:PWMUDB:status_2\[2428]
-Removing Lhs of wire \Base:PWMUDB:min_kill_reg\\D\[3286] = one[4]
-Removing Lhs of wire \Base:PWMUDB:prevCapture\\D\[3287] = zero[7]
-Removing Lhs of wire \Base:PWMUDB:trig_last\\D\[3288] = zero[7]
-Removing Lhs of wire \Base:PWMUDB:ltch_kill_reg\\D\[3291] = one[4]
-Removing Lhs of wire \Base:PWMUDB:prevCompare1\\D\[3294] = \Base:PWMUDB:cmp1\[2827]
-Removing Lhs of wire \Base:PWMUDB:prevCompare2\\D\[3295] = \Base:PWMUDB:cmp2\[2830]
-Removing Lhs of wire \Base:PWMUDB:cmp1_status_reg\\D\[3296] = \Base:PWMUDB:cmp1_status\[2828]
-Removing Lhs of wire \Base:PWMUDB:cmp2_status_reg\\D\[3297] = \Base:PWMUDB:cmp2_status\[2831]
-Removing Lhs of wire \Base:PWMUDB:pwm_i_reg\\D\[3299] = \Base:PWMUDB:pwm_i\[2928]
-Removing Lhs of wire \Base:PWMUDB:pwm1_i_reg\\D\[3300] = \Base:PWMUDB:pwm1_i\[2930]
-Removing Lhs of wire \Base:PWMUDB:pwm2_i_reg\\D\[3301] = \Base:PWMUDB:pwm2_i\[2932]
-Removing Lhs of wire \Base:PWMUDB:tc_i_reg\\D\[3302] = \Base:PWMUDB:status_2\[2822]
+Removing Lhs of wire tmpOE__Button_net_0[3168] = one[4]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:min_kill_reg\\D\[3184] = one[4]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:prevCapture\\D\[3185] = zero[7]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:trig_last\\D\[3186] = zero[7]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:ltch_kill_reg\\D\[3189] = one[4]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:prevCompare1\\D\[3192] = \LeftEyebrow:PWMUDB:cmp1\[68]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:prevCompare2\\D\[3193] = \LeftEyebrow:PWMUDB:cmp2\[71]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:cmp1_status_reg\\D\[3194] = \LeftEyebrow:PWMUDB:cmp1_status\[69]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:cmp2_status_reg\\D\[3195] = \LeftEyebrow:PWMUDB:cmp2_status\[72]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:pwm_i_reg\\D\[3197] = \LeftEyebrow:PWMUDB:pwm_i\[169]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:pwm1_i_reg\\D\[3198] = \LeftEyebrow:PWMUDB:pwm1_i\[171]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:pwm2_i_reg\\D\[3199] = \LeftEyebrow:PWMUDB:pwm2_i\[173]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:tc_i_reg\\D\[3200] = \LeftEyebrow:PWMUDB:status_2\[63]
+Removing Lhs of wire \RightEyebrow:PWMUDB:min_kill_reg\\D\[3201] = one[4]
+Removing Lhs of wire \RightEyebrow:PWMUDB:prevCapture\\D\[3202] = zero[7]
+Removing Lhs of wire \RightEyebrow:PWMUDB:trig_last\\D\[3203] = zero[7]
+Removing Lhs of wire \RightEyebrow:PWMUDB:ltch_kill_reg\\D\[3206] = one[4]
+Removing Lhs of wire \RightEyebrow:PWMUDB:prevCompare1\\D\[3209] = \RightEyebrow:PWMUDB:cmp1\[463]
+Removing Lhs of wire \RightEyebrow:PWMUDB:prevCompare2\\D\[3210] = \RightEyebrow:PWMUDB:cmp2\[466]
+Removing Lhs of wire \RightEyebrow:PWMUDB:cmp1_status_reg\\D\[3211] = \RightEyebrow:PWMUDB:cmp1_status\[464]
+Removing Lhs of wire \RightEyebrow:PWMUDB:cmp2_status_reg\\D\[3212] = \RightEyebrow:PWMUDB:cmp2_status\[467]
+Removing Lhs of wire \RightEyebrow:PWMUDB:pwm_i_reg\\D\[3214] = \RightEyebrow:PWMUDB:pwm_i\[564]
+Removing Lhs of wire \RightEyebrow:PWMUDB:pwm1_i_reg\\D\[3215] = \RightEyebrow:PWMUDB:pwm1_i\[566]
+Removing Lhs of wire \RightEyebrow:PWMUDB:pwm2_i_reg\\D\[3216] = \RightEyebrow:PWMUDB:pwm2_i\[568]
+Removing Lhs of wire \RightEyebrow:PWMUDB:tc_i_reg\\D\[3217] = \RightEyebrow:PWMUDB:status_2\[458]
+Removing Lhs of wire \LeftEyeball:PWMUDB:min_kill_reg\\D\[3218] = one[4]
+Removing Lhs of wire \LeftEyeball:PWMUDB:prevCapture\\D\[3219] = zero[7]
+Removing Lhs of wire \LeftEyeball:PWMUDB:trig_last\\D\[3220] = zero[7]
+Removing Lhs of wire \LeftEyeball:PWMUDB:ltch_kill_reg\\D\[3223] = one[4]
+Removing Lhs of wire \LeftEyeball:PWMUDB:prevCompare1\\D\[3226] = \LeftEyeball:PWMUDB:cmp1\[857]
+Removing Lhs of wire \LeftEyeball:PWMUDB:prevCompare2\\D\[3227] = \LeftEyeball:PWMUDB:cmp2\[860]
+Removing Lhs of wire \LeftEyeball:PWMUDB:cmp1_status_reg\\D\[3228] = \LeftEyeball:PWMUDB:cmp1_status\[858]
+Removing Lhs of wire \LeftEyeball:PWMUDB:cmp2_status_reg\\D\[3229] = \LeftEyeball:PWMUDB:cmp2_status\[861]
+Removing Lhs of wire \LeftEyeball:PWMUDB:pwm_i_reg\\D\[3231] = \LeftEyeball:PWMUDB:pwm_i\[958]
+Removing Lhs of wire \LeftEyeball:PWMUDB:pwm1_i_reg\\D\[3232] = \LeftEyeball:PWMUDB:pwm1_i\[960]
+Removing Lhs of wire \LeftEyeball:PWMUDB:pwm2_i_reg\\D\[3233] = \LeftEyeball:PWMUDB:pwm2_i\[962]
+Removing Lhs of wire \LeftEyeball:PWMUDB:tc_i_reg\\D\[3234] = \LeftEyeball:PWMUDB:status_2\[852]
+Removing Lhs of wire \RightEyeball:PWMUDB:min_kill_reg\\D\[3235] = one[4]
+Removing Lhs of wire \RightEyeball:PWMUDB:prevCapture\\D\[3236] = zero[7]
+Removing Lhs of wire \RightEyeball:PWMUDB:trig_last\\D\[3237] = zero[7]
+Removing Lhs of wire \RightEyeball:PWMUDB:ltch_kill_reg\\D\[3240] = one[4]
+Removing Lhs of wire \RightEyeball:PWMUDB:prevCompare1\\D\[3243] = \RightEyeball:PWMUDB:cmp1\[1251]
+Removing Lhs of wire \RightEyeball:PWMUDB:prevCompare2\\D\[3244] = \RightEyeball:PWMUDB:cmp2\[1254]
+Removing Lhs of wire \RightEyeball:PWMUDB:cmp1_status_reg\\D\[3245] = \RightEyeball:PWMUDB:cmp1_status\[1252]
+Removing Lhs of wire \RightEyeball:PWMUDB:cmp2_status_reg\\D\[3246] = \RightEyeball:PWMUDB:cmp2_status\[1255]
+Removing Lhs of wire \RightEyeball:PWMUDB:pwm_i_reg\\D\[3248] = \RightEyeball:PWMUDB:pwm_i\[1352]
+Removing Lhs of wire \RightEyeball:PWMUDB:pwm1_i_reg\\D\[3249] = \RightEyeball:PWMUDB:pwm1_i\[1354]
+Removing Lhs of wire \RightEyeball:PWMUDB:pwm2_i_reg\\D\[3250] = \RightEyeball:PWMUDB:pwm2_i\[1356]
+Removing Lhs of wire \RightEyeball:PWMUDB:tc_i_reg\\D\[3251] = \RightEyeball:PWMUDB:status_2\[1246]
+Removing Lhs of wire \Eyelids:PWMUDB:min_kill_reg\\D\[3252] = one[4]
+Removing Lhs of wire \Eyelids:PWMUDB:prevCapture\\D\[3253] = zero[7]
+Removing Lhs of wire \Eyelids:PWMUDB:trig_last\\D\[3254] = zero[7]
+Removing Lhs of wire \Eyelids:PWMUDB:ltch_kill_reg\\D\[3257] = one[4]
+Removing Lhs of wire \Eyelids:PWMUDB:prevCompare1\\D\[3260] = \Eyelids:PWMUDB:cmp1\[1645]
+Removing Lhs of wire \Eyelids:PWMUDB:prevCompare2\\D\[3261] = \Eyelids:PWMUDB:cmp2\[1648]
+Removing Lhs of wire \Eyelids:PWMUDB:cmp1_status_reg\\D\[3262] = \Eyelids:PWMUDB:cmp1_status\[1646]
+Removing Lhs of wire \Eyelids:PWMUDB:cmp2_status_reg\\D\[3263] = \Eyelids:PWMUDB:cmp2_status\[1649]
+Removing Lhs of wire \Eyelids:PWMUDB:pwm_i_reg\\D\[3265] = \Eyelids:PWMUDB:pwm_i\[1746]
+Removing Lhs of wire \Eyelids:PWMUDB:pwm1_i_reg\\D\[3266] = \Eyelids:PWMUDB:pwm1_i\[1748]
+Removing Lhs of wire \Eyelids:PWMUDB:pwm2_i_reg\\D\[3267] = \Eyelids:PWMUDB:pwm2_i\[1750]
+Removing Lhs of wire \Eyelids:PWMUDB:tc_i_reg\\D\[3268] = \Eyelids:PWMUDB:status_2\[1640]
+Removing Lhs of wire \Lips:PWMUDB:min_kill_reg\\D\[3269] = one[4]
+Removing Lhs of wire \Lips:PWMUDB:prevCapture\\D\[3270] = zero[7]
+Removing Lhs of wire \Lips:PWMUDB:trig_last\\D\[3271] = zero[7]
+Removing Lhs of wire \Lips:PWMUDB:ltch_kill_reg\\D\[3274] = one[4]
+Removing Lhs of wire \Lips:PWMUDB:prevCompare1\\D\[3277] = \Lips:PWMUDB:cmp1\[2039]
+Removing Lhs of wire \Lips:PWMUDB:prevCompare2\\D\[3278] = \Lips:PWMUDB:cmp2\[2042]
+Removing Lhs of wire \Lips:PWMUDB:cmp1_status_reg\\D\[3279] = \Lips:PWMUDB:cmp1_status\[2040]
+Removing Lhs of wire \Lips:PWMUDB:cmp2_status_reg\\D\[3280] = \Lips:PWMUDB:cmp2_status\[2043]
+Removing Lhs of wire \Lips:PWMUDB:pwm_i_reg\\D\[3282] = \Lips:PWMUDB:pwm_i\[2140]
+Removing Lhs of wire \Lips:PWMUDB:pwm1_i_reg\\D\[3283] = \Lips:PWMUDB:pwm1_i\[2142]
+Removing Lhs of wire \Lips:PWMUDB:pwm2_i_reg\\D\[3284] = \Lips:PWMUDB:pwm2_i\[2144]
+Removing Lhs of wire \Lips:PWMUDB:tc_i_reg\\D\[3285] = \Lips:PWMUDB:status_2\[2034]
+Removing Lhs of wire \Neck:PWMUDB:min_kill_reg\\D\[3286] = one[4]
+Removing Lhs of wire \Neck:PWMUDB:prevCapture\\D\[3287] = zero[7]
+Removing Lhs of wire \Neck:PWMUDB:trig_last\\D\[3288] = zero[7]
+Removing Lhs of wire \Neck:PWMUDB:ltch_kill_reg\\D\[3291] = one[4]
+Removing Lhs of wire \Neck:PWMUDB:prevCompare1\\D\[3294] = \Neck:PWMUDB:cmp1\[2433]
+Removing Lhs of wire \Neck:PWMUDB:prevCompare2\\D\[3295] = \Neck:PWMUDB:cmp2\[2436]
+Removing Lhs of wire \Neck:PWMUDB:cmp1_status_reg\\D\[3296] = \Neck:PWMUDB:cmp1_status\[2434]
+Removing Lhs of wire \Neck:PWMUDB:cmp2_status_reg\\D\[3297] = \Neck:PWMUDB:cmp2_status\[2437]
+Removing Lhs of wire \Neck:PWMUDB:pwm_i_reg\\D\[3299] = \Neck:PWMUDB:pwm_i\[2534]
+Removing Lhs of wire \Neck:PWMUDB:pwm1_i_reg\\D\[3300] = \Neck:PWMUDB:pwm1_i\[2536]
+Removing Lhs of wire \Neck:PWMUDB:pwm2_i_reg\\D\[3301] = \Neck:PWMUDB:pwm2_i\[2538]
+Removing Lhs of wire \Neck:PWMUDB:tc_i_reg\\D\[3302] = \Neck:PWMUDB:status_2\[2428]
+Removing Lhs of wire \Base:PWMUDB:min_kill_reg\\D\[3303] = one[4]
+Removing Lhs of wire \Base:PWMUDB:prevCapture\\D\[3304] = zero[7]
+Removing Lhs of wire \Base:PWMUDB:trig_last\\D\[3305] = zero[7]
+Removing Lhs of wire \Base:PWMUDB:ltch_kill_reg\\D\[3308] = one[4]
+Removing Lhs of wire \Base:PWMUDB:prevCompare1\\D\[3311] = \Base:PWMUDB:cmp1\[2827]
+Removing Lhs of wire \Base:PWMUDB:prevCompare2\\D\[3312] = \Base:PWMUDB:cmp2\[2830]
+Removing Lhs of wire \Base:PWMUDB:cmp1_status_reg\\D\[3313] = \Base:PWMUDB:cmp1_status\[2828]
+Removing Lhs of wire \Base:PWMUDB:cmp2_status_reg\\D\[3314] = \Base:PWMUDB:cmp2_status\[2831]
+Removing Lhs of wire \Base:PWMUDB:pwm_i_reg\\D\[3316] = \Base:PWMUDB:pwm_i\[2928]
+Removing Lhs of wire \Base:PWMUDB:pwm1_i_reg\\D\[3317] = \Base:PWMUDB:pwm1_i\[2930]
+Removing Lhs of wire \Base:PWMUDB:pwm2_i_reg\\D\[3318] = \Base:PWMUDB:pwm2_i\[2932]
+Removing Lhs of wire \Base:PWMUDB:tc_i_reg\\D\[3319] = \Base:PWMUDB:status_2\[2822]
+Removing Lhs of wire \Debouncer_1:DEBOUNCER[0]:d_sync_0\\D\[3320] = Net_933[3169]
+Removing Lhs of wire \Debouncer_1:DEBOUNCER[0]:d_sync_1\\D\[3321] = \Debouncer_1:DEBOUNCER[0]:d_sync_0\[3176]
+Removing Lhs of wire Net_938D[3322] = zero[7]
+Removing Lhs of wire Net_937D[3324] = zero[7]
 
 ------------------------------------------------------
-Aliased 0 equations, 653 wires.
+Aliased 0 equations, 658 wires.
 ------------------------------------------------------
 
 ----------------------------------------------------------
@@ -3299,22 +3312,22 @@ Removing Lhs of wire \Base:PWMUDB:pwm_i\[2928] = zero[7]
 Removing Lhs of wire \Base:PWMUDB:MODULE_8:g2:a0:g1:z1:s0:g1:u0:b_24\[3107] = zero[7]
 Removing Lhs of wire \Base:PWMUDB:MODULE_8:g2:a0:g1:z1:s0:g1:u0:b_16\[3117] = zero[7]
 Removing Lhs of wire \Base:PWMUDB:MODULE_8:g2:a0:g1:z1:s0:g1:u0:b_8\[3127] = zero[7]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:runmode_enable\\D\[3170] = \LeftEyebrow:PWMUDB:control_7\[8]
-Removing Lhs of wire \LeftEyebrow:PWMUDB:final_kill_reg\\D\[3179] = zero[7]
-Removing Lhs of wire \RightEyebrow:PWMUDB:runmode_enable\\D\[3187] = \RightEyebrow:PWMUDB:control_7\[403]
-Removing Lhs of wire \RightEyebrow:PWMUDB:final_kill_reg\\D\[3196] = zero[7]
-Removing Lhs of wire \LeftEyeball:PWMUDB:runmode_enable\\D\[3204] = \LeftEyeball:PWMUDB:control_7\[797]
-Removing Lhs of wire \LeftEyeball:PWMUDB:final_kill_reg\\D\[3213] = zero[7]
-Removing Lhs of wire \RightEyeball:PWMUDB:runmode_enable\\D\[3221] = \RightEyeball:PWMUDB:control_7\[1191]
-Removing Lhs of wire \RightEyeball:PWMUDB:final_kill_reg\\D\[3230] = zero[7]
-Removing Lhs of wire \Eyelids:PWMUDB:runmode_enable\\D\[3238] = \Eyelids:PWMUDB:control_7\[1585]
-Removing Lhs of wire \Eyelids:PWMUDB:final_kill_reg\\D\[3247] = zero[7]
-Removing Lhs of wire \Lips:PWMUDB:runmode_enable\\D\[3255] = \Lips:PWMUDB:control_7\[1979]
-Removing Lhs of wire \Lips:PWMUDB:final_kill_reg\\D\[3264] = zero[7]
-Removing Lhs of wire \Neck:PWMUDB:runmode_enable\\D\[3272] = \Neck:PWMUDB:control_7\[2373]
-Removing Lhs of wire \Neck:PWMUDB:final_kill_reg\\D\[3281] = zero[7]
-Removing Lhs of wire \Base:PWMUDB:runmode_enable\\D\[3289] = \Base:PWMUDB:control_7\[2767]
-Removing Lhs of wire \Base:PWMUDB:final_kill_reg\\D\[3298] = zero[7]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:runmode_enable\\D\[3187] = \LeftEyebrow:PWMUDB:control_7\[8]
+Removing Lhs of wire \LeftEyebrow:PWMUDB:final_kill_reg\\D\[3196] = zero[7]
+Removing Lhs of wire \RightEyebrow:PWMUDB:runmode_enable\\D\[3204] = \RightEyebrow:PWMUDB:control_7\[403]
+Removing Lhs of wire \RightEyebrow:PWMUDB:final_kill_reg\\D\[3213] = zero[7]
+Removing Lhs of wire \LeftEyeball:PWMUDB:runmode_enable\\D\[3221] = \LeftEyeball:PWMUDB:control_7\[797]
+Removing Lhs of wire \LeftEyeball:PWMUDB:final_kill_reg\\D\[3230] = zero[7]
+Removing Lhs of wire \RightEyeball:PWMUDB:runmode_enable\\D\[3238] = \RightEyeball:PWMUDB:control_7\[1191]
+Removing Lhs of wire \RightEyeball:PWMUDB:final_kill_reg\\D\[3247] = zero[7]
+Removing Lhs of wire \Eyelids:PWMUDB:runmode_enable\\D\[3255] = \Eyelids:PWMUDB:control_7\[1585]
+Removing Lhs of wire \Eyelids:PWMUDB:final_kill_reg\\D\[3264] = zero[7]
+Removing Lhs of wire \Lips:PWMUDB:runmode_enable\\D\[3272] = \Lips:PWMUDB:control_7\[1979]
+Removing Lhs of wire \Lips:PWMUDB:final_kill_reg\\D\[3281] = zero[7]
+Removing Lhs of wire \Neck:PWMUDB:runmode_enable\\D\[3289] = \Neck:PWMUDB:control_7\[2373]
+Removing Lhs of wire \Neck:PWMUDB:final_kill_reg\\D\[3298] = zero[7]
+Removing Lhs of wire \Base:PWMUDB:runmode_enable\\D\[3306] = \Base:PWMUDB:control_7\[2767]
+Removing Lhs of wire \Base:PWMUDB:final_kill_reg\\D\[3315] = zero[7]
 
 ------------------------------------------------------
 Aliased 0 equations, 56 wires.
@@ -3347,14 +3360,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\Control.cyprj -dcpsoc3 Control.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 5s.690ms
+Warp synthesis phase: Elapsed time ==> 5s.013ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Tuesday, 03 December 2019 14:04:35
+cyp3fit: V4.2.0.641, Family: PSoC3, Started at: Friday, 06 December 2019 11:09:45
 Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\Control.cyprj -d CY8C5888LTI-LP097 Control.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.091ms
+Design parsing phase: Elapsed time ==> 0s.071ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -3414,8 +3427,11 @@ Design parsing phase: Elapsed time ==> 0s.091ms
     Converted constant MacroCell: \Base:PWMUDB:trig_last\ from registered to combinatorial
     Converted constant MacroCell: \Base:PWMUDB:status_5\ from registered to combinatorial
     Converted constant MacroCell: \Base:PWMUDB:pwm_i_reg\ from registered to combinatorial
+    Converted constant MacroCell: Net_938 from registered to combinatorial
+    Converted constant MacroCell: Net_937 from registered to combinatorial
 <CYPRESSTAG name="Global Clock Selection" icon="FILE_RPT_TECHM">
     Digital Clock 0: Automatic-assigning  clock 'Clock_1'. Fanout=9, Signal=Net_31
+    Digital Clock 1: Automatic-assigning  clock 'Clock_2'. Fanout=1, Signal=Net_934
 </CYPRESSTAG>
 
 Removing unused cells resulting from optimization
@@ -3453,6 +3469,10 @@ Done removing unused cells.
         ClockIn: Clock_1 was determined to be a global clock that is synchronous to BUS_CLK
         EnableIn: Constant 1 was determined to be synchronous to ClockIn
         ClockOut: Clock_1, EnableOut: Constant 1
+    UDB Clk/Enable \Debouncer_1:ClkSync\: with output requested to be synchronous
+        ClockIn: Clock_2 was determined to be a global clock that is synchronous to BUS_CLK
+        EnableIn: Constant 1 was determined to be synchronous to ClockIn
+        ClockOut: Clock_2, EnableOut: Constant 1
 </CYPRESSTAG>
 
 Removing unused cells resulting from optimization
@@ -4112,6 +4132,46 @@ Design Equations
             pa_out => Jaw(0)__PA ,
             pin_input => Net_862 ,
             pad => Jaw(0)_PAD );
+        Properties:
+        {
+        }
+
+    Pin : Name = Button(0)
+        Attributes:
+            In Group/Port: True
+            In Sync Option: NOSYNC
+            Out Sync Option: AUTO
+            Interrupt generated: False
+            Interrupt mode: NONE
+            Drive mode: RES_PULL_UP
+            VTrip: CMOS
+            Slew: FAST
+            Input Sync needed: False
+            Output Sync needed: False
+            SC shield enabled: False
+            POR State: ANY
+            LCD Mode: COMMON
+            Register Mode: RegComb
+            CaSense Mode: NEITHER
+            Treat as pin: True
+            Is OE Registered: False
+            Uses Analog: False
+            Can contain Digital: True
+            Is SIO: False
+            SIO Output Buf: NONREGULATED
+            SIO Input Buf: SINGLE_ENDED
+            SIO HiFreq: LOW
+            SIO Hyst: DISABLED
+            SIO Vtrip: MULTIPLIER_0_5
+            SIO Multiplier Index: 0
+            SIO RefSel: VCC_IO
+            Required Capabilities: DIGITAL, ROUTABLE
+            Initial Value: 1
+            IO Voltage: 0
+        PORT MAP (
+            pa_out => Button(0)__PA ,
+            fb => Net_933 ,
+            pad => Button(0)_PAD );
         Properties:
         {
         }
@@ -4901,6 +4961,43 @@ Design Equations
               \Base:PWMUDB:runmode_enable\ * \Base:PWMUDB:cmp2_less\
         );
         Output = Net_862 (fanout=1)
+
+    MacroCell: Name=\Debouncer_1:DEBOUNCER[0]:d_sync_0\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_934) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_933
+        );
+        Output = \Debouncer_1:DEBOUNCER[0]:d_sync_0\ (fanout=2)
+
+    MacroCell: Name=\Debouncer_1:DEBOUNCER[0]:d_sync_1\, Mode=(D-Register)
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_934) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Debouncer_1:DEBOUNCER[0]:d_sync_0\
+        );
+        Output = \Debouncer_1:DEBOUNCER[0]:d_sync_1\ (fanout=1)
+
+    MacroCell: Name=Net_936, Mode=(D-Register)
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_934) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\Debouncer_1:DEBOUNCER[0]:d_sync_0\ * 
+              \Debouncer_1:DEBOUNCER[0]:d_sync_1\
+        );
+        Output = Net_936 (fanout=1)
     </CYPRESSTAG>
     <CYPRESSTAG name="Datapath listing">
 
@@ -5822,6 +5919,15 @@ Design Equations
             int_type = "10"
             is_nmi = 0
         }
+
+    interrupt: Name =button_isr
+        PORT MAP (
+            interrupt => Net_936 );
+        Properties:
+        {
+            int_type = "10"
+            is_nmi = 0
+        }
     </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Technology mapping summary" expanded>
@@ -5832,12 +5938,12 @@ Technology mapping summary
 
 Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
-Digital Clocks                :    1 :    7 :    8 : 12.50 %
+Digital Clocks                :    2 :    6 :    8 : 25.00 %
 Analog Clocks                 :    0 :    4 :    4 :  0.00 %
 CapSense Buffers              :    0 :    2 :    2 :  0.00 %
 Digital Filter Block          :    0 :    1 :    1 :  0.00 %
-Interrupts                    :    1 :   31 :   32 :  3.13 %
-IO                            :   19 :   29 :   48 : 39.58 %
+Interrupts                    :    2 :   30 :   32 :  6.25 %
+IO                            :   20 :   28 :   48 : 41.67 %
 Segment LCD                   :    0 :    1 :    1 :  0.00 %
 CAN 2.0b                      :    0 :    1 :    1 :  0.00 %
 I2C                           :    0 :    1 :    1 :  0.00 %
@@ -5845,9 +5951,9 @@ USB                           :    0 :    1 :    1 :  0.00 %
 DMA Channels                  :    0 :   24 :   24 :  0.00 %
 Timer                         :    1 :    3 :    4 : 25.00 %
 UDB                           :      :      :      :        
-  Macrocells                  :   65 :  127 :  192 : 33.85 %
-  Unique P-terms              :   64 :  320 :  384 : 16.67 %
-  Total P-terms               :   64 :      :      :        
+  Macrocells                  :   68 :  124 :  192 : 35.42 %
+  Unique P-terms              :   67 :  317 :  384 : 17.45 %
+  Total P-terms               :   67 :      :      :        
   Datapath Cells              :   16 :    8 :   24 : 66.67 %
   Status Cells                :    8 :   16 :   24 : 33.33 %
     StatusI Registers         :    8 :      :      :        
@@ -5862,12 +5968,13 @@ Analog (SC/CT) Blocks         :    0 :    4 :    4 :  0.00 %
 DAC                           :      :      :      :        
   VIDAC                       :    0 :    4 :    4 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.329ms
-Tech Mapping phase: Elapsed time ==> 0s.688ms
+Technology Mapping: Elapsed time ==> 0s.248ms
+Tech Mapping phase: Elapsed time ==> 0s.510ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 Initial Analog Placement Results:
 IO_4@[IOP=(1)][IoId=(4)] : BaseRotation(0) (fixed)
+IO_0@[IOP=(3)][IoId=(0)] : Button(0) (fixed)
 IO_2@[IOP=(1)][IoId=(2)] : EyelidClose(0) (fixed)
 IO_5@[IOP=(12)][IoId=(5)] : EyelidTilt(0) (fixed)
 IO_2@[IOP=(12)][IoId=(2)] : Jaw(0) (fixed)
@@ -5883,10 +5990,10 @@ IO_7@[IOP=(2)][IoId=(7)] : RightEyeballBottom(0) (fixed)
 IO_6@[IOP=(2)][IoId=(6)] : RightEyeballTop(0) (fixed)
 IO_4@[IOP=(2)][IoId=(4)] : RightEyebrow1(0) (fixed)
 IO_5@[IOP=(2)][IoId=(5)] : RightEyebrow2(0) (fixed)
-Analog Placement phase: Elapsed time ==> 0s.112ms
+Analog Placement phase: Elapsed time ==> 0s.096ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
-Analog Routing phase: Elapsed time ==> 0s.050ms
+Analog Routing phase: Elapsed time ==> 0s.063ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Code Generation">
 ============ Analog Final Answer Routes ============
@@ -5901,11 +6008,11 @@ Dump of CyP35AnalogRoutingResultsDB
 IsVddaHalfUsedForComp = False
 IsVddaHalfUsedForSar0 = False
 IsVddaHalfUsedForSar1 = False
-Analog Code Generation phase: Elapsed time ==> 0s.778ms
+Analog Code Generation phase: Elapsed time ==> 0s.869ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
-I2076: Total run-time: 2.1 sec.
+I2076: Total run-time: 1.9 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -5916,15 +6023,15 @@ PLD Packing Summary
 ------------------------------------------------------------
             Resource Type : Used : Free :  Max :  % Used
     ====================================================
-                     PLDs :   17 :   31 :   48 :  35.42%
+                     PLDs :   18 :   30 :   48 :  37.50%
 
 <CYPRESSTAG name="PLD Statistics">
 
         PLD Resource Type :     Average/LAB
     =======================================
-                   Inputs :            4.24
-                   Pterms :            3.76
-               Macrocells :            3.82
+                   Inputs :            4.17
+                   Pterms :            3.72
+               Macrocells :            3.78
 </CYPRESSTAG>
 <CYPRESSTAG name="Packed PLD Contents">
 Packed PLD Contents not displayed at this verbose level.</CYPRESSTAG>
@@ -5936,7 +6043,7 @@ PLD Packing: Elapsed time ==> 0s.000ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.201ms
+Partitioning: Elapsed time ==> 0s.122ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -5946,7 +6053,7 @@ Final Placement Summary
 
        Resource Type :      Count : Avg Inputs : Avg Outputs
     ========================================================
-                 UDB :         17 :       3.29 :       3.82
+                 UDB :         16 :       3.69 :       4.25
 <CYPRESSTAG name="Final Placement Details">
 <CYPRESSTAG name="Component Details">
 
@@ -5954,12 +6061,12 @@ Final Placement Summary
 Component Placement Details
 ------------------------------------------------------------
 UDB [UDB=(0,0)] contents:
-datapathcell: Name =\Eyelids:PWMUDB:sP16:pwmdp:u0\
+datapathcell: Name =\LeftEyeball:PWMUDB:sP16:pwmdp:u0\
     PORT MAP (
         clock => Net_31 ,
-        cs_addr_2 => \Eyelids:PWMUDB:tc_i\ ,
-        cs_addr_1 => \Eyelids:PWMUDB:runmode_enable\ ,
-        chain_out => \Eyelids:PWMUDB:sP16:pwmdp:carry\ );
+        cs_addr_2 => \LeftEyeball:PWMUDB:tc_i\ ,
+        cs_addr_1 => \LeftEyeball:PWMUDB:runmode_enable\ ,
+        chain_out => \LeftEyeball:PWMUDB:sP16:pwmdp:carry\ );
     Properties:
     {
         a0_init = "00000000"
@@ -5986,12 +6093,13 @@ datapathcell: Name =\Eyelids:PWMUDB:sP16:pwmdp:u0\
     }
     Clock Polarity: Active High
     Clock Enable: True
-    Next in chain : \Eyelids:PWMUDB:sP16:pwmdp:u1\
+    Next in chain : \LeftEyeball:PWMUDB:sP16:pwmdp:u1\
 
-UDB [UDB=(0,1)] contents:
-LAB@[UDB=(0,1)][LB=0] #macrocells=4, #inputs=5, #pterms=4
+UDB [UDB=(0,1)] is empty.
+UDB [UDB=(0,2)] contents:
+LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=5, #pterms=4
 {
-    [McSlotId=0]:     MacroCell: Name=\Base:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(0,1)][LB=0][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\Eyelids:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -5999,42 +6107,27 @@ LAB@[UDB=(0,1)][LB=0] #macrocells=4, #inputs=5, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \Base:PWMUDB:control_7\
+              \Eyelids:PWMUDB:control_7\
         );
-        Output = \Base:PWMUDB:runmode_enable\ (fanout=5)
+        Output = \Eyelids:PWMUDB:runmode_enable\ (fanout=5)
         Properties               : 
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=\Base:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(0,1)][LB=0][MC=1]
+    [McSlotId=1]:     MacroCell: Name=\Eyelids:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(0,2)][LB=0][MC=1]
         Total # of inputs        : 2
         Total # of product terms : 1
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \Base:PWMUDB:runmode_enable\ * \Base:PWMUDB:tc_i\
+              \Eyelids:PWMUDB:runmode_enable\ * \Eyelids:PWMUDB:tc_i\
         );
-        Output = \Base:PWMUDB:status_2\ (fanout=1)
+        Output = \Eyelids:PWMUDB:status_2\ (fanout=1)
         Properties               : 
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=Net_861, Mode=(D-Register) @ [UDB=(0,1)][LB=0][MC=2]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Base:PWMUDB:runmode_enable\ * \Base:PWMUDB:cmp1_less\
-        );
-        Output = Net_861 (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=Net_862, Mode=(D-Register) @ [UDB=(0,1)][LB=0][MC=3]
+    [McSlotId=2]:     MacroCell: Name=Net_175, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=2]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -6042,17 +6135,32 @@ LAB@[UDB=(0,1)][LB=0] #macrocells=4, #inputs=5, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \Base:PWMUDB:runmode_enable\ * \Base:PWMUDB:cmp2_less\
+              \Eyelids:PWMUDB:runmode_enable\ * \Eyelids:PWMUDB:cmp1_less\
         );
-        Output = Net_862 (fanout=1)
+        Output = Net_175 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=Net_176, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Eyelids:PWMUDB:runmode_enable\ * \Eyelids:PWMUDB:cmp2_less\
+        );
+        Output = Net_176 (fanout=1)
         Properties               : 
         {
         }
 }
 
-LAB@[UDB=(0,1)][LB=1] #macrocells=4, #inputs=4, #pterms=4
+LAB@[UDB=(0,2)][LB=1] #macrocells=4, #inputs=4, #pterms=4
 {
-    [McSlotId=0]:     MacroCell: Name=\Base:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(0,1)][LB=1][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\Eyelids:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -6060,14 +6168,14 @@ LAB@[UDB=(0,1)][LB=1] #macrocells=4, #inputs=4, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \Base:PWMUDB:cmp1_less\
+              \Eyelids:PWMUDB:cmp1_less\
         );
-        Output = \Base:PWMUDB:prevCompare1\ (fanout=1)
+        Output = \Eyelids:PWMUDB:prevCompare1\ (fanout=1)
         Properties               : 
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=\Base:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(0,1)][LB=1][MC=1]
+    [McSlotId=1]:     MacroCell: Name=\Eyelids:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=1]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -6075,14 +6183,14 @@ LAB@[UDB=(0,1)][LB=1] #macrocells=4, #inputs=4, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              !\Base:PWMUDB:prevCompare1\ * \Base:PWMUDB:cmp1_less\
+              !\Eyelids:PWMUDB:prevCompare1\ * \Eyelids:PWMUDB:cmp1_less\
         );
-        Output = \Base:PWMUDB:status_0\ (fanout=1)
+        Output = \Eyelids:PWMUDB:status_0\ (fanout=1)
         Properties               : 
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=\Base:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(0,1)][LB=1][MC=2]
+    [McSlotId=2]:     MacroCell: Name=\Eyelids:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=2]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -6090,14 +6198,14 @@ LAB@[UDB=(0,1)][LB=1] #macrocells=4, #inputs=4, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              \Base:PWMUDB:cmp2_less\
+              \Eyelids:PWMUDB:cmp2_less\
         );
-        Output = \Base:PWMUDB:prevCompare2\ (fanout=1)
+        Output = \Eyelids:PWMUDB:prevCompare2\ (fanout=1)
         Properties               : 
         {
         }
 
-    [McSlotId=3]:     MacroCell: Name=\Base:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(0,1)][LB=1][MC=3]
+    [McSlotId=3]:     MacroCell: Name=\Eyelids:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=3]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -6105,24 +6213,24 @@ LAB@[UDB=(0,1)][LB=1] #macrocells=4, #inputs=4, #pterms=4
             Clock Enable: True
         Main Equation            : 1 pterm
         (
-              !\Base:PWMUDB:prevCompare2\ * \Base:PWMUDB:cmp2_less\
+              !\Eyelids:PWMUDB:prevCompare2\ * \Eyelids:PWMUDB:cmp2_less\
         );
-        Output = \Base:PWMUDB:status_1\ (fanout=1)
+        Output = \Eyelids:PWMUDB:status_1\ (fanout=1)
         Properties               : 
         {
         }
 }
 
-datapathcell: Name =\Base:PWMUDB:sP16:pwmdp:u1\
+datapathcell: Name =\Eyelids:PWMUDB:sP16:pwmdp:u1\
     PORT MAP (
         clock => Net_31 ,
-        cs_addr_2 => \Base:PWMUDB:tc_i\ ,
-        cs_addr_1 => \Base:PWMUDB:runmode_enable\ ,
-        cl0_comb => \Base:PWMUDB:cmp1_less\ ,
-        z0_comb => \Base:PWMUDB:tc_i\ ,
-        cl1_comb => \Base:PWMUDB:cmp2_less\ ,
-        f1_blk_stat_comb => \Base:PWMUDB:status_3\ ,
-        chain_in => \Base:PWMUDB:sP16:pwmdp:carry\ );
+        cs_addr_2 => \Eyelids:PWMUDB:tc_i\ ,
+        cs_addr_1 => \Eyelids:PWMUDB:runmode_enable\ ,
+        cl0_comb => \Eyelids:PWMUDB:cmp1_less\ ,
+        z0_comb => \Eyelids:PWMUDB:tc_i\ ,
+        cl1_comb => \Eyelids:PWMUDB:cmp2_less\ ,
+        f1_blk_stat_comb => \Eyelids:PWMUDB:status_3\ ,
+        chain_in => \Eyelids:PWMUDB:sP16:pwmdp:carry\ );
     Properties:
     {
         a0_init = "00000000"
@@ -6149,15 +6257,15 @@ datapathcell: Name =\Base:PWMUDB:sP16:pwmdp:u1\
     }
     Clock Polarity: Active High
     Clock Enable: True
-    Previous in chain : \Base:PWMUDB:sP16:pwmdp:u0\
+    Previous in chain : \Eyelids:PWMUDB:sP16:pwmdp:u0\
 
-statusicell: Name =\Base:PWMUDB:genblk8:stsreg\
+statusicell: Name =\Eyelids:PWMUDB:genblk8:stsreg\
     PORT MAP (
         clock => Net_31 ,
-        status_3 => \Base:PWMUDB:status_3\ ,
-        status_2 => \Base:PWMUDB:status_2\ ,
-        status_1 => \Base:PWMUDB:status_1\ ,
-        status_0 => \Base:PWMUDB:status_0\ );
+        status_3 => \Eyelids:PWMUDB:status_3\ ,
+        status_2 => \Eyelids:PWMUDB:status_2\ ,
+        status_1 => \Eyelids:PWMUDB:status_1\ ,
+        status_0 => \Eyelids:PWMUDB:status_0\ );
     Properties:
     {
         cy_force_order = 1
@@ -6167,17 +6275,17 @@ statusicell: Name =\Base:PWMUDB:genblk8:stsreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-controlcell: Name =\Base:PWMUDB:genblk1:ctrlreg\
+controlcell: Name =\Eyelids:PWMUDB:genblk1:ctrlreg\
     PORT MAP (
         clock => Net_31 ,
-        control_7 => \Base:PWMUDB:control_7\ ,
-        control_6 => \Base:PWMUDB:control_6\ ,
-        control_5 => \Base:PWMUDB:control_5\ ,
-        control_4 => \Base:PWMUDB:control_4\ ,
-        control_3 => \Base:PWMUDB:control_3\ ,
-        control_2 => \Base:PWMUDB:control_2\ ,
-        control_1 => \Base:PWMUDB:control_1\ ,
-        control_0 => \Base:PWMUDB:control_0\ );
+        control_7 => \Eyelids:PWMUDB:control_7\ ,
+        control_6 => \Eyelids:PWMUDB:control_6\ ,
+        control_5 => \Eyelids:PWMUDB:control_5\ ,
+        control_4 => \Eyelids:PWMUDB:control_4\ ,
+        control_3 => \Eyelids:PWMUDB:control_3\ ,
+        control_2 => \Eyelids:PWMUDB:control_2\ ,
+        control_1 => \Eyelids:PWMUDB:control_1\ ,
+        control_0 => \Eyelids:PWMUDB:control_0\ );
     Properties:
     {
         cy_ctrl_mode_0 = "11111111"
@@ -6189,10 +6297,305 @@ controlcell: Name =\Base:PWMUDB:genblk1:ctrlreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(0,2)] contents:
-LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=5, #pterms=4
+UDB [UDB=(0,3)] contents:
+datapathcell: Name =\LeftEyebrow:PWMUDB:sP16:pwmdp:u0\
+    PORT MAP (
+        clock => Net_31 ,
+        cs_addr_2 => \LeftEyebrow:PWMUDB:tc_i\ ,
+        cs_addr_1 => \LeftEyebrow:PWMUDB:runmode_enable\ ,
+        chain_out => \LeftEyebrow:PWMUDB:sP16:pwmdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Next in chain : \LeftEyebrow:PWMUDB:sP16:pwmdp:u1\
+
+UDB [UDB=(0,4)] contents:
+LAB@[UDB=(0,4)][LB=0] #macrocells=4, #inputs=5, #pterms=4
 {
-    [McSlotId=0]:     MacroCell: Name=\LeftEyeball:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\RightEyebrow:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(0,4)][LB=0][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \RightEyebrow:PWMUDB:control_7\
+        );
+        Output = \RightEyebrow:PWMUDB:runmode_enable\ (fanout=5)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\RightEyebrow:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(0,4)][LB=0][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \RightEyebrow:PWMUDB:runmode_enable\ * 
+              \RightEyebrow:PWMUDB:tc_i\
+        );
+        Output = \RightEyebrow:PWMUDB:status_2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=Net_61, Mode=(D-Register) @ [UDB=(0,4)][LB=0][MC=2]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \RightEyebrow:PWMUDB:runmode_enable\ * 
+              \RightEyebrow:PWMUDB:cmp1_less\
+        );
+        Output = Net_61 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=Net_62, Mode=(D-Register) @ [UDB=(0,4)][LB=0][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \RightEyebrow:PWMUDB:runmode_enable\ * 
+              \RightEyebrow:PWMUDB:cmp2_less\
+        );
+        Output = Net_62 (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(0,4)][LB=1] #macrocells=4, #inputs=4, #pterms=4
+{
+    [McSlotId=0]:     MacroCell: Name=\RightEyebrow:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(0,4)][LB=1][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \RightEyebrow:PWMUDB:cmp1_less\
+        );
+        Output = \RightEyebrow:PWMUDB:prevCompare1\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\RightEyebrow:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(0,4)][LB=1][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\RightEyebrow:PWMUDB:prevCompare1\ * 
+              \RightEyebrow:PWMUDB:cmp1_less\
+        );
+        Output = \RightEyebrow:PWMUDB:status_0\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\RightEyebrow:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(0,4)][LB=1][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \RightEyebrow:PWMUDB:cmp2_less\
+        );
+        Output = \RightEyebrow:PWMUDB:prevCompare2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\RightEyebrow:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(0,4)][LB=1][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\RightEyebrow:PWMUDB:prevCompare2\ * 
+              \RightEyebrow:PWMUDB:cmp2_less\
+        );
+        Output = \RightEyebrow:PWMUDB:status_1\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\RightEyebrow:PWMUDB:sP16:pwmdp:u1\
+    PORT MAP (
+        clock => Net_31 ,
+        cs_addr_2 => \RightEyebrow:PWMUDB:tc_i\ ,
+        cs_addr_1 => \RightEyebrow:PWMUDB:runmode_enable\ ,
+        cl0_comb => \RightEyebrow:PWMUDB:cmp1_less\ ,
+        z0_comb => \RightEyebrow:PWMUDB:tc_i\ ,
+        cl1_comb => \RightEyebrow:PWMUDB:cmp2_less\ ,
+        f1_blk_stat_comb => \RightEyebrow:PWMUDB:status_3\ ,
+        chain_in => \RightEyebrow:PWMUDB:sP16:pwmdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101011110000000000000100000011110000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \RightEyebrow:PWMUDB:sP16:pwmdp:u0\
+
+statusicell: Name =\RightEyebrow:PWMUDB:genblk8:stsreg\
+    PORT MAP (
+        clock => Net_31 ,
+        status_3 => \RightEyebrow:PWMUDB:status_3\ ,
+        status_2 => \RightEyebrow:PWMUDB:status_2\ ,
+        status_1 => \RightEyebrow:PWMUDB:status_1\ ,
+        status_0 => \RightEyebrow:PWMUDB:status_0\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0100111"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\RightEyebrow:PWMUDB:genblk1:ctrlreg\
+    PORT MAP (
+        clock => Net_31 ,
+        control_7 => \RightEyebrow:PWMUDB:control_7\ ,
+        control_6 => \RightEyebrow:PWMUDB:control_6\ ,
+        control_5 => \RightEyebrow:PWMUDB:control_5\ ,
+        control_4 => \RightEyebrow:PWMUDB:control_4\ ,
+        control_3 => \RightEyebrow:PWMUDB:control_3\ ,
+        control_2 => \RightEyebrow:PWMUDB:control_2\ ,
+        control_1 => \RightEyebrow:PWMUDB:control_1\ ,
+        control_0 => \RightEyebrow:PWMUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(0,5)] contents:
+LAB@[UDB=(0,5)][LB=0] #macrocells=1, #inputs=0, #pterms=0
+{
+    [McSlotId=0]: (empty)
+    [McSlotId=1]: (empty)
+    [McSlotId=2]: (empty)
+    [McSlotId=3]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(0,5)][LB=0][MC=3]
+        Total # of inputs        : 0
+        Total # of product terms : 0
+            Clock Enable: True
+        Main Equation            : 0 pterms
+        !(
+            0
+        );
+        Output = __ONE__ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\RightEyeball:PWMUDB:sP16:pwmdp:u0\
+    PORT MAP (
+        clock => Net_31 ,
+        cs_addr_2 => \RightEyeball:PWMUDB:tc_i\ ,
+        cs_addr_1 => \RightEyeball:PWMUDB:runmode_enable\ ,
+        chain_out => \RightEyeball:PWMUDB:sP16:pwmdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Next in chain : \RightEyeball:PWMUDB:sP16:pwmdp:u1\
+
+UDB [UDB=(1,0)] contents:
+LAB@[UDB=(1,0)][LB=0] #macrocells=4, #inputs=5, #pterms=4
+{
+    [McSlotId=0]:     MacroCell: Name=\LeftEyeball:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -6207,7 +6610,7 @@ LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=\LeftEyeball:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(0,2)][LB=0][MC=1]
+    [McSlotId=1]:     MacroCell: Name=\LeftEyeball:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(1,0)][LB=0][MC=1]
         Total # of inputs        : 2
         Total # of product terms : 1
             Clock Enable: True
@@ -6220,7 +6623,7 @@ LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=Net_88, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=2]
+    [McSlotId=2]:     MacroCell: Name=Net_88, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=2]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -6236,7 +6639,7 @@ LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         {
         }
 
-    [McSlotId=3]:     MacroCell: Name=Net_89, Mode=(D-Register) @ [UDB=(0,2)][LB=0][MC=3]
+    [McSlotId=3]:     MacroCell: Name=Net_89, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=3]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -6253,9 +6656,9 @@ LAB@[UDB=(0,2)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         }
 }
 
-LAB@[UDB=(0,2)][LB=1] #macrocells=4, #inputs=4, #pterms=4
+LAB@[UDB=(1,0)][LB=1] #macrocells=4, #inputs=4, #pterms=4
 {
-    [McSlotId=0]:     MacroCell: Name=\LeftEyeball:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\LeftEyeball:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -6270,7 +6673,7 @@ LAB@[UDB=(0,2)][LB=1] #macrocells=4, #inputs=4, #pterms=4
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=\LeftEyeball:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=1]
+    [McSlotId=1]:     MacroCell: Name=\LeftEyeball:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=1]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -6286,7 +6689,7 @@ LAB@[UDB=(0,2)][LB=1] #macrocells=4, #inputs=4, #pterms=4
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=\LeftEyeball:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=2]
+    [McSlotId=2]:     MacroCell: Name=\LeftEyeball:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=2]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -6301,7 +6704,7 @@ LAB@[UDB=(0,2)][LB=1] #macrocells=4, #inputs=4, #pterms=4
         {
         }
 
-    [McSlotId=3]:     MacroCell: Name=\LeftEyeball:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(0,2)][LB=1][MC=3]
+    [McSlotId=3]:     MacroCell: Name=\LeftEyeball:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=3]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -6394,251 +6797,14 @@ controlcell: Name =\LeftEyeball:PWMUDB:genblk1:ctrlreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(0,3)] contents:
-datapathcell: Name =\LeftEyebrow:PWMUDB:sP16:pwmdp:u0\
-    PORT MAP (
-        clock => Net_31 ,
-        cs_addr_2 => \LeftEyebrow:PWMUDB:tc_i\ ,
-        cs_addr_1 => \LeftEyebrow:PWMUDB:runmode_enable\ ,
-        chain_out => \LeftEyebrow:PWMUDB:sP16:pwmdp:carry\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Next in chain : \LeftEyebrow:PWMUDB:sP16:pwmdp:u1\
-
-UDB [UDB=(0,4)] is empty.
-UDB [UDB=(0,5)] is empty.
-UDB [UDB=(1,0)] contents:
-LAB@[UDB=(1,0)][LB=0] #macrocells=4, #inputs=5, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=\Eyelids:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Eyelids:PWMUDB:control_7\
-        );
-        Output = \Eyelids:PWMUDB:runmode_enable\ (fanout=5)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\Eyelids:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(1,0)][LB=0][MC=1]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Eyelids:PWMUDB:runmode_enable\ * \Eyelids:PWMUDB:tc_i\
-        );
-        Output = \Eyelids:PWMUDB:status_2\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=Net_175, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=2]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Eyelids:PWMUDB:runmode_enable\ * \Eyelids:PWMUDB:cmp1_less\
-        );
-        Output = Net_175 (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=Net_176, Mode=(D-Register) @ [UDB=(1,0)][LB=0][MC=3]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Eyelids:PWMUDB:runmode_enable\ * \Eyelids:PWMUDB:cmp2_less\
-        );
-        Output = Net_176 (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-LAB@[UDB=(1,0)][LB=1] #macrocells=4, #inputs=4, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=\Eyelids:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Eyelids:PWMUDB:cmp1_less\
-        );
-        Output = \Eyelids:PWMUDB:prevCompare1\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\Eyelids:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=1]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\Eyelids:PWMUDB:prevCompare1\ * \Eyelids:PWMUDB:cmp1_less\
-        );
-        Output = \Eyelids:PWMUDB:status_0\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\Eyelids:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Eyelids:PWMUDB:cmp2_less\
-        );
-        Output = \Eyelids:PWMUDB:prevCompare2\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\Eyelids:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(1,0)][LB=1][MC=3]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\Eyelids:PWMUDB:prevCompare2\ * \Eyelids:PWMUDB:cmp2_less\
-        );
-        Output = \Eyelids:PWMUDB:status_1\ (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-datapathcell: Name =\Eyelids:PWMUDB:sP16:pwmdp:u1\
+UDB [UDB=(1,1)] is empty.
+UDB [UDB=(1,2)] contents:
+datapathcell: Name =\Eyelids:PWMUDB:sP16:pwmdp:u0\
     PORT MAP (
         clock => Net_31 ,
         cs_addr_2 => \Eyelids:PWMUDB:tc_i\ ,
         cs_addr_1 => \Eyelids:PWMUDB:runmode_enable\ ,
-        cl0_comb => \Eyelids:PWMUDB:cmp1_less\ ,
-        z0_comb => \Eyelids:PWMUDB:tc_i\ ,
-        cl1_comb => \Eyelids:PWMUDB:cmp2_less\ ,
-        f1_blk_stat_comb => \Eyelids:PWMUDB:status_3\ ,
-        chain_in => \Eyelids:PWMUDB:sP16:pwmdp:carry\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101011110000000000000100000011110000000000011000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Previous in chain : \Eyelids:PWMUDB:sP16:pwmdp:u0\
-
-statusicell: Name =\Eyelids:PWMUDB:genblk8:stsreg\
-    PORT MAP (
-        clock => Net_31 ,
-        status_3 => \Eyelids:PWMUDB:status_3\ ,
-        status_2 => \Eyelids:PWMUDB:status_2\ ,
-        status_1 => \Eyelids:PWMUDB:status_1\ ,
-        status_0 => \Eyelids:PWMUDB:status_0\ );
-    Properties:
-    {
-        cy_force_order = 1
-        cy_int_mask = "1111111"
-        cy_md_select = "0100111"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-controlcell: Name =\Eyelids:PWMUDB:genblk1:ctrlreg\
-    PORT MAP (
-        clock => Net_31 ,
-        control_7 => \Eyelids:PWMUDB:control_7\ ,
-        control_6 => \Eyelids:PWMUDB:control_6\ ,
-        control_5 => \Eyelids:PWMUDB:control_5\ ,
-        control_4 => \Eyelids:PWMUDB:control_4\ ,
-        control_3 => \Eyelids:PWMUDB:control_3\ ,
-        control_2 => \Eyelids:PWMUDB:control_2\ ,
-        control_1 => \Eyelids:PWMUDB:control_1\ ,
-        control_0 => \Eyelids:PWMUDB:control_0\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "11111111"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-UDB [UDB=(1,1)] contents:
-datapathcell: Name =\Base:PWMUDB:sP16:pwmdp:u0\
-    PORT MAP (
-        clock => Net_31 ,
-        cs_addr_2 => \Base:PWMUDB:tc_i\ ,
-        cs_addr_1 => \Base:PWMUDB:runmode_enable\ ,
-        chain_out => \Base:PWMUDB:sP16:pwmdp:carry\ );
+        chain_out => \Eyelids:PWMUDB:sP16:pwmdp:carry\ );
     Properties:
     {
         a0_init = "00000000"
@@ -6665,42 +6831,7 @@ datapathcell: Name =\Base:PWMUDB:sP16:pwmdp:u0\
     }
     Clock Polarity: Active High
     Clock Enable: True
-    Next in chain : \Base:PWMUDB:sP16:pwmdp:u1\
-
-UDB [UDB=(1,2)] contents:
-datapathcell: Name =\LeftEyeball:PWMUDB:sP16:pwmdp:u0\
-    PORT MAP (
-        clock => Net_31 ,
-        cs_addr_2 => \LeftEyeball:PWMUDB:tc_i\ ,
-        cs_addr_1 => \LeftEyeball:PWMUDB:runmode_enable\ ,
-        chain_out => \LeftEyeball:PWMUDB:sP16:pwmdp:carry\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Next in chain : \LeftEyeball:PWMUDB:sP16:pwmdp:u1\
+    Next in chain : \Eyelids:PWMUDB:sP16:pwmdp:u1\
 
 UDB [UDB=(1,3)] contents:
 LAB@[UDB=(1,3)][LB=0] #macrocells=4, #inputs=5, #pterms=4
@@ -6907,246 +7038,7 @@ controlcell: Name =\LeftEyebrow:PWMUDB:genblk1:ctrlreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(1,4)] is empty.
-UDB [UDB=(1,5)] is empty.
-UDB [UDB=(2,0)] contents:
-datapathcell: Name =\Lips:PWMUDB:sP16:pwmdp:u0\
-    PORT MAP (
-        clock => Net_31 ,
-        cs_addr_2 => \Lips:PWMUDB:tc_i\ ,
-        cs_addr_1 => \Lips:PWMUDB:runmode_enable\ ,
-        chain_out => \Lips:PWMUDB:sP16:pwmdp:carry\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Next in chain : \Lips:PWMUDB:sP16:pwmdp:u1\
-
-UDB [UDB=(2,1)] contents:
-LAB@[UDB=(2,1)][LB=0] #macrocells=4, #inputs=5, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=\Neck:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Neck:PWMUDB:control_7\
-        );
-        Output = \Neck:PWMUDB:runmode_enable\ (fanout=5)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\Neck:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(2,1)][LB=0][MC=1]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Neck:PWMUDB:runmode_enable\ * \Neck:PWMUDB:tc_i\
-        );
-        Output = \Neck:PWMUDB:status_2\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=Net_306, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=2]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Neck:PWMUDB:runmode_enable\ * \Neck:PWMUDB:cmp1_less\
-        );
-        Output = Net_306 (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=Net_307, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=3]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Neck:PWMUDB:runmode_enable\ * \Neck:PWMUDB:cmp2_less\
-        );
-        Output = Net_307 (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-LAB@[UDB=(2,1)][LB=1] #macrocells=4, #inputs=4, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=\Neck:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Neck:PWMUDB:cmp1_less\
-        );
-        Output = \Neck:PWMUDB:prevCompare1\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\Neck:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=1]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\Neck:PWMUDB:prevCompare1\ * \Neck:PWMUDB:cmp1_less\
-        );
-        Output = \Neck:PWMUDB:status_0\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\Neck:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \Neck:PWMUDB:cmp2_less\
-        );
-        Output = \Neck:PWMUDB:prevCompare2\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\Neck:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=3]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\Neck:PWMUDB:prevCompare2\ * \Neck:PWMUDB:cmp2_less\
-        );
-        Output = \Neck:PWMUDB:status_1\ (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-datapathcell: Name =\Neck:PWMUDB:sP16:pwmdp:u1\
-    PORT MAP (
-        clock => Net_31 ,
-        cs_addr_2 => \Neck:PWMUDB:tc_i\ ,
-        cs_addr_1 => \Neck:PWMUDB:runmode_enable\ ,
-        cl0_comb => \Neck:PWMUDB:cmp1_less\ ,
-        z0_comb => \Neck:PWMUDB:tc_i\ ,
-        cl1_comb => \Neck:PWMUDB:cmp2_less\ ,
-        f1_blk_stat_comb => \Neck:PWMUDB:status_3\ ,
-        chain_in => \Neck:PWMUDB:sP16:pwmdp:carry\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101011110000000000000100000011110000000000011000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Previous in chain : \Neck:PWMUDB:sP16:pwmdp:u0\
-
-statusicell: Name =\Neck:PWMUDB:genblk8:stsreg\
-    PORT MAP (
-        clock => Net_31 ,
-        status_3 => \Neck:PWMUDB:status_3\ ,
-        status_2 => \Neck:PWMUDB:status_2\ ,
-        status_1 => \Neck:PWMUDB:status_1\ ,
-        status_0 => \Neck:PWMUDB:status_0\ );
-    Properties:
-    {
-        cy_force_order = 1
-        cy_int_mask = "1111111"
-        cy_md_select = "0100111"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-controlcell: Name =\Neck:PWMUDB:genblk1:ctrlreg\
-    PORT MAP (
-        clock => Net_31 ,
-        control_7 => \Neck:PWMUDB:control_7\ ,
-        control_6 => \Neck:PWMUDB:control_6\ ,
-        control_5 => \Neck:PWMUDB:control_5\ ,
-        control_4 => \Neck:PWMUDB:control_4\ ,
-        control_3 => \Neck:PWMUDB:control_3\ ,
-        control_2 => \Neck:PWMUDB:control_2\ ,
-        control_1 => \Neck:PWMUDB:control_1\ ,
-        control_0 => \Neck:PWMUDB:control_0\ );
-    Properties:
-    {
-        cy_ctrl_mode_0 = "11111111"
-        cy_ctrl_mode_1 = "00000000"
-        cy_ext_reset = 0
-        cy_force_order = 1
-        cy_init_value = "00000000"
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-
-UDB [UDB=(2,2)] is empty.
-UDB [UDB=(2,3)] contents:
+UDB [UDB=(1,4)] contents:
 datapathcell: Name =\RightEyebrow:PWMUDB:sP16:pwmdp:u0\
     PORT MAP (
         clock => Net_31 ,
@@ -7181,10 +7073,10 @@ datapathcell: Name =\RightEyebrow:PWMUDB:sP16:pwmdp:u0\
     Clock Enable: True
     Next in chain : \RightEyebrow:PWMUDB:sP16:pwmdp:u1\
 
-UDB [UDB=(2,4)] contents:
-LAB@[UDB=(2,4)][LB=0] #macrocells=4, #inputs=5, #pterms=4
+UDB [UDB=(1,5)] contents:
+LAB@[UDB=(1,5)][LB=0] #macrocells=4, #inputs=5, #pterms=4
 {
-    [McSlotId=0]:     MacroCell: Name=\RightEyeball:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(2,4)][LB=0][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\RightEyeball:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(1,5)][LB=0][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -7199,7 +7091,7 @@ LAB@[UDB=(2,4)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=\RightEyeball:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(2,4)][LB=0][MC=1]
+    [McSlotId=1]:     MacroCell: Name=\RightEyeball:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(1,5)][LB=0][MC=1]
         Total # of inputs        : 2
         Total # of product terms : 1
             Clock Enable: True
@@ -7213,7 +7105,7 @@ LAB@[UDB=(2,4)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=Net_126, Mode=(D-Register) @ [UDB=(2,4)][LB=0][MC=2]
+    [McSlotId=2]:     MacroCell: Name=Net_126, Mode=(D-Register) @ [UDB=(1,5)][LB=0][MC=2]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -7229,7 +7121,7 @@ LAB@[UDB=(2,4)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         {
         }
 
-    [McSlotId=3]:     MacroCell: Name=Net_127, Mode=(D-Register) @ [UDB=(2,4)][LB=0][MC=3]
+    [McSlotId=3]:     MacroCell: Name=Net_127, Mode=(D-Register) @ [UDB=(1,5)][LB=0][MC=3]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -7246,9 +7138,9 @@ LAB@[UDB=(2,4)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         }
 }
 
-LAB@[UDB=(2,4)][LB=1] #macrocells=4, #inputs=4, #pterms=4
+LAB@[UDB=(1,5)][LB=1] #macrocells=4, #inputs=4, #pterms=4
 {
-    [McSlotId=0]:     MacroCell: Name=\RightEyeball:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\RightEyeball:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(1,5)][LB=1][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -7263,7 +7155,7 @@ LAB@[UDB=(2,4)][LB=1] #macrocells=4, #inputs=4, #pterms=4
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=\RightEyeball:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=1]
+    [McSlotId=1]:     MacroCell: Name=\RightEyeball:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(1,5)][LB=1][MC=1]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -7279,7 +7171,7 @@ LAB@[UDB=(2,4)][LB=1] #macrocells=4, #inputs=4, #pterms=4
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=\RightEyeball:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=2]
+    [McSlotId=2]:     MacroCell: Name=\RightEyeball:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(1,5)][LB=1][MC=2]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -7294,7 +7186,7 @@ LAB@[UDB=(2,4)][LB=1] #macrocells=4, #inputs=4, #pterms=4
         {
         }
 
-    [McSlotId=3]:     MacroCell: Name=\RightEyeball:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=3]
+    [McSlotId=3]:     MacroCell: Name=\RightEyeball:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(1,5)][LB=1][MC=3]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -7387,31 +7279,299 @@ controlcell: Name =\RightEyeball:PWMUDB:genblk1:ctrlreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(2,5)] contents:
-LAB@[UDB=(2,5)][LB=0] #macrocells=1, #inputs=0, #pterms=0
+UDB [UDB=(2,0)] contents:
+LAB@[UDB=(2,0)][LB=0] #macrocells=3, #inputs=3, #pterms=3
 {
-    [McSlotId=0]:     MacroCell: Name=__ONE__, Mode=(Combinatorial) @ [UDB=(2,5)][LB=0][MC=0]
-        Total # of inputs        : 0
-        Total # of product terms : 0
+    [McSlotId=0]:     MacroCell: Name=Net_936, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=0]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_934) => Global
             Clock Enable: True
-        Main Equation            : 0 pterms
-        !(
-            0
+        Main Equation            : 1 pterm
+        (
+              !\Debouncer_1:DEBOUNCER[0]:d_sync_0\ * 
+              \Debouncer_1:DEBOUNCER[0]:d_sync_1\
         );
-        Output = __ONE__ (fanout=1)
+        Output = Net_936 (fanout=1)
         Properties               : 
         {
         }
 
-    [McSlotId=1]: (empty)
-    [McSlotId=2]: (empty)
+    [McSlotId=1]:     MacroCell: Name=\Debouncer_1:DEBOUNCER[0]:d_sync_1\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=1]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_934) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Debouncer_1:DEBOUNCER[0]:d_sync_0\
+        );
+        Output = \Debouncer_1:DEBOUNCER[0]:d_sync_1\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\Debouncer_1:DEBOUNCER[0]:d_sync_0\, Mode=(D-Register) @ [UDB=(2,0)][LB=0][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_934) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              Net_933
+        );
+        Output = \Debouncer_1:DEBOUNCER[0]:d_sync_0\ (fanout=2)
+        Properties               : 
+        {
+        }
+
     [McSlotId=3]: (empty)
 }
 
-UDB [UDB=(3,0)] contents:
-LAB@[UDB=(3,0)][LB=0] #macrocells=4, #inputs=5, #pterms=4
+datapathcell: Name =\Neck:PWMUDB:sP16:pwmdp:u0\
+    PORT MAP (
+        clock => Net_31 ,
+        cs_addr_2 => \Neck:PWMUDB:tc_i\ ,
+        cs_addr_1 => \Neck:PWMUDB:runmode_enable\ ,
+        chain_out => \Neck:PWMUDB:sP16:pwmdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Next in chain : \Neck:PWMUDB:sP16:pwmdp:u1\
+
+UDB [UDB=(2,1)] contents:
+LAB@[UDB=(2,1)][LB=0] #macrocells=4, #inputs=5, #pterms=4
 {
-    [McSlotId=0]:     MacroCell: Name=\Lips:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(3,0)][LB=0][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\Base:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Base:PWMUDB:control_7\
+        );
+        Output = \Base:PWMUDB:runmode_enable\ (fanout=5)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\Base:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(2,1)][LB=0][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Base:PWMUDB:runmode_enable\ * \Base:PWMUDB:tc_i\
+        );
+        Output = \Base:PWMUDB:status_2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=Net_861, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=2]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Base:PWMUDB:runmode_enable\ * \Base:PWMUDB:cmp1_less\
+        );
+        Output = Net_861 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=Net_862, Mode=(D-Register) @ [UDB=(2,1)][LB=0][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Base:PWMUDB:runmode_enable\ * \Base:PWMUDB:cmp2_less\
+        );
+        Output = Net_862 (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(2,1)][LB=1] #macrocells=4, #inputs=4, #pterms=4
+{
+    [McSlotId=0]:     MacroCell: Name=\Base:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Base:PWMUDB:cmp1_less\
+        );
+        Output = \Base:PWMUDB:prevCompare1\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\Base:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\Base:PWMUDB:prevCompare1\ * \Base:PWMUDB:cmp1_less\
+        );
+        Output = \Base:PWMUDB:status_0\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\Base:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Base:PWMUDB:cmp2_less\
+        );
+        Output = \Base:PWMUDB:prevCompare2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\Base:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(2,1)][LB=1][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\Base:PWMUDB:prevCompare2\ * \Base:PWMUDB:cmp2_less\
+        );
+        Output = \Base:PWMUDB:status_1\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\Base:PWMUDB:sP16:pwmdp:u1\
+    PORT MAP (
+        clock => Net_31 ,
+        cs_addr_2 => \Base:PWMUDB:tc_i\ ,
+        cs_addr_1 => \Base:PWMUDB:runmode_enable\ ,
+        cl0_comb => \Base:PWMUDB:cmp1_less\ ,
+        z0_comb => \Base:PWMUDB:tc_i\ ,
+        cl1_comb => \Base:PWMUDB:cmp2_less\ ,
+        f1_blk_stat_comb => \Base:PWMUDB:status_3\ ,
+        chain_in => \Base:PWMUDB:sP16:pwmdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101011110000000000000100000011110000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Previous in chain : \Base:PWMUDB:sP16:pwmdp:u0\
+
+statusicell: Name =\Base:PWMUDB:genblk8:stsreg\
+    PORT MAP (
+        clock => Net_31 ,
+        status_3 => \Base:PWMUDB:status_3\ ,
+        status_2 => \Base:PWMUDB:status_2\ ,
+        status_1 => \Base:PWMUDB:status_1\ ,
+        status_0 => \Base:PWMUDB:status_0\ );
+    Properties:
+    {
+        cy_force_order = 1
+        cy_int_mask = "1111111"
+        cy_md_select = "0100111"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+controlcell: Name =\Base:PWMUDB:genblk1:ctrlreg\
+    PORT MAP (
+        clock => Net_31 ,
+        control_7 => \Base:PWMUDB:control_7\ ,
+        control_6 => \Base:PWMUDB:control_6\ ,
+        control_5 => \Base:PWMUDB:control_5\ ,
+        control_4 => \Base:PWMUDB:control_4\ ,
+        control_3 => \Base:PWMUDB:control_3\ ,
+        control_2 => \Base:PWMUDB:control_2\ ,
+        control_1 => \Base:PWMUDB:control_1\ ,
+        control_0 => \Base:PWMUDB:control_0\ );
+    Properties:
+    {
+        cy_ctrl_mode_0 = "11111111"
+        cy_ctrl_mode_1 = "00000000"
+        cy_ext_reset = 0
+        cy_force_order = 1
+        cy_init_value = "00000000"
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+
+UDB [UDB=(2,2)] is empty.
+UDB [UDB=(2,3)] is empty.
+UDB [UDB=(2,4)] contents:
+LAB@[UDB=(2,4)][LB=0] #macrocells=4, #inputs=5, #pterms=4
+{
+    [McSlotId=0]:     MacroCell: Name=\Lips:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(2,4)][LB=0][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -7426,7 +7586,7 @@ LAB@[UDB=(3,0)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=\Lips:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(3,0)][LB=0][MC=1]
+    [McSlotId=1]:     MacroCell: Name=\Lips:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(2,4)][LB=0][MC=1]
         Total # of inputs        : 2
         Total # of product terms : 1
             Clock Enable: True
@@ -7439,7 +7599,7 @@ LAB@[UDB=(3,0)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=Net_235, Mode=(D-Register) @ [UDB=(3,0)][LB=0][MC=2]
+    [McSlotId=2]:     MacroCell: Name=Net_235, Mode=(D-Register) @ [UDB=(2,4)][LB=0][MC=2]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -7454,7 +7614,7 @@ LAB@[UDB=(3,0)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         {
         }
 
-    [McSlotId=3]:     MacroCell: Name=Net_236, Mode=(D-Register) @ [UDB=(3,0)][LB=0][MC=3]
+    [McSlotId=3]:     MacroCell: Name=Net_236, Mode=(D-Register) @ [UDB=(2,4)][LB=0][MC=3]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -7470,9 +7630,9 @@ LAB@[UDB=(3,0)][LB=0] #macrocells=4, #inputs=5, #pterms=4
         }
 }
 
-LAB@[UDB=(3,0)][LB=1] #macrocells=4, #inputs=4, #pterms=4
+LAB@[UDB=(2,4)][LB=1] #macrocells=4, #inputs=4, #pterms=4
 {
-    [McSlotId=0]:     MacroCell: Name=\Lips:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(3,0)][LB=1][MC=0]
+    [McSlotId=0]:     MacroCell: Name=\Lips:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=0]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -7487,7 +7647,7 @@ LAB@[UDB=(3,0)][LB=1] #macrocells=4, #inputs=4, #pterms=4
         {
         }
 
-    [McSlotId=1]:     MacroCell: Name=\Lips:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(3,0)][LB=1][MC=1]
+    [McSlotId=1]:     MacroCell: Name=\Lips:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=1]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -7502,7 +7662,7 @@ LAB@[UDB=(3,0)][LB=1] #macrocells=4, #inputs=4, #pterms=4
         {
         }
 
-    [McSlotId=2]:     MacroCell: Name=\Lips:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(3,0)][LB=1][MC=2]
+    [McSlotId=2]:     MacroCell: Name=\Lips:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=2]
         Total # of inputs        : 1
         Total # of product terms : 1
         List of special equations: 
@@ -7517,7 +7677,7 @@ LAB@[UDB=(3,0)][LB=1] #macrocells=4, #inputs=4, #pterms=4
         {
         }
 
-    [McSlotId=3]:     MacroCell: Name=\Lips:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(3,0)][LB=1][MC=3]
+    [McSlotId=3]:     MacroCell: Name=\Lips:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(2,4)][LB=1][MC=3]
         Total # of inputs        : 2
         Total # of product terms : 1
         List of special equations: 
@@ -7609,182 +7769,142 @@ controlcell: Name =\Lips:PWMUDB:genblk1:ctrlreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(3,1)] contents:
-datapathcell: Name =\Neck:PWMUDB:sP16:pwmdp:u0\
+UDB [UDB=(2,5)] is empty.
+UDB [UDB=(3,0)] contents:
+LAB@[UDB=(3,0)][LB=0] #macrocells=4, #inputs=5, #pterms=4
+{
+    [McSlotId=0]:     MacroCell: Name=\Neck:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(3,0)][LB=0][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Neck:PWMUDB:control_7\
+        );
+        Output = \Neck:PWMUDB:runmode_enable\ (fanout=5)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\Neck:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(3,0)][LB=0][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Neck:PWMUDB:runmode_enable\ * \Neck:PWMUDB:tc_i\
+        );
+        Output = \Neck:PWMUDB:status_2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=Net_306, Mode=(D-Register) @ [UDB=(3,0)][LB=0][MC=2]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Neck:PWMUDB:runmode_enable\ * \Neck:PWMUDB:cmp1_less\
+        );
+        Output = Net_306 (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=Net_307, Mode=(D-Register) @ [UDB=(3,0)][LB=0][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Neck:PWMUDB:runmode_enable\ * \Neck:PWMUDB:cmp2_less\
+        );
+        Output = Net_307 (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+LAB@[UDB=(3,0)][LB=1] #macrocells=4, #inputs=4, #pterms=4
+{
+    [McSlotId=0]:     MacroCell: Name=\Neck:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(3,0)][LB=1][MC=0]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Neck:PWMUDB:cmp1_less\
+        );
+        Output = \Neck:PWMUDB:prevCompare1\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=1]:     MacroCell: Name=\Neck:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(3,0)][LB=1][MC=1]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\Neck:PWMUDB:prevCompare1\ * \Neck:PWMUDB:cmp1_less\
+        );
+        Output = \Neck:PWMUDB:status_0\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=2]:     MacroCell: Name=\Neck:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(3,0)][LB=1][MC=2]
+        Total # of inputs        : 1
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              \Neck:PWMUDB:cmp2_less\
+        );
+        Output = \Neck:PWMUDB:prevCompare2\ (fanout=1)
+        Properties               : 
+        {
+        }
+
+    [McSlotId=3]:     MacroCell: Name=\Neck:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(3,0)][LB=1][MC=3]
+        Total # of inputs        : 2
+        Total # of product terms : 1
+        List of special equations: 
+            Clock  = (Net_31) => Global
+            Clock Enable: True
+        Main Equation            : 1 pterm
+        (
+              !\Neck:PWMUDB:prevCompare2\ * \Neck:PWMUDB:cmp2_less\
+        );
+        Output = \Neck:PWMUDB:status_1\ (fanout=1)
+        Properties               : 
+        {
+        }
+}
+
+datapathcell: Name =\Neck:PWMUDB:sP16:pwmdp:u1\
     PORT MAP (
         clock => Net_31 ,
         cs_addr_2 => \Neck:PWMUDB:tc_i\ ,
         cs_addr_1 => \Neck:PWMUDB:runmode_enable\ ,
-        chain_out => \Neck:PWMUDB:sP16:pwmdp:carry\ );
-    Properties:
-    {
-        a0_init = "00000000"
-        a1_init = "00000000"
-        ce0_sync = 1
-        ce1_sync = 1
-        cl0_sync = 1
-        cl1_sync = 1
-        cmsb_sync = 1
-        co_msb_sync = 1
-        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000"
-        d0_init = "00000000"
-        d1_init = "00000000"
-        f0_blk_sync = 1
-        f0_bus_sync = 1
-        f1_blk_sync = 1
-        f1_bus_sync = 1
-        ff0_sync = 1
-        ff1_sync = 1
-        ov_msb_sync = 1
-        so_sync = 1
-        z0_sync = 1
-        z1_sync = 1
-    }
-    Clock Polarity: Active High
-    Clock Enable: True
-    Next in chain : \Neck:PWMUDB:sP16:pwmdp:u1\
-
-UDB [UDB=(3,2)] is empty.
-UDB [UDB=(3,3)] contents:
-LAB@[UDB=(3,3)][LB=0] #macrocells=4, #inputs=5, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=\RightEyebrow:PWMUDB:runmode_enable\, Mode=(D-Register) @ [UDB=(3,3)][LB=0][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \RightEyebrow:PWMUDB:control_7\
-        );
-        Output = \RightEyebrow:PWMUDB:runmode_enable\ (fanout=5)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\RightEyebrow:PWMUDB:status_2\, Mode=(Combinatorial) @ [UDB=(3,3)][LB=0][MC=1]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \RightEyebrow:PWMUDB:runmode_enable\ * 
-              \RightEyebrow:PWMUDB:tc_i\
-        );
-        Output = \RightEyebrow:PWMUDB:status_2\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=Net_61, Mode=(D-Register) @ [UDB=(3,3)][LB=0][MC=2]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \RightEyebrow:PWMUDB:runmode_enable\ * 
-              \RightEyebrow:PWMUDB:cmp1_less\
-        );
-        Output = Net_61 (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=Net_62, Mode=(D-Register) @ [UDB=(3,3)][LB=0][MC=3]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \RightEyebrow:PWMUDB:runmode_enable\ * 
-              \RightEyebrow:PWMUDB:cmp2_less\
-        );
-        Output = Net_62 (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-LAB@[UDB=(3,3)][LB=1] #macrocells=4, #inputs=4, #pterms=4
-{
-    [McSlotId=0]:     MacroCell: Name=\RightEyebrow:PWMUDB:prevCompare1\, Mode=(D-Register) @ [UDB=(3,3)][LB=1][MC=0]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \RightEyebrow:PWMUDB:cmp1_less\
-        );
-        Output = \RightEyebrow:PWMUDB:prevCompare1\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=1]:     MacroCell: Name=\RightEyebrow:PWMUDB:status_0\, Mode=(D-Register) @ [UDB=(3,3)][LB=1][MC=1]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\RightEyebrow:PWMUDB:prevCompare1\ * 
-              \RightEyebrow:PWMUDB:cmp1_less\
-        );
-        Output = \RightEyebrow:PWMUDB:status_0\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=2]:     MacroCell: Name=\RightEyebrow:PWMUDB:prevCompare2\, Mode=(D-Register) @ [UDB=(3,3)][LB=1][MC=2]
-        Total # of inputs        : 1
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              \RightEyebrow:PWMUDB:cmp2_less\
-        );
-        Output = \RightEyebrow:PWMUDB:prevCompare2\ (fanout=1)
-        Properties               : 
-        {
-        }
-
-    [McSlotId=3]:     MacroCell: Name=\RightEyebrow:PWMUDB:status_1\, Mode=(D-Register) @ [UDB=(3,3)][LB=1][MC=3]
-        Total # of inputs        : 2
-        Total # of product terms : 1
-        List of special equations: 
-            Clock  = (Net_31) => Global
-            Clock Enable: True
-        Main Equation            : 1 pterm
-        (
-              !\RightEyebrow:PWMUDB:prevCompare2\ * 
-              \RightEyebrow:PWMUDB:cmp2_less\
-        );
-        Output = \RightEyebrow:PWMUDB:status_1\ (fanout=1)
-        Properties               : 
-        {
-        }
-}
-
-datapathcell: Name =\RightEyebrow:PWMUDB:sP16:pwmdp:u1\
-    PORT MAP (
-        clock => Net_31 ,
-        cs_addr_2 => \RightEyebrow:PWMUDB:tc_i\ ,
-        cs_addr_1 => \RightEyebrow:PWMUDB:runmode_enable\ ,
-        cl0_comb => \RightEyebrow:PWMUDB:cmp1_less\ ,
-        z0_comb => \RightEyebrow:PWMUDB:tc_i\ ,
-        cl1_comb => \RightEyebrow:PWMUDB:cmp2_less\ ,
-        f1_blk_stat_comb => \RightEyebrow:PWMUDB:status_3\ ,
-        chain_in => \RightEyebrow:PWMUDB:sP16:pwmdp:carry\ );
+        cl0_comb => \Neck:PWMUDB:cmp1_less\ ,
+        z0_comb => \Neck:PWMUDB:tc_i\ ,
+        cl1_comb => \Neck:PWMUDB:cmp2_less\ ,
+        f1_blk_stat_comb => \Neck:PWMUDB:status_3\ ,
+        chain_in => \Neck:PWMUDB:sP16:pwmdp:carry\ );
     Properties:
     {
         a0_init = "00000000"
@@ -7811,15 +7931,15 @@ datapathcell: Name =\RightEyebrow:PWMUDB:sP16:pwmdp:u1\
     }
     Clock Polarity: Active High
     Clock Enable: True
-    Previous in chain : \RightEyebrow:PWMUDB:sP16:pwmdp:u0\
+    Previous in chain : \Neck:PWMUDB:sP16:pwmdp:u0\
 
-statusicell: Name =\RightEyebrow:PWMUDB:genblk8:stsreg\
+statusicell: Name =\Neck:PWMUDB:genblk8:stsreg\
     PORT MAP (
         clock => Net_31 ,
-        status_3 => \RightEyebrow:PWMUDB:status_3\ ,
-        status_2 => \RightEyebrow:PWMUDB:status_2\ ,
-        status_1 => \RightEyebrow:PWMUDB:status_1\ ,
-        status_0 => \RightEyebrow:PWMUDB:status_0\ );
+        status_3 => \Neck:PWMUDB:status_3\ ,
+        status_2 => \Neck:PWMUDB:status_2\ ,
+        status_1 => \Neck:PWMUDB:status_1\ ,
+        status_0 => \Neck:PWMUDB:status_0\ );
     Properties:
     {
         cy_force_order = 1
@@ -7829,17 +7949,17 @@ statusicell: Name =\RightEyebrow:PWMUDB:genblk8:stsreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-controlcell: Name =\RightEyebrow:PWMUDB:genblk1:ctrlreg\
+controlcell: Name =\Neck:PWMUDB:genblk1:ctrlreg\
     PORT MAP (
         clock => Net_31 ,
-        control_7 => \RightEyebrow:PWMUDB:control_7\ ,
-        control_6 => \RightEyebrow:PWMUDB:control_6\ ,
-        control_5 => \RightEyebrow:PWMUDB:control_5\ ,
-        control_4 => \RightEyebrow:PWMUDB:control_4\ ,
-        control_3 => \RightEyebrow:PWMUDB:control_3\ ,
-        control_2 => \RightEyebrow:PWMUDB:control_2\ ,
-        control_1 => \RightEyebrow:PWMUDB:control_1\ ,
-        control_0 => \RightEyebrow:PWMUDB:control_0\ );
+        control_7 => \Neck:PWMUDB:control_7\ ,
+        control_6 => \Neck:PWMUDB:control_6\ ,
+        control_5 => \Neck:PWMUDB:control_5\ ,
+        control_4 => \Neck:PWMUDB:control_4\ ,
+        control_3 => \Neck:PWMUDB:control_3\ ,
+        control_2 => \Neck:PWMUDB:control_2\ ,
+        control_1 => \Neck:PWMUDB:control_1\ ,
+        control_0 => \Neck:PWMUDB:control_0\ );
     Properties:
     {
         cy_ctrl_mode_0 = "11111111"
@@ -7851,13 +7971,13 @@ controlcell: Name =\RightEyebrow:PWMUDB:genblk1:ctrlreg\
     Clock Polarity: Active High
     Clock Enable: True
 
-UDB [UDB=(3,4)] contents:
-datapathcell: Name =\RightEyeball:PWMUDB:sP16:pwmdp:u0\
+UDB [UDB=(3,1)] contents:
+datapathcell: Name =\Base:PWMUDB:sP16:pwmdp:u0\
     PORT MAP (
         clock => Net_31 ,
-        cs_addr_2 => \RightEyeball:PWMUDB:tc_i\ ,
-        cs_addr_1 => \RightEyeball:PWMUDB:runmode_enable\ ,
-        chain_out => \RightEyeball:PWMUDB:sP16:pwmdp:carry\ );
+        cs_addr_2 => \Base:PWMUDB:tc_i\ ,
+        cs_addr_1 => \Base:PWMUDB:runmode_enable\ ,
+        chain_out => \Base:PWMUDB:sP16:pwmdp:carry\ );
     Properties:
     {
         a0_init = "00000000"
@@ -7884,10 +8004,56 @@ datapathcell: Name =\RightEyeball:PWMUDB:sP16:pwmdp:u0\
     }
     Clock Polarity: Active High
     Clock Enable: True
-    Next in chain : \RightEyeball:PWMUDB:sP16:pwmdp:u1\
+    Next in chain : \Base:PWMUDB:sP16:pwmdp:u1\
+
+UDB [UDB=(3,2)] is empty.
+UDB [UDB=(3,3)] is empty.
+UDB [UDB=(3,4)] contents:
+datapathcell: Name =\Lips:PWMUDB:sP16:pwmdp:u0\
+    PORT MAP (
+        clock => Net_31 ,
+        cs_addr_2 => \Lips:PWMUDB:tc_i\ ,
+        cs_addr_1 => \Lips:PWMUDB:runmode_enable\ ,
+        chain_out => \Lips:PWMUDB:sP16:pwmdp:carry\ );
+    Properties:
+    {
+        a0_init = "00000000"
+        a1_init = "00000000"
+        ce0_sync = 1
+        ce1_sync = 1
+        cl0_sync = 1
+        cl1_sync = 1
+        cmsb_sync = 1
+        co_msb_sync = 1
+        cy_dpconfig = "0000000001000000000000001100000001000000010000000000000011000000000000001100000000000000110000000000000011000000000000001100000011111111000000001111111111111111101000000000000000000100000000000000000000011000"
+        d0_init = "00000000"
+        d1_init = "00000000"
+        f0_blk_sync = 1
+        f0_bus_sync = 1
+        f1_blk_sync = 1
+        f1_bus_sync = 1
+        ff0_sync = 1
+        ff1_sync = 1
+        ov_msb_sync = 1
+        so_sync = 1
+        z0_sync = 1
+        z1_sync = 1
+    }
+    Clock Polarity: Active High
+    Clock Enable: True
+    Next in chain : \Lips:PWMUDB:sP16:pwmdp:u1\
 
 UDB [UDB=(3,5)] is empty.
 Intr container @ [IntrContainer=(0)]: 
+  Intr@ [IntrContainer=(0)][IntrId=(0)] 
+    interrupt: Name =button_isr
+        PORT MAP (
+            interrupt => Net_936 );
+        Properties:
+        {
+            int_type = "10"
+            is_nmi = 0
+        }
   Intr@ [IntrContainer=(0)][IntrId=(17)] 
     interrupt: Name =timer_isr
         PORT MAP (
@@ -8230,6 +8396,47 @@ Pin : Name = RightEyeballBottom(0)
     }
 
 Port 3 contains the following IO cells:
+[IoId=0]: 
+Pin : Name = Button(0)
+    Attributes:
+        In Group/Port: True
+        In Sync Option: NOSYNC
+        Out Sync Option: AUTO
+        Interrupt generated: False
+        Interrupt mode: NONE
+        Drive mode: RES_PULL_UP
+        VTrip: CMOS
+        Slew: FAST
+        Input Sync needed: False
+        Output Sync needed: False
+        SC shield enabled: False
+        POR State: ANY
+        LCD Mode: COMMON
+        Register Mode: RegComb
+        CaSense Mode: NEITHER
+        Treat as pin: True
+        Is OE Registered: False
+        Uses Analog: False
+        Can contain Digital: True
+        Is SIO: False
+        SIO Output Buf: NONREGULATED
+        SIO Input Buf: SINGLE_ENDED
+        SIO HiFreq: LOW
+        SIO Hyst: DISABLED
+        SIO Vtrip: MULTIPLIER_0_5
+        SIO Multiplier Index: 0
+        SIO RefSel: VCC_IO
+        Required Capabilities: DIGITAL, ROUTABLE
+        Initial Value: 1
+        IO Voltage: 0
+    PORT MAP (
+        pa_out => Button(0)__PA ,
+        fb => Net_933 ,
+        pad => Button(0)_PAD );
+    Properties:
+    {
+    }
+
 Port 12 contains the following IO cells:
 [IoId=0]: 
 Pin : Name = NeckRight(0)
@@ -8580,7 +8787,9 @@ Clock group 0:
             clk_bus_glb => ClockBlock_BUS_CLK ,
             clk_bus => ClockBlock_BUS_CLK_local ,
             dclk_glb_0 => Net_31 ,
-            dclk_0 => Net_31_local );
+            dclk_0 => Net_31_local ,
+            dclk_glb_1 => Net_934 ,
+            dclk_1 => Net_934_local );
         Properties:
         {
         }
@@ -8637,6 +8846,8 @@ Port | Pin | Fixed |      Type |       Drive Mode |                  Name | Conn
      |   6 |     * |      NONE |         CMOS_OUT |    RightEyeballTop(0) | In(Net_126)
      |   7 |     * |      NONE |         CMOS_OUT | RightEyeballBottom(0) | In(Net_127)
 -----+-----+-------+-----------+------------------+-----------------------+------------
+   3 |   0 |     * |      NONE |      RES_PULL_UP |             Button(0) | FB(Net_933)
+-----+-----+-------+-----------+------------------+-----------------------+------------
   12 |   0 |     * |      NONE |         CMOS_OUT |          NeckRight(0) | In(Net_307)
      |   1 |     * |      NONE |         CMOS_OUT |           NeckLeft(0) | In(Net_306)
      |   2 |     * |      NONE |         CMOS_OUT |                Jaw(0) | In(Net_862)
@@ -8649,33 +8860,33 @@ Port | Pin | Fixed |      Type |       Drive Mode |                  Name | Conn
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
-Digital component placer commit/Report: Elapsed time ==> 0s.101ms
-Digital Placement phase: Elapsed time ==> 2s.972ms
+Digital component placer commit/Report: Elapsed time ==> 0s.096ms
+Digital Placement phase: Elapsed time ==> 2s.676ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
 "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc5/psoc5lp/route_arch-rrg.cydata" --vh2-path "Control_r.vh2" --pcf-path "Control.pco" --des-name "Control" --dsf-path "Control.dsf" --sdc-path "Control.sdc" --lib-path "Control_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 3s.445ms
+Digital Routing phase: Elapsed time ==> 3s.261ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.796ms
+Bitstream Generation phase: Elapsed time ==> 0s.857ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.109ms
+Bitstream Verification phase: Elapsed time ==> 0s.225ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in Control_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.861ms
+Static timing analysis phase: Elapsed time ==> 0s.866ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.482ms
+Design database save phase: Elapsed time ==> 0s.404ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 10s.455ms
+cydsfit: Elapsed time ==> 9s.999ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 10s.455ms
-API generation phase: Elapsed time ==> 15s.042ms
-Dependency generation phase: Elapsed time ==> 0s.111ms
-Cleanup phase: Elapsed time ==> 0s.074ms
+Fitter phase: Elapsed time ==> 9s.999ms
+API generation phase: Elapsed time ==> 4s.238ms
+Dependency generation phase: Elapsed time ==> 0s.113ms
+Cleanup phase: Elapsed time ==> 0s.061ms

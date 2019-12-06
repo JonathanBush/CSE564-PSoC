@@ -51,9 +51,9 @@ void update_servos() {
     
     for (uint8 i = 0; i < 16; ++i) {
         serv = &servo_map[i];
-        if (serv->current < serv->target && serv->current + serv->step < serv->target) {
+        if (serv->current + serv->step < serv->target) {
             serv->current += serv->step;
-        } else if (serv->current > serv->target && serv->current - serv->step > serv->target) {
+        } else if (serv->current - serv->step > serv->target) {
             serv->current -= serv->step;
         } else {
             serv->current = serv->target;

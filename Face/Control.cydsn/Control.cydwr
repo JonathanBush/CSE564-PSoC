@@ -254,6 +254,7 @@
       <Data key="0b3f2ac2-8cb9-48a0-b3e0-d42d22853b76" value="LipLeft" />
       <Data key="5b9679c9-a96b-4d85-b381-4fd7200b92fd" value="RightEyeballBottom" />
       <Data key="7e517404-b7e4-4074-97c7-0db6ef4907bc" value="RightEyeballTop" />
+      <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="Button" />
       <Data key="8e03b85c-a9de-4038-a602-b92d1fb1a3c7" value="BaseRotation" />
       <Data key="56abeab3-e02d-4779-9bff-5ffca5495d4c" value="LeftEyeballTop" />
       <Data key="68f4222c-66df-481c-8e5f-f919cd7c222f" value="EyelidClose" />
@@ -3366,6 +3367,11 @@
     <Group key="7e517404-b7e4-4074-97c7-0db6ef4907bc">
       <Group key="0">
         <Data key="Port Format" value="2,6" />
+      </Group>
+    </Group>
+    <Group key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba">
+      <Group key="0">
+        <Data key="Port Format" value="3,0" />
       </Group>
     </Group>
     <Group key="8e03b85c-a9de-4038-a602-b92d1fb1a3c7">

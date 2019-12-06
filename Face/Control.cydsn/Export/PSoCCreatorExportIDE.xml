@@ -80,6 +80,8 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_2.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Clock_2.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow1_aliases.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow1.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\RightEyebrow1.h</File>
@@ -178,6 +180,11 @@
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer.c</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer.h</File>
           <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Timer_PM.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button_aliases.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\Button.h</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\button_isr.c</File>
+          <File BuildType="BUILD" Toolchain="">Generated_Source\PSoC5\button_isr.h</File>
         </Files>
       </Folder>
       <Folder BuildType="STRICT" Path="C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\Export\ARM_GCC_Generic">

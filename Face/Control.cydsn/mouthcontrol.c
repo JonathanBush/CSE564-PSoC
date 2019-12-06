@@ -45,7 +45,7 @@ void lip_set(lip_position option) {
             break;
         case LIP_FROWN:
             set_smooth_servo_angle(LIP_RIGHT, 60);
-            set_smooth_servo_angle(LIP_LEFT, 120);
+            set_smooth_servo_angle(LIP_LEFT, 140);
             break;
         case LIP_SMILE:
             set_smooth_servo_angle(LIP_RIGHT, 120);

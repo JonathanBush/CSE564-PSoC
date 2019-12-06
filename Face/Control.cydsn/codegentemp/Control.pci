@@ -1,5 +1,5 @@
 # Control
-# 2019-12-03 21:04:38Z
+# 2019-12-06 18:09:47Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -23,3 +23,4 @@ set_io "NeckLeft(0)" iocell 12 1
 set_io "NeckRight(0)" iocell 12 0
 set_io "BaseRotation(0)" iocell 1 4
 set_io "Jaw(0)" iocell 12 2
+set_io "Button(0)" iocell 3 0

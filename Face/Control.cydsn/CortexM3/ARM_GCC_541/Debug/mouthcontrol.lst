@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
   38 0002 0128     		cmp	r0, #1
   39 0004 08D0     		beq	.L3
   40 0006 10B1     		cbz	r0, .L4
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 2
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 2
 
 
   41 0008 0228     		cmp	r0, #2
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
   30:mouthcontrol.c **** }
   31:mouthcontrol.c **** 
   32:mouthcontrol.c **** void lip_set(lip_position option) {
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 3
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 3
 
 
   83              		.loc 1 32 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  129              	.LVL16:
   41:mouthcontrol.c ****             break;
  130              		.loc 1 41 0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 4
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 4
 
 
  131 0032 08BD     		pop	{r3, pc}
@@ -211,9 +211,9 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  152              	.LVL22:
  153 004a FFF7FEFF 		bl	set_smooth_servo_angle
  154              	.LVL23:
-  48:mouthcontrol.c ****             set_smooth_servo_angle(LIP_LEFT, 120);
+  48:mouthcontrol.c ****             set_smooth_servo_angle(LIP_LEFT, 140);
  155              		.loc 1 48 0
- 156 004e 7821     		movs	r1, #120
+ 156 004e 8C21     		movs	r1, #140
  157 0050 0420     		movs	r0, #4
  158 0052 FFF7FEFF 		bl	set_smooth_servo_angle
  159              	.LVL24:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  174              	.LVL28:
  175              	.L7:
  176 0068 08BD     		pop	{r3, pc}
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 5
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 5
 
 
  177              		.cfi_endproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  231 005e 81000000 		.4byte	0x81
  232 0062 03       		.uleb128 0x3
  233 0063 BF010000 		.4byte	.LASF3
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 6
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 6
 
 
  234 0067 00       		.byte	0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  288 00ca 05       		.byte	0x5
  289 00cb 696E7400 		.ascii	"int\000"
  290 00cf 04       		.uleb128 0x4
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 7
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 7
 
 
  291 00d0 04       		.byte	0x4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  345 0139 06       		.byte	0x6
  346 013a 03       		.uleb128 0x3
  347 013b 19030000 		.4byte	.LASF32
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 8
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 8
 
 
  348 013f 07       		.byte	0x7
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  402 01ab 08       		.byte	0x8
  403 01ac 46       		.byte	0x46
  404 01ad 00       		.byte	0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 9
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 9
 
 
  405 01ae 0A       		.uleb128 0xa
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  459 0211 34       		.byte	0x34
  460 0212 0B       		.uleb128 0xb
  461 0213 01       		.uleb128 0x1
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 10
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 10
 
 
  462 0214 51       		.byte	0x51
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  516 0265 3C000000 		.4byte	.LVL19
  517 0269 08030000 		.4byte	0x308
  518 026d 7D020000 		.4byte	0x27d
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 11
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 11
 
 
  519 0271 0B       		.uleb128 0xb
@@ -658,11 +658,11 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  573 02c2 01       		.uleb128 0x1
  574 02c3 51       		.byte	0x51
  575 02c4 02       		.uleb128 0x2
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 12
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 12
 
 
- 576 02c5 08       		.byte	0x8
- 577 02c6 78       		.byte	0x78
+ 576 02c5 09       		.byte	0x9
+ 577 02c6 8C       		.byte	0x8c
  578 02c7 00       		.byte	0
  579 02c8 0A       		.uleb128 0xa
  580 02c9 60000000 		.4byte	.LVL27
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  630 0004 0E       		.uleb128 0xe
  631 0005 13       		.uleb128 0x13
  632 0006 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 13
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 13
 
 
  633 0007 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  687 003d 3B       		.uleb128 0x3b
  688 003e 0B       		.uleb128 0xb
  689 003f 49       		.uleb128 0x49
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 14
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 14
 
 
  690 0040 13       		.uleb128 0x13
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  744 0077 0B       		.uleb128 0xb
  745 0078 3B       		.uleb128 0x3b
  746 0079 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 15
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 15
 
 
  747 007a 49       		.uleb128 0x49
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  801 00b7 00       		.byte	0
  802 00b8 49       		.uleb128 0x49
  803 00b9 13       		.uleb128 0x13
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 16
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 16
 
 
  804 00ba 00       		.byte	0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  858 0049 50       		.byte	0x50
  859 004a 9F       		.byte	0x9f
  860 004b 00000000 		.4byte	0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 17
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 17
 
 
  861 004f 00000000 		.4byte	0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  915 00cd 01       		.uleb128 0x1
  916 00ce 50       		.byte	0x50
  917 00cf 9F       		.byte	0x9f
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 18
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 18
 
 
  918 00d0 00000000 		.4byte	0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  955              	.LASF28:
  956 003f 4E45434B 		.ascii	"NECK_RIGHT\000"
  956      5F524947 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 19
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 19
 
 
  956      485400
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  978      4542524F 
  978      575F5249 
  978      47485400 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 20
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 20
 
 
  979              	.LASF16:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  1002 01e3 756E7369 		.ascii	"unsigned int\000"
  1002      676E6564 
  1002      20696E74 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 21
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 21
 
 
  1002      00
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 1
  1026      465400
  1027              	.LASF15:
  1028 0289 6C6F6E67 		.ascii	"long int\000"
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccsrIKH3.s 			page 22
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccG26F5a.s 			page 22
 
 
  1028      20696E74 

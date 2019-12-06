@@ -2,7 +2,7 @@
 --	Conversion of Control.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Dec 03 14:04:35 2019
+--	Fri Dec 06 11:09:45 2019
 --
 
 USE cypress.cypress.all;
@@ -3496,6 +3496,19 @@ SIGNAL \Timer:Net_261\ : bit;
 SIGNAL \Timer:Net_57\ : bit;
 SIGNAL Net_926 : bit;
 SIGNAL \Timer:Net_102\ : bit;
+SIGNAL tmpOE__Button_net_0 : bit;
+SIGNAL Net_933 : bit;
+SIGNAL tmpIO_0__Button_net_0 : bit;
+TERMINAL tmpSIOVREF__Button_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__Button_net_0 : bit;
+SIGNAL Net_934 : bit;
+SIGNAL \Debouncer_1:op_clk\ : bit;
+SIGNAL \Debouncer_1:DEBOUNCER[0]:d_sync_0\ : bit;
+SIGNAL \Debouncer_1:DEBOUNCER[0]:d_sync_1\ : bit;
+SIGNAL Net_935 : bit;
+SIGNAL Net_938 : bit;
+SIGNAL Net_936 : bit;
+SIGNAL Net_937 : bit;
 SIGNAL \LeftEyebrow:PWMUDB:min_kill_reg\\D\ : bit;
 SIGNAL \LeftEyebrow:PWMUDB:prevCapture\\D\ : bit;
 SIGNAL \LeftEyebrow:PWMUDB:trig_last\\D\ : bit;
@@ -3632,6 +3645,11 @@ SIGNAL \Base:PWMUDB:pwm_i_reg\\D\ : bit;
 SIGNAL \Base:PWMUDB:pwm1_i_reg\\D\ : bit;
 SIGNAL \Base:PWMUDB:pwm2_i_reg\\D\ : bit;
 SIGNAL \Base:PWMUDB:tc_i_reg\\D\ : bit;
+SIGNAL \Debouncer_1:DEBOUNCER[0]:d_sync_0\\D\ : bit;
+SIGNAL \Debouncer_1:DEBOUNCER[0]:d_sync_1\\D\ : bit;
+SIGNAL Net_938D : bit;
+SIGNAL Net_936D : bit;
+SIGNAL Net_937D : bit;
 BEGIN
 
 one <=  ('1') ;
@@ -3789,6 +3807,8 @@ zero <=  ('0') ;
 \Base:PWMUDB:pwm1_i\ <= ((\Base:PWMUDB:runmode_enable\ and \Base:PWMUDB:cmp1_less\));
 
 \Base:PWMUDB:pwm2_i\ <= ((\Base:PWMUDB:runmode_enable\ and \Base:PWMUDB:cmp2_less\));
+
+Net_936D <= ((not \Debouncer_1:DEBOUNCER[0]:d_sync_0\ and \Debouncer_1:DEBOUNCER[0]:d_sync_1\));
 
 \LeftEyebrow:PWMUDB:clock_enable_block\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
@@ -6574,6 +6594,95 @@ timer_isr:cy_isr_v1_0
 		tc=>\Timer:Net_51\,
 		compare=>\Timer:Net_261\,
 		interrupt=>Net_921);
+Button:cy_psoc3_pins_v1_10
+	GENERIC MAP(id=>"8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
+		drive_mode=>"010",
+		ibuf_enabled=>"1",
+		init_dr_st=>"1",
+		input_sync=>"0",
+		input_clk_en=>'0',
+		input_sync_mode=>"0",
+		intr_mode=>"00",
+		invert_in_clock=>'0',
+		invert_in_clock_en=>'0',
+		invert_in_reset=>'0',
+		invert_out_clock=>'0',
+		invert_out_clock_en=>'0',
+		invert_out_reset=>'0',
+		io_voltage=>"",
+		layout_mode=>"CONTIGUOUS",
+		output_conn=>"0",
+		output_sync=>"0",
+		output_clk_en=>'0',
+		output_mode=>"0",
+		output_reset=>'0',
+		output_clock_mode=>"0",
+		oe_sync=>"0",
+		oe_conn=>"0",
+		oe_reset=>'0',
+		pin_aliases=>"",
+		pin_mode=>"I",
+		por_state=>4,
+		sio_group_cnt=>0,
+		sio_hifreq=>"00000000",
+		sio_hyst=>"1",
+		sio_ibuf=>"00000000",
+		sio_info=>"00",
+		sio_obuf=>"00000000",
+		sio_refsel=>"00000000",
+		sio_vtrip=>"00000000",
+		sio_vohsel=>"00000000",
+		slew_rate=>"0",
+		spanning=>'0',
+		sw_only=>'0',
+		vtrip=>"00",
+		width=>1,
+		port_alias_required=>'0',
+		port_alias_group=>"",
+		use_annotation=>"0",
+		pa_in_clock=>-1,
+		pa_in_clock_en=>-1,
+		pa_in_reset=>-1,
+		pa_out_clock=>-1,
+		pa_out_clock_en=>-1,
+		pa_out_reset=>-1,
+		ovt_needed=>"0",
+		ovt_slew_control=>"00",
+		ovt_hyst_trim=>"0",
+		input_buffer_sel=>"00")
+	PORT MAP(oe=>(one),
+		y=>(zero),
+		fb=>Net_933,
+		analog=>(open),
+		io=>(tmpIO_0__Button_net_0),
+		siovref=>(tmpSIOVREF__Button_net_0),
+		annotation=>(open),
+		in_clock=>zero,
+		in_clock_en=>one,
+		in_reset=>zero,
+		out_clock=>zero,
+		out_clock_en=>one,
+		out_reset=>zero,
+		interrupt=>tmpINTERRUPT_0__Button_net_0);
+\Debouncer_1:ClkSync\:cy_psoc3_udb_clock_enable_v1_0
+	GENERIC MAP(sync_mode=>'1')
+	PORT MAP(clock_in=>Net_934,
+		enable=>one,
+		clock_out=>\Debouncer_1:op_clk\);
+Clock_2:cy_clock_v1_0
+	GENERIC MAP(cy_registers=>"",
+		id=>"2d040ebc-85ce-4863-8247-b2614fa9403d",
+		source_clock_id=>"",
+		divisor=>0,
+		period=>"10000000000000",
+		is_direct=>'0',
+		is_digital=>'1')
+	PORT MAP(clock_out=>Net_934,
+		dig_domain_out=>open);
+button_isr:cy_isr_v1_0
+	GENERIC MAP(int_type=>"10",
+		is_nmi=>'0')
+	PORT MAP(int_signal=>Net_936);
 \LeftEyebrow:PWMUDB:min_kill_reg\:cy_dsrff
 	PORT MAP(d=>one,
 		s=>zero,
@@ -7246,5 +7355,25 @@ timer_isr:cy_isr_v1_0
 	PORT MAP(d=>\Base:PWMUDB:status_2\,
 		clk=>\Base:PWMUDB:ClockOutFromEnBlock\,
 		q=>\Base:PWMUDB:tc_i_reg\);
+\Debouncer_1:DEBOUNCER[0]:d_sync_0\:cy_dff
+	PORT MAP(d=>Net_933,
+		clk=>\Debouncer_1:op_clk\,
+		q=>\Debouncer_1:DEBOUNCER[0]:d_sync_0\);
+\Debouncer_1:DEBOUNCER[0]:d_sync_1\:cy_dff
+	PORT MAP(d=>\Debouncer_1:DEBOUNCER[0]:d_sync_0\,
+		clk=>\Debouncer_1:op_clk\,
+		q=>\Debouncer_1:DEBOUNCER[0]:d_sync_1\);
+Net_938:cy_dff
+	PORT MAP(d=>zero,
+		clk=>\Debouncer_1:op_clk\,
+		q=>Net_938);
+Net_936:cy_dff
+	PORT MAP(d=>Net_936D,
+		clk=>\Debouncer_1:op_clk\,
+		q=>Net_936);
+Net_937:cy_dff
+	PORT MAP(d=>zero,
+		clk=>\Debouncer_1:op_clk\,
+		q=>Net_937);
 
 END R_T_L;
