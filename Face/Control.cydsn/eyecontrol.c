@@ -39,18 +39,40 @@ void eyelid_set(eyelid_position option) {
 void eyeball_set(eyeball_position option) {
     switch (option) {
         case EYEBALL_CENTER:
-            set_smooth_servo_angle(LEFT_EYEBALL_BOTTOM, 90);
-            set_smooth_servo_angle(LEFT_EYEBALL_TOP, 90);
-            set_smooth_servo_angle(RIGHT_EYEBALL_BOTTOM, 90);
-            set_smooth_servo_angle(RIGHT_EYEBALL_TOP, 90);
+            set_smooth_servo_angle(LEFT_EYEBALL_BOTTOM, 20); // Good
+            set_smooth_servo_angle(LEFT_EYEBALL_TOP, 80); // Good
+            set_smooth_servo_angle(RIGHT_EYEBALL_BOTTOM, 90); // Good
+            set_smooth_servo_angle(RIGHT_EYEBALL_TOP, 80); // Good
             break;
         case EYEBALL_LEFT:
+            set_smooth_servo_angle(LEFT_EYEBALL_BOTTOM, 0); // Goodish
+            set_smooth_servo_angle(LEFT_EYEBALL_TOP, 80); // Goodish
+            set_smooth_servo_angle(RIGHT_EYEBALL_BOTTOM, 100); // Good
+            set_smooth_servo_angle(RIGHT_EYEBALL_TOP, 170); // Good
             break;
         case EYEBALL_RIGHT:
+            set_smooth_servo_angle(LEFT_EYEBALL_BOTTOM, 110); // Good
+            set_smooth_servo_angle(LEFT_EYEBALL_TOP, 180); // Good
+            set_smooth_servo_angle(RIGHT_EYEBALL_BOTTOM, 90); // Goodish
+            set_smooth_servo_angle(RIGHT_EYEBALL_TOP, 80); // Goodish
             break;
         case EYEBALL_UP:
+           set_smooth_servo_angle(LEFT_EYEBALL_BOTTOM, 0); // Good
+            set_smooth_servo_angle(LEFT_EYEBALL_TOP, 50);; // Good
+            set_smooth_servo_angle(RIGHT_EYEBALL_BOTTOM, 70); // Good
+            set_smooth_servo_angle(RIGHT_EYEBALL_TOP, 30); // Good
             break;
         case EYEBALL_DOWN:
+            set_smooth_servo_angle(LEFT_EYEBALL_BOTTOM, 120);
+            set_smooth_servo_angle(LEFT_EYEBALL_TOP, 100);
+            set_smooth_servo_angle(RIGHT_EYEBALL_BOTTOM, 130);
+            set_smooth_servo_angle(RIGHT_EYEBALL_TOP, 120);
+            break;
+        case CROSS_EYE:
+            set_smooth_servo_angle(LEFT_EYEBALL_BOTTOM, 110); // Good
+            set_smooth_servo_angle(LEFT_EYEBALL_TOP, 180); // Good
+            set_smooth_servo_angle(RIGHT_EYEBALL_BOTTOM, 90); // Good
+            set_smooth_servo_angle(RIGHT_EYEBALL_TOP, 80); // Good
             break;
         default:
             break;

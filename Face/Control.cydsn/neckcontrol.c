@@ -33,14 +33,14 @@ void tilt_set(head_tilt option) {
     switch (option) {
         case HEAD_TILT_RIGHT:
             set_smooth_servo_angle(NECK_LEFT, 140);
-            set_smooth_servo_angle(NECK_RIGHT, 100);
+            set_smooth_servo_angle(NECK_RIGHT, 120);
             break;
         case HEAD_TILT_CENTER:
             set_smooth_servo_angle(NECK_LEFT, 90);
             set_smooth_servo_angle(NECK_RIGHT, 100);
             break;
         case HEAD_TILT_LEFT:
-            set_smooth_servo_angle(NECK_LEFT, 90);
+            set_smooth_servo_angle(NECK_LEFT, 80);
             set_smooth_servo_angle(NECK_RIGHT, 70);
             break;
         case HEAD_TILT_BACK:

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
   38 0002 0128     		cmp	r0, #1
   39 0004 08D0     		beq	.L3
   40 0006 10B1     		cbz	r0, .L4
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 2
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 2
 
 
   41 0008 0228     		cmp	r0, #2
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
   30:neckcontrol.c **** }
   31:neckcontrol.c **** 
   32:neckcontrol.c **** void tilt_set(head_tilt option) {
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 3
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 3
 
 
   83              		.loc 1 32 0
@@ -151,9 +151,9 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  107              	.LVL10:
  108 0014 FFF7FEFF 		bl	set_smooth_servo_angle
  109              	.LVL11:
-  36:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 100);
+  36:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 120);
  110              		.loc 1 36 0
- 111 0018 6421     		movs	r1, #100
+ 111 0018 7821     		movs	r1, #120
  112 001a 0220     		movs	r0, #2
  113 001c FFF7FEFF 		bl	set_smooth_servo_angle
  114              	.LVL12:
@@ -178,16 +178,16 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  129              	.LVL16:
   41:neckcontrol.c ****             break;
  130              		.loc 1 41 0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 4
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 4
 
 
  131 0032 08BD     		pop	{r3, pc}
  132              	.LVL17:
  133              	.L9:
   42:neckcontrol.c ****         case HEAD_TILT_LEFT:
-  43:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 90);
+  43:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 80);
  134              		.loc 1 43 0
- 135 0034 5A21     		movs	r1, #90
+ 135 0034 5021     		movs	r1, #80
  136 0036 0120     		movs	r0, #1
  137              	.LVL18:
  138 0038 FFF7FEFF 		bl	set_smooth_servo_angle
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  174              	.LVL28:
  175              	.L7:
  176 0068 08BD     		pop	{r3, pc}
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 5
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 5
 
 
  177              		.cfi_endproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  231 005e 81000000 		.4byte	0x81
  232 0062 03       		.uleb128 0x3
  233 0063 90020000 		.4byte	.LASF3
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 6
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 6
 
 
  234 0067 00       		.byte	0
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  288 00ca 05       		.byte	0x5
  289 00cb 696E7400 		.ascii	"int\000"
  290 00cf 04       		.uleb128 0x4
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 7
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 7
 
 
  291 00d0 04       		.byte	0x4
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  345 0139 06       		.byte	0x6
  346 013a 03       		.uleb128 0x3
  347 013b 3C030000 		.4byte	.LASF32
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 8
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 8
 
 
  348 013f 07       		.byte	0x7
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  402 01ab 08       		.byte	0x8
  403 01ac 5A       		.byte	0x5a
  404 01ad 00       		.byte	0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 9
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 9
 
 
  405 01ae 0A       		.uleb128 0xa
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  459 0211 01       		.uleb128 0x1
  460 0212 31       		.byte	0x31
  461 0213 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 10
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 10
 
 
  462 0214 01       		.uleb128 0x1
@@ -561,7 +561,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  479 022e 51       		.byte	0x51
  480 022f 02       		.uleb128 0x2
  481 0230 08       		.byte	0x8
- 482 0231 64       		.byte	0x64
+ 482 0231 78       		.byte	0x78
  483 0232 00       		.byte	0
  484 0233 0A       		.uleb128 0xa
  485 0234 2A000000 		.4byte	.LVL15
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  516 0265 0A       		.uleb128 0xa
  517 0266 3C000000 		.4byte	.LVL19
  518 026a 08030000 		.4byte	0x308
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 11
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 11
 
 
  519 026e 7E020000 		.4byte	0x27e
@@ -612,7 +612,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  527 0279 51       		.byte	0x51
  528 027a 02       		.uleb128 0x2
  529 027b 08       		.byte	0x8
- 530 027c 5A       		.byte	0x5a
+ 530 027c 50       		.byte	0x50
  531 027d 00       		.byte	0
  532 027e 0A       		.uleb128 0xa
  533 027f 44000000 		.4byte	.LVL20
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  573 02c2 0B       		.uleb128 0xb
  574 02c3 01       		.uleb128 0x1
  575 02c4 51       		.byte	0x51
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 12
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 12
 
 
  576 02c5 02       		.uleb128 0x2
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  630 0004 0E       		.uleb128 0xe
  631 0005 13       		.uleb128 0x13
  632 0006 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 13
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 13
 
 
  633 0007 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  687 003d 3B       		.uleb128 0x3b
  688 003e 0B       		.uleb128 0xb
  689 003f 49       		.uleb128 0x49
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 14
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 14
 
 
  690 0040 13       		.uleb128 0x13
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  744 0077 0B       		.uleb128 0xb
  745 0078 3B       		.uleb128 0x3b
  746 0079 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 15
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 15
 
 
  747 007a 49       		.uleb128 0x49
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  801 00b7 00       		.byte	0
  802 00b8 49       		.uleb128 0x49
  803 00b9 13       		.uleb128 0x13
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 16
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 16
 
 
  804 00ba 00       		.byte	0
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  858 0049 50       		.byte	0x50
  859 004a 9F       		.byte	0x9f
  860 004b 00000000 		.4byte	0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 17
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 17
 
 
  861 004f 00000000 		.4byte	0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  915 00cd 01       		.uleb128 0x1
  916 00ce 50       		.byte	0x50
  917 00cf 9F       		.byte	0x9f
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 18
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 18
 
 
  918 00d0 00000000 		.4byte	0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  956 003e 646F7562 		.ascii	"double\000"
  956      6C6500
  957              	.LASF9:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 19
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 19
 
 
  958 0045 68656164 		.ascii	"head_tilt\000"
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  976      5F524947 
  976      485400
  977              	.LASF37:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 20
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 20
 
 
  978 014a 4C454654 		.ascii	"LEFT_EYEBROW_LEFT\000"
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  998      43454E54 
  998      455200
  999              	.LASF6:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 21
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 21
 
 
  1000 01ef 48454144 		.ascii	"HEAD_TILT_BACK\000"
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 1
  1024      5F54494C 
  1024      545F5249 
  1024      47485400 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccdNliro.s 			page 22
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccd8ChlE.s 			page 22
 
 
  1025              	.LASF3:

@@ -15,14 +15,16 @@
     
 typedef enum {
     MOUTH_OPEN,
-    MOUTH_CLOSE
+    MOUTH_CLOSE,
+    MOUTH_AGAPE
 } mouth_position;
 
 typedef enum {
     LIP_NORMAL,
     LIP_LEFT_SMIRK,
     LIP_RIGHT_SMIRK,
-    LIP_BOTH_DOWN
+    LIP_FROWN,
+    LIP_SMILE,
 } lip_position;
 
 void mouth_set(mouth_position option);

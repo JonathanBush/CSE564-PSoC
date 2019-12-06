@@ -25,7 +25,8 @@ typedef enum {
     EYEBALL_LEFT,
     EYEBALL_RIGHT,
     EYEBALL_UP,
-    EYEBALL_DOWN
+    EYEBALL_DOWN,
+    CROSS_EYE
 } eyeball_position;
 
 typedef enum {

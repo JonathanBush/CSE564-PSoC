@@ -13,10 +13,10 @@
 #include "servocontrol.h"
 
 servo_state servo_map[] = {
-    {.write_compare = Base_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
+    {.write_compare = Base_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = (DEFAULT_STEP - 2)},
     {.write_compare = Neck_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
     {.write_compare = Neck_WriteCompare2, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
-    {.write_compare = Base_WriteCompare2, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
+    {.write_compare = Base_WriteCompare2, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = (DEFAULT_STEP + 2)},
     {.write_compare = Lips_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
     {.write_compare = Lips_WriteCompare2, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
     {.write_compare = LeftEyeball_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
@@ -24,7 +24,7 @@ servo_state servo_map[] = {
     {.write_compare = RightEyeball_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
     {.write_compare = RightEyeball_WriteCompare2, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
     {.write_compare = Eyelids_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
-    {.write_compare = Eyelids_WriteCompare2, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
+    {.write_compare = Eyelids_WriteCompare2, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = (DEFAULT_STEP + 5)},
     {.write_compare = LeftEyebrow_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
     {.write_compare = LeftEyebrow_WriteCompare2, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
     {.write_compare = RightEyebrow_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},

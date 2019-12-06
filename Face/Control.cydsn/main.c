@@ -17,7 +17,7 @@
 #include "project.h"
 
 
-#define STEP_DELAY 400000
+#define STEP_DELAY 1000000
 
 
 CY_ISR_PROTO(periodic_task);
@@ -30,6 +30,15 @@ CY_ISR(periodic_task) {
 }
 
 /* facial expressions */
+
+void blink(int x){
+	for(int i = 0; i < x; i++){
+		eyelid_set(EYELID_CLOSED);
+		CyDelay(600);
+		eyelid_set(EYELID_CENTER);
+		CyDelay(500);
+	}
+}
 
 void neutral() {
 	rotate_set(NECK_ROTATE_CENTER);
@@ -45,14 +54,14 @@ void sad() {
   neutral();
   eyebrow_set(EYEBROW_BOTHRAISE);
   mouth_set(MOUTH_CLOSE);
-  lip_set(LIP_BOTH_DOWN);
+  lip_set(LIP_FROWN);
   eyelid_set(EYELID_CENTER);
   eyeball_set(EYEBALL_CENTER);
   tilt_set(HEAD_TILT_FORWARD);
   rotate_set(NECK_ROTATE_CENTER);
 }
 
-void anguish() {
+void surprised() {
     neutral();
 	rotate_set(NECK_ROTATE_CENTER);
 	tilt_set(HEAD_TILT_BACK);
@@ -63,11 +72,49 @@ void anguish() {
 	eyebrow_set(EYEBROW_BOTHRAISE);
 }
 
+void anguish() {
+    tilt_set(HEAD_TILT_BACK);
+    mouth_set(MOUTH_AGAPE);
+    eyebrow_set(EYEBROW_BOTHRAISE);
+    tilt_set(HEAD_TILT_LEFT);
+    rotate_set(NECK_ROTATE_LEFT);
+    eyeball_set(EYEBALL_CENTER);   
+}
+
+void confused() {
+    eyebrow_set(EYEBROW_LEFTRAISE);
+    eyeball_set(EYEBALL_UP);
+    lip_set(LIP_LEFT_SMIRK);
+    rotate_set(NECK_ROTATE_LEFT);
+    tilt_set(HEAD_TILT_RIGHT);
+    CyDelay(STEP_DELAY);
+           
+}
+
+void eyeroll() {
+    // eyeroll
+    mouth_set(MOUTH_CLOSE);
+    eyebrow_set(EYEBROW_NORMAL);
+    tilt_set(HEAD_TILT_CENTER);
+    rotate_set(NECK_ROTATE_CENTER);
+    eyeball_set(EYEBALL_UP);    
+}
+
+
+
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+    
+    neutral();
+    
+    Timer_Start();
+    
+    timer_isr_StartEx(periodic_task);
+    
+    CyDelay(1000);
 
     LeftEyebrow_Start();
     RightEyebrow_Start();
@@ -78,14 +125,24 @@ int main(void)
     Base_Start();
     Neck_Start();
     
-    Timer_Start();
-    
-    timer_isr_StartEx(periodic_task);
-
-    neutral();
     
     for(;;)
     {
+        confused();
+        CyDelay(STEP_DELAY);
+        anguish();
+        CyDelay(STEP_DELAY);
+//        thanguish();
+//        CyDelay(STEP_DELAY);
+//        eyeball_set(EYEBALL_LEFT);
+//        CyDelay(STEP_DELAY);
+//        eyeball_set(EYEBALL_RIGHT);
+//        CyDelay(STEP_DELAY);
+//        eyeball_set(EYEBALL_UP);
+//        CyDelay(STEP_DELAY);
+//        eyeball_set(EYEBALL_DOWN);
+//        CyDelay(STEP_DELAY);
+        
 //        eyelid_set(EYELID_CENTER);
 //        CyDelay(STEP_DELAY);
 //        eyelid_set(EYELID_CLOSED);
@@ -102,6 +159,7 @@ int main(void)
 //        CyDelay(STEP_DELAY);
 //        anguish();
 //        CyDelay(STEP_DELAY);
+        
 //        tilt_set(HEAD_TILT_BACK);
 //        CyDelay(STEP_DELAY);
 //        tilt_set(HEAD_TILT_CENTER);
@@ -121,6 +179,10 @@ int main(void)
 //        mouth_set(MOUTH_CLOSE);
 //        CyDelay(STEP_DELAY);
 //        mouth_set(MOUTH_OPEN);
+        //CyDelay(STEP_DELAY);
+        
+        // confused
+
 //        CyDelay(STEP_DELAY);
 //        lip_set(LIP_NORMAL);
 //        CyDelay(STEP_DELAY);

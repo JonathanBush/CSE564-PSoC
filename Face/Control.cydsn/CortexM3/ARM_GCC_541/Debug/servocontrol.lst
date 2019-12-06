@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
   28:servocontrol.c ****     {.write_compare = LeftEyebrow_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .
   29:servocontrol.c ****     {.write_compare = LeftEyebrow_WriteCompare2, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .
   30:servocontrol.c ****     {.write_compare = RightEyebrow_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 2
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 2
 
 
   31:servocontrol.c ****     {.write_compare = RightEyebrow_WriteCompare2, .current = MOTOR_CENTER, .target = MOTOR_CENTER, 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
   68              		.cfi_def_cfa_offset 8
   69              		.cfi_offset 4, -8
   70              		.cfi_offset 14, -4
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 3
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 3
 
 
   71 0002 0446     		mov	r4, r0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  116 0006 2346     		mov	r3, r4
  117              	.LVL7:
   54:servocontrol.c ****         if (serv->current < serv->target && serv->current + serv->step < serv->target) {
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 4
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 4
 
 
  118              		.loc 1 54 0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  167              		.loc 1 59 0
  168 0062 03EB4300 		add	r0, r3, r3, lsl #1
  169 0066 8100     		lsls	r1, r0, #2
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 5
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 5
 
 
  170 0068 0848     		ldr	r0, .L15
@@ -294,11 +294,11 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  213 0000 00000000 		.word	Base_WriteCompare1
  214 0004 D804     		.short	1240
  215 0006 D804     		.short	1240
- 216 0008 0500     		.short	5
+ 216 0008 0300     		.short	3
  217 000a 0000     		.space	2
  218 000c 00000000 		.word	Neck_WriteCompare1
  219 0010 D804     		.short	1240
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 6
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 6
 
 
  220 0012 D804     		.short	1240
@@ -312,7 +312,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  228 0024 00000000 		.word	Base_WriteCompare2
  229 0028 D804     		.short	1240
  230 002a D804     		.short	1240
- 231 002c 0500     		.short	5
+ 231 002c 0700     		.short	7
  232 002e 0000     		.space	2
  233 0030 00000000 		.word	Lips_WriteCompare1
  234 0034 D804     		.short	1240
@@ -352,13 +352,13 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  268 0084 00000000 		.word	Eyelids_WriteCompare2
  269 0088 D804     		.short	1240
  270 008a D804     		.short	1240
- 271 008c 0500     		.short	5
+ 271 008c 0A00     		.short	10
  272 008e 0000     		.space	2
  273 0090 00000000 		.word	LeftEyebrow_WriteCompare1
  274 0094 D804     		.short	1240
  275 0096 D804     		.short	1240
  276 0098 0500     		.short	5
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 7
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 7
 
 
  277 009a 0000     		.space	2
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  331 0042 1A000000 		.4byte	.LASF9
  332 0046 02       		.byte	0x2
  333 0047 3F       		.byte	0x3f
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 8
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 8
 
 
  334 0048 4C000000 		.4byte	0x4c
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  388 00b0 04       		.byte	0x4
  389 00b1 DA020000 		.4byte	.LASF16
  390 00b5 02       		.uleb128 0x2
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 9
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 9
 
 
  391 00b6 04       		.byte	0x4
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  445 0122 00       		.byte	0
  446 0123 0C       		.uleb128 0xc
  447 0124 EE010000 		.4byte	.LASF24
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 10
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 10
 
 
  448 0128 01       		.byte	0x1
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  502 0194 00000000 		.4byte	.LFB63
  503 0198 20000000 		.4byte	.LFE63-.LFB63
  504 019c 01       		.uleb128 0x1
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 11
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 11
 
 
  505 019d 9C       		.byte	0x9c
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  559 021f 01       		.byte	0x1
  560 0220 34       		.byte	0x34
  561 0221 81000000 		.4byte	0x81
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 12
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 12
 
 
  562 0225 AA000000 		.4byte	.LLST4
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  616 0017 0B       		.uleb128 0xb
  617 0018 3E       		.uleb128 0x3e
  618 0019 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 13
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 13
 
 
  619 001a 03       		.uleb128 0x3
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  673 0050 07       		.uleb128 0x7
  674 0051 0D       		.uleb128 0xd
  675 0052 00       		.byte	0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 14
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 14
 
 
  676 0053 03       		.uleb128 0x3
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  730 0089 00       		.byte	0
  731 008a 03       		.uleb128 0x3
  732 008b 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 15
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 15
 
 
  733 008c 1C       		.uleb128 0x1c
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  787 00c3 00       		.byte	0
  788 00c4 10       		.uleb128 0x10
  789 00c5 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 16
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 16
 
 
  790 00c6 01       		.byte	0x1
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  844 0100 00       		.byte	0
  845 0101 13       		.uleb128 0x13
  846 0102 34       		.uleb128 0x34
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 17
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 17
 
 
  847 0103 00       		.byte	0
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  901 0139 17       		.uleb128 0x17
  902 013a 35       		.uleb128 0x35
  903 013b 00       		.byte	0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 18
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 18
 
 
  904 013c 49       		.uleb128 0x49
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  958 0019 00000000 		.4byte	0
  959 001d 00000000 		.4byte	0
  960              	.LLST1:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 19
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 19
 
 
  961 0021 00000000 		.4byte	.LVL2
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  1015 0098 7F       		.sleb128 -1
  1016 0099 3C       		.byte	0x3c
  1017 009a 1E       		.byte	0x1e
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 20
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 20
 
 
  1018 009b 03       		.byte	0x3
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  1068      01010101 
  1069              	.LASF32:
  1070 0000 4559454C 		.ascii	"EYELID_TILT\000"
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 21
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 21
 
 
  1070      49445F54 
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  1096              	.LASF1:
  1097 00b0 756E7369 		.ascii	"unsigned char\000"
  1097      676E6564 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 22
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 22
 
 
  1097      20636861 
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  1115      66666572 
  1115      00
  1116              	.LASF46:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 23
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 23
 
 
  1117 01bd 73657276 		.ascii	"servocontrol.c\000"
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  1143      7400
  1144              	.LASF15:
  1145 0254 63686172 		.ascii	"char\000"
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 24
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 24
 
 
  1145      00
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 1
  1169 02ec 7365745F 		.ascii	"set_smooth_servo_angle\000"
  1169      736D6F6F 
  1169      74685F73 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccPUlLff.s 			page 25
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc23ayQI.s 			page 25
 
 
  1169      6572766F 
