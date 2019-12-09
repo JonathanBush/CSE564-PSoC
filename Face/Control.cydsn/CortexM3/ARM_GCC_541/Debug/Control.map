@@ -1340,32 +1340,32 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x70d0
+.debug_info     0x00000000     0x70d1
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x875 .\CortexM3\ARM_GCC_541\Debug\main.o
  .debug_info    0x00000875      0x264 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
  .debug_info    0x00000ad9      0x314 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
  .debug_info    0x00000ded      0x314 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
- .debug_info    0x00001101      0x6d7 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
- .debug_info    0x000017d8      0x4ee .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_info    0x00001cc6      0x139 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x00001dff      0x3bb .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_info    0x000021ba      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
- .debug_info    0x0000255e      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
- .debug_info    0x00002902      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
- .debug_info    0x00002ca6      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
- .debug_info    0x0000304a      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
- .debug_info    0x000033ee      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
- .debug_info    0x00003792      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
- .debug_info    0x00003b36     0x1374 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
- .debug_info    0x00004eaa      0xa2a .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
- .debug_info    0x000058d4      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
- .debug_info    0x00005c78      0x2d2 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
- .debug_info    0x00005f4a      0x295 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
- .debug_info    0x000061df      0x2d2 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
- .debug_info    0x000064b1       0x82 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
- .debug_info    0x00006533      0x64d .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
- .debug_info    0x00006b80      0x550 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
+ .debug_info    0x00001101      0x6d8 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+ .debug_info    0x000017d9      0x4ee .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00001cc7      0x139 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x00001e00      0x3bb .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_info    0x000021bb      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+ .debug_info    0x0000255f      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+ .debug_info    0x00002903      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+ .debug_info    0x00002ca7      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+ .debug_info    0x0000304b      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+ .debug_info    0x000033ef      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+ .debug_info    0x00003793      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+ .debug_info    0x00003b37     0x1374 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
+ .debug_info    0x00004eab      0xa2a .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
+ .debug_info    0x000058d5      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+ .debug_info    0x00005c79      0x2d2 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+ .debug_info    0x00005f4b      0x295 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+ .debug_info    0x000061e0      0x2d2 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+ .debug_info    0x000064b2       0x82 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
+ .debug_info    0x00006534      0x64d .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
+ .debug_info    0x00006b81      0x550 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
 
 .debug_abbrev   0x00000000     0x1e66
  *(.debug_abbrev)

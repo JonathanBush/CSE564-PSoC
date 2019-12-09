@@ -125,12 +125,11 @@ int main(void)
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     
+    neutral();  // start everything in the neutral position
     
-    neutral();
+    Timer_Start();  // start the timer that drives the asynchronous servo update loop
     
-    Timer_Start();
-    
-    timer_isr_StartEx(periodic_task);
+    timer_isr_StartEx(periodic_task);   // connect the interrupt handlers
     button_isr_StartEx(button_press);
     
     CyDelay(1000);

@@ -60,7 +60,7 @@ void eyeball_set(eyeball_position option) {
            set_smooth_servo_angle(LEFT_EYEBALL_BOTTOM, 0); // Good
             set_smooth_servo_angle(LEFT_EYEBALL_TOP, 50);; // Good
             set_smooth_servo_angle(RIGHT_EYEBALL_BOTTOM, 70); // Good
-            set_smooth_servo_angle(RIGHT_EYEBALL_TOP, 30); // Good
+            set_smooth_servo_angle(RIGHT_EYEBALL_TOP, 60); // Good
             break;
         case EYEBALL_DOWN:
             set_smooth_servo_angle(LEFT_EYEBALL_BOTTOM, 120);
