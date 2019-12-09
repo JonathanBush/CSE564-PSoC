@@ -1,11 +1,16 @@
 /* ========================================
  *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
+ * Functions smooth servo control
+ * 
+ * Developed for CSE 564
+ * Arizona State University
+ * 
+ * Authors:
+ * Jonathan Bush
+ * Zachary Monroe
  *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
+ * Released under the BSE 3-Clause License
+ * 2019
  *
  * ========================================
 */
@@ -20,13 +25,8 @@
 #define MOTOR_CENTER (((MOTOR_HIGH + MOTOR_LOW) / 2))
 #define DEFAULT_STEP 5
     
-typedef struct {
-    void (*write_compare)(uint16);
-    uint16 current;
-    uint16 target;
-    uint16 step;
-} servo_state;
 
+/* identifiers for each servo */
 typedef enum {
     BASE_ROTATE = 0,
     NECK_LEFT,
@@ -48,8 +48,14 @@ typedef enum {
 
 //extern servo_state servo_map[];
 
+/* move the specified servo smoothly to the angle in 0-180 */
 void set_smooth_servo_angle(servo servo_id, uint8 angle);
+
+/* update the servos, moving each one step closer to the target */
 void update_servos();
+
+/* start the PWM components for all servos */
+void start_servos();
     
 #endif
 

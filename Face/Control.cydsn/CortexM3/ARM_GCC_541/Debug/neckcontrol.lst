@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 1
 
 
    1              		.syntax unified
@@ -30,21 +30,27 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
   27              		.file 1 "neckcontrol.c"
    1:neckcontrol.c **** /* ========================================
    2:neckcontrol.c ****  *
-   3:neckcontrol.c ****  * Copyright YOUR COMPANY, THE YEAR
-   4:neckcontrol.c ****  * All Rights Reserved
-   5:neckcontrol.c ****  * UNPUBLISHED, LICENSED SOFTWARE.
-   6:neckcontrol.c ****  *
-   7:neckcontrol.c ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
-   8:neckcontrol.c ****  * WHICH IS THE PROPERTY OF your company.
-   9:neckcontrol.c ****  *
-  10:neckcontrol.c ****  * ========================================
-  11:neckcontrol.c **** */
-  12:neckcontrol.c **** 
-  13:neckcontrol.c **** #include "neckcontrol.h"
-  14:neckcontrol.c **** #include "servocontrol.h"
-  15:neckcontrol.c **** 
-  16:neckcontrol.c **** void rotate_set(neck_rotation option) {
-  28              		.loc 1 16 0
+   3:neckcontrol.c ****  * Function definitions for controlling the neck
+   4:neckcontrol.c ****  * 
+   5:neckcontrol.c ****  * Developed for CSE 564
+   6:neckcontrol.c ****  * Arizona State University
+   7:neckcontrol.c ****  * 
+   8:neckcontrol.c ****  * Authors:
+   9:neckcontrol.c ****  * Jonathan Bush
+  10:neckcontrol.c ****  * Zachary Monroe
+  11:neckcontrol.c ****  * Maurice Ajluni
+  12:neckcontrol.c ****  *
+  13:neckcontrol.c ****  * Released under the BSE 3-Clause License
+  14:neckcontrol.c ****  * 2019
+  15:neckcontrol.c ****  *
+  16:neckcontrol.c ****  * ========================================
+  17:neckcontrol.c **** */
+  18:neckcontrol.c **** 
+  19:neckcontrol.c **** #include "neckcontrol.h"
+  20:neckcontrol.c **** #include "servocontrol.h"
+  21:neckcontrol.c **** 
+  22:neckcontrol.c **** void rotate_set(neck_rotation option) {
+  28              		.loc 1 22 0
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 0
   31              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -52,48 +58,48 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
   33 0000 08B5     		push	{r3, lr}
   34              		.cfi_def_cfa_offset 8
   35              		.cfi_offset 3, -8
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 2
+
+
   36              		.cfi_offset 14, -4
-  17:neckcontrol.c ****     switch (option) {
-  37              		.loc 1 17 0
+  23:neckcontrol.c ****     switch (option) {
+  37              		.loc 1 23 0
   38 0002 0128     		cmp	r0, #1
   39 0004 08D0     		beq	.L3
   40 0006 10B1     		cbz	r0, .L4
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 2
-
-
   41 0008 0228     		cmp	r0, #2
   42 000a 0AD0     		beq	.L5
   43 000c 08BD     		pop	{r3, pc}
   44              	.L4:
-  18:neckcontrol.c ****         case NECK_ROTATE_LEFT:
-  19:neckcontrol.c ****             set_smooth_servo_angle(BASE_ROTATE, 90);
-  45              		.loc 1 19 0
+  24:neckcontrol.c ****         case NECK_ROTATE_LEFT:
+  25:neckcontrol.c ****             set_smooth_servo_angle(BASE_ROTATE, 90);
+  45              		.loc 1 25 0
   46 000e 5A21     		movs	r1, #90
   47 0010 0020     		movs	r0, #0
   48              	.LVL1:
   49 0012 FFF7FEFF 		bl	set_smooth_servo_angle
   50              	.LVL2:
-  20:neckcontrol.c ****             break;
-  51              		.loc 1 20 0
+  26:neckcontrol.c ****             break;
+  51              		.loc 1 26 0
   52 0016 08BD     		pop	{r3, pc}
   53              	.LVL3:
   54              	.L3:
-  21:neckcontrol.c ****         case NECK_ROTATE_CENTER:
-  22:neckcontrol.c ****             set_smooth_servo_angle(BASE_ROTATE, 135);
-  55              		.loc 1 22 0
+  27:neckcontrol.c ****         case NECK_ROTATE_CENTER:
+  28:neckcontrol.c ****             set_smooth_servo_angle(BASE_ROTATE, 135);
+  55              		.loc 1 28 0
   56 0018 8721     		movs	r1, #135
   57 001a 0020     		movs	r0, #0
   58              	.LVL4:
   59 001c FFF7FEFF 		bl	set_smooth_servo_angle
   60              	.LVL5:
-  23:neckcontrol.c ****             break;        
-  61              		.loc 1 23 0
+  29:neckcontrol.c ****             break;        
+  61              		.loc 1 29 0
   62 0020 08BD     		pop	{r3, pc}
   63              	.LVL6:
   64              	.L5:
-  24:neckcontrol.c ****         case NECK_ROTATE_RIGHT:
-  25:neckcontrol.c ****             set_smooth_servo_angle(BASE_ROTATE, 180);
-  65              		.loc 1 25 0
+  30:neckcontrol.c ****         case NECK_ROTATE_RIGHT:
+  31:neckcontrol.c ****             set_smooth_servo_angle(BASE_ROTATE, 180);
+  65              		.loc 1 31 0
   66 0022 B421     		movs	r1, #180
   67 0024 0020     		movs	r0, #0
   68              	.LVL7:
@@ -111,17 +117,17 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
   80              		.type	tilt_set, %function
   81              	tilt_set:
   82              	.LFB64:
-  26:neckcontrol.c ****             break;
-  27:neckcontrol.c ****         default:
-  28:neckcontrol.c ****             break;
-  29:neckcontrol.c ****     }
-  30:neckcontrol.c **** }
-  31:neckcontrol.c **** 
-  32:neckcontrol.c **** void tilt_set(head_tilt option) {
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 3
+  32:neckcontrol.c ****             break;
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 3
 
 
-  83              		.loc 1 32 0
+  33:neckcontrol.c ****         default:
+  34:neckcontrol.c ****             break;
+  35:neckcontrol.c ****     }
+  36:neckcontrol.c **** }
+  37:neckcontrol.c **** 
+  38:neckcontrol.c **** void tilt_set(head_tilt option) {
+  83              		.loc 1 38 0
   84              		.cfi_startproc
   85              		@ args = 0, pretend = 0, frame = 0
   86              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -130,8 +136,8 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
   89              		.cfi_def_cfa_offset 8
   90              		.cfi_offset 3, -8
   91              		.cfi_offset 14, -4
-  33:neckcontrol.c ****     switch (option) {
-  92              		.loc 1 33 0
+  39:neckcontrol.c ****     switch (option) {
+  92              		.loc 1 39 0
   93 0002 0428     		cmp	r0, #4
   94 0004 30D8     		bhi	.L7
   95 0006 DFE800F0 		tbb	[pc, r0]
@@ -143,104 +149,104 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  101 000e 27       		.byte	(.L14-.L10)/2
  102 000f 00       		.p2align 1
  103              	.L12:
-  34:neckcontrol.c ****         case HEAD_TILT_RIGHT:
-  35:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 140);
- 104              		.loc 1 35 0
+  40:neckcontrol.c ****         case HEAD_TILT_RIGHT:
+  41:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 140);
+ 104              		.loc 1 41 0
  105 0010 8C21     		movs	r1, #140
  106 0012 0120     		movs	r0, #1
  107              	.LVL10:
  108 0014 FFF7FEFF 		bl	set_smooth_servo_angle
  109              	.LVL11:
-  36:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 120);
- 110              		.loc 1 36 0
+  42:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 120);
+ 110              		.loc 1 42 0
  111 0018 7821     		movs	r1, #120
  112 001a 0220     		movs	r0, #2
  113 001c FFF7FEFF 		bl	set_smooth_servo_angle
  114              	.LVL12:
-  37:neckcontrol.c ****             break;
- 115              		.loc 1 37 0
+  43:neckcontrol.c ****             break;
+ 115              		.loc 1 43 0
  116 0020 08BD     		pop	{r3, pc}
  117              	.LVL13:
  118              	.L11:
-  38:neckcontrol.c ****         case HEAD_TILT_CENTER:
-  39:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 90);
- 119              		.loc 1 39 0
+  44:neckcontrol.c ****         case HEAD_TILT_CENTER:
+  45:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 90);
+ 119              		.loc 1 45 0
  120 0022 5A21     		movs	r1, #90
  121 0024 0120     		movs	r0, #1
  122              	.LVL14:
  123 0026 FFF7FEFF 		bl	set_smooth_servo_angle
  124              	.LVL15:
-  40:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 100);
- 125              		.loc 1 40 0
+  46:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 100);
+ 125              		.loc 1 46 0
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 4
+
+
  126 002a 6421     		movs	r1, #100
  127 002c 0220     		movs	r0, #2
  128 002e FFF7FEFF 		bl	set_smooth_servo_angle
  129              	.LVL16:
-  41:neckcontrol.c ****             break;
- 130              		.loc 1 41 0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 4
-
-
+  47:neckcontrol.c ****             break;
+ 130              		.loc 1 47 0
  131 0032 08BD     		pop	{r3, pc}
  132              	.LVL17:
  133              	.L9:
-  42:neckcontrol.c ****         case HEAD_TILT_LEFT:
-  43:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 80);
- 134              		.loc 1 43 0
+  48:neckcontrol.c ****         case HEAD_TILT_LEFT:
+  49:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 80);
+ 134              		.loc 1 49 0
  135 0034 5021     		movs	r1, #80
  136 0036 0120     		movs	r0, #1
  137              	.LVL18:
  138 0038 FFF7FEFF 		bl	set_smooth_servo_angle
  139              	.LVL19:
-  44:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 70);
- 140              		.loc 1 44 0
+  50:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 70);
+ 140              		.loc 1 50 0
  141 003c 4621     		movs	r1, #70
  142 003e 0220     		movs	r0, #2
  143 0040 FFF7FEFF 		bl	set_smooth_servo_angle
  144              	.LVL20:
-  45:neckcontrol.c ****             break;
- 145              		.loc 1 45 0
+  51:neckcontrol.c ****             break;
+ 145              		.loc 1 51 0
  146 0044 08BD     		pop	{r3, pc}
  147              	.LVL21:
  148              	.L13:
-  46:neckcontrol.c ****         case HEAD_TILT_BACK:
-  47:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 60);
- 149              		.loc 1 47 0
+  52:neckcontrol.c ****         case HEAD_TILT_BACK:
+  53:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 60);
+ 149              		.loc 1 53 0
  150 0046 3C21     		movs	r1, #60
  151 0048 0120     		movs	r0, #1
  152              	.LVL22:
  153 004a FFF7FEFF 		bl	set_smooth_servo_angle
  154              	.LVL23:
-  48:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 130);
- 155              		.loc 1 48 0
+  54:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 130);
+ 155              		.loc 1 54 0
  156 004e 8221     		movs	r1, #130
  157 0050 0220     		movs	r0, #2
  158 0052 FFF7FEFF 		bl	set_smooth_servo_angle
  159              	.LVL24:
-  49:neckcontrol.c ****             break;
- 160              		.loc 1 49 0
+  55:neckcontrol.c ****             break;
+ 160              		.loc 1 55 0
  161 0056 08BD     		pop	{r3, pc}
  162              	.LVL25:
  163              	.L14:
-  50:neckcontrol.c ****         case HEAD_TILT_FORWARD:
-  51:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 160);
- 164              		.loc 1 51 0
+  56:neckcontrol.c ****         case HEAD_TILT_FORWARD:
+  57:neckcontrol.c ****             set_smooth_servo_angle(NECK_LEFT, 160);
+ 164              		.loc 1 57 0
  165 0058 A021     		movs	r1, #160
  166 005a 0120     		movs	r0, #1
  167              	.LVL26:
  168 005c FFF7FEFF 		bl	set_smooth_servo_angle
  169              	.LVL27:
-  52:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 30);
- 170              		.loc 1 52 0
+  58:neckcontrol.c ****             set_smooth_servo_angle(NECK_RIGHT, 30);
+ 170              		.loc 1 58 0
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 5
+
+
  171 0060 1E21     		movs	r1, #30
  172 0062 0220     		movs	r0, #2
  173 0064 FFF7FEFF 		bl	set_smooth_servo_angle
  174              	.LVL28:
  175              	.L7:
  176 0068 08BD     		pop	{r3, pc}
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 5
-
-
  177              		.cfi_endproc
  178              	.LFE64:
  179              		.size	tilt_set, .-tilt_set
@@ -260,8 +266,8 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  193 000b 01       		.uleb128 0x1
  194 000c 74000000 		.4byte	.LASF44
  195 0010 0C       		.byte	0xc
- 196 0011 42020000 		.4byte	.LASF45
- 197 0015 C7020000 		.4byte	.LASF46
+ 196 0011 7A020000 		.4byte	.LASF45
+ 197 0015 89010000 		.4byte	.LASF46
  198 0019 00000000 		.4byte	.Ldebug_ranges0+0
  199 001d 00000000 		.4byte	0
  200 0021 00000000 		.4byte	.Ldebug_line0
@@ -269,13 +275,13 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  202 0026 01       		.byte	0x1
  203 0027 44000000 		.4byte	0x44
  204 002b 02       		.byte	0x2
- 205 002c 12       		.byte	0x12
+ 205 002c 16       		.byte	0x16
  206 002d 44000000 		.4byte	0x44
  207 0031 03       		.uleb128 0x3
- 208 0032 93010000 		.4byte	.LASF0
+ 208 0032 CB010000 		.4byte	.LASF0
  209 0036 00       		.byte	0
  210 0037 03       		.uleb128 0x3
- 211 0038 DC010000 		.4byte	.LASF1
+ 211 0038 14020000 		.4byte	.LASF1
  212 003c 01       		.byte	0x1
  213 003d 03       		.uleb128 0x3
  214 003e 65010000 		.4byte	.LASF2
@@ -288,46 +294,46 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  221 004b 05       		.uleb128 0x5
  222 004c 16010000 		.4byte	.LASF8
  223 0050 02       		.byte	0x2
- 224 0051 16       		.byte	0x16
+ 224 0051 1A       		.byte	0x1a
  225 0052 25000000 		.4byte	0x25
  226 0056 02       		.uleb128 0x2
  227 0057 01       		.byte	0x1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 6
+
+
  228 0058 44000000 		.4byte	0x44
  229 005c 02       		.byte	0x2
- 230 005d 18       		.byte	0x18
+ 230 005d 1C       		.byte	0x1c
  231 005e 81000000 		.4byte	0x81
  232 0062 03       		.uleb128 0x3
- 233 0063 90020000 		.4byte	.LASF3
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 6
-
-
+ 233 0063 C8020000 		.4byte	.LASF3
  234 0067 00       		.byte	0
  235 0068 03       		.uleb128 0x3
- 236 0069 12030000 		.4byte	.LASF4
+ 236 0069 16030000 		.4byte	.LASF4
  237 006d 01       		.byte	0x1
  238 006e 03       		.uleb128 0x3
- 239 006f 80020000 		.4byte	.LASF5
+ 239 006f B8020000 		.4byte	.LASF5
  240 0073 02       		.byte	0x2
  241 0074 03       		.uleb128 0x3
- 242 0075 EF010000 		.4byte	.LASF6
+ 242 0075 27020000 		.4byte	.LASF6
  243 0079 03       		.byte	0x3
  244 007a 03       		.uleb128 0x3
- 245 007b 2A030000 		.4byte	.LASF7
+ 245 007b 2E030000 		.4byte	.LASF7
  246 007f 04       		.byte	0x4
  247 0080 00       		.byte	0
  248 0081 05       		.uleb128 0x5
  249 0082 45000000 		.4byte	.LASF9
  250 0086 02       		.byte	0x2
- 251 0087 1E       		.byte	0x1e
+ 251 0087 22       		.byte	0x22
  252 0088 56000000 		.4byte	0x56
  253 008c 04       		.uleb128 0x4
  254 008d 01       		.byte	0x1
  255 008e 06       		.byte	0x6
- 256 008f 0A020000 		.4byte	.LASF11
+ 256 008f 42020000 		.4byte	.LASF11
  257 0093 04       		.uleb128 0x4
  258 0094 02       		.byte	0x2
  259 0095 05       		.byte	0x5
- 260 0096 89010000 		.4byte	.LASF12
+ 260 0096 C1010000 		.4byte	.LASF12
  261 009a 04       		.uleb128 0x4
  262 009b 02       		.byte	0x2
  263 009c 07       		.byte	0x7
@@ -340,7 +346,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  270 00ac 04       		.uleb128 0x4
  271 00ad 04       		.byte	0x4
  272 00ae 05       		.byte	0x5
- 273 00af B2020000 		.4byte	.LASF15
+ 273 00af EA020000 		.4byte	.LASF15
  274 00b3 04       		.uleb128 0x4
  275 00b4 04       		.byte	0x4
  276 00b5 07       		.byte	0x7
@@ -348,24 +354,24 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  278 00ba 04       		.uleb128 0x4
  279 00bb 08       		.byte	0x8
  280 00bc 05       		.byte	0x5
- 281 00bd 34020000 		.4byte	.LASF17
+ 281 00bd 6C020000 		.4byte	.LASF17
  282 00c1 04       		.uleb128 0x4
  283 00c2 08       		.byte	0x8
  284 00c3 07       		.byte	0x7
- 285 00c4 BB010000 		.4byte	.LASF18
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 7
+
+
+ 285 00c4 F3010000 		.4byte	.LASF18
  286 00c8 06       		.uleb128 0x6
  287 00c9 04       		.byte	0x4
  288 00ca 05       		.byte	0x5
  289 00cb 696E7400 		.ascii	"int\000"
  290 00cf 04       		.uleb128 0x4
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 7
-
-
  291 00d0 04       		.byte	0x4
  292 00d1 07       		.byte	0x7
- 293 00d2 AE010000 		.4byte	.LASF19
+ 293 00d2 E6010000 		.4byte	.LASF19
  294 00d6 05       		.uleb128 0x5
- 295 00d7 23020000 		.4byte	.LASF20
+ 295 00d7 5B020000 		.4byte	.LASF20
  296 00db 04       		.byte	0x4
  297 00dc 2C       		.byte	0x2c
  298 00dd A1000000 		.4byte	0xa1
@@ -380,15 +386,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  307 00ef 04       		.uleb128 0x4
  308 00f0 01       		.byte	0x1
  309 00f1 08       		.byte	0x8
- 310 00f2 50020000 		.4byte	.LASF23
+ 310 00f2 88020000 		.4byte	.LASF23
  311 00f6 04       		.uleb128 0x4
  312 00f7 08       		.byte	0x8
  313 00f8 04       		.byte	0x4
- 314 00f9 BB020000 		.4byte	.LASF24
+ 314 00f9 F3020000 		.4byte	.LASF24
  315 00fd 04       		.uleb128 0x4
  316 00fe 04       		.byte	0x4
  317 00ff 07       		.byte	0x7
- 318 0100 2B020000 		.4byte	.LASF25
+ 318 0100 63020000 		.4byte	.LASF25
  319 0104 02       		.uleb128 0x2
  320 0105 01       		.byte	0x1
  321 0106 44000000 		.4byte	0x44
@@ -396,10 +402,10 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  323 010b 1E       		.byte	0x1e
  324 010c 71010000 		.4byte	0x171
  325 0110 03       		.uleb128 0x3
- 326 0111 FE010000 		.4byte	.LASF26
+ 326 0111 36020000 		.4byte	.LASF26
  327 0115 00       		.byte	0
  328 0116 03       		.uleb128 0x3
- 329 0117 A4010000 		.4byte	.LASF27
+ 329 0117 DC010000 		.4byte	.LASF27
  330 011b 01       		.byte	0x1
  331 011c 03       		.uleb128 0x3
  332 011d 28000000 		.4byte	.LASF28
@@ -408,31 +414,31 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  335 0123 4A415700 		.ascii	"JAW\000"
  336 0127 03       		.byte	0x3
  337 0128 03       		.uleb128 0x3
- 338 0129 77020000 		.4byte	.LASF29
+ 338 0129 AF020000 		.4byte	.LASF29
  339 012d 04       		.byte	0x4
  340 012e 03       		.uleb128 0x3
- 341 012f D2010000 		.4byte	.LASF30
+ 341 012f 0A020000 		.4byte	.LASF30
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 8
+
+
  342 0133 05       		.byte	0x5
  343 0134 03       		.uleb128 0x3
  344 0135 4F000000 		.4byte	.LASF31
  345 0139 06       		.byte	0x6
  346 013a 03       		.uleb128 0x3
- 347 013b 3C030000 		.4byte	.LASF32
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 8
-
-
+ 347 013b 40030000 		.4byte	.LASF32
  348 013f 07       		.byte	0x7
  349 0140 03       		.uleb128 0x3
  350 0141 0C000000 		.4byte	.LASF33
  351 0145 08       		.byte	0x8
  352 0146 03       		.uleb128 0x3
- 353 0147 62020000 		.4byte	.LASF34
+ 353 0147 9A020000 		.4byte	.LASF34
  354 014b 09       		.byte	0x9
  355 014c 03       		.uleb128 0x3
  356 014d 00000000 		.4byte	.LASF35
  357 0151 0A       		.byte	0xa
  358 0152 03       		.uleb128 0x3
- 359 0153 55020000 		.4byte	.LASF36
+ 359 0153 8D020000 		.4byte	.LASF36
  360 0157 0B       		.byte	0xb
  361 0158 03       		.uleb128 0x3
  362 0159 4A010000 		.4byte	.LASF37
@@ -441,7 +447,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  365 015f 37010000 		.4byte	.LASF38
  366 0163 0D       		.byte	0xd
  367 0164 03       		.uleb128 0x3
- 368 0165 9F020000 		.4byte	.LASF39
+ 368 0165 D7020000 		.4byte	.LASF39
  369 0169 0E       		.byte	0xe
  370 016a 03       		.uleb128 0x3
  371 016b 02010000 		.4byte	.LASF40
@@ -450,16 +456,16 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  374 0171 08       		.uleb128 0x8
  375 0172 33000000 		.4byte	.LASF41
  376 0176 01       		.byte	0x1
- 377 0177 10       		.byte	0x10
+ 377 0177 16       		.byte	0x16
  378 0178 00000000 		.4byte	.LFB63
  379 017c 2C000000 		.4byte	.LFE63-.LFB63
  380 0180 01       		.uleb128 0x1
  381 0181 9C       		.byte	0x9c
  382 0182 DD010000 		.4byte	0x1dd
  383 0186 09       		.uleb128 0x9
- 384 0187 23030000 		.4byte	.LASF43
+ 384 0187 27030000 		.4byte	.LASF43
  385 018b 01       		.byte	0x1
- 386 018c 10       		.byte	0x10
+ 386 018c 16       		.byte	0x16
  387 018d 4B000000 		.4byte	0x4b
  388 0191 00000000 		.4byte	.LLST0
  389 0195 0A       		.uleb128 0xa
@@ -472,15 +478,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  396 01a5 01       		.uleb128 0x1
  397 01a6 30       		.byte	0x30
  398 01a7 0B       		.uleb128 0xb
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 9
+
+
  399 01a8 01       		.uleb128 0x1
  400 01a9 51       		.byte	0x51
  401 01aa 02       		.uleb128 0x2
  402 01ab 08       		.byte	0x8
  403 01ac 5A       		.byte	0x5a
  404 01ad 00       		.byte	0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 9
-
-
  405 01ae 0A       		.uleb128 0xa
  406 01af 20000000 		.4byte	.LVL5
  407 01b3 08030000 		.4byte	0x308
@@ -516,31 +522,31 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  437 01dd 08       		.uleb128 0x8
  438 01de 5C010000 		.4byte	.LASF42
  439 01e2 01       		.byte	0x1
- 440 01e3 20       		.byte	0x20
+ 440 01e3 26       		.byte	0x26
  441 01e4 00000000 		.4byte	.LFB64
  442 01e8 6A000000 		.4byte	.LFE64-.LFB64
  443 01ec 01       		.uleb128 0x1
  444 01ed 9C       		.byte	0x9c
  445 01ee F7020000 		.4byte	0x2f7
  446 01f2 09       		.uleb128 0x9
- 447 01f3 23030000 		.4byte	.LASF43
+ 447 01f3 27030000 		.4byte	.LASF43
  448 01f7 01       		.byte	0x1
- 449 01f8 20       		.byte	0x20
+ 449 01f8 26       		.byte	0x26
  450 01f9 81000000 		.4byte	0x81
  451 01fd 53000000 		.4byte	.LLST1
  452 0201 0A       		.uleb128 0xa
  453 0202 18000000 		.4byte	.LVL11
  454 0206 08030000 		.4byte	0x308
  455 020a 1A020000 		.4byte	0x21a
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 10
+
+
  456 020e 0B       		.uleb128 0xb
  457 020f 01       		.uleb128 0x1
  458 0210 50       		.byte	0x50
  459 0211 01       		.uleb128 0x1
  460 0212 31       		.byte	0x31
  461 0213 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 10
-
-
  462 0214 01       		.uleb128 0x1
  463 0215 51       		.byte	0x51
  464 0216 02       		.uleb128 0x2
@@ -592,15 +598,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  510 025f 01       		.uleb128 0x1
  511 0260 51       		.byte	0x51
  512 0261 02       		.uleb128 0x2
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 11
+
+
  513 0262 08       		.byte	0x8
  514 0263 64       		.byte	0x64
  515 0264 00       		.byte	0
  516 0265 0A       		.uleb128 0xa
  517 0266 3C000000 		.4byte	.LVL19
  518 026a 08030000 		.4byte	0x308
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 11
-
-
  519 026e 7E020000 		.4byte	0x27e
  520 0272 0B       		.uleb128 0xb
  521 0273 01       		.uleb128 0x1
@@ -652,15 +658,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  567 02b9 C9020000 		.4byte	0x2c9
  568 02bd 0B       		.uleb128 0xb
  569 02be 01       		.uleb128 0x1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 12
+
+
  570 02bf 50       		.byte	0x50
  571 02c0 01       		.uleb128 0x1
  572 02c1 32       		.byte	0x32
  573 02c2 0B       		.uleb128 0xb
  574 02c3 01       		.uleb128 0x1
  575 02c4 51       		.byte	0x51
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 12
-
-
  576 02c5 02       		.uleb128 0x2
  577 02c6 09       		.byte	0x9
  578 02c7 82       		.byte	0x82
@@ -697,30 +703,30 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  609 02f5 00       		.byte	0
  610 02f6 00       		.byte	0
  611 02f7 0D       		.uleb128 0xd
- 612 02f8 16020000 		.4byte	.LASF47
+ 612 02f8 4E020000 		.4byte	.LASF47
  613 02fc 06       		.byte	0x6
  614 02fd 1207     		.2byte	0x712
  615 02ff 03030000 		.4byte	0x303
  616 0303 0E       		.uleb128 0xe
  617 0304 D6000000 		.4byte	0xd6
  618 0308 0F       		.uleb128 0xf
- 619 0309 FB020000 		.4byte	.LASF48
- 620 030d FB020000 		.4byte	.LASF48
+ 619 0309 FF020000 		.4byte	.LASF48
+ 620 030d FF020000 		.4byte	.LASF48
  621 0311 05       		.byte	0x5
- 622 0312 33       		.byte	0x33
+ 622 0312 34       		.byte	0x34
  623 0313 00       		.byte	0
  624              		.section	.debug_abbrev,"",%progbits
  625              	.Ldebug_abbrev0:
  626 0000 01       		.uleb128 0x1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 13
+
+
  627 0001 11       		.uleb128 0x11
  628 0002 01       		.byte	0x1
  629 0003 25       		.uleb128 0x25
  630 0004 0E       		.uleb128 0xe
  631 0005 13       		.uleb128 0x13
  632 0006 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 13
-
-
  633 0007 03       		.uleb128 0x3
  634 0008 0E       		.uleb128 0xe
  635 0009 1B       		.uleb128 0x1b
@@ -772,15 +778,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  681 0037 16       		.uleb128 0x16
  682 0038 00       		.byte	0
  683 0039 03       		.uleb128 0x3
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 14
+
+
  684 003a 0E       		.uleb128 0xe
  685 003b 3A       		.uleb128 0x3a
  686 003c 0B       		.uleb128 0xb
  687 003d 3B       		.uleb128 0x3b
  688 003e 0B       		.uleb128 0xb
  689 003f 49       		.uleb128 0x49
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 14
-
-
  690 0040 13       		.uleb128 0x13
  691 0041 00       		.byte	0
  692 0042 00       		.byte	0
@@ -832,15 +838,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  738 0071 09       		.uleb128 0x9
  739 0072 05       		.uleb128 0x5
  740 0073 00       		.byte	0
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 15
+
+
  741 0074 03       		.uleb128 0x3
  742 0075 0E       		.uleb128 0xe
  743 0076 3A       		.uleb128 0x3a
  744 0077 0B       		.uleb128 0xb
  745 0078 3B       		.uleb128 0x3b
  746 0079 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 15
-
-
  747 007a 49       		.uleb128 0x49
  748 007b 13       		.uleb128 0x13
  749 007c 02       		.uleb128 0x2
@@ -892,15 +898,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  795 00b1 3C       		.uleb128 0x3c
  796 00b2 19       		.uleb128 0x19
  797 00b3 00       		.byte	0
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 16
+
+
  798 00b4 00       		.byte	0
  799 00b5 0E       		.uleb128 0xe
  800 00b6 35       		.uleb128 0x35
  801 00b7 00       		.byte	0
  802 00b8 49       		.uleb128 0x49
  803 00b9 13       		.uleb128 0x13
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 16
-
-
  804 00ba 00       		.byte	0
  805 00bb 00       		.byte	0
  806 00bc 0F       		.uleb128 0xf
@@ -952,15 +958,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  852 003c 50       		.byte	0x50
  853 003d 26000000 		.4byte	.LVL7
  854 0041 2C000000 		.4byte	.LFE63
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 17
+
+
  855 0045 0400     		.2byte	0x4
  856 0047 F3       		.byte	0xf3
  857 0048 01       		.uleb128 0x1
  858 0049 50       		.byte	0x50
  859 004a 9F       		.byte	0x9f
  860 004b 00000000 		.4byte	0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 17
-
-
  861 004f 00000000 		.4byte	0
  862              	.LLST1:
  863 0053 00000000 		.4byte	.LVL9
@@ -1012,15 +1018,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  909 00bf 0100     		.2byte	0x1
  910 00c1 50       		.byte	0x50
  911 00c2 5C000000 		.4byte	.LVL26
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 18
+
+
  912 00c6 6A000000 		.4byte	.LFE64
  913 00ca 0400     		.2byte	0x4
  914 00cc F3       		.byte	0xf3
  915 00cd 01       		.uleb128 0x1
  916 00ce 50       		.byte	0x50
  917 00cf 9F       		.byte	0x9f
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 18
-
-
  918 00d0 00000000 		.4byte	0
  919 00d4 00000000 		.4byte	0
  920              		.section	.debug_aranges,"",%progbits
@@ -1072,15 +1078,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  952      485400
  953              	.LASF41:
  954 0033 726F7461 		.ascii	"rotate_set\000"
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 19
+
+
  954      74655F73 
  954      657400
  955              	.LASF22:
  956 003e 646F7562 		.ascii	"double\000"
  956      6C6500
  957              	.LASF9:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 19
-
-
  958 0045 68656164 		.ascii	"head_tilt\000"
  958      5F74696C 
  958      7400
@@ -1132,15 +1138,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  974      65642069 
  974      6E7400
  975              	.LASF38:
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 20
+
+
  976 0137 4C454654 		.ascii	"LEFT_EYEBROW_RIGHT\000"
  976      5F455945 
  976      42524F57 
  976      5F524947 
  976      485400
  977              	.LASF37:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 20
-
-
  978 014a 4C454654 		.ascii	"LEFT_EYEBROW_LEFT\000"
  978      5F455945 
  978      42524F57 
@@ -1162,155 +1168,159 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 1
  984      69676E65 
  984      6420696E 
  984      7400
- 985              	.LASF12:
- 986 0189 73686F72 		.ascii	"short int\000"
- 986      7420696E 
- 986      7400
- 987              	.LASF0:
- 988 0193 4E45434B 		.ascii	"NECK_ROTATE_LEFT\000"
- 988      5F524F54 
- 988      4154455F 
- 988      4C454654 
- 988      00
- 989              	.LASF27:
- 990 01a4 4E45434B 		.ascii	"NECK_LEFT\000"
- 990      5F4C4546 
- 990      5400
- 991              	.LASF19:
- 992 01ae 756E7369 		.ascii	"unsigned int\000"
- 992      676E6564 
- 992      20696E74 
- 992      00
- 993              	.LASF18:
- 994 01bb 6C6F6E67 		.ascii	"long long unsigned int\000"
- 994      206C6F6E 
- 994      6720756E 
- 994      7369676E 
- 994      65642069 
- 995              	.LASF30:
- 996 01d2 4C49505F 		.ascii	"LIP_RIGHT\000"
- 996      52494748 
- 996      5400
- 997              	.LASF1:
- 998 01dc 4E45434B 		.ascii	"NECK_ROTATE_CENTER\000"
- 998      5F524F54 
- 998      4154455F 
- 998      43454E54 
- 998      455200
- 999              	.LASF6:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 21
+ 985              	.LASF46:
+ 986 0189 433A5C55 		.ascii	"C:\\Users\\jon\\development\\CSE564-PSoC\\Face\\Con"
+ 986      73657273 
+ 986      5C6A6F6E 
+ 986      5C646576 
+ 986      656C6F70 
+ 987 01b6 74726F6C 		.ascii	"trol.cydsn\000"
+ 987      2E637964 
+ 987      736E00
+ 988              	.LASF12:
+ 989 01c1 73686F72 		.ascii	"short int\000"
+ 989      7420696E 
+ 989      7400
+ 990              	.LASF0:
+ 991 01cb 4E45434B 		.ascii	"NECK_ROTATE_LEFT\000"
+ 991      5F524F54 
+ 991      4154455F 
+ 991      4C454654 
+ 991      00
+ 992              	.LASF27:
+ 993 01dc 4E45434B 		.ascii	"NECK_LEFT\000"
+ 993      5F4C4546 
+ 993      5400
+ 994              	.LASF19:
+ 995 01e6 756E7369 		.ascii	"unsigned int\000"
+ 995      676E6564 
+ 995      20696E74 
+ 995      00
+ 996              	.LASF18:
+ 997 01f3 6C6F6E67 		.ascii	"long long unsigned int\000"
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 21
 
 
- 1000 01ef 48454144 		.ascii	"HEAD_TILT_BACK\000"
- 1000      5F54494C 
- 1000      545F4241 
- 1000      434B00
- 1001              	.LASF26:
- 1002 01fe 42415345 		.ascii	"BASE_ROTATE\000"
- 1002      5F524F54 
- 1002      41544500 
- 1003              	.LASF11:
- 1004 020a 7369676E 		.ascii	"signed char\000"
- 1004      65642063 
- 1004      68617200 
- 1005              	.LASF47:
- 1006 0216 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 1006      52784275 
- 1006      66666572 
- 1006      00
- 1007              	.LASF20:
- 1008 0223 696E7433 		.ascii	"int32_t\000"
- 1008      325F7400 
- 1009              	.LASF25:
- 1010 022b 73697A65 		.ascii	"sizetype\000"
- 1010      74797065 
- 1010      00
- 1011              	.LASF17:
- 1012 0234 6C6F6E67 		.ascii	"long long int\000"
- 1012      206C6F6E 
- 1012      6720696E 
- 1012      7400
- 1013              	.LASF45:
- 1014 0242 6E65636B 		.ascii	"neckcontrol.c\000"
- 1014      636F6E74 
- 1014      726F6C2E 
- 1014      6300
- 1015              	.LASF23:
- 1016 0250 63686172 		.ascii	"char\000"
- 1016      00
- 1017              	.LASF36:
- 1018 0255 4559454C 		.ascii	"EYELID_CLOSE\000"
- 1018      49445F43 
- 1018      4C4F5345 
- 1018      00
- 1019              	.LASF34:
- 1020 0262 52494748 		.ascii	"RIGHT_EYEBALL_BOTTOM\000"
- 1020      545F4559 
- 1020      4542414C 
- 1020      4C5F424F 
- 1020      54544F4D 
- 1021              	.LASF29:
- 1022 0277 4C49505F 		.ascii	"LIP_LEFT\000"
- 1022      4C454654 
- 1022      00
- 1023              	.LASF5:
- 1024 0280 48454144 		.ascii	"HEAD_TILT_RIGHT\000"
- 1024      5F54494C 
- 1024      545F5249 
- 1024      47485400 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cc79xHD6.s 			page 22
+ 997      206C6F6E 
+ 997      6720756E 
+ 997      7369676E 
+ 997      65642069 
+ 998              	.LASF30:
+ 999 020a 4C49505F 		.ascii	"LIP_RIGHT\000"
+ 999      52494748 
+ 999      5400
+ 1000              	.LASF1:
+ 1001 0214 4E45434B 		.ascii	"NECK_ROTATE_CENTER\000"
+ 1001      5F524F54 
+ 1001      4154455F 
+ 1001      43454E54 
+ 1001      455200
+ 1002              	.LASF6:
+ 1003 0227 48454144 		.ascii	"HEAD_TILT_BACK\000"
+ 1003      5F54494C 
+ 1003      545F4241 
+ 1003      434B00
+ 1004              	.LASF26:
+ 1005 0236 42415345 		.ascii	"BASE_ROTATE\000"
+ 1005      5F524F54 
+ 1005      41544500 
+ 1006              	.LASF11:
+ 1007 0242 7369676E 		.ascii	"signed char\000"
+ 1007      65642063 
+ 1007      68617200 
+ 1008              	.LASF47:
+ 1009 024e 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1009      52784275 
+ 1009      66666572 
+ 1009      00
+ 1010              	.LASF20:
+ 1011 025b 696E7433 		.ascii	"int32_t\000"
+ 1011      325F7400 
+ 1012              	.LASF25:
+ 1013 0263 73697A65 		.ascii	"sizetype\000"
+ 1013      74797065 
+ 1013      00
+ 1014              	.LASF17:
+ 1015 026c 6C6F6E67 		.ascii	"long long int\000"
+ 1015      206C6F6E 
+ 1015      6720696E 
+ 1015      7400
+ 1016              	.LASF45:
+ 1017 027a 6E65636B 		.ascii	"neckcontrol.c\000"
+ 1017      636F6E74 
+ 1017      726F6C2E 
+ 1017      6300
+ 1018              	.LASF23:
+ 1019 0288 63686172 		.ascii	"char\000"
+ 1019      00
+ 1020              	.LASF36:
+ 1021 028d 4559454C 		.ascii	"EYELID_CLOSE\000"
+ 1021      49445F43 
+ 1021      4C4F5345 
+ 1021      00
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 22
 
 
- 1025              	.LASF3:
- 1026 0290 48454144 		.ascii	"HEAD_TILT_LEFT\000"
- 1026      5F54494C 
- 1026      545F4C45 
- 1026      465400
- 1027              	.LASF39:
- 1028 029f 52494748 		.ascii	"RIGHT_EYEBROW_LEFT\000"
- 1028      545F4559 
- 1028      4542524F 
- 1028      575F4C45 
- 1028      465400
- 1029              	.LASF15:
- 1030 02b2 6C6F6E67 		.ascii	"long int\000"
- 1030      20696E74 
- 1030      00
- 1031              	.LASF24:
- 1032 02bb 6C6F6E67 		.ascii	"long double\000"
- 1032      20646F75 
- 1032      626C6500 
- 1033              	.LASF46:
- 1034 02c7 433A5C55 		.ascii	"C:\\Users\\jon\\Desktop\\CSE564-PSoC\\Face\\Control"
- 1034      73657273 
- 1034      5C6A6F6E 
- 1034      5C446573 
- 1034      6B746F70 
- 1035 02f4 2E637964 		.ascii	".cydsn\000"
- 1035      736E00
+ 1022              	.LASF34:
+ 1023 029a 52494748 		.ascii	"RIGHT_EYEBALL_BOTTOM\000"
+ 1023      545F4559 
+ 1023      4542414C 
+ 1023      4C5F424F 
+ 1023      54544F4D 
+ 1024              	.LASF29:
+ 1025 02af 4C49505F 		.ascii	"LIP_LEFT\000"
+ 1025      4C454654 
+ 1025      00
+ 1026              	.LASF5:
+ 1027 02b8 48454144 		.ascii	"HEAD_TILT_RIGHT\000"
+ 1027      5F54494C 
+ 1027      545F5249 
+ 1027      47485400 
+ 1028              	.LASF3:
+ 1029 02c8 48454144 		.ascii	"HEAD_TILT_LEFT\000"
+ 1029      5F54494C 
+ 1029      545F4C45 
+ 1029      465400
+ 1030              	.LASF39:
+ 1031 02d7 52494748 		.ascii	"RIGHT_EYEBROW_LEFT\000"
+ 1031      545F4559 
+ 1031      4542524F 
+ 1031      575F4C45 
+ 1031      465400
+ 1032              	.LASF15:
+ 1033 02ea 6C6F6E67 		.ascii	"long int\000"
+ 1033      20696E74 
+ 1033      00
+ 1034              	.LASF24:
+ 1035 02f3 6C6F6E67 		.ascii	"long double\000"
+ 1035      20646F75 
+ 1035      626C6500 
  1036              	.LASF48:
- 1037 02fb 7365745F 		.ascii	"set_smooth_servo_angle\000"
+ 1037 02ff 7365745F 		.ascii	"set_smooth_servo_angle\000"
  1037      736D6F6F 
  1037      74685F73 
  1037      6572766F 
  1037      5F616E67 
  1038              	.LASF4:
- 1039 0312 48454144 		.ascii	"HEAD_TILT_CENTER\000"
+ 1039 0316 48454144 		.ascii	"HEAD_TILT_CENTER\000"
  1039      5F54494C 
  1039      545F4345 
  1039      4E544552 
  1039      00
  1040              	.LASF43:
- 1041 0323 6F707469 		.ascii	"option\000"
+ 1041 0327 6F707469 		.ascii	"option\000"
  1041      6F6E00
  1042              	.LASF7:
- 1043 032a 48454144 		.ascii	"HEAD_TILT_FORWARD\000"
+ 1043 032e 48454144 		.ascii	"HEAD_TILT_FORWARD\000"
  1043      5F54494C 
  1043      545F464F 
  1043      52574152 
  1043      4400
  1044              	.LASF32:
- 1045 033c 4C454654 		.ascii	"LEFT_EYEBALL_BOTTOM\000"
+ 1045 0340 4C454654 		.ascii	"LEFT_EYEBALL_BOTTOM\000"
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cc7dyTOC.s 			page 23
+
+
  1045      5F455945 
  1045      42414C4C 
  1045      5F424F54 

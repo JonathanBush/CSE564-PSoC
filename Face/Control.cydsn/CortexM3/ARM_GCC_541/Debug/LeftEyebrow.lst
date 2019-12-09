@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
   28:Generated_Source\PSoC5/LeftEyebrow.c ****     #error PWM_v3_30 detected with a constant 0 for the enable or \
   29:Generated_Source\PSoC5/LeftEyebrow.c ****          constant 1 for reset. This will prevent the component from operating.
   30:Generated_Source\PSoC5/LeftEyebrow.c **** #endif /* LeftEyebrow_PWMUDB_genblk1_ctrlreg__REMOVED */
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 2
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 2
 
 
   31:Generated_Source\PSoC5/LeftEyebrow.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
   85:Generated_Source\PSoC5/LeftEyebrow.c **** {
   86:Generated_Source\PSoC5/LeftEyebrow.c ****     #if (LeftEyebrow_UsingFixedFunction || LeftEyebrow_UseControl)
   87:Generated_Source\PSoC5/LeftEyebrow.c ****         uint8 ctrl;
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 3
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 3
 
 
   88:Generated_Source\PSoC5/LeftEyebrow.c ****     #endif /* (LeftEyebrow_UsingFixedFunction || LeftEyebrow_UseControl) */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  142:Generated_Source\PSoC5/LeftEyebrow.c ****             LeftEyebrow_WriteCompare2(LeftEyebrow_INIT_COMPARE_VALUE2);
  143:Generated_Source\PSoC5/LeftEyebrow.c ****         #endif /* (LeftEyebrow_UseOneCompareMode) */
  144:Generated_Source\PSoC5/LeftEyebrow.c **** 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 4
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 4
 
 
  145:Generated_Source\PSoC5/LeftEyebrow.c ****         #if (LeftEyebrow_KillModeMinTime)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  199:Generated_Source\PSoC5/LeftEyebrow.c **** void LeftEyebrow_Enable(void) 
  200:Generated_Source\PSoC5/LeftEyebrow.c **** {
   28              		.loc 1 200 0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 5
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 5
 
 
   29              		.cfi_startproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  230:Generated_Source\PSoC5/LeftEyebrow.c **** *  has no effect on the operation of the PWM
  231:Generated_Source\PSoC5/LeftEyebrow.c **** *
  232:Generated_Source\PSoC5/LeftEyebrow.c **** *******************************************************************************/
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 6
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 6
 
 
  233:Generated_Source\PSoC5/LeftEyebrow.c **** void LeftEyebrow_Stop(void) 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  261:Generated_Source\PSoC5/LeftEyebrow.c ****         *
  262:Generated_Source\PSoC5/LeftEyebrow.c ****         * Return:
  263:Generated_Source\PSoC5/LeftEyebrow.c ****         *  None
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 7
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 7
 
 
  264:Generated_Source\PSoC5/LeftEyebrow.c ****         *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  318:Generated_Source\PSoC5/LeftEyebrow.c ****         * Parameters:
  319:Generated_Source\PSoC5/LeftEyebrow.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
  320:Generated_Source\PSoC5/LeftEyebrow.c ****         *                defined in the H file as input arguments.
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 8
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 8
 
 
  321:Generated_Source\PSoC5/LeftEyebrow.c ****         *
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  375:Generated_Source\PSoC5/LeftEyebrow.c ****     #endif /*LeftEyebrow_CompareMode2SW */
  376:Generated_Source\PSoC5/LeftEyebrow.c **** 
  377:Generated_Source\PSoC5/LeftEyebrow.c **** #endif /* UseOneCompareMode */
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 9
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 9
 
 
  378:Generated_Source\PSoC5/LeftEyebrow.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  407:Generated_Source\PSoC5/LeftEyebrow.c ****     }
  408:Generated_Source\PSoC5/LeftEyebrow.c **** 
  409:Generated_Source\PSoC5/LeftEyebrow.c **** 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 10
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 10
 
 
  410:Generated_Source\PSoC5/LeftEyebrow.c ****     /*******************************************************************************
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  134              	.LFB7:
  435:Generated_Source\PSoC5/LeftEyebrow.c **** 
  436:Generated_Source\PSoC5/LeftEyebrow.c ****     #if (LeftEyebrow_UseStatus)
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 11
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 11
 
 
  437:Generated_Source\PSoC5/LeftEyebrow.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  485:Generated_Source\PSoC5/LeftEyebrow.c ****         CY_SET_REG16(LeftEyebrow_PERIOD_LSB_PTR, (uint16)period);
  486:Generated_Source\PSoC5/LeftEyebrow.c ****     #else
  487:Generated_Source\PSoC5/LeftEyebrow.c ****         CY_SET_REG16(LeftEyebrow_PERIOD_LSB_PTR, period);
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 12
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 12
 
 
  141              		.loc 1 487 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  523:Generated_Source\PSoC5/LeftEyebrow.c ****         #endif /* (LeftEyebrow_UsingFixedFunction) */
  524:Generated_Source\PSoC5/LeftEyebrow.c **** 
  525:Generated_Source\PSoC5/LeftEyebrow.c ****         #if (LeftEyebrow_PWMMode == LeftEyebrow__B_PWM__DITHER)
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 13
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 13
 
 
  526:Generated_Source\PSoC5/LeftEyebrow.c ****             #if(LeftEyebrow_UsingFixedFunction)
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  178              		.align	2
  179              		.global	LeftEyebrow_WriteCompare2
  180              		.thumb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 14
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 14
 
 
  181              		.thumb_func
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  206              		.thumb_func
  207              		.type	LeftEyebrow_SetInterruptMode, %function
  208              	LeftEyebrow_SetInterruptMode:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 15
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 15
 
 
  209              	.LFB10:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  644:Generated_Source\PSoC5/LeftEyebrow.c ****     * Return:
  645:Generated_Source\PSoC5/LeftEyebrow.c ****     *  Dead Band Counts
  646:Generated_Source\PSoC5/LeftEyebrow.c ****     *
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 16
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 16
 
 
  647:Generated_Source\PSoC5/LeftEyebrow.c ****     *******************************************************************************/
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  224              		.cfi_endproc
  225              	.LFE10:
  226              		.size	LeftEyebrow_SetInterruptMode, .-LeftEyebrow_SetInterruptMode
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 17
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 17
 
 
  227              		.section	.text.LeftEyebrow_ReadStatusRegister,"ax",%progbits
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  253              		.align	2
  254              		.global	LeftEyebrow_ReadControlRegister
  255              		.thumb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 18
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 18
 
 
  256              		.thumb_func
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  281              		.thumb
  282              		.thumb_func
  283              		.type	LeftEyebrow_WriteControlRegister, %function
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 19
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 19
 
 
  284              	LeftEyebrow_WriteControlRegister:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  771:Generated_Source\PSoC5/LeftEyebrow.c **** 
  772:Generated_Source\PSoC5/LeftEyebrow.c **** 
  773:Generated_Source\PSoC5/LeftEyebrow.c **** #if (!LeftEyebrow_UsingFixedFunction)
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 20
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 20
 
 
  774:Generated_Source\PSoC5/LeftEyebrow.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  344              		.cfi_offset 14, -4
  455:Generated_Source\PSoC5/LeftEyebrow.c ****             {
  345              		.loc 1 455 0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 21
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 21
 
 
  346 0002 01E0     		b	.L38
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  392              		.loc 1 130 0
  393 001a 124C     		ldr	r4, .L43+4
  394 001c 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 22
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 22
 
 
  395 001e 43F00103 		orr	r3, r3, #1
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  440              		.align	2
  441              		.global	LeftEyebrow_Start
  442              		.thumb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 23
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 23
 
 
  443              		.thumb_func
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  800:Generated_Source\PSoC5/LeftEyebrow.c **** 
  801:Generated_Source\PSoC5/LeftEyebrow.c ****     /*******************************************************************************
  802:Generated_Source\PSoC5/LeftEyebrow.c ****     * Function Name: LeftEyebrow_ReadCompare
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 24
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 24
 
 
  803:Generated_Source\PSoC5/LeftEyebrow.c ****     ********************************************************************************
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  497              	.L52:
  498              		.align	2
  499              	.L51:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 25
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 25
 
 
  500 0008 54680040 		.word	1073768532
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  534              		.thumb_func
  535              		.type	LeftEyebrow_ReadPeriod, %function
  536              	LeftEyebrow_ReadPeriod:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 26
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 26
 
 
  537              	.LFB17:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  565              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
  566              		.file 3 "Generated_Source\\PSoC5\\CyLib.h"
  567              		.section	.debug_info,"",%progbits
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 27
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 27
 
 
  568              	.Ldebug_info0:
@@ -1569,15 +1569,15 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  573 000b 01       		.uleb128 0x1
  574 000c E2000000 		.4byte	.LASF45
  575 0010 0C       		.byte	0xc
- 576 0011 2C030000 		.4byte	.LASF46
- 577 0015 97030000 		.4byte	.LASF47
+ 576 0011 64030000 		.4byte	.LASF46
+ 577 0015 27020000 		.4byte	.LASF47
  578 0019 00000000 		.4byte	.Ldebug_ranges0+0
  579 001d 00000000 		.4byte	0
  580 0021 00000000 		.4byte	.Ldebug_line0
  581 0025 02       		.uleb128 0x2
  582 0026 01       		.byte	0x1
  583 0027 06       		.byte	0x6
- 584 0028 CB030000 		.4byte	.LASF0
+ 584 0028 E7030000 		.4byte	.LASF0
  585 002c 02       		.uleb128 0x2
  586 002d 01       		.byte	0x1
  587 002e 08       		.byte	0x8
@@ -1585,7 +1585,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  589 0033 02       		.uleb128 0x2
  590 0034 02       		.byte	0x2
  591 0035 05       		.byte	0x5
- 592 0036 22030000 		.4byte	.LASF2
+ 592 0036 5A030000 		.4byte	.LASF2
  593 003a 02       		.uleb128 0x2
  594 003b 02       		.byte	0x2
  595 003c 07       		.byte	0x7
@@ -1593,7 +1593,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  597 0041 02       		.uleb128 0x2
  598 0042 04       		.byte	0x4
  599 0043 05       		.byte	0x5
- 600 0044 6C030000 		.4byte	.LASF4
+ 600 0044 A4030000 		.4byte	.LASF4
  601 0048 02       		.uleb128 0x2
  602 0049 04       		.byte	0x4
  603 004a 07       		.byte	0x7
@@ -1601,7 +1601,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  605 004f 02       		.uleb128 0x2
  606 0050 08       		.byte	0x8
  607 0051 05       		.byte	0x5
- 608 0052 06030000 		.4byte	.LASF6
+ 608 0052 3E030000 		.4byte	.LASF6
  609 0056 02       		.uleb128 0x2
  610 0057 08       		.byte	0x8
  611 0058 07       		.byte	0x7
@@ -1613,17 +1613,17 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  617 0064 02       		.uleb128 0x2
  618 0065 04       		.byte	0x4
  619 0066 07       		.byte	0x7
- 620 0067 5E020000 		.4byte	.LASF8
+ 620 0067 96020000 		.4byte	.LASF8
  621 006b 04       		.uleb128 0x4
  622 006c A0010000 		.4byte	.LASF9
  623 0070 02       		.byte	0x2
  624 0071 E401     		.2byte	0x1e4
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 28
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 28
 
 
  625 0073 2C000000 		.4byte	0x2c
  626 0077 04       		.uleb128 0x4
- 627 0078 27020000 		.4byte	.LASF10
+ 627 0078 5F020000 		.4byte	.LASF10
  628 007c 02       		.byte	0x2
  629 007d E501     		.2byte	0x1e5
  630 007f 3A000000 		.4byte	0x3a
@@ -1638,7 +1638,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  639 0091 02       		.uleb128 0x2
  640 0092 01       		.byte	0x1
  641 0093 08       		.byte	0x8
- 642 0094 75030000 		.4byte	.LASF13
+ 642 0094 AD030000 		.4byte	.LASF13
  643 0098 04       		.uleb128 0x4
  644 0099 89010000 		.4byte	.LASF14
  645 009d 02       		.byte	0x2
@@ -1656,13 +1656,13 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  657 00ba 02       		.uleb128 0x2
  658 00bb 08       		.byte	0x8
  659 00bc 04       		.byte	0x4
- 660 00bd D6020000 		.4byte	.LASF16
+ 660 00bd 0E030000 		.4byte	.LASF16
  661 00c1 02       		.uleb128 0x2
  662 00c2 04       		.byte	0x4
  663 00c3 07       		.byte	0x7
- 664 00c4 E2020000 		.4byte	.LASF17
+ 664 00c4 1A030000 		.4byte	.LASF17
  665 00c8 06       		.uleb128 0x6
- 666 00c9 51030000 		.4byte	.LASF18
+ 666 00c9 89030000 		.4byte	.LASF18
  667 00cd 01       		.byte	0x1
  668 00ce C7       		.byte	0xc7
  669 00cf 00000000 		.4byte	.LFB2
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  679 00e8 01       		.uleb128 0x1
  680 00e9 9C       		.byte	0x9c
  681 00ea 07       		.uleb128 0x7
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 29
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 29
 
 
  682 00eb 07020000 		.4byte	.LASF20
@@ -1698,7 +1698,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  696 010d 50       		.byte	0x50
  697 010e 00       		.byte	0
  698 010f 09       		.uleb128 0x9
- 699 0110 DF030000 		.4byte	.LASF29
+ 699 0110 CF030000 		.4byte	.LASF29
  700 0114 01       		.byte	0x1
  701 0115 A901     		.2byte	0x1a9
  702 0117 77000000 		.4byte	0x77
@@ -1733,12 +1733,12 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  731 015b 9C       		.byte	0x9c
  732 015c 6F010000 		.4byte	0x16f
  733 0160 08       		.uleb128 0x8
- 734 0161 D7030000 		.4byte	.LASF25
+ 734 0161 F3030000 		.4byte	.LASF25
  735 0165 01       		.byte	0x1
  736 0166 2B02     		.2byte	0x22b
  737 0168 77000000 		.4byte	0x77
  738 016c 01       		.uleb128 0x1
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 30
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 30
 
 
  739 016d 50       		.byte	0x50
@@ -1753,7 +1753,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  748 0180 9C       		.byte	0x9c
  749 0181 94010000 		.4byte	0x194
  750 0185 08       		.uleb128 0x8
- 751 0186 D7030000 		.4byte	.LASF25
+ 751 0186 F3030000 		.4byte	.LASF25
  752 018a 01       		.byte	0x1
  753 018b 4802     		.2byte	0x248
  754 018d 77000000 		.4byte	0x77
@@ -1761,7 +1761,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  756 0192 50       		.byte	0x50
  757 0193 00       		.byte	0
  758 0194 07       		.uleb128 0x7
- 759 0195 7A030000 		.4byte	.LASF27
+ 759 0195 B2030000 		.4byte	.LASF27
  760 0199 01       		.byte	0x1
  761 019a AC02     		.2byte	0x2ac
  762 019c 00000000 		.4byte	.LFB10
@@ -1770,7 +1770,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  765 01a5 9C       		.byte	0x9c
  766 01a6 B9010000 		.4byte	0x1b9
  767 01aa 08       		.uleb128 0x8
- 768 01ab 14030000 		.4byte	.LASF28
+ 768 01ab 4C030000 		.4byte	.LASF28
  769 01af 01       		.byte	0x1
  770 01b0 AC02     		.2byte	0x2ac
  771 01b2 6B000000 		.4byte	0x6b
@@ -1778,7 +1778,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  773 01b7 50       		.byte	0x50
  774 01b8 00       		.byte	0
  775 01b9 09       		.uleb128 0x9
- 776 01ba B2020000 		.4byte	.LASF30
+ 776 01ba EA020000 		.4byte	.LASF30
  777 01be 01       		.byte	0x1
  778 01bf C702     		.2byte	0x2c7
  779 01c1 6B000000 		.4byte	0x6b
@@ -1797,8 +1797,8 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  792 01e4 9C       		.byte	0x9c
  793 01e5 F8010000 		.4byte	0x1f8
  794 01e9 0B       		.uleb128 0xb
- 795 01ea 99020000 		.4byte	.LASF36
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 31
+ 795 01ea D1020000 		.4byte	.LASF36
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 31
 
 
  796 01ee 01       		.byte	0x1
@@ -1817,7 +1817,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  809 0209 9C       		.byte	0x9c
  810 020a 1D020000 		.4byte	0x21d
  811 020e 08       		.uleb128 0x8
- 812 020f 64030000 		.4byte	.LASF32
+ 812 020f 9C030000 		.4byte	.LASF32
  813 0213 01       		.byte	0x1
  814 0214 FD02     		.2byte	0x2fd
  815 0216 6B000000 		.4byte	0x6b
@@ -1825,7 +1825,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  817 021b 50       		.byte	0x50
  818 021c 00       		.byte	0
  819 021d 09       		.uleb128 0x9
- 820 021e 81020000 		.4byte	.LASF33
+ 820 021e B9020000 		.4byte	.LASF33
  821 0222 01       		.byte	0x1
  822 0223 1603     		.2byte	0x316
  823 0225 77000000 		.4byte	0x77
@@ -1858,17 +1858,17 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  850 026b 01       		.uleb128 0x1
  851 026c 9C       		.byte	0x9c
  852 026d 12030000 		.4byte	0x312
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 32
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 32
 
 
  853 0271 0E       		.uleb128 0xe
- 854 0272 D1020000 		.4byte	.LASF37
+ 854 0272 09030000 		.4byte	.LASF37
  855 0276 01       		.byte	0x1
  856 0277 57       		.byte	0x57
  857 0278 6B000000 		.4byte	0x6b
  858 027c 00000000 		.4byte	.LLST0
  859 0280 0E       		.uleb128 0xe
- 860 0281 EB020000 		.4byte	.LASF38
+ 860 0281 23030000 		.4byte	.LASF38
  861 0285 01       		.byte	0x1
  862 0286 5D       		.byte	0x5d
  863 0287 6B000000 		.4byte	0x6b
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  907 02e0 D007     		.2byte	0x7d0
  908 02e2 00       		.byte	0
  909 02e3 0F       		.uleb128 0xf
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 33
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 33
 
 
  910 02e4 4A000000 		.4byte	.LVL15
@@ -1941,7 +1941,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  927 030d 33020000 		.4byte	0x233
  928 0311 00       		.byte	0
  929 0312 0D       		.uleb128 0xd
- 930 0313 A0020000 		.4byte	.LASF39
+ 930 0313 D8020000 		.4byte	.LASF39
  931 0317 01       		.byte	0x1
  932 0318 37       		.byte	0x37
  933 0319 00000000 		.4byte	.LFB0
@@ -1966,7 +1966,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  952 034e 01       		.uleb128 0x1
  953 034f 9C       		.byte	0x9c
  954 0350 09       		.uleb128 0x9
- 955 0351 2E020000 		.4byte	.LASF41
+ 955 0351 66020000 		.4byte	.LASF41
  956 0355 01       		.byte	0x1
  957 0356 5E03     		.2byte	0x35e
  958 0358 77000000 		.4byte	0x77
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  964 0367 A6010000 		.4byte	.LASF42
  965 036b 01       		.byte	0x1
  966 036c 7403     		.2byte	0x374
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 34
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 34
 
 
  967 036e 77000000 		.4byte	0x77
@@ -1995,13 +1995,13 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  978 0388 03       		.byte	0x3
  979 0389 00000000 		.4byte	LeftEyebrow_initVar
  980 038d 12       		.uleb128 0x12
- 981 038e 47020000 		.4byte	.LASF43
- 982 0392 47020000 		.4byte	.LASF43
+ 981 038e 7F020000 		.4byte	.LASF43
+ 982 0392 7F020000 		.4byte	.LASF43
  983 0396 03       		.byte	0x3
  984 0397 7D       		.byte	0x7d
  985 0398 12       		.uleb128 0x12
- 986 0399 6B020000 		.4byte	.LASF44
- 987 039d 6B020000 		.4byte	.LASF44
+ 986 0399 A3020000 		.4byte	.LASF44
+ 987 039d A3020000 		.4byte	.LASF44
  988 03a1 03       		.byte	0x3
  989 03a2 7E       		.byte	0x7e
  990 03a3 00       		.byte	0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  1021 001c 00       		.byte	0
  1022 001d 00       		.byte	0
  1023 001e 03       		.uleb128 0x3
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 35
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 35
 
 
  1024 001f 24       		.uleb128 0x24
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  1078 0056 2E       		.uleb128 0x2e
  1079 0057 01       		.byte	0x1
  1080 0058 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 36
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 36
 
 
  1081 0059 19       		.uleb128 0x19
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  1135 0090 06       		.uleb128 0x6
  1136 0091 40       		.uleb128 0x40
  1137 0092 18       		.uleb128 0x18
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 37
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 37
 
 
  1138 0093 9742     		.uleb128 0x2117
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  1192 00cd 00       		.byte	0
  1193 00ce 0D       		.uleb128 0xd
  1194 00cf 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 38
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 38
 
 
  1195 00d0 01       		.byte	0x1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  1249 010b 9142     		.uleb128 0x2111
  1250 010d 18       		.uleb128 0x18
  1251 010e 00       		.byte	0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 39
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 39
 
 
  1252 010f 00       		.byte	0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  1306 0004 0200     		.2byte	0x2
  1307 0006 00000000 		.4byte	.Ldebug_info0
  1308 000a 04       		.byte	0x4
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 40
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 40
 
 
  1309 000b 00       		.byte	0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  1363 002c 0C000000 		.4byte	.LFE8
  1364 0030 00000000 		.4byte	.LFB9
  1365 0034 0C000000 		.4byte	.LFE9
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 41
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 41
 
 
  1366 0038 00000000 		.4byte	.LFB10
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  1402      6F6400
  1403              	.LASF49:
  1404 0066 4C656674 		.ascii	"LeftEyebrow_initVar\000"
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 42
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 42
 
 
  1404      45796562 
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  1422      74696F6E 
  1423              	.LASF40:
  1424 0170 4C656674 		.ascii	"LeftEyebrow_ReadCompare1\000"
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 43
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 43
 
 
  1424      45796562 
@@ -2570,140 +2570,141 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 1
  1441              	.LASF12:
  1442 0220 646F7562 		.ascii	"double\000"
  1442      6C6500
- 1443              	.LASF10:
- 1444 0227 75696E74 		.ascii	"uint16\000"
- 1444      313600
- 1445              	.LASF41:
- 1446 022e 4C656674 		.ascii	"LeftEyebrow_ReadCompare2\000"
- 1446      45796562 
- 1446      726F775F 
- 1446      52656164 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 44
+ 1443              	.LASF47:
+ 1444 0227 433A5C55 		.ascii	"C:\\Users\\jon\\development\\CSE564-PSoC\\Face\\Con"
+ 1444      73657273 
+ 1444      5C6A6F6E 
+ 1444      5C646576 
+ 1444      656C6F70 
+ 1445 0254 74726F6C 		.ascii	"trol.cydsn\000"
+ 1445      2E637964 
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 44
 
 
- 1446      436F6D70 
- 1447              	.LASF43:
- 1448 0247 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 1448      74657243 
- 1448      72697469 
- 1448      63616C53 
- 1448      65637469 
- 1449              	.LASF8:
- 1450 025e 756E7369 		.ascii	"unsigned int\000"
- 1450      676E6564 
- 1450      20696E74 
- 1450      00
- 1451              	.LASF44:
- 1452 026b 43794578 		.ascii	"CyExitCriticalSection\000"
- 1452      69744372 
- 1452      69746963 
- 1452      616C5365 
- 1452      6374696F 
- 1453              	.LASF33:
- 1454 0281 4C656674 		.ascii	"LeftEyebrow_ReadCapture\000"
- 1454      45796562 
- 1454      726F775F 
- 1454      52656164 
- 1454      43617074 
- 1455              	.LASF36:
- 1456 0299 72657375 		.ascii	"result\000"
- 1456      6C7400
- 1457              	.LASF39:
- 1458 02a0 4C656674 		.ascii	"LeftEyebrow_Start\000"
- 1458      45796562 
- 1458      726F775F 
- 1458      53746172 
- 1458      7400
- 1459              	.LASF30:
- 1460 02b2 4C656674 		.ascii	"LeftEyebrow_ReadStatusRegister\000"
- 1460      45796562 
- 1460      726F775F 
- 1460      52656164 
- 1460      53746174 
- 1461              	.LASF37:
- 1462 02d1 6374726C 		.ascii	"ctrl\000"
- 1462      00
- 1463              	.LASF16:
- 1464 02d6 6C6F6E67 		.ascii	"long double\000"
- 1464      20646F75 
- 1464      626C6500 
- 1465              	.LASF17:
- 1466 02e2 73697A65 		.ascii	"sizetype\000"
- 1466      74797065 
- 1466      00
- 1467              	.LASF38:
- 1468 02eb 4C656674 		.ascii	"LeftEyebrow_interruptState\000"
- 1468      45796562 
- 1468      726F775F 
- 1468      696E7465 
- 1468      72727570 
- 1469              	.LASF6:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 45
+ 1445      736E00
+ 1446              	.LASF10:
+ 1447 025f 75696E74 		.ascii	"uint16\000"
+ 1447      313600
+ 1448              	.LASF41:
+ 1449 0266 4C656674 		.ascii	"LeftEyebrow_ReadCompare2\000"
+ 1449      45796562 
+ 1449      726F775F 
+ 1449      52656164 
+ 1449      436F6D70 
+ 1450              	.LASF43:
+ 1451 027f 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1451      74657243 
+ 1451      72697469 
+ 1451      63616C53 
+ 1451      65637469 
+ 1452              	.LASF8:
+ 1453 0296 756E7369 		.ascii	"unsigned int\000"
+ 1453      676E6564 
+ 1453      20696E74 
+ 1453      00
+ 1454              	.LASF44:
+ 1455 02a3 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1455      69744372 
+ 1455      69746963 
+ 1455      616C5365 
+ 1455      6374696F 
+ 1456              	.LASF33:
+ 1457 02b9 4C656674 		.ascii	"LeftEyebrow_ReadCapture\000"
+ 1457      45796562 
+ 1457      726F775F 
+ 1457      52656164 
+ 1457      43617074 
+ 1458              	.LASF36:
+ 1459 02d1 72657375 		.ascii	"result\000"
+ 1459      6C7400
+ 1460              	.LASF39:
+ 1461 02d8 4C656674 		.ascii	"LeftEyebrow_Start\000"
+ 1461      45796562 
+ 1461      726F775F 
+ 1461      53746172 
+ 1461      7400
+ 1462              	.LASF30:
+ 1463 02ea 4C656674 		.ascii	"LeftEyebrow_ReadStatusRegister\000"
+ 1463      45796562 
+ 1463      726F775F 
+ 1463      52656164 
+ 1463      53746174 
+ 1464              	.LASF37:
+ 1465 0309 6374726C 		.ascii	"ctrl\000"
+ 1465      00
+ 1466              	.LASF16:
+ 1467 030e 6C6F6E67 		.ascii	"long double\000"
+ 1467      20646F75 
+ 1467      626C6500 
+ 1468              	.LASF17:
+ 1469 031a 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 45
 
 
- 1470 0306 6C6F6E67 		.ascii	"long long int\000"
- 1470      206C6F6E 
- 1470      6720696E 
- 1470      7400
- 1471              	.LASF28:
- 1472 0314 696E7465 		.ascii	"interruptMode\000"
- 1472      72727570 
- 1472      744D6F64 
- 1472      6500
- 1473              	.LASF2:
- 1474 0322 73686F72 		.ascii	"short int\000"
- 1474      7420696E 
- 1474      7400
- 1475              	.LASF46:
- 1476 032c 47656E65 		.ascii	"Generated_Source\\PSoC5\\LeftEyebrow.c\000"
- 1476      72617465 
- 1476      645F536F 
- 1476      75726365 
- 1476      5C50536F 
- 1477              	.LASF18:
- 1478 0351 4C656674 		.ascii	"LeftEyebrow_Enable\000"
- 1478      45796562 
- 1478      726F775F 
- 1478      456E6162 
- 1478      6C6500
- 1479              	.LASF32:
- 1480 0364 636F6E74 		.ascii	"control\000"
- 1480      726F6C00 
- 1481              	.LASF4:
- 1482 036c 6C6F6E67 		.ascii	"long int\000"
- 1482      20696E74 
- 1482      00
- 1483              	.LASF13:
- 1484 0375 63686172 		.ascii	"char\000"
- 1484      00
- 1485              	.LASF27:
- 1486 037a 4C656674 		.ascii	"LeftEyebrow_SetInterruptMode\000"
- 1486      45796562 
- 1486      726F775F 
- 1486      53657449 
- 1486      6E746572 
- 1487              	.LASF47:
- 1488 0397 433A5C55 		.ascii	"C:\\Users\\jon\\Desktop\\CSE564-PSoC\\Face\\Control"
- 1488      73657273 
- 1488      5C6A6F6E 
- 1488      5C446573 
- 1488      6B746F70 
- 1489 03c4 2E637964 		.ascii	".cydsn\000"
- 1489      736E00
- 1490              	.LASF0:
- 1491 03cb 7369676E 		.ascii	"signed char\000"
- 1491      65642063 
- 1491      68617200 
- 1492              	.LASF25:
- 1493 03d7 636F6D70 		.ascii	"compare\000"
- 1493      61726500 
- 1494              	.LASF29:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGfBrua.s 			page 46
+ 1469      74797065 
+ 1469      00
+ 1470              	.LASF38:
+ 1471 0323 4C656674 		.ascii	"LeftEyebrow_interruptState\000"
+ 1471      45796562 
+ 1471      726F775F 
+ 1471      696E7465 
+ 1471      72727570 
+ 1472              	.LASF6:
+ 1473 033e 6C6F6E67 		.ascii	"long long int\000"
+ 1473      206C6F6E 
+ 1473      6720696E 
+ 1473      7400
+ 1474              	.LASF28:
+ 1475 034c 696E7465 		.ascii	"interruptMode\000"
+ 1475      72727570 
+ 1475      744D6F64 
+ 1475      6500
+ 1476              	.LASF2:
+ 1477 035a 73686F72 		.ascii	"short int\000"
+ 1477      7420696E 
+ 1477      7400
+ 1478              	.LASF46:
+ 1479 0364 47656E65 		.ascii	"Generated_Source\\PSoC5\\LeftEyebrow.c\000"
+ 1479      72617465 
+ 1479      645F536F 
+ 1479      75726365 
+ 1479      5C50536F 
+ 1480              	.LASF18:
+ 1481 0389 4C656674 		.ascii	"LeftEyebrow_Enable\000"
+ 1481      45796562 
+ 1481      726F775F 
+ 1481      456E6162 
+ 1481      6C6500
+ 1482              	.LASF32:
+ 1483 039c 636F6E74 		.ascii	"control\000"
+ 1483      726F6C00 
+ 1484              	.LASF4:
+ 1485 03a4 6C6F6E67 		.ascii	"long int\000"
+ 1485      20696E74 
+ 1485      00
+ 1486              	.LASF13:
+ 1487 03ad 63686172 		.ascii	"char\000"
+ 1487      00
+ 1488              	.LASF27:
+ 1489 03b2 4C656674 		.ascii	"LeftEyebrow_SetInterruptMode\000"
+ 1489      45796562 
+ 1489      726F775F 
+ 1489      53657449 
+ 1489      6E746572 
+ 1490              	.LASF29:
+ 1491 03cf 4C656674 		.ascii	"LeftEyebrow_ReadCounter\000"
+ 1491      45796562 
+ 1491      726F775F 
+ 1491      52656164 
+ 1491      436F756E 
+ 1492              	.LASF0:
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccGpf4Be.s 			page 46
 
 
- 1495 03df 4C656674 		.ascii	"LeftEyebrow_ReadCounter\000"
- 1495      45796562 
- 1495      726F775F 
- 1495      52656164 
- 1495      436F756E 
+ 1493 03e7 7369676E 		.ascii	"signed char\000"
+ 1493      65642063 
+ 1493      68617200 
+ 1494              	.LASF25:
+ 1495 03f3 636F6D70 		.ascii	"compare\000"
+ 1495      61726500 
  1496              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

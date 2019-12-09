@@ -1,16 +1,20 @@
 /* ========================================
  *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
+ * Functions controlling the neck
+ * 
+ * Developed for CSE 564
+ * Arizona State University
+ * 
+ * Authors:
+ * Jonathan Bush
+ * Zachary Monroe
+ * Maurice Ajluni
  *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
+ * Released under the BSE 3-Clause License
+ * 2019
  *
  * ========================================
 */
-
-/* [] END OF FILE */
 
 #ifndef NECK_H
 #define NECK_H
@@ -33,3 +37,5 @@ void rotate_set(neck_rotation option);
 void tilt_set(head_tilt option);
     
 #endif
+
+/* [] END OF FILE */

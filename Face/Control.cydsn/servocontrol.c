@@ -1,17 +1,30 @@
 /* ========================================
  *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
+ * Function definitions for smooth servo control
+ * 
+ * Developed for CSE 564
+ * Arizona State University
+ * 
+ * Authors:
+ * Jonathan Bush
+ * Zachary Monroe
  *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
+ * Released under the BSE 3-Clause License
+ * 2019
  *
  * ========================================
 */
 
 #include "servocontrol.h"
 
+typedef struct {
+    void (*write_compare)(uint16);
+    uint16 current;
+    uint16 target;
+    uint16 step;
+} servo_state;
+
+/* this maps each servo defined in the servo struct to its respective compare function and settings */
 servo_state servo_map[] = {
     {.write_compare = Base_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = (DEFAULT_STEP - 2)},
     {.write_compare = Neck_WriteCompare1, .current = MOTOR_CENTER, .target = MOTOR_CENTER, .step = DEFAULT_STEP},
@@ -36,15 +49,9 @@ uint16 angle_to_compare(uint16 angle_value) {
     return MOTOR_LOW + (angle_value * (MOTOR_HIGH - MOTOR_LOW)) / 180;
 }
 
-//void set_servo_angle(void (*compare_func)(uint16), uint8 angle) {
-//    uint16 compare = MOTOR_LOW + (angle *(MOTOR_HIGH - MOTOR_LOW)) * 180;
-//    (*compare_func)(compare);
-//}
-
 void set_smooth_servo_angle(servo servo_id, uint8 angle) {
     servo_map[(uint8)servo_id].target = angle_to_compare(angle);
 }
-
 
 void update_servos() {
     servo_state *serv;
@@ -58,10 +65,19 @@ void update_servos() {
         } else {
             serv->current = serv->target;
         }
-        //Neck_WriteCompare1(serv->current);
         (*serv->write_compare)(serv->current);
     }
 }
 
+void start_servos() {
+    LeftEyebrow_Start();
+    RightEyebrow_Start();
+    RightEyeball_Start();
+    LeftEyeball_Start();
+    Eyelids_Start();
+    Lips_Start();
+    Base_Start();
+    Neck_Start();
+}
 
 /* [] END OF FILE */

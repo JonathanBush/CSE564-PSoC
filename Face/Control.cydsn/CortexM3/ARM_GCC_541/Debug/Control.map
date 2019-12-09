@@ -63,6 +63,8 @@ Discarded input sections
  .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .text.button_wait_timeout
+                0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\main.o
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
  .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
@@ -621,7 +623,7 @@ END GROUP
                 0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
                 [!provide]                PROVIDE (CY_ECC_OFFSET, ecc_offset)
 
-.text           0x00000000     0x1376
+.text           0x00000000     0x137e
  CREATE_OBJECT_SYMBOLS
                 0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
  *(.romvectors)
@@ -663,479 +665,482 @@ END GROUP
  .text.button_wait
                 0x000001f0       0x20 .\CortexM3\ARM_GCC_541\Debug\main.o
                 0x000001f0                button_wait
- .text.main     0x00000210       0x80 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .text.main     0x00000210       0x64 .\CortexM3\ARM_GCC_541\Debug\main.o
                 0x00000210                main
  .text.angle_to_compare
-                0x00000290       0x20 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
-                0x00000290                angle_to_compare
+                0x00000274       0x20 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+                0x00000274                angle_to_compare
  .text.set_smooth_servo_angle
-                0x000002b0       0x1c .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
-                0x000002b0                set_smooth_servo_angle
+                0x00000294       0x1c .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+                0x00000294                set_smooth_servo_angle
  .text.update_servos
-                0x000002cc       0x70 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
-                0x000002cc                update_servos
+                0x000002b0       0x70 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+                0x000002b0                update_servos
+ .text.start_servos
+                0x00000320       0x24 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+                0x00000320                start_servos
  .text.rotate_set
-                0x0000033c       0x2c .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
-                0x0000033c                rotate_set
+                0x00000344       0x2c .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
+                0x00000344                rotate_set
  .text.tilt_set
-                0x00000368       0x6c .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
-                0x00000368                tilt_set
+                0x00000370       0x6c .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
+                0x00000370                tilt_set
  .text.mouth_set
-                0x000003d4       0x2c .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
-                0x000003d4                mouth_set
- .text.lip_set  0x00000400       0x6c .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
-                0x00000400                lip_set
+                0x000003dc       0x2c .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
+                0x000003dc                mouth_set
+ .text.lip_set  0x00000408       0x6c .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
+                0x00000408                lip_set
  .text.eyelid_set
-                0x0000046c       0x58 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
-                0x0000046c                eyelid_set
+                0x00000474       0x58 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+                0x00000474                eyelid_set
  .text.eyeball_set
-                0x000004c4       0xdc .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
-                0x000004c4                eyeball_set
+                0x000004cc       0xdc .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+                0x000004cc                eyeball_set
  .text.eyebrow_set
-                0x000005a0       0x98 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
-                0x000005a0                eyebrow_set
+                0x000005a8       0x98 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+                0x000005a8                eyebrow_set
  .text.CyClockStartupError
-                0x00000638        0x4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000640        0x4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.cfg_write_bytes32
-                0x0000063c       0x34 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000644       0x34 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.AnalogSetDefault
-                0x00000670       0x28 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000678       0x28 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.CYMEMZERO
-                0x00000698        0xc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000006a0        0xc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.ClockSetup
-                0x000006a4       0xc4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000006ac       0xc4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.CYCONFIGCPY
-                0x00000768        0x8 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000770        0x8 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.cyfitter_cfg
-                0x00000770      0x100 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x00000770                cyfitter_cfg
+                0x00000778      0x100 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000778                cyfitter_cfg
  .text.IntDefaultHandler
-                0x00000870       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x00000870                IntDefaultHandler
- .text.Start_c  0x00000880       0x4c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x00000880                Start_c
+                0x00000878       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000878                IntDefaultHandler
+ .text.Start_c  0x00000888       0x4c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000888                Start_c
  .text.initialize_psoc
-                0x000008cc       0x68 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x000008cc                initialize_psoc
+                0x000008d4       0x68 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000008d4                initialize_psoc
  .text.LeftEyebrow_Enable
-                0x00000934       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                0x00000934                LeftEyebrow_Enable
+                0x0000093c       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x0000093c                LeftEyebrow_Enable
  .text.LeftEyebrow_WriteCounter
-                0x00000944        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                0x00000944                LeftEyebrow_WriteCounter
+                0x0000094c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x0000094c                LeftEyebrow_WriteCounter
  .text.LeftEyebrow_WritePeriod
-                0x00000950        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                0x00000950                LeftEyebrow_WritePeriod
+                0x00000958        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x00000958                LeftEyebrow_WritePeriod
  .text.LeftEyebrow_WriteCompare1
-                0x0000095c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                0x0000095c                LeftEyebrow_WriteCompare1
+                0x00000964        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x00000964                LeftEyebrow_WriteCompare1
  .text.LeftEyebrow_WriteCompare2
-                0x00000968        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                0x00000968                LeftEyebrow_WriteCompare2
+                0x00000970        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x00000970                LeftEyebrow_WriteCompare2
  .text.LeftEyebrow_SetInterruptMode
-                0x00000974        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                0x00000974                LeftEyebrow_SetInterruptMode
+                0x0000097c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x0000097c                LeftEyebrow_SetInterruptMode
  .text.LeftEyebrow_ReadStatusRegister
-                0x00000980        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                0x00000980                LeftEyebrow_ReadStatusRegister
+                0x00000988        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x00000988                LeftEyebrow_ReadStatusRegister
  .text.LeftEyebrow_ReadCapture
-                0x0000098c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                0x0000098c                LeftEyebrow_ReadCapture
+                0x00000994        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x00000994                LeftEyebrow_ReadCapture
  .text.LeftEyebrow_ClearFIFO
-                0x00000998       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                0x00000998                LeftEyebrow_ClearFIFO
+                0x000009a0       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x000009a0                LeftEyebrow_ClearFIFO
  .text.LeftEyebrow_Init
-                0x000009ac       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                0x000009ac                LeftEyebrow_Init
+                0x000009b4       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x000009b4                LeftEyebrow_Init
  .text.LeftEyebrow_Start
-                0x00000a14       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                0x00000a14                LeftEyebrow_Start
+                0x00000a1c       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x00000a1c                LeftEyebrow_Start
  .text.RightEyebrow_Enable
-                0x00000a30       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                0x00000a30                RightEyebrow_Enable
+                0x00000a38       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000a38                RightEyebrow_Enable
  .text.RightEyebrow_WriteCounter
-                0x00000a40        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                0x00000a40                RightEyebrow_WriteCounter
+                0x00000a48        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000a48                RightEyebrow_WriteCounter
  .text.RightEyebrow_WritePeriod
-                0x00000a4c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                0x00000a4c                RightEyebrow_WritePeriod
+                0x00000a54        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000a54                RightEyebrow_WritePeriod
  .text.RightEyebrow_WriteCompare1
-                0x00000a58        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                0x00000a58                RightEyebrow_WriteCompare1
+                0x00000a60        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000a60                RightEyebrow_WriteCompare1
  .text.RightEyebrow_WriteCompare2
-                0x00000a64        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                0x00000a64                RightEyebrow_WriteCompare2
+                0x00000a6c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000a6c                RightEyebrow_WriteCompare2
  .text.RightEyebrow_SetInterruptMode
-                0x00000a70        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                0x00000a70                RightEyebrow_SetInterruptMode
+                0x00000a78        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000a78                RightEyebrow_SetInterruptMode
  .text.RightEyebrow_ReadStatusRegister
-                0x00000a7c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                0x00000a7c                RightEyebrow_ReadStatusRegister
+                0x00000a84        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000a84                RightEyebrow_ReadStatusRegister
  .text.RightEyebrow_ReadCapture
-                0x00000a88        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                0x00000a88                RightEyebrow_ReadCapture
+                0x00000a90        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000a90                RightEyebrow_ReadCapture
  .text.RightEyebrow_ClearFIFO
-                0x00000a94       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                0x00000a94                RightEyebrow_ClearFIFO
+                0x00000a9c       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000a9c                RightEyebrow_ClearFIFO
  .text.RightEyebrow_Init
-                0x00000aa8       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                0x00000aa8                RightEyebrow_Init
+                0x00000ab0       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000ab0                RightEyebrow_Init
  .text.RightEyebrow_Start
-                0x00000b10       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                0x00000b10                RightEyebrow_Start
+                0x00000b18       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000b18                RightEyebrow_Start
  .text.LeftEyeball_Enable
-                0x00000b2c       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                0x00000b2c                LeftEyeball_Enable
+                0x00000b34       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000b34                LeftEyeball_Enable
  .text.LeftEyeball_WriteCounter
-                0x00000b3c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                0x00000b3c                LeftEyeball_WriteCounter
+                0x00000b44        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000b44                LeftEyeball_WriteCounter
  .text.LeftEyeball_WritePeriod
-                0x00000b48        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                0x00000b48                LeftEyeball_WritePeriod
+                0x00000b50        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000b50                LeftEyeball_WritePeriod
  .text.LeftEyeball_WriteCompare1
-                0x00000b54        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                0x00000b54                LeftEyeball_WriteCompare1
+                0x00000b5c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000b5c                LeftEyeball_WriteCompare1
  .text.LeftEyeball_WriteCompare2
-                0x00000b60        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                0x00000b60                LeftEyeball_WriteCompare2
+                0x00000b68        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000b68                LeftEyeball_WriteCompare2
  .text.LeftEyeball_SetInterruptMode
-                0x00000b6c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                0x00000b6c                LeftEyeball_SetInterruptMode
+                0x00000b74        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000b74                LeftEyeball_SetInterruptMode
  .text.LeftEyeball_ReadStatusRegister
-                0x00000b78        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                0x00000b78                LeftEyeball_ReadStatusRegister
+                0x00000b80        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000b80                LeftEyeball_ReadStatusRegister
  .text.LeftEyeball_ReadCapture
-                0x00000b84        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                0x00000b84                LeftEyeball_ReadCapture
+                0x00000b8c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000b8c                LeftEyeball_ReadCapture
  .text.LeftEyeball_ClearFIFO
-                0x00000b90       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                0x00000b90                LeftEyeball_ClearFIFO
+                0x00000b98       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000b98                LeftEyeball_ClearFIFO
  .text.LeftEyeball_Init
-                0x00000ba4       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                0x00000ba4                LeftEyeball_Init
+                0x00000bac       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000bac                LeftEyeball_Init
  .text.LeftEyeball_Start
-                0x00000c0c       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                0x00000c0c                LeftEyeball_Start
+                0x00000c14       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000c14                LeftEyeball_Start
  .text.RightEyeball_Enable
-                0x00000c28       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                0x00000c28                RightEyeball_Enable
+                0x00000c30       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x00000c30                RightEyeball_Enable
  .text.RightEyeball_WriteCounter
-                0x00000c38        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                0x00000c38                RightEyeball_WriteCounter
+                0x00000c40        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x00000c40                RightEyeball_WriteCounter
  .text.RightEyeball_WritePeriod
-                0x00000c44        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                0x00000c44                RightEyeball_WritePeriod
+                0x00000c4c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x00000c4c                RightEyeball_WritePeriod
  .text.RightEyeball_WriteCompare1
-                0x00000c50        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                0x00000c50                RightEyeball_WriteCompare1
+                0x00000c58        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x00000c58                RightEyeball_WriteCompare1
  .text.RightEyeball_WriteCompare2
-                0x00000c5c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                0x00000c5c                RightEyeball_WriteCompare2
+                0x00000c64        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x00000c64                RightEyeball_WriteCompare2
  .text.RightEyeball_SetInterruptMode
-                0x00000c68        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                0x00000c68                RightEyeball_SetInterruptMode
+                0x00000c70        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x00000c70                RightEyeball_SetInterruptMode
  .text.RightEyeball_ReadStatusRegister
-                0x00000c74        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                0x00000c74                RightEyeball_ReadStatusRegister
+                0x00000c7c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x00000c7c                RightEyeball_ReadStatusRegister
  .text.RightEyeball_ReadCapture
-                0x00000c80        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                0x00000c80                RightEyeball_ReadCapture
+                0x00000c88        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x00000c88                RightEyeball_ReadCapture
  .text.RightEyeball_ClearFIFO
-                0x00000c8c       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                0x00000c8c                RightEyeball_ClearFIFO
+                0x00000c94       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x00000c94                RightEyeball_ClearFIFO
  .text.RightEyeball_Init
-                0x00000ca0       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                0x00000ca0                RightEyeball_Init
+                0x00000ca8       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x00000ca8                RightEyeball_Init
  .text.RightEyeball_Start
-                0x00000d08       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                0x00000d08                RightEyeball_Start
+                0x00000d10       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x00000d10                RightEyeball_Start
  .text.Eyelids_Enable
-                0x00000d24       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                0x00000d24                Eyelids_Enable
+                0x00000d2c       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000d2c                Eyelids_Enable
  .text.Eyelids_WriteCounter
-                0x00000d34        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                0x00000d34                Eyelids_WriteCounter
+                0x00000d3c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000d3c                Eyelids_WriteCounter
  .text.Eyelids_WritePeriod
-                0x00000d40        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                0x00000d40                Eyelids_WritePeriod
+                0x00000d48        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000d48                Eyelids_WritePeriod
  .text.Eyelids_WriteCompare1
-                0x00000d4c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                0x00000d4c                Eyelids_WriteCompare1
+                0x00000d54        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000d54                Eyelids_WriteCompare1
  .text.Eyelids_WriteCompare2
-                0x00000d58        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                0x00000d58                Eyelids_WriteCompare2
+                0x00000d60        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000d60                Eyelids_WriteCompare2
  .text.Eyelids_SetInterruptMode
-                0x00000d64        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                0x00000d64                Eyelids_SetInterruptMode
+                0x00000d6c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000d6c                Eyelids_SetInterruptMode
  .text.Eyelids_ReadStatusRegister
-                0x00000d70        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                0x00000d70                Eyelids_ReadStatusRegister
+                0x00000d78        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000d78                Eyelids_ReadStatusRegister
  .text.Eyelids_ReadCapture
-                0x00000d7c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                0x00000d7c                Eyelids_ReadCapture
+                0x00000d84        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000d84                Eyelids_ReadCapture
  .text.Eyelids_ClearFIFO
-                0x00000d88       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                0x00000d88                Eyelids_ClearFIFO
+                0x00000d90       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000d90                Eyelids_ClearFIFO
  .text.Eyelids_Init
-                0x00000d9c       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                0x00000d9c                Eyelids_Init
+                0x00000da4       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000da4                Eyelids_Init
  .text.Eyelids_Start
-                0x00000e04       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                0x00000e04                Eyelids_Start
+                0x00000e0c       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000e0c                Eyelids_Start
  .text.Neck_Enable
-                0x00000e20       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                0x00000e20                Neck_Enable
+                0x00000e28       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000e28                Neck_Enable
  .text.Neck_WriteCounter
-                0x00000e30        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                0x00000e30                Neck_WriteCounter
+                0x00000e38        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000e38                Neck_WriteCounter
  .text.Neck_WritePeriod
-                0x00000e3c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                0x00000e3c                Neck_WritePeriod
+                0x00000e44        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000e44                Neck_WritePeriod
  .text.Neck_WriteCompare1
-                0x00000e48        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                0x00000e48                Neck_WriteCompare1
+                0x00000e50        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000e50                Neck_WriteCompare1
  .text.Neck_WriteCompare2
-                0x00000e54        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                0x00000e54                Neck_WriteCompare2
+                0x00000e5c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000e5c                Neck_WriteCompare2
  .text.Neck_SetInterruptMode
-                0x00000e60        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                0x00000e60                Neck_SetInterruptMode
+                0x00000e68        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000e68                Neck_SetInterruptMode
  .text.Neck_ReadStatusRegister
-                0x00000e6c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                0x00000e6c                Neck_ReadStatusRegister
+                0x00000e74        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000e74                Neck_ReadStatusRegister
  .text.Neck_ReadCapture
-                0x00000e78        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                0x00000e78                Neck_ReadCapture
+                0x00000e80        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000e80                Neck_ReadCapture
  .text.Neck_ClearFIFO
-                0x00000e84       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                0x00000e84                Neck_ClearFIFO
+                0x00000e8c       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000e8c                Neck_ClearFIFO
  .text.Neck_Init
-                0x00000e98       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                0x00000e98                Neck_Init
+                0x00000ea0       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000ea0                Neck_Init
  .text.Neck_Start
-                0x00000f00       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                0x00000f00                Neck_Start
+                0x00000f08       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000f08                Neck_Start
  .text.Base_Enable
-                0x00000f1c       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                0x00000f1c                Base_Enable
+                0x00000f24       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x00000f24                Base_Enable
  .text.Base_WriteCounter
-                0x00000f2c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                0x00000f2c                Base_WriteCounter
+                0x00000f34        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x00000f34                Base_WriteCounter
  .text.Base_WritePeriod
-                0x00000f38        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                0x00000f38                Base_WritePeriod
+                0x00000f40        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x00000f40                Base_WritePeriod
  .text.Base_WriteCompare1
-                0x00000f44        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                0x00000f44                Base_WriteCompare1
+                0x00000f4c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x00000f4c                Base_WriteCompare1
  .text.Base_WriteCompare2
-                0x00000f50        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                0x00000f50                Base_WriteCompare2
+                0x00000f58        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x00000f58                Base_WriteCompare2
  .text.Base_SetInterruptMode
-                0x00000f5c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                0x00000f5c                Base_SetInterruptMode
+                0x00000f64        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x00000f64                Base_SetInterruptMode
  .text.Base_ReadStatusRegister
-                0x00000f68        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                0x00000f68                Base_ReadStatusRegister
+                0x00000f70        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x00000f70                Base_ReadStatusRegister
  .text.Base_ReadCapture
-                0x00000f74        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                0x00000f74                Base_ReadCapture
+                0x00000f7c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x00000f7c                Base_ReadCapture
  .text.Base_ClearFIFO
-                0x00000f80       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                0x00000f80                Base_ClearFIFO
+                0x00000f88       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x00000f88                Base_ClearFIFO
  .text.Base_Init
-                0x00000f94       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                0x00000f94                Base_Init
+                0x00000f9c       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x00000f9c                Base_Init
  .text.Base_Start
-                0x00000ffc       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                0x00000ffc                Base_Start
- .text.CyDelay  0x00001018       0x2c .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
-                0x00001018                CyDelay
+                0x00001004       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x00001004                Base_Start
+ .text.CyDelay  0x00001020       0x2c .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
+                0x00001020                CyDelay
  .text.Lips_Enable
-                0x00001044       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                0x00001044                Lips_Enable
+                0x0000104c       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x0000104c                Lips_Enable
  .text.Lips_WriteCounter
-                0x00001054        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                0x00001054                Lips_WriteCounter
+                0x0000105c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x0000105c                Lips_WriteCounter
  .text.Lips_WritePeriod
-                0x00001060        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                0x00001060                Lips_WritePeriod
+                0x00001068        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x00001068                Lips_WritePeriod
  .text.Lips_WriteCompare1
-                0x0000106c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                0x0000106c                Lips_WriteCompare1
+                0x00001074        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x00001074                Lips_WriteCompare1
  .text.Lips_WriteCompare2
-                0x00001078        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                0x00001078                Lips_WriteCompare2
+                0x00001080        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x00001080                Lips_WriteCompare2
  .text.Lips_SetInterruptMode
-                0x00001084        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                0x00001084                Lips_SetInterruptMode
+                0x0000108c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x0000108c                Lips_SetInterruptMode
  .text.Lips_ReadStatusRegister
-                0x00001090        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                0x00001090                Lips_ReadStatusRegister
+                0x00001098        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x00001098                Lips_ReadStatusRegister
  .text.Lips_ReadCapture
-                0x0000109c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                0x0000109c                Lips_ReadCapture
+                0x000010a4        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x000010a4                Lips_ReadCapture
  .text.Lips_ClearFIFO
-                0x000010a8       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                0x000010a8                Lips_ClearFIFO
+                0x000010b0       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x000010b0                Lips_ClearFIFO
  .text.Lips_Init
-                0x000010bc       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                0x000010bc                Lips_Init
+                0x000010c4       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x000010c4                Lips_Init
  .text.Lips_Start
-                0x00001124       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                0x00001124                Lips_Start
+                0x0000112c       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x0000112c                Lips_Start
  .text.timer_isr_SetVector
-                0x00001140       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
-                0x00001140                timer_isr_SetVector
+                0x00001148       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+                0x00001148                timer_isr_SetVector
  .text.timer_isr_SetPriority
-                0x00001150       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
-                0x00001150                timer_isr_SetPriority
+                0x00001158       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+                0x00001158                timer_isr_SetPriority
  .text.timer_isr_Enable
-                0x00001160       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
-                0x00001160                timer_isr_Enable
+                0x00001168       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+                0x00001168                timer_isr_Enable
  .text.timer_isr_Disable
-                0x00001170       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
-                0x00001170                timer_isr_Disable
+                0x00001178       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+                0x00001178                timer_isr_Disable
  .text.timer_isr_StartEx
-                0x00001180       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
-                0x00001180                timer_isr_StartEx
+                0x00001188       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+                0x00001188                timer_isr_StartEx
  .text.Timer_Enable
-                0x0000119c       0x28 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
-                0x0000119c                Timer_Enable
+                0x000011a4       0x28 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+                0x000011a4                Timer_Enable
  .text.Timer_SetInterruptMode
-                0x000011c4        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
-                0x000011c4                Timer_SetInterruptMode
+                0x000011cc        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+                0x000011cc                Timer_SetInterruptMode
  .text.Timer_ReadStatusRegister
-                0x000011d0        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
-                0x000011d0                Timer_ReadStatusRegister
+                0x000011d8        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+                0x000011d8                Timer_ReadStatusRegister
  .text.Timer_WritePeriod
-                0x000011dc        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
-                0x000011dc                Timer_WritePeriod
+                0x000011e4        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+                0x000011e4                Timer_WritePeriod
  .text.Timer_WriteCounter
-                0x000011e8        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
-                0x000011e8                Timer_WriteCounter
+                0x000011f0        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+                0x000011f0                Timer_WriteCounter
  .text.Timer_Init
-                0x000011f4       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
-                0x000011f4                Timer_Init
+                0x000011fc       0x68 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+                0x000011fc                Timer_Init
  .text.Timer_Start
-                0x0000125c       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
-                0x0000125c                Timer_Start
+                0x00001264       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+                0x00001264                Timer_Start
  .text.button_isr_SetVector
-                0x00001278        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
-                0x00001278                button_isr_SetVector
+                0x00001280        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+                0x00001280                button_isr_SetVector
  .text.button_isr_SetPriority
-                0x00001284       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
-                0x00001284                button_isr_SetPriority
+                0x0000128c       0x10 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+                0x0000128c                button_isr_SetPriority
  .text.button_isr_Enable
-                0x00001294        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
-                0x00001294                button_isr_Enable
+                0x0000129c        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+                0x0000129c                button_isr_Enable
  .text.button_isr_Disable
-                0x000012a0        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
-                0x000012a0                button_isr_Disable
+                0x000012a8        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+                0x000012a8                button_isr_Disable
  .text.button_isr_StartEx
-                0x000012ac       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
-                0x000012ac                button_isr_StartEx
+                0x000012b4       0x1c .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+                0x000012b4                button_isr_StartEx
  .text.button_isr_ClearPending
-                0x000012c8        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
-                0x000012c8                button_isr_ClearPending
- *fill*         0x000012d4        0x4 
- .text          0x000012d8       0x20 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
-                0x000012d8                CyDelayCycles
-                0x000012e8                CyEnterCriticalSection
-                0x000012f0                CyExitCriticalSection
- .text.__errno  0x000012f8        0xc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
-                0x000012f8                __errno
+                0x000012d0        0xc .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+                0x000012d0                button_isr_ClearPending
+ *fill*         0x000012dc        0x4 
+ .text          0x000012e0       0x20 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
+                0x000012e0                CyDelayCycles
+                0x000012f0                CyEnterCriticalSection
+                0x000012f8                CyExitCriticalSection
+ .text.__errno  0x00001300        0xc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x00001300                __errno
  .text.__libc_init_array
-                0x00001304       0x4c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
-                0x00001304                __libc_init_array
- .text.memcpy   0x00001350       0x16 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
-                0x00001350                memcpy
- .text.memset   0x00001366       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
-                0x00001366                memset
+                0x0000130c       0x4c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x0000130c                __libc_init_array
+ .text.memcpy   0x00001358       0x16 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x00001358                memcpy
+ .text.memset   0x0000136e       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x0000136e                memset
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
- .glue_7t       0x00001376        0x0 linker stubs
+ .glue_7t       0x0000137e        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x00001376        0x0 linker stubs
+ .glue_7        0x0000137e        0x0 linker stubs
  *(.vfp11_veneer)
- .vfp11_veneer  0x00001376        0x0 linker stubs
+ .vfp11_veneer  0x0000137e        0x0 linker stubs
  *(.bootloader)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
 
-.v4_bx          0x00001378        0x0
- .v4_bx         0x00001378        0x0 linker stubs
+.v4_bx          0x00001380        0x0
+ .v4_bx         0x00001380        0x0 linker stubs
 
-.iplt           0x00001378        0x0
- .iplt          0x00001378        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.iplt           0x00001380        0x0
+ .iplt          0x00001380        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
 
-.eh_frame       0x00001378        0x4
+.eh_frame       0x00001380        0x4
  *(.eh_frame)
- .eh_frame      0x00001378        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .eh_frame      0x00001378        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .eh_frame      0x00001380        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .eh_frame      0x00001380        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
                 [!provide]                PROVIDE (__exidx_start, .)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000137c                __exidx_end = .
+                0x00001384                __exidx_end = .
 
-.rodata         0x0000137c       0x6c
+.rodata         0x00001384       0x6c
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x0000137c       0x36 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .rodata        0x00001384       0x36 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .rodata.str1.1
-                0x000013b2        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
-                0x000013b4                . = ALIGN (0x4)
+                0x000013ba        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x000013bc                . = ALIGN (0x4)
  *(.init)
- .init          0x000013b4        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x000013b4                _init
- .init          0x000013b8        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x000013c0                . = ALIGN (0x4)
-                0x000013c0                __preinit_array_start = .
+ .init          0x000013bc        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x000013bc                _init
+ .init          0x000013c0        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x000013c8                . = ALIGN (0x4)
+                0x000013c8                __preinit_array_start = .
  *(.preinit_array)
-                0x000013c0                __preinit_array_end = .
-                0x000013c0                . = ALIGN (0x4)
-                0x000013c0                __init_array_start = .
+                0x000013c8                __preinit_array_end = .
+                0x000013c8                . = ALIGN (0x4)
+                0x000013c8                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x000013c0        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .init_array    0x000013c4        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x000013c8                __init_array_end = .
-                0x000013c8                . = ALIGN (0x4)
+ .init_array    0x000013c8        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .init_array    0x000013cc        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000013d0                __init_array_end = .
+                0x000013d0                . = ALIGN (0x4)
  *(.fini)
- .fini          0x000013c8        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x000013c8                _fini
- .fini          0x000013cc        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x000013d4                . = ALIGN (0x4)
-                0x000013d4                __fini_array_start = .
+ .fini          0x000013d0        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x000013d0                _fini
+ .fini          0x000013d4        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x000013dc                . = ALIGN (0x4)
+                0x000013dc                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x000013d4        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .fini_array    0x000013dc        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x000013d8                __fini_array_end = .
-                0x000013d8                . = ALIGN (0x4)
+                0x000013e0                __fini_array_end = .
+                0x000013e0                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x000013d8                . = ALIGN (0x4)
+                0x000013e0                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x000013d8                . = ALIGN (0x4)
-                0x000013d8                __cy_regions = .
-                0x000013d8        0x4 LONG 0x13e8 __cy_region_init_ram
-                0x000013dc        0x4 LONG 0x1fff80c8 __cy_region_start_data
-                0x000013e0        0x4 LONG 0x138 __cy_region_init_size_ram
-                0x000013e4        0x4 LONG 0x28 __cy_region_zero_size_ram
-                0x000013e8                __cy_regions_end = .
-                0x000013e8                . = ALIGN (0x8)
-                0x000013e8                _etext = .
+                0x000013e0                . = ALIGN (0x4)
+                0x000013e0                __cy_regions = .
+                0x000013e0        0x4 LONG 0x13f0 __cy_region_init_ram
+                0x000013e4        0x4 LONG 0x1fff80c8 __cy_region_start_data
+                0x000013e8        0x4 LONG 0x138 __cy_region_init_size_ram
+                0x000013ec        0x4 LONG 0x28 __cy_region_zero_size_ram
+                0x000013f0                __cy_regions_end = .
+                0x000013f0                . = ALIGN (0x8)
+                0x000013f0                _etext = .
 
 .cy_checksum_exclude
-                0x000013e8        0x0
+                0x000013f0        0x0
  *(.cy_checksum_exclude)
 
 .ramvectors     0x1fff8000       0xc0
@@ -1149,7 +1154,7 @@ END GROUP
  .noinit        0x1fff80c0        0x1 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
                 0x1fff80c0                CyResetStatus
 
-.data           0x1fff80c8      0x138 load address 0x000013e8
+.data           0x1fff80c8      0x138 load address 0x000013f0
                 0x1fff80c8                __cy_region_start_data = .
  *(.jcr)
  .jcr           0x1fff80c8        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
@@ -1174,10 +1179,10 @@ END GROUP
  *(.ram)
                 0x1fff8200                _edata = .
 
-.igot.plt       0x1fff8200        0x0 load address 0x00001520
+.igot.plt       0x1fff8200        0x0 load address 0x00001528
  .igot.plt      0x1fff8200        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.bss            0x1fff8200       0x28 load address 0x00001520
+.bss            0x1fff8200       0x28 load address 0x00001528
                 0x1fff8200                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
@@ -1210,11 +1215,11 @@ END GROUP
                 0x1fff8228                __end = .
                 0x1fff8228                PROVIDE (end, .)
                 0x1fff8228                PROVIDE (__bss_end__, .)
-                0x000013e8                __cy_region_init_ram = LOADADDR (.data)
+                0x000013f0                __cy_region_init_ram = LOADADDR (.data)
                 0x00000138                __cy_region_init_size_ram = (_edata - ADDR (.data))
                 0x00000028                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x1fff8228       0x80 load address 0x00001520
+.heap           0x1fff8228       0x80 load address 0x00001528
                 0x1fff8228                . = _end
                 0x1fff82a8                . = (. + 0x80)
  *fill*         0x1fff8228       0x80 
@@ -1265,8 +1270,8 @@ END GROUP
  .cymeta        0x90500000        0xc .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
                 0x90500000                cy_metadata
 
-.rel.dyn        0x00001520        0x0 load address 0x9050000c
- .rel.iplt      0x00001520        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.rel.dyn        0x00001528        0x0 load address 0x9050000c
+ .rel.iplt      0x00001528        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
 .stab
  *(.stab)
@@ -1286,271 +1291,271 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0xd00
+.debug_aranges  0x00000000      0xd10
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x70 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\main.o
  .debug_aranges
-                0x00000070       0x30 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+                0x00000078       0x38 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
  .debug_aranges
-                0x000000a0       0x28 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
+                0x000000b0       0x28 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
  .debug_aranges
-                0x000000c8       0x28 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
+                0x000000d8       0x28 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
  .debug_aranges
-                0x000000f0       0x30 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+                0x00000100       0x30 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
  .debug_aranges
-                0x00000120       0x58 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000130       0x58 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .debug_aranges
-                0x00000178       0x18 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x00000188       0x18 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
  .debug_aranges
-                0x00000190       0x48 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000001a0       0x48 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
  .debug_aranges
-                0x000001d8       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                0x000001e8       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
  .debug_aranges
-                0x00000280       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                0x00000290       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
  .debug_aranges
-                0x00000328       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                0x00000338       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
  .debug_aranges
-                0x000003d0       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                0x000003e0       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
  .debug_aranges
-                0x00000478       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                0x00000488       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
  .debug_aranges
-                0x00000520       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                0x00000530       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
  .debug_aranges
-                0x000005c8       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                0x000005d8       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
  .debug_aranges
-                0x00000670      0x2a0 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
+                0x00000680      0x2a0 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
  .debug_aranges
-                0x00000910       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
+                0x00000920       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
  .debug_aranges
-                0x000009a8       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                0x000009b8       0xa8 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
  .debug_aranges
-                0x00000a50       0x80 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+                0x00000a60       0x80 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
  .debug_aranges
-                0x00000ad0       0x88 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+                0x00000ae0       0x88 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
  .debug_aranges
-                0x00000b58       0x80 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+                0x00000b68       0x80 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
  .debug_aranges
-                0x00000bd8       0x20 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
+                0x00000be8       0x20 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
  .debug_aranges
-                0x00000bf8       0x88 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
+                0x00000c08       0x88 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
  .debug_aranges
-                0x00000c80       0x80 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
+                0x00000c90       0x80 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x70d1
+.debug_info     0x00000000     0x713f
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x875 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_info    0x00000875      0x264 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
- .debug_info    0x00000ad9      0x314 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
- .debug_info    0x00000ded      0x314 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
- .debug_info    0x00001101      0x6d8 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
- .debug_info    0x000017d9      0x4ee .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_info    0x00001cc7      0x139 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x00001e00      0x3bb .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_info    0x000021bb      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
- .debug_info    0x0000255f      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
- .debug_info    0x00002903      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
- .debug_info    0x00002ca7      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
- .debug_info    0x0000304b      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
- .debug_info    0x000033ef      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
- .debug_info    0x00003793      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
- .debug_info    0x00003b37     0x1374 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
- .debug_info    0x00004eab      0xa2a .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
- .debug_info    0x000058d5      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
- .debug_info    0x00005c79      0x2d2 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
- .debug_info    0x00005f4b      0x295 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
- .debug_info    0x000061e0      0x2d2 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
- .debug_info    0x000064b2       0x82 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
- .debug_info    0x00006534      0x64d .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
- .debug_info    0x00006b81      0x550 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
+ .debug_info    0x00000000      0x829 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_info    0x00000829      0x31a .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+ .debug_info    0x00000b43      0x314 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
+ .debug_info    0x00000e57      0x314 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
+ .debug_info    0x0000116b      0x6d8 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+ .debug_info    0x00001843      0x4ee .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00001d31      0x139 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x00001e6a      0x3bb .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_info    0x00002225      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+ .debug_info    0x000025c9      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+ .debug_info    0x0000296d      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+ .debug_info    0x00002d11      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+ .debug_info    0x000030b5      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+ .debug_info    0x00003459      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+ .debug_info    0x000037fd      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+ .debug_info    0x00003ba1     0x1374 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
+ .debug_info    0x00004f15      0xa2a .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
+ .debug_info    0x0000593f      0x3a4 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+ .debug_info    0x00005ce3      0x2d2 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+ .debug_info    0x00005fb5      0x295 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+ .debug_info    0x0000624a      0x2d2 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+ .debug_info    0x0000651c       0x86 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
+ .debug_info    0x000065a2      0x64d .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
+ .debug_info    0x00006bef      0x550 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
 
-.debug_abbrev   0x00000000     0x1e66
+.debug_abbrev   0x00000000     0x1e9e
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x155 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_abbrev  0x00000155      0x164 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
- .debug_abbrev  0x000002b9       0xce .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
- .debug_abbrev  0x00000387       0xce .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
- .debug_abbrev  0x00000455       0xce .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
- .debug_abbrev  0x00000523      0x1fe .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_abbrev  0x00000721       0x77 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_abbrev  0x00000798      0x1e8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_abbrev  0x00000980      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
- .debug_abbrev  0x00000ab3      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
- .debug_abbrev  0x00000be6      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
- .debug_abbrev  0x00000d19      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
- .debug_abbrev  0x00000e4c      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
- .debug_abbrev  0x00000f7f      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
- .debug_abbrev  0x000010b2      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
- .debug_abbrev  0x000011e5      0x254 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
- .debug_abbrev  0x00001439      0x1ab .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
- .debug_abbrev  0x000015e4      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
- .debug_abbrev  0x00001717      0x173 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
- .debug_abbrev  0x0000188a      0x11a .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
- .debug_abbrev  0x000019a4      0x173 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
- .debug_abbrev  0x00001b17       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
- .debug_abbrev  0x00001b2b      0x1a7 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
- .debug_abbrev  0x00001cd2      0x194 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
+ .debug_abbrev  0x00000000      0x164 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_abbrev  0x00000164      0x18d .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+ .debug_abbrev  0x000002f1       0xce .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
+ .debug_abbrev  0x000003bf       0xce .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
+ .debug_abbrev  0x0000048d       0xce .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+ .debug_abbrev  0x0000055b      0x1fe .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_abbrev  0x00000759       0x77 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x000007d0      0x1e8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_abbrev  0x000009b8      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+ .debug_abbrev  0x00000aeb      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+ .debug_abbrev  0x00000c1e      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+ .debug_abbrev  0x00000d51      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+ .debug_abbrev  0x00000e84      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+ .debug_abbrev  0x00000fb7      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+ .debug_abbrev  0x000010ea      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+ .debug_abbrev  0x0000121d      0x254 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
+ .debug_abbrev  0x00001471      0x1ab .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
+ .debug_abbrev  0x0000161c      0x133 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+ .debug_abbrev  0x0000174f      0x173 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+ .debug_abbrev  0x000018c2      0x11a .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+ .debug_abbrev  0x000019dc      0x173 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+ .debug_abbrev  0x00001b4f       0x14 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00001b63      0x1a7 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
+ .debug_abbrev  0x00001d0a      0x194 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
 
-.debug_line     0x00000000     0x315a
+.debug_line     0x00000000     0x3188
  *(.debug_line)
- .debug_line    0x00000000      0x38d .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_line    0x0000038d      0x1bd .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
- .debug_line    0x0000054a      0x1a6 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
- .debug_line    0x000006f0      0x1a8 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
- .debug_line    0x00000898      0x1dd .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
- .debug_line    0x00000a75      0x1da .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_line    0x00000c4f      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x00000d90      0x234 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_line    0x00000fc4      0x1b2 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
- .debug_line    0x00001176      0x1b3 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
- .debug_line    0x00001329      0x1b2 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
- .debug_line    0x000014db      0x1b3 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
- .debug_line    0x0000168e      0x1ae .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
- .debug_line    0x0000183c      0x1ab .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
- .debug_line    0x000019e7      0x1ab .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
- .debug_line    0x00001b92      0x816 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
- .debug_line    0x000023a8      0x367 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
- .debug_line    0x0000270f      0x1ab .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
- .debug_line    0x000028ba      0x136 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
- .debug_line    0x000029f0      0x153 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
- .debug_line    0x00002b43      0x137 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
- .debug_line    0x00002c7a       0x66 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
- .debug_line    0x00002ce0      0x21a .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
- .debug_line    0x00002efa      0x260 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
+ .debug_line    0x00000000      0x332 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_line    0x00000332      0x246 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+ .debug_line    0x00000578      0x1a6 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
+ .debug_line    0x0000071e      0x1a8 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
+ .debug_line    0x000008c6      0x1dd .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+ .debug_line    0x00000aa3      0x1da .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x00000c7d      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00000dbe      0x234 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_line    0x00000ff2      0x1b2 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+ .debug_line    0x000011a4      0x1b3 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+ .debug_line    0x00001357      0x1b2 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+ .debug_line    0x00001509      0x1b3 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+ .debug_line    0x000016bc      0x1ae .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+ .debug_line    0x0000186a      0x1ab .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+ .debug_line    0x00001a15      0x1ab .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+ .debug_line    0x00001bc0      0x816 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
+ .debug_line    0x000023d6      0x367 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
+ .debug_line    0x0000273d      0x1ab .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+ .debug_line    0x000028e8      0x136 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+ .debug_line    0x00002a1e      0x153 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+ .debug_line    0x00002b71      0x137 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+ .debug_line    0x00002ca8       0x66 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyBootAsmGnu.o)
+ .debug_line    0x00002d0e      0x21a .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
+ .debug_line    0x00002f28      0x260 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
 
-.debug_frame    0x00000000     0x1ee4
+.debug_frame    0x00000000     0x1f1c
  *(.debug_frame)
- .debug_frame   0x00000000      0x148 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_frame   0x00000148       0x5c .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
- .debug_frame   0x000001a4       0x48 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
- .debug_frame   0x000001ec       0x48 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
- .debug_frame   0x00000234       0x64 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
- .debug_frame   0x00000298       0xe4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_frame   0x0000037c       0xb8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_frame   0x00000434      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
- .debug_frame   0x00000588      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
- .debug_frame   0x000006dc      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
- .debug_frame   0x00000830      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
- .debug_frame   0x00000984      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
- .debug_frame   0x00000ad8      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
- .debug_frame   0x00000c2c      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
- .debug_frame   0x00000d80      0x738 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
- .debug_frame   0x000014b8      0x1f8 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
- .debug_frame   0x000016b0      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
- .debug_frame   0x00001804      0x104 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
- .debug_frame   0x00001908      0x108 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
- .debug_frame   0x00001a10      0x104 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
- .debug_frame   0x00001b14      0x194 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
- .debug_frame   0x00001ca8      0x180 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
- .debug_frame   0x00001e28       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
- .debug_frame   0x00001e48       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
- .debug_frame   0x00001e70       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
- .debug_frame   0x00001e9c       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00001ec4       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000000      0x164 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_frame   0x00000164       0x78 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+ .debug_frame   0x000001dc       0x48 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
+ .debug_frame   0x00000224       0x48 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
+ .debug_frame   0x0000026c       0x64 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+ .debug_frame   0x000002d0       0xe4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_frame   0x000003b4       0xb8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_frame   0x0000046c      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+ .debug_frame   0x000005c0      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+ .debug_frame   0x00000714      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+ .debug_frame   0x00000868      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+ .debug_frame   0x000009bc      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+ .debug_frame   0x00000b10      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+ .debug_frame   0x00000c64      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+ .debug_frame   0x00000db8      0x738 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
+ .debug_frame   0x000014f0      0x1f8 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
+ .debug_frame   0x000016e8      0x154 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+ .debug_frame   0x0000183c      0x104 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+ .debug_frame   0x00001940      0x108 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+ .debug_frame   0x00001a48      0x104 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+ .debug_frame   0x00001b4c      0x194 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
+ .debug_frame   0x00001ce0      0x180 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
+ .debug_frame   0x00001e60       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00001e80       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00001ea8       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00001ed4       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00001efc       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
 
-.debug_str      0x00000000     0x293a
+.debug_str      0x00000000     0x2957
  *(.debug_str)
- .debug_str     0x00000000      0x4a1 .\CortexM3\ARM_GCC_541\Debug\main.o
-                                0x4e9 (size before relaxing)
- .debug_str     0x000004a1      0x17b .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
-                                0x321 (size before relaxing)
- .debug_str     0x0000061c       0x2d .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
-                                0x350 (size before relaxing)
- .debug_str     0x00000649       0x2b .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
-                                0x32d (size before relaxing)
- .debug_str     0x00000674       0x3f .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
-                                0x3b5 (size before relaxing)
- .debug_str     0x000006b3      0x174 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                                0x301 (size before relaxing)
- .debug_str     0x00000827       0x7f .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
-                                0x1d6 (size before relaxing)
- .debug_str     0x000008a6      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                                0x2fc (size before relaxing)
- .debug_str     0x000009ea      0x258 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
-                                0x3f7 (size before relaxing)
- .debug_str     0x00000c42      0x20e .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
-                                0x40c (size before relaxing)
- .debug_str     0x00000e50      0x1fa .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
-                                0x3f7 (size before relaxing)
- .debug_str     0x0000104a      0x20e .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
-                                0x40c (size before relaxing)
- .debug_str     0x00001258      0x1aa .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
-                                0x3a3 (size before relaxing)
- .debug_str     0x00001402      0x16e .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
-                                0x364 (size before relaxing)
- .debug_str     0x00001570      0x16e .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
-                                0x364 (size before relaxing)
- .debug_str     0x000016de      0x7fd .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
-                                0xa39 (size before relaxing)
- .debug_str     0x00001edb      0x365 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
-                                0x725 (size before relaxing)
- .debug_str     0x00002240      0x16e .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
-                                0x364 (size before relaxing)
- .debug_str     0x000023ae      0x10c .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
-                                0x2d0 (size before relaxing)
- .debug_str     0x000024ba      0x118 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
-                                0x2e7 (size before relaxing)
- .debug_str     0x000025d2      0x101 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
-                                0x2de (size before relaxing)
- .debug_str     0x000026d3      0x1bb .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
-                                0x3b2 (size before relaxing)
- .debug_str     0x0000288e       0xac .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
-                                0x32a (size before relaxing)
+ .debug_str     0x00000000      0x461 .\CortexM3\ARM_GCC_541\Debug\main.o
+                                0x4a9 (size before relaxing)
+ .debug_str     0x00000461      0x1ed .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+                                0x3ab (size before relaxing)
+ .debug_str     0x0000064e       0x2d .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
+                                0x354 (size before relaxing)
+ .debug_str     0x0000067b       0x2b .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
+                                0x331 (size before relaxing)
+ .debug_str     0x000006a6       0x3f .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+                                0x3b9 (size before relaxing)
+ .debug_str     0x000006e5      0x16c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                                0x305 (size before relaxing)
+ .debug_str     0x00000851       0x7f .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                                0x1da (size before relaxing)
+ .debug_str     0x000008d0      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                                0x300 (size before relaxing)
+ .debug_str     0x00000a14      0x258 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+                                0x3fb (size before relaxing)
+ .debug_str     0x00000c6c      0x20e .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+                                0x410 (size before relaxing)
+ .debug_str     0x00000e7a      0x1fa .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+                                0x3fb (size before relaxing)
+ .debug_str     0x00001074      0x20e .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+                                0x410 (size before relaxing)
+ .debug_str     0x00001282      0x1aa .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+                                0x3a7 (size before relaxing)
+ .debug_str     0x0000142c      0x16e .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+                                0x368 (size before relaxing)
+ .debug_str     0x0000159a      0x16e .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+                                0x368 (size before relaxing)
+ .debug_str     0x00001708      0x7f0 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
+                                0xa3d (size before relaxing)
+ .debug_str     0x00001ef8      0x365 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
+                                0x729 (size before relaxing)
+ .debug_str     0x0000225d      0x16e .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+                                0x368 (size before relaxing)
+ .debug_str     0x000023cb      0x10c .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+                                0x2d4 (size before relaxing)
+ .debug_str     0x000024d7      0x118 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+                                0x2eb (size before relaxing)
+ .debug_str     0x000025ef      0x101 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+                                0x2e2 (size before relaxing)
+ .debug_str     0x000026f0      0x1bb .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
+                                0x3b6 (size before relaxing)
+ .debug_str     0x000028ab       0xac .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
+                                0x32e (size before relaxing)
 
-.debug_loc      0x00000000     0x1fda
+.debug_loc      0x00000000     0x2003
  *(.debug_loc)
- .debug_loc     0x00000000       0x3d .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_loc     0x0000003d       0xd4 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
- .debug_loc     0x00000111       0xd8 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
- .debug_loc     0x000001e9       0xd8 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
- .debug_loc     0x000002c1      0x176 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
- .debug_loc     0x00000437      0x1d7 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_loc     0x0000060e      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_loc     0x00000752       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
- .debug_loc     0x00000778       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
- .debug_loc     0x0000079e       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
- .debug_loc     0x000007c4       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
- .debug_loc     0x000007ea       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
- .debug_loc     0x00000810       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
- .debug_loc     0x00000836       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
- .debug_loc     0x0000085c      0xa11 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
- .debug_loc     0x0000126d      0x1e4 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
- .debug_loc     0x00001451       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
- .debug_loc     0x00001477       0x56 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
- .debug_loc     0x000014cd       0x56 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
- .debug_loc     0x00001523      0x3b2 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
- .debug_loc     0x000018d5      0x705 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
+ .debug_loc     0x00000000       0x66 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_loc     0x00000066       0xd4 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+ .debug_loc     0x0000013a       0xd8 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
+ .debug_loc     0x00000212       0xd8 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
+ .debug_loc     0x000002ea      0x176 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+ .debug_loc     0x00000460      0x1d7 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_loc     0x00000637      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_loc     0x0000077b       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+ .debug_loc     0x000007a1       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+ .debug_loc     0x000007c7       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+ .debug_loc     0x000007ed       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+ .debug_loc     0x00000813       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+ .debug_loc     0x00000839       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+ .debug_loc     0x0000085f       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+ .debug_loc     0x00000885      0xa11 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
+ .debug_loc     0x00001296      0x1e4 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
+ .debug_loc     0x0000147a       0x26 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+ .debug_loc     0x000014a0       0x56 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+ .debug_loc     0x000014f6       0x56 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+ .debug_loc     0x0000154c      0x3b2 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
+ .debug_loc     0x000018fe      0x705 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
 
 .debug_macinfo
  *(.debug_macinfo)
 
-.debug_ranges   0x00000000      0xb68
+.debug_ranges   0x00000000      0xb78
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x60 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_ranges  0x00000060       0x20 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
- .debug_ranges  0x00000080       0x18 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
- .debug_ranges  0x00000098       0x18 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
- .debug_ranges  0x000000b0       0x20 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
- .debug_ranges  0x000000d0       0x48 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_ranges  0x00000118       0x38 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_ranges  0x00000150       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
- .debug_ranges  0x000001e8       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
- .debug_ranges  0x00000280       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
- .debug_ranges  0x00000318       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
- .debug_ranges  0x000003b0       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
- .debug_ranges  0x00000448       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
- .debug_ranges  0x000004e0       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
- .debug_ranges  0x00000578      0x290 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
- .debug_ranges  0x00000808       0x88 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
- .debug_ranges  0x00000890       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
- .debug_ranges  0x00000928       0x70 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
- .debug_ranges  0x00000998       0x78 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
- .debug_ranges  0x00000a10       0x70 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
- .debug_ranges  0x00000a80       0x78 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
- .debug_ranges  0x00000af8       0x70 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
+ .debug_ranges  0x00000000       0x68 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_ranges  0x00000068       0x28 .\CortexM3\ARM_GCC_541\Debug\servocontrol.o
+ .debug_ranges  0x00000090       0x18 .\CortexM3\ARM_GCC_541\Debug\neckcontrol.o
+ .debug_ranges  0x000000a8       0x18 .\CortexM3\ARM_GCC_541\Debug\mouthcontrol.o
+ .debug_ranges  0x000000c0       0x20 .\CortexM3\ARM_GCC_541\Debug\eyecontrol.o
+ .debug_ranges  0x000000e0       0x48 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_ranges  0x00000128       0x38 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_ranges  0x00000160       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyebrow.o)
+ .debug_ranges  0x000001f8       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyebrow.o)
+ .debug_ranges  0x00000290       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(LeftEyeball.o)
+ .debug_ranges  0x00000328       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(RightEyeball.o)
+ .debug_ranges  0x000003c0       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(Eyelids.o)
+ .debug_ranges  0x00000458       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(Neck.o)
+ .debug_ranges  0x000004f0       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(Base.o)
+ .debug_ranges  0x00000588      0x290 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyLib.o)
+ .debug_ranges  0x00000818       0x88 .\CortexM3\ARM_GCC_541\Debug\Control.a(cyPm.o)
+ .debug_ranges  0x000008a0       0x98 .\CortexM3\ARM_GCC_541\Debug\Control.a(Lips.o)
+ .debug_ranges  0x00000938       0x70 .\CortexM3\ARM_GCC_541\Debug\Control.a(timer_isr.o)
+ .debug_ranges  0x000009a8       0x78 .\CortexM3\ARM_GCC_541\Debug\Control.a(Timer.o)
+ .debug_ranges  0x00000a20       0x70 .\CortexM3\ARM_GCC_541\Debug\Control.a(button_isr.o)
+ .debug_ranges  0x00000a90       0x78 .\CortexM3\ARM_GCC_541\Debug\Control.a(CyFlash.o)
+ .debug_ranges  0x00000b08       0x70 .\CortexM3\ARM_GCC_541\Debug\Control.a(CySpc.o)
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e .\CortexM3\ARM_GCC_541\Debug\main.o
@@ -1669,4 +1674,4 @@ END GROUP
 
 /DISCARD/
  *(.note.GNU-stack)
-OUTPUT(C:\Users\jon\Desktop\CSE564-PSoC\Face\Control.cydsn\CortexM3\ARM_GCC_541\Debug\Control.elf elf32-littlearm)
+OUTPUT(C:\Users\jon\development\CSE564-PSoC\Face\Control.cydsn\CortexM3\ARM_GCC_541\Debug\Control.elf elf32-littlearm)

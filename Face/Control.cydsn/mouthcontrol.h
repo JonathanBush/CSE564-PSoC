@@ -1,11 +1,17 @@
 /* ========================================
  *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
+ * Functions controlling the mouth
+ * 
+ * Developed for CSE 564
+ * Arizona State University
+ * 
+ * Authors:
+ * Jonathan Bush
+ * Zachary Monroe
+ * Maurice Ajluni
  *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
+ * Released under the BSE 3-Clause License
+ * 2019
  *
  * ========================================
 */

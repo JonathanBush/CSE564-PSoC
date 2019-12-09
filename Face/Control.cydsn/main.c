@@ -1,11 +1,19 @@
 /* ========================================
  *
- * Copyright YOUR COMPANY, THE YEAR
- * All Rights Reserved
- * UNPUBLISHED, LICENSED SOFTWARE.
+ * Robotic face controller
+ * 
+ * Developed for CSE 564
+ * Arizona State University
+ * 
+ * Authors:
+ * Jonathan Bush
+ * Zachary Monroe
+ * Maurice Ajluni
+ * Vatricia Edgar
+ * Matthew Frautnick
  *
- * CONFIDENTIAL AND PROPRIETARY INFORMATION
- * WHICH IS THE PROPERTY OF your company.
+ * Released under the BSE 3-Clause License
+ * 2019
  *
  * ========================================
 */
@@ -16,15 +24,14 @@
 #include "eyecontrol.h"
 #include "project.h"
 
-
+/* time between steps in case of autonatic advancement */
 #define STEP_DELAY 1000
 
-
+/* prototypes for interrupt handlers */
 CY_ISR_PROTO(periodic_task);
 CY_ISR_PROTO(button_press);
 
-volatile uint8 button_click = 0;
-
+volatile uint8 button_click = 0;    // set on debounced rising edge
 
 /* called at 200 Hz */
 CY_ISR(periodic_task) {
@@ -39,6 +46,7 @@ CY_ISR(button_press) {
 
 /* facial expressions */
 
+/* makes the eyes blink x times */
 void blink(int x){
 	for(int i = 0; i < x; i++){
 		eyelid_set(EYELID_CLOSED);
@@ -48,6 +56,7 @@ void blink(int x){
 	}
 }
 
+/* neutral facial expression, can be called to reset face after other expressions */
 void neutral() {
 	rotate_set(NECK_ROTATE_CENTER);
 	tilt_set(HEAD_TILT_CENTER);
@@ -58,6 +67,7 @@ void neutral() {
 	eyebrow_set(EYEBROW_NORMAL);
 }
 
+/* sad facial expression */
 void sad() {
   neutral();
   eyebrow_set(EYEBROW_NORMAL);
@@ -69,6 +79,7 @@ void sad() {
   rotate_set(NECK_ROTATE_CENTER);
 }
 
+/* surprised facial expression */
 void surprised() {
     neutral();
 	rotate_set(NECK_ROTATE_CENTER);
@@ -80,6 +91,7 @@ void surprised() {
 	eyebrow_set(EYEBROW_BOTHRAISE);
 }
 
+/* anguished facial expression */
 void anguish() {
     neutral();
     tilt_set(HEAD_TILT_BACK);
@@ -90,6 +102,7 @@ void anguish() {
     eyeball_set(EYEBALL_CENTER);   
 }
 
+/* confused facial expression */
 void confused() {
     neutral();
     eyebrow_set(EYEBROW_LEFTRAISE);
@@ -101,8 +114,8 @@ void confused() {
     eyelid_set(EYELID_UP);
 }
 
+/* rolled eyes facial expression */
 void eyeroll() {
-    // eyeroll
     neutral();
     mouth_set(MOUTH_CLOSE);
     eyebrow_set(EYEBROW_BOTHRAISE);
@@ -111,6 +124,7 @@ void eyeroll() {
     eyeball_set(EYEBALL_UP);    
 }
 
+/* wait until the button is pressed */
 void button_wait() {
     while (!button_click) {
         CyDelay(10);
@@ -118,12 +132,18 @@ void button_wait() {
     button_click = 0;
 }
 
+/* wait until the button is pressed or the timeout is reached */
+void button_wait_timeout(uint16 milliseconds) {
+    while (!button_click && milliseconds) {
+        CyDelay(1);
+        milliseconds--;
+    }
+    button_click = 0;   
+}
 
 int main(void)
 {
     CyGlobalIntEnable; /* Enable global interrupts. */
-
-    /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     
     neutral();  // start everything in the neutral position
     
@@ -132,19 +152,15 @@ int main(void)
     timer_isr_StartEx(periodic_task);   // connect the interrupt handlers
     button_isr_StartEx(button_press);
     
-    CyDelay(1000);
+    CyDelay(1000);  // give time for the servo positions to update
 
-    LeftEyebrow_Start();
-    RightEyebrow_Start();
-    RightEyeball_Start();
-    LeftEyeball_Start();
-    Eyelids_Start();
-    Lips_Start();
-    Base_Start();
-    Neck_Start();
-    button_wait();
+    start_servos(); // start the PWM generators
+    
+    button_wait();  // wait until the button is pressed
+    
     for(;;)
     {
+        // loop through the different expressions, with at button wait between each
         confused();
         button_wait();
         anguish();
@@ -157,7 +173,6 @@ int main(void)
         button_wait();
         neutral();
         button_wait();
-
     }
 }
 

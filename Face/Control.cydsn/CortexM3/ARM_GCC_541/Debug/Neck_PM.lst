@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
   28:Generated_Source\PSoC5/Neck_PM.c **** *  Saves the current user configuration of the component.
   29:Generated_Source\PSoC5/Neck_PM.c **** *
   30:Generated_Source\PSoC5/Neck_PM.c **** * Parameters:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 2
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 2
 
 
   31:Generated_Source\PSoC5/Neck_PM.c **** *  None
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
   64:Generated_Source\PSoC5/Neck_PM.c ****             Neck_backup.PWMControlRegister = Neck_ReadControlRegister();
   49              		.loc 1 64 0
   50 0016 FFF7FEFF 		bl	Neck_ReadControlRegister
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 3
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 3
 
 
   51              	.LVL2:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
   92:Generated_Source\PSoC5/Neck_PM.c ****                 Neck_WritePeriod(Neck_backup.PWMPeriod);
   78              		.loc 1 92 0
   79 0002 074C     		ldr	r4, .L7
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 4
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 4
 
 
   80 0004 A088     		ldrh	r0, [r4, #4]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  115:Generated_Source\PSoC5/Neck_PM.c **** 
  116:Generated_Source\PSoC5/Neck_PM.c **** 
  117:Generated_Source\PSoC5/Neck_PM.c **** /*******************************************************************************
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 5
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 5
 
 
  118:Generated_Source\PSoC5/Neck_PM.c **** * Function Name: Neck_Sleep
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  148:Generated_Source\PSoC5/Neck_PM.c ****         }
  149:Generated_Source\PSoC5/Neck_PM.c ****     #endif /* (Neck_UseControl) */
  150:Generated_Source\PSoC5/Neck_PM.c **** 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 6
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 6
 
 
  151:Generated_Source\PSoC5/Neck_PM.c ****     /* Stop component */
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  161              		@ args = 0, pretend = 0, frame = 0
  162              		@ frame_needed = 0, uses_anonymous_args = 0
  163 0000 08B5     		push	{r3, lr}
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 7
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 7
 
 
  164              		.cfi_def_cfa_offset 8
@@ -412,17 +412,17 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  204 000c D7000000 		.4byte	.LASF35
  205 0010 0C       		.byte	0xc
  206 0011 37000000 		.4byte	.LASF36
- 207 0015 6E020000 		.4byte	.LASF37
+ 207 0015 3F020000 		.4byte	.LASF37
  208 0019 00000000 		.4byte	.Ldebug_ranges0+0
  209 001d 00000000 		.4byte	0
  210 0021 00000000 		.4byte	.Ldebug_line0
  211 0025 02       		.uleb128 0x2
  212 0026 01       		.byte	0x1
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 8
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 8
 
 
  213 0027 06       		.byte	0x6
- 214 0028 A2020000 		.4byte	.LASF0
+ 214 0028 A6020000 		.4byte	.LASF0
  215 002c 02       		.uleb128 0x2
  216 002d 01       		.byte	0x1
  217 002e 08       		.byte	0x8
@@ -438,7 +438,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  227 0041 02       		.uleb128 0x2
  228 0042 04       		.byte	0x4
  229 0043 05       		.byte	0x5
- 230 0044 59020000 		.4byte	.LASF4
+ 230 0044 91020000 		.4byte	.LASF4
  231 0048 02       		.uleb128 0x2
  232 0049 04       		.byte	0x4
  233 004a 07       		.byte	0x7
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  267 008c 04       		.byte	0x4
  268 008d B6010000 		.4byte	.LASF12
  269 0091 02       		.uleb128 0x2
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 9
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 9
 
 
  270 0092 01       		.byte	0x1
@@ -494,7 +494,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  280 00a9 02       		.uleb128 0x2
  281 00aa 08       		.byte	0x8
  282 00ab 04       		.byte	0x4
- 283 00ac 62020000 		.4byte	.LASF15
+ 283 00ac 9A020000 		.4byte	.LASF15
  284 00b0 02       		.uleb128 0x2
  285 00b1 04       		.byte	0x4
  286 00b2 07       		.byte	0x7
@@ -505,7 +505,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  291 00ba 6B       		.byte	0x6b
  292 00bb FC000000 		.4byte	0xfc
  293 00bf 07       		.uleb128 0x7
- 294 00c0 4A020000 		.4byte	.LASF17
+ 294 00c0 82020000 		.4byte	.LASF17
  295 00c4 03       		.byte	0x3
  296 00c5 6E       		.byte	0x6e
  297 00c6 6B000000 		.4byte	0x6b
@@ -523,7 +523,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  309 00de 77000000 		.4byte	0x77
  310 00e2 04       		.byte	0x4
  311 00e3 07       		.uleb128 0x7
- 312 00e4 B8020000 		.4byte	.LASF20
+ 312 00e4 BC020000 		.4byte	.LASF20
  313 00e8 03       		.byte	0x3
  314 00e9 76       		.byte	0x76
  315 00ea 6B000000 		.4byte	0x6b
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  324 00fc 08       		.uleb128 0x8
  325 00fd 58000000 		.4byte	.LASF22
  326 0101 03       		.byte	0x3
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 10
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 10
 
 
  327 0102 8B       		.byte	0x8b
@@ -582,7 +582,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  365 0164 01020000 		.4byte	0x201
  366 0168 00       		.byte	0
  367 0169 09       		.uleb128 0x9
- 368 016a 3F020000 		.4byte	.LASF25
+ 368 016a 77020000 		.4byte	.LASF25
  369 016e 01       		.byte	0x1
  370 016f 88       		.byte	0x88
  371 0170 00000000 		.4byte	.LFB2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  381 018c 07010000 		.4byte	0x107
  382 0190 00       		.byte	0
  383 0191 09       		.uleb128 0x9
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 11
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 11
 
 
  384 0192 8D000000 		.4byte	.LASF26
@@ -655,10 +655,10 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  435 020a 03       		.byte	0x3
  436 020b 9E       		.byte	0x9e
  437 020c 0C       		.uleb128 0xc
- 438 020d AE020000 		.4byte	.LASF33
- 439 0211 AE020000 		.4byte	.LASF33
+ 438 020d B2020000 		.4byte	.LASF33
+ 439 0211 B2020000 		.4byte	.LASF33
  440 0215 03       		.byte	0x3
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 12
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 12
 
 
  441 0216 93       		.byte	0x93
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  495 002d 0E       		.uleb128 0xe
  496 002e 3A       		.uleb128 0x3a
  497 002f 0B       		.uleb128 0xb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 13
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 13
 
 
  498 0030 3B       		.uleb128 0x3b
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  552 0066 09       		.uleb128 0x9
  553 0067 2E       		.uleb128 0x2e
  554 0068 01       		.byte	0x1
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 14
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 14
 
 
  555 0069 3F       		.uleb128 0x3f
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  609 00a2 0E       		.uleb128 0xe
  610 00a3 03       		.uleb128 0x3
  611 00a4 0E       		.uleb128 0xe
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 15
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 15
 
 
  612 00a5 3A       		.uleb128 0x3a
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  657 0021 50574D50 		.ascii	"PWMPeriod\000"
  657      6572696F 
  657      6400
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 16
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 16
 
 
  658              	.LASF38:
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  679      352E342E 
  679      31203230 
  679      31363036 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 17
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 17
 
 
  680 010a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  701      20696E74 
  701      00
  702              	.LASF7:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 18
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 18
 
 
  703 01e4 6C6F6E67 		.ascii	"long long unsigned int\000"
@@ -1052,44 +1052,45 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 1
  715 0235 73686F72 		.ascii	"short int\000"
  715      7420696E 
  715      7400
- 716              	.LASF25:
- 717 023f 4E65636B 		.ascii	"Neck_Sleep\000"
- 717      5F536C65 
- 717      657000
- 718              	.LASF17:
- 719 024a 50574D45 		.ascii	"PWMEnableState\000"
- 719      6E61626C 
- 719      65537461 
- 719      746500
- 720              	.LASF4:
- 721 0259 6C6F6E67 		.ascii	"long int\000"
- 721      20696E74 
- 721      00
- 722              	.LASF15:
- 723 0262 6C6F6E67 		.ascii	"long double\000"
- 723      20646F75 
- 723      626C6500 
- 724              	.LASF37:
- 725 026e 433A5C55 		.ascii	"C:\\Users\\jon\\Desktop\\CSE564-PSoC\\Face\\Control"
- 725      73657273 
- 725      5C6A6F6E 
- 725      5C446573 
- 725      6B746F70 
- 726 029b 2E637964 		.ascii	".cydsn\000"
- 726      736E00
+ 716              	.LASF37:
+ 717 023f 433A5C55 		.ascii	"C:\\Users\\jon\\development\\CSE564-PSoC\\Face\\Con"
+ 717      73657273 
+ 717      5C6A6F6E 
+ 717      5C646576 
+ 717      656C6F70 
+ 718 026c 74726F6C 		.ascii	"trol.cydsn\000"
+ 718      2E637964 
+ 718      736E00
+ 719              	.LASF25:
+ 720 0277 4E65636B 		.ascii	"Neck_Sleep\000"
+ 720      5F536C65 
+ 720      657000
+ 721              	.LASF17:
+ 722 0282 50574D45 		.ascii	"PWMEnableState\000"
+ 722      6E61626C 
+ 722      65537461 
+ 722      746500
+ 723              	.LASF4:
+ 724 0291 6C6F6E67 		.ascii	"long int\000"
+ 724      20696E74 
+ 724      00
+ 725              	.LASF15:
+ 726 029a 6C6F6E67 		.ascii	"long double\000"
+ 726      20646F75 
+ 726      626C6500 
+ARM GAS  C:\Users\jon\AppData\Local\Temp\cccW6PNb.s 			page 19
+
+
  727              	.LASF0:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\ccMAEROv.s 			page 19
-
-
- 728 02a2 7369676E 		.ascii	"signed char\000"
+ 728 02a6 7369676E 		.ascii	"signed char\000"
  728      65642063 
  728      68617200 
  729              	.LASF33:
- 730 02ae 4E65636B 		.ascii	"Neck_Stop\000"
+ 730 02b2 4E65636B 		.ascii	"Neck_Stop\000"
  730      5F53746F 
  730      7000
  731              	.LASF20:
- 732 02b8 496E7465 		.ascii	"InterruptMaskValue\000"
+ 732 02bc 496E7465 		.ascii	"InterruptMaskValue\000"
  732      72727570 
  732      744D6173 
  732      6B56616C 

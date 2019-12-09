@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
   28:Generated_Source\PSoC5/RightEyeball.c ****     #error PWM_v3_30 detected with a constant 0 for the enable or \
   29:Generated_Source\PSoC5/RightEyeball.c ****          constant 1 for reset. This will prevent the component from operating.
   30:Generated_Source\PSoC5/RightEyeball.c **** #endif /* RightEyeball_PWMUDB_genblk1_ctrlreg__REMOVED */
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 2
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 2
 
 
   31:Generated_Source\PSoC5/RightEyeball.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
   85:Generated_Source\PSoC5/RightEyeball.c **** {
   86:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UsingFixedFunction || RightEyeball_UseControl)
   87:Generated_Source\PSoC5/RightEyeball.c ****         uint8 ctrl;
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 3
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 3
 
 
   88:Generated_Source\PSoC5/RightEyeball.c ****     #endif /* (RightEyeball_UsingFixedFunction || RightEyeball_UseControl) */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  142:Generated_Source\PSoC5/RightEyeball.c ****             RightEyeball_WriteCompare2(RightEyeball_INIT_COMPARE_VALUE2);
  143:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UseOneCompareMode) */
  144:Generated_Source\PSoC5/RightEyeball.c **** 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 4
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 4
 
 
  145:Generated_Source\PSoC5/RightEyeball.c ****         #if (RightEyeball_KillModeMinTime)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  199:Generated_Source\PSoC5/RightEyeball.c **** void RightEyeball_Enable(void) 
  200:Generated_Source\PSoC5/RightEyeball.c **** {
   28              		.loc 1 200 0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 5
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 5
 
 
   29              		.cfi_startproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  230:Generated_Source\PSoC5/RightEyeball.c **** *  has no effect on the operation of the PWM
  231:Generated_Source\PSoC5/RightEyeball.c **** *
  232:Generated_Source\PSoC5/RightEyeball.c **** *******************************************************************************/
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 6
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 6
 
 
  233:Generated_Source\PSoC5/RightEyeball.c **** void RightEyeball_Stop(void) 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  261:Generated_Source\PSoC5/RightEyeball.c ****         *
  262:Generated_Source\PSoC5/RightEyeball.c ****         * Return:
  263:Generated_Source\PSoC5/RightEyeball.c ****         *  None
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 7
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 7
 
 
  264:Generated_Source\PSoC5/RightEyeball.c ****         *
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  318:Generated_Source\PSoC5/RightEyeball.c ****         * Parameters:
  319:Generated_Source\PSoC5/RightEyeball.c ****         *  comparemode:  The new compare mode for the PWM output. Use the compare types
  320:Generated_Source\PSoC5/RightEyeball.c ****         *                defined in the H file as input arguments.
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 8
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 8
 
 
  321:Generated_Source\PSoC5/RightEyeball.c ****         *
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  375:Generated_Source\PSoC5/RightEyeball.c ****     #endif /*RightEyeball_CompareMode2SW */
  376:Generated_Source\PSoC5/RightEyeball.c **** 
  377:Generated_Source\PSoC5/RightEyeball.c **** #endif /* UseOneCompareMode */
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 9
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 9
 
 
  378:Generated_Source\PSoC5/RightEyeball.c **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  407:Generated_Source\PSoC5/RightEyeball.c ****     }
  408:Generated_Source\PSoC5/RightEyeball.c **** 
  409:Generated_Source\PSoC5/RightEyeball.c **** 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 10
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 10
 
 
  410:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  134              	.LFB7:
  435:Generated_Source\PSoC5/RightEyeball.c **** 
  436:Generated_Source\PSoC5/RightEyeball.c ****     #if (RightEyeball_UseStatus)
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 11
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 11
 
 
  437:Generated_Source\PSoC5/RightEyeball.c **** 
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  485:Generated_Source\PSoC5/RightEyeball.c ****         CY_SET_REG16(RightEyeball_PERIOD_LSB_PTR, (uint16)period);
  486:Generated_Source\PSoC5/RightEyeball.c ****     #else
  487:Generated_Source\PSoC5/RightEyeball.c ****         CY_SET_REG16(RightEyeball_PERIOD_LSB_PTR, period);
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 12
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 12
 
 
  141              		.loc 1 487 0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  523:Generated_Source\PSoC5/RightEyeball.c ****         #endif /* (RightEyeball_UsingFixedFunction) */
  524:Generated_Source\PSoC5/RightEyeball.c **** 
  525:Generated_Source\PSoC5/RightEyeball.c ****         #if (RightEyeball_PWMMode == RightEyeball__B_PWM__DITHER)
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 13
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 13
 
 
  526:Generated_Source\PSoC5/RightEyeball.c ****             #if(RightEyeball_UsingFixedFunction)
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  178              		.align	2
  179              		.global	RightEyeball_WriteCompare2
  180              		.thumb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 14
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 14
 
 
  181              		.thumb_func
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  206              		.thumb_func
  207              		.type	RightEyeball_SetInterruptMode, %function
  208              	RightEyeball_SetInterruptMode:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 15
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 15
 
 
  209              	.LFB10:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  644:Generated_Source\PSoC5/RightEyeball.c ****     * Return:
  645:Generated_Source\PSoC5/RightEyeball.c ****     *  Dead Band Counts
  646:Generated_Source\PSoC5/RightEyeball.c ****     *
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 16
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 16
 
 
  647:Generated_Source\PSoC5/RightEyeball.c ****     *******************************************************************************/
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  224              		.cfi_endproc
  225              	.LFE10:
  226              		.size	RightEyeball_SetInterruptMode, .-RightEyeball_SetInterruptMode
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 17
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 17
 
 
  227              		.section	.text.RightEyeball_ReadStatusRegister,"ax",%progbits
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  253              		.align	2
  254              		.global	RightEyeball_ReadControlRegister
  255              		.thumb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 18
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 18
 
 
  256              		.thumb_func
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  281              		.thumb
  282              		.thumb_func
  283              		.type	RightEyeball_WriteControlRegister, %function
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 19
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 19
 
 
  284              	RightEyeball_WriteControlRegister:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  771:Generated_Source\PSoC5/RightEyeball.c **** 
  772:Generated_Source\PSoC5/RightEyeball.c **** 
  773:Generated_Source\PSoC5/RightEyeball.c **** #if (!RightEyeball_UsingFixedFunction)
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 20
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 20
 
 
  774:Generated_Source\PSoC5/RightEyeball.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  344              		.cfi_offset 14, -4
  455:Generated_Source\PSoC5/RightEyeball.c ****             {
  345              		.loc 1 455 0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 21
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 21
 
 
  346 0002 01E0     		b	.L38
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  392              		.loc 1 130 0
  393 001a 124C     		ldr	r4, .L43+4
  394 001c 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 22
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 22
 
 
  395 001e 43F00103 		orr	r3, r3, #1
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  440              		.align	2
  441              		.global	RightEyeball_Start
  442              		.thumb
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 23
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 23
 
 
  443              		.thumb_func
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  800:Generated_Source\PSoC5/RightEyeball.c **** 
  801:Generated_Source\PSoC5/RightEyeball.c ****     /*******************************************************************************
  802:Generated_Source\PSoC5/RightEyeball.c ****     * Function Name: RightEyeball_ReadCompare
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 24
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 24
 
 
  803:Generated_Source\PSoC5/RightEyeball.c ****     ********************************************************************************
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  497              	.L52:
  498              		.align	2
  499              	.L51:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 25
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 25
 
 
  500 0008 5C680040 		.word	1073768540
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  534              		.thumb_func
  535              		.type	RightEyeball_ReadPeriod, %function
  536              	RightEyeball_ReadPeriod:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 26
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 26
 
 
  537              	.LFB17:
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  565              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
  566              		.file 3 "Generated_Source\\PSoC5\\CyLib.h"
  567              		.section	.debug_info,"",%progbits
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 27
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 27
 
 
  568              	.Ldebug_info0:
@@ -1567,17 +1567,17 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  571 0006 00000000 		.4byte	.Ldebug_abbrev0
  572 000a 04       		.byte	0x4
  573 000b 01       		.uleb128 0x1
- 574 000c 1E020000 		.4byte	.LASF45
+ 574 000c 56020000 		.4byte	.LASF45
  575 0010 0C       		.byte	0xc
  576 0011 62000000 		.4byte	.LASF46
- 577 0015 74030000 		.4byte	.LASF47
+ 577 0015 40010000 		.4byte	.LASF47
  578 0019 00000000 		.4byte	.Ldebug_ranges0+0
  579 001d 00000000 		.4byte	0
  580 0021 00000000 		.4byte	.Ldebug_line0
  581 0025 02       		.uleb128 0x2
  582 0026 01       		.byte	0x1
  583 0027 06       		.byte	0x6
- 584 0028 A8030000 		.4byte	.LASF0
+ 584 0028 AC030000 		.4byte	.LASF0
  585 002c 02       		.uleb128 0x2
  586 002d 01       		.byte	0x1
  587 002e 08       		.byte	0x8
@@ -1585,7 +1585,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  589 0033 02       		.uleb128 0x2
  590 0034 02       		.byte	0x2
  591 0035 05       		.byte	0x5
- 592 0036 40010000 		.4byte	.LASF2
+ 592 0036 78010000 		.4byte	.LASF2
  593 003a 02       		.uleb128 0x2
  594 003b 02       		.byte	0x2
  595 003c 07       		.byte	0x7
@@ -1593,7 +1593,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  597 0041 02       		.uleb128 0x2
  598 0042 04       		.byte	0x4
  599 0043 05       		.byte	0x5
- 600 0044 3F030000 		.4byte	.LASF4
+ 600 0044 77030000 		.4byte	.LASF4
  601 0048 02       		.uleb128 0x2
  602 0049 04       		.byte	0x4
  603 004a 07       		.byte	0x7
@@ -1601,7 +1601,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  605 004f 02       		.uleb128 0x2
  606 0050 08       		.byte	0x8
  607 0051 05       		.byte	0x5
- 608 0052 B5020000 		.4byte	.LASF6
+ 608 0052 ED020000 		.4byte	.LASF6
  609 0056 02       		.uleb128 0x2
  610 0057 08       		.byte	0x8
  611 0058 07       		.byte	0x7
@@ -1613,17 +1613,17 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  617 0064 02       		.uleb128 0x2
  618 0065 04       		.byte	0x4
  619 0066 07       		.byte	0x7
- 620 0067 81010000 		.4byte	.LASF8
+ 620 0067 B9010000 		.4byte	.LASF8
  621 006b 04       		.uleb128 0x4
- 622 006c 39030000 		.4byte	.LASF9
+ 622 006c 71030000 		.4byte	.LASF9
  623 0070 02       		.byte	0x2
  624 0071 E401     		.2byte	0x1e4
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 28
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 28
 
 
  625 0073 2C000000 		.4byte	0x2c
  626 0077 04       		.uleb128 0x4
- 627 0078 63010000 		.4byte	.LASF10
+ 627 0078 9B010000 		.4byte	.LASF10
  628 007c 02       		.byte	0x2
  629 007d E501     		.2byte	0x1e5
  630 007f 3A000000 		.4byte	0x3a
@@ -1656,13 +1656,13 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  657 00ba 02       		.uleb128 0x2
  658 00bb 08       		.byte	0x8
  659 00bc 04       		.byte	0x4
- 660 00bd 68030000 		.4byte	.LASF16
+ 660 00bd A0030000 		.4byte	.LASF16
  661 00c1 02       		.uleb128 0x2
  662 00c2 04       		.byte	0x4
  663 00c3 07       		.byte	0x7
- 664 00c4 AC020000 		.4byte	.LASF17
+ 664 00c4 E4020000 		.4byte	.LASF17
  665 00c8 06       		.uleb128 0x6
- 666 00c9 8E010000 		.4byte	.LASF18
+ 666 00c9 C6010000 		.4byte	.LASF18
  667 00cd 01       		.byte	0x1
  668 00ce C7       		.byte	0xc7
  669 00cf 00000000 		.4byte	.LFB2
@@ -1670,7 +1670,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  671 00d7 01       		.uleb128 0x1
  672 00d8 9C       		.byte	0x9c
  673 00d9 06       		.uleb128 0x6
- 674 00da FA030000 		.4byte	.LASF19
+ 674 00da FE030000 		.4byte	.LASF19
  675 00de 01       		.byte	0x1
  676 00df E9       		.byte	0xe9
  677 00e0 00000000 		.4byte	.LFB3
@@ -1678,10 +1678,10 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  679 00e8 01       		.uleb128 0x1
  680 00e9 9C       		.byte	0x9c
  681 00ea 07       		.uleb128 0x7
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 29
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 29
 
 
- 682 00eb A2010000 		.4byte	.LASF20
+ 682 00eb DA010000 		.4byte	.LASF20
  683 00ef 01       		.byte	0x1
  684 00f0 9301     		.2byte	0x193
  685 00f2 00000000 		.4byte	.LFB4
@@ -1698,7 +1698,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  696 010d 50       		.byte	0x50
  697 010e 00       		.byte	0
  698 010f 09       		.uleb128 0x9
- 699 0110 20030000 		.4byte	.LASF29
+ 699 0110 58030000 		.4byte	.LASF29
  700 0114 01       		.byte	0x1
  701 0115 A901     		.2byte	0x1a9
  702 0117 77000000 		.4byte	0x77
@@ -1724,7 +1724,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  722 0148 50       		.byte	0x50
  723 0149 00       		.byte	0
  724 014a 07       		.uleb128 0x7
- 725 014b D9010000 		.4byte	.LASF24
+ 725 014b 11020000 		.4byte	.LASF24
  726 014f 01       		.byte	0x1
  727 0150 2B02     		.2byte	0x22b
  728 0152 00000000 		.4byte	.LFB8
@@ -1733,18 +1733,18 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  731 015b 9C       		.byte	0x9c
  732 015c 6F010000 		.4byte	0x16f
  733 0160 08       		.uleb128 0x8
- 734 0161 B4030000 		.4byte	.LASF25
+ 734 0161 B8030000 		.4byte	.LASF25
  735 0165 01       		.byte	0x1
  736 0166 2B02     		.2byte	0x22b
  737 0168 77000000 		.4byte	0x77
  738 016c 01       		.uleb128 0x1
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 30
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 30
 
 
  739 016d 50       		.byte	0x50
  740 016e 00       		.byte	0
  741 016f 07       		.uleb128 0x7
- 742 0170 C3020000 		.4byte	.LASF26
+ 742 0170 FB020000 		.4byte	.LASF26
  743 0174 01       		.byte	0x1
  744 0175 4802     		.2byte	0x248
  745 0177 00000000 		.4byte	.LFB9
@@ -1753,7 +1753,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  748 0180 9C       		.byte	0x9c
  749 0181 94010000 		.4byte	0x194
  750 0185 08       		.uleb128 0x8
- 751 0186 B4030000 		.4byte	.LASF25
+ 751 0186 B8030000 		.4byte	.LASF25
  752 018a 01       		.byte	0x1
  753 018b 4802     		.2byte	0x248
  754 018d 77000000 		.4byte	0x77
@@ -1770,7 +1770,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  765 01a5 9C       		.byte	0x9c
  766 01a6 B9010000 		.4byte	0x1b9
  767 01aa 08       		.uleb128 0x8
- 768 01ab DE020000 		.4byte	.LASF28
+ 768 01ab 16030000 		.4byte	.LASF28
  769 01af 01       		.byte	0x1
  770 01b0 AC02     		.2byte	0x2ac
  771 01b2 6B000000 		.4byte	0x6b
@@ -1778,7 +1778,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  773 01b7 50       		.byte	0x50
  774 01b8 00       		.byte	0
  775 01b9 09       		.uleb128 0x9
- 776 01ba 48030000 		.4byte	.LASF30
+ 776 01ba 80030000 		.4byte	.LASF30
  777 01be 01       		.byte	0x1
  778 01bf C702     		.2byte	0x2c7
  779 01c1 6B000000 		.4byte	0x6b
@@ -1797,8 +1797,8 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  792 01e4 9C       		.byte	0x9c
  793 01e5 F8010000 		.4byte	0x1f8
  794 01e9 0B       		.uleb128 0xb
- 795 01ea D2010000 		.4byte	.LASF36
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 31
+ 795 01ea 0A020000 		.4byte	.LASF36
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 31
 
 
  796 01ee 01       		.byte	0x1
@@ -1808,7 +1808,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  800 01f6 50       		.byte	0x50
  801 01f7 00       		.byte	0
  802 01f8 07       		.uleb128 0x7
- 803 01f9 BC030000 		.4byte	.LASF31
+ 803 01f9 C0030000 		.4byte	.LASF31
  804 01fd 01       		.byte	0x1
  805 01fe FD02     		.2byte	0x2fd
  806 0200 00000000 		.4byte	.LFB13
@@ -1825,7 +1825,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  817 021b 50       		.byte	0x50
  818 021c 00       		.byte	0
  819 021d 09       		.uleb128 0x9
- 820 021e 4A010000 		.4byte	.LASF33
+ 820 021e 82010000 		.4byte	.LASF33
  821 0222 01       		.byte	0x1
  822 0223 1603     		.2byte	0x316
  823 0225 77000000 		.4byte	0x77
@@ -1834,7 +1834,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  826 0231 01       		.uleb128 0x1
  827 0232 9C       		.byte	0x9c
  828 0233 07       		.uleb128 0x7
- 829 0234 DE030000 		.4byte	.LASF34
+ 829 0234 E2030000 		.4byte	.LASF34
  830 0238 01       		.byte	0x1
  831 0239 C501     		.2byte	0x1c5
  832 023b 00000000 		.4byte	.LFB6
@@ -1850,7 +1850,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  842 0257 B9010000 		.4byte	0x1b9
  843 025b 00       		.byte	0
  844 025c 0D       		.uleb128 0xd
- 845 025d F4010000 		.4byte	.LASF35
+ 845 025d 2C020000 		.4byte	.LASF35
  846 0261 01       		.byte	0x1
  847 0262 54       		.byte	0x54
  848 0263 00000000 		.4byte	.LFB1
@@ -1858,11 +1858,11 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  850 026b 01       		.uleb128 0x1
  851 026c 9C       		.byte	0x9c
  852 026d 12030000 		.4byte	0x312
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 32
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 32
 
 
  853 0271 0E       		.uleb128 0xe
- 854 0272 F5030000 		.4byte	.LASF37
+ 854 0272 F9030000 		.4byte	.LASF37
  855 0276 01       		.byte	0x1
  856 0277 57       		.byte	0x57
  857 0278 6B000000 		.4byte	0x6b
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  907 02e0 D007     		.2byte	0x7d0
  908 02e2 00       		.byte	0
  909 02e3 0F       		.uleb128 0xf
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 33
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 33
 
 
  910 02e4 4A000000 		.4byte	.LVL15
@@ -1957,7 +1957,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  943 0335 C8000000 		.4byte	0xc8
  944 0339 00       		.byte	0
  945 033a 09       		.uleb128 0x9
- 946 033b EC020000 		.4byte	.LASF40
+ 946 033b 24030000 		.4byte	.LASF40
  947 033f 01       		.byte	0x1
  948 0340 4A03     		.2byte	0x34a
  949 0342 77000000 		.4byte	0x77
@@ -1966,7 +1966,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  952 034e 01       		.uleb128 0x1
  953 034f 9C       		.byte	0x9c
  954 0350 09       		.uleb128 0x9
- 955 0351 06030000 		.4byte	.LASF41
+ 955 0351 3E030000 		.4byte	.LASF41
  956 0355 01       		.byte	0x1
  957 0356 5E03     		.2byte	0x35e
  958 0358 77000000 		.4byte	0x77
@@ -1975,10 +1975,10 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  961 0364 01       		.uleb128 0x1
  962 0365 9C       		.byte	0x9c
  963 0366 09       		.uleb128 0x9
- 964 0367 06020000 		.4byte	.LASF42
+ 964 0367 3E020000 		.4byte	.LASF42
  965 036b 01       		.byte	0x1
  966 036c 7403     		.2byte	0x374
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 34
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 34
 
 
  967 036e 77000000 		.4byte	0x77
@@ -1995,13 +1995,13 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  978 0388 03       		.byte	0x3
  979 0389 00000000 		.4byte	RightEyeball_initVar
  980 038d 12       		.uleb128 0x12
- 981 038e 6A010000 		.4byte	.LASF43
- 982 0392 6A010000 		.4byte	.LASF43
+ 981 038e A2010000 		.4byte	.LASF43
+ 982 0392 A2010000 		.4byte	.LASF43
  983 0396 03       		.byte	0x3
  984 0397 7D       		.byte	0x7d
  985 0398 12       		.uleb128 0x12
- 986 0399 BC010000 		.4byte	.LASF44
- 987 039d BC010000 		.4byte	.LASF44
+ 986 0399 F4010000 		.4byte	.LASF44
+ 987 039d F4010000 		.4byte	.LASF44
  988 03a1 03       		.byte	0x3
  989 03a2 7E       		.byte	0x7e
  990 03a3 00       		.byte	0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  1021 001c 00       		.byte	0
  1022 001d 00       		.byte	0
  1023 001e 03       		.uleb128 0x3
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 35
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 35
 
 
  1024 001f 24       		.uleb128 0x24
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  1078 0056 2E       		.uleb128 0x2e
  1079 0057 01       		.byte	0x1
  1080 0058 3F       		.uleb128 0x3f
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 36
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 36
 
 
  1081 0059 19       		.uleb128 0x19
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  1135 0090 06       		.uleb128 0x6
  1136 0091 40       		.uleb128 0x40
  1137 0092 18       		.uleb128 0x18
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 37
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 37
 
 
  1138 0093 9742     		.uleb128 0x2117
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  1192 00cd 00       		.byte	0
  1193 00ce 0D       		.uleb128 0xd
  1194 00cf 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 38
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 38
 
 
  1195 00d0 01       		.byte	0x1
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  1249 010b 9142     		.uleb128 0x2111
  1250 010d 18       		.uleb128 0x18
  1251 010e 00       		.byte	0
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 39
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 39
 
 
  1252 010f 00       		.byte	0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  1306 0004 0200     		.2byte	0x2
  1307 0006 00000000 		.4byte	.Ldebug_info0
  1308 000a 04       		.byte	0x4
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 40
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 40
 
 
  1309 000b 00       		.byte	0
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  1363 002c 0C000000 		.4byte	.LFE8
  1364 0030 00000000 		.4byte	.LFB9
  1365 0034 0C000000 		.4byte	.LFE9
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 41
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 41
 
 
  1366 0038 00000000 		.4byte	.LFB10
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  1404      74457965 
  1404      62616C6C 
  1404      5F696E74 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 42
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 42
 
 
  1404      65727275 
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  1426      62616C6C 
  1426      5F536574 
  1426      496E7465 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 43
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 43
 
 
  1427              	.LASF32:
@@ -2527,181 +2527,182 @@ ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 1
  1429              	.LASF12:
  1430 0139 646F7562 		.ascii	"double\000"
  1430      6C6500
- 1431              	.LASF2:
- 1432 0140 73686F72 		.ascii	"short int\000"
- 1432      7420696E 
- 1432      7400
- 1433              	.LASF33:
- 1434 014a 52696768 		.ascii	"RightEyeball_ReadCapture\000"
- 1434      74457965 
- 1434      62616C6C 
- 1434      5F526561 
- 1434      64436170 
- 1435              	.LASF10:
- 1436 0163 75696E74 		.ascii	"uint16\000"
- 1436      313600
- 1437              	.LASF43:
- 1438 016a 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 1438      74657243 
- 1438      72697469 
- 1438      63616C53 
- 1438      65637469 
- 1439              	.LASF8:
- 1440 0181 756E7369 		.ascii	"unsigned int\000"
- 1440      676E6564 
- 1440      20696E74 
- 1440      00
- 1441              	.LASF18:
- 1442 018e 52696768 		.ascii	"RightEyeball_Enable\000"
- 1442      74457965 
- 1442      62616C6C 
- 1442      5F456E61 
- 1442      626C6500 
- 1443              	.LASF20:
- 1444 01a2 52696768 		.ascii	"RightEyeball_WriteCounter\000"
- 1444      74457965 
- 1444      62616C6C 
- 1444      5F577269 
- 1444      7465436F 
- 1445              	.LASF44:
- 1446 01bc 43794578 		.ascii	"CyExitCriticalSection\000"
- 1446      69744372 
- 1446      69746963 
- 1446      616C5365 
- 1446      6374696F 
- 1447              	.LASF36:
- 1448 01d2 72657375 		.ascii	"result\000"
- 1448      6C7400
- 1449              	.LASF24:
- 1450 01d9 52696768 		.ascii	"RightEyeball_WriteCompare1\000"
- 1450      74457965 
- 1450      62616C6C 
- 1450      5F577269 
- 1450      7465436F 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 44
+ 1431              	.LASF47:
+ 1432 0140 433A5C55 		.ascii	"C:\\Users\\jon\\development\\CSE564-PSoC\\Face\\Con"
+ 1432      73657273 
+ 1432      5C6A6F6E 
+ 1432      5C646576 
+ 1432      656C6F70 
+ 1433 016d 74726F6C 		.ascii	"trol.cydsn\000"
+ 1433      2E637964 
+ 1433      736E00
+ 1434              	.LASF2:
+ 1435 0178 73686F72 		.ascii	"short int\000"
+ 1435      7420696E 
+ 1435      7400
+ 1436              	.LASF33:
+ 1437 0182 52696768 		.ascii	"RightEyeball_ReadCapture\000"
+ 1437      74457965 
+ 1437      62616C6C 
+ 1437      5F526561 
+ 1437      64436170 
+ 1438              	.LASF10:
+ 1439 019b 75696E74 		.ascii	"uint16\000"
+ 1439      313600
+ 1440              	.LASF43:
+ 1441 01a2 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 1441      74657243 
+ 1441      72697469 
+ 1441      63616C53 
+ 1441      65637469 
+ 1442              	.LASF8:
+ 1443 01b9 756E7369 		.ascii	"unsigned int\000"
+ 1443      676E6564 
+ 1443      20696E74 
+ 1443      00
+ 1444              	.LASF18:
+ 1445 01c6 52696768 		.ascii	"RightEyeball_Enable\000"
+ 1445      74457965 
+ 1445      62616C6C 
+ 1445      5F456E61 
+ 1445      626C6500 
+ 1446              	.LASF20:
+ 1447 01da 52696768 		.ascii	"RightEyeball_WriteCounter\000"
+ 1447      74457965 
+ 1447      62616C6C 
+ 1447      5F577269 
+ 1447      7465436F 
+ 1448              	.LASF44:
+ 1449 01f4 43794578 		.ascii	"CyExitCriticalSection\000"
+ 1449      69744372 
+ 1449      69746963 
+ 1449      616C5365 
+ 1449      6374696F 
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 44
 
 
- 1451              	.LASF35:
- 1452 01f4 52696768 		.ascii	"RightEyeball_Init\000"
- 1452      74457965 
- 1452      62616C6C 
- 1452      5F496E69 
- 1452      7400
- 1453              	.LASF42:
- 1454 0206 52696768 		.ascii	"RightEyeball_ReadPeriod\000"
- 1454      74457965 
- 1454      62616C6C 
- 1454      5F526561 
- 1454      64506572 
- 1455              	.LASF45:
- 1456 021e 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1456      43313120 
- 1456      352E342E 
- 1456      31203230 
- 1456      31363036 
- 1457 0251 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 1457      20726576 
- 1457      6973696F 
- 1457      6E203233 
- 1457      37373135 
- 1458 0284 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1458      66756E63 
- 1458      74696F6E 
- 1458      2D736563 
- 1458      74696F6E 
- 1459              	.LASF17:
- 1460 02ac 73697A65 		.ascii	"sizetype\000"
- 1460      74797065 
- 1460      00
- 1461              	.LASF6:
- 1462 02b5 6C6F6E67 		.ascii	"long long int\000"
- 1462      206C6F6E 
- 1462      6720696E 
- 1462      7400
- 1463              	.LASF26:
- 1464 02c3 52696768 		.ascii	"RightEyeball_WriteCompare2\000"
- 1464      74457965 
- 1464      62616C6C 
- 1464      5F577269 
- 1464      7465436F 
- 1465              	.LASF28:
- 1466 02de 696E7465 		.ascii	"interruptMode\000"
- 1466      72727570 
- 1466      744D6F64 
- 1466      6500
- 1467              	.LASF40:
- 1468 02ec 52696768 		.ascii	"RightEyeball_ReadCompare1\000"
- 1468      74457965 
- 1468      62616C6C 
- 1468      5F526561 
- 1468      64436F6D 
- 1469              	.LASF41:
- 1470 0306 52696768 		.ascii	"RightEyeball_ReadCompare2\000"
- 1470      74457965 
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 45
+ 1450              	.LASF36:
+ 1451 020a 72657375 		.ascii	"result\000"
+ 1451      6C7400
+ 1452              	.LASF24:
+ 1453 0211 52696768 		.ascii	"RightEyeball_WriteCompare1\000"
+ 1453      74457965 
+ 1453      62616C6C 
+ 1453      5F577269 
+ 1453      7465436F 
+ 1454              	.LASF35:
+ 1455 022c 52696768 		.ascii	"RightEyeball_Init\000"
+ 1455      74457965 
+ 1455      62616C6C 
+ 1455      5F496E69 
+ 1455      7400
+ 1456              	.LASF42:
+ 1457 023e 52696768 		.ascii	"RightEyeball_ReadPeriod\000"
+ 1457      74457965 
+ 1457      62616C6C 
+ 1457      5F526561 
+ 1457      64506572 
+ 1458              	.LASF45:
+ 1459 0256 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1459      43313120 
+ 1459      352E342E 
+ 1459      31203230 
+ 1459      31363036 
+ 1460 0289 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1460      20726576 
+ 1460      6973696F 
+ 1460      6E203233 
+ 1460      37373135 
+ 1461 02bc 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1461      66756E63 
+ 1461      74696F6E 
+ 1461      2D736563 
+ 1461      74696F6E 
+ 1462              	.LASF17:
+ 1463 02e4 73697A65 		.ascii	"sizetype\000"
+ 1463      74797065 
+ 1463      00
+ 1464              	.LASF6:
+ 1465 02ed 6C6F6E67 		.ascii	"long long int\000"
+ 1465      206C6F6E 
+ 1465      6720696E 
+ 1465      7400
+ 1466              	.LASF26:
+ 1467 02fb 52696768 		.ascii	"RightEyeball_WriteCompare2\000"
+ 1467      74457965 
+ 1467      62616C6C 
+ 1467      5F577269 
+ 1467      7465436F 
+ 1468              	.LASF28:
+ 1469 0316 696E7465 		.ascii	"interruptMode\000"
+ 1469      72727570 
+ 1469      744D6F64 
+ 1469      6500
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 45
 
 
- 1470      62616C6C 
- 1470      5F526561 
- 1470      64436F6D 
- 1471              	.LASF29:
- 1472 0320 52696768 		.ascii	"RightEyeball_ReadCounter\000"
- 1472      74457965 
- 1472      62616C6C 
- 1472      5F526561 
- 1472      64436F75 
- 1473              	.LASF9:
- 1474 0339 75696E74 		.ascii	"uint8\000"
- 1474      3800
- 1475              	.LASF4:
- 1476 033f 6C6F6E67 		.ascii	"long int\000"
- 1476      20696E74 
- 1476      00
- 1477              	.LASF30:
- 1478 0348 52696768 		.ascii	"RightEyeball_ReadStatusRegister\000"
- 1478      74457965 
- 1478      62616C6C 
- 1478      5F526561 
- 1478      64537461 
- 1479              	.LASF16:
- 1480 0368 6C6F6E67 		.ascii	"long double\000"
- 1480      20646F75 
- 1480      626C6500 
- 1481              	.LASF47:
- 1482 0374 433A5C55 		.ascii	"C:\\Users\\jon\\Desktop\\CSE564-PSoC\\Face\\Control"
- 1482      73657273 
- 1482      5C6A6F6E 
- 1482      5C446573 
- 1482      6B746F70 
- 1483 03a1 2E637964 		.ascii	".cydsn\000"
- 1483      736E00
+ 1470              	.LASF40:
+ 1471 0324 52696768 		.ascii	"RightEyeball_ReadCompare1\000"
+ 1471      74457965 
+ 1471      62616C6C 
+ 1471      5F526561 
+ 1471      64436F6D 
+ 1472              	.LASF41:
+ 1473 033e 52696768 		.ascii	"RightEyeball_ReadCompare2\000"
+ 1473      74457965 
+ 1473      62616C6C 
+ 1473      5F526561 
+ 1473      64436F6D 
+ 1474              	.LASF29:
+ 1475 0358 52696768 		.ascii	"RightEyeball_ReadCounter\000"
+ 1475      74457965 
+ 1475      62616C6C 
+ 1475      5F526561 
+ 1475      64436F75 
+ 1476              	.LASF9:
+ 1477 0371 75696E74 		.ascii	"uint8\000"
+ 1477      3800
+ 1478              	.LASF4:
+ 1479 0377 6C6F6E67 		.ascii	"long int\000"
+ 1479      20696E74 
+ 1479      00
+ 1480              	.LASF30:
+ 1481 0380 52696768 		.ascii	"RightEyeball_ReadStatusRegister\000"
+ 1481      74457965 
+ 1481      62616C6C 
+ 1481      5F526561 
+ 1481      64537461 
+ 1482              	.LASF16:
+ 1483 03a0 6C6F6E67 		.ascii	"long double\000"
+ 1483      20646F75 
+ 1483      626C6500 
  1484              	.LASF0:
- 1485 03a8 7369676E 		.ascii	"signed char\000"
+ 1485 03ac 7369676E 		.ascii	"signed char\000"
  1485      65642063 
  1485      68617200 
  1486              	.LASF25:
- 1487 03b4 636F6D70 		.ascii	"compare\000"
+ 1487 03b8 636F6D70 		.ascii	"compare\000"
  1487      61726500 
  1488              	.LASF31:
- 1489 03bc 52696768 		.ascii	"RightEyeball_WriteControlRegister\000"
+ 1489 03c0 52696768 		.ascii	"RightEyeball_WriteControlRegister\000"
  1489      74457965 
  1489      62616C6C 
  1489      5F577269 
  1489      7465436F 
  1490              	.LASF34:
- 1491 03de 52696768 		.ascii	"RightEyeball_ClearFIFO\000"
+ 1491 03e2 52696768 		.ascii	"RightEyeball_ClearFIFO\000"
  1491      74457965 
  1491      62616C6C 
  1491      5F436C65 
  1491      61724649 
  1492              	.LASF37:
- 1493 03f5 6374726C 		.ascii	"ctrl\000"
+ 1493 03f9 6374726C 		.ascii	"ctrl\000"
  1493      00
+ARM GAS  C:\Users\jon\AppData\Local\Temp\ccnIDYgH.s 			page 46
+
+
  1494              	.LASF19:
-ARM GAS  C:\Users\jon\AppData\Local\Temp\cct0oGwP.s 			page 46
-
-
- 1495 03fa 52696768 		.ascii	"RightEyeball_Stop\000"
+ 1495 03fe 52696768 		.ascii	"RightEyeball_Stop\000"
  1495      74457965 
  1495      62616C6C 
  1495      5F53746F 
